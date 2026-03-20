@@ -1,0 +1,13 @@
+
+add_subdirectory(docbrowserapi)
+add_subdirectory(golangastapi)
+add_subdirectory(golangdocapi)
+add_subdirectory(liteapi)
+add_subdirectory(litebuildapi)
+add_subdirectory(litedebugapi)
+add_subdirectory(liteeditorapi)
+add_subdirectory(liteenvapi)
+add_subdirectory(litefindapi)
+add_subdirectory(litettyapi)
+add_subdirectory(quickopenapi)
+add_subdirectory(terminalapi)

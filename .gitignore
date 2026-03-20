@@ -36,3 +36,6 @@ liteidex/src/golang.org/
 
 #macosx
 .DS_Store
+
+liteidex/out/
+liteidex/.vs/
