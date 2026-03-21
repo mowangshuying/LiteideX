@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2017 LiteIDE. All rights reserved.
@@ -23,6 +23,7 @@
 
 #include "bookmarkmodel.h"
 #include <QPainter>
+#include "bookmarkmanager.h"
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
      #define _CRTDBG_MAP_ALLOC
@@ -164,8 +165,11 @@ QSize BookmarkDelegate::sizeHint(const QStyleOptionViewItem &option, const QMode
     initStyleOption(&opt, index);
 
     QFontMetrics fm(option.font);
+
+    BookmarkManager* manager = qobject_cast<BookmarkManager*>(parent());
+
     QSize s;
-    s.setWidth(option.rect.width());
+    s.setWidth(manager->treeView()->width());
     s.setHeight(fm.height() * 2 + 10);
     return s;
 }
@@ -199,9 +203,13 @@ void BookmarkDelegate::generateGradientPixmap(int width, int height, const QColo
 
 void BookmarkDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
+    //qDebug() << "BookmarkDelegate::paint" << index.row() << index.column() << "opt.rect";
+
     QStyleOptionViewItem opt = option;
     initStyleOption(&opt, index);
     painter->save();
+
+    qDebug() << "BookmarkDelegate::paint" << index.row() << index.column() << "opt.rect" << opt.rect;
 
     QFontMetrics fm(opt.font);
     static int lwidth = fm.width(QLatin1String("8888")) + 18;

@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -260,6 +260,8 @@ void LiteEditorMark::addMarkList(const QList<int> &lines, int type)
         if (!block.isValid()) {
             continue;
         }
+
+        qDebug() << "block text:" << block.text();
         TextEditor::TextBlockUserData *data = TextEditor::BaseTextDocumentLayout::userData(block);
         if (!data) {
             continue;

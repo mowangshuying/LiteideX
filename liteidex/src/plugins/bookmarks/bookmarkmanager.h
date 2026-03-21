@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2017 LiteIDE. All rights reserved.
@@ -59,6 +59,9 @@ public slots:
     void removeAllFileBookmarksAction();
 protected:
     void removeFileBookmarks(const QString &filePath);
+public:
+    // TreeView
+    SymbolTreeView* treeView();
 protected:
     QAction *m_toggleBookmarkAct;
     BookmarkModel *m_bookmarkModel;

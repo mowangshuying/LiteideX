@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -1272,6 +1272,7 @@ void LiteBuild::editorCreated(LiteApi::IEditor *editor)
     if (!build) {
         return;
     }
+
     if (!m_buildBarInfoMap.contains(build->mimeType())) {
         BuildBarInfo *info = new BuildBarInfo;
         QList<QAction*> actions = build->actions();
@@ -1285,18 +1286,24 @@ void LiteBuild::editorCreated(LiteApi::IEditor *editor)
                     btn->setIcon(subMenu->menuAction()->icon());
                     btn->setText(subMenu->title());
                     btn->setMenu(subMenu);
-                    if (ba->isFolder()) {
-                        btn->setPopupMode(QToolButton::InstantPopup);
-                    } else {
+
+                    qDebug() << "mimeType:" << editor->mimeType() << ", btn text:" << subMenu->title();
+
+                    //if (ba->isFolder()) {
+                        //btn->setPopupMode(QToolButton::InstantPopup);
+                    //} else {
                         btn->setPopupMode(QToolButton::MenuButtonPopup);
                         btn->setDefaultAction(subMenu->menuAction());
-                    }
+                    //}
                     QAction *cb = m_buildToolBar->addWidget(btn);
                     acts.push_back(cb);
                 }
             } else {
                 QToolButton *btn = new QToolButton(m_buildToolBar);
                 btn->setDefaultAction(act);
+
+                qDebug() << "mimeType:" << editor->mimeType() << ", btn text:" << btn->text();
+
                 QAction *cb = m_buildToolBar->addWidget(btn);
                 acts.push_back(cb);
             }

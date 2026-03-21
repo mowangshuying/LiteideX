@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -62,6 +62,7 @@ TerminalEdit::TerminalEdit(QWidget *parent) :
     m_lastPosition = 0;
     m_lastKey = -1;
 
+    // 设置对象的上下文菜单策略为自定义模式
     this->setContextMenuPolicy(Qt::CustomContextMenu);
 
     m_cut = new QAction(tr("Cut"),this);
@@ -82,13 +83,13 @@ TerminalEdit::TerminalEdit(QWidget *parent) :
 
     m_clear = new QAction(tr("Clear All"),this);
 
-    m_contextMenu->addAction(m_cut);
-    m_contextMenu->addAction(m_copy);
-    m_contextMenu->addAction(m_paste);
-    m_contextMenu->addSeparator();
-    m_contextMenu->addAction(m_selectAll);
-    m_contextMenu->addSeparator();
-    m_contextMenu->addAction(m_clear);
+    m_contextMenu->addAction(m_cut);   // 剪切
+    m_contextMenu->addAction(m_copy);  // 拷贝
+    m_contextMenu->addAction(m_paste); // 粘贴
+    m_contextMenu->addSeparator();     // 分割线
+    m_contextMenu->addAction(m_selectAll); // 全选
+    m_contextMenu->addSeparator(); // 分割线
+    m_contextMenu->addAction(m_clear); // 清空
 
     m_contextRoMenu->addAction(m_copy);
     m_contextRoMenu->addSeparator();

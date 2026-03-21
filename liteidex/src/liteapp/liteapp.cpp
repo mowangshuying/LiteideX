@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -675,7 +675,7 @@ QList<IPlugin*> LiteApp::pluginList() const
 void LiteApp::appendLog(const QString &model, const QString &log, bool error)
 {
     QDateTime dt = QDateTime::currentDateTime();
-    QString text = dt.toString("hh:mm:ss");
+    QString text = dt.toString("yyyy/MM/dd hh:mm:ss");
     text += QLatin1Char(' ');
     text += model;
     text += ": ";

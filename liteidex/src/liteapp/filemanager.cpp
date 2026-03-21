@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -65,7 +65,7 @@ bool FileManager::initWithApp(IApplication *app)
     }
    // m_folderWindow = new MultiFolderWindow(app);
 
-    m_fileWatcher = new QFileSystemWatcher(this);
+    m_fileWatcher = new QFileSystemWatcher(this);// 文件改变则触发fileChanged信号
     connect(m_fileWatcher,SIGNAL(fileChanged(QString)),this,SLOT(fileChanged(QString)));
 
     m_newFileDialog = 0;
@@ -144,9 +144,10 @@ FileManager::~FileManager()
     m_liteApp->settings()->setValue(LITEAPP_FOLDERSHOWHIDENFILES,m_showHideFilesAct->isChecked());
     m_liteApp->settings()->setValue(LITEAPP_FOLDERSHOWDETAILS,m_showDetailsAct->isChecked());
     m_liteApp->settings()->setValue(LITEAPP_FOLDERSPLITMODE,m_splitModeAct->isChecked());
-    delete m_filterMenu;
-    delete m_fileWatcher;
-    m_liteApp->settings()->setValue("FileManager/initpath",m_initPath);
+    
+    delete m_filterMenu;  // 移除菜单
+    delete m_fileWatcher; // 删除文件监控
+    m_liteApp->settings()->setValue("FileManager/initpath",m_initPath);// 保存初始路径
     if (m_newFileDialog) {
         delete m_newFileDialog;
     }

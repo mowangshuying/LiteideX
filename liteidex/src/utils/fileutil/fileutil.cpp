@@ -35,7 +35,7 @@
 #endif
 
 
-#ifdef _WIN32
+#ifdef WIN32
 #include <windows.h>
 #include <shlobj.h>
 #include <shellapi.h>

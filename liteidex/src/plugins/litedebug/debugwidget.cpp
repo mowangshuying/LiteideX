@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -74,6 +74,7 @@ DebugWidget::DebugWidget(LiteApi::IApplication *app, QObject *parent) :
     m_debugger(0)
 {
     m_tabWidget = new QTabWidget;
+    //m_tabWidget->tabBar()->setExpanding(true);
 
     m_asyncView = new QTreeView;
     m_varsView = new SymbolTreeView(false);

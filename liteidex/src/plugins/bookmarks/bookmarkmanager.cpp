@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2017 LiteIDE. All rights reserved.
@@ -78,6 +78,9 @@ bool BookmarkManager::initWithApp(LiteApi::IApplication *app)
     connect(manager,SIGNAL(editorMarkNodeChanged(LiteApi::IEditorMark*,LiteApi::IEditorMarkNode*)),this,SLOT(editorMarkNodeChanged(LiteApi::IEditorMark*,LiteApi::IEditorMarkNode*)));
 
     m_treeView = new SymbolTreeView();
+
+    //qDebug() << "BookmarkManager::initWithApp treeView width:" << m_treeView->width();
+
     m_treeView->setHeaderHidden(true);
     m_treeView->setEditTriggers(QTreeView::NoEditTriggers);
     m_treeView->setRootIsDecorated(false);
@@ -113,7 +116,7 @@ bool BookmarkManager::initWithApp(LiteApi::IApplication *app)
 //    m_treeView->setDragDropMode(QAbstractItemView::DragOnly);
 
 
-    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea,m_treeView,"Bookmarks",tr("Bookmarks"),true);
+    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_treeView, "Bookmarks", tr("Bookmarks"), true);
 
     connect(m_treeView,SIGNAL(doubleClicked(QModelIndex)),this,SLOT(gotoBookmark(QModelIndex)));
     connect(m_treeView,SIGNAL(enterKeyPressed(QModelIndex)),this,SLOT(gotoBookmark(QModelIndex)));
@@ -322,6 +325,11 @@ void BookmarkManager::removeFileBookmarks(const QString &filePath)
     }
     QList<int> lines = mark->markLinesByType(BookMarkType);
     mark->removeMarkList(lines,BookMarkType);
+}
+
+SymbolTreeView* BookmarkManager::treeView()
+{
+    return m_treeView;
 }
 
 

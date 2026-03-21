@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -117,7 +117,7 @@ void TextOutput::updateExistsTextColor(bool force)
 
 void TextOutput::setMaxLine(int max)
 {
-    this->setMaximumBlockCount(max);;
+    this->setMaximumBlockCount(max);
 }
 
 void TextOutput::setLineWrap(bool b)
@@ -196,13 +196,11 @@ void TextOutput::applyOption(QString opt)
     if (opt != OPTION_LITEOUTPUT) {
         return;
     }
+
     QString fontFamily = m_liteApp->settings()->value(OUTPUT_FAMILY).toString();
     int fontSize = m_liteApp->settings()->value(OUTPUT_FONTSIZE,12).toInt();
-
     int fontZoom = m_liteApp->settings()->value(OUTPUT_FONTZOOM,100).toInt();
-
     bool antialias = m_liteApp->settings()->value(OUTPUT_ANTIALIAS,true).toBool();
-
     int maxLines = m_liteApp->settings()->value(OUTPUT_MAXLINES,5000).toInt();
 
     QFont font = this->font();
@@ -216,9 +214,8 @@ void TextOutput::applyOption(QString opt)
     } else {
         font.setStyleStrategy(QFont::NoAntialias);
     }
+
     this->setFont(font);
-
     this->setMaxLine(maxLines);
-
     this->loadColorStyleScheme();
 }

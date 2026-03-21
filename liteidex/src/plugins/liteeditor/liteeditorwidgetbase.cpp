@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -810,6 +810,7 @@ int LiteEditorWidgetBase::extraAreaWidth()
     return space;
 }
 
+// draw folding marker
 void LiteEditorWidgetBase::drawFoldingMarker(QPainter *painter, const QPalette&,
                                        const QRect &rect,
                                        bool expanded) const
@@ -827,21 +828,22 @@ void LiteEditorWidgetBase::drawFoldingMarker(QPainter *painter, const QPalette&,
     QPolygon a;
     if (expanded) {
         // down arrow
-        //a.setPoints(3, 0, sqsize/3,  sqsize/2, sqsize  - sqsize/3,  sqsize, sqsize/3);
-        a.setPoints(3, 1, sqsize/2+sqsize/3,  sqsize/2+sqsize/3, sqsize/2+sqsize/3,sqsize/2+sqsize/3,1);
+        a.setPoints(3, 0, sqsize/3,  sqsize/2, sqsize  - sqsize/3,  sqsize, sqsize/3);
+        //a.setPoints(3, 1, sqsize/2+sqsize/3,  sqsize/2+sqsize/3, sqsize/2+sqsize/3,sqsize/2+sqsize/3,1);
+
     } else {
         // right arrow
         a.setPoints(3, sqsize - sqsize/3, sqsize/2,  sqsize/2 - sqsize/3, 0,  sqsize/2 - sqsize/3, sqsize);
     }
-    painter->translate(0.5, 0.5);
+    //painter->translate(0.5, 0.5);
     painter->setRenderHint(QPainter::Antialiasing);
     painter->translate(rect.topLeft());
     painter->setPen(textColor);
-    if (expanded) {
+    //if (expanded) {
         painter->setBrush(textColor);
-    } else {
-        painter->setBrush(brushColor);
-    }
+    //} else {
+        //painter->setBrush(brushColor);
+    //}
     painter->drawPolygon(a);
     painter->restore();
 
