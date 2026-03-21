@@ -38,10 +38,10 @@ target_include_directories(${TGT} PUBLIC
 )
 
 # Link dependencies (no find_package)
-target_link_libraries(${TGT} PRIVATE
-    Qt5::Core
-    liteapi
-)
+#target_link_libraries(${TGT} PRIVATE
+#    Qt5::Core
+#    liteapi
+#)
 
 if(WIN32)
 

@@ -209,7 +209,7 @@ void BookmarkDelegate::paint(QPainter *painter, const QStyleOptionViewItem &opti
     initStyleOption(&opt, index);
     painter->save();
 
-    qDebug() << "BookmarkDelegate::paint" << index.row() << index.column() << "opt.rect" << opt.rect;
+    //qDebug() << "BookmarkDelegate::paint" << index.row() << index.column() << "opt.rect" << opt.rect;
 
     QFontMetrics fm(opt.font);
     static int lwidth = fm.width(QLatin1String("8888")) + 18;
