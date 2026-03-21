@@ -30,14 +30,14 @@
 		<custom id="DebugTestBuildArgs" name="DEBUGTESTBUILDARGS" value="$(LITEIDE_DEBUG_GCFLAGS) -c -o $(DEBUGTESTNAME)"/>
 		<action id="BuildAndRun" img="buildrun.png" key="Ctrl+R;Ctrl+F7" task="Build;Run" killold="true"/>
 		<action id="Run" img="run.png" key="Ctrl+Alt+R;Ctrl+F5" cmd="$(TARGETNAME)" args="$(TARGETARGS)" output="true" codec="utf-8" readline="true"/>
-		<action id="RunTerm" img="runterm.png" key="Ctrl+Shift+F5" cmd="$(LITEIDE_EXEC)" args="$(LITEIDE_EXECOPT) $(GOTOOLS) runcmd $(TARGETNAME) $(TARGETARGS)" output="false" readline="true"/>
+		<action id="RunTerm" menu="Run" img="runterm.png" key="Ctrl+Shift+F5" cmd="$(LITEIDE_EXEC)" args="$(LITEIDE_EXECOPT) $(GOTOOLS) runcmd $(TARGETNAME) $(TARGETARGS)" output="false" readline="true"/>
 		<action id="RunTerm" os="macosx" img="runterm.png" key="Ctrl+Shift+F5" cmd="/usr/bin/open" args="$(TARGETNAME)" output="false" readline="true"/>
 		<action id="Build" img="build.png" key="Ctrl+B;F7" cmd="$(GO)" args="build $(BUILDARGS)" save="all" output="true" codec="utf-8" regex="$(ERRREGEX)" navigate="true"/>
 		<action id="ForceBuild" img="rebuild.png" menu="Build" key="Ctrl+Alt+B" cmd="$(GO)" args="build $(FORCEBUILDARGS)" save="all" output="true" codec="utf-8" regex="$(ERRREGEX)" navigate="true"/>
 		<action id="BuildAll" img="buildall.png" menu="Build" key="" cmd="$(GO)" args="build -v ./..." save="all" output="true" codec="utf-8" regex="$(ERRREGEX)" navigate="true"/>
-		<action id="Install" menu="Build" img="install.png" key="Ctrl+F8" cmd="$(GO)" args="install $(INSTALLARGS)" save="all" output="true" codec="utf-8" regex="$(ERRREGEX)" navigate="true"/>
-		<action id="Clean" menu="Build" img="clean.png" cmd="$(GO)" args="clean" save="all" output="true"/>
-		<action id="CleanAll" menu="Build" img="cleanall.png" cmd="$(GO)" args="clean -i" save="all" output="true"/>
+		<action id="Install"  img="install.png" key="Ctrl+F8" cmd="$(GO)" args="install $(INSTALLARGS)" save="all" output="true" codec="utf-8" regex="$(ERRREGEX)" navigate="true"/>
+		<action id="Clean" img="clean.png" cmd="$(GO)" args="clean" save="all" output="true"/>
+		<action id="CleanAll" menu="Clean" img="cleanall.png" cmd="$(GO)" args="clean -i" save="all" output="true"/>
 		<action id="Get" img="get.png" cmd="$(GO)" args="get $(GETARGS) ." save="all" output="true" codec="utf-8"/>
 		<action id="Get Update Network" menu="Get" img="get.png" cmd="$(GO)" args="get $(UPDATEGETARGS) ." save="all" output="true" codec="utf-8"/>
 		<action id="Get Force Rebuilding" menu="Get" img="reget.png" cmd="$(GO)" args="get $(FORCEGETARGS) ." save="all" output="true" codec="utf-8"/>

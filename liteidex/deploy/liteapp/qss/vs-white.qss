@@ -117,10 +117,10 @@ QComboBox::down-arrow {
     height: 15px; 
     background-color: transparent;
     /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevrondown.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevrondown.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png");  */
  }
 
 QComboBox::down-arrow:hover {
@@ -354,10 +354,10 @@ QScrollBar:up-arrow:vertical {
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevronup.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronup.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevronup.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronup.png");  */
 }
 
 QScrollBar:down-arrow:vertical {
@@ -369,10 +369,10 @@ QScrollBar:down-arrow:vertical {
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevrondown.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevrondown.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png");  */
 }
 
 /* === QScrollBar:horizontal === */
@@ -423,10 +423,10 @@ QScrollBar:left-arrow:horizontal{
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevronleft.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronleft.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevronleft.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronleft.png");  */
 }
 
 QScrollBar:right-arrow:horizontal {
@@ -438,10 +438,10 @@ QScrollBar:right-arrow:horizontal {
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevronright.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronright.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevronright.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronright.png");  */
 
 }
 
@@ -639,10 +639,10 @@ QComboBox::down-arrow {
     height: 15px; 
     background-color: transparent;
     /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevrondown.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevrondown.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png");  */
  }
 
 QComboBox::down-arrow:hover {
@@ -870,10 +870,10 @@ QScrollBar:up-arrow:vertical {
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevronup.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronup.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevronup.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronup.png");  */
 }
 
 QScrollBar:down-arrow:vertical {
@@ -885,10 +885,10 @@ QScrollBar:down-arrow:vertical {
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevrondown.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevrondown.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png");  */
 }
 
 /* === QScrollBar:horizontal === */
@@ -933,10 +933,10 @@ QScrollBar:left-arrow:horizontal{
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevronleft.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronleft.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevronleft.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronleft.png");  */
 }
 
 QScrollBar:right-arrow:horizontal {
@@ -948,10 +948,10 @@ QScrollBar:right-arrow:horizontal {
 
 
         /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/controls/images/chevronright.png"); 
+     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronright.png"); 
 
      /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/controls/images/chevronright.png");  */
+     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronright.png");  */
 
 }
 

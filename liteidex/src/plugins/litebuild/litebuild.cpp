@@ -1318,9 +1318,10 @@ void LiteBuild::editorCreated(LiteApi::IEditor *editor)
         foreach (QAction *act, actions) {
             QMenu *subMenu = act->menu();
             if (subMenu) {
-                if (!menu->isEmpty())
-                    menu->addSeparator();
-                menu->addActions(subMenu->actions());
+                //if (!menu->isEmpty())
+                    //menu->addSeparator();
+                //menu->addActions(subMenu->actions());
+                menu->addAction(subMenu->menuAction());
             } else {
                 menu->addAction(act);
             }
