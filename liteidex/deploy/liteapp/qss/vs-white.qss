@@ -87,14 +87,14 @@ QCheckBox::indicator::checked:disabled, QRadioButton::indicator::checked:disable
 
 /* === QComboBox === */
 QComboBox {
-    background-color: rgb(255,255,255);
+    background-color: rgb(238, 238, 242);
     border: 1px solid rgb(204,206,219);
     color: black;
     padding:1px 2px 1px 3px;
 }
 
 QComboBox:hover {
-    background-color: rgb(255,255,255);
+    background-color: rgb(238, 238, 242);
     border: 1px solid rgb(0,108,190);
 }
 
@@ -609,20 +609,19 @@ QCheckBox::indicator::checked:disabled, QRadioButton::indicator::checked:disable
 
 /* === QComboBox === */
 QComboBox {
-    background-color: rgb(255,255,255);
+    background-color: rgb(238, 238, 242);
     border: 1px solid rgb(204,206,219);
     color: black;
     padding:1px 2px 1px 3px;
 }
 
 QComboBox:hover {
-    background-color: rgb(255,255,255);
+    background-color: rgb(238, 238, 242);
     border: 1px solid rgb(0,108,190);
 }
 
 QComboBox::drop-down {
     background-color: rgb(245,245,245);
-
     subcontrol-origin: padding;
     subcontrol-position: top right;
     border-left: 1px solid rgb(204, 206, 219);
@@ -666,7 +665,7 @@ QGroupBox::title {
 
 /* === QTabWidget === */
 QTabWidget::pane {
-    background: rgb(255,255,255);
+    background: rgb(238, 238, 242);
     border: transparent;
     border-top: 2px solid rgb(0,108,190);
     /* border: transparent; */
@@ -840,7 +839,13 @@ QScrollBar::handle:vertical {
     background: rgb(194,195,201);
     min-height: 16px;
     /* width: 8px; */
+	margin: 0 3px;
     border: 2px solid rgb(194,195,201);
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgb(104,104,104);
+	border: 2px solid rgb(104,104,104);
 }
 
 QScrollBar::add-line:vertical {
@@ -901,9 +906,15 @@ QScrollBar:horizontal {
 
 QScrollBar::handle:horizontal {
     background: rgb(194,195,201);
+	margin: 0 3px;
     min-width: 16px;
     border: 2px solid rgb(194,195,201);
     width: 8px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: rgb(104,104,104);
+	border: 2px solid rgb(104,104,104);
 }
 
 QScrollBar::add-line:horizontal {
