@@ -1,4 +1,9 @@
 set(TGT docbrowserapi)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
 # 创建静态库
 add_library(${TGT} STATIC
     docbrowserapi.h

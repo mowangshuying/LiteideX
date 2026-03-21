@@ -1,7 +1,7 @@
 #cmake_minimum_required(VERSION 3.10)
 
 # Set target name
-set(TGT json)
+set(TGT qjson)
 
 # Set version
 set(VERSION 0.7.1)
@@ -49,6 +49,8 @@ add_library(${TGT} STATIC
 # Set header include paths
 target_include_directories(${TGT} PUBLIC
     ./
+    ../include
+    ../../
 )
 
 # Set target properties
@@ -59,6 +61,7 @@ set_target_properties(${TGT} PROPERTIES
 # Link dependencies (no find_package)
 target_link_libraries(${TGT} PRIVATE
     Qt5::Core
+    editorutil
 )
 
 # Install configuration (optional)

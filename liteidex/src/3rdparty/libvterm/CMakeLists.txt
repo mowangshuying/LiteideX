@@ -29,9 +29,10 @@ add_library(${TGT} STATIC
 
 # Set header include paths
 target_include_directories(${TGT} PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ./
+    ./include
+    ./src
+    ../
 )
 
 # Set C standard (pure C library)
@@ -46,23 +47,23 @@ target_link_libraries(${TGT} PRIVATE
 )
 
 # Install configuration (optional)
-install(TARGETS ${TGT}
-    ARCHIVE DESTINATION lib
-    LIBRARY DESTINATION lib
-)
+#install(TARGETS ${TGT}
+#    ARCHIVE DESTINATION lib
+#    LIBRARY DESTINATION lib
+#)
 
-install(FILES
-    include/vterm.h
-    include/vterm_keycodes.h
-    DESTINATION include/libvterm
-)
+#install(FILES
+#    include/vterm.h
+#    include/vterm_keycodes.h
+#    DESTINATION include/libvterm
+#)
 
 # Distribute data files (equivalent to DISTFILES)
-install(FILES
-    src/encoding/DECdrawing.inc
-    src/encoding/DECdrawing.tbl
-    src/encoding/uk.inc
-    src/encoding/uk.tbl
-    src/fullwidth.inc
-    DESTINATION share/libvterm
-)
+#install(FILES
+#    src/encoding/DECdrawing.inc
+#    src/encoding/DECdrawing.tbl
+#    src/encoding/uk.inc
+#    src/encoding/uk.tbl
+#    src/fullwidth.inc
+#    DESTINATION share/libvterm
+#)

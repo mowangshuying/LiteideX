@@ -4,3 +4,6 @@
 add_subdirectory(api)
 add_subdirectory(3rdparty)
 add_subdirectory(utils)
+add_subdirectory(liteapp)
+add_subdirectory(plugins)
+add_subdirectory(liteide)

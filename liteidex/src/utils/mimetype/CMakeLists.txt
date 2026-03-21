@@ -1,20 +1,13 @@
-cmake_minimum_required(VERSION 3.10)
-
 # Set target name
-set(TGT qtc_editutil)
+set(TGT mimetype)
 
 # Create static library
 add_library(${TGT} STATIC
     # Header files
-    filterlineedit.h
-    fancylineedit.h
-    uncommentselection.h
-    utils_global.h
+    mimetype.h
     
     # Source files
-    filterlineedit.cpp
-    fancylineedit.cpp
-    uncommentselection.cpp
+    mimetype.cpp
 )
 
 # Include common configuration
@@ -23,18 +16,12 @@ add_library(${TGT} STATIC
 # Set header include paths
 target_include_directories(${TGT} PUBLIC
     ./
-    ../
-)
-
-# Disable warning flags (equivalent to QMAKE_CFLAGS_WARN_ON -=)
-target_compile_options(${TGT} PRIVATE
-    -w
 )
 
 # Link dependencies (no find_package)
 target_link_libraries(${TGT} PRIVATE
-    Qt5::Widgets
     Qt5::Core
+    liteapi
 )
 
 # Install configuration (optional)
@@ -44,9 +31,6 @@ target_link_libraries(${TGT} PRIVATE
 #)
 
 #install(FILES
-#    filterlineedit.h
-#    fancylineedit.h
-#    uncommentselection.h
-#    utils_global.h
-#    DESTINATION include/qtc_editutil
+#    mimetype.h
+#    DESTINATION include/mimetype
 #)

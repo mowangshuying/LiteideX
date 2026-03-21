@@ -43,6 +43,7 @@ add_library(${TGT} STATIC ${HEADERS} ${SOURCES})
 target_include_directories(${TGT} PUBLIC 
     ./src
     ./src/http-parser
+    ../
 )
 
 target_link_libraries(${TGT}

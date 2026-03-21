@@ -5,6 +5,11 @@ add_library(${TGT} STATIC
     elidedlabel.cpp
 )
 
+target_include_directories(${TGT} PUBLIC
+	./
+	../
+)
+
 target_link_libraries( ${TGT} PUBLIC
 	Qt5::Core
 	Qt5::Gui

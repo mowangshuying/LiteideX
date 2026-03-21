@@ -1,4 +1,4 @@
-set(TGT qtcgdbmi)
+set(TGT qtc_gdbmi)
 
 add_library(${TGT} STATIC 
     gdbmi.cpp
