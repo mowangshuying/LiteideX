@@ -10,9 +10,9 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #${CMAKE_BINARY_DIR}/liteide/bin
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/liteide/lib/liteide/plugins")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/liteide/lib/liteide/plugins")
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/liteide/lib/liteide")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/lib/liteide")
 
 find_package(QT NAMES Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml)
 find_package(Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml)

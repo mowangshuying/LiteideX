@@ -147,5 +147,5 @@ endif()
 #endif()
 
 set_target_properties(${TGT} PROPERTIES 
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/liteide/bin" 
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/bin" 
 )
