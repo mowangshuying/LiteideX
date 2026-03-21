@@ -5,7 +5,7 @@
 QStackedWidget, QLabel, QPushButton, QRadioButton, QCheckBox, 
 QGroupBox, QStatusBar, QToolButton, QComboBox, QDialog, QListView,
 QTabBar, QMenu, QMenuBar, QWidget::window  {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(238, 238, 242);
     color: black;/* ===add file: \liteide\share\liteide\liteapp\qss\vs-dark.qss ===*/
 /* ===FROM: https://gist.github.com/tupunco/fdb713ec9c6189a877e5eb003bd0457d ===*/
 
@@ -546,14 +546,14 @@ QWidget:window {
 
 /* === WebView === */
 QTextBrowser, QWebView {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(238, 238, 242);
     selection-color: black; 
     selection-background-color: rgb(0, 108, 190);
 }
 
 /* === QToolTip === */
 QToolTip {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(238, 238, 242);
     border: 1px solid rgb(118,118,118);
     color: black;
 }
@@ -825,12 +825,12 @@ QMenuBar::item:selected {
 }
 
 QMenuBar::item:pressed {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
 }
  
 /* === QScrollBar:vertical === */
 QScrollBar:vertical {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     border: 1px solid rgb(204, 206, 219);
     width: 16px;
     margin: 16px 0 16px 0;
@@ -844,28 +844,28 @@ QScrollBar::handle:vertical {
 }
 
 QScrollBar::add-line:vertical {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     height: 16px;
     subcontrol-position: bottom;
     subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:vertical {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     height: 16px;
     subcontrol-position: top;
     subcontrol-origin: margin;
 }
 
 QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
 }
 
 QScrollBar:up-arrow:vertical {
     border: none;
     width: 15px;
     height: 15px;
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
 
 
@@ -880,7 +880,7 @@ QScrollBar:down-arrow:vertical {
     border: none;
     width: 15px;
     height: 15px;
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
 
 
@@ -893,7 +893,7 @@ QScrollBar:down-arrow:vertical {
 
 /* === QScrollBar:horizontal === */
 QScrollBar:horizontal {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     border: 1px solid rgb(204, 206, 219);
     height: 16px;
     margin: 0 16px 0 16px;
@@ -907,28 +907,28 @@ QScrollBar::handle:horizontal {
 }
 
 QScrollBar::add-line:horizontal {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     width: 16px;
     subcontrol-position: right;
     subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:horizontal {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     width: 16px;
     subcontrol-position: left;
     subcontrol-origin: margin;
 }
 
 QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
 }
 
 QScrollBar:left-arrow:horizontal{
     /* border: none; */
     width: 15px;
     height: 15px;
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
 
 
@@ -943,7 +943,7 @@ QScrollBar:right-arrow:horizontal {
     /* border: none; */
     width: 15px;
     height: 15px;
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
 
 
@@ -957,7 +957,7 @@ QScrollBar:right-arrow:horizontal {
 
 /* =================== */
 QLineEdit, QListView, QTreeView, QTableView, QAbstractSpinBox {
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(238, 238, 242);
     color: black;
     border: 1px solid rgb(204, 206, 219);
 }
@@ -986,7 +986,7 @@ QListView::item:hover {
 }
 
 QListView::item:selected {
-    background: rgb(245, 245, 245);
+    background: rgb(238, 238, 242);
     color: black;
 }
 
