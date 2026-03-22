@@ -64,11 +64,13 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 	--local-setting   force use local setting
 	--user-setting    force use user setting
 	--reset-setting   reset current setting ( clear setting file)
-	
+
 ### Update liteide tools for support new Golang Version	
 
-	go get -u github.com/visualfc/gotools
-	go get -u github.com/visualfc/gocode
+	go install github.com/visualfc/gocode@latest
+	go install github.com/visualfc/gotools@latest
+	go install github.com/go-delve/delve/cmd/dlv@latest
+	go install github.com/fatih/gomodifytags@latest
 	
 	Windows/Linux: copy GOPATH/bin gotools and gocode to liteide/bin
 	MacOS: copy GOPATH/bin gotools and gocode to LiteIDE.app/Contents/MacOS	
