@@ -1,13 +1,4 @@
 /* ===add file: \liteide\share\liteide\liteapp\qss\vs-dark.qss ===*/
-/* ===FROM: https://gist.github.com/tupunco/fdb713ec9c6189a877e5eb003bd0457d ===*/
-
-/* === Shared === */
-QStackedWidget, QLabel, QPushButton, QRadioButton, QCheckBox, 
-QGroupBox, QStatusBar, QToolButton, QComboBox, QDialog, QListView,
-QTabBar, QMenu, QMenuBar, QWidget::window  {
-    background-color: rgb(238, 238, 242);
-    color: black;/* ===add file: \liteide\share\liteide\liteapp\qss\vs-dark.qss ===*/
-/* ===FROM: https://gist.github.com/tupunco/fdb713ec9c6189a877e5eb003bd0457d ===*/
 
 /* === Shared === */
 QStackedWidget, QLabel, QPushButton, QRadioButton, QCheckBox, 
@@ -346,11 +337,12 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
 }
 
 QScrollBar:up-arrow:vertical {
-    border: none;
-    width: 15px;
-    height: 15px;
+    /* border: none; */
+    width: 14px;
+    height: 14px;
     background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
+	border-bottom: 2px solid transparent;
 
 
         /*rel*/
@@ -361,11 +353,12 @@ QScrollBar:up-arrow:vertical {
 }
 
 QScrollBar:down-arrow:vertical {
-    border: none;
-    width: 15px;
-    height: 15px;
+    /* border: none; */
+    width: 14px;
+    height: 14px;
     background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
+	border-top: 2px solid transparent;
 
 
         /*rel*/
@@ -387,8 +380,7 @@ QScrollBar::handle:horizontal {
     background: rgb(194,195,201);
     min-width: 16px;
     border: 2px solid rgb(194,195,201);
-    width: 8px;
-    margin: 0 3px 0 3px;
+    margin: 3px 0 3px 0;
 }
 
 QScrollBar::handle:horizontal:hover {
@@ -416,10 +408,11 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
 
 QScrollBar:left-arrow:horizontal{
     /* border: none; */
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
+	border-right: 2px solid transparent;
 
 
         /*rel*/
@@ -431,10 +424,11 @@ QScrollBar:left-arrow:horizontal{
 
 QScrollBar:right-arrow:horizontal {
     /* border: none; */
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     background: rgb(238, 238, 242);
     border: 2px solid rgb(194,195,201);
+	border-left: 2px solid transparent;
 
 
         /*rel*/
@@ -535,525 +529,5 @@ QTreeView::branch:open:has-children:!has-siblings {
 /* === Customizations === */
 QFrame#infoLabel {
     border: 1px solid transparent;
-}
-
-    font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
-}
-
-/* === QWidget === */
-QWidget:window {
-}
-
-/* === WebView === */
-QTextBrowser, QWebView {
-    background-color: rgb(238, 238, 242);
-    selection-color: black; 
-    selection-background-color: rgb(0, 108, 190);
-}
-
-/* === QToolTip === */
-QToolTip {
-    background-color: rgb(238, 238, 242);
-    border: 1px solid rgb(118,118,118);
-    color: black;
-}
-
-/* === QPushButton === */
-QPushButton {
-    border: 1px solid rgb(172, 172,172);
-    padding: 4px;
-    min-width: 65px;
-    min-height: 12px;
-    background-color: rgb(236,236,240);
-}
-
-QPushButton:hover {
-    background-color: rgb(201, 222,245);
-    border-color: rgb(0, 108, 190);
-}
-
-QPushButton:pressed {
-    background-color: rgb(0,108,190);
-    border-color: rgb(0,108,190);
-    color: white;
-}
-
-QPushButton:disabled {
-    color: rgb(204,206,219);
-}
-
-/* === Checkable items === 
-QCheckBox::indicator, QRadioButton::indicator, QTreeView::indicator {
-    width: 16px;
-    height: 16px;
-    background-color: #2D2D30;
-    border: 1px solid #434346;
-}
-
-QRadioButton::indicator {
-    border-radius: 2px;
-}
-
-QCheckBox::indicator::checked, QRadioButton::indicator::checked, QTreeView::indicator::checked {
-    background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #CFCFCF, stop:1 #2D2D30);
-}
-
-QCheckBox::indicator:disabled, QRadioButton::indicator:disabled, QTreeView::indicator:disabled {
-    background-color: rgb(204,206,219);
-}
-
-QCheckBox::indicator::checked:disabled, QRadioButton::indicator::checked:disabled, QTreeView::indicator::checked:disabled {
-    background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #BBBBBB, stop:1 #444444);
-}
-*/
-
-/* === QComboBox === */
-QComboBox {
-    background-color: rgb(238, 238, 242);
-    border: 1px solid rgb(204,206,219);
-    color: black;
-    padding:1px 2px 1px 3px;
-}
-
-QComboBox:hover {
-    background-color: rgb(238, 238, 242);
-    border: 1px solid rgb(0,108,190);
-}
-
-QComboBox::drop-down {
-    background-color: rgb(245,245,245);
-    subcontrol-origin: padding;
-    subcontrol-position: top right;
-    border-left: 1px solid rgb(204, 206, 219);
-}
-
-QComboBox::drop-down:hover {
-    background-color: rgb(201,222,245);
-    border-left: 1px solid rgb(0,108,190);
-}
-
-QComboBox::down-arrow {
-    border: 1px solid transparent;
-    width: 15px;
-    height: 15px; 
-    background-color: transparent;
-    /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png"); 
-
-     /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png");  */
- }
-
-QComboBox::down-arrow:hover {
-    border: 1px solid transparent;
-    /* background: rgb(0,108,190); */
-}
-
-
-/* === QGroupBox === */
-QGroupBox {
-    border: 1px solid rgb(204, 206, 219);
-    margin-top: 2ex;
-}
-
-QGroupBox::title {
-    color: black;
-    subcontrol-origin: margin;
-    subcontrol-position: top left;
-    margin-left: 5px;
-}
-
-/* === QTabWidget === */
-QTabWidget::pane {
-    background: rgb(238, 238, 242);
-    border: transparent;
-    border-top: 2px solid rgb(0,108,190);
-    /* border: transparent; */
-}
-
-/* === QTabBar === */
-QTabBar {
-    background: rgb(238, 238, 242);
-    border-bottom: 2px solid transparent;
-}
-
-QTabBar::tab {
-    background: rgb(238, 238, 242);
-    border: 1px solid transparent;
-    /* border-bottom: 1px solid #007ACC; */
-    color: black;
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-QTabBar::tab:hover {
-    background-color: rgb(0,108,190);
-    /* border-bottom: 1px solid #007ACC; */
-    border-bottom: none;
-}
-
-QTabBar::tab:selected {
-    background-color: rgb(0,108,190);
-    border: 2px solid transparent;
-    border-top: none;
-    /* border-bottom: 1px solid #007ACC; */
-    color: white;
-}
-
-/* === QToolBar === */
-QToolBar {
-    background-color: rgb(238, 238, 242);
-    border: none;
-    padding: 1px;
-}
-
-QToolBar:handle {
-    background: transparent;
-    border-left: 1px solid rgb(204, 206, 219);
-}
-
-QToolBar::separator {
-    width: 6px;
-    background-color: transparent;
-}
-
-/* === QToolButton === */
-QToolButton {
-    background-color: rgb(236, 236, 240);
-    border: none;
-    margin: 1px;
-    padding: 3px;
-}
-
-QToolButton:hover {
-    background-color: rgb(236, 236, 240);
-    border: 1px solid rgb(0, 108, 190);
-}
-
-QToolButton[popupMode="1"] { /* only for MenuButtonPopup */
-    padding-right: 20px; /* make way for the popup button */
-}
-QToolButton[popupMode="2"] { /* only for InstantPopup */
-    padding-right: 10px; /* make way for the InstantPopup button */
-}
-
-QToolButton::menu-button {
-    border-left: none;
-    background: rgb(236, 236, 240);
-    width: 16px;
-}
-
-QToolButton::menu-button:hover {
-    border-left: 1px solid rgb(0,108,190);
-    background: rgb(236, 236, 240);
-    width: 16px;
-}
-
-QToolButton:pressed {
-    background-color: rgb(0,108,190);
-    color: white;
-}
-
-QToolButton:checked {
-    border: 1px solid rgb(0,108,190);
-    background-color: rgb(0,108,190);
-    color: white;
-}
-
-/* === QMenu === */
-QMenu {
-    background-color: rgb(246,246,246);
-    border: 1px solid rgb(204,206,219);
-    color: black;
-    padding: 2px;
-}
-
-QMenu::item {
-    padding: 2px 25px 4px 20px;
-    border: 1px solid transparent;
-}
-
-QMenu::item:disabled {
-    color: #656565;
-}
-
-QMenu::item:selected {
-    border-color: rgb(201,222,245);
-    background: rgb(201,222,245);
-}
-QMenu::item:checked {
-}
-
-QMenu::icon:checked {
-    background: #FFFFFF;
-}
-
-QMenu::separator {
-    height: 1px;
-    background: rgb(204,206,219);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-QMenu::indicator {
-    width: 13px;
-    height: 13px;
-}
-
-/* === QMenuBar === */
-QMenuBar {
-    background-color: rgb(238, 238, 242);
-    color: black;
-}
-
-QMenuBar::item {
-    background: transparent;
-    font-family: "微软雅黑;Segoe UI";
-}
-
-QMenuBar::item:disabled {
-    color: gray;
-}
-
-QMenuBar::item:selected {
-    background: rgb(201, 222, 245);
-}
-
-QMenuBar::item:pressed {
-    background: rgb(238, 238, 242);
-}
- 
-/* === QScrollBar:vertical === */
-QScrollBar:vertical {
-    background: rgb(238, 238, 242);
-    border: 1px solid rgb(204, 206, 219);
-    width: 16px;
-    margin: 16px 0 16px 0;
-}
-
-QScrollBar::handle:vertical {
-    background: rgb(194,195,201);
-    min-height: 16px;
-    /* width: 8px; */
-	margin: 0 3px;
-    border: 2px solid rgb(194,195,201);
-}
-
-QScrollBar::handle:vertical:hover {
-    background: rgb(104,104,104);
-	border: 2px solid rgb(104,104,104);
-}
-
-QScrollBar::add-line:vertical {
-    background: rgb(238, 238, 242);
-    height: 16px;
-    subcontrol-position: bottom;
-    subcontrol-origin: margin;
-}
-
-QScrollBar::sub-line:vertical {
-    background: rgb(238, 238, 242);
-    height: 16px;
-    subcontrol-position: top;
-    subcontrol-origin: margin;
-}
-
-QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
-    background: rgb(238, 238, 242);
-}
-
-QScrollBar:up-arrow:vertical {
-    border: none;
-    width: 15px;
-    height: 15px;
-    background: rgb(238, 238, 242);
-    border: 2px solid rgb(194,195,201);
-
-
-        /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronup.png"); 
-
-     /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronup.png");  */
-}
-
-QScrollBar:down-arrow:vertical {
-    border: none;
-    width: 15px;
-    height: 15px;
-    background: rgb(238, 238, 242);
-    border: 2px solid rgb(194,195,201);
-
-
-        /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png"); 
-
-     /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png");  */
-}
-
-/* === QScrollBar:horizontal === */
-QScrollBar:horizontal {
-    background: rgb(238, 238, 242);
-    border: 1px solid rgb(204, 206, 219);
-    height: 16px;
-    margin: 0 16px 0 16px;
-}
-
-QScrollBar::handle:horizontal {
-    background: rgb(194,195,201);
-	margin: 0 3px;
-    min-width: 16px;
-    border: 2px solid rgb(194,195,201);
-    width: 8px;
-}
-
-QScrollBar::handle:horizontal:hover {
-    background: rgb(104,104,104);
-	border: 2px solid rgb(104,104,104);
-}
-
-QScrollBar::add-line:horizontal {
-    background: rgb(238, 238, 242);
-    width: 16px;
-    subcontrol-position: right;
-    subcontrol-origin: margin;
-}
-
-QScrollBar::sub-line:horizontal {
-    background: rgb(238, 238, 242);
-    width: 16px;
-    subcontrol-position: left;
-    subcontrol-origin: margin;
-}
-
-QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
-    background: rgb(238, 238, 242);
-}
-
-QScrollBar:left-arrow:horizontal{
-    /* border: none; */
-    width: 15px;
-    height: 15px;
-    background: rgb(238, 238, 242);
-    border: 2px solid rgb(194,195,201);
-
-
-        /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronleft.png"); 
-
-     /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronleft.png");  */
-}
-
-QScrollBar:right-arrow:horizontal {
-    /* border: none; */
-    width: 15px;
-    height: 15px;
-    background: rgb(238, 238, 242);
-    border: 2px solid rgb(194,195,201);
-
-
-        /*rel*/
-     image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronright.png"); 
-
-     /*dedbug*/
-     /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronright.png");  */
-
-}
-
-/* =================== */
-QLineEdit, QListView, QTreeView, QTableView, QAbstractSpinBox {
-    background-color: rgb(238, 238, 242);
-    color: black;
-    border: 1px solid rgb(204, 206, 219);
-}
-
-QAbstractScrollArea, QLineEdit, QTextEdit, QAbstractSpinBox {
-    /* border-color: rgb(204,206,219); */
-    border: 1px solid rgb(204,206,219);
-
-}
-
-/* === QHeaderView === */
-QHeaderView {
-    background: rgb(245,245,245);
-}
-
-QHeaderView::section {
-    background: rgb(245,245,245);
-    border: 0;
-    color: black;
-    padding: 3px 0 3px 4px;
-}
-
-/* === QListView === */
-QListView::item:hover {
-    background: rgb(204,206,219);
-}
-
-QListView::item:selected {
-    background: rgb(238, 238, 242);
-    color: black;
-}
-
-/* === QTableView === */
-QTableView::item:hover {
-    background: rgb(0, 108, 190);
-}
-
-QTableView::item:hover {
-    background: rgb(204,206,219);;
-    color: black;
-}
-
-/* === QTreeView === */
-QTreeView::item {
-}
-
-QTreeView::item:hover {
-}
-
-QTreeView::item:selected {
-}
-
-QTreeView::branch {
-
-}
-
-QTreeView::branch:has-siblings:adjoins-item {
-
-}
-
-QTreeView::branch:has-siblings:!adjoins-item {
-
-}
-
-QTreeView::branch:closed:has-children:has-siblings {
-
-}
-
-QTreeView::branch:has-children:!has-siblings:closed {
-
-}
-
-QTreeView::branch:!has-children:!has-siblings:adjoins-item {
-
-}
-
-QTreeView::branch:open:has-children:has-siblings {
-
-}
-
-QTreeView::branch:open:has-children:!has-siblings {
-
-}
-
-/* === Customizations === */
-QFrame#infoLabel {
-    border: 1px solid transparent;
+	font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
 }

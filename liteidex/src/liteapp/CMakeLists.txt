@@ -139,13 +139,6 @@ if(APPLE)
     )
 endif()
 
-#if(WIN32)
-  #target_link_libraries(${TGT} PRIVATE
-  #      Ole32
-  #      shell32
-  #  )
-#endif()
-
 set_target_properties(${TGT} PROPERTIES 
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/bin" 
 )
