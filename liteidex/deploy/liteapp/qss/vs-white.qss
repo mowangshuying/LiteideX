@@ -210,14 +210,21 @@ QToolButton[popupMode="2"] { /* only for InstantPopup */
 }
 
 QToolButton::menu-button {
-    border-left: none;
+    border: none;
     background: rgb(236, 236, 240);
     width: 16px;
 }
 
 QToolButton::menu-button:hover {
-    border-left: 1px solid rgb(0,108,190);
+    border: 1px solid rgb(0, 108, 190);
+	border-left: 1px solid transparent;
     background: rgb(236, 236, 240);
+    width: 16px;
+}
+
+QToolButton::menu-button:pressed {
+    border: none;
+    background: rgb(0, 108, 190);
     width: 16px;
 }
 
