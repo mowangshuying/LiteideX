@@ -34,7 +34,7 @@
         <pixmap resource="liteapp.qrc">:/images/liteide-logo64.png</pixmap>
        </property>
        <property name="alignment">
-        <set>Qt::AlignCenter</set>
+        <set>Qt::AlignmentFlag::AlignCenter</set>
        </property>
       </widget>
      </item>
@@ -50,7 +50,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; font-style:italic;&quot;&gt;LiteIDE X&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -60,7 +60,7 @@ p, li { white-space: pre-wrap; }
           <string notr="true">Simple Cross Platform Open Source IDE</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -70,7 +70,7 @@ p, li { white-space: pre-wrap; }
           <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;2011-2023 (c) visualfc &amp;lt;visualfc@gmail.com&amp;gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -82,7 +82,7 @@ p, li { white-space: pre-wrap; }
         <number>0</number>
        </property>
        <property name="sizeConstraint">
-        <enum>QLayout::SetMinimumSize</enum>
+        <enum>QLayout::SizeConstraint::SetMinimumSize</enum>
        </property>
        <item>
         <widget class="QLabel" name="label_11">
@@ -109,7 +109,7 @@ p, li { white-space: pre-wrap; }
           <pixmap resource="liteapp.qrc">:/images/logo/li.png</pixmap>
          </property>
          <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
          </property>
         </widget>
        </item>
@@ -122,7 +122,7 @@ p, li { white-space: pre-wrap; }
           <pixmap resource="liteapp.qrc">:/images/logo/dui.png</pixmap>
          </property>
          <property name="alignment">
-          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+          <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft</set>
          </property>
         </widget>
        </item>
@@ -149,7 +149,7 @@ p, li { white-space: pre-wrap; }
       </sizepolicy>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="tab_5">
       <attribute name="title">
@@ -229,7 +229,7 @@ p, li { white-space: pre-wrap; }
              <string notr="true">visualfc@gmail.com</string>
             </property>
             <property name="textFormat">
-             <enum>Qt::AutoText</enum>
+             <enum>Qt::TextFormat::AutoText</enum>
             </property>
             <property name="openExternalLinks">
              <bool>false</bool>
@@ -280,7 +280,7 @@ p, li { white-space: pre-wrap; }
        <item>
         <spacer name="verticalSpacer_2">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -383,7 +383,7 @@ p, li { white-space: pre-wrap; }
        <item>
         <spacer name="verticalSpacer_3">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -489,7 +489,7 @@ p, li { white-space: pre-wrap; }
              <string notr="true">Helge Plaschke &lt;github.com/HelgePlaschke&gt;</string>
             </property>
             <property name="textFormat">
-             <enum>Qt::AutoText</enum>
+             <enum>Qt::TextFormat::AutoText</enum>
             </property>
            </widget>
           </item>
@@ -527,7 +527,7 @@ p, li { white-space: pre-wrap; }
        <item>
         <spacer name="verticalSpacer_5">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -546,6 +546,9 @@ p, li { white-space: pre-wrap; }
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QTextBrowser" name="textBrowser">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="html">
           <string notr="true">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -553,23 +556,8 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;All contributors that provided patches.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Go Project &amp;lt;http://golang.org&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Qt Project &amp;lt;https://qt-project.org&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The QtCreator Project &amp;lt;https://qt-project.org&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Kate Project &amp;lt;http://kate-editor.org&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The GNU Software Foundation &amp;lt;https://www.gnu.org&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The CommonMark cmark library &amp;lt;https://github.com/commonmark/cmark&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Sundown project &amp;lt;https://github.com/vmg/sundown&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Markdown CSS files from Mou &amp;lt;http://mouapp.com&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Gocode tool &amp;lt;https://github.com/nsf/gocode&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The libvterm project &amp;lt;https://github.com/neovim/libvterm&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The ptyqt project &amp;lt;https://github.com/kafeg/ptyqt&amp;gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The LiteIDE logo designed by BESD &amp;lt;http://www.besdlab.cn&amp;gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Last, but not least, the open-source community.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;All contributors that provided patches.&lt;br /&gt;&lt;br /&gt;The Go Project &lt;a href=&quot;http://golang.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;http://golang.org&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The Qt Project &lt;a href=&quot;https://qt-project.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://qt-project.org&amp;gt;&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The QtCreator Project &lt;a href=&quot;https://qt-project.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://qt-project.org&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The Kate Project &lt;a href=&quot;http://kate-editor.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;http://kate-editor.org&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The GNU Software Foundation &lt;a href=&quot;https://www.gnu.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://www.gnu.org&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The CommonMark cmark library &lt;a href=&quot;https://github.com/commonmark/cmark&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://github.com/commonmark/cmark&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The Sundown project &lt;a href=&quot;https://github.com/vmg/sundown&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://github.com/vmg/sundown&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The Markdown CSS files from Mou &lt;a href=&quot;http://mouapp.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;http://mouapp.com&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The Gocode tool &lt;a href=&quot;https://github.com/nsf/gocode&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://github.com/nsf/gocode&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The libvterm project &lt;a href=&quot;https://github.com/neovim/libvterm&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://github.com/neovim/libvterm&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The ptyqt project &lt;a href=&quot;https://github.com/kafeg/ptyqt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;https://github.com/kafeg/ptyqt&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;The LiteIDE logo designed by BESD &lt;a href=&quot;http://www.besdlab.cn&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#004275;&quot;&gt;http://www.besdlab.cn&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Last, but not least, the open-source community.&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -589,14 +577,8 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (c) 2011-2022 LiteIDE. All rights reserved.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;In addition, as a special exception, that plugins developed for LiteIDE, are allowed to remain closed sourced and can be distributed under any license .These rights are included in the file LGPL_EXCEPTION.txt in this package.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Copyright (c) 2011-2022 LiteIDE. All rights reserved.&lt;br /&gt;This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.&lt;br /&gt;&lt;br /&gt;This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.&lt;br /&gt;&lt;br /&gt;In addition, as a special exception, that plugins developed for LiteIDE, are allowed to remain closed sourced and can be distributed under any license .These rights are included in the file LGPL_EXCEPTION.txt in this package. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -609,7 +591,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <item>
       <spacer name="horizontalSpacer">
        <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+        <enum>Qt::Orientation::Horizontal</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
