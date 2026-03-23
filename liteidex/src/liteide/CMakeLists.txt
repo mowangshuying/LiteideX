@@ -29,3 +29,7 @@ endif()
 set_target_properties(${TGT} PROPERTIES 
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/bin" 
 )
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE true)
+endif()
