@@ -1,0 +1,577 @@
+/* ===add file: \liteide\share\liteide\liteapp\qss\vs-dark.qss ===*/
+
+/* === Shared === */
+QStackedWidget,
+QLabel,
+QPushButton,
+QRadioButton,
+QCheckBox,
+QGroupBox,
+QStatusBar,
+QToolButton,
+QComboBox,
+QDialog,
+QListView,
+QTabBar,
+QMenu,
+QMenuBar,
+QWidget,
+QScrollArea,
+QWidget::window {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
+}
+
+/* === QWidget === */
+QWidget:window {}
+
+/* === WebView === */
+QTextBrowser,
+QWebView {
+    background-color: rgb(31, 31, 31);
+    selection-color: black;
+	color:white;
+    selection-background-color: rgb(64,53,130);
+}
+
+/* === QToolTip === */
+QToolTip {
+    background-color: rgb(31, 31, 31);
+    border: 1px solid rgb(118, 118, 118);
+    color: white;
+}
+
+/* === QPushButton === */
+QPushButton {
+    border: 1px solid rgb(172, 172, 172);
+    padding: 4px;
+    min-width: 65px;
+    min-height: 12px;
+    background-color: rgb(236, 236, 240);
+}
+
+QPushButton:hover {
+    background-color: rgb(201, 222, 245);
+    border-color: rgb(64,53,130);
+}
+
+QPushButton:pressed {
+    background-color: rgb(64,53,130);
+    border-color: rgb(64,53,130);
+    color: white;
+}
+
+QPushButton:disabled {
+    color: rgb(61,61,61);
+}
+
+/* === Checkable items === 
+QCheckBox::indicator, QRadioButton::indicator, QTreeView::indicator {
+    width: 16px;
+    height: 16px;
+    background-color: #2D2D30;
+    border: 1px solid #434346;
+}
+
+QRadioButton::indicator {
+    border-radius: 2px;
+}
+
+QCheckBox::indicator::checked, QRadioButton::indicator::checked, QTreeView::indicator::checked {
+    background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #CFCFCF, stop:1 #2D2D30);
+}
+
+QCheckBox::indicator:disabled, QRadioButton::indicator:disabled, QTreeView::indicator:disabled {
+    background-color: rgb(204,206,219);
+}
+
+QCheckBox::indicator::checked:disabled, QRadioButton::indicator::checked:disabled, QTreeView::indicator::checked:disabled {
+    background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #BBBBBB, stop:1 #444444);
+}
+*/
+
+/* === QComboBox === */
+QComboBox {
+    background-color: rgb(31, 31, 31);
+    border: 1px solid rgb(61,61,61);
+    color: white;
+    padding: 1px 2px 1px 3px;
+}
+
+QComboBox:hover {
+    background-color: rgb(31, 31, 31);
+    border: 1px solid rgb(64,53,130);
+}
+
+QComboBox::drop-down {
+    background-color: rgb(31, 31 31);
+
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    border-left: 1px solid rgb(61,61,61);
+}
+
+QComboBox::drop-down:hover {
+    background-color: rgb(31, 31 31);
+    border-left: 1px solid rgb(61,61,61);
+}
+
+QComboBox::down-arrow {
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    /*rel*/
+    image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");
+
+    /*dedbug*/
+    /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");  */
+}
+
+QComboBox::down-arrow:hover {
+    border: 1px solid transparent;
+    /* background: rgb(0,108,190); */
+}
+
+
+/* === QGroupBox === */
+QGroupBox {
+    border: 1px solid rgb(61,61,61);
+    margin-top: 2ex;
+}
+
+QGroupBox::title {
+    color: white;
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    margin-left: 5px;
+}
+
+/* === QTabWidget === */
+QTabWidget::pane {
+    background: rgb(31, 31, 31);
+    border: transparent;
+    border-top: 2px solid rgb(64,53,130);
+    /* border: transparent; */
+}
+
+/* === QTabBar === */
+QTabBar {
+    background: rgb(31, 31, 31);
+    border-bottom: 2px solid transparent;
+}
+
+QTabBar::tab {
+    background: rgb(31, 31, 31);
+    border: 1px solid transparent;
+    /* border-bottom: 1px solid #007ACC; */
+    color: white;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+QTabBar::tab:hover {
+    background-color: rgb(64,53,130);
+    /* border-bottom: 1px solid #007ACC; */
+    border-bottom: none;
+}
+
+QTabBar::tab:selected {
+    background-color: rgb(64,53,130);
+    border: 2px solid transparent;
+    border-top: none;
+    /* border-bottom: 1px solid #007ACC; */
+    color: white;
+}
+
+/* === QToolBar === */
+QToolBar {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    padding: 1px;
+}
+
+QToolBar:handle {
+    background: transparent;
+    border-left: 1px solid rgb(61,61,61);
+}
+
+QToolBar::separator {
+    width: 6px;
+    background-color: transparent;
+}
+
+/* === QToolButton === */
+QToolButton {
+    background-color: rgb(31, 31, 31);
+    border: none;
+    margin: 1px;
+    padding: 3px;
+}
+
+QToolButton:hover {
+    background-color: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+}
+
+QToolButton[popupMode="1"] {
+    /* only for MenuButtonPopup */
+    padding-right: 20px;
+    /* make way for the popup button */
+}
+
+QToolButton[popupMode="2"] {
+    /* only for InstantPopup */
+    padding-right: 10px;
+    /* make way for the InstantPopup button */
+}
+
+QToolButton::menu-button {
+    border: none;
+    background: rgb(31, 31, 31);
+    width: 16px;
+}
+
+QToolButton::menu-button:hover {
+    border: 1px solid rgb(61, 61, 61);
+    border-left: 1px solid transparent;
+    background: rgb(61, 61, 61);
+    width: 16px;
+}
+
+QToolButton::menu-button:pressed {
+    border: none;
+    background: rgb(61, 61, 61);
+    width: 16px;
+}
+
+QToolButton:pressed {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+QToolButton:checked {
+    border: 1px solid rgb(61, 61, 61);
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+/* === QMenu === */
+QMenu {
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgb(61,61,61);
+    color: white;
+    padding: 2px;
+}
+
+QMenu::item {
+    padding: 2px 25px 4px 20px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:disabled {
+    color: #656565;
+}
+
+QMenu::item:selected {
+    border-color: rgb(201, 222, 245);
+    background: rgb(201, 222, 245);
+}
+
+QMenu::item:checked {}
+
+QMenu::icon:checked {
+    background: #FFFFFF;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgb(61,61,61);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+QMenu::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+/* === QMenuBar === */
+QMenuBar {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+QMenuBar::item {
+    background: transparent;
+    font-family: "微软雅黑;Segoe UI";
+}
+
+QMenuBar::item:disabled {
+    color: gray;
+}
+
+QMenuBar::item:selected {
+    background: rgb(201, 222, 245);
+}
+
+QMenuBar::item:pressed {
+    background: rgb(31, 31, 31);
+}
+
+/* === QScrollBar:vertical === */
+QScrollBar:vertical {
+    background: rgb(31, 31, 31);
+    border: 1px solid rgb(61,61,61);
+    width: 16px;
+    margin: 16px 0 16px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: rgb(77, 77, 77);
+    min-height: 16px;
+    /* width: 8px; */
+    margin: 0 3px 0 3px;
+    border: 2px solid rgb(77, 77, 77);
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgb(153, 153, 153);
+    border: 2px solid rgb(153, 153, 153);
+}
+
+QScrollBar::add-line:vertical {
+    background: rgb(31, 31, 31);
+    height: 16px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    background: rgb(31, 31, 31);
+    height: 16px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: rgb(31, 31, 31);
+}
+
+QScrollBar:up-arrow:vertical {
+    /* border: none; */
+    width: 14px;
+    height: 14px;
+    background: rgb(31, 31, 31);
+    border: 2px solid rgb(77, 77, 77);
+    border-bottom: 2px solid transparent;
+
+
+    /*rel*/
+    image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronupdark.png");
+
+    /*dedbug*/
+    /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronup.png");  */
+}
+
+QScrollBar:down-arrow:vertical {
+    /* border: none; */
+    width: 14px;
+    height: 14px;
+    background: rgb(31, 31, 31);
+    border: 2px solid rgb(77, 77, 77);
+    border-top: 2px solid transparent;
+
+
+    /*rel*/
+    image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");
+
+    /*dedbug*/
+    /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevrondown.png");  */
+}
+
+/* === QScrollBar:horizontal === */
+QScrollBar:horizontal {
+    background: rgb(31, 31, 31);
+    border: 1px solid rgb(61,61,61);
+    height: 16px;
+    margin: 0 16px 0 16px;
+}
+
+QScrollBar::handle:horizontal {
+    background: rgb(77, 77, 77);
+    min-width: 16px;
+    border: 2px solid rgb(77, 77, 77);
+    margin: 3px 0 3px 0;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: rgb(153, 153, 153);
+    border: 2px solid rgb(153, 153, 153);
+}
+
+QScrollBar::add-line:horizontal {
+    background: rgb(31, 31, 31);
+    width: 16px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    background: rgb(31, 31, 31);
+    width: 16px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: rgb(31, 31, 31);
+}
+
+QScrollBar:left-arrow:horizontal {
+    /* border: none; */
+    width: 14px;
+    height: 14px;
+    background: rgb(31, 31, 31);
+    border: 2px solid rgb(77, 77, 77);
+    border-right: 2px solid transparent;
+
+
+    /*rel*/
+    image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronleftdark.png");
+
+    /*dedbug*/
+    /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronleft.png");  */
+}
+
+QScrollBar:right-arrow:horizontal {
+    /* border: none; */
+    width: 14px;
+    height: 14px;
+    background: rgb(31, 31, 31);
+    border: 2px solid rgb(77, 77, 77);
+    border-left: 2px solid transparent;
+
+
+    /*rel*/
+    image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronrightdark.png");
+
+    /*dedbug*/
+    /* image: url("../../liteide/share/liteide/liteapp/qrc/default/liteapp/images/chevronright.png");  */
+
+}
+
+/* =================== */
+QLineEdit,
+QListView,
+QTreeView,
+QTableView,
+QAbstractSpinBox {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: 1px solid rgb(61,61,61);
+}
+
+QAbstractScrollArea,
+QLineEdit,
+QTextEdit,
+QAbstractSpinBox {
+    /* border-color: rgb(204,206,219); */
+    border: 1px solid rgb(61,61,61);
+
+}
+
+/* === QHeaderView === */
+QHeaderView {
+    background: rgb(31, 31, 31);
+}
+
+QHeaderView::section {
+    background: rgb(31, 31, 31);
+    border: 0;
+    color: white;
+    padding: 3px 0 3px 4px;
+}
+
+/* === QListView === */
+QListView {
+	background-color: rgb(31, 31, 31);
+	outline: none;
+}
+
+QListView::item {
+	border: none;
+	outline: none;
+}
+
+QListView::item:hover {
+    background: rgb(31,31,31);
+}
+
+QListView::item:selected {
+    background: rgb(61, 61, 61);
+    color: white;
+}
+
+/* === QTableView === */
+QTableView::item:hover {
+    background: rgb(64,53,130);
+}
+
+QTableView::item:hover {
+    background: rgb(61,61,61);
+    color: white;
+}
+
+/* === QTreeView === */
+QTreeView {
+	background-color: rgb(31, 31, 31);
+	outline: none;
+}
+
+QTreeView::item {
+	border: none;
+	background-color: transparent;
+}
+
+QTreeView::item::focus {
+	outline: none;
+}
+
+QTreeView::item:hover {
+}
+
+QTreeView::item:selected {
+	outline: none;
+}
+
+QTreeView::branch {
+	background-color: transparent;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {}
+
+QTreeView::branch:has-siblings: !adjoins-item {}
+
+QTreeView::branch:closed:has-children:has-siblings {}
+
+QTreeView::branch:has-children: !has-siblings:closed {}
+
+QTreeView::branch: !has-children: !has-siblings:adjoins-item {}
+
+QTreeView::branch:open:has-children:has-siblings {}
+
+QTreeView::branch:open:has-children: !has-siblings {}
+
+/* === Customizations === */
+QFrame#infoLabel {
+    border: 1px solid transparent;
+    font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
+}
