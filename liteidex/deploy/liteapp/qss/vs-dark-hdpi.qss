@@ -345,7 +345,7 @@ QScrollBar:up-arrow:vertical {
     width: 4ex;
     height: 4ex;
     background: #3E3E42;
-	image: ur1("../share/liteide/liteapp/qrc/default/liteapp/images/chevronupdark.png");
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronupdark.png");
 }
 
 QScrollBar:down-arrow:vertical {
