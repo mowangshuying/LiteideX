@@ -3,7 +3,7 @@
 /* === Shared === */
 QStackedWidget, QLabel, QPushButton, QRadioButton, QCheckBox, 
 QGroupBox, QStatusBar, QToolButton, QComboBox, QDialog, QListView,
-QTabBar, QMenu, QMenuBar, QWidget::window  {
+QTabBar, QMenu, QMenuBar, QWidget::window, QWidget {
     background-color: rgb(238, 238, 242);
     color: black;
     font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
