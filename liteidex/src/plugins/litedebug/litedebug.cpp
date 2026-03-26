@@ -513,6 +513,7 @@ void LiteDebug::continueRun()
     if (!m_debugger || !m_debugger->isRunning()) {
         return;
     }
+    clearLastLine();
     m_debugger->continueRun();
 }
 
