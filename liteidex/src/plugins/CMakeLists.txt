@@ -25,3 +25,5 @@ add_subdirectory(fakevimedit)
 add_subdirectory(bookmarks)
 add_subdirectory(imageeditor)
 add_subdirectory(terminal)
+
+add_subdirectory(helloliteide)
