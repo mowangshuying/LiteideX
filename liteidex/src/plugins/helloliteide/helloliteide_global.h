@@ -1,0 +1,7 @@
+#include <QtCore/qglobal.h>
+
+#if defined(HELLOLITEIDE_LIBRARY)
+#  define HELLOLITEIDESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define HELLOLITEIDESHARED_EXPORT Q_DECL_IMPORT
+#endif
