@@ -95,14 +95,17 @@ bool JsonEdit::verifyJson(LiteApi::IEditor *editor)
     QJson::Parser parser;
     bool ok = true;
     parser.parse(ed->utf8Data(),&ok);
+    ed->clearAllNavigateMark(LiteApi::EditorNavigateError, "Json");
+
     if (!ok) {
         ed->setNavigateHead(LiteApi::EditorNavigateError,"json verify error");
         if (parser.errorLine() > 0) {
-            ed->insertNavigateMark(parser.errorLine()-1,LiteApi::EditorNavigateError,parser.errorString(),"Json");
+            QString msg = QString::asprintf("Line %d : %s",parser.errorLine(),parser.errorString().toStdString().c_str());
+            ed->insertNavigateMark(parser.errorLine()-1,LiteApi::EditorNavigateError,msg,"Json");
         }
     } else {
         ed->setNavigateHead(LiteApi::EditorNavigateNormal,"json verify success");
-        ed->clearAllNavigateMark(LiteApi::EditorNavigateError,"Json");
+        //ed->clearAllNavigateMark(LiteApi::EditorNavigateError,"Json");
     }
     return ok;
 }
@@ -238,6 +241,9 @@ void JsonEdit::editorCreated(LiteApi::IEditor *editor)
     }
     ed->setLineWrap(true);
     ed->setEnableAutoIndentAction(false);
+
+    /// verifyJson
+    //verifyJson(editor);
 
     QMenu *menu = LiteApi::getContextMenu(editor);
     if (menu) {
