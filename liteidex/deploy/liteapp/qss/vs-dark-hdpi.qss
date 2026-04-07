@@ -464,32 +464,12 @@ QTreeView::branch {
 
 }
 
-QTreeView::branch:has-siblings:adjoins-item {
-
+QTreeView::branch:closed:has-children {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronrightdark.png");
 }
 
-QTreeView::branch:has-siblings:!adjoins-item {
-
-}
-
-QTreeView::branch:closed:has-children:has-siblings {
-
-}
-
-QTreeView::branch:has-children:!has-siblings:closed {
-
-}
-
-QTreeView::branch:!has-children:!has-siblings:adjoins-item {
-
-}
-
-QTreeView::branch:open:has-children:has-siblings {
-
-}
-
-QTreeView::branch:open:has-children:!has-siblings {
-
+QTreeView::branch:open:has-children {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");
 }
 
 /* === Customizations === */
