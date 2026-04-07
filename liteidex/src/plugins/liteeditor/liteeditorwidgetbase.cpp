@@ -4061,7 +4061,7 @@ void LiteEditorWidgetBase::paintEvent(QPaintEvent *e)
             int k = line.cursorToX(pos)/averageCharWidth;
 
             painter.save();
-            painter.setPen(QPen(m_indentLineForeground,1,Qt::DotLine));
+            painter.setPen(QPen(m_indentLineForeground,1,Qt::DashLine));
             for (int i = 0; i < k; i+=m_nTabSize) {
                 int xoff = charOffsetX+averageCharWidth*i;
                 painter.drawLine(xoff,kt,xoff,kb);

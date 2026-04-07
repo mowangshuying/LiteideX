@@ -62,27 +62,7 @@ WelcomeBrowser::WelcomeBrowser(LiteApi::IApplication *app, QObject *parent)
 
     mainLayout->addWidget(m_browser->widget());
 
-    //QPushButton *newFile = new QPushButton(tr("New"));
-    //QPushButton *openFile = new QPushButton(tr("Open"));
-    //QPushButton *openFolder = new QPushButton(tr("Open Folder"));
-    //QPushButton *options = new QPushButton(tr("Options"));
-
-    //QHBoxLayout *layout = new QHBoxLayout;
-    //layout->addWidget(newFile);
-    //layout->addWidget(openFile);
-    //layout->addWidget(openFolder);
-    //layout->addStretch(1);
-    //layout->addWidget(options);
-
-    //mainLayout->addLayout(layout);
-
     m_widget->setLayout(mainLayout);
-
-    //connect(newFile,SIGNAL(clicked()),m_liteApp->fileManager(),SLOT(newFile()));
-    //connect(openFile,SIGNAL(clicked()),m_liteApp->fileManager(),SLOT(openFiles()));
-    //connect(openFolder,SIGNAL(clicked()),this,SLOT(openFolder()));
-
-    //connect(options,SIGNAL(clicked()),m_liteApp->optionManager(),SLOT(exec()));
     connect(m_browser,SIGNAL(requestUrl(QUrl)),this,SLOT(openUrl(QUrl)));
     connect(m_liteApp->recentManager(),SIGNAL(recentNameListChanged(QString)),this,SLOT(loadData()));
     connect(m_browser,SIGNAL(linkHovered(QUrl)),this,SLOT(highlightedUrl(QUrl)));

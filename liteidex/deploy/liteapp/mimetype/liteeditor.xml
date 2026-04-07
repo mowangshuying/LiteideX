@@ -32,7 +32,7 @@
     <glob pattern="*.py"/>
     <glob pattern="*.wpy"/>
   </mime-type>
-  <mime-type type="text/html" codec="utf-8" package="html" tabtospace="true" tabwidth="2">
+  <mime-type type="text/html" codec="utf-8" package="html" tabtospace="true" tabwidth="4">
     <sub-class-of type="text/plain"/>
     <comment>HTML Source File</comment>
     <glob pattern="*.htm"/>
@@ -40,7 +40,7 @@
     <glob pattern="*.shtml"/>
     <glob pattern="*.shtm"/>
   </mime-type>
-  <mime-type type="text/gohtml" codec="utf-8" package="gohtml" tabtospace="true" tabwidth="2">
+  <mime-type type="text/gohtml" codec="utf-8" package="gohtml" tabtospace="true" tabwidth="4">
     <sub-class-of type="text/html"/>
     <comment>Go HTML Template File</comment>
     <glob pattern="*.gohtml"/>
@@ -49,7 +49,7 @@
     <glob pattern="*.tpl"/>
     <glob pattern="*.tmpl"/>
   </mime-type>
-  <mime-type type="text/xml" codec="utf-8" package="xml" tabtospace="true" tabwidth="2">
+  <mime-type type="text/xml" codec="utf-8" package="xml" tabtospace="true" tabwidth="4">
     <sub-class-of type="text/plain"/>
     <comment>XML Source File</comment>
     <glob pattern="*.docbook"/>
@@ -77,7 +77,7 @@
     <glob pattern="*.hcc"/>
     <glob pattern="*.moc"/>
   </mime-type>
-  <mime-type type="text/yaml" codec="utf-8" package="yaml" tabtospace="true" tabwidth="2">
+  <mime-type type="text/yaml" codec="utf-8" package="yaml" tabtospace="true" tabwidth="4">
     <sub-class-of type="text/plain"/>
     <comment>YAML Source File</comment>
     <glob pattern="*.yaml"/>
