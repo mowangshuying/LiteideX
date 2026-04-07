@@ -65,20 +65,52 @@ QCheckBox::indicator, QRadioButton::indicator, QTreeView::indicator {
     border: 1px solid #434346;
 }
 
+
 QRadioButton::indicator {
     border-radius: 2px;
 }
 
-QCheckBox::indicator::checked, QRadioButton::indicator::checked, QTreeView::indicator::checked {
+QRadioButton::indicator::checked {
     background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.5, fy:0.5, radius:1.0, stop:0.25 #BBBBBB, stop:0.3 #444444);
 }
 
-QCheckBox::indicator:disabled, QRadioButton::indicator:disabled, QTreeView::indicator:disabled {
+
+QCheckBox::indicator::checked {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
+}
+
+QTreeView::indicator::checked {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
+}
+
+
+
+QRadioButton::indicator:disabled {
     background-color: #333333;
 }
 
-QCheckBox::indicator::checked:disabled, QRadioButton::indicator::checked:disabled, QTreeView::indicator::checked:disabled {
+QCheckBox::indicator::disabled {
+	background-color: #333333;
+}
+
+QTreeView::indicator:disabled {
+    background-color: #333333;
+}
+
+
+QRadioButton::indicator::checked:disabled{
     background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #BBBBBB, stop:1 #444444);
+}
+
+QCheckBox::indicator::checked:disabled {
+	background-color: #333333;
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
+}
+
+
+QTreeView::indicator::checked:disabled {
+    background-color: #333333;
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
 }
 
 /* === QComboBox === */
