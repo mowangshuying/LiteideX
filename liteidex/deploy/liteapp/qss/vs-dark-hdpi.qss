@@ -36,8 +36,6 @@ QToolTip {
 QPushButton {
     border: 1px solid #333333;
     padding: 1ex 4ex;
-    min-width: 12ex;
-    min-height: 4ex;
     background-color: #333333;
     margin: 0 2px;
 }

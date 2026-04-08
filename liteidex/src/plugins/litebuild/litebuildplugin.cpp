@@ -82,6 +82,7 @@ bool LiteBuildPlugin::load(LiteApi::IApplication *app)
     hbox->setMargin(1);
     m_executeWidget->setLayout(hbox);
     m_commandCombo = new QComboBox;
+    m_commandCombo->setFixedWidth(360);
     m_commandCombo->setEditable(true);
     m_commandCombo->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
     QCompleter *c = m_commandCombo->completer();
@@ -92,19 +93,26 @@ bool LiteBuildPlugin::load(LiteApi::IApplication *app)
     m_commandCombo->installEventFilter(this);
 
     m_workLabel = new ElidedLabel("");
-    m_workLabel->setElideMode(Qt::ElideMiddle);
+    //m_workLabel->setElideMode(Qt::ElideMiddle);
 
 
     QPushButton *close = new QPushButton();
+    //close->setFixedSize(20, 20);
+    close->setIconSize(QSize(16, 16));
+    close->setFixedSize(20, 20);
     close->setIcon(QIcon("icon:images/close.png"));
-    close->setIconSize(QSize(16,16));
-    close->setFlat(true);
-    close->setToolTip(tr("Close"));
+    //close->setStyleSheet("QPushButton{border:none;}");
+    //close->setFlat(true);
+    //close->setToolTip(tr("Close"));
+    //close->setFixedSize(20, 20);
+    //close->setFixedHeight(20);
+    //close->setFixedWidth(20);
 
     connect(close,SIGNAL(clicked()),m_executeWidget,SLOT(hide()));
     hbox->addWidget(new QLabel(tr("Execute:")));
-    hbox->addWidget(m_commandCombo,1);
+    hbox->addWidget(m_commandCombo);
     hbox->addWidget(m_workLabel,1);
+    hbox->addStretch();
     hbox->addWidget(close);
     layout->addWidget(m_executeWidget);
 

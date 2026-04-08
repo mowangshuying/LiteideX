@@ -6,7 +6,6 @@ QGroupBox, QStatusBar, QToolButton, QComboBox, QDialog, QListView,
 QTabBar, QMenu, QMenuBar, QWidget::window, QWidget {
     background-color: rgb(238, 238, 242);
     color: black;
-    font: 14px 'Segoe UI', 'Microsoft YaHei', 'PingFang SC';
 }
 
 /* === QWidget === */
@@ -31,8 +30,6 @@ QToolTip {
 QPushButton {
     border: 1px solid rgb(172, 172,172);
     padding: 4px;
-    min-width: 65px;
-    min-height: 12px;
     background-color: rgb(236,236,240);
 }
 
