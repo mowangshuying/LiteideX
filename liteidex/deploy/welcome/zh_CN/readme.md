@@ -7,8 +7,8 @@ LiteIDE X
 
 _LiteIDE 是一个轻量级的开源跨平台 Go语言 IDE._
 
-* 版本: X38.4
-* 作者: [七叶 (visualfc)](mailto:visualfc@gmail.com)
+* 版本: X38.5(beta)
+* 作者: [mowangshuying]()
 
 ### 功能
 

@@ -3,6 +3,18 @@
 ## LiteIDE X Version
   LiteIDE is a simple, open source, cross-platform Go IDE.
 
+### 2026.4.9 Ver X38.5
+* LiteIDE
+    * support Go1.26
+    * optimize vs-dark-hdpi.qss & vs-white.qss.
+* LiteBuild
+    * optimize build menu
+* LiteDebug
+    * clearLastLine before continue Run.
+* LiteEditor
+    * use Qt::DashLine replace Qt::DotLine while draw indent type;
+    * set tabwidth=4 at liteeditor.xml
+  
 ### 2025.5.20 Ver X38.4
 * LiteIDE
 	* support Go1.24
