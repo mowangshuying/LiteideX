@@ -47,7 +47,7 @@ ImageEditor::ImageEditor(LiteApi::IApplication *app)
     : m_liteApp(app)
 {
     m_file = new ImageEditorFile(m_liteApp,this);
-    m_imageWidget = new ImageEditorWidget;
+    m_imageWidget = new ImageEditorWidget(m_liteApp);
     m_widget = new QWidget;
     m_toolBar = new QToolBar;
     m_mvToolBar = new QToolBar;

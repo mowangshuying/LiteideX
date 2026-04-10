@@ -25,6 +25,9 @@
 #define IMAGEEDITORWIDGET_H
 
 #include <QGraphicsView>
+#include <QDropEvent>
+#include <QDragEnterEvent>
+#include "liteapi/liteapi.h"
 
 class QGestureEvent;
 class QPinchGesture;
@@ -33,7 +36,7 @@ class ImageEditorWidget : public QGraphicsView
 {
     Q_OBJECT
 public:
-    ImageEditorWidget();
+    ImageEditorWidget(LiteApi::IApplication* app);
     virtual ~ImageEditorWidget();
     void setImageItem(QGraphicsItem *item);
     void doScale(qreal factor);
@@ -52,9 +55,14 @@ protected:
     bool gestureEvent(QGestureEvent *event);
     void pinchTriggered(QPinchGesture *gesture);
     void emitScaleFactor();
+
+    virtual void dragEnterEvent(QDragEnterEvent* event);
+    void dragMoveEvent(QDragMoveEvent* event);
+    virtual void dropEvent(QDropEvent* event);
 protected:
     QGraphicsItem *m_imageItem;
     double m_scaleFactor;
+    LiteApi::IApplication *m_liteApp;
 };
 
 #endif // IMAGEEDITORWIDGET_H

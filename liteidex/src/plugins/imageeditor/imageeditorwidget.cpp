@@ -31,6 +31,7 @@
 #include <QScrollBar>
 #include <math.h>
 #include <QDebug>
+#include <QMimeData>
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
      #define _CRTDBG_MAP_ALLOC
@@ -41,7 +42,8 @@
 #endif
 //lite_memory_check_end
 
-ImageEditorWidget::ImageEditorWidget()
+ImageEditorWidget::ImageEditorWidget(LiteApi::IApplication *app)
+    : m_liteApp(app)
 {
     setScene(new QGraphicsScene(this));
     setTransformationAnchor(AnchorUnderMouse);
@@ -49,6 +51,8 @@ ImageEditorWidget::ImageEditorWidget()
     setViewportUpdateMode(FullViewportUpdate);
     setFrameShape(QFrame::NoFrame);
     setRenderHint(QPainter::SmoothPixmapTransform);
+
+    setAcceptDrops(true);
 
     QPixmap tilePixmap(20, 20);
     tilePixmap.fill(QColor(229,229,229));
@@ -210,5 +214,43 @@ void ImageEditorWidget::emitScaleFactor()
 qreal ImageEditorWidget::scaleFactor() const
 {
     return transform().m11();
+}
+
+void ImageEditorWidget::dragEnterEvent(QDragEnterEvent* event)
+{
+    if (event->mimeData()->hasUrls()) {
+        event->acceptProposedAction();
+    }
+}
+
+void ImageEditorWidget::dragMoveEvent(QDragMoveEvent* event)
+{
+    event->acceptProposedAction();
+}
+
+void ImageEditorWidget::dropEvent(QDropEvent* event)
+{
+    QList<QUrl> urls = event->mimeData()->urls();
+    if (urls.isEmpty()) {
+        return;
+    }
+    bool hasFile = false;
+    foreach(QUrl url, urls) {
+        QString fileName = url.toLocalFile();
+        if (!fileName.isEmpty()) {
+            QFileInfo info(fileName);
+            if (info.isFile()) {
+                m_liteApp->fileManager()->openEditor(fileName, true);
+            }
+            else if (info.isDir()) {
+                m_liteApp->fileManager()->addFolderList(fileName);
+            }
+            hasFile = true;
+        }
+    }
+    if (hasFile) {
+        event->accept();
+        return;
+    }
 }
 
