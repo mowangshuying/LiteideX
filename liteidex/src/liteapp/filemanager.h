@@ -66,10 +66,10 @@ public:
     virtual IEditor *openEditorByFactory(const QString &fileName, const QString &factoryId, bool bActive = true, bool ignoreNavigationHistory = false);
     virtual IEditor *createEditor(const QString &contents, const QString &mimeType);
     virtual IEditor *createEditor(const QString &fileName);
-    virtual IProject *openProject(const QString &fileName);
-    virtual IProject *openProjectScheme(const QString &fileName, const QString &scheme);
+    //virtual IProject *openProject(const QString &fileName);
+    //virtual IProject *openProjectScheme(const QString &fileName, const QString &scheme);
 
-    virtual bool findProjectTargetInfo(const QString &fileName, QMap<QString,QString>& targetInfo) const;
+    //virtual bool findProjectTargetInfo(const QString &fileName, QMap<QString,QString>& targetInfo) const;
     //virtual IApplication* openFolderEx(const QString &folder);
     virtual QStringList folderList() const;
     virtual void setFolderList(const QStringList &folders);
@@ -78,7 +78,7 @@ public:
     virtual void emitAboutToShowFolderContextMenu(QMenu *menu, LiteApi::FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info, const QString &context);
 public:
     QString openAllTypeFilter() const;
-    QString openProjectTypeFilter() const;
+    //QString openProjectTypeFilter() const;
     QString openEditorTypeFilter() const;
 protected:
     void updateFileState(const QString &fileName);
@@ -90,7 +90,7 @@ public slots:
     void closeAllFolders();
     void newInstance();
     void openEditors();
-    void openProjects();
+    //void openProjects();
     void fileChanged(QString);
     void editorSaved(LiteApi::IEditor*);
     void editorCreated(LiteApi::IEditor*);

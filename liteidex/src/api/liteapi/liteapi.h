@@ -306,9 +306,9 @@ public:
     virtual IEditor *openEditorByFactory(const QString &fileName, const QString &factoryId, bool bActive = true, bool ignoreNavigationHistory = false) = 0;
     virtual IEditor *createEditor(const QString &contents, const QString &_mimeType) = 0;
     virtual IEditor *createEditor(const QString &fileName) = 0;
-    virtual IProject *openProject(const QString &fileName) = 0;
-    virtual IProject *openProjectScheme(const QString &fileName, const QString &scheme) = 0;
-    virtual bool findProjectTargetInfo(const QString &fileName, QMap<QString,QString>& targetInfo) const = 0;
+    //virtual IProject *openProject(const QString &fileName) = 0;
+    //virtual IProject *openProjectScheme(const QString &fileName, const QString &scheme) = 0;
+    //virtual bool findProjectTargetInfo(const QString &fileName, QMap<QString,QString>& targetInfo) const = 0;
     //virtual IApplication* openFolderEx(const QString &folder) = 0;
     virtual QStringList folderList() const = 0;
     virtual void setFolderList(const QStringList &folders) = 0;
@@ -324,7 +324,7 @@ public slots:
     virtual void openFiles() = 0;
     virtual void openFolder() = 0;
     virtual void openEditors() = 0;
-    virtual void openProjects() = 0;
+    //virtual void openProjects() = 0;
 };
 
 class IEditContext : public QObject
@@ -601,30 +601,30 @@ signals:
     void applyOption(QString);
 };
 
-class IProjectManager : public IManager
-{
-    Q_OBJECT
-public:
-    IProjectManager(QObject *parent = 0) : IManager(parent) {}
-    virtual IFolderProject *openFolder(const QString &folderPath) = 0;
-    virtual IProject *openProject(const QString &fileName, const QString &mimeType) = 0;
-    virtual void addFactory(IProjectFactory *factory) = 0;
-    virtual void removeFactory(IProjectFactory *factory) = 0;
-    virtual QList<IProjectFactory*> factoryList() const = 0;
-    virtual QStringList mimeTypeList() const = 0;
-    virtual void setCurrentProject(IProject *project) = 0;
-    virtual IProject *currentProject() const = 0;
-    virtual QList<IEditor*> editorList(IProject *project) const = 0;
-    virtual void addImportAction(QAction *act) = 0;
-    virtual QWidget *widget() = 0;
-public slots:
-    virtual void saveProject(IProject *project = 0) = 0;
-    virtual void closeProject(IProject *project = 0) = 0;
-    virtual void openSchemeDialog(const QString &scheme) = 0;
-signals:
-    void currentProjectChanged(LiteApi::IProject *project);
-    void projectAboutToClose(LiteApi::IProject *project);
-};
+//class IProjectManager : public IManager
+//{
+//    Q_OBJECT
+//public:
+//    IProjectManager(QObject *parent = 0) : IManager(parent) {}
+//    virtual IFolderProject *openFolder(const QString &folderPath) = 0;
+//    virtual IProject *openProject(const QString &fileName, const QString &mimeType) = 0;
+//    virtual void addFactory(IProjectFactory *factory) = 0;
+//    virtual void removeFactory(IProjectFactory *factory) = 0;
+//    virtual QList<IProjectFactory*> factoryList() const = 0;
+//    virtual QStringList mimeTypeList() const = 0;
+//    virtual void setCurrentProject(IProject *project) = 0;
+//    virtual IProject *currentProject() const = 0;
+//    virtual QList<IEditor*> editorList(IProject *project) const = 0;
+//    virtual void addImportAction(QAction *act) = 0;
+//    virtual QWidget *widget() = 0;
+//public slots:
+//    virtual void saveProject(IProject *project = 0) = 0;
+//    virtual void closeProject(IProject *project = 0) = 0;
+//    virtual void openSchemeDialog(const QString &scheme) = 0;
+//signals:
+//    void currentProjectChanged(LiteApi::IProject *project);
+//    void projectAboutToClose(LiteApi::IProject *project);
+//};
 
 class IToolWindowManager : public IManager
 {
@@ -739,7 +739,7 @@ public:
     virtual QList<IApplication*> instanceList() const = 0;
     virtual bool hasGoProxy() const = 0;
     virtual IGoProxy *createGoProxy(QObject *parent) = 0;
-    virtual IProjectManager *projectManager() = 0;
+    //virtual IProjectManager *projectManager() = 0;
     virtual IEditorManager  *editorManager() = 0;
     virtual IFileManager    *fileManager() = 0;
     virtual IActionManager  *actionManager() = 0;

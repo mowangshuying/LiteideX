@@ -118,7 +118,7 @@ void MainWindow::closeEvent(QCloseEvent *event)
     m_liteApp->saveSession(m_liteApp->currentSession());
     m_liteApp->saveState();
 
-    m_liteApp->projectManager()->closeProject();
+    //m_liteApp->projectManager()->closeProject();
     if (m_liteApp->editorManager()->closeAllEditors()) {
         this->m_windowClosedCheck = true;
         this->hideAllToolWindows();

@@ -85,7 +85,7 @@ GolangAst::GolangAst(LiteApi::IApplication *app, QObject *parent) :
 
     connect(m_liteApp->editorManager(),SIGNAL(editorCreated(LiteApi::IEditor*)),this,SLOT(editorCreated(LiteApi::IEditor*)));
     connect(m_liteApp->editorManager(),SIGNAL(editorAboutToClose(LiteApi::IEditor*)),this,SLOT(editorAboutToClose(LiteApi::IEditor*)));
-    connect(m_liteApp->projectManager(),SIGNAL(currentProjectChanged(LiteApi::IProject*)),this,SLOT(projectChanged(LiteApi::IProject*)));
+    //connect(m_liteApp->projectManager(),SIGNAL(currentProjectChanged(LiteApi::IProject*)),this,SLOT(projectChanged(LiteApi::IProject*)));
     connect(m_liteApp->editorManager(),SIGNAL(currentEditorChanged(LiteApi::IEditor*)),this,SLOT(editorChanged(LiteApi::IEditor*)));
     connect(m_liteApp->editorManager(),SIGNAL(editorSaved(LiteApi::IEditor*)),this,SLOT(editorSaved(LiteApi::IEditor*)));
     connect(m_process,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(finishedProcess(int,QProcess::ExitStatus)));
@@ -158,7 +158,7 @@ void GolangAst::setEnable(bool b)
 {
     if (b) {
         m_stackedWidget->setVisible(true);
-        loadProject(m_liteApp->projectManager()->currentProject());
+        //loadProject(m_liteApp->projectManager()->currentProject());
         editorChanged(m_liteApp->editorManager()->currentEditor());
         updateAst();
     } else {

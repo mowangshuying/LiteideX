@@ -66,7 +66,7 @@ public:
     void loadProjectInfo(const QString &filePath);
     void loadEditorInfo(const QString &filePath);
     void loadTargetInfo(LiteApi::IBuild *build);
-    LiteApi::IBuild *findProjectBuildByEditor(LiteApi::IEditor *editor);
+    //LiteApi::IBuild *findProjectBuildByEditor(LiteApi::IEditor *editor);
     LiteApi::IBuild *findProjectBuild(LiteApi::IProject *project);
     void setDynamicBuild();
     void loadBuildPath(const QString &buildPath, const QString &buildName, const QString &buildInfo);

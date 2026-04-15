@@ -323,14 +323,14 @@ FileSearch::~FileSearch()
 void FileSearch::setVisible(bool b)
 {
     if (b) {
-        LiteApi::IProject *proj = m_liteApp->projectManager()->currentProject();
-        if (proj && !LiteApi::mimeIsFolder(proj->mimeType())) {
-            QFileInfo info(proj->filePath());
-            if (info.isDir())
-                m_findPathCombo->setEditText(info.filePath());
-            else
-                m_findPathCombo->setEditText(info.path());
-        }
+        //LiteApi::IProject *proj = m_liteApp->projectManager()->currentProject();
+        //if (proj && !LiteApi::mimeIsFolder(proj->mimeType())) {
+        //    QFileInfo info(proj->filePath());
+        //    if (info.isDir())
+        //        m_findPathCombo->setEditText(info.filePath());
+        //    else
+        //        m_findPathCombo->setEditText(info.path());
+        //}
         m_findCombo->setFocus();
         m_findCombo->lineEdit()->selectAll();
         LiteApi::IEditor *editor = m_liteApp->editorManager()->currentEditor();
@@ -383,14 +383,14 @@ void FileSearch::cancel()
 
 void FileSearch::activate()
 {
-    LiteApi::IProject *proj = m_liteApp->projectManager()->currentProject();
-    if (proj && !LiteApi::mimeIsFolder(proj->mimeType())) {
-        QFileInfo info(proj->filePath());
-        if (info.isDir())
-            m_findPathCombo->setEditText(info.filePath());
-        else
-            m_findPathCombo->setEditText(info.path());
-    }
+    ///*LiteApi::IProject *proj = m_liteApp->projectManager()->currentProject();
+    //if (proj && !LiteApi::mimeIsFolder(proj->mimeType())) {
+    //    QFileInfo info(proj->filePath());
+    //    if (info.isDir())
+    //        m_findPathCombo->setEditText(info.filePath());
+    //    else
+    //        m_findPathCombo->setEditText(info.path());
+    //}*/
     m_findCombo->setFocus();
     m_findCombo->lineEdit()->selectAll();
     LiteApi::IEditor *editor = m_liteApp->editorManager()->currentEditor();
@@ -458,21 +458,21 @@ void FileSearch::findInFiles()
 
 void FileSearch::currentDir()
 {
-    LiteApi::IProject *proj = m_liteApp->projectManager()->currentProject();
-    if (proj && !LiteApi::mimeIsFolder(proj->mimeType())) {
-        QFileInfo info(proj->filePath());
-        if (info.isDir()) {
-            m_findPathCombo->setEditText(info.filePath());
-        } else {
-            m_findPathCombo->setEditText(info.path());
-        }
-    } else {
+   ///* LiteApi::IProject *proj = m_liteApp->projectManager()->currentProject();
+   // if (proj && !LiteApi::mimeIsFolder(proj->mimeType())) {
+   //     QFileInfo info(proj->filePath());
+   //     if (info.isDir()) {
+   //         m_findPathCombo->setEditText(info.filePath());
+   //     } else {
+   //         m_findPathCombo->setEditText(info.path());
+   //     }
+   // } else {*/
         LiteApi::IEditor *editor = m_liteApp->editorManager()->currentEditor();
         if (editor && !editor->filePath().isEmpty()) {
             QFileInfo info(editor->filePath());
             m_findPathCombo->setEditText(info.path());
         }
-    }
+   // }
     m_findPathCombo->setFocus();
 }
 

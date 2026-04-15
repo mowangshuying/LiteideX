@@ -1173,50 +1173,50 @@ void LiteBuild::loadTargetInfo(LiteApi::IBuild *build)
     }
 }
 
-LiteApi::IBuild *LiteBuild::findProjectBuildByEditor(IEditor *editor)
-{
-    m_buildRootPath.clear();
-    m_projectInfo.clear();
-    m_targetInfo.clear();
-
-    if (!editor) {
-        return 0;
-    }
-    QString filePath = editor->filePath();
-    if (filePath.isEmpty()) {
-        return 0;
-    }
-    QString workDir = QFileInfo(filePath).path();
-    LiteApi::IBuild *build = m_buildManager->findBuild(editor->mimeType());
-    LiteApi::IBuild *projectBuild = 0;
-    QString projectPath;
-    if (build != 0) {
-        foreach (LiteApi::BuildLookup *lookup,build->lookupList()) {
-            QDir dir(workDir);
-            for (int i = 0; i <= lookup->top(); i++) {
-                QFileInfoList infos = dir.entryInfoList(QStringList() << lookup->file(),QDir::Files);
-                if (infos.size() >= 1) {
-                    projectBuild = m_buildManager->findBuild(lookup->mimeType());
-                    if (projectBuild != 0) {
-                        projectPath = infos.at(0).filePath();
-                        m_buildRootPath = projectPath;
-                        break;
-                    }
-                }
-                dir.cdUp();
-            }
-        }
-    }
-    if (!projectBuild) {
-        return 0;
-    }
-    loadProjectInfo(projectPath);
-    QMap<QString,QString> targetInfo;
-    if (m_liteApp->fileManager()->findProjectTargetInfo(projectPath,targetInfo)) {
-        m_targetInfo = targetInfo;
-    }
-    return projectBuild;
-}
+//LiteApi::IBuild *LiteBuild::findProjectBuildByEditor(IEditor *editor)
+//{
+//    m_buildRootPath.clear();
+//    m_projectInfo.clear();
+//    m_targetInfo.clear();
+//
+//    if (!editor) {
+//        return 0;
+//    }
+//    QString filePath = editor->filePath();
+//    if (filePath.isEmpty()) {
+//        return 0;
+//    }
+//    QString workDir = QFileInfo(filePath).path();
+//    LiteApi::IBuild *build = m_buildManager->findBuild(editor->mimeType());
+//    LiteApi::IBuild *projectBuild = 0;
+//    QString projectPath;
+//    if (build != 0) {
+//        foreach (LiteApi::BuildLookup *lookup,build->lookupList()) {
+//            QDir dir(workDir);
+//            for (int i = 0; i <= lookup->top(); i++) {
+//                QFileInfoList infos = dir.entryInfoList(QStringList() << lookup->file(),QDir::Files);
+//                if (infos.size() >= 1) {
+//                    projectBuild = m_buildManager->findBuild(lookup->mimeType());
+//                    if (projectBuild != 0) {
+//                        projectPath = infos.at(0).filePath();
+//                        m_buildRootPath = projectPath;
+//                        break;
+//                    }
+//                }
+//                dir.cdUp();
+//            }
+//        }
+//    }
+//    if (!projectBuild) {
+//        return 0;
+//    }
+//    loadProjectInfo(projectPath);
+//    QMap<QString,QString> targetInfo;
+//    if (m_liteApp->fileManager()->findProjectTargetInfo(projectPath,targetInfo)) {
+//        m_targetInfo = targetInfo;
+//    }
+//    return projectBuild;
+//}
 
 void LiteBuild::setDynamicBuild()
 {
@@ -1696,7 +1696,7 @@ void LiteBuild::execAction(const QString &mime, const QString &id)
         if (editor && editor->isModified()) {
             m_liteApp->editorManager()->saveEditor();
         }
-        m_liteApp->projectManager()->saveProject();
+        //m_liteApp->projectManager()->saveProject();
     } else if(ba->save() == "editor") {
         if (editor && editor->isModified()) {
             m_liteApp->editorManager()->saveEditor();

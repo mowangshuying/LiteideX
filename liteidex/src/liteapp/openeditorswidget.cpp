@@ -98,7 +98,7 @@ void OpenEditorsWidget::contextMenuRequested(QPoint /*pos*/)
 
 void OpenEditorsWidget::activateEditor(const QModelIndex &index)
 {
-    LiteApi::IEditor *editor = editorFormIndex(index);
+    LiteApi::IEditor *editor = editorFromIndex(index);
     if (editor) {
         m_liteApp->editorManager()->setCurrentEditor(editor);
     }
@@ -106,14 +106,14 @@ void OpenEditorsWidget::activateEditor(const QModelIndex &index)
 
 void OpenEditorsWidget::closeDocument(const QModelIndex &index)
 {
-    LiteApi::IEditor *editor = editorFormIndex(index);
+    LiteApi::IEditor *editor = editorFromIndex(index);
     if (editor) {
         m_liteApp->editorManager()->closeEditor(editor);
     }
     updateCurrentItem(m_liteApp->editorManager()->currentEditor());
 }
 
-LiteApi::IEditor *OpenEditorsWidget::editorFormIndex(const QModelIndex &index)
+LiteApi::IEditor *OpenEditorsWidget::editorFromIndex(const QModelIndex &index)
 {
     QString filePath = index.data(Qt::ToolTipRole).toString();
     if (filePath.isEmpty()) {

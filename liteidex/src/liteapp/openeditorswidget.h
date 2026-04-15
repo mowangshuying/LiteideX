@@ -42,7 +42,7 @@ public slots:
     void activateEditor(const QModelIndex &index);
     void closeDocument(const QModelIndex &index);
 protected:
-    LiteApi::IEditor *editorFormIndex(const QModelIndex &index);
+    LiteApi::IEditor *editorFromIndex(const QModelIndex &index);
     QModelIndex indexFromEditor(LiteApi::IEditor *editor);
 protected:
     LiteApi::IApplication *m_liteApp;

@@ -6,7 +6,7 @@ set(SOURCES
     liteapp.cpp
     filemanager.cpp
     editormanager.cpp
-    projectmanager.cpp
+    #projectmanager.cpp
     pluginmanager.cpp
     actionmanager.cpp
     aboutdialog.cpp
@@ -21,8 +21,8 @@ set(SOURCES
     tooldockwidget.cpp
     rotationtoolbutton.cpp
     toolwindowmanager.cpp
-    folderproject.cpp
-    folderprojectfactory.cpp
+    #folderproject.cpp
+    #folderprojectfactory.cpp
     goproxy.cpp
     htmlwidgetmanager.cpp
     textbrowserhtmlwidget.cpp
@@ -42,7 +42,7 @@ set(HEADERS
     liteapp_global.h
     filemanager.h
     editormanager.h
-    projectmanager.h
+    # projectmanager.h
     pluginmanager.h
     actionmanager.h
     aboutdialog.h
@@ -57,8 +57,8 @@ set(HEADERS
     tooldockwidget.h
     rotationtoolbutton.h
     toolwindowmanager.h
-    folderproject.h
-    folderprojectfactory.h
+    #folderproject.h
+    #folderprojectfactory.h
     goproxy.h
     cdrv.h
     htmlwidgetmanager.h

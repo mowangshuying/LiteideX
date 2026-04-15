@@ -215,7 +215,7 @@ LiteApp::LiteApp()
     m_toolWindowManager = new ToolWindowManager;
     m_htmlWidgetManager = new HtmlWidgetManager;
     m_actionManager = new ActionManager;
-    m_projectManager = new ProjectManager;
+    //m_projectManager = new ProjectManager;
     m_fileManager = new FileManager;
     m_editorManager = new EditorManager;
     m_mimeTypeManager = new MimeTypeManager;
@@ -230,7 +230,7 @@ LiteApp::LiteApp()
     m_toolWindowManager->initWithApp(this);
     m_mimeTypeManager->initWithApp(this);
     m_recentManager->initWithApp(this);
-    m_projectManager->initWithApp(this);
+    //m_projectManager->initWithApp(this);
     m_fileManager->initWithApp(this);
     m_editorManager->initWithApp(this);
     m_optionManager->initWithApp(this);
@@ -244,7 +244,7 @@ LiteApp::LiteApp()
     m_htmlWidgetManager->addFactory(new TextBrowserHtmlWidgetFactory(this));
 
     m_extension->addObject("LiteApi.IMimeTypeManager",m_mimeTypeManager);
-    m_extension->addObject("LiteApi.IProjectManager",m_projectManager);
+    //m_extension->addObject("LiteApi.IProjectManager",m_projectManager);
     m_extension->addObject("LiteApi.IEditManager",m_editorManager);
     m_extension->addObject("LiteApi.IOptoinManager",m_optionManager);
     m_extension->addObject("LiteApi.IToolWindowManager",m_toolWindowManager);
@@ -253,8 +253,8 @@ LiteApp::LiteApp()
     m_extension->addObject("LiteApi.IHtmlWidgetManager",m_htmlWidgetManager);
 
     //add actions
-    connect(m_projectManager,SIGNAL(currentProjectChanged(LiteApi::IProject*)),this,SLOT(currentProjectChanged(LiteApi::IProject*)));
-    connect(m_editorManager,SIGNAL(currentEditorChanged(LiteApi::IEditor*)),m_projectManager,SLOT(currentEditorChanged(LiteApi::IEditor*)));
+    //connect(m_projectManager,SIGNAL(currentProjectChanged(LiteApi::IProject*)),this,SLOT(currentProjectChanged(LiteApi::IProject*)));
+    //connect(m_editorManager,SIGNAL(currentEditorChanged(LiteApi::IEditor*)),m_projectManager,SLOT(currentEditorChanged(LiteApi::IEditor*)));
     connect(m_editorManager,SIGNAL(currentEditorChanged(LiteApi::IEditor*)),m_mainwindow,SLOT(currentEditorChanged(LiteApi::IEditor*)));
     connect(m_editorManager,SIGNAL(editorModifyChanged(LiteApi::IEditor*,bool)),m_mainwindow,SLOT(editorModifyChanged(LiteApi::IEditor*,bool)));
     connect(m_editorManager,SIGNAL(currentEditorChanged(LiteApi::IEditor*)),this,SLOT(currentEditorChanged(LiteApi::IEditor*)));
@@ -264,7 +264,7 @@ LiteApp::LiteApp()
     connect(m_editorManager,SIGNAL(editorAboutToClose(LiteApi::IEditor*)),m_fileManager,SLOT(editorAboutToClose(LiteApi::IEditor*)));
     connect(m_editorManager,SIGNAL(doubleClickedTab()),m_mainwindow,SLOT(showOrHideToolWindow()));
     connect(m_optionManager,SIGNAL(applyOption(QString)),m_fileManager,SLOT(applyOption(QString)));
-    connect(m_optionManager,SIGNAL(applyOption(QString)),m_projectManager,SLOT(applyOption(QString)));
+    //connect(m_optionManager,SIGNAL(applyOption(QString)),m_projectManager,SLOT(applyOption(QString)));
     connect(m_optionManager,SIGNAL(applyOption(QString)),m_editorManager,SLOT(applyOption(QString)));
     connect(m_optionManager,SIGNAL(applyOption(QString)),this,SLOT(applyOption(QString)));
 
@@ -403,7 +403,7 @@ void LiteApp::load(const QString &sessionName, IApplication *baseApp)
     }
 
     emit loaded();
-    m_projectManager->setCurrentProject(0);
+    //m_projectManager->setCurrentProject(0);
 
     if (bSplash) {
         splash->showMessage("Loading session...",Qt::AlignLeft|Qt::AlignBottom);
@@ -456,7 +456,7 @@ void LiteApp::cleanup()
     m_pluginList.clear();
 
     delete m_idleTimer;
-    delete m_projectManager;
+    //delete m_projectManager;
     delete m_editorManager;
     delete m_htmlWidgetManager;
     delete m_liteAppOptionFactory;
@@ -549,10 +549,10 @@ IFileManager *LiteApp::fileManager()
     return m_fileManager;
 }
 
-IProjectManager *LiteApp::projectManager()
-{
-    return m_projectManager;
-}
+//IProjectManager *LiteApp::projectManager()
+//{
+//    return m_projectManager;
+//}
 
 IActionManager  *LiteApp::actionManager()
 {
@@ -806,9 +806,9 @@ void LiteApp::createActions()
     connect(m_closeWindow,SIGNAL(triggered()),this,SLOT(closeWindow()));
     connect(m_closeAct,SIGNAL(triggered()),m_editorManager,SLOT(closeEditor()));
     connect(m_closeAllAct,SIGNAL(triggered()),m_editorManager,SLOT(closeAllEditors()));
-    connect(m_openProjectAct,SIGNAL(triggered()),m_fileManager,SLOT(openProjects()));
-    connect(m_saveProjectAct,SIGNAL(triggered()),m_projectManager,SLOT(saveProject()));
-    connect(m_closeProjectAct,SIGNAL(triggered()),m_projectManager,SLOT(closeProject()));
+    //connect(m_openProjectAct,SIGNAL(triggered()),m_fileManager,SLOT(openProjects()));
+    //connect(m_saveProjectAct,SIGNAL(triggered()),m_projectManager,SLOT(saveProject()));
+    //connect(m_closeProjectAct,SIGNAL(triggered()),m_projectManager,SLOT(closeProject()));
     connect(m_saveAct,SIGNAL(triggered()),m_editorManager,SLOT(saveEditor()));
     connect(m_saveAsAct,SIGNAL(triggered()),m_editorManager,SLOT(saveEditorAs()));
     connect(m_saveAllAct,SIGNAL(triggered()),m_editorManager,SLOT(saveAllEditors()));
@@ -997,15 +997,15 @@ void LiteApp::loadSession(const QString &session)
 
     m_fileManager->setFolderList(folderList);
 
-    if (!projectName.isEmpty()) {
-        if (scheme.isEmpty()) {
-            m_fileManager->openProject(projectName);
-        } else {
-            m_fileManager->openProjectScheme(projectName,scheme);
-        }
-    } else {
-        m_projectManager->closeProject();
-    }
+    //if (!projectName.isEmpty()) {
+    //    if (scheme.isEmpty()) {
+    //        m_fileManager->openProject(projectName);
+    //    } else {
+    //        //m_fileManager->openProjectScheme(projectName,scheme);
+    //    }
+    //} else {
+    //    //m_projectManager->closeProject();
+    //}
 
     if (m_settings->value(LITEAPP_STARTUPRELOADFILES,true).toBool()) {
         foreach(QString fileName, fileList) {
@@ -1029,14 +1029,14 @@ void LiteApp::saveSession(const QString &session)
     QString projectName;
     QString editorName;
     QString scheme;
-    IProject *project = m_projectManager->currentProject();
-    if (project) {
-        projectName = project->filePath();
-        IMimeType *type = m_mimeTypeManager->findMimeType(project->mimeType());
-        if (type) {
-            scheme = type->scheme();
-        }
-    }
+    //IProject *project = m_projectManager->currentProject();
+    ///*if (project) {
+    //    projectName = project->filePath();
+    //    IMimeType *type = m_mimeTypeManager->findMimeType(project->mimeType());
+    //    if (type) {
+    //        scheme = type->scheme();
+    //    }
+    //}*/
 
     QStringList fileList;
     foreach (IEditor* ed,m_editorManager->sortedEditorList()) {

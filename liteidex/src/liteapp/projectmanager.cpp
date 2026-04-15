@@ -124,7 +124,7 @@ void ProjectManager::openSchemeDialog(const QString &scheme)
         return;
     }
     last = dir;
-    m_liteApp->fileManager()->openProjectScheme(dir,scheme);
+    //m_liteApp->fileManager()->openProjectScheme(dir,scheme);
 }
 
 void ProjectManager::openSchemeAct()

@@ -35,7 +35,7 @@ class MainWindow;
 class PluginManager;
 class EditorManager;
 class FileManager;
-class ProjectManager;
+//class ProjectManager;
 class ActionManager;
 class MimeTypeManager;
 class OptionManager;
@@ -69,7 +69,7 @@ public:
     virtual QList<IApplication*> instanceList() const;
     virtual bool hasGoProxy() const;
     virtual IGoProxy *createGoProxy(QObject *parent);
-    virtual IProjectManager *projectManager();
+    //virtual IProjectManager *projectManager();
     virtual IEditorManager  *editorManager();
     virtual IFileManager    *fileManager();
     virtual IActionManager  *actionManager();
@@ -146,7 +146,7 @@ protected:
     HtmlWidgetManager *m_htmlWidgetManager;
     RecentManager     *m_recentManager;
     ActionManager  *m_actionManager;
-    ProjectManager *m_projectManager;
+    //ProjectManager *m_projectManager;
     EditorManager   *m_editorManager;
     FileManager    *m_fileManager;
     MimeTypeManager *m_mimeTypeManager;

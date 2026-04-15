@@ -42,43 +42,43 @@ class QStackedLayout;
 class QActionGroup;
 class QScrollArea;
 
-class ProjectManager : public IProjectManager
-{
-    Q_OBJECT
-public:
-    ProjectManager();
-    ~ProjectManager();
-    virtual bool initWithApp(IApplication *app);
-    virtual IFolderProject* openFolder(const QString &folderPath);
-    virtual IProject *openProject(const QString &fileName, const QString &mimeType);
-    virtual void addFactory(IProjectFactory *factory);
-    virtual void removeFactory(IProjectFactory *factory);
-    virtual QList<IProjectFactory*> factoryList() const;
-    virtual QStringList mimeTypeList() const;
-public:
-    virtual void setCurrentProject(IProject *project);
-    virtual IProject *currentProject() const;
-    virtual QList<IEditor*> editorList(IProject *project) const;
-    virtual void addImportAction(QAction *act);
-    virtual QWidget *widget();
-public slots:    
-    virtual void saveProject(IProject *project = 0);
-    virtual void closeProject(IProject *project = 0);
-    virtual void openSchemeDialog(const QString &scheme);
-    void currentEditorChanged(LiteApi::IEditor*);
-    void triggeredProject(QAction* act);
-    void openSchemeAct();    
-    void appLoaded();
-    void applyOption(QString);
-protected:
-    virtual void closeProjectHelper(IProject *project);
-protected:
-    QPointer<IProject>      m_currentProject;
-    QList<IProjectFactory*>    m_factoryList;
-    QScrollArea             *m_widget;
-    //QAction                 *m_toolWindowAct;
-    bool                    m_bAutoCloseProjectEditors;
-    FolderProject           *m_folderProject;
-};
+//class ProjectManager : public IProjectManager
+//{
+//    Q_OBJECT
+//public:
+//    ProjectManager();
+//    ~ProjectManager();
+//    virtual bool initWithApp(IApplication *app);
+//    virtual IFolderProject* openFolder(const QString &folderPath);
+//    virtual IProject *openProject(const QString &fileName, const QString &mimeType);
+//    virtual void addFactory(IProjectFactory *factory);
+//    virtual void removeFactory(IProjectFactory *factory);
+//    virtual QList<IProjectFactory*> factoryList() const;
+//    virtual QStringList mimeTypeList() const;
+//public:
+//    virtual void setCurrentProject(IProject *project);
+//    virtual IProject *currentProject() const;
+//    virtual QList<IEditor*> editorList(IProject *project) const;
+//    virtual void addImportAction(QAction *act);
+//    virtual QWidget *widget();
+//public slots:    
+//    virtual void saveProject(IProject *project = 0);
+//    virtual void closeProject(IProject *project = 0);
+//    virtual void openSchemeDialog(const QString &scheme);
+//    void currentEditorChanged(LiteApi::IEditor*);
+//    void triggeredProject(QAction* act);
+//    void openSchemeAct();    
+//    void appLoaded();
+//    void applyOption(QString);
+//protected:
+//    virtual void closeProjectHelper(IProject *project);
+//protected:
+//    QPointer<IProject>      m_currentProject;
+//    QList<IProjectFactory*>    m_factoryList;
+//    QScrollArea             *m_widget;
+//    //QAction                 *m_toolWindowAct;
+//    bool                    m_bAutoCloseProjectEditors;
+//    FolderProject           *m_folderProject;
+//};
 
 #endif // PROJECTMANAGER_H
