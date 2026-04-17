@@ -497,6 +497,8 @@ void OutputActionBar::toggledAction(bool)
 {
     QAction *action = (QAction*)sender();
     SideActionState *state = m_actionStateMap.value(action);
+
+    qDebug() << "OutputActionBar::toggledAction" << action->text() << action->isChecked();
     if (!state) {
         return;
     }

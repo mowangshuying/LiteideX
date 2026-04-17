@@ -24,7 +24,7 @@
 #include "liteapp.h"
 #include "filemanager.h"
 #include "editormanager.h"
-#include "projectmanager.h"
+//#include "projectmanager.h"
 #include "pluginmanager.h"
 #include "actionmanager.h"
 #include "mimetypemanager.h"
