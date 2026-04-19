@@ -111,6 +111,8 @@ int main(int argc, char *argv[])
 #else
     QApplication app(argc, argv);
 #endif
+
+    //qDebug() << QStyleFactory::keys();
     QStringList arguments = app.arguments();
 
     //init load file or folder list

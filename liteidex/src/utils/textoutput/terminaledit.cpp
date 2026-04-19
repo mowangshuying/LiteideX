@@ -91,11 +91,11 @@ TerminalEdit::TerminalEdit(QWidget *parent) :
     m_contextMenu->addSeparator(); // 分割线
     m_contextMenu->addAction(m_clear); // 清空
 
-    m_contextRoMenu->addAction(m_copy);
+    m_contextRoMenu->addAction(m_copy); // 拷贝
     m_contextRoMenu->addSeparator();
-    m_contextRoMenu->addAction(m_selectAll);
+    m_contextRoMenu->addAction(m_selectAll); // 全选
     m_contextRoMenu->addSeparator();
-    m_contextRoMenu->addAction(m_clear);
+    m_contextRoMenu->addAction(m_clear); // 清空
 
     connect(this,SIGNAL(customContextMenuRequested(QPoint)),this,SLOT(contextMenuRequested(QPoint)));
     connect(this,SIGNAL(cursorPositionChanged()),this,SLOT(cursorPositionChanged()));
@@ -127,9 +127,9 @@ void TerminalEdit::append(const QString &text, QTextCharFormat *fmt)
     if (str.isEmpty()) {
         return;
     }
-    setUndoRedoEnabled(false);
-    QTextCursor cur = this->textCursor();
-    cur.movePosition(QTextCursor::End);
+    setUndoRedoEnabled(false);// 禁用redo;
+    QTextCursor cur = this->textCursor(); // 获取到当前的textCursor;
+    cur.movePosition(QTextCursor::End);   // 移动到尾部
 
     if (m_bTerminalInput && m_lastKey != -1) {
         cur.setPosition(m_lastInputPostion,QTextCursor::KeepAnchor);
@@ -137,12 +137,12 @@ void TerminalEdit::append(const QString &text, QTextCharFormat *fmt)
     if (fmt) {
         cur.setCharFormat(*fmt);
     }
-    cur.insertText(str);
-    this->setTextCursor(cur);
-    setUndoRedoEnabled(true);
-    m_lastPosition = this->textCursor().position();
-    if (str.contains("\n") || m_lastKey == -1) {
-        m_lastInputPostion = m_lastPosition;
+    cur.insertText(str); /// 嵌入text;
+    this->setTextCursor(cur); // 设置为当前的额textCursor
+    setUndoRedoEnabled(true); // 开启redo
+    m_lastPosition = this->textCursor().position(); /// 上一次textCursor的尾部;
+    if (str.contains("\n") || m_lastKey == -1) {//// 上一次不是键盘按键
+        m_lastInputPostion = m_lastPosition;    ///  
     }
     m_lastKey = -1;
 }
@@ -184,7 +184,7 @@ void TerminalEdit::keyPressEvent(QKeyEvent *ke)
         cur.removeSelectedText();
         return;
     }
-    m_lastKey = ke->key();
+    m_lastKey = ke->key(); /// 键盘按下后保存为按键值
     if (ke->modifiers() == Qt::NoModifier
             || ke->modifiers() == Qt::ShiftModifier
             || ke->modifiers() == Qt::KeypadModifier) {
@@ -239,22 +239,27 @@ void TerminalEdit::keyPressEvent(QKeyEvent *ke)
 void TerminalEdit::mouseDoubleClickEvent(QMouseEvent *e)
 {
     QPlainTextEdit::mouseDoubleClickEvent(e);
-    QTextCursor cur = cursorForPosition(e->pos());
+    QTextCursor cur = cursorForPosition(e->pos()); /// 根据位置返回"智能光标"
     emit dbclickEvent(cur);
 }
 
 void TerminalEdit::mousePressEvent(QMouseEvent *e)
 {
     QPlainTextEdit::mousePressEvent(e);
+    
+    //// 是否是自动定位光标
     if (!m_bAutoPosCursor) {
         return;
     }
+
     if (!this->isReadOnly() && m_bFocusOut) {
         m_bFocusOut = false;
         QTextCursor cur = this->textCursor();
-        if (!cur.hasSelection()) {
+        if (!cur.hasSelection()) { // 没有选中任何文本
+
+            /// 移动光标到末尾
             cur.movePosition(QTextCursor::End);
-            this->setTextCursor(cur);
+            this->setTextCursor(cur); // 
         }
     }
 }
@@ -267,9 +272,16 @@ void TerminalEdit::focusOutEvent(QFocusEvent *e)
 
 void TerminalEdit::focusInEvent(QFocusEvent *e)
 {
-    QPlainTextEdit::focusInEvent(e);
+    QPlainTextEdit::focusInEvent(e); 
     if (!this->isReadOnly()) {
         QTextCursor cur = this->textCursor();
+
+        /// 打印起始位置和结束位置
+        ///qDebug() << "start:" << cur.selectionStart() << "end:" << cur.selectionEnd();
+        // 打印索引位置
+        ///qDebug() << "index:" << cur.position();
+        /// 光标所在位置
+
         if (!cur.hasSelection()) {
             cur.movePosition(QTextCursor::End);
             this->setTextCursor(cur);
@@ -281,14 +293,17 @@ void TerminalEdit::contextMenuRequested(const QPoint &pt)
 {
     QPoint globalPos = this->mapToGlobal(pt);
     if (isReadOnly()) {
-        m_contextRoMenu->popup(globalPos);
+        m_contextRoMenu->popup(globalPos); /// 只读菜单
     } else {
-        m_contextMenu->popup(globalPos);
+        m_contextMenu->popup(globalPos);   /// 可写可读菜单
     }
 }
 
-void TerminalEdit::cursorPositionChanged()
+/// 选择更改时 cut/copy/paste;
+void TerminalEdit::cursorPositionChanged() 
 {
+    //// QTextCursor:
+    /// 插入/删除/移动光标/修改文本格式/选择文本
     QTextCursor cur = this->textCursor();
     int pos = cur.position();
     if (cur.hasSelection()) {
@@ -303,12 +318,12 @@ void TerminalEdit::cursorPositionChanged()
         m_copy->setEnabled(false);
         m_cut->setEnabled(false);
     }
-    if (pos < m_lastPosition) {
-        m_paste->setEnabled(false);
+
+    if (pos < m_lastPosition) { /// 是否处于尾部
+        m_paste->setEnabled(false);// 如果不是在尾部的情况下，禁用黏贴按钮
     } else {
-        QClipboard *clipboard = QApplication::clipboard();
-        if (clipboard->mimeData()->hasText() ||
-                clipboard->mimeData()->hasHtml()){
+        QClipboard *clipboard = QApplication::clipboard(); /// 剪切板是文本或者html时候启用
+        if (clipboard->mimeData()->hasText() || clipboard->mimeData()->hasHtml()){
             m_paste->setEnabled(true);
         } else {
             m_paste->setEnabled(false);
