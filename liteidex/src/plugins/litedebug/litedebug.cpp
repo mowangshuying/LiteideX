@@ -670,9 +670,11 @@ void LiteDebug::debugStarted()
     m_stepOutAct->setEnabled(true);
     m_runToLineAct->setEnabled(true);
     m_output->setReadOnly(false);
+    m_output->clear();
+
     //m_liteApp->outputManager()->setCurrentOutput(m_output);
     m_outputAct->setChecked(true);
-    m_widget->show();    
+    //m_widget->show();    
     emit debugVisible(true);
 }
 

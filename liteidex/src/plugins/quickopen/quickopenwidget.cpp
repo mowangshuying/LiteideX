@@ -128,6 +128,7 @@ void QuickOpenWidget::showView(QPoint *pos)
     }
     m_edit->setFocus();
     this->show();
+    this->activateWindow();
 }
 
 bool QuickOpenWidget::eventFilter(QObject *o, QEvent *e)
