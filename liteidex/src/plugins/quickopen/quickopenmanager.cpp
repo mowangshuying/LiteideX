@@ -82,7 +82,7 @@ bool QuickOpenManager::initWithApp(IApplication *app)
     m_quickOpenAct = new QAction(tr("Quick Open File"),this);
     m_quickOpenEditAct = new QAction(tr("Quick Open Editor"),this);
     m_quickOpenSymbolAct = new QAction(tr("Quick Open Symbol"),this);
-    m_quickOpenActionAct = new QAction(tr("Quick Open Command"),this);
+    m_quickOpenCommandAct = new QAction(tr("Quick Open Command"),this);
     m_quickOpenHelpAct = new QAction(tr("Show All Quick Open Actions"),this);
 
     m_liteApp->actionManager()->setViewMenuSeparator("sep/quickopen",true);
@@ -90,13 +90,13 @@ bool QuickOpenManager::initWithApp(IApplication *app)
     LiteApi::IActionContext *context = m_liteApp->actionManager()->getActionContext(m_liteApp,"App");
     context->regAction(m_quickOpenAct,"QuickOpen","CTRL+P");
     context->regAction(m_quickOpenEditAct,"QuickOpenEditor","CTRL+ALT+P");
-    context->regAction(m_quickOpenActionAct,"QuickOpenCommand","CTRL+SHIFT+P");
+    context->regAction(m_quickOpenCommandAct,"QuickOpenCommand","CTRL+SHIFT+P");
     context->regAction(m_quickOpenSymbolAct,"QuickOpenSymbol","CTRL+SHIFT+O");
     context->regAction(m_quickOpenHelpAct,"QuickOpenHelp","");
 
     m_liteApp->actionManager()->insertMenuActions(ID_MENU_TOOLS,"sep/quickopen",true, QList<QAction*>()
                                                   << m_quickOpenAct
-                                                  << m_quickOpenActionAct
+                                                  << m_quickOpenCommandAct
                                                   << m_quickOpenEditAct
                                                   << m_quickOpenSymbolAct
                                                   << m_quickOpenHelpAct );
@@ -104,7 +104,7 @@ bool QuickOpenManager::initWithApp(IApplication *app)
     connect(m_quickOpenAct,SIGNAL(triggered(bool)),this,SLOT(quickOpen()));
     connect(m_quickOpenEditAct,SIGNAL(triggered(bool)),this,SLOT(quickOpenEditor()));
     connect(m_quickOpenSymbolAct,SIGNAL(triggered(bool)),this,SLOT(quickOpenSymbol()));
-    connect(m_quickOpenActionAct,SIGNAL(triggered(bool)),this,SLOT(quickOpenCommand()));
+    connect(m_quickOpenCommandAct,SIGNAL(triggered(bool)),this,SLOT(quickOpenCommand()));
     connect(m_quickOpenHelpAct,SIGNAL(triggered(bool)),this,SLOT(quickOpenHelp()));
 
     connect(m_liteApp,SIGNAL(aboutToQuit()),this,SLOT(appAboutToQuit()));
@@ -328,6 +328,13 @@ void QuickOpenManager::hidePopup()
 
 void QuickOpenManager::filterChanged(const QString &text)
 {
+    // 文字改变时候触发
+    qDebug() << "filter changed:" << text;
+    if (text == "?")
+    {
+        qDebug() << "T";
+    }
+
     bool checkSym = false;
     if (m_currentFilter == m_quickOpenFiles) {
         checkSym = true;
@@ -359,6 +366,10 @@ void QuickOpenManager::filterChanged(const QString &text)
         }
     }
     if (m_currentFilter) {
+        //if (text == "main")
+        //{
+        //    qDebug() << "text:" << text << "sym:" << m_sym;
+        //}
         QModelIndex index = m_currentFilter->filterChanged(text.mid(m_sym.size()));
         m_widget->view()->setCurrentIndex(index);
         m_widget->view()->scrollTo(index);

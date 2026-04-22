@@ -106,20 +106,20 @@ void QuickOpenFiles::updateModel()
     m_proxyModel->setFilterCaseSensitivity(m_matchCase);
 
     m_editors.clear();
-    QStringList names;
-    foreach(LiteApi::IEditor *editor, m_liteApp->editorManager()->editorList()) {
-        if (editor->filePath().isEmpty()) {
-            continue;
-        }
-        names.push_back(editor->name()+";"+editor->filePath());
-        m_editors.push_back(editor->filePath());
-    }
-    qSort(names);
-    foreach (QString text, names) {
-        QStringList ar = text.split(";");
-        m_model->appendRow(QList<QStandardItem*>() << new QStandardItem("*") << new QStandardItem(ar[0]) << new QStandardItem(ar[1]));
-        m_filesModel->appendRow(QList<QStandardItem*>() << new QStandardItem("*") << new QStandardItem(ar[0]) << new QStandardItem(ar[1]));
-    }
+    //QStringList names;
+    //foreach(LiteApi::IEditor *editor, m_liteApp->editorManager()->editorList()) {
+    //    if (editor->filePath().isEmpty()) {
+    //        continue;
+    //    }
+    //    names.push_back(editor->name()+";"+editor->filePath());
+    //    m_editors.push_back(editor->filePath());
+    //}
+    //qSort(names);
+    //foreach (QString text, names) {
+    //    QStringList ar = text.split(";");
+    //    m_model->appendRow(QList<QStandardItem*>() << new QStandardItem("*") << new QStandardItem(ar[0]) << new QStandardItem(ar[1]));
+    //    m_filesModel->appendRow(QList<QStandardItem*>() << new QStandardItem("*") << new QStandardItem(ar[0]) << new QStandardItem(ar[1]));
+    //}
 
     startFindThread();
 }

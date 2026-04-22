@@ -79,7 +79,7 @@ protected:
     QAction     *m_quickOpenAct;
     QAction     *m_quickOpenEditAct;
     QAction     *m_quickOpenSymbolAct;
-    QAction     *m_quickOpenActionAct;
+    QAction     *m_quickOpenCommandAct;
     QAction     *m_quickOpenHelpAct;
     QList<IQuickOpen*> m_filterList;
     QMap<QString,IQuickOpen*> m_symFilterMap;
