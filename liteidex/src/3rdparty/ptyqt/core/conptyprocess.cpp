@@ -215,8 +215,11 @@ bool ConPtyProcess::startProcess(const QString &shellPath,const QStringList &arg
         }
 
         // Now safe to clean-up client app's process-info & thread
-        CloseHandle(piClient.hThread);
-        CloseHandle(piClient.hProcess);
+        //if (piClient.hThread != INVALID_HANDLE_VALUE)
+        //    CloseHandle(piClient.hThread);
+
+        //if (piClient.hProcess != INVALID_HANDLE_VALUE)
+        //    CloseHandle(piClient.hProcess);
 
         // Cleanup attribute list
         DeleteProcThreadAttributeList(startupInfo.lpAttributeList);

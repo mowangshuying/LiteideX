@@ -30,7 +30,7 @@ set(RESOURCES
     litedebug.qrc
 )
 
-add_library(${TGT} MODULE
+add_library(${TGT} SHARED
     ${SOURCES}
     ${HEADERS}
     ${FORMS}
