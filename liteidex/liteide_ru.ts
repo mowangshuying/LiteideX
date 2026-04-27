@@ -511,6 +511,107 @@ LiteIDE это простая кросплатформенная среда ра
     </message>
 </context>
 <context>
+    <name>CImageViewer</name>
+    <message>
+        <source>Cannot load %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open File</source>
+        <translation type="unfinished">Открыть файл</translation>
+    </message>
+    <message>
+        <source>&amp;Open...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fit on Screen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Actual Pixels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Zoom In (25%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Zoom Out (25%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CMainWindow</name>
+    <message>
+        <source>MainWindow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>toolBar</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CStatusDialogClass</name>
+    <message>
+        <source>Dock Widget Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dock Widget:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>closed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>floating</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>tabbed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>is current tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Feature Flags</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DockWidgetClosable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DockWidgetMovable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DockWidgetFloatable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>DockWidgetDeleteOnClose</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CustomCloseHandling</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CreateDirDialog</name>
     <message>
         <source>Create Folder</source>
@@ -588,7 +689,7 @@ LiteIDE это простая кросплатформенная среда ра
     </message>
     <message>
         <source>Console</source>
-        <translation>Консоль</translation>
+        <translation type="vanished">Консоль</translation>
     </message>
     <message>
         <source>Remove Watch</source>
@@ -618,6 +719,10 @@ LiteIDE это простая кросплатформенная среда ра
         <source>Watch expression (e.g. buf main.var os.Stdout):</source>
         <translation>Наблюдаемое выражение (например: buf main.var os.Stdout):</translation>
     </message>
+    <message>
+        <source>Disassemble</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DlvDebuggerOption</name>
@@ -626,7 +731,27 @@ LiteIDE это простая кросплатформенная среда ра
         <translation></translation>
     </message>
     <message>
-        <source>delve debug pass flags: (example --check-go-version=false)</source>
+        <source>Delve Pass Flags</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>example --check-go-version=false</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Assembly Syntax</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Gnu</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Intel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -761,6 +886,14 @@ LiteIDE это простая кросплатформенная среда ра
     </message>
     <message>
         <source>Open in Integrated Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to next tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to previous tab</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1194,7 +1327,7 @@ Do you want to reload the file from disk?</source>
     </message>
     <message>
         <source>Open Project</source>
-        <translation>Открытие проекта</translation>
+        <translation type="vanished">Открытие проекта</translation>
     </message>
     <message>
         <source>LiteIDE X</source>
@@ -1942,7 +2075,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <source>Auto update depends package when it&apos;s source changed.</source>
         <oldsource>Auto update depends package when its source is changed.</oldsource>
-        <translation>Обновлять зависимости при изменении их исходников.</translation>
+        <translation type="vanished">Обновлять зависимости при изменении их исходников.</translation>
     </message>
     <message>
         <source>Close gocode when exiting</source>
@@ -1954,11 +2087,15 @@ Want to replace to all the search items to whitespace?</source>
     </message>
     <message>
         <source>PKG automatic import hints for all packages (GOPATH)</source>
-        <translation>PKG: подсказки автоматического импорта для всех пакетов (GOPATH)</translation>
+        <translation type="vanished">PKG: подсказки автоматического импорта для всех пакетов (GOPATH)</translation>
     </message>
     <message>
         <source>PKG automatic import hints for standard package</source>
         <translation>PKG: подсказки автоматического импорта для стандартных пакетов</translation>
+    </message>
+    <message>
+        <source>PKG automatic import hints for all packages (Module/GOPATH)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2106,6 +2243,26 @@ Want to replace to all the search items to whitespace?</source>
         <source>%1 (Module/GOPATH) with GOROOT</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Find All References (gopls)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Find All Implementations (gopls)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1 (Module) and GOROOT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All Implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GolangEditOption</name>
@@ -2185,6 +2342,44 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <source>Format Code (Adjusts Imports)</source>
         <translation>Отформатировать код с настройкой импортов</translation>
+    </message>
+</context>
+<context>
+    <name>GolangLintOption</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Форма</translation>
+    </message>
+    <message>
+        <source>Lint Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Automatically lint code when saving</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Minimum confidence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>0.8</source>
+        <translation type="unfinished">0.8</translation>
+    </message>
+    <message>
+        <source>Synchronous</source>
+        <translation type="unfinished">Синхронное форматирование</translation>
+    </message>
+    <message>
+        <source>Code linting timeout in milliseconds (500ms or more):</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>GolangLintPlugin</name>
+    <message>
+        <source>Lint Code</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2313,6 +2508,132 @@ Want to replace to all the search items to whitespace?</source>
     </message>
 </context>
 <context>
+    <name>GopathBrowser</name>
+    <message>
+        <source>Synchronize Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Synchronize Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Editor</source>
+        <translation type="unfinished">Открыть редактор</translation>
+    </message>
+    <message>
+        <source>New File...</source>
+        <translation type="unfinished">Создать файл...</translation>
+    </message>
+    <message>
+        <source>New File Wizard...</source>
+        <translation type="unfinished">Мастер создания файла...</translation>
+    </message>
+    <message>
+        <source>Rename File...</source>
+        <translation type="unfinished">Переименовать файл...</translation>
+    </message>
+    <message>
+        <source>Delete File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Folder...</source>
+        <translation type="unfinished">Создать папку...</translation>
+    </message>
+    <message>
+        <source>Rename Folder...</source>
+        <translation type="unfinished">Переименовать папку...</translation>
+    </message>
+    <message>
+        <source>Delete Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Terminal Here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Explorer Here</source>
+        <translation type="unfinished">Открыть папку в проводнике</translation>
+    </message>
+    <message>
+        <source>Create File</source>
+        <translation type="unfinished">Создание файла</translation>
+    </message>
+    <message>
+        <source>A file with that name already exists!</source>
+        <translation type="unfinished">Файл с этим именем уже существует!</translation>
+    </message>
+    <message>
+        <source>Failed to create the file!</source>
+        <translation type="unfinished">Не удалось создать файл!</translation>
+    </message>
+    <message>
+        <source>Rename File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Name:</source>
+        <translation type="unfinished">Новое имя:</translation>
+    </message>
+    <message>
+        <source>Failed to rename the file!</source>
+        <translation type="unfinished">Не удалось переименовать файл!</translation>
+    </message>
+    <message>
+        <source>Are you sure that you want to permanently delete this file?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to delete the file!</source>
+        <translation type="unfinished">Не удалось удалить файл!</translation>
+    </message>
+    <message>
+        <source>Create Folder</source>
+        <translation type="unfinished">Создание папки</translation>
+    </message>
+    <message>
+        <source>A folder with that name already exists!</source>
+        <translation type="unfinished">Папка с этим именем уже существует!</translation>
+    </message>
+    <message>
+        <source>Failed to create the folder!</source>
+        <translation type="unfinished">Не удалось создать папку!</translation>
+    </message>
+    <message>
+        <source>Rename Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Folder Name</source>
+        <translation type="unfinished">Имя папки</translation>
+    </message>
+    <message>
+        <source>Failed to rename the folder!</source>
+        <translation type="unfinished">Не удалось переименовать папку!</translation>
+    </message>
+    <message>
+        <source>Are you sure that you want to permanently delete this folder and all of its contents?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Failed to delete the folder!</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>GopathProjectFactor</name>
+    <message>
+        <source>&lt;GOPATH&gt; Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>GoplayBrowser</name>
     <message>
         <source>Go Playground</source>
@@ -2376,6 +2697,49 @@ Success: %2.</oldsource>
     <message>
         <source>New File Name:</source>
         <translation>Имя файла:</translation>
+    </message>
+</context>
+<context>
+    <name>HelloOption</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Форма</translation>
+    </message>
+</context>
+<context>
+    <name>HighlighterSettingsPage</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Форма</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+&lt;p&gt;Highlight definitions are provided by the &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate Text Editor&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Syntax Highlight Definition Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Location:</source>
+        <translation type="unfinished">Расположение:</translation>
+    </message>
+    <message>
+        <source>Use fallback location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Behavior</source>
+        <translation type="unfinished">Поведение</translation>
+    </message>
+    <message>
+        <source>Alert when a highlight definition is not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ignored file patterns:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2471,6 +2835,37 @@ Success: %2.</oldsource>
     <name>ImageEditorFactory</name>
     <message>
         <source>Image Viewer</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ImportGopathDialog</name>
+    <message>
+        <source>Import GOPATH Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>System GOPATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished">Обновить</translation>
+    </message>
+    <message>
+        <source>Custome GOPATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation type="unfinished">Очистить</translation>
+    </message>
+    <message>
+        <source>Load GOPATH Directory</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2958,7 +3353,7 @@ Success: %2.</oldsource>
     <name>LiteBuildPlugin</name>
     <message>
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation type="vanished">Закрыть</translation>
     </message>
     <message>
         <source>Execute:</source>
@@ -3001,7 +3396,7 @@ Success: %2.</oldsource>
     </message>
     <message>
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation type="vanished">Закрыть</translation>
     </message>
     <message>
         <source>Start Debugging</source>
@@ -3030,6 +3425,18 @@ Success: %2.</oldsource>
     <message>
         <source>Remove All Breakpoints</source>
         <translation>Удалить все точки останова</translation>
+    </message>
+    <message>
+        <source>Debug Watch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Vars View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Frame View</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3620,6 +4027,103 @@ Success: %2.</oldsource>
     </message>
 </context>
 <context>
+    <name>MainWindow</name>
+    <message>
+        <source>MainWindow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tests</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>toolBar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation type="unfinished">Выход</translation>
+    </message>
+    <message>
+        <source>Save State</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restore State</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MakefileFile</name>
+    <message>
+        <source>GOFILES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CGOFILES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Headers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sources</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ManageDefinitionsDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Definitions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation type="unfinished">Выбрать всё</translation>
+    </message>
+    <message>
+        <source>Clear Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invert Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Selected Definitions</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MarkdownBatchBrowser</name>
     <message>
         <source>Markdown Exporter</source>
@@ -3864,6 +4368,13 @@ PDF...</translation>
     <message>
         <source>Failed to delete the file!</source>
         <translation>Не удалось удалить файл!</translation>
+    </message>
+</context>
+<context>
+    <name>MyDockAreaTitleBar</name>
+    <message>
+        <source>Format HardDrive</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4197,14 +4708,60 @@ Do you want to replace it?</source>
     </message>
 </context>
 <context>
+    <name>ProfileFile</name>
+    <message>
+        <source>GOFILES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CGOFILES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Headers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sources</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ProjectManager</name>
     <message>
         <source>Project &lt;%1&gt;</source>
-        <translation>Проект &lt;%1&gt;</translation>
+        <translation type="vanished">Проект &lt;%1&gt;</translation>
     </message>
     <message>
         <source>Import Directory &lt;%1&gt;</source>
-        <translation>Импорт каталога &lt;%1&gt;</translation>
+        <translation type="vanished">Импорт каталога &lt;%1&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>Proxy</name>
+    <message>
+        <source>Information</source>
+        <translation type="unfinished">Информация</translation>
+    </message>
+    <message>
+        <source>FakeVim Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot create temporary file: %1</source>
+        <translation type="unfinished">Не удалось создать временный файл: %1</translation>
+    </message>
+    <message>
+        <source>Cannot write to file &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FakeVim Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; was changed</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4298,6 +4855,100 @@ Do you want to replace it?</source>
     <message>
         <source>garbage at the end of the document</source>
         <translation>мусор в конце документа</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Help</source>
+        <translation type="unfinished">Справка</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation type="unfinished">Параметры</translation>
+    </message>
+    <message>
+        <source>Clear Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Create Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>List All Tabs</source>
+        <translation type="unfinished">Показать все вкладки</translation>
+    </message>
+    <message>
+        <source>Detach Group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Tab</source>
+        <translation type="unfinished">Закрыть вкладку</translation>
+    </message>
+</context>
+<context>
+    <name>QSqlEditor</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Форма</translation>
+    </message>
+    <message>
+        <source>SQL </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Infomation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tables</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Views</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SystemTables</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>AllTables</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unknow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SystemTable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>AllTable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>%1:%2</source>
+        <translation type="unfinished">%1%2% {1:%2?}</translation>
     </message>
 </context>
 <context>
@@ -4625,6 +5276,108 @@ Do you want to replace it?</source>
     </message>
 </context>
 <context>
+    <name>SqlTableModel</name>
+    <message>
+        <source>NULL value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>{null}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>BLOB value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>{blob}</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SyntaxEditor</name>
+    <message>
+        <source>SyntaxEditor ToolBar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Undo</source>
+        <translation type="unfinished">Отменить</translation>
+    </message>
+    <message>
+        <source>Redo</source>
+        <translation type="unfinished">Повторить</translation>
+    </message>
+</context>
+<context>
+    <name>SyntaxTextEditor</name>
+    <message>
+        <source>LiteIDE</source>
+        <translation type="unfinished">LiteIDE</translation>
+    </message>
+    <message>
+        <source>Cannot read file %1:
+%2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>document%1.go</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save As</source>
+        <translation type="unfinished">Сохранить как...</translation>
+    </message>
+    <message>
+        <source>Cannot write file %1:
+%2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; has been modified.
+Do you want to save your changes?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TableViewWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Форма</translation>
+    </message>
+</context>
+<context>
+    <name>TermianlOption</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">Форма</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation type="unfinished">Шрифт</translation>
+    </message>
+    <message>
+        <source>Family:</source>
+        <translation type="unfinished">Семейство:</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation type="unfinished">Размер:</translation>
+    </message>
+    <message>
+        <source>Zoom:</source>
+        <translation type="unfinished">Масштаб:</translation>
+    </message>
+    <message>
+        <source>%</source>
+        <translation type="unfinished">%</translation>
+    </message>
+    <message>
+        <source>Antialias</source>
+        <translation type="unfinished">Сглаживание</translation>
+    </message>
+</context>
+<context>
     <name>Terminal</name>
     <message>
         <source>Open a new terminal</source>
@@ -4703,10 +5456,51 @@ Do you want to replace it?</source>
     </message>
 </context>
 <context>
+    <name>TextEditor</name>
+    <message>
+        <source>Text Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>TextEditor::Internal::ColorScheme</name>
     <message>
         <source>Not a color scheme file.</source>
         <translation>Файл не является цветовой схемой.</translation>
+    </message>
+</context>
+<context>
+    <name>TextEditor::Internal::ManageDefinitionsDialog</name>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Installed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Definitions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>There is already one download in progress. Please wait until it is finished.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TextFile</name>
+    <message>
+        <source>Cancel file %1 modify and reload ?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4773,19 +5567,19 @@ Do you want to replace it?</source>
     <name>WelcomeBrowser</name>
     <message>
         <source>New</source>
-        <translation>Создать</translation>
+        <translation type="vanished">Создать</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation type="vanished">Открыть</translation>
     </message>
     <message>
         <source>Open Folder</source>
-        <translation>Открыть папку</translation>
+        <translation type="vanished">Открыть папку</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>Параметры</translation>
+        <translation type="vanished">Параметры</translation>
     </message>
     <message>
         <source>Welcome</source>
@@ -4799,6 +5593,150 @@ Do you want to replace it?</source>
         <source>Welcome</source>
         <oldsource>Home</oldsource>
         <translation>В начало</translation>
+    </message>
+</context>
+<context>
+    <name>ads::CAutoHideTab</name>
+    <message>
+        <source>Detach</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pin To...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Top</source>
+        <translation type="unfinished">Наверх</translation>
+    </message>
+    <message>
+        <source>Left</source>
+        <translation type="unfinished">Влево</translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation type="unfinished">Вправо</translation>
+    </message>
+    <message>
+        <source>Bottom</source>
+        <translation type="unfinished">Вниз</translation>
+    </message>
+    <message>
+        <source>Unpin (Dock)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">Закрыть</translation>
+    </message>
+</context>
+<context>
+    <name>ads::CDockAreaTitleBar</name>
+    <message>
+        <source>Detach</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Detach Group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unpin (Dock)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pin Group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pin Group To...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Top</source>
+        <translation type="unfinished">Наверх</translation>
+    </message>
+    <message>
+        <source>Left</source>
+        <translation type="unfinished">Влево</translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation type="unfinished">Вправо</translation>
+    </message>
+    <message>
+        <source>Bottom</source>
+        <translation type="unfinished">Вниз</translation>
+    </message>
+    <message>
+        <source>Minimize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">Закрыть</translation>
+    </message>
+    <message>
+        <source>Close Group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Other Groups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pin Active Tab (Press Ctrl to Pin Group)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Active Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ads::CDockManager</name>
+    <message>
+        <source>Show View</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ads::CDockWidgetTab</name>
+    <message>
+        <source>Detach</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pin To...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Top</source>
+        <translation type="unfinished">Наверх</translation>
+    </message>
+    <message>
+        <source>Left</source>
+        <translation type="unfinished">Влево</translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation type="unfinished">Вправо</translation>
+    </message>
+    <message>
+        <source>Bottom</source>
+        <translation type="unfinished">Вниз</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">Закрыть</translation>
+    </message>
+    <message>
+        <source>Close Others</source>
+        <translation type="unfinished">Закрыть другие</translation>
     </message>
 </context>
 </TS>

@@ -1,0 +1,1 @@
+C:\Qt\5.15.2\msvc2019_64\bin\lupdate.exe ./src -ts ./liteide_de.ts ./liteide_fr.ts ./liteide_ja.ts ./liteide_ru.ts ./liteide_uk.ts ./liteide_zh.ts ./liteide_zh_TW.ts ./liteide_tr.ts
