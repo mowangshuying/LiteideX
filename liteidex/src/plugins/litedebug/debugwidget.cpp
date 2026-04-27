@@ -70,10 +70,10 @@ public:
 DebugWidget::DebugWidget(LiteApi::IApplication *app, QObject *parent) :
     QObject(parent),
     m_liteApp(app),
-    m_widget(new QWidget),
+    //m_widget(new QWidget),
     m_debugger(0)
 {
-    m_tabWidget = new QTabWidget;
+    //m_tabWidget = new QTabWidget;
     //m_tabWidget->tabBar()->setExpanding(true);
 
     m_asyncView = new QTreeView;
@@ -122,13 +122,13 @@ DebugWidget::DebugWidget(LiteApi::IApplication *app, QObject *parent) :
     m_debugLogEdit->setLineWrapMode(QPlainTextEdit::NoWrap);
 
 
-    QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
-    layout->addWidget(m_tabWidget);
+    //QVBoxLayout *layout = new QVBoxLayout;
+    //layout->setMargin(0);
+    //layout->addWidget(m_tabWidget);
 
-    m_widget->setLayout(layout);
+    //m_widget->setLayout(layout);
 
-    m_watchMenu = new QMenu(m_widget);
+    m_watchMenu = new QMenu(nullptr);
     m_addWatchAct = new QAction(tr("Add Watch"),this);
     //m_addLocalWatchAct = new QAction(tr("Add Local Watch"),this);
     m_removeWatchAct = new QAction(tr("Remove Watch"),this);
@@ -169,15 +169,15 @@ DebugWidget::~DebugWidget()
     delete m_libraryView;
     delete m_asmView;
 
-    if (m_widget) {
-        delete m_widget;
-    }
+    //if (m_widget) {
+    //    delete m_widget;
+    //}
 }
 
-QWidget *DebugWidget::widget()
-{
-    return m_widget;
-}
+//QWidget *DebugWidget::widget()
+//{
+//    return m_widget;
+//}
 
 void DebugWidget::enterText(const QString &text)
 {
@@ -222,9 +222,9 @@ void DebugWidget::updateView(QTreeView *view, LiteApi::IDebugger *debug, LiteApi
     QAbstractItemModel *model = debug->debugModel(type);
     view->setModel(model);
     setResizeView(view);
-    if (model != 0) {
-        m_tabWidget->addTab(view,title);
-    }
+    //if (model != 0) {
+        //m_tabWidget->addTab(view,title);
+    //}
 }
 
 void DebugWidget::setDebugger(LiteApi::IDebugger *debug)
@@ -236,7 +236,7 @@ void DebugWidget::setDebugger(LiteApi::IDebugger *debug)
     if (!m_debugger) {
         return;
     }
-    m_tabWidget->clear();
+    //m_tabWidget->clear();
     updateView(m_asyncView,debug,LiteApi::ASYNC_MODEL,tr("Async Record"));
     updateView(m_varsView,debug,LiteApi::VARS_MODEL,tr("Variables"));
     updateView(m_watchView,debug,LiteApi::WATCHES_MODEL,tr("Watch"));
@@ -246,7 +246,7 @@ void DebugWidget::setDebugger(LiteApi::IDebugger *debug)
     updateView(m_regsView,debug,LiteApi::REGS_MODEL,tr("Registers"));
     updateView(m_libraryView,debug,LiteApi::LIBRARY_MODEL,tr("Libraries"));
     updateView(m_asmView,debug,LiteApi::ASM_MODEL,tr("Disassemble"));
-    m_tabWidget->addTab(m_debugLogEdit,tr("Console"));
+    //m_tabWidget->addTab(m_debugLogEdit,tr("Console"));
 
     connect(m_debugger,SIGNAL(setExpand(LiteApi::DEBUG_MODEL_TYPE,QModelIndex,bool)),this,SLOT(setExpand(LiteApi::DEBUG_MODEL_TYPE,QModelIndex,bool)));
     connect(m_debugger,SIGNAL(watchCreated(QString,QString)),this,SLOT(watchCreated(QString,QString)));

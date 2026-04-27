@@ -76,29 +76,29 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
     clearAct->setIcon(QIcon("icon:images/cleanoutput.png"));
     connect(clearAct,SIGNAL(triggered()),m_output,SLOT(clear()));
 
-    QVBoxLayout *layout = new QVBoxLayout;    
-    QToolBar *widgetToolBar = new QToolBar;
-    widgetToolBar->setIconSize(LiteApi::getToolBarIconSize(m_liteApp));
-    layout->setMargin(0);
-    layout->setSpacing(0);
+    //QVBoxLayout *layout = new QVBoxLayout;    
+    //QToolBar *widgetToolBar = new QToolBar;
+    //widgetToolBar->setIconSize(LiteApi::getToolBarIconSize(m_liteApp));
+    //layout->setMargin(0);
+    //layout->setSpacing(0);
 
-    QHBoxLayout *hbox = new QHBoxLayout;
-    hbox->setMargin(0);
-    hbox->setSpacing(0);
-    hbox->addWidget(widgetToolBar);
-    QPushButton *close = new QPushButton();
-    close->setIcon(QIcon("icon:images/close.png"));
-    close->setIconSize(QSize(16,16));
-    close->setFlat(true);
-    close->setToolTip(tr("Close"));
+    //QHBoxLayout *hbox = new QHBoxLayout;
+    //hbox->setMargin(0);
+    //hbox->setSpacing(0);
+    //hbox->addWidget(widgetToolBar);
+    //QPushButton *close = new QPushButton();
+    //close->setIcon(QIcon("icon:images/close.png"));
+    //close->setIconSize(QSize(16,16));
+    //close->setFlat(true);
+    //close->setToolTip(tr("Close"));
 
-    connect(close,SIGNAL(clicked()),this,SLOT(hideDebug()));
-    hbox->addStretch(1);
-    hbox->addWidget(close);
+    //connect(close,SIGNAL(clicked()),this,SLOT(hideDebug()));
+    //hbox->addStretch(1);
+    //hbox->addWidget(close);
 
-    layout->addLayout(hbox);
-    layout->addWidget(m_dbgWidget->widget());
-    m_widget->setLayout(layout);
+    //layout->addLayout(hbox);
+    //layout->addWidget(m_dbgWidget->widget());
+    //m_widget->setLayout(layout);
 
     LiteApi::IActionContext *actionContext = m_liteApp->actionManager()->getActionContext(this,"Debug");
 
@@ -141,15 +141,15 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
 
     m_bLastDebugCmdInput = false;
 
-    widgetToolBar->addAction(m_continueAct);
-    widgetToolBar->addAction(m_stopDebugAct);
-    widgetToolBar->addSeparator();
-    widgetToolBar->addAction(m_switchBreakAct);
-    widgetToolBar->addAction(m_showLineAct);
-    widgetToolBar->addAction(m_stepIntoAct);
-    widgetToolBar->addAction(m_stepOverAct);
-    widgetToolBar->addAction(m_stepOutAct);
-    widgetToolBar->addAction(m_runToLineAct);
+    //widgetToolBar->addAction(m_continueAct);
+    //widgetToolBar->addAction(m_stopDebugAct);
+    //widgetToolBar->addSeparator();
+    //widgetToolBar->addAction(m_switchBreakAct);
+    //widgetToolBar->addAction(m_showLineAct);
+    //widgetToolBar->addAction(m_stepIntoAct);
+    //widgetToolBar->addAction(m_stepOverAct);
+    //widgetToolBar->addAction(m_stepOutAct);
+    //widgetToolBar->addAction(m_runToLineAct);
 
     m_debugMenu = m_liteApp->actionManager()->loadMenu(ID_MENU_DEBUG);
 
@@ -188,6 +188,13 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
     m_outputAct = m_liteApp->toolWindowManager()->addToolWindow(
                 Qt::BottomDockWidgetArea,m_output,"DebugOutput",tr("Debug Output"),false,
                 QList<QAction*>() << clearAct);
+
+    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->watchView(), "DebugWatch", tr("Debug Watch"), false);
+    //m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->threadsView(), "ThreadsView", tr("Threads View"), false);
+    //m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->asyncView(), "Async View", tr("Async View"), false);
+    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->varsView(), "VarsView", tr("Vars View"), false);
+    //m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->goroutinesView(), "GoRoutinessView", tr("Go Routiness View"), false);
+    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->framesView(), "FrameView", tr("Frame View"), false);
 
     m_continueAct->setEnabled(false);
     m_stopDebugAct->setEnabled(false);

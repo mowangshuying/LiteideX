@@ -40,9 +40,21 @@ class DebugWidget : public QObject
 public:
     explicit DebugWidget(LiteApi::IApplication *app,QObject *parent = 0);
     virtual ~DebugWidget();
-    virtual QWidget *widget();
+    //virtual QWidget *widget();
     void updateView(QTreeView *view, LiteApi::IDebugger *debug, LiteApi::DEBUG_MODEL_TYPE type, const QString &title);
     QTreeView *viewForType(LiteApi::DEBUG_MODEL_TYPE type);
+
+	QTreeView* asyncView() const { return m_asyncView; }
+	SymbolTreeView* varsView() const { return m_varsView; }
+	SymbolTreeView* watchView() const { return m_watchView; }
+	QTreeView* framesView() const { return m_framesView; }
+	QTreeView* libraryView() const { return m_libraryView; }
+	QTreeView* threadsView() const { return m_threadsView; }
+	QTreeView* regsView() const { return m_regsView; }
+	QTreeView* asmView() const { return m_asmView; }
+	SymbolTreeView* goroutinesView() const { return m_goroutinesView; }
+    
+
 signals:
     void debugCmdInput();
 public slots:
