@@ -6,6 +6,7 @@ set(SOURCES
 
 add_executable(${TGT}
     ${SOURCES}
+    liteide.rc
 )
 
 target_include_directories(${TGT} PUBLIC
