@@ -72,7 +72,7 @@
 #endif
 //lite_memory_check_end
 
-#define LITEIDE_VERSION "X38.5"
+#define LITEIDE_VERSION "X38.5.1"
 
 
 QString LiteApp::getRootPath()
