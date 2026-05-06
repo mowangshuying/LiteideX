@@ -813,7 +813,7 @@ QAction *SideWindowStyle::addToolWindow(LiteApi::IApplication *app, Qt::DockWidg
         m_outputBar->addAction(action,widget,id,title,widgetActions,widgetList);
         int index = m_outputBar->actionMap().size();
         action->setText(title);
-        if ((index <= 9) && m_useShortcuts) {
+        //if ((index <= 9) && m_useShortcuts) {
             action->setText(QString("%1: %2").arg(index).arg(title));
             //QKeySequence ks(LiteApi::UseMacShortcuts?QString("Ctrl+Alt+%1").arg(index):QString("Alt+%1").arg(index));
 #ifdef Q_OS_MAC
@@ -823,7 +823,7 @@ QAction *SideWindowStyle::addToolWindow(LiteApi::IApplication *app, Qt::DockWidg
 #endif
             LiteApi::IActionContext *actionContext = app->actionManager()->getActionContext(app,"App");
             actionContext->regAction(action,"ToolWindow_"+id,ks.toString());
-        }
+        //}
         if (m_outputMenu) {
             m_outputMenu->addAction(action);
         }
@@ -832,13 +832,13 @@ QAction *SideWindowStyle::addToolWindow(LiteApi::IApplication *app, Qt::DockWidg
         sideBar->addAction(action,widget,id,title,widgetActions,widgetList);
         int index = m_leftSideBar->actionMap().size()+m_rightSideBar->actionMap().size();
         action->setText(title);
-        if ((index <= 9) && m_useShortcuts) {
+        //if ((index <= 9) && m_useShortcuts) {
             action->setText(QString("%1: %2").arg(index).arg(title));
             //QKeySequence ks(LiteApi::UseMacShortcuts?QString("Ctrl+Alt+%1").arg(index):QString("Ctrl+Alt+%1").arg(index));
             QKeySequence ks(QString("Ctrl+Alt+%1").arg(index));
             LiteApi::IActionContext *actionContext = app->actionManager()->getActionContext(app,"App");
             actionContext->regAction(action,"ToolWindow_"+id,ks.toString());
-        }
+        //}
         connect(action,SIGNAL(toggled(bool)),this,SLOT(toggledSideBar(bool)));
         if (m_sideMenu) {
             m_sideMenu->addAction(action);
