@@ -9,8 +9,8 @@ LiteIDE X
 
 _LiteIDE is a simple, open source, cross-platform Go IDE._
 
-* Version: X38.4
-* Author: [visualfc](mailto:visualfc@gmail.com)
+* Version: X38.6
+* Author: [mowangshuying](https://github.com/mowangshuying)
 
 ### Features
 
@@ -55,34 +55,15 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 
 ### Supported Systems
 * Windows x86 (32-bit or 64-bit)
-* Linux x86 (32-bit or 64-bit)
-* MacOS X10.6 or higher (64-bit)
-* FreeBSD 9.2 or higher (32-bit or 64-bit)
-* OpenBSD 5.6 or higher (64-bit)
-
-### Latest Release Supported Platform Details
-* Windows
-    * liteide-latest.windows-qt5.zip -> WindowsXP, Windows 7 8 10
-    * liteide-latest.windows-qt4.zip -> WindowsXP, Windows 7
-* macOS
-    * liteide-latest.macosx-qt5.zip -> macOS 10.8 or higher
-* Linux x64
-    * liteide-latest.linux-64-qt4.tar.bz2 -> Linux (64 bit) build on ubuntu 16.04
-    * liteide-latest.linux-64-qt5.tar.bz2 -> Linux (64 bit) build on ubuntu 16.04
-* Linux x32
-    * liteide-latest.linux-32-qt4.tar.bz2 -> Linux (32 bit) build on ubuntu 16.04
-    * liteide-latest.linux-32-qt5.tar.bz2 -> Linux (32 bit) build on ubuntu 16.04
-* ArchLinux
-    * liteide-latest.archlinux-pkgbuild.zip -> ArchLinux (64 bit) PKGBUILD
 
 ### LiteIDE Command Line
 	liteide [files|folder] [--select-env id] [--local-setting] [--user-setting] [--reset-setting]
-
+	
 	--select-env [system|win32|cross-linux64|...]     select init environment id
 	--local-setting   force use local setting
 	--user-setting    force use user setting
 	--reset-setting   reset current setting ( clear setting file)	
-	
+
 ### Update liteide tools for support new Golang Version	
 
 	go install github.com/visualfc/gotools@latest
@@ -108,12 +89,6 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 <https://github.com/visualfc/gotools>
 * Gocode Source code
 <https://github.com/visualfc/gocode>
-* Release downloads
-    * <https://github.com/visualfc/liteide/releases/latest>
-    * <https://sourceforge.net/projects/liteide/files>
-    * [百度网盘](https://pan.baidu.com/s/1wYHSEfG1TJRC2iOkE_saJg)  密码:jzrc
-* Google group
-<https://groups.google.com/group/liteide-dev>
 * Changes
 <https://github.com/visualfc/liteide/blob/master/liteidex/deploy/welcome/en/changes.md>
 
