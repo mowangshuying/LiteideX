@@ -126,6 +126,14 @@ bool QSqlEditor::isModified() const
     return false;
 }
 
+QString QSqlEditor::filePath() const
+{
+    if (!m_file) {
+        return QString();
+    }
+    return m_file->filePath();
+}
+
 QString QSqlEditor::fileName() const
 {
     if (!m_file) {
@@ -140,6 +148,21 @@ QString QSqlEditor::mimeType() const
         return QString();
     }
     return m_file->mimeType();
+}
+
+QByteArray QSqlEditor::saveState() const
+{
+	return QByteArray();
+}
+
+bool QSqlEditor::restoreState(const QByteArray& array)
+{
+	return false;
+}
+
+void QSqlEditor::onActive()
+{
+
 }
 
 LiteApi::IFile *QSqlEditor::file()

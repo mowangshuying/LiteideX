@@ -46,6 +46,36 @@ bool SQLiteFile::open(const QString &fileName, const QString &/*mimeType*/)
     return m_db.open();
 }
 
+bool SQLiteFile::loadText(const QString& filePath, const QString& mimeType, QString& outText)
+{
+    return false;
+}
+
+bool SQLiteFile::reloadText(QString& outText)
+{
+	return false;
+}
+
+bool SQLiteFile::saveText(const QString& filePath, const QString& text)
+{
+    return false;
+}
+
+bool SQLiteFile::isReadOnly() const
+{
+    return false;
+}
+
+bool SQLiteFile::isBinary() const
+{
+    return false;
+}
+
+QString SQLiteFile::filePath() const
+{
+    return "";
+}
+
 QString SQLiteFile::mimeType() const
 {
     return "database/sqlite";

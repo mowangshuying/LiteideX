@@ -52,9 +52,13 @@ public:
     virtual void setReadOnly(bool b);
     virtual bool isReadOnly() const;
     virtual bool isModified() const;
+	virtual QString filePath() const;
     virtual QString fileName() const;
     virtual QString mimeType() const;
+	virtual QByteArray saveState() const;
+	virtual bool restoreState(const QByteArray& array);
     virtual LiteApi::IFile *file();
+    void onActive();
 public:
     void setFile(QSqlDbFile *file);
     void loadDatabase();

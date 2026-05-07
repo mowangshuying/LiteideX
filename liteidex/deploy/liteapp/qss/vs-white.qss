@@ -134,7 +134,7 @@ QGroupBox::title {
 QTabWidget::pane {
     background: rgb(238,238,242);
     border: transparent;
-    border-top: 2px solid rgb(0,108,190);
+    /*border-top: 2px solid rgb(0,108,190);*/
     /* border: transparent; */
 }
 
@@ -464,6 +464,7 @@ QHeaderView {
 QHeaderView::section {
     background: rgb(245,245,245);
     border: 0;
+	border-right: 1px solid rgb(204, 206, 219);
     color: black;
     padding: 3px 0 3px 4px;
 }

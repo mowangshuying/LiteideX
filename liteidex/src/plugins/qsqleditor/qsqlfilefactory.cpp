@@ -40,6 +40,7 @@ QSqlFileFactory::QSqlFileFactory(LiteApi::IApplication *app, QObject *parent) :
     LiteApi::IEditorFactory(parent),
     m_liteApp(app)
 {
+	m_mimeTypes.append("database/sqlite");
 }
 
 QStringList QSqlFileFactory::mimeTypes() const
@@ -63,6 +64,26 @@ LiteApi::IEditor *QSqlFileFactory::open(const QString &fileName, const QString &
     QSqlEditor *editor = new QSqlEditor(m_liteApp);
     editor->setFile(file);
     return editor;
+}
+
+LiteApi::IEditor* QSqlFileFactory::create(const QString& contents, const QString& mimeType)
+{
+	return 0;
+}
+
+QString  QSqlFileFactory::id() const
+{
+    return "QSqlFile";
+}
+
+QString  QSqlFileFactory::displayName() const
+{
+	return tr("QSql File");
+}
+
+bool QSqlFileFactory::testMimeType(const QString& mimeType)
+{
+	return m_mimeTypes.contains(mimeType);
 }
 
 bool QSqlFileFactory::targetInfo(const QString &/*fileName*/, const QString &/*mimetype*/, QString &/*target*/, QString &/*targetPath*/, QString &/*workPath*/) const

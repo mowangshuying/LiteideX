@@ -46,8 +46,12 @@ TableViewWidget::TableViewWidget(QSqlDatabase &db, QWidget *parent) :
     m_delegate = new SqlItemDelegate(this);
 
     ui->tableView->setModel(m_model);
-    ui->tableView->resizeColumnsToContents();
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
     ui->tableView->setItemDelegate(m_delegate);
+    // disable h scrollbar
+    //ui->tableView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    // ×ó¶ÔÆë
+    ui->tableView->horizontalHeader()->setDefaultAlignment(Qt::AlignLeft);
 }
 
 TableViewWidget::~TableViewWidget()

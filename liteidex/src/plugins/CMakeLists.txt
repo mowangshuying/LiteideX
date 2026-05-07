@@ -27,3 +27,4 @@ add_subdirectory(imageeditor)
 add_subdirectory(terminal)
 
 add_subdirectory(helloliteide)
+add_subdirectory(qsqleditor)

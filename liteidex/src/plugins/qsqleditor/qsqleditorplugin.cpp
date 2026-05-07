@@ -35,24 +35,22 @@
 
 QSqlEditorPlugin::QSqlEditorPlugin()
 {
-    m_info->setId("plugin/QSqlEditor");
-    m_info->setName("QSqlEditor");
-    m_info->setAuthor("visualfc");
-    m_info->setInfo("QtSql Editor Plugin");
+    //m_info->setId("plugin/QSqlEditor");
+    //m_info->setName("QSqlEditor");
+    //m_info->setAuthor("visualfc");
+    //m_info->setInfo("QtSql Editor Plugin");
 }
 
-bool QSqlEditorPlugin::initWithApp(LiteApi::IApplication *app)
+bool QSqlEditorPlugin::load(LiteApi::IApplication *app)
 {
-    if (!LiteApi::IPlugin::initWithApp(app)) {
-        return false;
-    }
+    //if (!LiteApi::IPlugin::initWithApp(app)) {
+    //    return false;
+    //}
 
     QSqlFileFactory *factory = new QSqlFileFactory(app,this);
     if (factory) {
-        m_liteApp->editorManager()->addFactory(factory);
+        app->editorManager()->addFactory(factory);
     }
 
     return true;
 }
-
-Q_EXPORT_PLUGIN(QSqlEditorPlugin)

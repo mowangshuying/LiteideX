@@ -55,6 +55,7 @@ PluginsDialog::PluginsDialog(LiteApi::IApplication *app, QWidget *parent) :
     m_model->setHeaderData(4, Qt::Horizontal, tr("Version"));
     m_model->setHeaderData(5, Qt::Horizontal, tr("File Name"));
     ui->treeView->setModel(m_model);
+    //ui->treeView->setShowGrid(true);
     ui->treeView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->treeView->setItemsExpandable(true);
     ui->treeView->setRootIsDecorated(false);

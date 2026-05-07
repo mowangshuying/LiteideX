@@ -31,10 +31,28 @@
 class QSqlEditorPlugin : public LiteApi::IPlugin
 {
     Q_OBJECT
-    Q_INTERFACES(LiteApi::IPlugin)
+    //Q_INTERFACES(LiteApi::IPlugin)
 public:
     QSqlEditorPlugin();
-    virtual bool initWithApp(LiteApi::IApplication *app);
+    virtual bool load(LiteApi::IApplication *app);
+};
+
+class PluginFactory : public LiteApi::PluginFactoryT<QSqlEditorPlugin>
+{
+    Q_OBJECT
+    Q_INTERFACES(LiteApi::IPluginFactory)
+#if QT_VERSION >= 0x050000
+        Q_PLUGIN_METADATA(IID "liteidex.QSqlEditorPlugin")
+#endif
+public:
+    PluginFactory() {
+        m_info->setId("plugin/QSqlEditorPlugin");
+        m_info->setVer("X38.6");
+        m_info->setName("QSqlEditor");
+        m_info->setAuthor("visualfc");
+        m_info->setInfo("Sql Editor Support");
+        m_info->appendDepend("plugin/liteeditor");
+    }
 };
 
 #endif // QSQLEDITORPLUGIN_H

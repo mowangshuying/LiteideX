@@ -33,6 +33,12 @@ public:
     SQLiteFile(LiteApi::IApplication *app, QObject *parent = 0);
 public:
     virtual bool open(const QString &fileName, const QString &mimeType);
+	virtual bool loadText(const QString& filePath, const QString& mimeType, QString& outText);
+    virtual bool reloadText(QString& outText);
+	virtual bool saveText(const QString& filePath, const QString& text);
+    virtual bool isReadOnly() const;
+    virtual bool isBinary() const;
+    virtual QString filePath() const;
     virtual QString mimeType() const;
 protected:
     LiteApi::IApplication *m_liteApp;

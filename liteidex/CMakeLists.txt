@@ -14,8 +14,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plug
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins")
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/lib/liteide")
 
-find_package(QT NAMES Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml)
-find_package(Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml)
+find_package(QT NAMES Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml Sql)
+find_package(Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml Sql)
 
 add_subdirectory(src)
 
