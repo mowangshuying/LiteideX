@@ -63,8 +63,10 @@ public:
     void setFile(QSqlDbFile *file);
     void loadDatabase();
 protected slots:
-    void dbTreeContextMenuRequested(const QPoint& pt);
+    //void dbTreeContextMenuRequested(const QPoint& pt);
     void editorTable();
+    void closeTab(int nIndex);
+	void onDoubleClicked(QModelIndex index);
 protected:
     void appendTableItems(QSql::TableType type);
     QString tableTypeNames(int type) const;
@@ -78,7 +80,7 @@ protected:
     QStandardItemModel *m_dbModel;
     QMenu   *m_tableMenu;
     QAction *m_infoAct;
-    QAction *m_editorAct;
+    //QAction *m_editorAct;
     QModelIndex m_contextIndex;
 };
 

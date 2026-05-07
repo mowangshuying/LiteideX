@@ -50,8 +50,8 @@ TableViewWidget::TableViewWidget(QSqlDatabase &db, QWidget *parent) :
     ui->tableView->setItemDelegate(m_delegate);
     // disable h scrollbar
     //ui->tableView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    // ×ó¶ÔÆë
     ui->tableView->horizontalHeader()->setDefaultAlignment(Qt::AlignLeft);
+    ui->tableView->setMaximumWidth(800);
 }
 
 TableViewWidget::~TableViewWidget()

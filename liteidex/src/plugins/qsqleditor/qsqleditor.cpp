@@ -54,17 +54,17 @@ QSqlEditor::QSqlEditor(LiteApi::IApplication *app) :
     ui->dbTreeView->setContextMenuPolicy(Qt::CustomContextMenu);
 
     ui->tabWidget->setTabsClosable(true);
+    //m_infoAct = new QAction(tr("Infomation"),this);
+    //m_editorAct = new QAction(tr("Edit Table"),this);
 
-    m_infoAct = new QAction(tr("Infomation"),this);
-    m_editorAct = new QAction(tr("Edit Table"),this);
+    //m_tableMenu = new QMenu;
+    //m_tableMenu->addAction(m_infoAct);
+    //m_tableMenu->addAction(m_editorAct);
 
-    m_tableMenu = new QMenu;
-    m_tableMenu->addAction(m_infoAct);
-    m_tableMenu->addAction(m_editorAct);
-
-    connect(ui->dbTreeView,SIGNAL(customContextMenuRequested(QPoint)),this,SLOT(dbTreeContextMenuRequested(QPoint)));
-    connect(m_editorAct,SIGNAL(triggered()),this,SLOT(editorTable()));
-    //connect(ui->tabWidget,SIGNAL(tabCloseRequested(int)),this,SLOT())
+    //connect(ui->dbTreeView,SIGNAL(customContextMenuRequested(QPoint)),this,SLOT(dbTreeContextMenuRequested(QPoint)));
+    //connect(m_editorAct,SIGNAL(triggered()),this,SLOT(editorTable()));
+    connect(ui->tabWidget,SIGNAL(tabCloseRequested(int)),this,SLOT(closeTab(int)));
+    connect(ui->dbTreeView, SIGNAL(doubleClicked(QModelIndex)), this, SLOT(onDoubleClicked(QModelIndex)));
 }
 
 QSqlEditor::~QSqlEditor()
@@ -73,7 +73,7 @@ QSqlEditor::~QSqlEditor()
     if (m_file) {
         delete m_file;
     }
-    delete m_tableMenu;
+    //delete m_tableMenu;
     delete ui;
     delete m_widget;
 }
@@ -226,25 +226,25 @@ void QSqlEditor::appendTableItems(QSql::TableType type)
     m_dbModel->appendRow(root);
 }
 
-void QSqlEditor::dbTreeContextMenuRequested(const QPoint &pt)
-{
-    QModelIndex index = ui->dbTreeView->indexAt(pt);
-    m_contextIndex = index;
-    if (!index.isValid()) {
-        return;
-    }
-    bool bok;
-    int type = index.data(Qt::UserRole+1).toInt(&bok);
-    QMenu *contextMenu = 0;
-    if (type == QSql::Tables ||
-            type == QSql::Views ||
-            type == QSql::SystemTables) {
-        contextMenu = m_tableMenu;
-    }
-    if (contextMenu) {
-        contextMenu->popup(ui->dbTreeView->mapToGlobal(pt));
-    }
-}
+//void QSqlEditor::dbTreeContextMenuRequested(const QPoint &pt)
+//{
+//    QModelIndex index = ui->dbTreeView->indexAt(pt);
+//    m_contextIndex = index;
+//    if (!index.isValid()) {
+//        return;
+//    }
+//    bool bok;
+//    int type = index.data(Qt::UserRole+1).toInt(&bok);
+//    QMenu *contextMenu = 0;
+//    if (type == QSql::Tables ||
+//            type == QSql::Views ||
+//            type == QSql::SystemTables) {
+//        contextMenu = m_tableMenu;
+//    }
+//    if (contextMenu) {
+//        contextMenu->popup(ui->dbTreeView->mapToGlobal(pt));
+//    }
+//}
 
 void QSqlEditor::editorTable()
 {
@@ -259,4 +259,15 @@ void QSqlEditor::editorTable()
         ui->tabWidget->addTab(w,QString(tr("%1:%2")).arg(typeName).arg(table));
         ui->tabWidget->setCurrentWidget(w);
     }
+}
+
+void  QSqlEditor::closeTab(int nIndex)
+{
+	ui->tabWidget->removeTab(nIndex);
+}
+
+void QSqlEditor::onDoubleClicked(QModelIndex index)
+{
+    m_contextIndex = index;
+	editorTable();
 }

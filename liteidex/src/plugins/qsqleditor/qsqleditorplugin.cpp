@@ -35,18 +35,10 @@
 
 QSqlEditorPlugin::QSqlEditorPlugin()
 {
-    //m_info->setId("plugin/QSqlEditor");
-    //m_info->setName("QSqlEditor");
-    //m_info->setAuthor("visualfc");
-    //m_info->setInfo("QtSql Editor Plugin");
 }
 
 bool QSqlEditorPlugin::load(LiteApi::IApplication *app)
 {
-    //if (!LiteApi::IPlugin::initWithApp(app)) {
-    //    return false;
-    //}
-
     QSqlFileFactory *factory = new QSqlFileFactory(app,this);
     if (factory) {
         app->editorManager()->addFactory(factory);
