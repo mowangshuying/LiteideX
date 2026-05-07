@@ -366,15 +366,14 @@ QAction *SplitWindowStyle::addToolWindow(LiteApi::IApplication *app,Qt::DockWidg
     actToolBar->addAction(action,title,split);
 
     action->setText(title);
-    int index = m_actStateMap.size();
-    if ((index <= 9) && m_useShortcuts) {
-        action->setText(QString("%1: %2").arg(index).arg(title));
-        QKeySequence ks(LiteApi::UseMacShortcuts?QString("Ctrl+Alt+%1").arg(index):QString("Alt+%1").arg(index));
-        LiteApi::IActionContext *actionContext = app->actionManager()->getActionContext(app,"App");
-        actionContext->regAction(action,"ToolWindow_"+id,ks.toString());
-    }
+    //int index = m_actStateMap.size();
+    //if ((index <= 9) && m_useShortcuts) {
+    //    action->setText(QString("%1: %2").arg(index).arg(title));
+    //    QKeySequence ks(LiteApi::UseMacShortcuts?QString("Ctrl+Alt+%1").arg(index):QString("Alt+%1").arg(index));
+    //    LiteApi::IActionContext *actionContext = app->actionManager()->getActionContext(app,"App");
+    //    actionContext->regAction(action,"ToolWindow_"+id,ks.toString());
+    //}
     m_actStateMap.insert(action,state);    
-
     connect(action,SIGNAL(toggled(bool)),this,SLOT(toggledAction(bool)));
     if (m_windowMenu) {
         m_windowMenu->addAction(action);

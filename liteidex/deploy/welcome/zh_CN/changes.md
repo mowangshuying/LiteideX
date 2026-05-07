@@ -3,6 +3,17 @@
 ## LiteIDE X Version
   LiteIDE is a simple, open source, cross-platform Go IDE.
 
+### 2026 5.7 Ver X38.6
+* ImageEditor
+    * support dropEvent.
+* QuickOpen
+    * fix at chinese can't get focus in QuickOpenWidget
+* LiteDebug
+    * adjust debugview to dock. 
+* LiteIDE
+    * fix lack ico of app
+    * update ts & qm.
+   
 ### 2026.4.9 Ver X38.5
 * LiteIDE
     * support Go1.26

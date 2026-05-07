@@ -189,12 +189,12 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
                 Qt::BottomDockWidgetArea,m_output,"DebugOutput",tr("Debug Output"),false,
                 QList<QAction*>() << clearAct);
 
-    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->watchView(), "DebugWatch", tr("Debug Watch"), false);
-    //m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->threadsView(), "ThreadsView", tr("Threads View"), false);
-    //m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->asyncView(), "Async View", tr("Async View"), false);
-    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->varsView(), "VarsView", tr("Vars View"), false);
-    //m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->goroutinesView(), "GoRoutinessView", tr("Go Routiness View"), false);
-    m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea, m_dbgWidget->framesView(), "FrameView", tr("Frame View"), false);
+    m_liteApp->toolWindowManager()->addToolWindow(Qt::RightDockWidgetArea, m_dbgWidget->watchView(), "DebugWatch", tr("Debug Watch"), false);
+    //m_liteApp->toolWindowManager()->addToolWindow(Qt::RightDockWidgetArea, m_dbgWidget->threadsView(), "ThreadsView", tr("Threads View"), false);
+    //m_liteApp->toolWindowManager()->addToolWindow(Qt::RightDockWidgetArea, m_dbgWidget->asyncView(), "Async View", tr("Async View"), false);
+    m_liteApp->toolWindowManager()->addToolWindow(Qt::RightDockWidgetArea, m_dbgWidget->varsView(), "VarsView", tr("Vars View"), false);
+    //m_liteApp->toolWindowManager()->addToolWindow(Qt::RightDockWidgetArea, m_dbgWidget->goroutinesView(), "GoRoutinessView", tr("Go Routiness View"), false);
+    m_liteApp->toolWindowManager()->addToolWindow(Qt::RightDockWidgetArea, m_dbgWidget->framesView(), "FrameView", tr("Frame View"), false);
 
     m_continueAct->setEnabled(false);
     m_stopDebugAct->setEnabled(false);
