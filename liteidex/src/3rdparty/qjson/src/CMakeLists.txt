@@ -65,12 +65,12 @@ target_link_libraries(${TGT} PRIVATE
 )
 
 # Install configuration (optional)
-install(TARGETS ${TGT}
-    ARCHIVE DESTINATION lib
-    LIBRARY DESTINATION lib
-)
+#install(TARGETS ${TGT}
+#    ARCHIVE DESTINATION lib
+#    LIBRARY DESTINATION lib
+#)
 
-install(FILES
-    ${PUBLIC_HEADERS}
-    DESTINATION include/qjson
-)
+#install(FILES
+#    ${PUBLIC_HEADERS}
+#    DESTINATION include/qjson
+#)
