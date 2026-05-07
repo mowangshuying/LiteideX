@@ -254,6 +254,16 @@ void QSqlEditor::editorTable()
             type == QSql::SystemTables) {
         QString typeName = tableTypeName(type);
         QString table = m_contextIndex.data().toString();
+
+        QString title = QString(tr("%1:%2")).arg(typeName).arg(table);
+        // find title
+        for (int i = 0; i < ui->tabWidget->count(); i++) {
+            if (ui->tabWidget->tabText(i) == title) {
+                ui->tabWidget->setCurrentIndex(i);
+                return;
+            }
+        }
+
         TableViewWidget *w = new TableViewWidget(m_file->db());
         w->setTable(table);
         ui->tabWidget->addTab(w,QString(tr("%1:%2")).arg(typeName).arg(table));
