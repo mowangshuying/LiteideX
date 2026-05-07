@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="Notepad++ Green v3">
+  <!--
+  Green theme with red keywords for maximum contrast
+  -->
+  <style name="Text" foreground="#1A1A1A" background="#E8F5E9"/>
+  <style name="Extra" foreground="#1B5E20" background="#ACEEBB"/>
+  <style name="Selection" background="#81C784"/>
+  <style name="CurrentLine" background="#C8E6C9"/>
+  <style name="MatchBrackets" background="#66BB6A"/>
+  <style name="IndentLine" foreground="#4CAF50"/>
+  <style name="VisualWhitespace" foreground="#43A047"/>
+  <style name="Keyword" foreground="#DD4B4B" bold="true"/>
+  <style name="DataType" foreground="#00695C"/>
+  <style name="Decimal" foreground="#000000"/>
+  <style name="BaseN" foreground="#000000"/>
+  <style name="Float" foreground="#000000"/>
+  <style name="Char" foreground="#C62828"/>
+  <style name="String" foreground="#C62828"/>
+  <style name="Comment" foreground="#2E7D32" italic="true"/>
+  <style name="Alert" foreground="#D32F2F"/>
+  <style name="Error" foreground="#D32F2F" bold="true"/>
+  <style name="Function" foreground="#0D47A1"/>
+  <style name="RegionMarker" foreground="#003300"/>
+  <style name="Symbol" foreground="#1A1A1A"/>
+  <style name="BuiltinFunc" foreground="#1565C0"/>
+  <style name="Predeclared" foreground="#1565C0"/>
+  <style name="FuncDecl" foreground="#003300"/>
+  <style name="Placeholder" foreground="#C62828"/>
+  <style name="ToDo" foreground="#003300" background="#A5D6A7" bold="true"/>
+</style-scheme>
