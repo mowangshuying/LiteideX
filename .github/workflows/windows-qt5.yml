@@ -61,7 +61,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./build/liteide.zip
+          file: ./liteidex/build/liteide.zip
           asset_name: ${{ env.fileName }}-${{ github.ref_name }}-${{ matrix.qt_arch }}-Qt${{ matrix.qt_ver }}.zip
           tag: ${{ github.ref }}
           overwrite: true 
