@@ -107,6 +107,8 @@ public:
 
     virtual void appendLog(const QString &model, const QString &log = QString(), bool error = false);
     virtual void sendBroadcast(const QString &module, const QString &id, const QVariant &param = QVariant());
+
+    virtual void setTheme(QString qss);
 public:
     void load(const QString &sessionName, IApplication *baseApp);
     void createActions();

@@ -65,7 +65,7 @@ LiteEditorOption::LiteEditorOption(LiteApi::IApplication *app,QObject *parent) :
 //    QFontDatabase db;
 //    const QStringList families = db.families();
 
-    connect(ui->editPushButton,SIGNAL(clicked()),this,SLOT(editStyleFile()));
+    //connect(ui->editPushButton,SIGNAL(clicked()),this,SLOT(editStyleFile()));
     connect(ui->rightLineVisibleCheckBox,SIGNAL(toggled(bool)),ui->rightLineWidthSpinBox,SLOT(setEnabled(bool)));
     connect(ui->restoreDefaultFontButton,SIGNAL(clicked()),this,SLOT(restoreDefaultFont()));
     connect(ui->monospaceFontCheckBox,SIGNAL(toggled(bool)),this,SLOT(filterMonospaceFont(bool)));
@@ -122,12 +122,12 @@ void LiteEditorOption::save()
     }
     m_liteApp->settings()->setValue(EDITOR_FONTZOOM,fontZoom);
 
-    QString style = ui->styleComboBox->currentText();
-    if (style != m_liteApp->settings()->value(EDITOR_STYLE,"default.xml").toString()) {
-        m_liteApp->settings()->setValue(EDITOR_STYLE,style);
-        QString styleFile = m_liteApp->resourcePath()+"/liteeditor/color/"+style;
-        m_liteApp->editorManager()->loadColorStyleScheme(styleFile);
-    }
+    //QString style = ui->styleComboBox->currentText();
+    //if (style != m_liteApp->settings()->value(EDITOR_STYLE,"default.xml").toString()) {
+    //    m_liteApp->settings()->setValue(EDITOR_STYLE,style);
+    //    QString styleFile = m_liteApp->resourcePath()+"/liteeditor/color/"+style;
+    //    m_liteApp->editorManager()->loadColorStyleScheme(styleFile);
+    //}
 
     bool noprintCheck = ui->noprintCheckBox->isChecked();
     bool autoIndent = ui->autoIndentCheckBox->isChecked();
@@ -229,23 +229,23 @@ void LiteEditorOption::load()
 
     ui->fontZoomSpinBox->setValue(fontZoom);
 
-    QString styleName = m_liteApp->settings()->value(EDITOR_STYLE,"default.xml").toString();
-    QString stylePath = m_liteApp->resourcePath()+"/liteeditor/color";
-    QDir dir(stylePath);
-    int index = -1;
-    if (!QFileInfo(stylePath,styleName).exists()) {
-        styleName = "default.xml";
-    }
-    ui->styleComboBox->clear();
-    foreach(QFileInfo info, dir.entryInfoList(QStringList() << "*.xml")) {
-        ui->styleComboBox->addItem(info.fileName());
-        if (info.fileName() == styleName) {
-            index = ui->styleComboBox->count()-1;
-        }
-    }
-    if (index >= 0 && index < ui->styleComboBox->count()) {
-        ui->styleComboBox->setCurrentIndex(index);
-    }
+    //QString styleName = m_liteApp->settings()->value(EDITOR_STYLE,"default.xml").toString();
+    //QString stylePath = m_liteApp->resourcePath()+"/liteeditor/color";
+    //QDir dir(stylePath);
+    //int index = -1;
+    //if (!QFileInfo(stylePath,styleName).exists()) {
+    //    styleName = "default.xml";
+    //}
+    //ui->styleComboBox->clear();
+    //foreach(QFileInfo info, dir.entryInfoList(QStringList() << "*.xml")) {
+    //    ui->styleComboBox->addItem(info.fileName());
+    //    if (info.fileName() == styleName) {
+    //        index = ui->styleComboBox->count()-1;
+    //    }
+    //}
+    //if (index >= 0 && index < ui->styleComboBox->count()) {
+    //    ui->styleComboBox->setCurrentIndex(index);
+    //}
     bool noprintCheck = m_liteApp->settings()->value(EDITOR_NOPRINTCHECK,true).toBool();
     bool autoIndent = m_liteApp->settings()->value(EDITOR_AUTOINDENT,true).toBool();
     bool autoBraces0 = m_liteApp->settings()->value(EDITOR_AUTOBRACE0,true).toBool();
@@ -383,15 +383,15 @@ QList<int> LiteEditorOption::pointSizesForSelectedFont() const
     return sizeLst;
 }
 
-void LiteEditorOption::editStyleFile()
-{
-    QString fileName = ui->styleComboBox->currentText();
-    if (fileName.isEmpty()) {
-        return;
-    }
-    QString filePath = m_liteApp->resourcePath()+"/liteeditor/color/"+fileName;
-    m_liteApp->fileManager()->openEditor(filePath);
-}
+//void LiteEditorOption::editStyleFile()
+//{
+//    QString fileName = ui->styleComboBox->currentText();
+//    if (fileName.isEmpty()) {
+//        return;
+//    }
+//    QString filePath = m_liteApp->resourcePath()+"/liteeditor/color/"+fileName;
+//    m_liteApp->fileManager()->openEditor(filePath);
+//}
 
 void LiteEditorOption::mimeItemChanged(QStandardItem *item)
 {

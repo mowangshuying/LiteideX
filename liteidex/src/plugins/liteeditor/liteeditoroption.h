@@ -47,7 +47,7 @@ public:
     void updatePointSizes();
     QList<int> pointSizesForSelectedFont() const;
 public slots:
-    void editStyleFile();
+    //void editStyleFile();
     void mimeItemChanged(QStandardItem*);
 public:
     int m_fontSize;

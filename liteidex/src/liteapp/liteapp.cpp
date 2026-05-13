@@ -695,6 +695,25 @@ void LiteApp::sendBroadcast(const QString &module, const QString &id, const QVar
     emit broadcast(module,id,param);
 }
 
+void LiteApp::setTheme(QString qss)
+{
+    /// qss file;
+    QFile f(resourcePath() + "/liteapp/qss/" + qss);
+    if (f.open(QFile::ReadOnly)) {
+        settings()->setValue(LITEAPP_QSS, qss);
+        QString styleSheet = QLatin1String(f.readAll());
+        qApp->setStyleSheet(styleSheet);
+    }
+
+    // qss editor file;
+    QString baseName = QFileInfo(qss).baseName();
+    baseName += ".xml";
+    QString style = baseName;
+    settings()->setValue("editor/style", style);
+    QString styleFile = resourcePath() + "/liteeditor/color/" + style;
+    editorManager()->loadColorStyleScheme(styleFile);
+}
+
 void LiteApp::loadPlugins()
 {
     pluginManager()->loadPlugins(m_pluginPath);

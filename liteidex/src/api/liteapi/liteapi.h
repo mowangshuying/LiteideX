@@ -777,6 +777,7 @@ public:
 
     virtual void appendLog(const QString &model, const QString &log, bool error = false) = 0;
     virtual void sendBroadcast(const QString &module, const QString &id, const QVariant &param = QVariant()) = 0;
+    virtual void setTheme(QString qssFile) = 0;
 signals:    
     void loaded();
     void aboutToQuit();

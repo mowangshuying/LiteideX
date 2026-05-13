@@ -220,12 +220,7 @@ void LiteAppOption::save()
 
     QString qss = ui->qssComboBox->currentText();
     if (!qss.isEmpty()) {
-        QFile f(m_liteApp->resourcePath()+"/liteapp/qss/"+qss);
-        if (f.open(QFile::ReadOnly)) {
-            m_liteApp->settings()->setValue(LITEAPP_QSS,qss);
-            QString styleSheet = QLatin1String(f.readAll());
-            qApp->setStyleSheet(styleSheet);
-        }
+        m_liteApp->setTheme(qss);
     }
 
     bool customelIcon = ui->customIconCheckBox->isChecked();
