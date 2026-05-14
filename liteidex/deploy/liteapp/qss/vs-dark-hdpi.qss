@@ -504,3 +504,8 @@ QTreeView::branch:open:has-children {
 QFrame#infoLabel {
     border: 1px inset #333333;
 }
+
+QTextBrowser {
+    background-color: #2D2D30;
+    color: #BBBBBB;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="gorm">
+  <!--
+  GitHub: https://github.com/vacoj/gorm-liteide-theme
+  Modeled after: http://jinzhu.me/gorm/ and https://github.com/josephspurrier/liteide-material
+  Color Help: https://github.com/visualfc/liteide/blob/master/liteidex/deploy/liteeditor/color/colorhelp.md
+  -->
+
+  <!-- Text color and background 1C1F2B-->
+  <style name="Text" foreground="#bdcadb" background="#1c1f2b"/>
+
+  <!-- Line numbering and background -->
+  <style name="Extra" foreground="#969896" background="#222737"/> 
+
+  <!-- Text highlighting -->
+  <style name="Selection" background="#314549"/>
+
+   <!-- Current line where the cursor is -->
+  <style name="CurrentLine" background="#222737"/>
+
+   <!-- 80 pixel margins -->
+  <style name="IndentLine" foreground="#80CBC4"/>
+
+   <!-- Space after code -->
+  <style name="VisualWhitespace" foreground="#1C1F2B"/>
+
+   <!-- Keywords: package, import, func, return, if, type, interface -->
+   <!-- Also controls the command at the top of the Build Output window -->
+  <style name="Keyword" foreground="#c792ea" bold="false"/>
+
+   <!-- Keywords: string, error, int, bool, rune, byte-->
+  <style name="DataType" foreground="#FFCB6B" bold="false" /> 
+
+   <!-- Numbers: 1, 1.2, 2.0-->
+  <style name="Decimal" foreground="#de8845" italic="true" bold="false"/>
+
+   <!-- NO IDEA -->
+  <style name="BaseN" foreground="yellow" bold="false"/>
+
+   <!-- NO IDEA -->
+  <style name="Float" foreground="yellow" bold="false"/>
+
+   <!-- Text: 'c' -->
+  <style name="Char" foreground="#B9CA4A" background="#222737" />
+
+   <!-- Text: "word" C3E88D -->
+  <style name="String" foreground="#B9CA4A" background="#222737" />
+
+   <!-- Text: // This is a comment  -->
+  <style name="Comment" foreground="#969896" />
+
+   <!-- Yellow line for warnings, left side of IDE-->
+  <style name="Alert" foreground="yellow"/>
+
+   <!-- Error message at the bottom of the Build Output window -->
+  <style name="Error" foreground="#F77669"/>
+
+   <!-- NO IDEA -->
+  <style name="Function" foreground="yellow"/>
+
+   <!-- Marks like: ( ) { } = , := += . * & -->
+  <style name="RegionMarker" foreground="#b83f45"/>
+
+   <!-- NO IDEA -->
+  <style name="Symbol" foreground="red" bold="true"/> 
+
+   <!-- Functions: make(), len()-->
+  <style name="BuiltinFunc" foreground="#44cc11" italic="true" bold="false"/>
+
+   <!-- Variables: true, false, nil -->
+  <style name="Predeclared" foreground="#E78C45"/>
+
+   <!-- Functions like: main and any other function name -->
+  <style name="FuncDecl" foreground="#82AAFF"/>
+
+   <!-- NO IDEA -->
+  <style name="Placeholder" foreground="yellow"/>
+
+   <!-- Declaration: // TODO -->
+  <style name="ToDo" foreground="#ffcb6b" background="#1C1F2B" bold="true"/>
+</style-scheme>
