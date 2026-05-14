@@ -171,20 +171,18 @@ QTabWidget::pane {
 QTabBar::tab {
     background: transparent;
     border: 1px solid transparent;
-    /*border-bottom: 2px solid #007ACC;*/
     color: #BBBBBB;
     min-width: 10ex;
     padding: 1ex 4ex;
 }
 
 QTabBar::tab:hover {
-    background-color: #1C97EA;
-    /*border-bottom: 2px solid #007ACC;*/
+    background-color: #007ACC;
     border-bottom: none;
 }
 
 QTabBar::tab:selected {
-    background-color: #2D2D30;
+    background-color: #007ACC;
     border: 2px solid #3D3D3D;
     border-top: none;
     border-top: 1px solid #3D3D3D;
@@ -268,13 +266,13 @@ RotationToolButton:pressed {
     color: #BBBBBB;
 }
 RotationToolButton:hover,RotationToolButton:checked:hover {
+    background-color: #007ACC;
     border-top-color: #007ACC;
-    color: #007ACC;
 }
 RotationToolButton:checked  {
-    border: 1px solid #444444;
-    border-bottom: 0px solid #000000;
-    color: #BBBBBB;
+    border: 1px solid #007ACC;
+    background-color: #007ACC;
+    color: #FFFFFF;
 }
 
 
