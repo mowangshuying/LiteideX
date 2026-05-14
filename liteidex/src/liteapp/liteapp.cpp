@@ -714,6 +714,13 @@ void LiteApp::setTheme(QString qss)
     editorManager()->loadColorStyleScheme(styleFile);
 }
 
+QString LiteApp::theme()
+{
+    QString qss = settings()->value(LITEAPP_QSS).toString();
+    QString baseName = QFileInfo(qss).baseName();
+    return baseName;
+}
+
 void LiteApp::loadPlugins()
 {
     pluginManager()->loadPlugins(m_pluginPath);

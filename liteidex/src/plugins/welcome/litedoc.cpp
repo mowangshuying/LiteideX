@@ -225,6 +225,8 @@ void LiteDoc::updateTextDoc(const QUrl &url, const QByteArray &ba, const QString
     QString html = Qt::escape(codec->toUnicode(ba));
 #endif
     QString data = m_templateData;
+    QString theme = m_liteApp->theme();
+    data.replace("{theme}", theme);
     data.replace("{header}",header);
     data.replace("{nav}","");
     data.replace("{content}",QString("<pre>%1</pre>").arg(html));
@@ -240,7 +242,8 @@ void LiteDoc::updateHtmlDoc(const QUrl &url, const QByteArray &ba, const QString
     QString nav;
     QString content = HtmlUtil::docToNavdoc(codec->toUnicode(ba),genHeader,nav);
     QString data = m_templateData;
-
+    QString theme = m_liteApp->theme();
+    data.replace("{theme}", theme);
     if (!header.isEmpty()) {
         data.replace("{header}",header);
     } else {

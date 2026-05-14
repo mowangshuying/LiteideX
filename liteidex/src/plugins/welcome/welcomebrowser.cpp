@@ -143,6 +143,9 @@ void WelcomeBrowser::loadData()
 {
     QString data = m_templateData;
 
+    QString theme = m_liteApp->theme();
+    //settings()->setValue(LITEAPP_QSS, qss);
+
     QStringList sessionList;
     sessionList.append("<ul>");
     sessionList.append(QString("<li><a href=\"session:default\">default</a></li>"));
@@ -171,6 +174,7 @@ void WelcomeBrowser::loadData()
         recentList.append("</td></tr></table>");
     }
 
+    data.replace("{theme}", theme);
     data.replace("{liteide_version}",m_liteApp->ideVersion());
     data.replace("{recent_files}",recentList.join("\n"));
     QUrl url(m_liteApp->resourcePath()+"/welcome/welcome.html");

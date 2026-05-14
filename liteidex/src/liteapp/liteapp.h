@@ -109,6 +109,7 @@ public:
     virtual void sendBroadcast(const QString &module, const QString &id, const QVariant &param = QVariant());
 
     virtual void setTheme(QString qss);
+    virtual QString theme();
 public:
     void load(const QString &sessionName, IApplication *baseApp);
     void createActions();
