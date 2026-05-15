@@ -376,6 +376,7 @@ void GolangDoc::updateTextDoc(const QUrl &url, const QByteArray &ba, const QStri
     QString html = Qt::escape(codec->toUnicode(ba));
 #endif
     QString data = m_templateData;
+    data.replace("{theme}", m_liteApp->theme());
     data.replace("{header}",header);
     data.replace("{nav}","");
     data.replace("{content}",QString("<pre>%1</pre>").arg(html));
@@ -418,7 +419,7 @@ void GolangDoc::updateHtmlDoc(const QUrl &url, const QByteArray &ba, const QStri
 
     QString content = HtmlUtil::docToNavdoc(codec->toUnicode(ba),genHeader,nav);
     QString data = m_templateData;
-
+    data.replace("{theme}", m_liteApp->theme());
     if (genHeader.isEmpty()) {
         data.replace("{header}",header);
     } else {

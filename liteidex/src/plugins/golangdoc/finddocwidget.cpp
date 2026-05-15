@@ -316,6 +316,7 @@ func Println(args ...interface{})
 
     m_htmlData.append(array.join("\n"));
     QString html = m_templateData;
+    html.replace("{theme}", m_liteApp->theme());
     html.replace("{content}",m_htmlData);
     int pos = m_browser->scrollBarValue(Qt::Vertical);
     m_browser->setHtml(html,QUrl());
@@ -326,6 +327,7 @@ void FindDocWidget::extFinish(bool, int, QString)
 {
     if (m_htmlData.isEmpty()) {
         QString html = m_templateData;
+        html.replace("{theme}", m_liteApp->theme());
         html.replace("{content}","<b>Not found!</b>");
         m_browser->setHtml(html,QUrl());
     }
@@ -377,6 +379,7 @@ void FindDocWidget::openUrl(QUrl url)
 void FindDocWidget::showHelp()
 {
     QString data = m_templateData;
+    data.replace("{theme}", m_liteApp->theme());
     data.replace("{content}",help);
     m_browser->setHtml(data,QUrl());
 }
