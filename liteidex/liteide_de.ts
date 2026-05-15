@@ -20,7 +20,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="168"/>
             <source>Welcome to LiteIDE X! LiteIDE is a simple, open source, cross-platform IDE.</source>
-            <translation>Willkommen bei LiteIDE X! LiteIDE ist eine einfache, open-source-, plattformübergreifende IDE.</translation>
+            <translation>Willkommen bei LiteIDE X! LiteIDE ist eine einfache, quelloffene, plattformübergreifende IDE.</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="178"/>
@@ -45,7 +45,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="242"/>
             <source>Build:</source>
-            <translation>Bauen:</translation>
+            <translation>Build:</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="215"/>
@@ -60,7 +60,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="263"/>
             <source>Support LiteIDE:</source>
-            <translation>Unterstütze LiteIDE:</translation>
+            <translation>Unterstützen Sie LiteIDE:</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="297"/>
@@ -110,7 +110,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="544"/>
             <source>Thanks to...</source>
-            <translation>Dank an...</translation>
+            <translation>Danke an...</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="568"/>
@@ -138,7 +138,7 @@
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="66"/>
             <source>&amp;Recent</source>
-            <translation>&amp;Kürzlich</translation>
+            <translation>&amp;Zuletzt verwendete</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="67"/>
@@ -148,7 +148,7 @@
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="68"/>
             <source>F&amp;ind</source>
-            <translation>F&amp;finden</translation>
+            <translation>S&amp;uchen</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="69"/>
@@ -163,7 +163,7 @@
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="75"/>
             <source>&amp;Build</source>
-            <translation>&amp;Bauen</translation>
+            <translation>&amp;Erstellen</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="76"/>
@@ -191,7 +191,7 @@
         <message>
             <location filename="src/plugins/golangast/astwidget.cpp" line="78"/>
             <source>View Import Document</source>
-            <translation>Importdokument ansehen</translation>
+            <translation>Importdokument anzeigen</translation>
         </message>
     </context>
     <context>
@@ -204,12 +204,12 @@
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="78"/>
             <source>Hide Tool Window</source>
-            <translation>Tool-Fenster ausblenden</translation>
+            <translation>Werkzeugfenster ausblenden</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="87"/>
             <source>Floating Window</source>
-            <translation>Schwebendes Fenster</translation>
+            <translation>Freies Fenster</translation>
         </message>
     </context>
     <context>
@@ -264,7 +264,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="100"/>
             <source>Open Terminal Here</source>
-            <translation>Terminal hier öffnen</translation>
+            <translation>Hier Terminal öffnen</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="90"/>
@@ -274,7 +274,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="77"/>
             <source>Open Application</source>
-            <translation>Offene Bewerbung</translation>
+            <translation>Anwendung öffnen</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="92"/>
@@ -284,12 +284,12 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="94"/>
             <source>Show Containing Folder</source>
-            <translation>Enthaltenden Ordner anzeigen</translation>
+            <translation>Beinhaltenden Ordner anzeigen</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="98"/>
             <source>Open Command Prompt Here</source>
-            <translation>Eingabeaufforderung hier öffnen</translation>
+            <translation>Hier Eingabeaufforderung öffnen</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="102"/>
@@ -350,7 +350,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="209"/>
             <source>Failed to create the file!</source>
-            <translation>Datei konnte nicht erstellt werden!</translation>
+            <translation>Das Erstellen der Datei ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="239"/>
@@ -378,7 +378,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="505"/>
             <source>Stop</source>
-            <translation>Stoppen</translation>
+            <translation>Abbrechen</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="506"/>
@@ -388,7 +388,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="507"/>
             <source>Keep Both All</source>
-            <translation>Behalte Beide Alle</translation>
+            <translation>Alle beider behalten</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="508"/>
@@ -403,7 +403,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="609"/>
             <source>Are you sure that you want move to trash this item?</source>
-            <translation>Sind Sie sicher, dass Sie diesen Artikel in den Papierkorb verschieben möchten?</translation>
+            <translation>Sind Sie sicher, dass Sie dieses Element in den Papierkorb verschieben möchten?</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="612"/>
@@ -468,7 +468,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="343"/>
             <source>Failed to delete the folder!</source>
-            <translation>Der Ordner konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen des Ordners ist fehlgeschlagen!</translation>
         </message>
     </context>
     <context>
@@ -481,7 +481,7 @@
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="100"/>
             <source>Goto bookmark</source>
-            <translation>Zum Lesezeichen gehen</translation>
+            <translation>Zum Lesezeichen springen</translation>
         </message>
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="101"/>
@@ -532,7 +532,7 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="85"/>
             <source>GOPATH</source>
-            <translation>Go-Pfad</translation>
+            <translation>GOPATH</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="103"/>
@@ -542,17 +542,17 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="147"/>
             <source>Use Custom GOPATH for Build Path</source>
-            <translation>Benutze benutzerdefinierten GOPATH für den Build-Pfad</translation>
+            <translation>Benutzerdefinierten GOPATH für den Build-Pfad verwenden</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="159"/>
             <source>Inherit System GOPATH</source>
-            <translation>System-GOPATH erben</translation>
+            <translation>System-GOPATH übernehmen</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="179"/>
             <source>Inherit LiteIDE GOPATH</source>
-            <translation>LiteIDE GOPATH übernehmen</translation>
+            <translation>LiteIDE-GOPATH übernehmen</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="201"/>
@@ -567,7 +567,7 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="228"/>
             <source>Clear</source>
-            <translation>Klar</translation>
+            <translation>Leeren</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="244"/>
@@ -592,7 +592,7 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="343"/>
             <source>Reset all to initial value</source>
-            <translation>Alle auf den Anfangswert zurücksetzen</translation>
+            <translation>Alle auf den Ausgangswert zurücksetzen</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.cpp" line="69"/>
@@ -616,7 +616,7 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.cpp" line="82"/>
             <source>Id</source>
-            <translation>Identität</translation>
+            <translation>ID</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.cpp" line="83"/>
@@ -626,7 +626,7 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.cpp" line="294"/>
             <source>Choose directory to add to GOPATH:</source>
-            <translation>Verzeichnis auswählen, das zum GOPATH hinzugefügt werden soll:</translation>
+            <translation>Wählen Sie das Verzeichnis, das zum GOPATH hinzugefügt werden soll:</translation>
         </message>
     </context>
     <context>
@@ -649,7 +649,7 @@
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="161"/>
             <source>Fit on Screen</source>
-            <translation>Fit auf dem Bildschirm</translation>
+            <translation>Auf Bildschirm anpassen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="166"/>
@@ -659,12 +659,12 @@
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="175"/>
             <source>Zoom In (25%)</source>
-            <translation>Hineinzoomen (25%)</translation>
+            <translation>Hineinzoomen (25 %)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="180"/>
             <source>Zoom Out (25%)</source>
-            <translation>Auszoomen (25%)</translation>
+            <translation>Herauszoomen (25 %)</translation>
         </message>
     </context>
     <context>
@@ -694,7 +694,7 @@
             <location filename="src/3rdparty/ads/examples/configflags/mainwindow.ui" line="35"/>
             <location filename="src/3rdparty/ads/examples/emptydockarea/mainwindow.ui" line="35"/>
             <source>toolBar</source>
-            <translation>Werkzeugleiste</translation>
+            <translation>Symbolleiste</translation>
         </message>
     </context>
     <context>
@@ -702,12 +702,12 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="20"/>
             <source>Dock Widget Status</source>
-            <translation>Dock-Widget-Status</translation>
+            <translation>Dok‑Widget‑Status</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="35"/>
             <source>Dock Widget:</source>
-            <translation>Dock-Widget:</translation>
+            <translation>Dok‑Widget:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="58"/>
@@ -722,42 +722,42 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="71"/>
             <source>floating</source>
-            <translation>schwebend</translation>
+            <translation>freischwebend</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="78"/>
             <source>tabbed</source>
-            <translation>registerbasiert</translation>
+            <translation>registergesteuert</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="85"/>
             <source>is current tab</source>
-            <translation>ist aktueller Tab</translation>
+            <translation>ist aktueller Registerkarte</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="101"/>
             <source>Feature Flags</source>
-            <translation>Feature-Flags</translation>
+            <translation>Feature‑Flags</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="107"/>
             <source>DockWidgetClosable</source>
-            <translation>Dock-Widget schließbar</translation>
+            <translation>Dok‑Widget schließbar</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="114"/>
             <source>DockWidgetMovable</source>
-            <translation>Dock-Widget bewegbar</translation>
+            <translation>Dok‑Widget verschiebbar</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="121"/>
             <source>DockWidgetFloatable</source>
-            <translation>Dock-Widget-freischwebend</translation>
+            <translation>Dok‑Widget freischwebbar</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="128"/>
             <source>DockWidgetDeleteOnClose</source>
-            <translation>Dock-Widget-Löschen-bei-Schließen</translation>
+            <translation>Dok‑Widget beim Schließen löschen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="135"/>
@@ -818,7 +818,7 @@
         <message>
             <location filename="src/utils/folderview/folderdialog.cpp" line="57"/>
             <source>Create and Edit</source>
-            <translation>Erstellen und Bearbeiten</translation>
+            <translation>Erstellen und bearbeiten</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/folderdialog.cpp" line="58"/>
@@ -832,12 +832,12 @@
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="132"/>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="352"/>
             <source>Add Watch</source>
-            <translation>Uhr hinzufügen</translation>
+            <translation>Beobachtung hinzufügen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="240"/>
             <source>Async Record</source>
-            <translation>Asynchrones Protokoll</translation>
+            <translation>Asynchrone Aufzeichnung</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="241"/>
@@ -847,7 +847,7 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="242"/>
             <source>Watch</source>
-            <translation>Uhr</translation>
+            <translation>Beobachtung</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="243"/>
@@ -857,7 +857,7 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="244"/>
             <source>Threads</source>
-            <translation>Fäden</translation>
+            <translation>Threads</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="245"/>
@@ -877,7 +877,7 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="248"/>
             <source>Disassemble</source>
-            <translation>Zerlegen</translation>
+            <translation>Disassemblieren</translation>
         </message>
         <message>
             <source>Console</source>
@@ -886,17 +886,17 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="352"/>
             <source>Watch expression (e.g. buf main.var os.Stdout):</source>
-            <translation>Ausdruck beobachten (z. B. buf main.var os.Stdout):</translation>
+            <translation>Wachsausdruck (z. B. buf main.var os.Stdout):</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="134"/>
             <source>Remove Watch</source>
-            <translation>Uhr entfernen</translation>
+            <translation>Wache entfernen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="135"/>
             <source>Remove All Watches</source>
-            <translation>Alle Überwachungen entfernen</translation>
+            <translation>Alle Wachen entfernen</translation>
         </message>
     </context>
     <context>
@@ -904,12 +904,12 @@
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="20"/>
             <source>Delve Pass Flags</source>
-            <translation>Delve-Pass-Flaggen</translation>
+            <translation>Delve-Übergabeflaggen</translation>
         </message>
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="26"/>
@@ -934,7 +934,7 @@
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="65"/>
             <source>Go</source>
-            <translation>Gehen</translation>
+            <translation>Go</translation>
         </message>
     </context>
     <context>
@@ -957,7 +957,7 @@
         <message>
             <location filename="src/utils/documentbrowser/documentbrowser.cpp" line="75"/>
             <source>Increase Font Size</source>
-            <translation>Schriftgröße erhöhen</translation>
+            <translation>Schriftgröße vergrößern</translation>
         </message>
         <message>
             <location filename="src/utils/documentbrowser/documentbrowser.cpp" line="78"/>
@@ -1008,7 +1008,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="142"/>
             <source>Close All</source>
-            <translation>Alles schließen</translation>
+            <translation>Alle schließen</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="143"/>
@@ -1023,7 +1023,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="145"/>
             <source>Close Files in Same Folder</source>
-            <translation>Dateien im selben Ordner schließen</translation>
+            <translation>Dateien im gleichen Ordner schließen</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="146"/>
@@ -1048,17 +1048,17 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="154"/>
             <source>Show Containing Folder</source>
-            <translation>Enthaltenden Ordner anzeigen</translation>
+            <translation>Übergeordneten Ordner anzeigen</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="158"/>
             <source>Open Command Prompt Here</source>
-            <translation>Eingabeaufforderung hier öffnen</translation>
+            <translation>Hier Eingabeaufforderung öffnen</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="160"/>
             <source>Open Terminal Here</source>
-            <translation>Terminal hier öffnen</translation>
+            <translation>Hier Terminal öffnen</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="162"/>
@@ -1073,12 +1073,12 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="228"/>
             <source>Go to next tab</source>
-            <translation>Zum nächsten Tab gehen</translation>
+            <translation>Zum nächsten Tab wechseln</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="229"/>
             <source>Go to previous tab</source>
-            <translation>Zur vorherigen Registerkarte gehen</translation>
+            <translation>Zum vorherigen Tab wechseln</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="432"/>
@@ -1088,7 +1088,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="433"/>
             <source>Unsaved Modifications</source>
-            <translation>Nicht gespeicherte Änderungen</translation>
+            <translation>Ungespeicherte Änderungen</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="530"/>
@@ -1098,7 +1098,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="532"/>
             <source>Save As</source>
-            <translation>Speichern als</translation>
+            <translation>Speichern unter</translation>
         </message>
     </context>
     <context>
@@ -1106,12 +1106,12 @@
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="445"/>
             <source>Environment Toolbar</source>
-            <translation>Umwelt-Symbolleiste</translation>
+            <translation>Umgebungssymbolleiste</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="452"/>
             <source>Switching current environment</source>
-            <translation>Wechseln der aktuellen Umgebung</translation>
+            <translation>Wechsel der aktuellen Umgebung</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="455"/>
@@ -1126,7 +1126,7 @@
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="460"/>
             <source>Select Environment</source>
-            <translation>Umwelt auswählen</translation>
+            <translation>Umgebung auswählen</translation>
         </message>
     </context>
     <context>
@@ -1144,12 +1144,12 @@
         <message>
             <location filename="src/plugins/golangpresent/exportdialog.ui" line="49"/>
             <source>Export</source>
-            <translation>Export</translation>
+            <translation>Exportieren</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/exportdialog.ui" line="56"/>
             <source>ExportAndView</source>
-            <translation>ExportierenUndAnzeigen</translation>
+            <translation>Exportieren und anzeigen</translation>
         </message>
     </context>
     <context>
@@ -1162,7 +1162,7 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimactions.cpp" line="196"/>
             <source>Read .vimrc</source>
-            <translation>.vimrc lesen</translation>
+            <translation>.vimrc einlesen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimactions.cpp" line="198"/>
@@ -1186,7 +1186,7 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="949"/>
             <source>Mark &quot;%1&quot; not set.</source>
-            <translation>Markierung „%1“ nicht gesetzt.</translation>
+            <translation>Marke „%1“ ist nicht gesetzt.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3538"/>
@@ -1216,12 +1216,12 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5733"/>
             <source>Trailing characters:</source>
-            <translation>Nachgestellte Zeichen:</translation>
+            <translation>Überzählige Zeichen:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5816"/>
             <source>Move lines into themselves.</source>
-            <translation>Zeilen in sich selbst verschieben.</translation>
+            <translation>Zeilen werden in sich selbst verschoben.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5860"/>
@@ -1231,27 +1231,27 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5920"/>
             <source>File &quot;%1&quot; exists (add ! to override)</source>
-            <translation>Datei „%1“ existiert (füge ! hinzu, um zu überschreiben)</translation>
+            <translation>Datei „%1“ existiert (fügen Sie ! hinzu, um zu überschreiben)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5934"/>
             <source>Cannot open file &quot;%1&quot; for writing</source>
-            <translation>Datei „%1“ kann nicht zum Schreiben geöffnet werden</translation>
+            <translation>Kann Datei „%1“ nicht zum Schreiben öffnen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5940"/>
             <source>&quot;%1&quot; %2 %3L, %4C written.</source>
-            <translation>„%1“ %2 %3L, %4C geschrieben.</translation>
+            <translation>&quot;%1&quot; %2 %3L, %4C geschrieben.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5949"/>
             <source>Cannot open file &quot;%1&quot; for reading</source>
-            <translation>Datei „%1“ kann nicht zum Lesen geöffnet werden</translation>
+            <translation>Kann Datei „%1“ nicht zum Lesen öffnen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5978"/>
             <source>&quot;%1&quot; %2L, %3C</source>
-            <translation>„%1“ %2 l, %3 c</translation>
+            <translation>&quot;%1&quot; %2L, %3C</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6005"/>
@@ -1261,7 +1261,7 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6093"/>
             <source>Cannot open file %1</source>
-            <translation>Datei %1 kann nicht geöffnet werden</translation>
+            <translation>Kann Datei %1 nicht öffnen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6259"/>
@@ -1276,22 +1276,22 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6299"/>
             <source>Search hit BOTTOM, continuing at TOP.</source>
-            <translation>Suchtreffer UNTEN, weiter oben an der SPITZE.</translation>
+            <translation>Suchtreffer am unteren Rand; Fortsetzung am oberen Rand.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6300"/>
             <source>Search hit TOP, continuing at BOTTOM.</source>
-            <translation>Suchtreffer TOP, weiter unten.</translation>
+            <translation>Suchtreffer am oberen Rand; Fortsetzung am unteren Rand.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6305"/>
             <source>Search hit BOTTOM without match for: %1</source>
-            <translation>Suchtreffer UNTEN ohne Übereinstimmung für: %1</translation>
+            <translation>Suchtreffer am unteren Rand ohne Übereinstimmung für: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6306"/>
             <source>Search hit TOP without match for: %1</source>
-            <translation>Suchtreffer TOP ohne Übereinstimmung für: %1</translation>
+            <translation>Suchtreffer am oberen Rand ohne Übereinstimmung für: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6413"/>
@@ -1301,22 +1301,22 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6470"/>
             <source>%n lines %1ed %2 time.</source>
-            <translation>%n Zeilen %1ed %2 Zeit.</translation>
+            <translation>%n Zeilen %1ed %2 Mal.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7043"/>
             <source>%n lines yanked.</source>
-            <translation>%n Zeilen entfernt.</translation>
+            <translation>%n Zeilen verschoben.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7748"/>
             <source>Already at oldest change.</source>
-            <translation>Bereits beim ältesten Wechsel.</translation>
+            <translation>Bereits am ältesten Änderungspunkt.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7749"/>
             <source>Already at newest change.</source>
-            <translation>Bereits beim neuesten Wechsel.</translation>
+            <translation>Bereits am neuesten Änderungspunkt.</translation>
         </message>
     </context>
     <context>
@@ -1324,17 +1324,17 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="2788"/>
             <source>Recursive mapping</source>
-            <translation>Rekursives Mapping</translation>
+            <translation>Rekursive Zuordnung</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="4195"/>
             <source>Type Alt-V, Alt-V to quit FakeVim mode.</source>
-            <translation>Drücken Sie Alt-V, Alt-V, um den FakeVim-Modus zu beenden.</translation>
+            <translation>Drücken Sie Alt-V, Alt-V, um den FakeVim-Modus zu verlassen.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5941"/>
             <source> [New] </source>
-            <translation>[Neu] </translation>
+            <translation> [Neu] </translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6166"/>
@@ -1355,12 +1355,12 @@
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="20"/>
             <source>FakeVim initialization command list (# start is comment):</source>
-            <translation>Liste der FakeVim-Initialisierungsbefehle (# start ist ein Kommentar):</translation>
+            <translation>Liste der FakeVim-Initialisierungsbefehle (# Start ist ein Kommentar):</translation>
         </message>
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="28"/>
@@ -1401,7 +1401,7 @@
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="159"/>
             <source>Set As Root Folder</source>
-            <translation>Als Stammordner festlegen</translation>
+            <translation>Als Stammverzeichnis festlegen</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="119"/>
@@ -1421,7 +1421,7 @@
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="122"/>
             <source>Debug File</source>
-            <translation>Debug-Datei</translation>
+            <translation>Datei debuggen</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="160"/>
@@ -1436,12 +1436,12 @@
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="141"/>
             <source>Open Parent</source>
-            <translation>Offenes Elternteil</translation>
+            <translation>Übergeordneten Ordner öffnen</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="169"/>
             <source>Filter</source>
-            <translation>Filtern</translation>
+            <translation>Filter</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="175"/>
@@ -1454,7 +1454,7 @@
         <message>
             <location filename="src/plugins/filebrowser/filebrowseroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowseroption.ui" line="20"/>
@@ -1489,7 +1489,7 @@
             <location filename="src/liteapp/filemanager.cpp" line="399"/>
             <source>Project '%1' has been created.
 Do you want to open it now?</source>
-            <translation>Projekt '%1' wurde erstellt.
+            <translation>Das Projekt '%1' wurde erstellt.
 Möchten Sie es jetzt öffnen?</translation>
         </message>
         <message>
@@ -1510,7 +1510,7 @@ Möchten Sie es jetzt öffnen?</translation>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="85"/>
             <source>Split Mode</source>
-            <translation>Split-Modus</translation>
+            <translation>Geteilter Modus</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="127"/>
@@ -1564,11 +1564,11 @@ but you have unsaved modifications in your LiteIDE editor.
 Do you want to reload the file from disk?
 Answering &quot;Yes&quot; will discard your unsaved changes.</source>
             <translation>%1
-Diese Datei wurde auf dem Speichermedium geändert,
-aber Sie haben noch nicht gespeicherte Änderungen in Ihrem LiteIDE-Editor.
+Diese Datei wurde auf dem Laufwerk geändert,
+aber Sie haben nicht gespeicherte Änderungen in Ihrem LiteIDE-Editor.
 
-Möchten Sie die Datei erneut aus dem Speicher laden?
-Wenn Sie mit „Ja“ antworten, werden Ihre nicht gespeicherten Änderungen verworfen.</translation>
+Möchten Sie die Datei erneut von der Festplatte laden?
+Bei Auswahl von „Ja“ werden Ihre nicht gespeicherten Änderungen verworfen.</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="727"/>
@@ -1584,7 +1584,7 @@ Möchten Sie die Datei erneut von der Festplatte laden?</translation>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="351"/>
             <source>Open Files</source>
-            <translation>Dateien öffnen</translation>
+            <translation>Geöffnete Dateien</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="82"/>
@@ -1594,7 +1594,7 @@ Möchten Sie die Datei erneut von der Festplatte laden?</translation>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="113"/>
             <source>Filter</source>
-            <translation>Filtern</translation>
+            <translation>Filter</translation>
         </message>
         <message>
             <source>Open Project</source>
@@ -1622,7 +1622,7 @@ Möchten Sie die Datei erneut von der Festplatte laden?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="217"/>
             <source>Match whole word</source>
-            <translation>Ganzes Wort matchen</translation>
+            <translation>Ganzes Wort suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="218"/>
@@ -1637,12 +1637,12 @@ Möchten Sie die Datei erneut von der Festplatte laden?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="220"/>
             <source>Scan subdirectories</source>
-            <translation>Unterverzeichnisse scannen</translation>
+            <translation>Unterverzeichnisse durchsuchen</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="241"/>
             <source>Search for:</source>
-            <translation>Suche nach:</translation>
+            <translation>Suchen nach:</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="243"/>
@@ -1682,17 +1682,17 @@ Möchten Sie die Datei erneut von der Festplatte laden?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="254"/>
             <source>Auto Switch</source>
-            <translation>Autoschalter</translation>
+            <translation>Automatisches Wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="278"/>
             <source>Clear</source>
-            <translation>Klar</translation>
+            <translation>Löschen</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="481"/>
             <source>Open Directory</source>
-            <translation>Offenes Verzeichnis</translation>
+            <translation>Verzeichnis öffnen</translation>
         </message>
     </context>
     <context>
@@ -1705,7 +1705,7 @@ Möchten Sie die Datei erneut von der Festplatte laden?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="69"/>
             <source>Only golang file changes can be revert!</source>
-            <translation>Nur Änderungen in Go-Dateien können rückgängig gemacht werden!</translation>
+            <translation>Nur Go-Dateiänderungen können rückgängig gemacht werden!</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="83"/>
@@ -1733,19 +1733,19 @@ Möchten Sie die Datei erneut von der Festplatte laden?</translation>
             <source>Warning! Replace text is empty.
 Want to remove all the search items?</source>
             <translation>Warnung! Der Ersetzungstext ist leer.
-Möchten Sie alle Suchbegriffe entfernen?</translation>
+Möchten Sie alle Suchelemente entfernen?</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="254"/>
             <source>Warning! Replace text is whitespace.
 Want to replace to all the search items to whitespace?</source>
-            <translation>Warnung! Der Ersetzungstext ist Leerzeichen.
-Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
+            <translation>Warnung! Der Ersetzungstext besteht nur aus Leerzeichen.
+Möchten Sie alle Suchelemente durch Leerzeichen ersetzen?</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="281"/>
             <source>The following files have no write permissions. Do you want to change the permissions?</source>
-            <translation>Die folgenden Dateien haben keine Schreibberechtigungen. Möchten Sie die Berechtigungen ändern?</translation>
+            <translation>Die folgenden Dateien verfügen über keine Schreibberechtigung. Möchten Sie die Berechtigungen ändern?</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="284"/>
@@ -1831,7 +1831,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="107"/>
             <source>View Godoc Here</source>
-            <translation>Sehen Sie sich Godoc hier an</translation>
+            <translation>Godoc hier anzeigen</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="454"/>
@@ -1867,7 +1867,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="290"/>
             <source>Failed to create the file!</source>
-            <translation>Datei konnte nicht erstellt werden!</translation>
+            <translation>Das Erstellen der Datei ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="320"/>
@@ -1888,7 +1888,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="351"/>
             <source>Failed to delete the file!</source>
-            <translation>Datei konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen der Datei ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="369"/>
@@ -1938,7 +1938,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="167"/>
             <source>Repeat the search with same parameters</source>
-            <translation>Suche mit denselben Parametern wiederholen</translation>
+            <translation>Mit denselben Parametern erneut suchen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="168"/>
@@ -1948,7 +1948,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="174"/>
             <source>Set show replace mode ui</source>
-            <translation>Setze die Benutzeroberfläche für den Ersetzungsmodus im Show-Modus.</translation>
+            <translation>Benutzeroberfläche für den Ersetzungsmodus anzeigen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="175"/>
@@ -1981,12 +1981,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="204"/>
             <source>Expand all items</source>
-            <translation>Alle Elemente erweitern</translation>
+            <translation>Alle Elemente ausklappen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="209"/>
             <source>Collapse all items</source>
-            <translation>Alle Elemente zusammenklappen</translation>
+            <translation>Alle Elemente einklappen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="318"/>
@@ -2006,27 +2006,27 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="596"/>
             <source>%n matches replaced.</source>
-            <translation>%n Übereinstimmungen wurden ersetzt.</translation>
+            <translation>%n Übereinstimmungen ersetzt.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="598"/>
             <source>searching... %n matches found.</source>
-            <translation>suche… %n Treffer gefunden.</translation>
+            <translation>suche… %n Übereinstimmungen gefunden.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="604"/>
             <source>searching ...</source>
-            <translation>suche ...</translation>
+            <translation>suche …</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="610"/>
             <source>No matches found.</source>
-            <translation>Keine Treffer gefunden.</translation>
+            <translation>Keine Übereinstimmungen gefunden.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="612"/>
             <source>%n matches found.</source>
-            <translation>% n Treffer gefunden.</translation>
+            <translation>%n Übereinstimmungen gefunden.</translation>
         </message>
     </context>
     <context>
@@ -2034,7 +2034,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.h" line="73"/>
             <source>Search</source>
-            <translation>Suche</translation>
+            <translation>Suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.h" line="74"/>
@@ -2047,7 +2047,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.cpp" line="284"/>
             <source>Search</source>
-            <translation>Suche</translation>
+            <translation>Suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.cpp" line="305"/>
@@ -2061,7 +2061,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="96"/>
             <source>Search</source>
-            <translation>Suche</translation>
+            <translation>Suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="104"/>
@@ -2076,37 +2076,37 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="124"/>
             <source>Find const</source>
-            <translation>Konstante finden</translation>
+            <translation>Konstanten finden</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="126"/>
             <source>Find func</source>
-            <translation>Funktion finden</translation>
+            <translation>Funktionen finden</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="128"/>
             <source>Find interface</source>
-            <translation>Schnittstelle finden</translation>
+            <translation>Schnittstellen finden</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="130"/>
             <source>Find pkg</source>
-            <translation>Paket finden</translation>
+            <translation>Pakete finden</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="132"/>
             <source>Find struct</source>
-            <translation>Struktur finden</translation>
+            <translation>Strukturen finden</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="134"/>
             <source>Find type</source>
-            <translation>Typ finden</translation>
+            <translation>Typ suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="136"/>
             <source>Find var</source>
-            <translation>Finde Var</translation>
+            <translation>Variable suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="138"/>
@@ -2121,7 +2121,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="142"/>
             <source>Match Word</source>
-            <translation>Wort matchen</translation>
+            <translation>Ganzes Wort abgleichen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="169"/>
@@ -2144,12 +2144,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="65"/>
             <source>Wrap around</source>
-            <translation>Umarmen</translation>
+            <translation>Zyklisch durchsuchen</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="56"/>
             <source>Find Next</source>
-            <translation>Weiter suchen</translation>
+            <translation>Nächstes finden</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="57"/>
@@ -2174,14 +2174,14 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="62"/>
             <source>Match whole word only</source>
-            <translation>Nur das ganze Wort matchen</translation>
+            <translation>Nur ganze Wörter abgleichen</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="72"/>
             <location filename="src/plugins/litefind/findeditor.cpp" line="250"/>
             <location filename="src/plugins/litefind/findeditor.cpp" line="472"/>
             <source>Ready</source>
-            <translation>Bereit</translation>
+            <translation>Fertig</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="81"/>
@@ -2226,7 +2226,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/folderview/folderlistview.cpp" line="263"/>
             <source>Failed to delete the file!</source>
-            <translation>Datei konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen der Datei ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/folderlistview.cpp" line="275"/>
@@ -2269,7 +2269,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/folderview/folderview.cpp" line="184"/>
             <source>Failed to delete the file!</source>
-            <translation>Datei konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen der Datei ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/folderview.cpp" line="230"/>
@@ -2293,7 +2293,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/gdbdebugger/gdbdebuggeroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/gdbdebugger/gdbdebuggeroption.ui" line="20"/>
@@ -2328,7 +2328,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="176"/>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="204"/>
             <source>Multiple options separated by commas</source>
-            <translation>Mehrere Optionen, getrennt durch Kommas</translation>
+            <translation>Mehrere Optionen durch Kommas getrennt</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="74"/>
@@ -2344,22 +2344,22 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="155"/>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="187"/>
             <source>Tag Name</source>
-            <translation>Tag-Name</translation>
+            <translation>Tagname</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="162"/>
             <source>Setup custom tag name</source>
-            <translation>Benutzerdefinierten Tag-Namen einrichten</translation>
+            <translation>Benutzerdefinierten Tagnamen festlegen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="299"/>
             <source>Sort sorts the tags in increasing order according to the key name</source>
-            <translation>Sort sortiert die Tags in aufsteigender Reihenfolge nach dem Schlüsselnamen.</translation>
+            <translation>Sortieren sortiert die Tags in aufsteigender Reihenfolge nach dem Schlüsselnamen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="306"/>
             <source>Override current tags when adding tags</source>
-            <translation>Bestehende Tags beim Hinzufügen von Tags überschreiben</translation>
+            <translation>Bestehende Tags beim Hinzufügen überschreiben</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="316"/>
@@ -2387,7 +2387,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="39"/>
             <source>Clear All Tags Options</source>
-            <translation>Alle Tag-Optionen löschen</translation>
+            <translation>Alle Tagoptionen löschen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="46"/>
@@ -2407,7 +2407,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="70"/>
             <source>Multiple tags separated by commas</source>
-            <translation>Mehrere Tags, getrennt durch Kommas</translation>
+            <translation>Mehrere Tags durch Kommas getrennt</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="77"/>
@@ -2418,7 +2418,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="84"/>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="98"/>
             <source>Multiple options separated by commas</source>
-            <translation>Mehrere Optionen, getrennt durch Kommas</translation>
+            <translation>Mehrere Optionen durch Kommas getrennt</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="91"/>
@@ -2428,12 +2428,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="111"/>
             <source>Remove Custom Tag Options</source>
-            <translation>Benutzerdefinierte Tag-Optionen entfernen</translation>
+            <translation>Optionen des benutzerdefinierten Tags entfernen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="118"/>
             <source>Setup remove custom tag and option, example tag=opt1,tag=opt2</source>
-            <translation>Setup zum Entfernen benutzerdefinierter Tags und Optionen, Beispiel: Tag=opt1, Tag=opt2</translation>
+            <translation>Festlegung zum Entfernen eines benutzerdefinierten Tags und seiner Optionen, Beispiel: tag=opt1,tag=opt2</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="121"/>
@@ -2451,7 +2451,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="60"/>
             <source>No outline available</source>
-            <translation>Kein Gliederung vorhanden</translation>
+            <translation>Kein Gliederung verfügbar</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="74"/>
@@ -2462,12 +2462,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="80"/>
             <source>Go Class View</source>
-            <translation>Klassenansicht aufrufen</translation>
+            <translation>Zur Klassenansicht wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="81"/>
             <source>Go Outline</source>
-            <translation>Gehe Gliederung</translation>
+            <translation>Zur Gliederung wechseln</translation>
         </message>
     </context>
     <context>
@@ -2475,12 +2475,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangast/golangastoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangastoption.ui" line="20"/>
             <source>QuickOpenSymbol</source>
-            <translation>SchnellOpenSymbol</translation>
+            <translation>Schnelle Symbolöffnung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangastoption.ui" line="26"/>
@@ -2498,22 +2498,22 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="20"/>
             <source>PKG automitic import prompt</source>
-            <translation>PKG automatische Importaufforderung</translation>
+            <translation>PKG automatische Importabfrage</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="26"/>
             <source>PKG automatic import hints for all packages (Module/GOPATH)</source>
-            <translation>Automatische Importhinweise für alle Pakete (Modul/GOPATH)</translation>
+            <translation>PKG automatische Importhinweise für alle Pakete (Modul/GOPATH)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="33"/>
             <source>PKG automatic import hints for standard package</source>
-            <translation>Automatische Importhinweise für Standardpakete in PKG</translation>
+            <translation>PKG automatische Importhinweise für Standardpakete</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="43"/>
@@ -2522,7 +2522,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         </message>
         <message>
             <source>Auto update depends package when it's source changed.</source>
-            <translation>Die automatische Aktualisierung hängt vom Paket ab, wenn seine Quelle geändert wird.</translation>
+            <translation>Abhängigkeiten beim Ändern der Quelldatei automatisch aktualisieren.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="49"/>
@@ -2540,12 +2540,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="92"/>
             <source>Go Doc Search</source>
-            <translation>Arzt suchen</translation>
+            <translation>Go-Dokumentationssuche</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="96"/>
             <source>Go Api Index</source>
-            <translation>Go API Index</translation>
+            <translation>Go-API-Index</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="111"/>
@@ -2563,7 +2563,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="20"/>
             <source>Go API</source>
-            <translation>Go-API</translation>
+            <translation>Go API</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="26"/>
@@ -2573,7 +2573,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="33"/>
             <source>Only load standard API documentation</source>
-            <translation>Nur standardmäßige API-Dokumentation laden</translation>
+            <translation>Nur die Standard-API-Dokumentation laden</translation>
         </message>
     </context>
     <context>
@@ -2581,7 +2581,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="90"/>
             <source>View import package use godoc</source>
-            <translation>Importpaket mit godoc ansehen</translation>
+            <translation>Verwendung von Importpaketen mit godoc anzeigen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="93"/>
@@ -2605,7 +2605,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="330"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="331"/>
             <source>Find Usages</source>
-            <translation>Benutzungen finden</translation>
+            <translation>Verwendungen suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="102"/>
@@ -2634,22 +2634,22 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="184"/>
             <source>Go Source Query</source>
-            <translation>Go-Quellabfrage</translation>
+            <translation>Go-Quelle abfragen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="189"/>
             <source>SourceQuery What</source>
-            <translation>Quellabfrage Was</translation>
+            <translation>SourceQuery – Was</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="193"/>
             <source>Callees</source>
-            <translation>Straßenhändler</translation>
+            <translation>Nachgeordnete</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="197"/>
             <source>Callers</source>
-            <translation>Anrufer</translation>
+            <translation>Vorgesetzte</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="201"/>
@@ -2674,47 +2674,47 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="217"/>
             <source>Implements</source>
-            <translation>Implementiert</translation>
+            <translation>Implementierungen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="221"/>
             <source>Implements(GOPATH)</source>
-            <translation>Implementiert(GOPATH)</translation>
+            <translation>Implementierungen(GOPATH)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="225"/>
             <source>Peers</source>
-            <translation>Peers</translation>
+            <translation>Peer-Elemente</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="229"/>
             <source>Referrers</source>
-            <translation>Bezieher</translation>
+            <translation>Referenzen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="233"/>
             <source>Pointsto</source>
-            <translation>Punkte auf</translation>
+            <translation>Pointsto</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="237"/>
             <source>Whicherrs</source>
-            <translation>Welche Fehler</translation>
+            <translation>Whicherrs</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="241"/>
             <source>Add Tags To Struct Field</source>
-            <translation>Tags zum Strukturfeld hinzufügen</translation>
+            <translation>Tags zu Strukturfeldern hinzufügen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="245"/>
             <source>Remove Tags From Struct Field</source>
-            <translation>Tags aus Strukturfeld entfernen</translation>
+            <translation>Tags von Strukturfeldern entfernen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="249"/>
             <source>Find All References (gopls)</source>
-            <translation>Alle Verweise finden (gopls)</translation>
+            <translation>Alle Verweise suchen (gopls)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="253"/>
@@ -2731,24 +2731,24 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="401"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="441"/>
             <source>Refactor</source>
-            <translation>Refaktorisieren</translation>
+            <translation>Refaktorisierung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="411"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="452"/>
             <source>SourceQuery</source>
-            <translation>Quellabfrage</translation>
+            <translation>SourceQuery</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="865"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1046"/>
             <source>Below files in package %1</source>
-            <translation>Unten Dateien im Paket %1</translation>
+            <translation>Unter Dateien im Paket %1</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1441"/>
             <source>All References</source>
-            <translation>Alle Referenzen</translation>
+            <translation>Alle Verweise</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1449"/>
@@ -2761,7 +2761,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="20"/>
@@ -2771,12 +2771,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="26"/>
             <source>Go root source file editor setup read only</source>
-            <translation>Gehe zum Quellcode-Editor der Root-Datei und setze sie auf schreibgeschützt.</translation>
+            <translation>Go root Quelldatei‑Editor: Nur‑Lese‑Einstellung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="33"/>
             <source>Enable view expression infomation on mouse</source>
-            <translation>Informationsanzeige für Ansichtsausdrücke bei Mausbewegung aktivieren</translation>
+            <translation>Anzeige von Ausdrucksinformationen bei Mausüberführung aktivieren</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="40"/>
@@ -2789,7 +2789,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangedit/golangfilesearch.cpp" line="59"/>
             <source>Golang Find Usages</source>
-            <translation>Golang Usages finden</translation>
+            <translation>Golang Find Usages</translation>
         </message>
     </context>
     <context>
@@ -2797,22 +2797,22 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formatierung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="20"/>
             <source>Format Options</source>
-            <translation>Formatoptionen</translation>
+            <translation>Formatierungsoptionen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="26"/>
             <source>Goimports updates your Go import lines, adding missing ones and removing unreferenced ones.</source>
-            <translation>Goimports aktualisiert Ihre Go-Importanweisungen, fügt fehlende hinzu und entfernt nicht referenzierte.</translation>
+            <translation>Goimports aktualisiert Ihre Go-Import-Anweisungen, fügt fehlende hinzu und entfernt nicht referenzierte.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="29"/>
             <source>Enable update imports line, adding missing ones and removing unreferenced ones.</source>
-            <translation>Aktivieren Sie den Import-Update-Modus, um fehlende Einträge hinzuzufügen und nicht mehr verwendete zu entfernen.</translation>
+            <translation>Import-Anweisungen automatisch aktualisieren: Fehlende hinzufügen und nicht referenzierte entfernen.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="46"/>
@@ -2827,7 +2827,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="61"/>
             <source>Synchronous code formatting timeout in milliseconds (500ms or more):</source>
-            <translation>Zeitüberschreitung für das synchrone Code-Formatieren in Millisekunden (500 ms oder mehr):</translation>
+            <translation>Timeout für das synchrone Code-Formatieren in Millisekunden (500 ms oder mehr):</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="36"/>
@@ -2841,12 +2841,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golangfmt/golangfmtplugin.cpp" line="58"/>
             <location filename="src/plugins/golangfmt/golangfmtplugin.cpp" line="66"/>
             <source>Format Code</source>
-            <translation>Formatcode</translation>
+            <translation>Code formatieren</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtplugin.cpp" line="59"/>
             <source>Format Code (Adjusts Imports)</source>
-            <translation>Formatcode (Passt Importe an)</translation>
+            <translation>Code formatieren (Importe anpassen)</translation>
         </message>
     </context>
     <context>
@@ -2854,12 +2854,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formatierung</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="20"/>
             <source>Lint Options</source>
-            <translation>Flusenoptionen</translation>
+            <translation>Lint-Optionen</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="26"/>
@@ -2869,7 +2869,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="38"/>
             <source>Minimum confidence</source>
-            <translation>Minimale Konfidenz</translation>
+            <translation>Minimale Zuverlässigkeit</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="95"/>
@@ -2884,7 +2884,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="115"/>
             <source>Code linting timeout in milliseconds (500ms or more):</source>
-            <translation>Code-Linting-Timeout in Millisekunden (500 ms oder mehr):</translation>
+            <translation>Timeout für das Linten von Code in Millisekunden (500 ms oder mehr):</translation>
         </message>
     </context>
     <context>
@@ -2893,7 +2893,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="57"/>
             <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="63"/>
             <source>Lint Code</source>
-            <translation>Lint-Code</translation>
+            <translation>Code lintern</translation>
         </message>
     </context>
     <context>
@@ -2901,12 +2901,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.cpp" line="304"/>
             <source>Choose directory to add to GOPATH:</source>
-            <translation>Verzeichnis auswählen, das zum GOPATH hinzugefügt werden soll:</translation>
+            <translation>Verzeichnis für GOPATH auswählen:</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="14"/>
             <source>Manage GOPATH / Modules</source>
-            <translation>GOPATH / Modules verwalten</translation>
+            <translation>GOPATH / Module verwalten</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="35"/>
@@ -2916,27 +2916,27 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="78"/>
             <source>Custom GONOPROXY</source>
-            <translation>Benutzerdefiniertes GONOPROXY</translation>
+            <translation>Benutzerdefinierte GONOPROXY-Einstellung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="88"/>
             <source>Custom GOPROXY</source>
-            <translation>Benutzerdefiniertes GOPROXY</translation>
+            <translation>Benutzerdefinierte GOPROXY-Einstellung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="95"/>
             <source>Custom GO111MODULE</source>
-            <translation>Benutzerdefiniertes GO111MODULE</translation>
+            <translation>Benutzerdefinierte GO111MODULE-Einstellung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="102"/>
             <source>Custom GONOSUMDB</source>
-            <translation>Benutzerdefinierte GONOSUMDB</translation>
+            <translation>Benutzerdefinierte GONOSUMDB-Einstellung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="109"/>
             <source>Custom GOPRIVATE</source>
-            <translation>Benutzerdefiniertes GOPRIVATE</translation>
+            <translation>Benutzerdefinierte GOPRIVATE-Einstellung</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="125"/>
@@ -2946,7 +2946,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="137"/>
             <source>GOPATH</source>
-            <translation>Go-Pfad</translation>
+            <translation>GOPATH</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="163"/>
@@ -2971,7 +2971,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="240"/>
             <source>Clear</source>
-            <translation>Klar</translation>
+            <translation>Leeren</translation>
         </message>
     </context>
     <context>
@@ -2989,7 +2989,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="70"/>
             <source>Sub-subsection (s3)</source>
-            <translation>Unterunterabschnitt (s3)</translation>
+            <translation>Unter-Unterabschnitt (s3)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="73"/>
@@ -3009,12 +3009,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="82"/>
             <source>Switch Bullets</source>
-            <translation>Kugeln wechseln</translation>
+            <translation>Aufzählungszeichen wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="85"/>
             <source>Comment/Uncomment Selection</source>
-            <translation>Auswahl kommentieren/entkommentieren</translation>
+            <translation>Auswahl kommentieren/Entkommentieren</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="88"/>
@@ -3025,17 +3025,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="91"/>
             <source>Verify Present</source>
-            <translation>Präsens verifizieren</translation>
+            <translation>Prüfen, ob vorhanden</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="256"/>
             <source>Present verify success</source>
-            <translation>Erfolg der Präsentation überprüfen</translation>
+            <translation>Prüfung erfolgreich</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="258"/>
             <source>Present verify false</source>
-            <translation>Präsens verifizieren falsch</translation>
+            <translation>Prüfung fehlgeschlagen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="310"/>
@@ -3048,7 +3048,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangast/golangsymbol.cpp" line="63"/>
             <source>Quick Open Symbol by Name</source>
-            <translation>Schnellöffnungssymbol nach Name</translation>
+            <translation>Symbol nach Name schnell öffnen</translation>
         </message>
     </context>
     <context>
@@ -3136,7 +3136,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="217"/>
             <source>Failed to create the file!</source>
-            <translation>Datei konnte nicht erstellt werden!</translation>
+            <translation>Das Erstellen der Datei ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="247"/>
@@ -3162,7 +3162,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="271"/>
             <source>Failed to delete the file!</source>
-            <translation>Datei konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen der Datei ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="289"/>
@@ -3204,7 +3204,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="332"/>
             <source>Failed to delete the folder!</source>
-            <translation>Der Ordner konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen des Ordners ist fehlgeschlagen!</translation>
         </message>
     </context>
     <context>
@@ -3212,7 +3212,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangtool/gopathprojectfactor.cpp" line="49"/>
             <source>&lt;GOPATH&gt; Project</source>
-            <translation>&lt;GOPATH&gt; Projekt</translation>
+            <translation>&lt;GOPATH&gt;-Projekt</translation>
         </message>
     </context>
     <context>
@@ -3221,17 +3221,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="70"/>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="135"/>
             <source>Go Playground</source>
-            <translation>Go Spielplatz</translation>
+            <translation>Go Playground</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="72"/>
             <source>Run</source>
-            <translation>Laufen</translation>
+            <translation>Ausführen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="73"/>
             <source>Stop</source>
-            <translation>Stoppen</translation>
+            <translation>Stopp</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="74"/>
@@ -3276,7 +3276,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="250"/>
             <source>Select a file to load:</source>
-            <translation>Wählen Sie eine Datei zum Laden:</translation>
+            <translation>Wählen Sie eine Datei zum Laden aus:</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="266"/>
@@ -3294,7 +3294,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/tools/template/hello_option/hellooption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
     </context>
     <context>
@@ -3302,29 +3302,29 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="26"/>
             <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
 &lt;p&gt;Highlight definitions are provided by the &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate Text Editor&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
             <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
-&lt;p&gt;Hervorhebungsdefinitionen werden vom &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate-Texteditor&lt;/a&gt; bereitgestellt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p&gt;Hervorhebungsregeln werden vom &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate-Texteditor&lt;/a&gt; bereitgestellt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="62"/>
             <source>Syntax Highlight Definition Files</source>
-            <translation>Syntax-Highlighting-Definitionsdateien</translation>
+            <translation>Syntaxhervorhebungs-Definitionsdateien</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="72"/>
             <source>Location:</source>
-            <translation>Ort:</translation>
+            <translation>Speicherort:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="91"/>
             <source>Use fallback location</source>
-            <translation>Fallback-Ort verwenden</translation>
+            <translation>Fallback-Speicherort verwenden</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="106"/>
@@ -3358,13 +3358,13 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="77"/>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="381"/>
             <source>Export Html</source>
-            <translation>HTML exportieren</translation>
+            <translation>Als HTML exportieren</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="78"/>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="413"/>
             <source>Export PDF</source>
-            <translation>PDF exportieren</translation>
+            <translation>Als PDF exportieren</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="79"/>
@@ -3404,7 +3404,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="390"/>
             <source>Could not open %1 for writing!</source>
-            <translation>Konnte %1 nicht zum Schreiben öffnen!</translation>
+            <translation>%1 konnte zum Schreiben nicht geöffnet werden!</translation>
         </message>
     </context>
     <context>
@@ -3417,7 +3417,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="64"/>
             <source>ZoomOut</source>
-            <translation>Vergrößern</translation>
+            <translation>Herauszoomen</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="67"/>
@@ -3427,7 +3427,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="70"/>
             <source>Fit to view</source>
-            <translation>Bereit zur Ansicht</translation>
+            <translation>An Ansicht anpassen</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="73"/>
@@ -3438,17 +3438,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="77"/>
             <source>Prev frame</source>
-            <translation>Vorheriges Bild</translation>
+            <translation>Voriges Bild</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="81"/>
             <source>Next frame</source>
-            <translation>Nächstes Frame</translation>
+            <translation>Nächstes Bild</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="253"/>
             <source>Pause movie</source>
-            <translation>Film pausieren</translation>
+            <translation>Film anhalten</translation>
         </message>
     </context>
     <context>
@@ -3469,7 +3469,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="20"/>
             <source>System GOPATH</source>
-            <translation>System GOPATH</translation>
+            <translation>System-GOPATH</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="35"/>
@@ -3489,7 +3489,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="78"/>
             <source>Clear</source>
-            <translation>Klar</translation>
+            <translation>Leeren</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.cpp" line="73"/>
@@ -3502,7 +3502,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangcode/golangcode.cpp" line="847"/>
             <source>warning, pkg not find, please enter to import :</source>
-            <translation>Warnung: Paket nicht gefunden, bitte eingeben, um es zu importieren:</translation>
+            <translation>Warnung: Paket nicht gefunden, bitte eingeben, um zu importieren:</translation>
         </message>
     </context>
     <context>
@@ -3510,17 +3510,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/jsonedit/jsonedit.cpp" line="51"/>
             <source>Verify</source>
-            <translation>Verifizieren</translation>
+            <translation>Überprüfen</translation>
         </message>
         <message>
             <location filename="src/plugins/jsonedit/jsonedit.cpp" line="53"/>
             <source>Format Json</source>
-            <translation>Format JSON</translation>
+            <translation>JSON formatieren</translation>
         </message>
         <message>
             <location filename="src/plugins/jsonedit/jsonedit.cpp" line="55"/>
             <source>Compact Json</source>
-            <translation>Kompaktes Json</translation>
+            <translation>Kompaktes JSON</translation>
         </message>
     </context>
     <context>
@@ -3533,35 +3533,35 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteapp.cpp" line="271"/>
             <source>Escape</source>
-            <translation>Flucht</translation>
+            <translation>Escape</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="756"/>
+            <location filename="src/liteapp/liteapp.cpp" line="782"/>
             <source>Close File</source>
             <translation>Datei schließen</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="759"/>
+            <location filename="src/liteapp/liteapp.cpp" line="785"/>
             <source>Close All Files</source>
             <translation>Alle Dateien schließen</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="769"/>
+            <location filename="src/liteapp/liteapp.cpp" line="795"/>
             <source>Save File</source>
             <translation>Datei speichern</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="772"/>
+            <location filename="src/liteapp/liteapp.cpp" line="798"/>
             <source>Save File As...</source>
             <translation>Datei speichern unter...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="775"/>
+            <location filename="src/liteapp/liteapp.cpp" line="801"/>
             <source>Save All Files</source>
-            <translation>Alle Dateien speichern</translation>
+            <translation>Alle Dateien sichern</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="762"/>
+            <location filename="src/liteapp/liteapp.cpp" line="788"/>
             <source>Open Project</source>
             <translation>Projekt öffnen</translation>
         </message>
@@ -3571,67 +3571,67 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <translation>Optionen</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="733"/>
+            <location filename="src/liteapp/liteapp.cpp" line="759"/>
             <source>New...</source>
             <translation>Neu...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="736"/>
+            <location filename="src/liteapp/liteapp.cpp" line="762"/>
             <source>Open File...</source>
             <translation>Datei öffnen...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="739"/>
+            <location filename="src/liteapp/liteapp.cpp" line="765"/>
             <source>Open Folder...</source>
             <translation>Ordner öffnen...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="742"/>
+            <location filename="src/liteapp/liteapp.cpp" line="768"/>
             <source>Open Folder in New Window...</source>
             <translation>Ordner in neuem Fenster öffnen...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="747"/>
+            <location filename="src/liteapp/liteapp.cpp" line="773"/>
             <source>Close All Folders</source>
             <translation>Alle Ordner schließen</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="750"/>
+            <location filename="src/liteapp/liteapp.cpp" line="776"/>
             <source>New Window</source>
             <translation>Neues Fenster</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="753"/>
+            <location filename="src/liteapp/liteapp.cpp" line="779"/>
             <source>Close Window</source>
             <translation>Fenster schließen</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="764"/>
+            <location filename="src/liteapp/liteapp.cpp" line="790"/>
             <source>Save Project</source>
-            <translation>Projekt speichern</translation>
+            <translation>Projekt sichern</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="766"/>
+            <location filename="src/liteapp/liteapp.cpp" line="792"/>
             <source>Close Project</source>
             <translation>Projekt schließen</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="778"/>
+            <location filename="src/liteapp/liteapp.cpp" line="804"/>
             <source>Exit</source>
-            <translation>Ausgang</translation>
+            <translation>Beenden</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="784"/>
+            <location filename="src/liteapp/liteapp.cpp" line="810"/>
             <source>Full Screen</source>
             <translation>Vollbild</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="788"/>
+            <location filename="src/liteapp/liteapp.cpp" line="814"/>
             <source>About LiteIDE</source>
             <translation>Über LiteIDE</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="794"/>
+            <location filename="src/liteapp/liteapp.cpp" line="820"/>
             <source>About Plugins</source>
             <translation>Über Plugins</translation>
         </message>
@@ -3641,12 +3641,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="30"/>
             <source>Store [*]</source>
-            <translation>Shop [*]</translation>
+            <translation>Speichern [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="57"/>
@@ -3656,7 +3656,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="144"/>
             <source>Icon [*]</source>
-            <translation>Ikone [*]</translation>
+            <translation>Symbol [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="300"/>
@@ -3666,7 +3666,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="312"/>
             <source>Recent Files</source>
-            <translation>Letzte Dateien</translation>
+            <translation>Zuletzt verwendete Dateien</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="318"/>
@@ -3677,7 +3677,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="229"/>
             <source>Monitoring files for modifications</source>
-            <translation>Überwachen von Dateien auf Änderungen</translation>
+            <translation>Überwachung von Dateien auf Änderungen</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="41"/>
@@ -3687,7 +3687,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="51"/>
             <source>Interface [*]</source>
-            <translation>Schnittstelle [*]</translation>
+            <translation>Benutzeroberfläche [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="74"/>
@@ -3697,22 +3697,22 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="84"/>
             <source>Use tool window shortcuts</source>
-            <translation>Verwenden Sie Toolfenster-Shortcuts</translation>
+            <translation>Tastenkürzel für Toolfenster verwenden</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="112"/>
             <source>Theme [*]</source>
-            <translation>Thema [*]</translation>
+            <translation>Theme [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="153"/>
             <source>Fallback build-in icon library and liteapp/qrc/default</source>
-            <translation>Fallback-integrierte Icon-Bibliothek und liteapp/qrc/default</translation>
+            <translation>Fallback auf integrierte Icon-Bibliothek sowie liteapp/qrc/default</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="156"/>
             <source>Load the external file icon library</source>
-            <translation>Laden Sie die externe Datei-Icon-Bibliothek</translation>
+            <translation>Externe Icon-Bibliothek laden</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="184"/>
@@ -3722,17 +3722,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="190"/>
             <source>Automatically save documents when application is idle</source>
-            <translation>Dokumente automatisch speichern, wenn die Anwendung im Leerlauf ist</translation>
+            <translation>Dokumente beim Inaktivwerden der Anwendung automatisch speichern</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="200"/>
             <source>sec</source>
-            <translation>Sekunde</translation>
+            <translation>sek</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="235"/>
             <source>Auto reload or close editor buffer,if underlying file is modified/deleted.</source>
-            <translation>Automatisches Neuladen oder Schließen des Editor-Puffers, wenn die zugrunde liegende Datei geändert/gelöscht wird.</translation>
+            <translation>Editorpuffer automatisch neu laden oder schließen, falls die zugrunde liegende Datei geändert/gelöscht wird.</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="263"/>
@@ -3743,7 +3743,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="325"/>
             <source>0-99</source>
-            <translation>0-99</translation>
+            <translation>0–99</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="351"/>
@@ -3753,7 +3753,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="364"/>
             <source>10-999</source>
-            <translation>10-999</translation>
+            <translation>10–999</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="407"/>
@@ -3778,7 +3778,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="509"/>
             <source>Editor</source>
-            <translation>Redakteur</translation>
+            <translation>Editor</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="515"/>
@@ -3788,17 +3788,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="521"/>
             <source>Show close buttons on each editor tab</source>
-            <translation>Schließen-Buttons auf jedem Editor-Tab anzeigen</translation>
+            <translation>Schließen-Schaltflächen auf jeder Editor-Registerkarte anzeigen</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="528"/>
             <source>Enable mouse wheel navigation on tabs</source>
-            <translation>Mausradnavigation auf Tabs aktivieren</translation>
+            <translation>Mausradnavigation in Registerkarten aktivieren</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="436"/>
             <source>Toolbar Icon Size [*]</source>
-            <translation>Symbolgröße der Werkzeugleiste [*]</translation>
+            <translation>Symbolgröße der Symbolleiste [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="538"/>
@@ -3808,7 +3808,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="544"/>
             <source>Enable mouse extra 'Back' button and 'Forward' button for go back and forward</source>
-            <translation>Aktivieren Sie die zusätzlichen „Zurück“- und „Vorwärts“-Tasten der Maus, um zurück und vorwärts zu navigieren.</translation>
+            <translation>Zusätzliche Maustaste „Zurück“ und „Vor“ für das Navigieren aktivieren</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="568"/>
@@ -3818,7 +3818,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="574"/>
             <source>Format: {Ctrl+B},{Ctrl+Shift+B},{Ctrl+K,Ctrl+U},{Ctrl+Shift+Z;Ctrl+Y}</source>
-            <translation>Format: {Strg+B},{Strg+Umschalt+B},{Strg+K,Strg+U},{Strg+Umschalt+Z;Strg+Y}</translation>
+            <translation>Format: {Strg+B},{Strg+Umschalt+B},{Strg+K, Strg+U},{Strg+Umschalt+Z; Strg+Y}</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="586"/>
@@ -3848,12 +3848,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="24"/>
             <source>Generic</source>
-            <translation>Generisch</translation>
+            <translation>Allgemein</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="118"/>
             <source>Theme:</source>
-            <translation>Thema:</translation>
+            <translation>Theme:</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="275"/>
@@ -3863,12 +3863,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="97"/>
             <source>SideBarStyle</source>
-            <translation>Seitenleisten-Stil</translation>
+            <translation>SideBarStyle</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="98"/>
             <source>SplitterStyle</source>
-            <translation>Splitterstil</translation>
+            <translation>SplitterStyle</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="82"/>
@@ -3878,17 +3878,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="83"/>
             <source>Label</source>
-            <translation>Etikett</translation>
+            <translation>Beschriftung</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="84"/>
             <source>Shortcuts</source>
-            <translation>Verknüpfungen</translation>
+            <translation>Tastenkürzel</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="85"/>
             <source>NativeText</source>
-            <translation>UrsprünglicherText</translation>
+            <translation>Systemtext</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="86"/>
@@ -3896,30 +3896,30 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <translation>Standard</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="506"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="501"/>
             <source>Import Keyboard Mapping Scheme</source>
             <translation>Tastaturbelegungsschema importieren</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="506"/>
-            <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="501"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="535"/>
             <source>Keyboard Mapping Scheme (%1)</source>
             <translation>Tastaturbelegungsschema (%1)</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="513"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="508"/>
             <source>Could not read scheme from %1!</source>
-            <translation>Konnte Schema von %1! nicht lesen.</translation>
+            <translation>Konnte das Schema von %1 nicht lesen!</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="535"/>
             <source>Export Keyboard Mapping Scheme</source>
             <translation>Tastaturbelegungsschema exportieren</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="551"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="546"/>
             <source>Could not write scheme to %1!</source>
-            <translation>Konnte Schema nicht in %1! schreiben</translation>
+            <translation>Konnte das Schema nicht in %1 schreiben!</translation>
         </message>
     </context>
     <context>
@@ -3952,7 +3952,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="179"/>
             <source>Debug File</source>
-            <translation>Debug-Datei</translation>
+            <translation>Datei debuggen</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="182"/>
@@ -3967,12 +3967,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="230"/>
             <source>Use godoc View</source>
-            <translation>Godoc-Ansicht verwenden</translation>
+            <translation>Verwenden Sie godoc Ansicht</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="287"/>
             <source>Line Wrap</source>
-            <translation>Zeilenumschlag</translation>
+            <translation>Zeilenumbrechung</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="291"/>
@@ -3982,12 +3982,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="295"/>
             <source>Automatic positioning cursor</source>
-            <translation>Automatischer Positionierungscursor</translation>
+            <translation>Automatische Cursorpositionierung</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="310"/>
             <source>Setup</source>
-            <translation>Einrichtung</translation>
+            <translation>Einstellungen</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="318"/>
@@ -4002,7 +4002,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1146"/>
             <source>Lock Build</source>
-            <translation>Schlossbau</translation>
+            <translation>Build sperren</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1498"/>
@@ -4012,7 +4012,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1501"/>
             <source>Command exited with code %1.</source>
-            <translation>Der Befehl ist mit dem Code %1 beendet worden.</translation>
+            <translation>Befehl beendete mit Code %1.</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1503"/>
@@ -4023,27 +4023,27 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1552"/>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1605"/>
             <source>A process is currently running.  Stop the current action first.</source>
-            <translation>Ein Prozess ist derzeit im Gange. Beenden Sie zunächst die aktuelle Aktion.</translation>
+            <translation>Ein Prozess wird derzeit ausgeführt. Beenden Sie zunächst die aktuelle Aktion.</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1591"/>
             <source>Killing current process...</source>
-            <translation>Aktuellen Prozess beenden...</translation>
+            <translation>Aktueller Prozess wird beendet...</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1601"/>
             <source>Failed to terminate the existing process!</source>
-            <translation>Das Beenden des bestehenden Processes ist fehlgeschlagen!</translation>
+            <translation>Das Beenden des bestehenden Prozesses ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1811"/>
             <source>Started process successfully</source>
-            <translation>Prozess erfolgreich gestartet</translation>
+            <translation>Prozess wurde erfolgreich gestartet</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1811"/>
             <source>Failed to start process</source>
-            <translation>Prozess konnte nicht gestartet werden</translation>
+            <translation>Start des Prozesses ist fehlgeschlagen</translation>
         </message>
     </context>
     <context>
@@ -4051,17 +4051,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litebuild/litebuildoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuildoption.ui" line="20"/>
             <source>Recheck Go installation when changing environments</source>
-            <translation>Prüfen Sie die Go-Installation erneut, wenn Sie die Umgebung wechseln.</translation>
+            <translation>Bei Umgebungswechsel Go-Installation erneut prüfen</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuildoption.ui" line="27"/>
             <source>Build command configuration files [*]</source>
-            <translation>Befehlskonfigurationsdateien erstellen [*]</translation>
+            <translation>Konfigurationsdateien für Build-Befehle [*]</translation>
         </message>
     </context>
     <context>
@@ -4086,17 +4086,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="114"/>
             <source>Stop</source>
-            <translation>Stoppen</translation>
+            <translation>Stopp</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="75"/>
             <source>Clear</source>
-            <translation>Klar</translation>
+            <translation>Löschen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="111"/>
             <source>Continue</source>
-            <translation>Weiterfahren</translation>
+            <translation>Fortfahren</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="117"/>
@@ -4111,7 +4111,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="105"/>
             <source>Start Debugging External Application...</source>
-            <translation>Externe Anwendung starten…</translation>
+            <translation>Externe Anwendung debuggen...</translation>
         </message>
         <message>
             <source>Close</source>
@@ -4125,27 +4125,27 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="120"/>
             <source>Step Into</source>
-            <translation>Treten Sie ein</translation>
+            <translation>In Funktion einsteigen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="123"/>
             <source>Step Over</source>
-            <translation>Weiter schrittweise</translation>
+            <translation>Funktion überspringen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="126"/>
             <source>Step Out</source>
-            <translation>Schritt hinaus</translation>
+            <translation>Aus Funktion aussteigen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="129"/>
             <source>Run to Line</source>
-            <translation>Laufe zur Linie</translation>
+            <translation>Bis zur Zeile ausführen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="132"/>
             <source>Insert/Remove Breakpoint</source>
-            <translation>Breakpoint einfügen/entfernen</translation>
+            <translation>Haltepunkt setzen/entfernen</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="135"/>
@@ -4155,7 +4155,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="192"/>
             <source>Debug Watch</source>
-            <translation>Debug-Beobachtung</translation>
+            <translation>Debug-Überwachung</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="195"/>
@@ -4165,7 +4165,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="197"/>
             <source>Frame View</source>
-            <translation>Rahmenansicht</translation>
+            <translation>Frame-Ansicht</translation>
         </message>
     </context>
     <context>
@@ -4173,7 +4173,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebugoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebugoption.ui" line="20"/>
@@ -4183,7 +4183,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebugoption.ui" line="26"/>
             <source>Automatically insert breakpoint main.main when debugging</source>
-            <translation>Beim Debuggen automatisch einen Breakpoint in main.main setzen</translation>
+            <translation>Beim Debuggen automatisch den Haltepunkt main.main setzen</translation>
         </message>
     </context>
     <context>
@@ -4191,7 +4191,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/litedebugplugin.cpp" line="58"/>
             <source>Debug Window</source>
-            <translation>Debug-Fenster</translation>
+            <translation>Debugfenster</translation>
         </message>
     </context>
     <context>
@@ -4207,7 +4207,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="254"/>
             <source>Undo</source>
-            <translation>Rückgängig machen</translation>
+            <translation>Rückgängig</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="257"/>
@@ -4217,7 +4217,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="260"/>
             <source>Cut</source>
-            <translation>Schneiden</translation>
+            <translation>Ausschneiden</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="263"/>
@@ -4232,62 +4232,62 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="268"/>
             <source>Select All</source>
-            <translation>Alle auswählen</translation>
+            <translation>Alles auswählen</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="301"/>
             <source>Go to Doc Start</source>
-            <translation>Gehe zu Dokumentanfang</translation>
+            <translation>Zum Dokumentanfang wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="305"/>
             <source>Go to Doc End</source>
-            <translation>Gehe zum Dokumentende</translation>
+            <translation>Zum Dokumentende wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="309"/>
             <source>Go to Line Start</source>
-            <translation>Zu Zeilenanfang gehen</translation>
+            <translation>Zum Zeilenanfang wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="313"/>
             <source>Go to Line End</source>
-            <translation>Zum Zeilenende gehen</translation>
+            <translation>Zum Zeilenschluss wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="317"/>
             <source>Go to Previous Line</source>
-            <translation>Zur vorherigen Zeile gehen</translation>
+            <translation>Zur vorherigen Zeile wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="321"/>
             <source>Go to Next Line</source>
-            <translation>Zur nächsten Zeile gehen</translation>
+            <translation>Zur nächsten Zeile wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="325"/>
             <source>Go to Previous Character</source>
-            <translation>Zum vorherigen Zeichen gehen</translation>
+            <translation>Zum vorherigen Zeichen wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="329"/>
             <source>Go to Next Charater</source>
-            <translation>Zum nächsten Charakter gehen</translation>
+            <translation>Zum nächsten Zeichen wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="333"/>
             <source>Go to Previous Word</source>
-            <translation>Zum vorherigen Wort gehen</translation>
+            <translation>Zum vorherigen Wort wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="337"/>
             <source>Go to Next Word</source>
-            <translation>Zum nächsten Wort gehen</translation>
+            <translation>Zum nächsten Wort wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="358"/>
             <source>Go to Line</source>
-            <translation>Gehe zu Zeile</translation>
+            <translation>Zu Zeile wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="361"/>
@@ -4297,7 +4297,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="364"/>
             <source>File is writable</source>
-            <translation>Datei ist beschreibbar</translation>
+            <translation>Datei ist schreibbar</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="404"/>
@@ -4307,12 +4307,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="415"/>
             <source>Toggle Comment</source>
-            <translation>Kommentar umschalten</translation>
+            <translation>Kommentar ein-/ausblenden</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="418"/>
             <source>Toggle Block Commnet</source>
-            <translation>Blockkommentar umschalten</translation>
+            <translation>Blockkommentar ein-/ausblenden</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="421"/>
@@ -4322,12 +4322,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="425"/>
             <source>Tab To Spaces (MimeType)</source>
-            <translation>Tab zu Leerzeichen (Mime-Typ)</translation>
+            <translation>Tabulatoren in Leerzeichen konvertieren (Mime-Typ)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="429"/>
             <source>Line End Windows (\r\n)</source>
-            <translation>Zeilenende-Windows (\r\n)</translation>
+            <translation>Zeilenende Windows (\r\n)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="433"/>
@@ -4337,22 +4337,22 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="437"/>
             <source>Visualize Whitespace (Global)</source>
-            <translation>Leerraum visualisieren (Globale)</translation>
+            <translation>Whitespace visualisieren (global)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="444"/>
             <source>Move Line Up</source>
-            <translation>Linie nach oben verschieben</translation>
+            <translation>Zeile nach oben verschieben</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="447"/>
             <source>Move Line Down</source>
-            <translation>Linie nach unten verschieben</translation>
+            <translation>Zeile nach unten verschieben</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="450"/>
             <source>Copy Line Up</source>
-            <translation>Line-Up kopieren</translation>
+            <translation>Zeile nach oben kopieren</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="453"/>
@@ -4362,17 +4362,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="456"/>
             <source>Join Lines</source>
-            <translation>Linien verbinden</translation>
+            <translation>Zeilen verbinden</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="459"/>
             <source>Title Case</source>
-            <translation>Titelfall</translation>
+            <translation>Satzteil-Großschreibung</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="463"/>
             <source>Upper Case</source>
-            <translation>Großbuchstaben</translation>
+            <translation>Großschreibung</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="467"/>
@@ -4392,13 +4392,13 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="479"/>
             <source>Spaces To Tab</source>
-            <translation>Räume zu Tabulatoren</translation>
+            <translation>Leerzeichen zu Tab</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="645"/>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="733"/>
             <source>Advanced</source>
-            <translation>Fortgeschritten</translation>
+            <translation>Erweitert</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="671"/>
@@ -4410,7 +4410,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="696"/>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="774"/>
             <source>Convert Tab</source>
-            <translation>Tab umwandeln</translation>
+            <translation>Tab konvertieren</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="700"/>
@@ -4437,7 +4437,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1208"/>
             <source>Could not open %1 for writing.</source>
-            <translation>Konnte %1 nicht zum Schreiben öffnen.</translation>
+            <translation>Konnte %1 zum Schreiben nicht öffnen.</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1227"/>
@@ -4472,7 +4472,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="288"/>
             <source>Go to Previous Block</source>
-            <translation>Zum vorherigen Block gehen</translation>
+            <translation>Zum vorherigen Block wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="295"/>
@@ -4482,7 +4482,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="298"/>
             <source>Go to Matching Brace</source>
-            <translation>Gehe zur passenden Klammer</translation>
+            <translation>Zur passenden Klammer wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="341"/>
@@ -4492,7 +4492,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="344"/>
             <source>Unfold</source>
-            <translation>Entfalten</translation>
+            <translation>Ausklappen</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="347"/>
@@ -4502,12 +4502,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="350"/>
             <source>Unfold All</source>
-            <translation>Alles aufklappen</translation>
+            <translation>Alles ausklappen</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1327"/>
             <source>Go To Line</source>
-            <translation>Gehe zu Zeile</translation>
+            <translation>Zu Zeile wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="368"/>
@@ -4527,12 +4527,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="380"/>
             <source>Cut Line</source>
-            <translation>Schneidelinie</translation>
+            <translation>Zeile ausschneiden</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="384"/>
             <source>Insert Line Before</source>
-            <translation>Zeile vorher einfügen</translation>
+            <translation>Zeile vor einfügen</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="388"/>
@@ -4542,7 +4542,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="392"/>
             <source>Increase Font Size</source>
-            <translation>Schriftgröße erhöhen</translation>
+            <translation>Schriftgröße vergrößern</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="395"/>
@@ -4557,12 +4557,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="401"/>
             <source>Clean Whitespace</source>
-            <translation>Sauberer Leerraum</translation>
+            <translation>Leerzeichen bereinigen</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="408"/>
             <source>Code Complete</source>
-            <translation>Code vollständig</translation>
+            <translation>Code‑Vervollständigung</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="706"/>
@@ -4578,12 +4578,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1269"/>
             <source>Do you want to permanently discard unsaved modifications and reload %1?</source>
-            <translation>Möchten Sie die nicht gespeicherten Änderungen dauerhaft verwerfen und %1 erneut laden?</translation>
+            <translation>Möchten Sie die nicht gespeicherten Änderungen dauerhaft verwerfen und %1 neu laden?</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="291"/>
             <source>Go to Next Block</source>
-            <translation>Gehe zum nächsten Block</translation>
+            <translation>Zum nächsten Block wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1301"/>
@@ -4593,7 +4593,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1327"/>
             <source>Line: </source>
-            <translation>Zeile:</translation>
+            <translation>Zeile: </translation>
         </message>
     </context>
     <context>
@@ -4609,17 +4609,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="358"/>
             <source>Load File</source>
             <translation>Datei laden</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="414"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
             <source>Check and convert no printable char to '.'</source>
-            <translation>Überprüfen und nicht druckbare Zeichen in einen Punkt („.“) umwandeln.</translation>
+            <translation>Überprüfen und nicht druckbare Zeichen in '.' umwandeln</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="30"/>
@@ -4629,17 +4629,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="24"/>
             <source>Font &amp;&amp; Colors</source>
-            <translation>Schriftart &amp;&amp; Farben</translation>
+            <translation>Schriftart &amp; Farben</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="38"/>
             <source>Family:</source>
-            <translation>Familie:</translation>
+            <translation>Schriftfamilie:</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="48"/>
             <source>Show Monospace Font</source>
-            <translation>Monospaceschrift anzeigen</translation>
+            <translation>Monospace-Schrift anzeigen</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="72"/>
@@ -4654,144 +4654,141 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="99"/>
             <source>%</source>
-            <translation>Prozent</translation>
+            <translation>%</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="118"/>
             <source>Antialias</source>
-            <translation>Antialiasing</translation>
+            <translation>Anti-Aliasing</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="138"/>
             <source>Restore Default Font</source>
-            <translation>Standardfont wiederherstellen</translation>
+            <translation>Standard‑Schrift wiederherstellen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="150"/>
             <source>Editor Color Scheme</source>
-            <translation>Editor-Farbschema</translation>
+            <translation>Editor‑Farbschema</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="158"/>
             <source>File:</source>
             <translation>Datei:</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="175"/>
             <source>Edit</source>
             <translation>Bearbeiten</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="220"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="170"/>
             <source>Syntax Auto-completion</source>
-            <translation>Syntax-Autovervollständigung</translation>
+            <translation>Syntax‑Autovervollständigung</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="302"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="252"/>
             <source>Fuzzy code completion</source>
-            <translation>Fuzzy-Codevervollständigung</translation>
+            <translation>Fuzzy‑Codevervollständigung</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="350"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="300"/>
             <source>Clean completion cache when saving files</source>
-            <translation>Kompletten Completion-Cache beim Speichern von Dateien leeren</translation>
+            <translation>Vervollständigungs‑Cache beim Speichern der Dateien leeren</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="357"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="307"/>
             <source>Clean whitespace when saving files</source>
-            <translation>Leeren Speicherplatz beim Speichern von Dateien entfernen</translation>
+            <translation>Leere Zeichen beim Speichern von Dateien</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="314"/>
             <source>Enable scroll wheel zooming</source>
-            <translation>Zoomen mit dem Mausrad aktivieren</translation>
+            <translation>Bildschirmzoom mit dem Mausrad aktivieren</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="371"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="321"/>
             <source>Add copied text into the clipboard as HTML</source>
-            <translation>Gekopierten Text als HTML in die Zwischenablage einfügen</translation>
+            <translation>Kopierten Text als HTML in die Zwischenablage einfügen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="378"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="328"/>
             <source>Allow vertical scrolling to the last line [*]</source>
             <translation>Vertikales Scrollen bis zur letzten Zeile zulassen [*]</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="437"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="387"/>
             <source>Display VisualizeWhitespace</source>
-            <translation>Anzeige Leerzeichen visualisieren</translation>
+            <translation>VisualizeWhitespace anzeigen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="451"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="401"/>
             <source>Word wrap by default</source>
-            <translation>Zeilenumbruch standardmäßig</translation>
+            <translation>Standardmäßig Zeilenumbruch aktivieren</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="430"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="380"/>
             <source>Display code fold</source>
-            <translation>Code-Faltung anzeigen</translation>
+            <translation>Code-Fold-Anzeige anzeigen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="509"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="459"/>
             <source>Display offset position</source>
             <translation>Offset-Position anzeigen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="533"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="483"/>
             <source>File Types</source>
             <translation>Dateitypen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="214"/>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="289"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="164"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="239"/>
             <source>Behavior</source>
             <translation>Verhalten</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="444"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="394"/>
             <source>Display EOF</source>
             <translation>EOF anzeigen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="458"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
             <source>Display line numbers</source>
             <translation>Zeilennummern anzeigen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="465"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="415"/>
             <source>Display indent guide</source>
-            <translation>Einziehungsleitfaden anzeigen</translation>
+            <translation>Einrückungsleitlinie anzeigen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="474"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
             <source>Display right margin at column</source>
-            <translation>Rechten Rand in der Spalte anzeigen</translation>
+            <translation>Rechte Randlinie in Spalte anzeigen</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="295"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="245"/>
             <source>Automatic indentation</source>
             <translation>Automatische Einrückung</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="309"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="259"/>
             <source>Case sensitive code completion</source>
-            <translation>Groß-/Kleinschreibungssensible Codevervollständigung</translation>
+            <translation>Groß-/Kleinschreibungssensitive Codevervollständigung</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="318"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="268"/>
             <source>Code completion prefix length:</source>
-            <translation>Länge des Codevervollständigungspräfixes:</translation>
+            <translation>Länge des Vorsatzes bei der Codevervollständigung:</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="402"/>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="352"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="374"/>
             <source>Display</source>
             <translation>Anzeige</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="74"/>
             <source>MIME Type</source>
-            <translation>MIME-Typ</translation>
+            <translation>MIME‑Typ</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="75"/>
@@ -4819,12 +4816,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteeditor/liteeditorplugin.cpp" line="71"/>
             <source>Edit ToolBar</source>
-            <translation>Bearbeiten Symbolleiste</translation>
+            <translation>Bearbeitungs-Toolbar</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditorplugin.cpp" line="77"/>
             <source>Edit Navigation Bar</source>
-            <translation>Navigationsleiste bearbeiten</translation>
+            <translation>Bearbeitungs-Navigationsleiste</translation>
         </message>
     </context>
     <context>
@@ -4832,7 +4829,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="20"/>
@@ -4842,7 +4839,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="33"/>
             <source>Environment changes will take effect after switching environments.</source>
-            <translation>Umgebungsänderungen werden nach dem Wechsel der Umgebung wirksam.</translation>
+            <translation>Änderungen der Umgebung werden nach dem Wechsel der Umgebung wirksam.</translation>
         </message>
     </context>
     <context>
@@ -4850,7 +4847,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/litefind/litefindplugin.cpp" line="72"/>
             <source>Find</source>
-            <translation>Finden</translation>
+            <translation>Suchen</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/litefindplugin.cpp" line="75"/>
@@ -4878,12 +4875,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/tabwidget/litetabwidget.cpp" line="62"/>
             <source>Open a new tab</source>
-            <translation>Einen neuen Tab öffnen</translation>
+            <translation>Neuen Tab öffnen</translation>
         </message>
         <message>
             <location filename="src/utils/tabwidget/litetabwidget.cpp" line="65"/>
             <source>List All Tabs</source>
-            <translation>Alle Registerkarten auflisten</translation>
+            <translation>Alle Tabs auflisten</translation>
         </message>
         <message>
             <location filename="src/utils/tabwidget/litetabwidget.cpp" line="71"/>
@@ -4933,12 +4930,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="70"/>
             <source>Exit</source>
-            <translation>Ausgang</translation>
+            <translation>Beenden</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="75"/>
             <source>Save State</source>
-            <translation>Zustand speichern</translation>
+            <translation>Zustand sichern</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="80"/>
@@ -4966,22 +4963,22 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="78"/>
             <source>GOFILES</source>
-            <translation>GEHE ZU DATEIEN</translation>
+            <translation>GO-Dateien</translation>
         </message>
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="79"/>
             <source>CGOFILES</source>
-            <translation>CGO-DATEIEN</translation>
+            <translation>CGO-Dateien</translation>
         </message>
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="80"/>
             <source>Headers</source>
-            <translation>Header</translation>
+            <translation>Headerdateien</translation>
         </message>
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="81"/>
             <source>Sources</source>
-            <translation>Quellen</translation>
+            <translation>Quelldateien</translation>
         </message>
     </context>
     <context>
@@ -5032,7 +5029,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="231"/>
             <source>Select the folder containing your markdown files:</source>
-            <translation>Wählen Sie den Ordner mit Ihren Markdown-Dateien:</translation>
+            <translation>Wählen Sie den Ordner mit Ihren Markdown-Dateien aus:</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="242"/>
@@ -5042,17 +5039,17 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="290"/>
             <source>Select the folder to contain separated markdown exports:</source>
-            <translation>Wählen Sie den Ordner, der die getrennten Markdown-Exporte enthalten soll:</translation>
+            <translation>Wählen Sie den Ordner für die separaten Markdown-Exporte aus:</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="303"/>
             <source>Export Merged HTML</source>
-            <translation>Merged HTML exportieren</translation>
+            <translation>Gebündeltes HTML exportieren</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="378"/>
             <source>Export Merged PDF</source>
-            <translation>Zusammengeführtes PDF exportieren</translation>
+            <translation>Gebündeltes PDF exportieren</translation>
         </message>
     </context>
     <context>
@@ -5060,7 +5057,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="20"/>
@@ -5070,7 +5067,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="38"/>
             <source>Import Folder...</source>
-            <translation>Ordner importieren...</translation>
+            <translation>Importordner...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="45"/>
@@ -5080,12 +5077,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="52"/>
             <source>Move Up</source>
-            <translation>Nach oben gehen</translation>
+            <translation>Nach oben verschieben</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="59"/>
             <source>Move Down</source>
-            <translation>Nach unten bewegen</translation>
+            <translation>Nach unten verschieben</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="66"/>
@@ -5095,7 +5092,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="73"/>
             <source>Remove All</source>
-            <translation>Alles entfernen</translation>
+            <translation>Alle entfernen</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="98"/>
@@ -5120,47 +5117,47 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="137"/>
             <source>Insert horizontal line between merged files</source>
-            <translation>Horizontale Linie zwischen zusammengeführten Dateien einfügen</translation>
+            <translation>Horizontale Linie zwischen den zusammengeführten Dateien einfügen</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="144"/>
             <source>Insert page break between merged files</source>
-            <translation>Seitenumbruch zwischen zusammengeführten Dateien einfügen</translation>
+            <translation>Seitenumbruch zwischen den zusammengeführten Dateien einfügen</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="169"/>
             <source>Export</source>
-            <translation>Export</translation>
+            <translation>Exportieren</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="175"/>
             <source>Export Separated HTML</source>
-            <translation>Getrenntes HTML exportieren</translation>
+            <translation>Export als getrenntes HTML</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="182"/>
             <source>Export Separated PDF</source>
-            <translation>Getrenntes PDF exportieren</translation>
+            <translation>Export als getrenntes PDF</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="189"/>
             <source>Export Merged HTML...</source>
-            <translation>Merged HTML exportieren...</translation>
+            <translation>Export als zusammengeführtes HTML...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="196"/>
             <source>Export Merged PDF...</source>
-            <translation>Merged PDF exportieren...</translation>
+            <translation>Export als zusammengeführtes PDF...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="203"/>
             <source>Print Preview Merged...</source>
-            <translation>Druckvorschau zusammengeführt...</translation>
+            <translation>Druckvorschau der Zusammenführung...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="210"/>
             <source>Print Merged</source>
-            <translation>Merged drucken</translation>
+            <translation>Zusammenführung drucken</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="233"/>
@@ -5238,12 +5235,12 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="122"/>
             <source>Blockquote</source>
-            <translation>Blockzitat</translation>
+            <translation>Zitatblock</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="125"/>
             <source>Horizontal Rule</source>
-            <translation>Horizontale Linie</translation>
+            <translation>Waagerechte Linie</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="131"/>
@@ -5268,7 +5265,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/folderview/multifolderview.cpp" line="307"/>
             <source>Failed to delete the folder!</source>
-            <translation>Der Ordner konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen des Ordners ist fehlgeschlagen!</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/multifolderview.cpp" line="320"/>
@@ -5284,7 +5281,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/utils/folderview/multifolderview.cpp" line="328"/>
             <source>Failed to delete the file!</source>
-            <translation>Datei konnte nicht gelöscht werden!</translation>
+            <translation>Das Löschen der Datei ist fehlgeschlagen!</translation>
         </message>
     </context>
     <context>
@@ -5301,7 +5298,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/utils/navigate/navigate.cpp" line="155"/>
             <location filename="src/utils/navigate/navigate.cpp" line="178"/>
             <source>Browser Files in %1</source>
-            <translation>Browser-Dateien in %1</translation>
+            <translation>Dateien in %1 durchsuchen</translation>
         </message>
     </context>
     <context>
@@ -5309,7 +5306,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/newfiledialog.ui" line="14"/>
             <source>New Project or File</source>
-            <translation>Neues Projekt oder Datei</translation>
+            <translation>Neues Projekt oder neue Datei</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.ui" line="124"/>
@@ -5344,7 +5341,7 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
         <message>
             <location filename="src/liteapp/newfiledialog.ui" line="114"/>
             <source>Location:</source>
-            <translation>Ort:</translation>
+            <translation>Speicherort:</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="127"/>
@@ -5366,8 +5363,8 @@ Möchten Sie alle Suchbegriffe durch Leerzeichen ersetzen?</translation>
             <location filename="src/liteapp/newfiledialog.cpp" line="132"/>
             <source>Location %1 is not empty.
 Use the target directory anyway?</source>
-            <translation>Der Speicherort %1 ist nicht leer.
-Sollen trotzdem das Zielverzeichnis verwendet werden?</translation>
+            <translation>Der Pfad %1 ist nicht leer.
+Das Zielverzeichnis dennoch verwenden?</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="169"/>
@@ -5379,7 +5376,7 @@ Sollen trotzdem das Zielverzeichnis verwendet werden?</translation>
             <source>%1 already exists.
 Do you want to replace it?</source>
             <translation>%1 existiert bereits.
-Möchten Sie es ersetzen?</translation>
+Sollen Sie ersetzen?</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="185"/>
@@ -5389,12 +5386,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="280"/>
             <source>File template details:</source>
-            <translation>Dateivorlagendetails:</translation>
+            <translation>Details zur Dateivorlage:</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="282"/>
             <source>Project template details:</source>
-            <translation>Projektvorlagendetails:</translation>
+            <translation>Details zur Projektvorlage:</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="362"/>
@@ -5413,7 +5410,22 @@ Möchten Sie es ersetzen?</translation>
     <context>
         <name>OptionsBrowser</name>
         <message>
-            <location filename="src/liteapp/optionsbrowser.cpp" line="57"/>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="46"/>
+            <source>Apply</source>
+            <translation>Anwenden</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="47"/>
+            <source>OK</source>
+            <translation>OK</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="48"/>
+            <source>Cancel</source>
+            <translation>Abbrechen</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="61"/>
             <source>Options</source>
             <translation>Optionen</translation>
         </message>
@@ -5433,7 +5445,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/optionswidget.ui" line="106"/>
             <source>[*] item request restart of LiteIDE</source>
-            <translation>[*] Element fordert Neustart von LiteIDE an</translation>
+            <translation>[*] Element erfordert einen Neustart von LiteIDE</translation>
         </message>
     </context>
     <context>
@@ -5448,17 +5460,17 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="446"/>
             <source>LeftSideBar</source>
-            <translation>LinkeSeitenleiste</translation>
+            <translation>Linkes Seitenleiste</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="447"/>
             <source>RightSideBar</source>
-            <translation>RechteSeitenleiste</translation>
+            <translation>Rechtes Seitenleiste</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="480"/>
             <source>BottomDockWidget</source>
-            <translation>Unteres Dock-Widget</translation>
+            <translation>BottomDockWidget</translation>
         </message>
     </context>
     <context>
@@ -5466,7 +5478,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="20"/>
@@ -5476,7 +5488,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="26"/>
             <source>Family:</source>
-            <translation>Familie:</translation>
+            <translation>Schriftfamilie:</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="43"/>
@@ -5491,7 +5503,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="67"/>
             <source>%</source>
-            <translation>Prozent</translation>
+            <translation>%</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="86"/>
@@ -5506,12 +5518,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="115"/>
             <source>Use editor color scheme</source>
-            <translation>Editor-Farbschema verwenden</translation>
+            <translation>Editorfarbschema verwenden</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="124"/>
             <source>Sets the maximum number of lines</source>
-            <translation>Setzt die maximale Anzahl an Zeilen</translation>
+            <translation>Legt die maximale Anzahl an Zeilen fest</translation>
         </message>
     </context>
     <context>
@@ -5519,7 +5531,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="87"/>
             <source>Manage GOPATH/Modules ...</source>
-            <translation>GOPATH/Modules verwalten ...</translation>
+            <translation>GOPATH/Module verwalten ...</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="86"/>
@@ -5539,12 +5551,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="95"/>
             <source>Add Package to Folders</source>
-            <translation>Paket zu Ordnern hinzufügen</translation>
+            <translation>Paket zu den Ordnern hinzufügen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="96"/>
             <source>Open Source File</source>
-            <translation>Open-Source-Datei</translation>
+            <translation>Quelldatei öffnen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="97"/>
@@ -5554,12 +5566,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="119"/>
             <source>Go Package Browser</source>
-            <translation>Go Paket-Browser</translation>
+            <translation>Go-Paket-Browser</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="208"/>
             <source>Loading Go package list...</source>
-            <translation>Go-Paketliste wird geladen...</translation>
+            <translation>Lädt die Go-Paketliste...</translation>
         </message>
     </context>
     <context>
@@ -5572,7 +5584,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="77"/>
             <source>Open Explorer Here</source>
-            <translation>Explorer hier öffnen</translation>
+            <translation>Hier Explorer öffnen</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="78"/>
@@ -5594,12 +5606,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="310"/>
             <source>File %1 already exists.</source>
-            <translation>Datei %1 existiert bereits.</translation>
+            <translation>Die Datei %1 ist bereits vorhanden.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="315"/>
             <source>Could not open %1 for writing.</source>
-            <translation>Konnte %1 nicht zum Schreiben öffnen.</translation>
+            <translation>Konnte %1 zum Schreiben nicht öffnen.</translation>
         </message>
     </context>
     <context>
@@ -5650,7 +5662,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="52"/>
             <source>process exited with code %1</source>
-            <translation>Prozess beendet mit Code %1</translation>
+            <translation>Prozess beendet mit dem Code %1</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="55"/>
@@ -5660,7 +5672,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="58"/>
             <source>process exited with an unknown status</source>
-            <translation>Der Prozess ist mit einem unbekannten Status beendet worden.</translation>
+            <translation>Prozess hat einen unbekannten Status beim Beenden</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="68"/>
@@ -5670,7 +5682,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="71"/>
             <source>process crashed or was terminated while running</source>
-            <translation>Der Prozess ist beim Ausführen abgestürzt oder beendet worden.</translation>
+            <translation>Prozess ist während der Ausführung abgestürzt oder wurde beendet</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="74"/>
@@ -5680,12 +5692,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="77"/>
             <source>couldn't read from the process</source>
-            <translation>konnte nicht aus dem Prozess lesen</translation>
+            <translation>Konnte nicht vom Prozess lesen</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="80"/>
             <source>couldn't write to the process</source>
-            <translation>konnte nicht in den Prozess schreiben</translation>
+            <translation>Konnte nicht in den Prozess schreiben</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="84"/>
@@ -5698,12 +5710,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="79"/>
             <source>GOFILES</source>
-            <translation>GEHE ZU DATEIEN</translation>
+            <translation>GOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="80"/>
             <source>CGOFILES</source>
-            <translation>CGO-DATEIEN</translation>
+            <translation>CGOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="81"/>
@@ -5758,7 +5770,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/fakevim/test/main.cpp" line="338"/>
             <source>File &quot;%1&quot; was changed</source>
-            <translation>Datei &quot;%1&quot; wurde geändert</translation>
+            <translation>Die Datei „%1“ wurde geändert</translation>
         </message>
     </context>
     <context>
@@ -5786,7 +5798,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/utils/folderview/filesystemmodelex.cpp" line="53"/>
             <source>%1 bytes</source>
-            <translation>%1 Byte</translation>
+            <translation>%1 Bytes</translation>
         </message>
     </context>
     <context>
@@ -5802,12 +5814,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="59"/>
             <source>no error occurred</source>
-            <translation>Es ist kein Fehler aufgetreten.</translation>
+            <translation>kein Fehler aufgetreten</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="60"/>
             <source>unterminated object</source>
-            <translation>unvollständiges Objekt</translation>
+            <translation>nicht abgeschlossenes Objekt</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="61"/>
@@ -5817,12 +5829,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="62"/>
             <source>unterminated array</source>
-            <translation>undefiniertes Array</translation>
+            <translation>nicht abgeschlossenes Array</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="63"/>
             <source>missing value separator</source>
-            <translation>Trennzeichen für fehlende Werte</translation>
+            <translation>fehlender Wertetrenner</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="64"/>
@@ -5832,12 +5844,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="65"/>
             <source>invalid termination by number</source>
-            <translation>Ungültige Kündigung per Nummer</translation>
+            <translation>ungültige Beendigung durch eine Zahl</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="66"/>
             <source>illegal number</source>
-            <translation>illegale Zahl</translation>
+            <translation>ungültige Zahl</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="67"/>
@@ -5847,12 +5859,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="68"/>
             <source>invalid UTF8 string</source>
-            <translation>ungültige UTF-8-Zeichenfolge</translation>
+            <translation>ungültige UTF-8-Zeichenkette</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="69"/>
             <source>unterminated string</source>
-            <translation>unbeendeter String</translation>
+            <translation>nicht abgeschlossene Zeichenkette</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="70"/>
@@ -5872,7 +5884,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="73"/>
             <source>garbage at the end of the document</source>
-            <translation>Müll am Ende des Dokuments</translation>
+            <translation>Unrat am Ende des Dokuments</translation>
         </message>
     </context>
     <context>
@@ -5905,7 +5917,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="212"/>
             <source>Detach Group</source>
-            <translation>Gruppe trennen</translation>
+            <translation>Gruppe entkoppeln</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="239"/>
@@ -5915,7 +5927,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="266"/>
             <source>Close Tab</source>
-            <translation>Tab schließen</translation>
+            <translation>Registerkarte schließen</translation>
         </message>
     </context>
     <context>
@@ -5923,73 +5935,79 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/qsqleditor/qsqleditor.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.ui" line="34"/>
             <source>SQL </source>
-            <translation>SQL</translation>
+            <translation>SQL </translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="58"/>
             <source>Infomation</source>
-            <translation>Information</translation>
+            <translation>Informationen</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="59"/>
             <source>Edit Table</source>
             <translation>Tabelle bearbeiten</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="160"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="183"/>
             <source>Tables</source>
             <translation>Tabellen</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="162"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="185"/>
             <source>Views</source>
             <translation>Ansichten</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="164"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="187"/>
             <source>SystemTables</source>
             <translation>Systemtabellen</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="166"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="189"/>
             <source>AllTables</source>
-            <translation>AlleTabellen</translation>
+            <translation>Alle Tabellen</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="168"/>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="181"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="191"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="204"/>
             <source>Unknow</source>
             <translation>Unbekannt</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="173"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="196"/>
             <source>Table</source>
             <translation>Tabelle</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="175"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="198"/>
             <source>View</source>
             <translation>Ansicht</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="177"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="200"/>
             <source>SystemTable</source>
             <translation>Systemtabelle</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="179"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="202"/>
             <source>AllTable</source>
-            <translation>AlleTabelle</translation>
+            <translation>Alle Tabelle</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="236"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="258"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="269"/>
             <source>%1:%2</source>
             <translation>%1:%2</translation>
+        </message>
+    </context>
+    <context>
+        <name>QSqlFileFactory</name>
+        <message>
+            <location filename="src/plugins/qsqleditor/qsqlfilefactory.cpp" line="81"/>
+            <source>QSql File</source>
+            <translation>QSql-Datei</translation>
         </message>
     </context>
     <context>
@@ -5997,7 +6015,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenaction.cpp" line="59"/>
             <source>Show and Run Commands</source>
-            <translation>Befehle anzeigen und ausführen</translation>
+            <translation>Anzeigen und Befehle ausführen</translation>
         </message>
     </context>
     <context>
@@ -6021,12 +6039,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenfiles.cpp" line="72"/>
             <source>Go to File</source>
-            <translation>Gehe zu Datei</translation>
+            <translation>Zur Datei wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenfiles.cpp" line="77"/>
             <source>Type '?' to get help on the actions you can take from here</source>
-            <translation>Geben Sie „?“ ein, um Hilfe zu den Aktionen zu erhalten, die Sie von hier aus durchführen können.</translation>
+            <translation>Geben Sie „?“ ein, um Hilfe zu den verfügbaren Aktionen anzuzeigen</translation>
         </message>
     </context>
     <context>
@@ -6042,7 +6060,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenhelp.cpp" line="49"/>
             <source>Show All Quick Open Actions</source>
-            <translation>Alle Schnellöffnungsaktionen anzeigen</translation>
+            <translation>Alle Quick‑Open‑Aktionen anzeigen</translation>
         </message>
     </context>
     <context>
@@ -6050,23 +6068,23 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="51"/>
             <source>Go to Line</source>
-            <translation>Gehe zu Zeile</translation>
+            <translation>Zur Zeile wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="79"/>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="84"/>
             <source>Open a text file first to go to a line</source>
-            <translation>Öffnen Sie zuerst eine Textdatei, um zu einer bestimmten Zeile zu springen.</translation>
+            <translation>Öffnen Sie zunächst eine Textdatei, um zu einer Zeile zu springen</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="97"/>
             <source>Type a line number between %1 and %2 to navigate to</source>
-            <translation>Geben Sie eine Zeilennummer zwischen %1 und %2 ein, um dorthin zu navigieren.</translation>
+            <translation>Geben Sie eine Zeilennummer zwischen %1 und %2 ein, um dorthin zu navigieren</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="100"/>
             <source>Go to Line %1</source>
-            <translation>Gehe zu Zeile %1</translation>
+            <translation>Zur Zeile %1 wechseln</translation>
         </message>
     </context>
     <context>
@@ -6074,27 +6092,27 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="82"/>
             <source>Quick Open File</source>
-            <translation>Schnell Datei öffnen</translation>
+            <translation>Schnell öffnen: Datei</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="83"/>
             <source>Quick Open Editor</source>
-            <translation>Schneller Öffnungseditor</translation>
+            <translation>Schnell öffnen: Editor</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="84"/>
             <source>Quick Open Symbol</source>
-            <translation>Schnellöffnungssymbol</translation>
+            <translation>Schnell öffnen: Symbol</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="85"/>
             <source>Quick Open Command</source>
-            <translation>Schneller Öffnen-Befehl</translation>
+            <translation>Schnell öffnen: Befehl</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="86"/>
             <source>Show All Quick Open Actions</source>
-            <translation>Alle Schnellöffnungsaktionen anzeigen</translation>
+            <translation>Alle Quick‑Open‑Aktionen anzeigen</translation>
         </message>
     </context>
     <context>
@@ -6102,7 +6120,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenmimetype.cpp" line="41"/>
             <source>Go to Symbol in File</source>
-            <translation>Zum Symbol in der Datei gehen</translation>
+            <translation>Zum Symbol in der Datei wechseln</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmimetype.cpp" line="42"/>
@@ -6115,12 +6133,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Form</translation>
+            <translation>Formular</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="20"/>
             <source>QuickOpenFiles</source>
-            <translation>SchnellDateienÖffnen</translation>
+            <translation>QuickOpenFiles</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="26"/>
@@ -6131,12 +6149,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="35"/>
             <source>Max files count:</source>
-            <translation>Max Dateienanzahl:</translation>
+            <translation>Maximale Anzahl der Dateien:</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="73"/>
             <source>QuickOpenEditor</source>
-            <translation>SchnellerOpenEditor</translation>
+            <translation>Schneller Dateiöffner</translation>
         </message>
     </context>
     <context>
@@ -6144,7 +6162,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/recentmanager.cpp" line="54"/>
             <source>Clear All History</source>
-            <translation>Alle Verlauf löschen</translation>
+            <translation>Alle Verläufe löschen</translation>
         </message>
         <message>
             <location filename="src/liteapp/recentmanager.cpp" line="169"/>
@@ -6201,7 +6219,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/litedebug/selectexternaldialog.cpp" line="92"/>
             <source>Select the working directory:</source>
-            <translation>Wählen Sie das Arbeitsverzeichnis:</translation>
+            <translation>Arbeitsverzeichnis auswählen:</translation>
         </message>
     </context>
     <context>
@@ -6222,17 +6240,17 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="54"/>
             <source>RightSideBar</source>
-            <translation>RechteSeitenleiste</translation>
+            <translation>Rechte Seitenleiste</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="56"/>
             <source>LeftDockWidgt</source>
-            <translation>LinkesDockWidget</translation>
+            <translation>Linke Dock-Widget-Leiste</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="58"/>
             <source>LeftSideBar</source>
-            <translation>LinkeSeitenleiste</translation>
+            <translation>Linke Seitenleiste</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="60"/>
@@ -6242,7 +6260,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="63"/>
             <source>OutputBar</source>
-            <translation>Ausgabebalken</translation>
+            <translation>Ausgabeleiste</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="75"/>
@@ -6265,7 +6283,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="587"/>
             <source>SideBar Windows</source>
-            <translation>Seitenleiste Windows</translation>
+            <translation>Seitenleistenfenster</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="588"/>
@@ -6285,42 +6303,42 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="302"/>
             <source>Top</source>
-            <translation>Top</translation>
+            <translation>Oben</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="306"/>
             <source>Top (Split)</source>
-            <translation>Oben (Geteilt)</translation>
+            <translation>Oben (geteilt)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
             <source>TopDockWidget (Split)</source>
-            <translation>TopDockWidget (Geteilt)</translation>
+            <translation>Oben-Dock-Widget (geteilt)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
             <source>TopDockWidget</source>
-            <translation>Top-Dock-Widget</translation>
+            <translation>Oben-Dock-Widget</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="312"/>
             <source>Bottom</source>
-            <translation>Boden</translation>
+            <translation>Unten</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="316"/>
             <source>Bottom (Split)</source>
-            <translation>Unten (Geteilt)</translation>
+            <translation>Unten (geteilt)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
             <source>BottomDockWidget (Split)</source>
-            <translation>Unteres Dock-Widget (Geteilt)</translation>
+            <translation>Unten-Dock-Widget (geteilt)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
             <source>BottomDockWidget</source>
-            <translation>Unteres Dock-Widget</translation>
+            <translation>Unten-Dock-Widget</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="322"/>
@@ -6330,47 +6348,47 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="326"/>
             <source>Left (Split)</source>
-            <translation>Links (Geteilt)</translation>
+            <translation>Links (geteilt)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
             <source>LeftDockWidget (Split)</source>
-            <translation>Linkes Dock-Widget (Geteilt)</translation>
+            <translation>Links-Dock-Widget (geteilt)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
             <source>LeftDockWidget</source>
-            <translation>Linkes Dock-Widget</translation>
+            <translation>Links-Dock-Widget</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="332"/>
             <source>Right</source>
-            <translation>Richtig</translation>
+            <translation>Rechts</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="336"/>
             <source>Right (Split)</source>
-            <translation>Rechts (Split)</translation>
+            <translation>Rechts (Aufteilen)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
             <source>RightDockWidget (Split)</source>
-            <translation>Rechtes Dock-Widget (Geteilt)</translation>
+            <translation>RechtsDockWidget (Aufteilen)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
             <source>RightDockWidget</source>
-            <translation>Rechtes Dock-Widget</translation>
+            <translation>RechtsDockWidget</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="355"/>
             <source>Unsplit</source>
-            <translation>Ungeteilt</translation>
+            <translation>Zusammenführen</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="360"/>
             <source>Split</source>
-            <translation>Split</translation>
+            <translation>Aufteilen</translation>
         </message>
     </context>
     <context>
@@ -6383,7 +6401,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/liteapp/splitwindowstyle.cpp" line="278"/>
             <source>Tool Windows</source>
-            <translation>Werkzeugfenster</translation>
+            <translation>Toolfenster</translation>
         </message>
     </context>
     <context>
@@ -6406,7 +6424,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/qsqleditor/sqltablemodel.cpp" line="65"/>
             <source>{blob}</source>
-            <translation>{Blob}</translation>
+            <translation>{blob}</translation>
         </message>
     </context>
     <context>
@@ -6414,12 +6432,12 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="135"/>
             <source>SyntaxEditor ToolBar</source>
-            <translation>Syntax-Editor-Symbolleiste</translation>
+            <translation>SyntaxEditor-Symbolleiste</translation>
         </message>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="136"/>
             <source>Undo</source>
-            <translation>Rückgängig machen</translation>
+            <translation>Rückgängig</translation>
         </message>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="137"/>
@@ -6453,7 +6471,7 @@ Möchten Sie es ersetzen?</translation>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="127"/>
             <source>Save As</source>
-            <translation>Speichern als</translation>
+            <translation>Speichern unter</translation>
         </message>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="149"/>
@@ -6488,17 +6506,17 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="20"/>
             <source>Font</source>
-            <translation>Schriftart</translation>
+            <translation>Font</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="26"/>
             <source>Family:</source>
-            <translation>Familie:</translation>
+            <translation>Family:</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="40"/>
             <source>Size:</source>
-            <translation>Größe:</translation>
+            <translation>Size:</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="57"/>
@@ -6508,12 +6526,12 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="64"/>
             <source>%</source>
-            <translation>Prozent</translation>
+            <translation>%</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="83"/>
             <source>Antialias</source>
-            <translation>Antialiasing</translation>
+            <translation>Antialias</translation>
         </message>
     </context>
     <context>
@@ -6523,57 +6541,57 @@ Möchten Sie Ihre Änderungen speichern?</translation>
             <location filename="src/plugins/terminal/terminal.cpp" line="198"/>
             <location filename="src/plugins/terminal/terminal.cpp" line="816"/>
             <source>New</source>
-            <translation>Neu</translation>
+            <translation>New</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="142"/>
             <source>Open a new terminal</source>
-            <translation>Öffne ein neues Terminal</translation>
+            <translation>Open a new terminal</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="144"/>
             <source>Close</source>
-            <translation>Schließen</translation>
+            <translation>Close</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="145"/>
             <source>Close current terminal</source>
-            <translation>Aktuelles Terminal schließen</translation>
+            <translation>Close current terminal</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="147"/>
             <source>CloseAll</source>
-            <translation>Alle schließen</translation>
+            <translation>CloseAll</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="148"/>
             <source>Close all terminal</source>
-            <translation>Alle Terminals schließen</translation>
+            <translation>Close all terminal</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="151"/>
             <source>LoadEnv</source>
-            <translation>Umwelt laden</translation>
+            <translation>LoadEnv</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="152"/>
             <source>Current terminal load environment from LiteIDE</source>
-            <translation>Aktuelle Terminalbelastungsumgebung aus LiteIDE</translation>
+            <translation>Current terminal load environment from LiteIDE</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="157"/>
             <source>Filter</source>
-            <translation>Filtern</translation>
+            <translation>Filter</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="193"/>
             <source>Dark Mode</source>
-            <translation>Dunkler Modus</translation>
+            <translation>Dark Mode</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="204"/>
             <source>Login Mode (shell --login)</source>
-            <translation>Anmeldemodus (Shell --login)</translation>
+            <translation>Login Mode (shell --login)</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="245"/>
@@ -6584,7 +6602,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="783"/>
             <source>Rename Tab Title</source>
-            <translation>Registerkarten-Titel umbenennen</translation>
+            <translation>Registerkartenname ändern</translation>
         </message>
     </context>
     <context>
@@ -6592,7 +6610,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="68"/>
             <source>Cut</source>
-            <translation>Schneiden</translation>
+            <translation>Ausschneiden</translation>
         </message>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="72"/>
@@ -6607,7 +6625,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="80"/>
             <source>Select All</source>
-            <translation>Alle auswählen</translation>
+            <translation>Alles auswählen</translation>
         </message>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="84"/>
@@ -6628,7 +6646,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/colorscheme.cpp" line="212"/>
             <source>Not a color scheme file.</source>
-            <translation>Keine Farbschema-Datei.</translation>
+            <translation>Keine Farbschemadatei.</translation>
         </message>
     </context>
     <context>
@@ -6656,12 +6674,12 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="115"/>
             <source>Download Information</source>
-            <translation>Download-Informationen</translation>
+            <translation>Informationen zum Download</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="116"/>
             <source>There is already one download in progress. Please wait until it is finished.</source>
-            <translation>Es ist bereits ein Download im Gange. Bitte warten Sie, bis er abgeschlossen ist.</translation>
+            <translation>Es ist bereits ein Download in Arbeit. Bitte warten Sie, bis er abgeschlossen ist.</translation>
         </message>
     </context>
     <context>
@@ -6669,7 +6687,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="74"/>
             <source>Cancel file %1 modify and reload ?</source>
-            <translation>Datei %1 abbrechen, ändern und neu laden?</translation>
+            <translation>Datei %1 ändern und neu laden abbrechen?</translation>
         </message>
     </context>
     <context>
@@ -6677,12 +6695,12 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/qtc_editutil/filterlineedit.cpp" line="51"/>
             <source>Filter</source>
-            <translation>Filtern</translation>
+            <translation>Filter</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_editutil/filterlineedit.cpp" line="52"/>
             <source>Clear text</source>
-            <translation>Klartext</translation>
+            <translation>Text löschen</translation>
         </message>
     </context>
     <context>
@@ -6700,7 +6718,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/utils/vterm/vtermwidget.cpp" line="67"/>
             <source>Select All</source>
-            <translation>Alle auswählen</translation>
+            <translation>Alles auswählen</translation>
         </message>
     </context>
     <context>
@@ -6718,12 +6736,12 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="119"/>
             <source>WebKitBrowser</source>
-            <translation>Webkit-Browser</translation>
+            <translation>WebKit-Browser</translation>
         </message>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="169"/>
             <source>False load %1 !</source>
-            <translation>Falsche Last %1 !</translation>
+            <translation>Kein Vorabladen %1 !</translation>
         </message>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="256"/>
@@ -6747,7 +6765,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         </message>
         <message>
             <source>Open</source>
-            <translation>Offen</translation>
+            <translation>Öffnen</translation>
         </message>
         <message>
             <source>Open Folder</source>
@@ -6758,7 +6776,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
             <translation>Optionen</translation>
         </message>
         <message>
-            <location filename="src/plugins/welcome/welcomebrowser.cpp" line="187"/>
+            <location filename="src/plugins/welcome/welcomebrowser.cpp" line="191"/>
             <source>Welcome</source>
             <translation>Willkommen</translation>
         </message>
@@ -6776,7 +6794,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="394"/>
             <source>Detach</source>
-            <translation>Abkoppeln</translation>
+            <translation>Trennen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="399"/>
@@ -6786,7 +6804,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="401"/>
             <source>Top</source>
-            <translation>Top</translation>
+            <translation>Oben</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="402"/>
@@ -6796,17 +6814,17 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="403"/>
             <source>Right</source>
-            <translation>Richtig</translation>
+            <translation>Rechts</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="404"/>
             <source>Bottom</source>
-            <translation>Boden</translation>
+            <translation>Unten</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="406"/>
             <source>Unpin (Dock)</source>
-            <translation>Entflecken (Dock)</translation>
+            <translation>Abheften (Dock)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="408"/>
@@ -6819,7 +6837,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="803"/>
             <source>Detach</source>
-            <translation>Abkoppeln</translation>
+            <translation>Trennen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="803"/>
@@ -6830,7 +6848,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="864"/>
             <source>Unpin (Dock)</source>
-            <translation>Entflecken (Dock)</translation>
+            <translation>Anheften aufheben (Dock)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
@@ -6841,12 +6859,12 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="814"/>
             <source>Pin Group To...</source>
-            <translation>Gruppe anheften an...</translation>
+            <translation>Gruppe an… anheften</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="816"/>
             <source>Top</source>
-            <translation>Top</translation>
+            <translation>Oben</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="817"/>
@@ -6856,12 +6874,12 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="818"/>
             <source>Right</source>
-            <translation>Richtig</translation>
+            <translation>Rechts</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="819"/>
             <source>Bottom</source>
-            <translation>Boden</translation>
+            <translation>Unten</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="827"/>
@@ -6890,7 +6908,7 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="873"/>
             <source>Pin Active Tab (Press Ctrl to Pin Group)</source>
-            <translation>Aktiven Tab anheften (Drücken Sie Strg, um die Gruppe anzupinnen)</translation>
+            <translation>Aktiven Tab anheften (Strg gedrückt halten, um die Gruppe zu anern)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="886"/>
@@ -6911,22 +6929,22 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="551"/>
             <source>Detach</source>
-            <translation>Abkoppeln</translation>
+            <translation>Trennen</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="555"/>
             <source>Pin</source>
-            <translation>Stecken</translation>
+            <translation>Anheften</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="559"/>
             <source>Pin To...</source>
-            <translation>Anheften an...</translation>
+            <translation>An… anheften</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="561"/>
             <source>Top</source>
-            <translation>Top</translation>
+            <translation>Oben</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="562"/>
@@ -6936,12 +6954,12 @@ Möchten Sie Ihre Änderungen speichern?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="563"/>
             <source>Right</source>
-            <translation>Richtig</translation>
+            <translation>Rechts</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="564"/>
             <source>Bottom</source>
-            <translation>Boden</translation>
+            <translation>Unten</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="569"/>

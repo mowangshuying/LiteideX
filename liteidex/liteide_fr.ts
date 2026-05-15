@@ -20,7 +20,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="168"/>
             <source>Welcome to LiteIDE X! LiteIDE is a simple, open source, cross-platform IDE.</source>
-            <translation>Bienvenue dans LiteIDE X ! LiteIDE est un IDE simple, open source et multiplateforme.</translation>
+            <translation>Bienvenue sur LiteIDE X ! LiteIDE est un IDE simple, open source et multiplateforme.</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="178"/>
@@ -45,7 +45,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="242"/>
             <source>Build:</source>
-            <translation>Construire :</translation>
+            <translation>Build :</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="215"/>
@@ -60,7 +60,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="263"/>
             <source>Support LiteIDE:</source>
-            <translation>Support LiteIDE :</translation>
+            <translation>Soutenez LiteIDE :</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="297"/>
@@ -138,22 +138,22 @@
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="66"/>
             <source>&amp;Recent</source>
-            <translation>&amp;Dernier</translation>
+            <translation>&amp;Récent</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="67"/>
             <source>&amp;Edit</source>
-            <translation>&amp;Éditer</translation>
+            <translation>&amp;Édition</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="68"/>
             <source>F&amp;ind</source>
-            <translation>F&amp;trouver</translation>
+            <translation>T&amp;rouver</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="69"/>
             <source>&amp;View</source>
-            <translation>&amp;Vue</translation>
+            <translation>&amp;Affichage</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="74"/>
@@ -163,12 +163,12 @@
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="75"/>
             <source>&amp;Build</source>
-            <translation>&amp;Construire</translation>
+            <translation>&amp;Génération</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="76"/>
             <source>&amp;Debug</source>
-            <translation>&amp;Déboguer</translation>
+            <translation>&amp;Débogage</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="77"/>
@@ -178,7 +178,7 @@
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="79"/>
             <source>Standard Toolbar</source>
-            <translation>Barre d'outils standard</translation>
+            <translation>Barre d’outils standard</translation>
         </message>
     </context>
     <context>
@@ -191,7 +191,7 @@
         <message>
             <location filename="src/plugins/golangast/astwidget.cpp" line="78"/>
             <source>View Import Document</source>
-            <translation>Afficher le document d'importation</translation>
+            <translation>Afficher le document d’importation</translation>
         </message>
     </context>
     <context>
@@ -199,12 +199,12 @@
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="77"/>
             <source>Hide</source>
-            <translation>Cacher</translation>
+            <translation>Masquer</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="78"/>
             <source>Hide Tool Window</source>
-            <translation>Cacher la fenêtre d’outil</translation>
+            <translation>Masquer la fenêtre d’outils</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="87"/>
@@ -232,7 +232,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="81"/>
             <source>New File Wizard...</source>
-            <translation>Assistant de nouveau fichier...</translation>
+            <translation>Assistant de création de nouveau fichier...</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="82"/>
@@ -269,12 +269,12 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="90"/>
             <source>Show in Explorer</source>
-            <translation>Afficher dans l'Explorateur</translation>
+            <translation>Afficher dans l’Explorateur</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="77"/>
             <source>Open Application</source>
-            <translation>Application ouverte</translation>
+            <translation>Ouvrir l’application</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="92"/>
@@ -289,7 +289,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="98"/>
             <source>Open Command Prompt Here</source>
-            <translation>Ouvrir l’invite de commande ici</translation>
+            <translation>Ouvrir l’invite de commandes ici</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="102"/>
@@ -299,7 +299,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="104"/>
             <source>Open Folder...</source>
-            <translation>Ouvrir le dossier...</translation>
+            <translation>Ouvrir un dossier...</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="105"/>
@@ -345,7 +345,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="199"/>
             <source>A file with that name already exists!</source>
-            <translation>Un fichier avec ce nom existe déjà !</translation>
+            <translation>Un fichier portant ce nom existe déjà !</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="209"/>
@@ -373,22 +373,22 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="504"/>
             <source>An item &quot;%1&quot; already exists in this location. Do you want to replace it and move old item to trash?</source>
-            <translation>Un élément « %1 » existe déjà à cet emplacement. Voulez-vous le remplacer et déplacer l’ancien élément dans la corbeille ?</translation>
+            <translation>Un élément « %1 » existe déjà à cet emplacement. Voulez-vous le remplacer et déplacer l’ancien élément vers la corbeille ?</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="505"/>
             <source>Stop</source>
-            <translation>Arrêtez</translation>
+            <translation>Arrêter</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="506"/>
             <source>Keep Both</source>
-            <translation>Garder les deux</translation>
+            <translation>Conserver les deux</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="507"/>
             <source>Keep Both All</source>
-            <translation>Gardez les deux tous</translation>
+            <translation>Conserver tous les deux</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="508"/>
@@ -403,13 +403,13 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="609"/>
             <source>Are you sure that you want move to trash this item?</source>
-            <translation>Êtes-vous sûr de vouloir déplacer cet élément dans la corbeille ?</translation>
+            <translation>Êtes-vous sûr de vouloir déplacer cet élément vers la corbeille ?</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="612"/>
             <location filename="src/utils/folderview/basefolderview.cpp" line="615"/>
             <source>Are you sure that you want move to trash %1 items?</source>
-            <translation>Êtes-vous sûr de vouloir déplacer %1 éléments dans la corbeille ?</translation>
+            <translation>Êtes-vous sûr de vouloir déplacer %1 éléments vers la corbeille ?</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="618"/>
@@ -435,7 +435,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="291"/>
             <source>A folder with that name already exists!</source>
-            <translation>Un dossier avec ce nom existe déjà !</translation>
+            <translation>Un dossier portant ce nom existe déjà !</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="294"/>
@@ -476,7 +476,7 @@
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="62"/>
             <source>Toggle Bookmark</source>
-            <translation>Basculer le marque-page</translation>
+            <translation>Basculer le signet</translation>
         </message>
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="100"/>
@@ -486,7 +486,7 @@
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="101"/>
             <source>Remove bookmark</source>
-            <translation>Supprimer le marque-page</translation>
+            <translation>Supprimer le signet</translation>
         </message>
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="102"/>
@@ -496,7 +496,7 @@
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="103"/>
             <source>Remove all bookmarks for all files</source>
-            <translation>Supprimer tous les signets pour tous les fichiers</translation>
+            <translation>Supprimer tous les signets de tous les fichiers</translation>
         </message>
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="119"/>
@@ -517,22 +517,22 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="14"/>
             <source>Build Configuration</source>
-            <translation>Configuration de la construction</translation>
+            <translation>Configuration de compilation</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="71"/>
             <source>Build ID</source>
-            <translation>Identifiant de construction</translation>
+            <translation>Identifiant de compilation</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="45"/>
             <source>Build Path</source>
-            <translation>Chemin de construction</translation>
+            <translation>Chemin de compilation</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="85"/>
             <source>GOPATH</source>
-            <translation>Chemin GOPATH</translation>
+            <translation>GOPATH</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="103"/>
@@ -542,17 +542,17 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="147"/>
             <source>Use Custom GOPATH for Build Path</source>
-            <translation>Utiliser GOPATH personnalisé pour le chemin de construction</translation>
+            <translation>Utiliser GOPATH personnalisé pour le chemin de compilation</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="159"/>
             <source>Inherit System GOPATH</source>
-            <translation>Inhérer le GOPATH du système</translation>
+            <translation>Inhérer GOPATH système</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="179"/>
             <source>Inherit LiteIDE GOPATH</source>
-            <translation>Inhérer le GOPATH de LiteIDE</translation>
+            <translation>Inhérer GOPATH de LiteIDE</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="201"/>
@@ -567,7 +567,7 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="228"/>
             <source>Clear</source>
-            <translation>Clair</translation>
+            <translation>Vider</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="244"/>
@@ -649,7 +649,7 @@
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="161"/>
             <source>Fit on Screen</source>
-            <translation>Adapter à l'écran</translation>
+            <translation>Adapter à l’écran</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="166"/>
@@ -685,7 +685,7 @@
             <location filename="src/3rdparty/ads/examples/configflags/mainwindow.ui" line="28"/>
             <location filename="src/3rdparty/ads/examples/emptydockarea/mainwindow.ui" line="28"/>
             <source>View</source>
-            <translation>Vue</translation>
+            <translation>Affichage</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/examples/autohide/mainwindow.ui" line="35"/>
@@ -694,7 +694,7 @@
             <location filename="src/3rdparty/ads/examples/configflags/mainwindow.ui" line="35"/>
             <location filename="src/3rdparty/ads/examples/emptydockarea/mainwindow.ui" line="35"/>
             <source>toolBar</source>
-            <translation>barre d'outils</translation>
+            <translation>Barre d’outils</translation>
         </message>
     </context>
     <context>
@@ -702,17 +702,17 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="20"/>
             <source>Dock Widget Status</source>
-            <translation>Statut du widget de dock</translation>
+            <translation>État des widgets ancrables</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="35"/>
             <source>Dock Widget:</source>
-            <translation>Widget de dock :</translation>
+            <translation>Widget ancré :</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="58"/>
             <source>Status</source>
-            <translation>Statut</translation>
+            <translation>État</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="64"/>
@@ -727,12 +727,12 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="78"/>
             <source>tabbed</source>
-            <translation>ongleté</translation>
+            <translation>onglet</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="85"/>
             <source>is current tab</source>
-            <translation>est l'onglet actuel</translation>
+            <translation>est l’onglet actuel</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="101"/>
@@ -742,27 +742,27 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="107"/>
             <source>DockWidgetClosable</source>
-            <translation>Widget de dock fermable</translation>
+            <translation>Widget ancré fermable</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="114"/>
             <source>DockWidgetMovable</source>
-            <translation>Widget de dock déplaçable</translation>
+            <translation>Widget ancré déplaçable</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="121"/>
             <source>DockWidgetFloatable</source>
-            <translation>Widget de dock flottant</translation>
+            <translation>Widget ancré flottable</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="128"/>
             <source>DockWidgetDeleteOnClose</source>
-            <translation>WidgetDockSupprimerÀLaFermeture</translation>
+            <translation>Widget ancré supprimé à la fermeture</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="135"/>
             <source>CustomCloseHandling</source>
-            <translation>Gestion de la fermeture personnalisée</translation>
+            <translation>GestionFermeturePersonnalisée</translation>
         </message>
     </context>
     <context>
@@ -818,7 +818,7 @@
         <message>
             <location filename="src/utils/folderview/folderdialog.cpp" line="57"/>
             <source>Create and Edit</source>
-            <translation>Créer et Modifier</translation>
+            <translation>Créer et modifier</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/folderdialog.cpp" line="58"/>
@@ -832,7 +832,7 @@
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="132"/>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="352"/>
             <source>Add Watch</source>
-            <translation>Ajouter à la liste de veille</translation>
+            <translation>Ajouter à l’écoute</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="240"/>
@@ -847,17 +847,17 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="242"/>
             <source>Watch</source>
-            <translation>Regarder</translation>
+            <translation>Écoute</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="243"/>
             <source>Call Stack</source>
-            <translation>Pile d'appels</translation>
+            <translation>Pile d’appels</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="244"/>
             <source>Threads</source>
-            <translation>Fils</translation>
+            <translation>Threads</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="245"/>
@@ -877,7 +877,7 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="248"/>
             <source>Disassemble</source>
-            <translation>Démonter</translation>
+            <translation>Désassembler</translation>
         </message>
         <message>
             <source>Console</source>
@@ -886,17 +886,17 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="352"/>
             <source>Watch expression (e.g. buf main.var os.Stdout):</source>
-            <translation>Expression d'affichage (par exemple : buf main.var os.Stdout) :</translation>
+            <translation>Surveiller une expression (par exemple : buf main.var os.Stdout) :</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="134"/>
             <source>Remove Watch</source>
-            <translation>Supprimer le suivi</translation>
+            <translation>Supprimer la surveillance</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="135"/>
             <source>Remove All Watches</source>
-            <translation>Supprimer tous les horaires</translation>
+            <translation>Supprimer toutes les surveillances</translation>
         </message>
     </context>
     <context>
@@ -904,12 +904,12 @@
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="20"/>
             <source>Delve Pass Flags</source>
-            <translation>Drapeaux du Pass Delve</translation>
+            <translation>Drapeaux d’exécution de Delve</translation>
         </message>
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="26"/>
@@ -919,7 +919,7 @@
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="39"/>
             <source>Assembly Syntax</source>
-            <translation>Syntaxe d'assemblage</translation>
+            <translation>Syntaxe d’assemblage</translation>
         </message>
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="45"/>
@@ -934,7 +934,7 @@
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="65"/>
             <source>Go</source>
-            <translation>Aller</translation>
+            <translation>Go</translation>
         </message>
     </context>
     <context>
@@ -947,7 +947,7 @@
         <message>
             <location filename="src/utils/documentbrowser/documentbrowser.cpp" line="68"/>
             <source>Forward</source>
-            <translation>Avancer</translation>
+            <translation>Avance</translation>
         </message>
         <message>
             <location filename="src/utils/documentbrowser/documentbrowser.cpp" line="69"/>
@@ -957,12 +957,12 @@
         <message>
             <location filename="src/utils/documentbrowser/documentbrowser.cpp" line="75"/>
             <source>Increase Font Size</source>
-            <translation>Augmenter la taille de la police</translation>
+            <translation>Augmenter la taille de police</translation>
         </message>
         <message>
             <location filename="src/utils/documentbrowser/documentbrowser.cpp" line="78"/>
             <source>Decrease Font Size</source>
-            <translation>Diminuer la taille de la police</translation>
+            <translation>Diminuer la taille de police</translation>
         </message>
         <message>
             <location filename="src/utils/documentbrowser/documentbrowser.cpp" line="81"/>
@@ -988,12 +988,12 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="165"/>
             <source>Move to New Window</source>
-            <translation>Passer à la nouvelle fenêtre</translation>
+            <translation>Déplacer vers une nouvelle fenêtre</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="226"/>
             <source>Navigate Forward</source>
-            <translation>Naviguer vers l'avant</translation>
+            <translation>Naviguer en avant</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="141"/>
@@ -1003,7 +1003,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="111"/>
             <source>Open Editor</source>
-            <translation>Ouvrir l'éditeur</translation>
+            <translation>Ouvrir l’éditeur</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="142"/>
@@ -1013,22 +1013,22 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="143"/>
             <source>Close Left Tabs</source>
-            <translation>Fermer les onglets de gauche</translation>
+            <translation>Fermer les onglets à gauche</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="144"/>
             <source>Close Right Tabs</source>
-            <translation>Fermer les onglets de droite</translation>
+            <translation>Fermer les onglets à droite</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="145"/>
             <source>Close Files in Same Folder</source>
-            <translation>Fermer les fichiers dans le même dossier</translation>
+            <translation>Fermer les fichiers du même dossier</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="146"/>
             <source>Close Files in Other Folders</source>
-            <translation>Fermer les fichiers dans d'autres dossiers</translation>
+            <translation>Fermer les fichiers d’autres dossiers</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="147"/>
@@ -1038,7 +1038,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="150"/>
             <source>Show in Explorer</source>
-            <translation>Afficher dans l'Explorateur</translation>
+            <translation>Afficher dans l’Explorateur</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="152"/>
@@ -1053,7 +1053,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="158"/>
             <source>Open Command Prompt Here</source>
-            <translation>Ouvrir l’invite de commande ici</translation>
+            <translation>Ouvrir l’invite de commandes ici</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="160"/>
@@ -1083,7 +1083,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="432"/>
             <source>Save changes to %1?</source>
-            <translation>Enregistrer les modifications dans %1 ?</translation>
+            <translation>Enregistrer les modifications apportées à %1 ?</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="433"/>
@@ -1106,27 +1106,27 @@
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="445"/>
             <source>Environment Toolbar</source>
-            <translation>Barre d'outils de l'environnement</translation>
+            <translation>Barre d’outils de l’environnement</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="452"/>
             <source>Switching current environment</source>
-            <translation>Changer d'environnement actuel</translation>
+            <translation>Changer d’environnement actuel</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="455"/>
             <source>Edit current environment</source>
-            <translation>Modifier l'environnement actuel</translation>
+            <translation>Modifier l’environnement actuel</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="456"/>
             <source>Reload current environment</source>
-            <translation>Recharger l'environnement actuel</translation>
+            <translation>Recharger l’environnement actuel</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="460"/>
             <source>Select Environment</source>
-            <translation>Sélectionner l'environnement</translation>
+            <translation>Sélectionner l’environnement</translation>
         </message>
     </context>
     <context>
@@ -1134,7 +1134,7 @@
         <message>
             <location filename="src/plugins/golangpresent/exportdialog.ui" line="14"/>
             <source>Dialog</source>
-            <translation>Dialogue</translation>
+            <translation>Boîte de dialogue</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/exportdialog.ui" line="22"/>
@@ -1149,7 +1149,7 @@
         <message>
             <location filename="src/plugins/golangpresent/exportdialog.ui" line="56"/>
             <source>ExportAndView</source>
-            <translation>ExporterEtAfficher</translation>
+            <translation>Exporter et afficher</translation>
         </message>
     </context>
     <context>
@@ -1157,7 +1157,7 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimactions.cpp" line="194"/>
             <source>Use Vim-style Editing</source>
-            <translation>Utiliser l’édition de style Vim</translation>
+            <translation>Utiliser la modification style Vim</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimactions.cpp" line="196"/>
@@ -1167,7 +1167,7 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimactions.cpp" line="198"/>
             <source>Path to .vimrc</source>
-            <translation>Chemin vers le .vimrc</translation>
+            <translation>Chemin vers .vimrc</translation>
         </message>
     </context>
     <context>
@@ -1181,7 +1181,7 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimactions.cpp" line="156"/>
             <source>Argument must be positive: %1=%2</source>
-            <translation>L'argument doit être positif : %1=%2</translation>
+            <translation>L’argument doit être positif : %1=%2</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="949"/>
@@ -1196,127 +1196,127 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3540"/>
             <source>%1All</source>
-            <translation>%1Tout</translation>
+            <translation>%1All</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3554"/>
             <source>Not implemented in FakeVim.</source>
-            <translation>Non implémenté dans FakeVim.</translation>
+            <translation>Not implemented in FakeVim.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5719"/>
             <source>Unknown option:</source>
-            <translation>Option inconnue :</translation>
+            <translation>Unknown option:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5730"/>
             <source>Invalid argument:</source>
-            <translation>Argument invalide :</translation>
+            <translation>Invalid argument:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5733"/>
             <source>Trailing characters:</source>
-            <translation>Caractères de fin :</translation>
+            <translation>Trailing characters:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5816"/>
             <source>Move lines into themselves.</source>
-            <translation>Déplacez les lignes sur elles-mêmes.</translation>
+            <translation>Move lines into themselves.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5860"/>
             <source>%n lines moved.</source>
-            <translation>%n lignes déplacées.</translation>
+            <translation>%n lines moved.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5920"/>
             <source>File &quot;%1&quot; exists (add ! to override)</source>
-            <translation>Le fichier « %1 » existe (ajoutez ! pour remplacer)</translation>
+            <translation>File &quot;%1&quot; exists (add ! to override)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5934"/>
             <source>Cannot open file &quot;%1&quot; for writing</source>
-            <translation>Impossible d'ouvrir le fichier « %1 » en mode écriture</translation>
+            <translation>Cannot open file &quot;%1&quot; for writing</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5940"/>
             <source>&quot;%1&quot; %2 %3L, %4C written.</source>
-            <translation>« %1 » %2 %3L, %4C écrit.</translation>
+            <translation>&quot;%1&quot; %2 %3L, %4C written.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5949"/>
             <source>Cannot open file &quot;%1&quot; for reading</source>
-            <translation>Impossible d'ouvrir le fichier « %1 » en lecture</translation>
+            <translation>Cannot open file &quot;%1&quot; for reading</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5978"/>
             <source>&quot;%1&quot; %2L, %3C</source>
-            <translation>« %1 » %2L, %3C</translation>
+            <translation>&quot;%1&quot; %2L, %3C</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6005"/>
             <source>%n lines filtered.</source>
-            <translation>%n lignes filtrées.</translation>
+            <translation>%n lines filtered.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6093"/>
             <source>Cannot open file %1</source>
-            <translation>Impossible d'ouvrir le fichier %1</translation>
+            <translation>Cannot open file %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6259"/>
             <source>Invalid regular expression: %1</source>
-            <translation>Expression régulière invalide : %1</translation>
+            <translation>Invalid regular expression: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6295"/>
             <source>Pattern not found: %1</source>
-            <translation>Modèle non trouvé : %1</translation>
+            <translation>Pattern not found: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6299"/>
             <source>Search hit BOTTOM, continuing at TOP.</source>
-            <translation>La recherche a atteint le bas ; elle continue au sommet.</translation>
+            <translation>Search hit BOTTOM, continuing at TOP.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6300"/>
             <source>Search hit TOP, continuing at BOTTOM.</source>
-            <translation>Résultat de recherche en haut, poursuite en bas.</translation>
+            <translation>Search hit TOP, continuing at BOTTOM.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6305"/>
             <source>Search hit BOTTOM without match for: %1</source>
-            <translation>Recherche atteignant le BOUT sans correspondance pour : %1</translation>
+            <translation>Search hit BOTTOM without match for: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6306"/>
             <source>Search hit TOP without match for: %1</source>
-            <translation>Résultat de recherche TOP sans correspondance pour : %1</translation>
+            <translation>Search hit TOP without match for: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6413"/>
             <source>%n lines indented.</source>
-            <translation>%n lignes en retrait.</translation>
+            <translation>%n lignes indentées.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6470"/>
             <source>%n lines %1ed %2 time.</source>
-            <translation>%n lignes %1ed %2 temps.</translation>
+            <translation>%n lignes %1é %2 fois.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7043"/>
             <source>%n lines yanked.</source>
-            <translation>%n lignes ont été extraites.</translation>
+            <translation>%n lignes récupérées.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7748"/>
             <source>Already at oldest change.</source>
-            <translation>Déjà au changement le plus ancien.</translation>
+            <translation>Déjà à la modification la plus ancienne.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7749"/>
             <source>Already at newest change.</source>
-            <translation>Déjà au dernier changement.</translation>
+            <translation>Déjà à la modification la plus récente.</translation>
         </message>
     </context>
     <context>
@@ -1329,17 +1329,17 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="4195"/>
             <source>Type Alt-V, Alt-V to quit FakeVim mode.</source>
-            <translation>Appuyez sur Alt-V, Alt-V pour quitter le mode FakeVim.</translation>
+            <translation>Appuyez sur Alt‑V, Alt‑V pour quitter le mode FakeVim.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5941"/>
             <source> [New] </source>
-            <translation>[Nouveau] </translation>
+            <translation> [Nouveau] </translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6166"/>
             <source>Not an editor command: %1</source>
-            <translation>N'est pas une commande de l'éditeur : %1</translation>
+            <translation>Pas une commande de l’éditeur : %1</translation>
         </message>
     </context>
     <context>
@@ -1355,17 +1355,17 @@
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="20"/>
             <source>FakeVim initialization command list (# start is comment):</source>
-            <translation>Liste des commandes d'initialisation de FakeVim (# start est un commentaire) :</translation>
+            <translation>Liste des commandes d’initialisation de FakeVim (les lignes commençant par # sont des commentaires) :</translation>
         </message>
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="28"/>
             <source>Load default init command list</source>
-            <translation>Charger la liste d'initiation par défaut</translation>
+            <translation>Charger la liste des commandes d’initialisation par défaut</translation>
         </message>
     </context>
     <context>
@@ -1383,7 +1383,7 @@
         <message>
             <location filename="src/plugins/litetty/fifotty.cpp" line="104"/>
             <source>Cannot open FiFo %1: %2</source>
-            <translation>Impossible d'ouvrir le FiFo %1 : %2</translation>
+            <translation>Impossible d’ouvrir le FiFo %1 : %2</translation>
         </message>
     </context>
     <context>
@@ -1391,7 +1391,7 @@
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="98"/>
             <source>Synchronize with editor</source>
-            <translation>Synchroniser avec l'éditeur</translation>
+            <translation>Synchroniser avec l’éditeur</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="103"/>
@@ -1436,7 +1436,7 @@
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="141"/>
             <source>Open Parent</source>
-            <translation>Parent ouvert</translation>
+            <translation>Ouvrir le dossier parent</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowser.cpp" line="169"/>
@@ -1454,7 +1454,7 @@
         <message>
             <location filename="src/plugins/filebrowser/filebrowseroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/filebrowser/filebrowseroption.ui" line="20"/>
@@ -1489,13 +1489,13 @@
             <location filename="src/liteapp/filemanager.cpp" line="399"/>
             <source>Project '%1' has been created.
 Do you want to open it now?</source>
-            <translation>Le projet '%1' a été créé.
-Voulez-vous l'ouvrir maintenant ?</translation>
+            <translation>Le projet « %1 » a été créé.
+Voulez-vous l’ouvrir maintenant ?</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="302"/>
             <source>Open Project or File</source>
-            <translation>Ouvrir un projet ou un fichier</translation>
+            <translation>Ouvrir le projet ou le fichier</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="76"/>
@@ -1510,7 +1510,7 @@ Voulez-vous l'ouvrir maintenant ?</translation>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="85"/>
             <source>Split Mode</source>
-            <translation>Mode Split</translation>
+            <translation>Mode fractionné</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="127"/>
@@ -1542,7 +1542,7 @@ Ce fichier a été supprimé du disque,
 mais vous avez des modifications non enregistrées dans votre éditeur LiteIDE.
 
 Voulez-vous fermer l’éditeur ?
-En répondant « Oui », vos modifications non enregistrées seront abandonnées.</translation>
+En répondant « Oui », vous perdrez vos modifications non enregistrées.</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="687"/>
@@ -1553,7 +1553,7 @@ Do you want to close the editor?</source>
             <translation>%1
 Ce fichier a été supprimé du disque.
 
-Voulez-vous fermer l'éditeur ?</translation>
+Voulez-vous fermer l’éditeur ?</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="720"/>
@@ -1568,7 +1568,7 @@ Ce fichier a été modifié sur le disque,
 mais vous avez des modifications non enregistrées dans votre éditeur LiteIDE.
 
 Voulez-vous recharger le fichier depuis le disque ?
-En répondant « Oui », vos modifications non enregistrées seront abandonnées.</translation>
+En répondant « Oui », vous perdrez vos modifications non enregistrées.</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="727"/>
@@ -1584,21 +1584,21 @@ Voulez-vous recharger le fichier depuis le disque ?</translation>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="351"/>
             <source>Open Files</source>
-            <translation>Ouvrir des fichiers</translation>
+            <translation>Fichiers ouverts</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="82"/>
             <source>Synchronize with editor</source>
-            <translation>Synchroniser avec l'éditeur</translation>
+            <translation>Synchroniser avec l’éditeur</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="113"/>
             <source>Filter</source>
-            <translation>Filtrer</translation>
+            <translation>Filtre</translation>
         </message>
         <message>
             <source>Open Project</source>
-            <translation>Ouvrir le projet</translation>
+            <translation>Ouvrir un projet</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="684"/>
@@ -1622,12 +1622,12 @@ Voulez-vous recharger le fichier depuis le disque ?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="217"/>
             <source>Match whole word</source>
-            <translation>Faire correspondre le mot entier</translation>
+            <translation>Correspondre au mot entier</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="218"/>
             <source>Match case</source>
-            <translation>Faire la correspondance</translation>
+            <translation>Tenir compte de la casse</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="219"/>
@@ -1637,7 +1637,7 @@ Voulez-vous recharger le fichier depuis le disque ?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="220"/>
             <source>Scan subdirectories</source>
-            <translation>Scanner les sous-répertoires</translation>
+            <translation>Explorer les sous-répertoires</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="241"/>
@@ -1682,17 +1682,17 @@ Voulez-vous recharger le fichier depuis le disque ?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="254"/>
             <source>Auto Switch</source>
-            <translation>Commutateur automatique</translation>
+            <translation>Basculer automatiquement</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="278"/>
             <source>Clear</source>
-            <translation>Clair</translation>
+            <translation>Effacer</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="481"/>
             <source>Open Directory</source>
-            <translation>Annuaire ouvert</translation>
+            <translation>Ouvrir le répertoire</translation>
         </message>
     </context>
     <context>
@@ -1700,7 +1700,7 @@ Voulez-vous recharger le fichier depuis le disque ?</translation>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="50"/>
             <source>Search Item:</source>
-            <translation>Article de recherche :</translation>
+            <translation>Élément de recherche :</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="69"/>
@@ -1739,13 +1739,13 @@ Voulez-vous supprimer tous les éléments de recherche ?</translation>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="254"/>
             <source>Warning! Replace text is whitespace.
 Want to replace to all the search items to whitespace?</source>
-            <translation>Avertissement ! Le texte de remplacement est un espace.
-Voulez-vous remplacer tous les éléments recherchés par un espace ?</translation>
+            <translation>Attention ! Le texte de remplacement ne contient que des espaces.
+Voulez-vous remplacer tous les éléments de recherche par des espaces ?</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="281"/>
             <source>The following files have no write permissions. Do you want to change the permissions?</source>
-            <translation>Les fichiers suivants n’ont pas les permissions d’écriture. Voulez-vous modifier les permissions ?</translation>
+            <translation>Les fichiers suivants n’ont pas les permissions d’écriture. Voulez-vous modifier ces permissions ?</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="284"/>
@@ -1768,7 +1768,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="96"/>
             <source>New File Wizard...</source>
-            <translation>Assistant de nouveau fichier...</translation>
+            <translation>Assistant de création de nouveau fichier...</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="320"/>
@@ -1826,12 +1826,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="105"/>
             <source>Open Explorer Here</source>
-            <translation>Ouvrir l'Explorateur ici</translation>
+            <translation>Ouvrir l’Explorateur ici</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="107"/>
             <source>View Godoc Here</source>
-            <translation>Consultez Godoc ici</translation>
+            <translation>Afficher Godoc ici</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="454"/>
@@ -1862,7 +1862,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="280"/>
             <source>A file with that name already exists!</source>
-            <translation>Un fichier avec ce nom existe déjà !</translation>
+            <translation>Un fichier portant ce nom existe déjà !</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="290"/>
@@ -1899,7 +1899,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="370"/>
             <source>A folder with that name already exists!</source>
-            <translation>Un dossier avec ce nom existe déjà !</translation>
+            <translation>Un dossier portant ce nom existe déjà !</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="373"/>
@@ -1948,12 +1948,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="174"/>
             <source>Set show replace mode ui</source>
-            <translation>Définir l’interface utilisateur du mode de remplacement de l’affichage</translation>
+            <translation>Activer l’interface du mode Remplacer</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="175"/>
             <source>Show Replace</source>
-            <translation>Afficher le remplacement</translation>
+            <translation>Afficher Remplacer</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="180"/>
@@ -1991,17 +1991,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="318"/>
             <source>Revert with:</source>
-            <translation>Revenir à :</translation>
+            <translation>Annuler avec :</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="319"/>
             <source>Revert</source>
-            <translation>Revenir à la version précédente</translation>
+            <translation>Annuler</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="320"/>
             <source>Revert all occurrences</source>
-            <translation>Rétablir toutes les occurrences</translation>
+            <translation>Annuler toutes les occurrences</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="596"/>
@@ -2016,7 +2016,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="604"/>
             <source>searching ...</source>
-            <translation>recherche ...</translation>
+            <translation>recherche en cours ...</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="610"/>
@@ -2026,7 +2026,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="612"/>
             <source>%n matches found.</source>
-            <translation>% n correspondances trouvées.</translation>
+            <translation>%n correspondances trouvées.</translation>
         </message>
     </context>
     <context>
@@ -2071,7 +2071,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="123"/>
             <source>Find All</source>
-            <translation>Trouver tout</translation>
+            <translation>Tout trouver</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="124"/>
@@ -2081,47 +2081,47 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="126"/>
             <source>Find func</source>
-            <translation>Trouver fonction</translation>
+            <translation>Trouver func</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="128"/>
             <source>Find interface</source>
-            <translation>Trouver l'interface</translation>
+            <translation>Trouver interface</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="130"/>
             <source>Find pkg</source>
-            <translation>Trouver le paquet</translation>
+            <translation>Trouver pkg</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="132"/>
             <source>Find struct</source>
-            <translation>Trouver la structure</translation>
+            <translation>Trouver struct</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="134"/>
             <source>Find type</source>
-            <translation>Trouver le type</translation>
+            <translation>Rechercher le type</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="136"/>
             <source>Find var</source>
-            <translation>Trouver la variable</translation>
+            <translation>Rechercher la variable</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="138"/>
             <source>Use Regexp</source>
-            <translation>Utiliser l'expression régulière</translation>
+            <translation>Utiliser l’expression régulière</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="140"/>
             <source>Match Case</source>
-            <translation>Comparer la casse</translation>
+            <translation>Faire la distinction entre majuscules et minuscules</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="142"/>
             <source>Match Word</source>
-            <translation>Mot correspondant</translation>
+            <translation>Correspondre au mot entier</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="169"/>
@@ -2134,7 +2134,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="63"/>
             <source>Match case</source>
-            <translation>Faire la correspondance</translation>
+            <translation>Faire la distinction entre majuscules et minuscules</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="64"/>
@@ -2144,7 +2144,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="65"/>
             <source>Wrap around</source>
-            <translation>Envelopper autour de</translation>
+            <translation>Rechercher en boucle</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="56"/>
@@ -2154,7 +2154,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="57"/>
             <source>Find Previous</source>
-            <translation>Trouver précédemment</translation>
+            <translation>Trouver précédent</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="58"/>
@@ -2174,7 +2174,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="62"/>
             <source>Match whole word only</source>
-            <translation>Faire correspondre le mot entier uniquement</translation>
+            <translation>Correspondre au mot entier uniquement</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="72"/>
@@ -2196,7 +2196,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="103"/>
             <source>Find What:</source>
-            <translation>Trouver quoi :</translation>
+            <translation>Rechercher :</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/findeditor.cpp" line="115"/>
@@ -2293,7 +2293,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/gdbdebugger/gdbdebuggeroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/gdbdebugger/gdbdebuggeroption.ui" line="20"/>
@@ -2306,12 +2306,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="14"/>
             <source>Add Tags To Struct Field</source>
-            <translation>Ajouter des balises au champ de la structure</translation>
+            <translation>Ajouter des tags au champ de structure</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="23"/>
             <source>Add JSON Tag</source>
-            <translation>Ajouter une balise JSON</translation>
+            <translation>Ajouter un tag JSON</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="54"/>
@@ -2338,28 +2338,28 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="125"/>
             <source>Add Custom Tags</source>
-            <translation>Ajouter des tags personnalisés</translation>
+            <translation>Ajouter des balises personnalisées</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="155"/>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="187"/>
             <source>Tag Name</source>
-            <translation>Nom du tag</translation>
+            <translation>Nom de la balise</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="162"/>
             <source>Setup custom tag name</source>
-            <translation>Configurer le nom de balise personnalisé</translation>
+            <translation>Configurer le nom d’une balise personnalisée</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="299"/>
             <source>Sort sorts the tags in increasing order according to the key name</source>
-            <translation>La méthode sort trie les tags par ordre croissant en fonction du nom de la clé.</translation>
+            <translation>Trier trie les balises par ordre croissant selon le nom de la clé</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="306"/>
             <source>Override current tags when adding tags</source>
-            <translation>Remplacer les balises actuelles lors de l’ajout de balises</translation>
+            <translation>Remplacer les balises existantes lors de l’ajout de balises</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="316"/>
@@ -2372,22 +2372,22 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="14"/>
             <source>Remove Tags From Struct Field</source>
-            <translation>Supprimer les balises du champ de la structure</translation>
+            <translation>Supprimer les balises du champ de structure</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="23"/>
             <source>Remove Tags And Options</source>
-            <translation>Supprimer les tags et les options</translation>
+            <translation>Supprimer les balises et les options</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="29"/>
             <source>Clear All Tags</source>
-            <translation>Supprimer tous les tags</translation>
+            <translation>Vider toutes les balises</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="39"/>
             <source>Clear All Tags Options</source>
-            <translation>Effacer toutes les options de tags</translation>
+            <translation>Vider toutes les options des balises</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="46"/>
@@ -2402,12 +2402,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="60"/>
             <source>Remove Custom Tag</source>
-            <translation>Supprimer le tag personnalisé</translation>
+            <translation>Supprimer la balise personnalisée</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="70"/>
             <source>Multiple tags separated by commas</source>
-            <translation>Multiples tags séparés par des virgules</translation>
+            <translation>Plusieurs balises séparées par des virgules</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="77"/>
@@ -2428,17 +2428,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="111"/>
             <source>Remove Custom Tag Options</source>
-            <translation>Supprimer les options de balise personnalisée</translation>
+            <translation>Supprimer les options de la balise personnalisée</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="118"/>
             <source>Setup remove custom tag and option, example tag=opt1,tag=opt2</source>
-            <translation>Configurer la suppression d’une balise et d’une option personnalisées, par exemple tag=opt1,tag=opt2</translation>
+            <translation>Configurer la suppression d’une balise personnalisée et de ses options, exemple : tag=opt1,tag=opt2</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="121"/>
             <source>tag=option</source>
-            <translation>tag=option</translation>
+            <translation>balise=option</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="131"/>
@@ -2457,17 +2457,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/golangast/golangast.cpp" line="74"/>
             <location filename="src/plugins/golangast/golangast.cpp" line="77"/>
             <source>Synchronize with editor</source>
-            <translation>Synchroniser avec l'éditeur</translation>
+            <translation>Synchroniser avec l’éditeur</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="80"/>
             <source>Go Class View</source>
-            <translation>Aller à la vue de classe</translation>
+            <translation>Aller à la vue de la classe</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="81"/>
             <source>Go Outline</source>
-            <translation>Aller à la planification</translation>
+            <translation>Aller au plan</translation>
         </message>
     </context>
     <context>
@@ -2475,17 +2475,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangast/golangastoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangastoption.ui" line="20"/>
             <source>QuickOpenSymbol</source>
-            <translation>OuvertureRapideSymbole</translation>
+            <translation>Ouverture rapide d’un symbole</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangastoption.ui" line="26"/>
             <source>Show import path</source>
-            <translation>Afficher le chemin d'importation</translation>
+            <translation>Afficher le chemin d’importation</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangastoption.ui" line="33"/>
@@ -2498,36 +2498,36 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="20"/>
             <source>PKG automitic import prompt</source>
-            <translation>Invite d'importation automatique de PKG</translation>
+            <translation>Invite d’importation automatique des PKG</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="26"/>
             <source>PKG automatic import hints for all packages (Module/GOPATH)</source>
-            <translation>Astuces d’importation automatique de PKG pour tous les packages (Module/GOPATH)</translation>
+            <translation>Aides à l’importation automatique des PKG pour tous les packages (Module/GOPATH)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="33"/>
             <source>PKG automatic import hints for standard package</source>
-            <translation>Aides à l’importation automatique de PKG pour le package standard</translation>
+            <translation>Aides à l’importation automatique des PKG pour le package standard</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="43"/>
             <source>Gocode</source>
-            <translation>Gocoder</translation>
+            <translation>Gocode</translation>
         </message>
         <message>
             <source>Auto update depends package when it's source changed.</source>
-            <translation>La mise à jour automatique dépend du package lorsque sa source est modifiée.</translation>
+            <translation>Mettre à jour automatiquement les packages dépendants lorsque leur code source est modifié.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="49"/>
             <source>Close gocode when exiting</source>
-            <translation>Fermer gocode en quittant</translation>
+            <translation>Fermer gocode au quitter</translation>
         </message>
     </context>
     <context>
@@ -2540,17 +2540,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="92"/>
             <source>Go Doc Search</source>
-            <translation>Aller à la recherche de médecins</translation>
+            <translation>Recherche Go Doc</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="96"/>
             <source>Go Api Index</source>
-            <translation>Index de l'API Go</translation>
+            <translation>Index des API Go</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="111"/>
             <source>Find Package:</source>
-            <translation>Trouver le paquet :</translation>
+            <translation>Rechercher le package :</translation>
         </message>
     </context>
     <context>
@@ -2558,7 +2558,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="20"/>
@@ -2573,7 +2573,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="33"/>
             <source>Only load standard API documentation</source>
-            <translation>Charger uniquement la documentation API standard</translation>
+            <translation>Charger uniquement la documentation de l’API standard</translation>
         </message>
     </context>
     <context>
@@ -2581,12 +2581,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="90"/>
             <source>View import package use godoc</source>
-            <translation>Afficher le package d'importation à l'aide de godoc</translation>
+            <translation>Afficher l’utilisation des packages importés avec godoc</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="93"/>
             <source>View Expression Information</source>
-            <translation>Afficher les informations sur l'expression</translation>
+            <translation>Afficher les informations sur l’expression</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="96"/>
@@ -2605,7 +2605,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/golangedit/golangedit.cpp" line="330"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="331"/>
             <source>Find Usages</source>
-            <translation>Trouver les utilisations</translation>
+            <translation>Rechercher les utilisations</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="102"/>
@@ -2629,32 +2629,32 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="179"/>
             <source>Stop</source>
-            <translation>Arrêtez</translation>
+            <translation>Arrêter</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="184"/>
             <source>Go Source Query</source>
-            <translation>Requête source Go</translation>
+            <translation>Requête sur le code source Go</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="189"/>
             <source>SourceQuery What</source>
-            <translation>SourceRequête Quoi</translation>
+            <translation>SourceQuery Quoi</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="193"/>
             <source>Callees</source>
-            <translation>Callees</translation>
+            <translation>Fonctions appelées</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="197"/>
             <source>Callers</source>
-            <translation>Appelants</translation>
+            <translation>Fonctions appelantes</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="201"/>
             <source>Callstack</source>
-            <translation>Pile d'appels</translation>
+            <translation>Pile d’appels</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="205"/>
@@ -2674,12 +2674,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="217"/>
             <source>Implements</source>
-            <translation>Implémentations</translation>
+            <translation>Implémente</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="221"/>
             <source>Implements(GOPATH)</source>
-            <translation>Implémente (GOPATH)</translation>
+            <translation>Implémente(GOPATH)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="225"/>
@@ -2694,32 +2694,32 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="233"/>
             <source>Pointsto</source>
-            <translation>Points vers</translation>
+            <translation>PointeVers</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="237"/>
             <source>Whicherrs</source>
-            <translation>Quels erreurs</translation>
+            <translation>Whicherrs</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="241"/>
             <source>Add Tags To Struct Field</source>
-            <translation>Ajouter des balises au champ de la structure</translation>
+            <translation>Ajouter des balises au champ de structure</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="245"/>
             <source>Remove Tags From Struct Field</source>
-            <translation>Supprimer les balises du champ de la structure</translation>
+            <translation>Supprimer les balises du champ de structure</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="249"/>
             <source>Find All References (gopls)</source>
-            <translation>Trouver toutes les références (gopls)</translation>
+            <translation>Rechercher toutes les références (gopls)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="253"/>
             <source>Find All Implementations (gopls)</source>
-            <translation>Trouver toutes les implémentations (gopls)</translation>
+            <translation>Rechercher toutes les implémentations (gopls)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="331"/>
@@ -2737,13 +2737,13 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/golangedit/golangedit.cpp" line="411"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="452"/>
             <source>SourceQuery</source>
-            <translation>Requête de source</translation>
+            <translation>SourceQuery</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="865"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1046"/>
             <source>Below files in package %1</source>
-            <translation>Fichiers ci-dessous dans le package %1</translation>
+            <translation>Fichiers inférieurs dans le package %1</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1441"/>
@@ -2753,7 +2753,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1449"/>
             <source>All Implementation</source>
-            <translation>Toute la mise en œuvre</translation>
+            <translation>Toutes les implémentations</translation>
         </message>
     </context>
     <context>
@@ -2761,7 +2761,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="20"/>
@@ -2771,12 +2771,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="26"/>
             <source>Go root source file editor setup read only</source>
-            <translation>Aller dans le répertoire source, ouvrir l’éditeur de fichiers, configurer en lecture seule.</translation>
+            <translation>Configuration de l’éditeur de fichiers sources de Go en mode lecture seule</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="33"/>
             <source>Enable view expression infomation on mouse</source>
-            <translation>Activer l’affichage des informations sur l’expression sous la souris</translation>
+            <translation>Activer l’affichage des informations sur les expressions au passage de la souris</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangeditoption.ui" line="40"/>
@@ -2789,7 +2789,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangedit/golangfilesearch.cpp" line="59"/>
             <source>Golang Find Usages</source>
-            <translation>Golang Trouver les utilisations</translation>
+            <translation>Recherche des utilisations dans Golang</translation>
         </message>
     </context>
     <context>
@@ -2797,7 +2797,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Mise en forme</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="20"/>
@@ -2807,27 +2807,27 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="26"/>
             <source>Goimports updates your Go import lines, adding missing ones and removing unreferenced ones.</source>
-            <translation>Goimports met à jour les instructions d’importation de vos fichiers Go en ajoutant celles qui manquent et en supprimant celles qui ne sont plus référencées.</translation>
+            <translation>Goimports met à jour vos instructions d’importation Go, en ajoutant les manquantes et en supprimant celles qui ne sont plus référencées.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="29"/>
             <source>Enable update imports line, adding missing ones and removing unreferenced ones.</source>
-            <translation>Activer la mise à jour des imports de ligne, en ajoutant les imports manquants et en supprimant ceux qui ne sont plus référencés.</translation>
+            <translation>Activer la mise à jour des instructions d’importation, en ajoutant les manquantes et en supprimant celles qui ne sont plus référencées.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="46"/>
             <source>Synchronous</source>
-            <translation>Synchronique</translation>
+            <translation>Asynchrone</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="52"/>
             <source>Synchronous code formatting</source>
-            <translation>Formatage du code synchrone</translation>
+            <translation>Formatage synchrone du code</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="61"/>
             <source>Synchronous code formatting timeout in milliseconds (500ms or more):</source>
-            <translation>Délai d’expiration du formatage du code synchrone en millisecondes (500 ms ou plus) :</translation>
+            <translation>Délai d’attente du formatage synchrone du code, en millisecondes (500 ms ou plus) :</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="36"/>
@@ -2841,12 +2841,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/golangfmt/golangfmtplugin.cpp" line="58"/>
             <location filename="src/plugins/golangfmt/golangfmtplugin.cpp" line="66"/>
             <source>Format Code</source>
-            <translation>Code de formatage</translation>
+            <translation>Formater le code</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtplugin.cpp" line="59"/>
             <source>Format Code (Adjusts Imports)</source>
-            <translation>Code de formatage (Ajuste les importations)</translation>
+            <translation>Formater le code (ajustement des importations)</translation>
         </message>
     </context>
     <context>
@@ -2854,7 +2854,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Mise en forme</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="20"/>
@@ -2864,7 +2864,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="26"/>
             <source>Automatically lint code when saving</source>
-            <translation>Effectuer automatiquement le linting du code lors de l’enregistrement</translation>
+            <translation>Linter automatiquement le code lors de l’enregistrement</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="38"/>
@@ -2879,12 +2879,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="107"/>
             <source>Synchronous</source>
-            <translation>Synchronique</translation>
+            <translation>Asynchrone</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="115"/>
             <source>Code linting timeout in milliseconds (500ms or more):</source>
-            <translation>Délai d'expiration du linting du code en millisecondes (500 ms ou plus) :</translation>
+            <translation>Délai d’attente du linting du code, en millisecondes (500 ms ou plus) :</translation>
         </message>
     </context>
     <context>
@@ -2893,7 +2893,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="57"/>
             <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="63"/>
             <source>Lint Code</source>
-            <translation>Code Lint</translation>
+            <translation>Linter le code</translation>
         </message>
     </context>
     <context>
@@ -2901,7 +2901,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.cpp" line="304"/>
             <source>Choose directory to add to GOPATH:</source>
-            <translation>Choisissez le répertoire à ajouter à GOPATH :</translation>
+            <translation>Sélectionnez le répertoire à ajouter à GOPATH :</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="14"/>
@@ -2921,12 +2921,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="88"/>
             <source>Custom GOPROXY</source>
-            <translation>Proxy GOPRO personnalisé</translation>
+            <translation>GOPROXY personnalisé</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="95"/>
             <source>Custom GO111MODULE</source>
-            <translation>Module GO111 personnalisé</translation>
+            <translation>GO111MODULE personnalisé</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="102"/>
@@ -2936,22 +2936,22 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="109"/>
             <source>Custom GOPRIVATE</source>
-            <translation>Personnalisé GOPRIVATE</translation>
+            <translation>GOPRIVATE personnalisé</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="125"/>
             <source>TextLabel</source>
-            <translation>ÉtiquetteTexte</translation>
+            <translation>Étiquette de texte</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="137"/>
             <source>GOPATH</source>
-            <translation>Chemin GOPATH</translation>
+            <translation>GOPATH</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="163"/>
             <source>Use System GOPATH</source>
-            <translation>Utiliser le GOPATH du système</translation>
+            <translation>Utiliser le GOPATH système</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="186"/>
@@ -2961,7 +2961,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="210"/>
             <source>Use Custom GOPATH (one per line)</source>
-            <translation>Utiliser GOPATH personnalisé (un par ligne)</translation>
+            <translation>Utiliser un GOPATH personnalisé (un par ligne)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="233"/>
@@ -2971,7 +2971,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="240"/>
             <source>Clear</source>
-            <translation>Clair</translation>
+            <translation>Vider</translation>
         </message>
     </context>
     <context>
@@ -3009,7 +3009,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="82"/>
             <source>Switch Bullets</source>
-            <translation>Bulles de commutation</translation>
+            <translation>Basculer les puces</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="85"/>
@@ -3020,27 +3020,27 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="88"/>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="267"/>
             <source>Export HTML</source>
-            <translation>Exporter en HTML</translation>
+            <translation>Exporter au format HTML</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="91"/>
             <source>Verify Present</source>
-            <translation>Vérifier le présent</translation>
+            <translation>Vérifier la présence</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="256"/>
             <source>Present verify success</source>
-            <translation>Présenter la réussite de la vérification</translation>
+            <translation>Présentation : vérification réussie</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="258"/>
             <source>Present verify false</source>
-            <translation>Présenter vérifier faux</translation>
+            <translation>Présentation : vérification échouée</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="310"/>
             <source>Export PDF</source>
-            <translation>Exporter en PDF</translation>
+            <translation>Exporter au format PDF</translation>
         </message>
     </context>
     <context>
@@ -3048,7 +3048,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangast/golangsymbol.cpp" line="63"/>
             <source>Quick Open Symbol by Name</source>
-            <translation>Symbole d'ouverture rapide par nom</translation>
+            <translation>Ouvrir rapidement un symbole par nom</translation>
         </message>
     </context>
     <context>
@@ -3056,7 +3056,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="62"/>
             <source>Synchronize Editor</source>
-            <translation>Synchroniser l'éditeur</translation>
+            <translation>Synchroniser l’éditeur</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="64"/>
@@ -3071,7 +3071,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="98"/>
             <source>Open Editor</source>
-            <translation>Ouvrir l'éditeur</translation>
+            <translation>Ouvrir l’éditeur</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="99"/>
@@ -3081,7 +3081,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="100"/>
             <source>New File Wizard...</source>
-            <translation>Assistant de nouveau fichier...</translation>
+            <translation>Assistant de création de nouveau fichier...</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="101"/>
@@ -3120,7 +3120,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="109"/>
             <source>Open Explorer Here</source>
-            <translation>Ouvrir l'Explorateur ici</translation>
+            <translation>Ouvrir l’Explorateur ici</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="206"/>
@@ -3131,7 +3131,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="207"/>
             <source>A file with that name already exists!</source>
-            <translation>Un fichier avec ce nom existe déjà !</translation>
+            <translation>Un fichier portant ce nom existe déjà !</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="217"/>
@@ -3173,7 +3173,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="290"/>
             <source>A folder with that name already exists!</source>
-            <translation>Un dossier avec ce nom existe déjà !</translation>
+            <translation>Un dossier portant ce nom existe déjà !</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="293"/>
@@ -3221,17 +3221,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="70"/>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="135"/>
             <source>Go Playground</source>
-            <translation>Aller sur le terrain de jeu</translation>
+            <translation>Go Playground</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="72"/>
             <source>Run</source>
-            <translation>Courir</translation>
+            <translation>Exécuter</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="73"/>
             <source>Stop</source>
-            <translation>Arrêt</translation>
+            <translation>Arrêter</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="74"/>
@@ -3241,7 +3241,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="75"/>
             <source>Load...</source>
-            <translation>Chargement...</translation>
+            <translation>Charger...</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="76"/>
@@ -3256,7 +3256,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="178"/>
             <source>Running...</source>
-            <translation>En cours d'exécution...</translation>
+            <translation>En cours d’exécution...</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="198"/>
@@ -3266,12 +3266,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="200"/>
             <source>Success: %2.</source>
-            <translation>Succès : 2 %.</translation>
+            <translation>Opération réussie : %2.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="250"/>
             <source>Load File</source>
-            <translation>Charger le fichier</translation>
+            <translation>Charger un fichier</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="250"/>
@@ -3281,7 +3281,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="266"/>
             <source>Save File</source>
-            <translation>Enregistrer le fichier</translation>
+            <translation>Enregistrer un fichier</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="266"/>
@@ -3294,7 +3294,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/tools/template/hello_option/hellooption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
     </context>
     <context>
@@ -3302,19 +3302,19 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="26"/>
             <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
 &lt;p&gt;Highlight definitions are provided by the &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate Text Editor&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
             <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
-&lt;p&gt;Les surbrillances des définitions sont fournies par l’éditeur de texte &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p&gt;Les mises en évidence des définitions sont fournies par l’&lt;a href=&quot;http://kate-editor.org/&quot;&gt;éditeur de texte Kate&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="62"/>
             <source>Syntax Highlight Definition Files</source>
-            <translation>Fichiers de définition de la mise en évidence syntaxique</translation>
+            <translation>Fichiers de définitions de la coloration syntaxique</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="72"/>
@@ -3324,7 +3324,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="91"/>
             <source>Use fallback location</source>
-            <translation>Utiliser l'emplacement de secours</translation>
+            <translation>Utiliser l’emplacement par défaut</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="106"/>
@@ -3334,7 +3334,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="112"/>
             <source>Alert when a highlight definition is not found</source>
-            <translation>Alerte lorsqu’une définition de surbrillance n’est pas trouvée</translation>
+            <translation>Avertissement lorsqu’une définition d’éclairage n’est pas trouvée</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="121"/>
@@ -3358,13 +3358,13 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="77"/>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="381"/>
             <source>Export Html</source>
-            <translation>Exporter en HTML</translation>
+            <translation>Exporter au format HTML</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="78"/>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="413"/>
             <source>Export PDF</source>
-            <translation>Exporter en PDF</translation>
+            <translation>Exporter au format PDF</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="79"/>
@@ -3384,17 +3384,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="168"/>
             <source>Plain HTML</source>
-            <translation>HTML simple</translation>
+            <translation>HTML brut</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="389"/>
             <source>Export Failed</source>
-            <translation>Exportation échouée</translation>
+            <translation>Échec de l’exportation</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="85"/>
             <source>Automatically display preview</source>
-            <translation>Afficher automatiquement l'aperçu</translation>
+            <translation>Afficher automatiquement l’aperçu</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="99"/>
@@ -3404,7 +3404,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="390"/>
             <source>Could not open %1 for writing!</source>
-            <translation>Impossible d'ouvrir %1 en mode écriture !</translation>
+            <translation>Impossible d’ouvrir %1 en mode écriture !</translation>
         </message>
     </context>
     <context>
@@ -3412,7 +3412,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="61"/>
             <source>ZoomIn</source>
-            <translation>Zoomer à l'intérieur</translation>
+            <translation>Zoom avant</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="64"/>
@@ -3422,12 +3422,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="67"/>
             <source>Reset to original size</source>
-            <translation>Réinitialiser à la taille d’origine</translation>
+            <translation>Rétablir la taille d’origine</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="70"/>
             <source>Fit to view</source>
-            <translation>Prêt à être visionné</translation>
+            <translation>Adapter à la vue</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="73"/>
@@ -3443,7 +3443,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="81"/>
             <source>Next frame</source>
-            <translation>Prochain cadre</translation>
+            <translation>Prochaine image</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="253"/>
@@ -3456,7 +3456,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/imageeditor/imageeditorfactory.cpp" line="131"/>
             <source>Image Viewer</source>
-            <translation>Visionneur d'images</translation>
+            <translation>Visionneuse d’images</translation>
         </message>
     </context>
     <context>
@@ -3469,7 +3469,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="20"/>
             <source>System GOPATH</source>
-            <translation>Système GOPATH</translation>
+            <translation>GOPATH système</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="35"/>
@@ -3479,7 +3479,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="60"/>
             <source>Custome GOPATH</source>
-            <translation>Définir GOPATH personnalisé</translation>
+            <translation>GOPATH personnalisé</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="71"/>
@@ -3489,7 +3489,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.ui" line="78"/>
             <source>Clear</source>
-            <translation>Clair</translation>
+            <translation>Effacer</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/importgopathdialog.cpp" line="73"/>
@@ -3502,7 +3502,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/golangcode/golangcode.cpp" line="847"/>
             <source>warning, pkg not find, please enter to import :</source>
-            <translation>Avertissement : paquet non trouvé, veuillez entrer pour l'importer :</translation>
+            <translation>Avertissement : paquet introuvable, veuillez saisir pour l’importer :</translation>
         </message>
     </context>
     <context>
@@ -3520,7 +3520,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/jsonedit/jsonedit.cpp" line="55"/>
             <source>Compact Json</source>
-            <translation>Json compact</translation>
+            <translation>JSON compact</translation>
         </message>
     </context>
     <context>
@@ -3533,35 +3533,35 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteapp.cpp" line="271"/>
             <source>Escape</source>
-            <translation>Évasion</translation>
+            <translation>Échapper</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="756"/>
+            <location filename="src/liteapp/liteapp.cpp" line="782"/>
             <source>Close File</source>
             <translation>Fermer le fichier</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="759"/>
+            <location filename="src/liteapp/liteapp.cpp" line="785"/>
             <source>Close All Files</source>
             <translation>Fermer tous les fichiers</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="769"/>
+            <location filename="src/liteapp/liteapp.cpp" line="795"/>
             <source>Save File</source>
             <translation>Enregistrer le fichier</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="772"/>
+            <location filename="src/liteapp/liteapp.cpp" line="798"/>
             <source>Save File As...</source>
-            <translation>Enregistrer le fichier sous...</translation>
+            <translation>Enregistrer sous...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="775"/>
+            <location filename="src/liteapp/liteapp.cpp" line="801"/>
             <source>Save All Files</source>
             <translation>Enregistrer tous les fichiers</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="762"/>
+            <location filename="src/liteapp/liteapp.cpp" line="788"/>
             <source>Open Project</source>
             <translation>Ouvrir le projet</translation>
         </message>
@@ -3571,67 +3571,67 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <translation>Options</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="733"/>
+            <location filename="src/liteapp/liteapp.cpp" line="759"/>
             <source>New...</source>
             <translation>Nouveau...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="736"/>
+            <location filename="src/liteapp/liteapp.cpp" line="762"/>
             <source>Open File...</source>
-            <translation>Ouvrir le fichier...</translation>
+            <translation>Ouvrir un fichier...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="739"/>
+            <location filename="src/liteapp/liteapp.cpp" line="765"/>
             <source>Open Folder...</source>
-            <translation>Ouvrir le dossier...</translation>
+            <translation>Ouvrir un dossier...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="742"/>
+            <location filename="src/liteapp/liteapp.cpp" line="768"/>
             <source>Open Folder in New Window...</source>
-            <translation>Ouvrir le dossier dans une nouvelle fenêtre...</translation>
+            <translation>Ouvrir un dossier dans une nouvelle fenêtre...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="747"/>
+            <location filename="src/liteapp/liteapp.cpp" line="773"/>
             <source>Close All Folders</source>
             <translation>Fermer tous les dossiers</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="750"/>
+            <location filename="src/liteapp/liteapp.cpp" line="776"/>
             <source>New Window</source>
             <translation>Nouvelle fenêtre</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="753"/>
+            <location filename="src/liteapp/liteapp.cpp" line="779"/>
             <source>Close Window</source>
             <translation>Fermer la fenêtre</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="764"/>
+            <location filename="src/liteapp/liteapp.cpp" line="790"/>
             <source>Save Project</source>
             <translation>Enregistrer le projet</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="766"/>
+            <location filename="src/liteapp/liteapp.cpp" line="792"/>
             <source>Close Project</source>
             <translation>Fermer le projet</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="778"/>
+            <location filename="src/liteapp/liteapp.cpp" line="804"/>
             <source>Exit</source>
-            <translation>Sortie</translation>
+            <translation>Quitter</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="784"/>
+            <location filename="src/liteapp/liteapp.cpp" line="810"/>
             <source>Full Screen</source>
             <translation>Plein écran</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="788"/>
+            <location filename="src/liteapp/liteapp.cpp" line="814"/>
             <source>About LiteIDE</source>
             <translation>À propos de LiteIDE</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="794"/>
+            <location filename="src/liteapp/liteapp.cpp" line="820"/>
             <source>About Plugins</source>
             <translation>À propos des plugins</translation>
         </message>
@@ -3641,7 +3641,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="30"/>
@@ -3661,7 +3661,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="300"/>
             <source>Reload files in session</source>
-            <translation>Recharger les fichiers dans la session</translation>
+            <translation>Recharger les fichiers de la session</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="312"/>
@@ -3672,17 +3672,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/liteapp/liteappoption.ui" line="318"/>
             <location filename="src/liteapp/liteappoption.ui" line="357"/>
             <source>Max Count:</source>
-            <translation>Comptage maximal :</translation>
+            <translation>Nombre maximal :</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="229"/>
             <source>Monitoring files for modifications</source>
-            <translation>Surveillance des fichiers pour détecter les modifications</translation>
+            <translation>Surveiller les modifications des fichiers</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="41"/>
             <source>Store settings to local ini file</source>
-            <translation>Enregistrer les paramètres dans un fichier INI local</translation>
+            <translation>Enregistrer les paramètres dans le fichier ini local</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="51"/>
@@ -3697,7 +3697,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="84"/>
             <source>Use tool window shortcuts</source>
-            <translation>Utilisez les raccourcis de la fenêtre d’outil</translation>
+            <translation>Utiliser les raccourcis de la fenêtre d’outils</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="112"/>
@@ -3707,12 +3707,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="153"/>
             <source>Fallback build-in icon library and liteapp/qrc/default</source>
-            <translation>Bibliothèque d’icônes intégrée de secours et liteapp/qrc/default</translation>
+            <translation>Utiliser la bibliothèque d’icônes intégrée par défaut et liteapp/qrc/default</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="156"/>
             <source>Load the external file icon library</source>
-            <translation>Charger la bibliothèque d’icônes du fichier externe</translation>
+            <translation>Charger la bibliothèque d’icônes de fichiers externes</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="184"/>
@@ -3722,23 +3722,23 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="190"/>
             <source>Automatically save documents when application is idle</source>
-            <translation>Enregistrer automatiquement les documents lorsque l’application est inactive</translation>
+            <translation>Enregistrer automatiquement les documents lorsque l’application est inactif</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="200"/>
             <source>sec</source>
-            <translation>secondes</translation>
+            <translation>s</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="235"/>
             <source>Auto reload or close editor buffer,if underlying file is modified/deleted.</source>
-            <translation>Recharger automatiquement ou fermer le buffer de l’éditeur si le fichier sous-jacent est modifié ou supprimé.</translation>
+            <translation>Redémarrer ou fermer automatiquement le tampon de l’éditeur si le fichier sous-jacent est modifié/supprimé.</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="263"/>
             <location filename="src/liteapp/liteappoption.ui" line="269"/>
             <source>Session</source>
-            <translation>Séance</translation>
+            <translation>Session</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="325"/>
@@ -3748,7 +3748,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="351"/>
             <source>Editor Tabs</source>
-            <translation>Onglets de l'éditeur</translation>
+            <translation>Onglets de l’éditeur</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="364"/>
@@ -3758,22 +3758,22 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="407"/>
             <source>Display</source>
-            <translation>Affichage</translation>
+            <translation>Afficher</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="413"/>
             <source>Display [*]</source>
-            <translation>Afficher [*]</translation>
+            <translation>Affichage [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="419"/>
             <source>Show splash screen on startup</source>
-            <translation>Afficher l’écran de démarrage au démarrage</translation>
+            <translation>Afficher l’écran de démarrage au lancement</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="426"/>
             <source>Show welcome page on startup</source>
-            <translation>Afficher la page d’accueil au démarrage</translation>
+            <translation>Afficher la page d’accueil au lancement</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="509"/>
@@ -3783,7 +3783,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="515"/>
             <source>Editor tab [*]</source>
-            <translation>Onglet éditeur [*]</translation>
+            <translation>Onglet de l’éditeur [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="521"/>
@@ -3793,7 +3793,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="528"/>
             <source>Enable mouse wheel navigation on tabs</source>
-            <translation>Activer la navigation avec la molette de la souris sur les onglets</translation>
+            <translation>Activer la navigation par molette sur les onglets</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="436"/>
@@ -3803,12 +3803,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="538"/>
             <source>Editor navigate</source>
-            <translation>Éditeur naviguer</translation>
+            <translation>Navigation dans l’éditeur</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="544"/>
             <source>Enable mouse extra 'Back' button and 'Forward' button for go back and forward</source>
-            <translation>Activer les boutons « Précédent » et « Suivant » supplémentaires de la souris pour revenir en arrière et avancer.</translation>
+            <translation>Activer le bouton « Retour » et le bouton « Avant » supplémentaires pour revenir en arrière et avancer</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="568"/>
@@ -3848,7 +3848,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="24"/>
             <source>Generic</source>
-            <translation>Générique</translation>
+            <translation>Général</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="118"/>
@@ -3863,12 +3863,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="97"/>
             <source>SideBarStyle</source>
-            <translation>Style de la barre latérale</translation>
+            <translation>StyleBarreLatérale</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="98"/>
             <source>SplitterStyle</source>
-            <translation>Style de séparateur</translation>
+            <translation>StyleDiviseur</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="82"/>
@@ -3878,7 +3878,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="83"/>
             <source>Label</source>
-            <translation>Étiquette</translation>
+            <translation>Libellé</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="84"/>
@@ -3888,7 +3888,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="85"/>
             <source>NativeText</source>
-            <translation>Texte natif</translation>
+            <translation>TexteNatif</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="86"/>
@@ -3896,30 +3896,30 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <translation>Standard</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="506"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="501"/>
             <source>Import Keyboard Mapping Scheme</source>
-            <translation>Importer le schéma de mappage du clavier</translation>
+            <translation>Importer le schéma de mappage des touches</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="506"/>
-            <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="501"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="535"/>
             <source>Keyboard Mapping Scheme (%1)</source>
-            <translation>Schéma de mappage du clavier (%1)</translation>
+            <translation>Schéma de mappage des touches (%1)</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="513"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="508"/>
             <source>Could not read scheme from %1!</source>
-            <translation>Impossible de lire le schéma à partir de %1!</translation>
+            <translation>Impossible de lire le schéma à partir de %1 !</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="535"/>
             <source>Export Keyboard Mapping Scheme</source>
-            <translation>Exporter le schéma de mappage du clavier</translation>
+            <translation>Exporter le schéma de mappage des touches</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="551"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="546"/>
             <source>Could not write scheme to %1!</source>
-            <translation>Impossible d'écrire le schéma vers %1!</translation>
+            <translation>Impossible d’écrire le schéma dans %1 !</translation>
         </message>
     </context>
     <context>
@@ -3927,22 +3927,22 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="142"/>
             <source>Build Toolbar</source>
-            <translation>Construire la barre d'outils</translation>
+            <translation>Créer la barre d’outils</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="150"/>
             <source>Build Configuration...</source>
-            <translation>Configuration de la construction...</translation>
+            <translation>Configurer la construction…</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="168"/>
             <source>Stop Action</source>
-            <translation>Arrêter l'action</translation>
+            <translation>Arrêter l’action</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="172"/>
             <source>Clear Output</source>
-            <translation>Effacer la sortie</translation>
+            <translation>Vider la sortie</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="176"/>
@@ -3952,7 +3952,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="179"/>
             <source>Debug File</source>
-            <translation>Fichier de débogage</translation>
+            <translation>Déboguer le fichier</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="182"/>
@@ -3967,7 +3967,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="230"/>
             <source>Use godoc View</source>
-            <translation>Utiliser la vue godoc</translation>
+            <translation>Utiliser godoc Afficher</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="287"/>
@@ -3977,12 +3977,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="291"/>
             <source>Auto Clear</source>
-            <translation>Auto Nettoyage</translation>
+            <translation>Effacement automatique</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="295"/>
             <source>Automatic positioning cursor</source>
-            <translation>Curseur de positionnement automatique</translation>
+            <translation>Positionnement automatique du curseur</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="310"/>
@@ -3992,17 +3992,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="318"/>
             <source>Build Output</source>
-            <translation>Sortie de la construction</translation>
+            <translation>Sortie de la compilation</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="732"/>
             <source>Current environment change id &quot;%1&quot;</source>
-            <translation>Identifiant de changement d'environnement actuel « %1 »</translation>
+            <translation>ID de changement d’environnement actuel « %1 »</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1146"/>
             <source>Lock Build</source>
-            <translation>Verrouiller la construction</translation>
+            <translation>Verrouiller la compilation</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1498"/>
@@ -4023,12 +4023,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1552"/>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1605"/>
             <source>A process is currently running.  Stop the current action first.</source>
-            <translation>Un processus est actuellement en cours d’exécution. Arrêtez d’abord l’action en cours.</translation>
+            <translation>Un processus est actuellement en cours. Arrêtez d’abord l’action en cours.</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1591"/>
             <source>Killing current process...</source>
-            <translation>Tuer le processus en cours...</translation>
+            <translation>Arrêt du processus en cours en cours...</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1601"/>
@@ -4051,17 +4051,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litebuild/litebuildoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuildoption.ui" line="20"/>
             <source>Recheck Go installation when changing environments</source>
-            <translation>Vérifiez à nouveau l'installation de Go lorsque vous changez d'environnement.</translation>
+            <translation>Vérifier à nouveau l’installation de Go lors d’un changement d’environnement</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuildoption.ui" line="27"/>
             <source>Build command configuration files [*]</source>
-            <translation>Créer des fichiers de configuration de la commande [*]</translation>
+            <translation>Fichiers de configuration de la commande de compilation [*]</translation>
         </message>
     </context>
     <context>
@@ -4086,12 +4086,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="114"/>
             <source>Stop</source>
-            <translation>Arrêt</translation>
+            <translation>Arrêter</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="75"/>
             <source>Clear</source>
-            <translation>Clair</translation>
+            <translation>Effacer</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="111"/>
@@ -4101,7 +4101,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="117"/>
             <source>Show Current Line</source>
-            <translation>Afficher la ligne actuelle</translation>
+            <translation>Afficher la ligne courante</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="189"/>
@@ -4111,7 +4111,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="105"/>
             <source>Start Debugging External Application...</source>
-            <translation>Débuter le débogage de l’application externe...</translation>
+            <translation>Démarrez le débogage de l’application externe...</translation>
         </message>
         <message>
             <source>Close</source>
@@ -4120,42 +4120,42 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="108"/>
             <source>Start Debugging</source>
-            <translation>Démarrer le débogage</translation>
+            <translation>Démarrez le débogage</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="120"/>
             <source>Step Into</source>
-            <translation>Entrer dans</translation>
+            <translation>Débogage pas à pas (entrer)</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="123"/>
             <source>Step Over</source>
-            <translation>Passer à l’étape suivante</translation>
+            <translation>Débogage pas à pas (passer au‑dessus)</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="126"/>
             <source>Step Out</source>
-            <translation>Sortir</translation>
+            <translation>Débogage pas à pas (sortir)</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="129"/>
             <source>Run to Line</source>
-            <translation>Courir jusqu'à la ligne</translation>
+            <translation>Exécuter jusqu’à la ligne</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="132"/>
             <source>Insert/Remove Breakpoint</source>
-            <translation>Insérer/Supprimer un point d'arrêt</translation>
+            <translation>Insérer/Supprimer un point d’arrêt</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="135"/>
             <source>Remove All Breakpoints</source>
-            <translation>Supprimer tous les points d'arrêt</translation>
+            <translation>Supprimer tous les points d’arrêt</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="192"/>
             <source>Debug Watch</source>
-            <translation>Regarder le débogage</translation>
+            <translation>Registre de débogage</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="195"/>
@@ -4165,7 +4165,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="197"/>
             <source>Frame View</source>
-            <translation>Vue de l'encadrement</translation>
+            <translation>Vue des cadres</translation>
         </message>
     </context>
     <context>
@@ -4173,7 +4173,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litedebug/litedebugoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebugoption.ui" line="20"/>
@@ -4183,7 +4183,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litedebug/litedebugoption.ui" line="26"/>
             <source>Automatically insert breakpoint main.main when debugging</source>
-            <translation>Insérer automatiquement un point d'arrêt dans main.main lors du débogage</translation>
+            <translation>Insérer automatiquement un point d’arrêt dans main.main lors du débogage</translation>
         </message>
     </context>
     <context>
@@ -4212,7 +4212,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="257"/>
             <source>Redo</source>
-            <translation>Refaire</translation>
+            <translation>Répéter</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="260"/>
@@ -4232,12 +4232,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="268"/>
             <source>Select All</source>
-            <translation>Sélectionner tout</translation>
+            <translation>Tout sélectionner</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="301"/>
             <source>Go to Doc Start</source>
-            <translation>Aller à Début du document</translation>
+            <translation>Aller au début du document</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="305"/>
@@ -4272,7 +4272,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="329"/>
             <source>Go to Next Charater</source>
-            <translation>Aller au prochain personnage</translation>
+            <translation>Aller au caractère suivant</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="333"/>
@@ -4292,12 +4292,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="361"/>
             <source>File is readonly</source>
-            <translation>Le fichier est en lecture seule</translation>
+            <translation>Fichier en lecture seule</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="364"/>
             <source>File is writable</source>
-            <translation>Le fichier est modifiable</translation>
+            <translation>Fichier en écriture</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="404"/>
@@ -4312,22 +4312,22 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="418"/>
             <source>Toggle Block Commnet</source>
-            <translation>Basculer le blocage des commentaires</translation>
+            <translation>Basculer le commentaire de bloc</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="421"/>
             <source>Auto-indent Selection</source>
-            <translation>Auto-indenter la sélection</translation>
+            <translation>Indentation automatique de la sélection</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="425"/>
             <source>Tab To Spaces (MimeType)</source>
-            <translation>Tabulation en espaces (Type MIME)</translation>
+            <translation>Conversion des tabulations en espaces (Type MIME)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="429"/>
             <source>Line End Windows (\r\n)</source>
-            <translation>Fins de ligne Windows (\r\n)</translation>
+            <translation>Fin de ligne Windows (\r\n)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="433"/>
@@ -4337,7 +4337,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="437"/>
             <source>Visualize Whitespace (Global)</source>
-            <translation>Visualiser les espaces (Global)</translation>
+            <translation>Afficher les espaces (Global)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="444"/>
@@ -4352,7 +4352,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="450"/>
             <source>Copy Line Up</source>
-            <translation>Copier la composition</translation>
+            <translation>Copier la ligne vers le haut</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="453"/>
@@ -4367,22 +4367,22 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="459"/>
             <source>Title Case</source>
-            <translation>Cas Titre</translation>
+            <translation>Cas titre</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="463"/>
             <source>Upper Case</source>
-            <translation>Majuscule</translation>
+            <translation>Majuscules</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="467"/>
             <source>Lower Case</source>
-            <translation>Minuscule</translation>
+            <translation>Minuscules</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="471"/>
             <source>Swap Case</source>
-            <translation>Changer la casse</translation>
+            <translation>Inverser la casse</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="475"/>
@@ -4392,7 +4392,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="479"/>
             <source>Spaces To Tab</source>
-            <translation>Espaces vers Tabulation</translation>
+            <translation>Espaces en tabulation</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="645"/>
@@ -4410,7 +4410,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="696"/>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="774"/>
             <source>Convert Tab</source>
-            <translation>Convertir l'onglet</translation>
+            <translation>Convertir la tabulation</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="700"/>
@@ -4422,12 +4422,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="690"/>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="768"/>
             <source>Convert Case</source>
-            <translation>Convertir la casse</translation>
+            <translation>Changer la casse</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1199"/>
             <source>Export HTML</source>
-            <translation>Exporter en HTML</translation>
+            <translation>Exporter au format HTML</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1207"/>
@@ -4437,12 +4437,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1208"/>
             <source>Could not open %1 for writing.</source>
-            <translation>Impossible d'ouvrir %1 en mode écriture.</translation>
+            <translation>Impossible d’ouvrir %1 en mode écriture.</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1227"/>
             <source>Export PDF</source>
-            <translation>Exporter le PDF</translation>
+            <translation>Exporter au format PDF</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1252"/>
@@ -4457,12 +4457,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="282"/>
             <source>Export HTML...</source>
-            <translation>Exporter en HTML...</translation>
+            <translation>Exporter au format HTML...</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="284"/>
             <source>Export PDF...</source>
-            <translation>Exporter le PDF...</translation>
+            <translation>Exporter au format PDF...</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="285"/>
@@ -4482,27 +4482,27 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="298"/>
             <source>Go to Matching Brace</source>
-            <translation>Aller à l'accolade correspondante</translation>
+            <translation>Aller à l’accolade correspondante</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="341"/>
             <source>Fold</source>
-            <translation>Plier</translation>
+            <translation>Réduire</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="344"/>
             <source>Unfold</source>
-            <translation>Déplier</translation>
+            <translation>Dérouler</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="347"/>
             <source>Fold All</source>
-            <translation>Tout réduire</translation>
+            <translation>Tout replier</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="350"/>
             <source>Unfold All</source>
-            <translation>Développer tout</translation>
+            <translation>Tout dérouler</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1327"/>
@@ -4527,7 +4527,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="380"/>
             <source>Cut Line</source>
-            <translation>Ligne de coupe</translation>
+            <translation>Couper la ligne</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="384"/>
@@ -4542,12 +4542,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="392"/>
             <source>Increase Font Size</source>
-            <translation>Augmenter la taille de la police</translation>
+            <translation>Augmenter la taille de police</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="395"/>
             <source>Decrease Font Size</source>
-            <translation>Diminuer la taille de la police</translation>
+            <translation>Diminuer la taille de police</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="398"/>
@@ -4557,12 +4557,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="401"/>
             <source>Clean Whitespace</source>
-            <translation>Espace blanc propre</translation>
+            <translation>Nettoyer les espaces blancs</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="408"/>
             <source>Code Complete</source>
-            <translation>Code Complet</translation>
+            <translation>Complétion du code</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="706"/>
@@ -4593,7 +4593,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1327"/>
             <source>Line: </source>
-            <translation>Ligne :</translation>
+            <translation>Ligne : </translation>
         </message>
     </context>
     <context>
@@ -4609,27 +4609,27 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="358"/>
             <source>Load File</source>
-            <translation>Charger le fichier</translation>
+            <translation>Charger un fichier</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="414"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
             <source>Check and convert no printable char to '.'</source>
-            <translation>Vérifiez et remplacez les caractères non imprimables par « . »</translation>
+            <translation>Vérifier et remplacer les caractères non imprimables par '.'</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="30"/>
             <source>Font</source>
-            <translation>Police d'écriture</translation>
+            <translation>Police</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="24"/>
             <source>Font &amp;&amp; Colors</source>
-            <translation>Police &amp;&amp; Couleurs</translation>
+            <translation>Police et couleurs</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="38"/>
@@ -4639,7 +4639,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="48"/>
             <source>Show Monospace Font</source>
-            <translation>Afficher la police monospace</translation>
+            <translation>Afficher la police à espacement fixe</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="72"/>
@@ -4659,134 +4659,131 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="118"/>
             <source>Antialias</source>
-            <translation>Anticrénelage</translation>
+            <translation>Antialiasing</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="138"/>
             <source>Restore Default Font</source>
-            <translation>Restaurer la police par défaut</translation>
+            <translation>Rétablir la police par défaut</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="150"/>
             <source>Editor Color Scheme</source>
-            <translation>Schéma de couleurs de l'éditeur</translation>
+            <translation>Schéma de couleurs de l’éditeur</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="158"/>
             <source>File:</source>
             <translation>Fichier :</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="175"/>
             <source>Edit</source>
-            <translation>Éditer</translation>
+            <translation>Modifier</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="220"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="170"/>
             <source>Syntax Auto-completion</source>
             <translation>Complétion automatique de la syntaxe</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="302"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="252"/>
             <source>Fuzzy code completion</source>
             <translation>Complétion de code floue</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="350"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="300"/>
             <source>Clean completion cache when saving files</source>
             <translation>Vider le cache de complétion lors de l’enregistrement des fichiers</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="357"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="307"/>
             <source>Clean whitespace when saving files</source>
-            <translation>Nettoyer les espaces blancs lors de l’enregistrement des fichiers</translation>
+            <translation>Espace blanc propre lors de l’enregistrement des fichiers</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="314"/>
             <source>Enable scroll wheel zooming</source>
             <translation>Activer le zoom avec la molette de la souris</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="371"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="321"/>
             <source>Add copied text into the clipboard as HTML</source>
-            <translation>Ajouter le texte copié dans le presse-papiers au format HTML</translation>
+            <translation>Ajouter le texte copié au presse-papiers au format HTML</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="378"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="328"/>
             <source>Allow vertical scrolling to the last line [*]</source>
-            <translation>Autoriser le défilement vertical jusqu'à la dernière ligne [*]</translation>
+            <translation>Autoriser le défilement vertical jusqu’à la dernière ligne [*]</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="437"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="387"/>
             <source>Display VisualizeWhitespace</source>
-            <translation>Afficher VisualiserLesEspaces</translation>
+            <translation>Afficher VisualizeWhitespace</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="451"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="401"/>
             <source>Word wrap by default</source>
             <translation>Retour à la ligne par défaut</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="430"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="380"/>
             <source>Display code fold</source>
-            <translation>Afficher le repliement du code</translation>
+            <translation>Afficher les pliages de code</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="509"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="459"/>
             <source>Display offset position</source>
-            <translation>Afficher la position de décalage</translation>
+            <translation>Afficher la position d’offset</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="533"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="483"/>
             <source>File Types</source>
             <translation>Types de fichiers</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="214"/>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="289"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="164"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="239"/>
             <source>Behavior</source>
             <translation>Comportement</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="444"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="394"/>
             <source>Display EOF</source>
             <translation>Afficher EOF</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="458"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
             <source>Display line numbers</source>
             <translation>Afficher les numéros de ligne</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="465"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="415"/>
             <source>Display indent guide</source>
-            <translation>Afficher le guide d'indentation</translation>
+            <translation>Afficher la guide d’indentation</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="474"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
             <source>Display right margin at column</source>
             <translation>Afficher la marge droite à la colonne</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="295"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="245"/>
             <source>Automatic indentation</source>
             <translation>Indentation automatique</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="309"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="259"/>
             <source>Case sensitive code completion</source>
             <translation>Complétion de code sensible à la casse</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="318"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="268"/>
             <source>Code completion prefix length:</source>
-            <translation>Longueur du préfixe de complétion du code :</translation>
+            <translation>Longueur du préfixe de la complétion de code :</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="402"/>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="352"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="374"/>
             <source>Display</source>
-            <translation>Affichage</translation>
+            <translation>Afficher</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="74"/>
@@ -4796,17 +4793,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="75"/>
             <source>Tab Width</source>
-            <translation>Largeur de l'onglet</translation>
+            <translation>Largeur des tabulations</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="76"/>
             <source>Tab To Spaces</source>
-            <translation>Tabulation en espaces</translation>
+            <translation>Onglet en espaces</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="78"/>
             <source>File Extensions</source>
-            <translation>Extensions de fichier</translation>
+            <translation>Extensions de fichiers</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="77"/>
@@ -4819,12 +4816,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteeditor/liteeditorplugin.cpp" line="71"/>
             <source>Edit ToolBar</source>
-            <translation>Barre d'outils de modification</translation>
+            <translation>Barre d’outils Édition</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditorplugin.cpp" line="77"/>
             <source>Edit Navigation Bar</source>
-            <translation>Modifier la barre de navigation</translation>
+            <translation>Barre de navigation Édition</translation>
         </message>
     </context>
     <context>
@@ -4832,7 +4829,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="20"/>
@@ -4842,7 +4839,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="33"/>
             <source>Environment changes will take effect after switching environments.</source>
-            <translation>Les modifications de l’environnement prendront effet après le changement d’environnement.</translation>
+            <translation>Les modifications apportées à l’environnement prendront effet après le changement d’environnement.</translation>
         </message>
     </context>
     <context>
@@ -4850,7 +4847,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/litefindplugin.cpp" line="72"/>
             <source>Find</source>
-            <translation>Trouver</translation>
+            <translation>Rechercher</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/litefindplugin.cpp" line="75"/>
@@ -4860,7 +4857,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/litefindplugin.cpp" line="78"/>
             <source>Find Previous</source>
-            <translation>Trouver précédemment</translation>
+            <translation>Trouver précédent</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/litefindplugin.cpp" line="81"/>
@@ -4870,7 +4867,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/litefind/litefindplugin.cpp" line="87"/>
             <source>File Search</source>
-            <translation>Recherche de fichiers</translation>
+            <translation>Recherche dans les fichiers</translation>
         </message>
     </context>
     <context>
@@ -4883,7 +4880,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/utils/tabwidget/litetabwidget.cpp" line="65"/>
             <source>List All Tabs</source>
-            <translation>Lister tous les onglets</translation>
+            <translation>Afficher tous les onglets</translation>
         </message>
         <message>
             <location filename="src/utils/tabwidget/litetabwidget.cpp" line="71"/>
@@ -4913,7 +4910,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/3rdparty/ads/examples/sidebar/MainWindow.ui" line="75"/>
             <location filename="src/3rdparty/ads/examples/simple/MainWindow.ui" line="28"/>
             <source>View</source>
-            <translation>Vue</translation>
+            <translation>Affichage</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="44"/>
@@ -4928,17 +4925,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="59"/>
             <source>toolBar</source>
-            <translation>barre d'outils</translation>
+            <translation>barre d’outils</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="70"/>
             <source>Exit</source>
-            <translation>Sortie</translation>
+            <translation>Quitter</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="75"/>
             <source>Save State</source>
-            <translation>Sauvegarder l'état</translation>
+            <translation>Sauvegarder l’état</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="80"/>
@@ -4966,12 +4963,12 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="78"/>
             <source>GOFILES</source>
-            <translation>GOFICHIERS</translation>
+            <translation>GOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="79"/>
             <source>CGOFILES</source>
-            <translation>FICHIERS CGO</translation>
+            <translation>CGOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="80"/>
@@ -4989,7 +4986,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="14"/>
             <source>Dialog</source>
-            <translation>Dialogue</translation>
+            <translation>Boîte de dialogue</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="20"/>
@@ -4999,7 +4996,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="66"/>
             <source>Select All</source>
-            <translation>Sélectionner tout</translation>
+            <translation>Tout sélectionner</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="73"/>
@@ -5042,7 +5039,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="290"/>
             <source>Select the folder to contain separated markdown exports:</source>
-            <translation>Sélectionnez le dossier destiné à contenir les exports Markdown séparés :</translation>
+            <translation>Sélectionnez le dossier destiné à recevoir les exports Markdown séparés :</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="303"/>
@@ -5060,7 +5057,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="20"/>
@@ -5070,7 +5067,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="38"/>
             <source>Import Folder...</source>
-            <translation>Importer le dossier...</translation>
+            <translation>Dossier d’importation...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="45"/>
@@ -5095,7 +5092,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="73"/>
             <source>Remove All</source>
-            <translation>Supprimer tout</translation>
+            <translation>Tout supprimer</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="98"/>
@@ -5105,7 +5102,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="106"/>
             <source>Export Folder:</source>
-            <translation>Dossier d'exportation :</translation>
+            <translation>Dossier d’exportation :</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="116"/>
@@ -5115,7 +5112,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="127"/>
             <source>Use CSS</source>
-            <translation>Utilisez le CSS</translation>
+            <translation>Utiliser le CSS</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="137"/>
@@ -5140,17 +5137,17 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="182"/>
             <source>Export Separated PDF</source>
-            <translation>Exporter le PDF séparé</translation>
+            <translation>Exporter en PDF séparé</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="189"/>
             <source>Export Merged HTML...</source>
-            <translation>Exporter le HTML fusionné...</translation>
+            <translation>Exporter en HTML fusionné...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="196"/>
             <source>Export Merged PDF...</source>
-            <translation>Exporter le PDF fusionné...</translation>
+            <translation>Exporter en PDF fusionné...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="203"/>
@@ -5228,7 +5225,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="116"/>
             <source>Unordered List</source>
-            <translation>Liste non ordonnée</translation>
+            <translation>Liste à puces</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="119"/>
@@ -5238,7 +5235,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="122"/>
             <source>Blockquote</source>
-            <translation>Citation en bloc</translation>
+            <translation>Citation encadrée</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="125"/>
@@ -5249,7 +5246,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/plugins/markdown/markdownedit.cpp" line="131"/>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="154"/>
             <source>Heading</source>
-            <translation>Titre</translation>
+            <translation>En-tête</translation>
         </message>
     </context>
     <context>
@@ -5301,7 +5298,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/utils/navigate/navigate.cpp" line="155"/>
             <location filename="src/utils/navigate/navigate.cpp" line="178"/>
             <source>Browser Files in %1</source>
-            <translation>Fichiers du navigateur dans %1</translation>
+            <translation>Explorer les fichiers dans %1</translation>
         </message>
     </context>
     <context>
@@ -5309,7 +5306,7 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
         <message>
             <location filename="src/liteapp/newfiledialog.ui" line="14"/>
             <source>New Project or File</source>
-            <translation>Nouveau projet ou fichier</translation>
+            <translation>Nouveau projet ou nouveau fichier</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.ui" line="124"/>
@@ -5366,8 +5363,8 @@ Voulez-vous remplacer tous les éléments recherchés par un espace ?</translat
             <location filename="src/liteapp/newfiledialog.cpp" line="132"/>
             <source>Location %1 is not empty.
 Use the target directory anyway?</source>
-            <translation>L’emplacement %1 n’est pas vide.
-Vouloir utiliser le répertoire cible quand même ?</translation>
+            <translation>Le chemin %1 n’est pas vide.
+Utiliser tout de même le répertoire cible ?</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="169"/>
@@ -5413,7 +5410,22 @@ Voulez-vous le remplacer ?</translation>
     <context>
         <name>OptionsBrowser</name>
         <message>
-            <location filename="src/liteapp/optionsbrowser.cpp" line="57"/>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="46"/>
+            <source>Apply</source>
+            <translation>Appliquer</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="47"/>
+            <source>OK</source>
+            <translation>OK</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="48"/>
+            <source>Cancel</source>
+            <translation>Annuler</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="61"/>
             <source>Options</source>
             <translation>Options</translation>
         </message>
@@ -5433,7 +5445,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/optionswidget.ui" line="106"/>
             <source>[*] item request restart of LiteIDE</source>
-            <translation>[*] l'article demande le redémarrage de LiteIDE</translation>
+            <translation>[*] cet élément nécessite le redémarrage de LiteIDE</translation>
         </message>
     </context>
     <context>
@@ -5458,7 +5470,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="480"/>
             <source>BottomDockWidget</source>
-            <translation>Widget de dock inférieur</translation>
+            <translation>WidgetDockInférieur</translation>
         </message>
     </context>
     <context>
@@ -5466,12 +5478,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="20"/>
             <source>Font</source>
-            <translation>Police d'écriture</translation>
+            <translation>Police</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="26"/>
@@ -5496,7 +5508,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="86"/>
             <source>Antialias</source>
-            <translation>Anticrénelage</translation>
+            <translation>Antialiasing</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="109"/>
@@ -5506,7 +5518,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="115"/>
             <source>Use editor color scheme</source>
-            <translation>Utiliser la palette de couleurs de l’éditeur</translation>
+            <translation>Utiliser le schéma de couleurs de l’éditeur</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="124"/>
@@ -5544,7 +5556,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="96"/>
             <source>Open Source File</source>
-            <translation>Fichier open source</translation>
+            <translation>Ouvrir le fichier source</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="97"/>
@@ -5554,7 +5566,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="119"/>
             <source>Go Package Browser</source>
-            <translation>Navigateur de paquets Go</translation>
+            <translation>Navigateur de packages Go</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="208"/>
@@ -5572,7 +5584,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="77"/>
             <source>Open Explorer Here</source>
-            <translation>Ouvrir l'Explorateur ici</translation>
+            <translation>Ouvrir l’Explorateur ici</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="78"/>
@@ -5599,7 +5611,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="315"/>
             <source>Could not open %1 for writing.</source>
-            <translation>Impossible d'ouvrir %1 en mode écriture.</translation>
+            <translation>Impossible d’ouvrir %1 en mode écriture.</translation>
         </message>
     </context>
     <context>
@@ -5650,47 +5662,47 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="52"/>
             <source>process exited with code %1</source>
-            <translation>Le processus a quitté avec le code %1</translation>
+            <translation>le processus a quitté avec le code %1</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="55"/>
             <source>process crashed or was terminated</source>
-            <translation>Le processus a planté ou a été terminé.</translation>
+            <translation>le processus a planté ou a été terminé</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="58"/>
             <source>process exited with an unknown status</source>
-            <translation>Le processus a quitté avec un statut inconnu</translation>
+            <translation>le processus a quitté avec un statut inconnu</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="68"/>
             <source>process failed to start</source>
-            <translation>Le processus n'a pas pu démarrer</translation>
+            <translation>le processus n’a pas pu démarrer</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="71"/>
             <source>process crashed or was terminated while running</source>
-            <translation>Le processus a planté ou a été terminé pendant son exécution.</translation>
+            <translation>le processus a planté ou a été terminé pendant son exécution</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="74"/>
             <source>timed out waiting for process</source>
-            <translation>Délai d'attente pour le processus atteint</translation>
+            <translation>délai d’attente écoulé en attendant le processus</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="77"/>
             <source>couldn't read from the process</source>
-            <translation>ne pouvait pas lire depuis le processus</translation>
+            <translation>impossibilité de lire depuis le processus</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="80"/>
             <source>couldn't write to the process</source>
-            <translation>ne pouvait pas écrire au processus</translation>
+            <translation>impossibilité d’écrire dans le processus</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="84"/>
             <source>an unknown error occurred</source>
-            <translation>Une erreur inconnue s'est produite</translation>
+            <translation>une erreur inconnue est survenue</translation>
         </message>
     </context>
     <context>
@@ -5698,12 +5710,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="79"/>
             <source>GOFILES</source>
-            <translation>GOFICHIERS</translation>
+            <translation>GOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="80"/>
             <source>CGOFILES</source>
-            <translation>FICHIERS CGO</translation>
+            <translation>CGOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="81"/>
@@ -5724,7 +5736,7 @@ Voulez-vous le remplacer ?</translation>
         </message>
         <message>
             <source>Import Directory &lt;%1&gt;</source>
-            <translation>Répertoire d'importation &lt;%1&gt;</translation>
+            <translation>Répertoire d’importation &lt;%1&gt;</translation>
         </message>
     </context>
     <context>
@@ -5738,7 +5750,7 @@ Voulez-vous le remplacer ?</translation>
             <location filename="src/3rdparty/fakevim/test/main.cpp" line="315"/>
             <location filename="src/3rdparty/fakevim/test/main.cpp" line="326"/>
             <source>FakeVim Error</source>
-            <translation>Erreur FakeVim</translation>
+            <translation>Erreur de FakeVim</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/test/main.cpp" line="316"/>
@@ -5748,12 +5760,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/3rdparty/fakevim/test/main.cpp" line="327"/>
             <source>Cannot write to file &quot;%1&quot;</source>
-            <translation>Impossible d'écrire dans le fichier « %1 »</translation>
+            <translation>Impossible d’écrire dans le fichier « %1 »</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/test/main.cpp" line="337"/>
             <source>FakeVim Warning</source>
-            <translation>Avertissement FakeVim</translation>
+            <translation>Avertissement de FakeVim</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/test/main.cpp" line="338"/>
@@ -5794,7 +5806,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/3rdparty/qjson/src/parserrunnable.cpp" line="64"/>
             <source>An error occurred while parsing json: %1</source>
-            <translation>Une erreur est survenue lors de l'analyse du JSON : %1</translation>
+            <translation>Une erreur est survenue lors de l’analyse du JSON : %1</translation>
         </message>
     </context>
     <context>
@@ -5802,12 +5814,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="59"/>
             <source>no error occurred</source>
-            <translation>Aucune erreur n'a eu lieu</translation>
+            <translation>aucune erreur n’est survenue</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="60"/>
             <source>unterminated object</source>
-            <translation>objet non terminé</translation>
+            <translation>objet non fermé</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="61"/>
@@ -5817,47 +5829,47 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="62"/>
             <source>unterminated array</source>
-            <translation>tableau non terminé</translation>
+            <translation>tableau non fermé</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="63"/>
             <source>missing value separator</source>
-            <translation>séparateur de valeurs manquantes</translation>
+            <translation>séparateur de valeur manquant</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="64"/>
             <source>illegal value</source>
-            <translation>Valeur illégale</translation>
+            <translation>valeur illégale</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="65"/>
             <source>invalid termination by number</source>
-            <translation>résiliation invalide par numéro</translation>
+            <translation>terminaison invalide par un nombre</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="66"/>
             <source>illegal number</source>
-            <translation>numéro illégal</translation>
+            <translation>nombre illégal</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="67"/>
             <source>invalid escape sequence</source>
-            <translation>Séquence d'échappement non valide</translation>
+            <translation>séquence d’échappement invalide</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="68"/>
             <source>invalid UTF8 string</source>
-            <translation>Chaîne UTF-8 non valide</translation>
+            <translation>chaîne UTF-8 invalide</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="69"/>
             <source>unterminated string</source>
-            <translation>chaîne non terminée</translation>
+            <translation>chaîne non fermée</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="70"/>
             <source>object is missing after a comma</source>
-            <translation>L’objet est absent après une virgule.</translation>
+            <translation>l’objet est absent après une virgule</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="71"/>
@@ -5872,7 +5884,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="73"/>
             <source>garbage at the end of the document</source>
-            <translation>déchets à la fin du document</translation>
+            <translation>débris à la fin du document</translation>
         </message>
     </context>
     <context>
@@ -5890,12 +5902,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="339"/>
             <source>Clear Editor</source>
-            <translation>Effacer l'éditeur</translation>
+            <translation>Effacer l’éditeur</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="506"/>
             <source>Create Editor</source>
-            <translation>Créer l'éditeur</translation>
+            <translation>Créer Éditeur</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="201"/>
@@ -5910,7 +5922,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="239"/>
             <source>Minimize</source>
-            <translation>Minimiser</translation>
+            <translation>Réduire</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="266"/>
@@ -5923,73 +5935,79 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/qsqleditor/qsqleditor.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.ui" line="34"/>
             <source>SQL </source>
-            <translation>SQL</translation>
+            <translation>SQL </translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="58"/>
             <source>Infomation</source>
-            <translation>Information</translation>
+            <translation>Informations</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="59"/>
             <source>Edit Table</source>
-            <translation>Modifier le tableau</translation>
+            <translation>Modifier la table</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="160"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="183"/>
             <source>Tables</source>
             <translation>Tables</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="162"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="185"/>
             <source>Views</source>
             <translation>Vues</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="164"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="187"/>
             <source>SystemTables</source>
             <translation>TablesSystème</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="166"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="189"/>
             <source>AllTables</source>
             <translation>ToutesLesTables</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="168"/>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="181"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="191"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="204"/>
             <source>Unknow</source>
             <translation>Inconnu</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="173"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="196"/>
             <source>Table</source>
-            <translation>Tableau</translation>
+            <translation>Table</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="175"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="198"/>
             <source>View</source>
             <translation>Vue</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="177"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="200"/>
             <source>SystemTable</source>
-            <translation>Table système</translation>
+            <translation>TableSystème</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="179"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="202"/>
             <source>AllTable</source>
             <translation>TouteTable</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="236"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="258"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="269"/>
             <source>%1:%2</source>
-            <translation>%1 : %2</translation>
+            <translation>%1:%2</translation>
+        </message>
+    </context>
+    <context>
+        <name>QSqlFileFactory</name>
+        <message>
+            <location filename="src/plugins/qsqleditor/qsqlfilefactory.cpp" line="81"/>
+            <source>QSql File</source>
+            <translation>Fichier QSql</translation>
         </message>
     </context>
     <context>
@@ -5997,7 +6015,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenaction.cpp" line="59"/>
             <source>Show and Run Commands</source>
-            <translation>Afficher et exécuter les commandes</translation>
+            <translation>Commandes d’affichage et d’exécution</translation>
         </message>
     </context>
     <context>
@@ -6021,12 +6039,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenfiles.cpp" line="72"/>
             <source>Go to File</source>
-            <translation>Aller au fichier</translation>
+            <translation>Aller à un fichier</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenfiles.cpp" line="77"/>
             <source>Type '?' to get help on the actions you can take from here</source>
-            <translation>Tapez « ? » pour obtenir de l’aide sur les actions que vous pouvez effectuer à partir de ici.</translation>
+            <translation>Saisissez « ? » pour obtenir de l’aide sur les actions que vous pouvez effectuer à partir de là</translation>
         </message>
     </context>
     <context>
@@ -6042,7 +6060,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenhelp.cpp" line="49"/>
             <source>Show All Quick Open Actions</source>
-            <translation>Afficher toutes les actions d'ouverture rapide</translation>
+            <translation>Afficher toutes les actions Quick Open</translation>
         </message>
     </context>
     <context>
@@ -6056,7 +6074,7 @@ Voulez-vous le remplacer ?</translation>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="79"/>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="84"/>
             <source>Open a text file first to go to a line</source>
-            <translation>Ouvrez d’abord un fichier texte pour aller à une ligne.</translation>
+            <translation>Ouvrez d’abord un fichier texte pour accéder à une ligne</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="97"/>
@@ -6074,27 +6092,27 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="82"/>
             <source>Quick Open File</source>
-            <translation>Ouvrir rapidement un fichier</translation>
+            <translation>Ouverture rapide d’un fichier</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="83"/>
             <source>Quick Open Editor</source>
-            <translation>Éditeur d'ouverture rapide</translation>
+            <translation>Ouverture rapide d’un éditeur</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="84"/>
             <source>Quick Open Symbol</source>
-            <translation>Symbole d'ouverture rapide</translation>
+            <translation>Ouverture rapide d’un symbole</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="85"/>
             <source>Quick Open Command</source>
-            <translation>Commande d'ouverture rapide</translation>
+            <translation>Ouverture rapide d’une commande</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="86"/>
             <source>Show All Quick Open Actions</source>
-            <translation>Afficher toutes les actions d'ouverture rapide</translation>
+            <translation>Afficher toutes les actions Quick Open</translation>
         </message>
     </context>
     <context>
@@ -6102,7 +6120,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenmimetype.cpp" line="41"/>
             <source>Go to Symbol in File</source>
-            <translation>Aller à Symbole dans le fichier</translation>
+            <translation>Aller à un symbole dans le fichier</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenmimetype.cpp" line="42"/>
@@ -6115,12 +6133,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="20"/>
             <source>QuickOpenFiles</source>
-            <translation>OuvrirFichiersRapide</translation>
+            <translation>QuickOpenFiles</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="26"/>
@@ -6136,7 +6154,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="73"/>
             <source>QuickOpenEditor</source>
-            <translation>Éditeur d'ouverture rapide</translation>
+            <translation>Ouvrir rapidement l’éditeur</translation>
         </message>
     </context>
     <context>
@@ -6144,12 +6162,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/recentmanager.cpp" line="54"/>
             <source>Clear All History</source>
-            <translation>Effacer tout l'historique</translation>
+            <translation>Vider tout l’historique</translation>
         </message>
         <message>
             <location filename="src/liteapp/recentmanager.cpp" line="169"/>
             <source>Clear Menu</source>
-            <translation>Menu clair</translation>
+            <translation>Vider le menu</translation>
         </message>
     </context>
     <context>
@@ -6170,7 +6188,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="14"/>
             <source>Debug External Application</source>
-            <translation>Déboguer l'application externe</translation>
+            <translation>Déboguer une application externe</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="22"/>
@@ -6201,7 +6219,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/litedebug/selectexternaldialog.cpp" line="92"/>
             <source>Select the working directory:</source>
-            <translation>Sélectionnez le répertoire de travail :</translation>
+            <translation>Sélectionner le répertoire de travail :</translation>
         </message>
     </context>
     <context>
@@ -6227,7 +6245,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="56"/>
             <source>LeftDockWidgt</source>
-            <translation>Widget de Dock Gauche</translation>
+            <translation>Widget ancré à gauche</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="58"/>
@@ -6237,7 +6255,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="60"/>
             <source>RightDockWidget</source>
-            <translation>Widget de droite</translation>
+            <translation>Widget ancré à droite</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="63"/>
@@ -6260,12 +6278,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="549"/>
             <source>Hide SideBar</source>
-            <translation>Cacher la barre latérale</translation>
+            <translation>Masquer la barre latérale</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="587"/>
             <source>SideBar Windows</source>
-            <translation>Barre latérale Windows</translation>
+            <translation>Fenêtres de la barre latérale</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="588"/>
@@ -6290,17 +6308,17 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="306"/>
             <source>Top (Split)</source>
-            <translation>Haut (Coupé)</translation>
+            <translation>Haut (Fractionné)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
             <source>TopDockWidget (Split)</source>
-            <translation>Widget de haut de dock (Divisé)</translation>
+            <translation>Widget flottant supérieur (Fractionné)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
             <source>TopDockWidget</source>
-            <translation>Widget de haut de dock</translation>
+            <translation>Widget flottant supérieur</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="312"/>
@@ -6310,17 +6328,17 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="316"/>
             <source>Bottom (Split)</source>
-            <translation>Bas (Divisé)</translation>
+            <translation>Bas (Fractionné)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
             <source>BottomDockWidget (Split)</source>
-            <translation>Widget de dock inférieur (Divisé)</translation>
+            <translation>Widget flottant inférieur (Fractionné)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
             <source>BottomDockWidget</source>
-            <translation>Widget de dock inférieur</translation>
+            <translation>Widget flottant inférieur</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="322"/>
@@ -6330,17 +6348,17 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="326"/>
             <source>Left (Split)</source>
-            <translation>Gauche (Divisé)</translation>
+            <translation>Gauche (Fractionné)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
             <source>LeftDockWidget (Split)</source>
-            <translation>Widget de dock gauche (Divisé)</translation>
+            <translation>Widget flottant gauche (Fractionné)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
             <source>LeftDockWidget</source>
-            <translation>Widget de dock gauche</translation>
+            <translation>Widget flottant gauche</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="332"/>
@@ -6350,27 +6368,27 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="336"/>
             <source>Right (Split)</source>
-            <translation>Droit (Divisé)</translation>
+            <translation>À droite (Fractionner)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
             <source>RightDockWidget (Split)</source>
-            <translation>Widget d'ancrage droit (Divisé)</translation>
+            <translation>Volet ancré à droite (Fractionner)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
             <source>RightDockWidget</source>
-            <translation>Widget de droite</translation>
+            <translation>Volet ancré à droite</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="355"/>
             <source>Unsplit</source>
-            <translation>Non divisé</translation>
+            <translation>Défractionner</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="360"/>
             <source>Split</source>
-            <translation>Découper</translation>
+            <translation>Fractionner</translation>
         </message>
     </context>
     <context>
@@ -6378,12 +6396,12 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/liteapp/splitwindowstyle.cpp" line="244"/>
             <source>Hide Sidebars</source>
-            <translation>Cacher les barres latérales</translation>
+            <translation>Masquer les volets latéraux</translation>
         </message>
         <message>
             <location filename="src/liteapp/splitwindowstyle.cpp" line="278"/>
             <source>Tool Windows</source>
-            <translation>Fenêtres d'outils</translation>
+            <translation>Fenêtres d’outils</translation>
         </message>
     </context>
     <context>
@@ -6406,7 +6424,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/qsqleditor/sqltablemodel.cpp" line="65"/>
             <source>{blob}</source>
-            <translation>{boulette}</translation>
+            <translation>{blob}</translation>
         </message>
     </context>
     <context>
@@ -6414,7 +6432,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="135"/>
             <source>SyntaxEditor ToolBar</source>
-            <translation>Barre d'outils de SyntaxEditor</translation>
+            <translation>Barre d’outils de SyntaxEditor</translation>
         </message>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="136"/>
@@ -6424,7 +6442,7 @@ Voulez-vous le remplacer ?</translation>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="137"/>
             <source>Redo</source>
-            <translation>Refaire</translation>
+            <translation>Répéter</translation>
         </message>
     </context>
     <context>
@@ -6459,14 +6477,14 @@ Voulez-vous le remplacer ?</translation>
             <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="149"/>
             <source>Cannot write file %1:
 %2.</source>
-            <translation>Impossible d'écrire le fichier %1 :
+            <translation>Impossible d’écrire dans le fichier %1 :
 %2.</translation>
         </message>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="182"/>
             <source>'%1' has been modified.
 Do you want to save your changes?</source>
-            <translation>« %1 » a été modifié.
+            <translation>Le fichier '%1' a été modifié.
 Voulez-vous enregistrer vos modifications ?</translation>
         </message>
     </context>
@@ -6475,7 +6493,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/plugins/qsqleditor/tableviewwidget.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
     </context>
     <context>
@@ -6483,12 +6501,12 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="14"/>
             <source>Form</source>
-            <translation>Forme</translation>
+            <translation>Formulaire</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="20"/>
             <source>Font</source>
-            <translation>Police d'écriture</translation>
+            <translation>Police</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="26"/>
@@ -6513,7 +6531,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="83"/>
             <source>Antialias</source>
-            <translation>Anticrénelage</translation>
+            <translation>Antialiasing</translation>
         </message>
     </context>
     <context>
@@ -6528,7 +6546,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="142"/>
             <source>Open a new terminal</source>
-            <translation>Ouvrez un nouveau terminal</translation>
+            <translation>Ouvrir un nouveau terminal</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="144"/>
@@ -6558,12 +6576,12 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="152"/>
             <source>Current terminal load environment from LiteIDE</source>
-            <translation>Environnement de chargement du terminal actuel depuis LiteIDE</translation>
+            <translation>Charger l’environnement du terminal actuel depuis LiteIDE</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="157"/>
             <source>Filter</source>
-            <translation>Filtrer</translation>
+            <translation>Filtre</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="193"/>
@@ -6607,7 +6625,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="80"/>
             <source>Select All</source>
-            <translation>Sélectionner tout</translation>
+            <translation>Tout sélectionner</translation>
         </message>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="84"/>
@@ -6656,7 +6674,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="115"/>
             <source>Download Information</source>
-            <translation>Informations de téléchargement</translation>
+            <translation>Informations sur le téléchargement</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="116"/>
@@ -6669,7 +6687,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="74"/>
             <source>Cancel file %1 modify and reload ?</source>
-            <translation>Annuler la modification du fichier %1 et le recharger ?</translation>
+            <translation>Annuler la modification du fichier %1 et recharger ?</translation>
         </message>
     </context>
     <context>
@@ -6682,7 +6700,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/3rdparty/qtc_editutil/filterlineedit.cpp" line="52"/>
             <source>Clear text</source>
-            <translation>Texte clair</translation>
+            <translation>Effacer le texte</translation>
         </message>
     </context>
     <context>
@@ -6700,7 +6718,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/utils/vterm/vtermwidget.cpp" line="67"/>
             <source>Select All</source>
-            <translation>Sélectionner tout</translation>
+            <translation>Tout sélectionner</translation>
         </message>
     </context>
     <context>
@@ -6723,7 +6741,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="169"/>
             <source>False load %1 !</source>
-            <translation>Charge fausse %1 !</translation>
+            <translation>Chargement différé de %1 !</translation>
         </message>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="256"/>
@@ -6758,7 +6776,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
             <translation>Options</translation>
         </message>
         <message>
-            <location filename="src/plugins/welcome/welcomebrowser.cpp" line="187"/>
+            <location filename="src/plugins/welcome/welcomebrowser.cpp" line="191"/>
             <source>Welcome</source>
             <translation>Bienvenue</translation>
         </message>
@@ -6786,27 +6804,27 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="401"/>
             <source>Top</source>
-            <translation>Haut</translation>
+            <translation>En haut</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="402"/>
             <source>Left</source>
-            <translation>Gauche</translation>
+            <translation>À gauche</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="403"/>
             <source>Right</source>
-            <translation>Droit</translation>
+            <translation>À droite</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="404"/>
             <source>Bottom</source>
-            <translation>Bas</translation>
+            <translation>En bas</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="406"/>
             <source>Unpin (Dock)</source>
-            <translation>Défixer (Dock)</translation>
+            <translation>Désépingler (Dock)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="408"/>
@@ -6830,44 +6848,44 @@ Voulez-vous enregistrer vos modifications ?</translation>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="864"/>
             <source>Unpin (Dock)</source>
-            <translation>Détacher (Dock)</translation>
+            <translation>Défixer (Ancrer)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="869"/>
             <source>Pin Group</source>
-            <translation>Groupe de broches</translation>
+            <translation>Fixer le groupe</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="814"/>
             <source>Pin Group To...</source>
-            <translation>Épingler le groupe à...</translation>
+            <translation>Fixer le groupe à...</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="816"/>
             <source>Top</source>
-            <translation>Haut</translation>
+            <translation>En haut</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="817"/>
             <source>Left</source>
-            <translation>Gauche</translation>
+            <translation>À gauche</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="818"/>
             <source>Right</source>
-            <translation>Droit</translation>
+            <translation>À droite</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="819"/>
             <source>Bottom</source>
-            <translation>Bas</translation>
+            <translation>En bas</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="827"/>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="881"/>
             <source>Minimize</source>
-            <translation>Minimiser</translation>
+            <translation>Réduire</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="828"/>
@@ -6880,7 +6898,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="832"/>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="890"/>
             <source>Close Group</source>
-            <translation>Groupe fermé</translation>
+            <translation>Fermer le groupe</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="838"/>
@@ -6890,7 +6908,7 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="873"/>
             <source>Pin Active Tab (Press Ctrl to Pin Group)</source>
-            <translation>Épingler l’onglet actif (Appuyez sur Ctrl pour épingler le groupe)</translation>
+            <translation>Fixer l’onglet actif (Appuyez sur Ctrl pour fixer le groupe)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="886"/>
@@ -6916,17 +6934,17 @@ Voulez-vous enregistrer vos modifications ?</translation>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="555"/>
             <source>Pin</source>
-            <translation>Épingle</translation>
+            <translation>Fixer</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="559"/>
             <source>Pin To...</source>
-            <translation>Épingler à...</translation>
+            <translation>Fixer à...</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="561"/>
             <source>Top</source>
-            <translation>Haut</translation>
+            <translation>En haut</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="562"/>

@@ -15,12 +15,12 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="162"/>
             <source>Welcome:</source>
-            <translation>Добро пожаловать:</translation>
+            <translation>Приветствие:</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="168"/>
             <source>Welcome to LiteIDE X! LiteIDE is a simple, open source, cross-platform IDE.</source>
-            <translation>Добро пожаловать в LiteIDE X! LiteIDE — это простая, открытая, кроссплатформенная IDE.</translation>
+            <translation>Добро пожаловать в LiteIDE X! LiteIDE — это простая, открытая, кроссплатформенная среда разработки.</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="178"/>
@@ -110,7 +110,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="544"/>
             <source>Thanks to...</source>
-            <translation>Благодаря...</translation>
+            <translation>Благодарности...</translation>
         </message>
         <message>
             <location filename="src/liteapp/aboutdialog.ui" line="568"/>
@@ -125,7 +125,7 @@
         <message>
             <location filename="src/liteapp/aboutdialog.cpp" line="42"/>
             <source>Based on Qt %1 (%2 bit)</source>
-            <translation>На основе Qt %1 (%2 бита)</translation>
+            <translation>На основе Qt %1 (%2‑разрядной)</translation>
         </message>
     </context>
     <context>
@@ -148,17 +148,17 @@
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="68"/>
             <source>F&amp;ind</source>
-            <translation>Н&amp;айти</translation>
+            <translation>Найти</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="69"/>
             <source>&amp;View</source>
-            <translation>&amp;Просмотр</translation>
+            <translation>&amp;Вид</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="74"/>
             <source>&amp;Tools</source>
-            <translation>&amp;Инструменты</translation>
+            <translation>&amp;Сервис</translation>
         </message>
         <message>
             <location filename="src/liteapp/actionmanager.cpp" line="75"/>
@@ -373,7 +373,7 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="504"/>
             <source>An item &quot;%1&quot; already exists in this location. Do you want to replace it and move old item to trash?</source>
-            <translation>Элемент «%1» уже существует в этой папке. Вы хотите заменить его и переместить старый элемент в корзину?</translation>
+            <translation>Элемент «%1» уже существует в этом месте. Заменить его и переместить старый элемент в корзину?</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="505"/>
@@ -403,13 +403,13 @@
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="609"/>
             <source>Are you sure that you want move to trash this item?</source>
-            <translation>Вы уверены, что хотите переместить этот элемент в корзину?</translation>
+            <translation>Вы действительно хотите переместить этот элемент в корзину?</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="612"/>
             <location filename="src/utils/folderview/basefolderview.cpp" line="615"/>
             <source>Are you sure that you want move to trash %1 items?</source>
-            <translation>Вы уверены, что хотите переместить %1 элементов в корзину?</translation>
+            <translation>Вы действительно хотите переместить %1 элементов в корзину?</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/basefolderview.cpp" line="618"/>
@@ -476,7 +476,7 @@
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="62"/>
             <source>Toggle Bookmark</source>
-            <translation>Переключить закладку</translation>
+            <translation>Включить/выключить закладку</translation>
         </message>
         <message>
             <location filename="src/plugins/bookmarks/bookmarkmanager.cpp" line="100"/>
@@ -592,7 +592,7 @@
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="343"/>
             <source>Reset all to initial value</source>
-            <translation>Сбросить всё на начальные значения</translation>
+            <translation>Сбросить всё к исходному значению</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/buildconfigdialog.cpp" line="69"/>
@@ -654,7 +654,7 @@
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="166"/>
             <source>Actual Pixels</source>
-            <translation>Фактические пиксели</translation>
+            <translation>Реальные пиксели</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="175"/>
@@ -685,7 +685,7 @@
             <location filename="src/3rdparty/ads/examples/configflags/mainwindow.ui" line="28"/>
             <location filename="src/3rdparty/ads/examples/emptydockarea/mainwindow.ui" line="28"/>
             <source>View</source>
-            <translation>Просмотр</translation>
+            <translation>Вид</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/examples/autohide/mainwindow.ui" line="35"/>
@@ -702,12 +702,12 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="20"/>
             <source>Dock Widget Status</source>
-            <translation>Статус панели-приставки</translation>
+            <translation>Состояние панели‑докера</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="35"/>
             <source>Dock Widget:</source>
-            <translation>Панель-приставка:</translation>
+            <translation>Панель‑докер:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="58"/>
@@ -717,22 +717,22 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="64"/>
             <source>closed</source>
-            <translation>закрыта</translation>
+            <translation>закрыт</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="71"/>
             <source>floating</source>
-            <translation>плавающая</translation>
+            <translation>плавающий</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="78"/>
             <source>tabbed</source>
-            <translation>вкладочная</translation>
+            <translation>вкладочный</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="85"/>
             <source>is current tab</source>
-            <translation>является текущей вкладкой</translation>
+            <translation>текущая вкладка</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="101"/>
@@ -742,22 +742,22 @@
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="107"/>
             <source>DockWidgetClosable</source>
-            <translation>Закрываемая панель-приставка</translation>
+            <translation>Закрываемость панели‑докера</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="114"/>
             <source>DockWidgetMovable</source>
-            <translation>Перемещаемая панель-приставка</translation>
+            <translation>Перемещаемость панели‑докера</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="121"/>
             <source>DockWidgetFloatable</source>
-            <translation>Плавающая панель-приставка</translation>
+            <translation>Плавающая панель‑докер</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="128"/>
             <source>DockWidgetDeleteOnClose</source>
-            <translation>Удалять панель-приставку при закрытии</translation>
+            <translation>Удаление при закрытии</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="135"/>
@@ -790,7 +790,7 @@
         <message>
             <location filename="src/utils/folderview/folderdialog.cpp" line="107"/>
             <source>Cancel</source>
-            <translation>Отменить</translation>
+            <translation>Отмена</translation>
         </message>
     </context>
     <context>
@@ -818,12 +818,12 @@
         <message>
             <location filename="src/utils/folderview/folderdialog.cpp" line="57"/>
             <source>Create and Edit</source>
-            <translation>Создать и редактировать</translation>
+            <translation>Создать и отредактировать</translation>
         </message>
         <message>
             <location filename="src/utils/folderview/folderdialog.cpp" line="58"/>
             <source>Cancel</source>
-            <translation>Отменить</translation>
+            <translation>Отмена</translation>
         </message>
     </context>
     <context>
@@ -886,7 +886,7 @@
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="352"/>
             <source>Watch expression (e.g. buf main.var os.Stdout):</source>
-            <translation>Смотреть выражение (например, buf main.var os.Stdout):</translation>
+            <translation>Наблюдать за выражением (например: buf main.var os.Stdout):</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/debugwidget.cpp" line="134"/>
@@ -914,7 +914,7 @@
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="26"/>
             <source>example --check-go-version=false</source>
-            <translation>пример --check-go-version=false</translation>
+            <translation>пример — check-go-version=false</translation>
         </message>
         <message>
             <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="39"/>
@@ -1038,7 +1038,7 @@
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="150"/>
             <source>Show in Explorer</source>
-            <translation>Показать в Проводнике</translation>
+            <translation>Показать в проводнике</translation>
         </message>
         <message>
             <location filename="src/liteapp/editormanager.cpp" line="152"/>
@@ -1106,27 +1106,27 @@
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="445"/>
             <source>Environment Toolbar</source>
-            <translation>Панель инструментов окружения</translation>
+            <translation>Панель инструментов среды</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="452"/>
             <source>Switching current environment</source>
-            <translation>Переключение текущего окружения</translation>
+            <translation>Переключение текущей среды</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="455"/>
             <source>Edit current environment</source>
-            <translation>Редактировать текущее окружение</translation>
+            <translation>Редактировать текущую среду</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="456"/>
             <source>Reload current environment</source>
-            <translation>Перезагрузить текущее окружение</translation>
+            <translation>Перезагрузить текущую среду</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/envmanager.cpp" line="460"/>
             <source>Select Environment</source>
-            <translation>Выбрать окружение</translation>
+            <translation>Выбрать среду</translation>
         </message>
     </context>
     <context>
@@ -1186,7 +1186,7 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="949"/>
             <source>Mark &quot;%1&quot; not set.</source>
-            <translation>Маркер «%1» не установлен.</translation>
+            <translation>Метка «%1» не установлена.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3538"/>
@@ -1196,57 +1196,57 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3540"/>
             <source>%1All</source>
-            <translation>%1Все</translation>
+            <translation>%1All</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3554"/>
             <source>Not implemented in FakeVim.</source>
-            <translation>Не реализовано в FakeVim.</translation>
+            <translation>Not implemented in FakeVim.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5719"/>
             <source>Unknown option:</source>
-            <translation>Неизвестная опция:</translation>
+            <translation>Unknown option:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5730"/>
             <source>Invalid argument:</source>
-            <translation>Недопустимый аргумент:</translation>
+            <translation>Invalid argument:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5733"/>
             <source>Trailing characters:</source>
-            <translation>Суффиксные символы:</translation>
+            <translation>Trailing characters:</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5816"/>
             <source>Move lines into themselves.</source>
-            <translation>Перемещение строк в самих себя.</translation>
+            <translation>Move lines into themselves.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5860"/>
             <source>%n lines moved.</source>
-            <translation>Перемещено %n строк.</translation>
+            <translation>%n lines moved.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5920"/>
             <source>File &quot;%1&quot; exists (add ! to override)</source>
-            <translation>Файл &quot;%1&quot; существует (добавьте !, чтобы перезаписать)</translation>
+            <translation>File &quot;%1&quot; exists (add ! to override)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5934"/>
             <source>Cannot open file &quot;%1&quot; for writing</source>
-            <translation>Не удалось открыть файл &quot;%1&quot; для записи</translation>
+            <translation>Cannot open file &quot;%1&quot; for writing</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5940"/>
             <source>&quot;%1&quot; %2 %3L, %4C written.</source>
-            <translation>&quot;%1&quot; %2 %3L, %4C записано.</translation>
+            <translation>&quot;%1&quot; %2 %3L, %4C written.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5949"/>
             <source>Cannot open file &quot;%1&quot; for reading</source>
-            <translation>Не удалось открыть файл &quot;%1&quot; для чтения</translation>
+            <translation>Cannot open file &quot;%1&quot; for reading</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5978"/>
@@ -1256,47 +1256,47 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6005"/>
             <source>%n lines filtered.</source>
-            <translation>Отфильтровано %n строк.</translation>
+            <translation>%n lines filtered.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6093"/>
             <source>Cannot open file %1</source>
-            <translation>Не удалось открыть файл %1</translation>
+            <translation>Cannot open file %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6259"/>
             <source>Invalid regular expression: %1</source>
-            <translation>Недопустимое регулярное выражение: %1</translation>
+            <translation>Invalid regular expression: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6295"/>
             <source>Pattern not found: %1</source>
-            <translation>Шаблон не найден: %1</translation>
+            <translation>Pattern not found: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6299"/>
             <source>Search hit BOTTOM, continuing at TOP.</source>
-            <translation>Поиск достиг нижней границы, продолжается с верхней.$</translation>
+            <translation>Search hit BOTTOM, continuing at TOP.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6300"/>
             <source>Search hit TOP, continuing at BOTTOM.</source>
-            <translation>Поиск достиг верхней границы, продолжается с нижней.$</translation>
+            <translation>Search hit TOP, continuing at BOTTOM.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6305"/>
             <source>Search hit BOTTOM without match for: %1</source>
-            <translation>Поиск достиг нижней границы, совпадение не найдено для: %1</translation>
+            <translation>Search hit BOTTOM without match for: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6306"/>
             <source>Search hit TOP without match for: %1</source>
-            <translation>Поиск достиг верхней границы, совпадение не найдено для: %1</translation>
+            <translation>Search hit TOP without match for: %1</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6413"/>
             <source>%n lines indented.</source>
-            <translation>%n строк отформатировано с отступами.</translation>
+            <translation>%n строк отформатировано с отступом.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6470"/>
@@ -1306,17 +1306,17 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7043"/>
             <source>%n lines yanked.</source>
-            <translation>%n строк извлечено.</translation>
+            <translation>%n строк вырезано.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7748"/>
             <source>Already at oldest change.</source>
-            <translation>Уже на самой старой версии.</translation>
+            <translation>Уже на самой старой версии изменений.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7749"/>
             <source>Already at newest change.</source>
-            <translation>Уже на самой новой версии.</translation>
+            <translation>Уже на самой свежей версии изменений.</translation>
         </message>
     </context>
     <context>
@@ -1324,12 +1324,12 @@
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="2788"/>
             <source>Recursive mapping</source>
-            <translation>Рекурсивное отображение</translation>
+            <translation>Рекурсивное сопоставление</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="4195"/>
             <source>Type Alt-V, Alt-V to quit FakeVim mode.</source>
-            <translation>Нажмите Alt-V, Alt-V, чтобы выйти из режима FakeVim.</translation>
+            <translation>Нажмите Alt‑V, Alt‑V, чтобы выйти из режима FakeVim.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5941"/>
@@ -1347,7 +1347,7 @@
         <message>
             <location filename="src/plugins/fakevimedit/fakevimedit.cpp" line="68"/>
             <source>Use FakeVim Editing</source>
-            <translation>Использовать редактирование FakeVim</translation>
+            <translation>Использовать режим редактирования FakeVim</translation>
         </message>
     </context>
     <context>
@@ -1360,7 +1360,7 @@
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="20"/>
             <source>FakeVim initialization command list (# start is comment):</source>
-            <translation>Список команд инициализации FakeVim (# начало — комментарий):</translation>
+            <translation>Список команд инициализации FakeVim (строки, начинающиеся с #, являются комментариями):</translation>
         </message>
         <message>
             <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="28"/>
@@ -1489,8 +1489,8 @@
             <location filename="src/liteapp/filemanager.cpp" line="399"/>
             <source>Project '%1' has been created.
 Do you want to open it now?</source>
-            <translation>Проект '%1' создан.
-Хотите открыть его сейчас?</translation>
+            <translation>Проект «%1» создан.
+Вы хотите открыть его сейчас?</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="302"/>
@@ -1539,10 +1539,10 @@ Do you want to close the editor?
 Answering &quot;Yes&quot; will discard your unsaved changes.</source>
             <translation>%1
 Этот файл был удалён с диска,
-но у вас есть несохранённые изменения в редакторе LiteIDE.
+но в вашем редакторе LiteIDE имеются несохранённые изменения.
 
 Вы хотите закрыть редактор?
-Если вы ответите «Да», ваши несохранённые изменения будут потеряны.</translation>
+Если ответить «Да», ваши несохранённые изменения будут утрачены.</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="687"/>
@@ -1565,10 +1565,10 @@ Do you want to reload the file from disk?
 Answering &quot;Yes&quot; will discard your unsaved changes.</source>
             <translation>%1
 Этот файл был изменён на диске,
-но у вас есть несохранённые изменения в редакторе LiteIDE.
+но в вашем редакторе LiteIDE имеются несохранённые изменения.
 
 Вы хотите перезагрузить файл с диска?
-Если вы ответите «Да», ваши несохранённые изменения будут потеряны.</translation>
+Если ответить «Да», ваши несохранённые изменения будут утрачены.</translation>
         </message>
         <message>
             <location filename="src/liteapp/filemanager.cpp" line="727"/>
@@ -1627,7 +1627,7 @@ Do you want to reload the file from disk?</source>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="218"/>
             <source>Match case</source>
-            <translation>Регистр</translation>
+            <translation>Регистрозависимый поиск</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="219"/>
@@ -1637,7 +1637,7 @@ Do you want to reload the file from disk?</source>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="220"/>
             <source>Scan subdirectories</source>
-            <translation>Просмотр подпапок</translation>
+            <translation>Просмотр подкаталогов</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="241"/>
@@ -1682,7 +1682,7 @@ Do you want to reload the file from disk?</source>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="254"/>
             <source>Auto Switch</source>
-            <translation>Автоматический переход</translation>
+            <translation>Автоматическое переключение</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearch.cpp" line="278"/>
@@ -1720,7 +1720,7 @@ Do you want to reload the file from disk?</source>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="89"/>
             <source>Search Result</source>
-            <translation>Результат поиска</translation>
+            <translation>Результаты поиска</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="249"/>
@@ -1745,7 +1745,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="281"/>
             <source>The following files have no write permissions. Do you want to change the permissions?</source>
-            <translation>Следующие файлы не имеют прав на запись. Вы хотите изменить права доступа?</translation>
+            <translation>У следующих файлов отсутствуют права записи. Изменить права?</translation>
         </message>
         <message>
             <location filename="src/plugins/litefind/filesearchmanager.cpp" line="284"/>
@@ -1763,7 +1763,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="95"/>
             <source>New File...</source>
-            <translation>Новый файл...</translation>
+            <translation>Создать файл...</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="96"/>
@@ -1792,7 +1792,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="346"/>
             <source>Are you sure that you want to permanently delete this file?</source>
-            <translation>Вы уверены, что хотите навсегда удалить этот файл?</translation>
+            <translation>Вы действительно хотите навсегда удалить этот файл?</translation>
         </message>
         <message>
             <location filename="src/utils/filesystem/filesystemwidget.cpp" line="386"/>
@@ -1943,7 +1943,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="168"/>
             <source>Search again</source>
-            <translation>Провести поиск снова</translation>
+            <translation>Искать снова</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="174"/>
@@ -2006,17 +2006,17 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="596"/>
             <source>%n matches replaced.</source>
-            <translation>%n совпадений заменено.</translation>
+            <translation>%n замен</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="598"/>
             <source>searching... %n matches found.</source>
-            <translation>поиск... найдено %n совпадений.</translation>
+            <translation>поиск… найдено %n совпадений.</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="604"/>
             <source>searching ...</source>
-            <translation>ищем ...</translation>
+            <translation>поиск …</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="610"/>
@@ -2034,7 +2034,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.h" line="73"/>
             <source>Search</source>
-            <translation>Искать</translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.h" line="74"/>
@@ -2047,7 +2047,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.cpp" line="284"/>
             <source>Search</source>
-            <translation>Искать</translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/findapiwidget.cpp" line="305"/>
@@ -2061,7 +2061,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="96"/>
             <source>Search</source>
-            <translation>Искать</translation>
+            <translation>Поиск</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="104"/>
@@ -2121,7 +2121,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="142"/>
             <source>Match Word</source>
-            <translation>Совпадение слова</translation>
+            <translation>Совпадение по слову</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="169"/>
@@ -2298,7 +2298,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/gdbdebugger/gdbdebuggeroption.ui" line="20"/>
             <source>Enable --tty for program being debugged.</source>
-            <translation>Включить --tty для отлаживаемой программы.</translation>
+            <translation>Включите опцию --tty для отлаживаемой программы.</translation>
         </message>
     </context>
     <context>
@@ -2306,12 +2306,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="14"/>
             <source>Add Tags To Struct Field</source>
-            <translation>Добавить теги к полю структуры</translation>
+            <translation>Добавить тег к полю структуры</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="23"/>
             <source>Add JSON Tag</source>
-            <translation>Добавить JSON-тег</translation>
+            <translation>Добавить JSON‑тег</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="54"/>
@@ -2359,7 +2359,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="306"/>
             <source>Override current tags when adding tags</source>
-            <translation>Перезаписать текущие теги при добавлении тегов</translation>
+            <translation>Перезаписывать текущие теги при добавлении тегов</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="316"/>
@@ -2372,7 +2372,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="14"/>
             <source>Remove Tags From Struct Field</source>
-            <translation>Удалить теги из структурного поля</translation>
+            <translation>Удалить теги из поля структуры</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="23"/>
@@ -2433,7 +2433,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="118"/>
             <source>Setup remove custom tag and option, example tag=opt1,tag=opt2</source>
-            <translation>Настройка удаления пользовательского тега и опций, пример: тег=оп1, тег=оп2</translation>
+            <translation>Настроить удаление пользовательского тега и опций, пример: tag=opt1,tag=opt2</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="121"/>
@@ -2462,7 +2462,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="80"/>
             <source>Go Class View</source>
-            <translation>Перейти к представлению класса</translation>
+            <translation>Перейти к представлению классов</translation>
         </message>
         <message>
             <location filename="src/plugins/golangast/golangast.cpp" line="81"/>
@@ -2503,17 +2503,17 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="20"/>
             <source>PKG automitic import prompt</source>
-            <translation>Автоматический запрос импорта пакетов</translation>
+            <translation>Уведомление о автоматическом импорте пакетов</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="26"/>
             <source>PKG automatic import hints for all packages (Module/GOPATH)</source>
-            <translation>Автоматические подсказки импорта для всех пакетов (Module/GOPATH)</translation>
+            <translation>Подсказки автоматического импорта для всех пакетов (Module/GOPATH)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="33"/>
             <source>PKG automatic import hints for standard package</source>
-            <translation>Автоматические подсказки импорта для стандартного пакета</translation>
+            <translation>Подсказки автоматического импорта для стандартного пакета</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="43"/>
@@ -2522,12 +2522,12 @@ Want to replace to all the search items to whitespace?</source>
         </message>
         <message>
             <source>Auto update depends package when it's source changed.</source>
-            <translation>Автоматическое обновление зависимых пакетов при изменении их исходного кода.</translation>
+            <translation>Автоматически обновлять зависимости при изменении их исходного кода.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangcode/golangcodeoption.ui" line="49"/>
             <source>Close gocode when exiting</source>
-            <translation>Закрыть gocode при выходе</translation>
+            <translation>Закрывать gocode при выходе</translation>
         </message>
     </context>
     <context>
@@ -2540,7 +2540,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="92"/>
             <source>Go Doc Search</source>
-            <translation>Поиск по Go Doc</translation>
+            <translation>Поиск в документации Go</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdoc.cpp" line="96"/>
@@ -2563,7 +2563,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="20"/>
             <source>Go API</source>
-            <translation>Go API</translation>
+            <translation>API Go</translation>
         </message>
         <message>
             <location filename="src/plugins/golangdoc/golangdocoption.ui" line="26"/>
@@ -2581,7 +2581,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="90"/>
             <source>View import package use godoc</source>
-            <translation>Просмотреть использование импортированных пакетов с помощью godoc</translation>
+            <translation>Просмотреть использование импортированного пакета с помощью godoc</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="93"/>
@@ -2634,12 +2634,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="184"/>
             <source>Go Source Query</source>
-            <translation>Запрос исходного кода Go</translation>
+            <translation>Запрос к исходному коду Go</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="189"/>
             <source>SourceQuery What</source>
-            <translation>Что такое SourceQuery</translation>
+            <translation>SourceQuery Что</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="193"/>
@@ -2689,12 +2689,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="229"/>
             <source>Referrers</source>
-            <translation>Ссылающиеся элементы</translation>
+            <translation>Ссылающиеся</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="233"/>
             <source>Pointsto</source>
-            <translation>Указатели</translation>
+            <translation>Точки достижения</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="237"/>
@@ -2725,7 +2725,7 @@ Want to replace to all the search items to whitespace?</source>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="331"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="332"/>
             <source>%1 (Module) and GOROOT</source>
-            <translation>%1 (Модуль) и GOROOT</translation>
+            <translation>%1 (модуль) и GOROOT</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="401"/>
@@ -2737,13 +2737,13 @@ Want to replace to all the search items to whitespace?</source>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="411"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="452"/>
             <source>SourceQuery</source>
-            <translation>ИсточникЗапрос</translation>
+            <translation>Источниковый запрос</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="865"/>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1046"/>
             <source>Below files in package %1</source>
-            <translation>Ниже файлов в пакете %1</translation>
+            <translation>Файлы ниже в пакете %1</translation>
         </message>
         <message>
             <location filename="src/plugins/golangedit/golangedit.cpp" line="1441"/>
@@ -2797,7 +2797,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Форма</translation>
+            <translation>Форматирование</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="20"/>
@@ -2807,17 +2807,17 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="26"/>
             <source>Goimports updates your Go import lines, adding missing ones and removing unreferenced ones.</source>
-            <translation>Goimports обновляет инструкции импорта в Go, добавляя недостающие и удаляя неиспользуемые.</translation>
+            <translation>Goimports обновляет ваши инструкции импорта в Go, добавляя недостающие и удаляя неиспользуемые.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="29"/>
             <source>Enable update imports line, adding missing ones and removing unreferenced ones.</source>
-            <translation>Включить обновление строк импорта, добавляя недостающие и удаляя неиспользуемые.</translation>
+            <translation>Включить обновление строк импорта: добавлять недостающие и удалять неиспользуемые.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="46"/>
             <source>Synchronous</source>
-            <translation>Синхронный</translation>
+            <translation>Синхронно</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="52"/>
@@ -2827,7 +2827,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="61"/>
             <source>Synchronous code formatting timeout in milliseconds (500ms or more):</source>
-            <translation>Тайм-аут синхронного форматирования кода в миллисекундах (500 мс или более):</translation>
+            <translation>Тайм‑аут синхронного форматирования кода в миллисекундах (500 мс или более):</translation>
         </message>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="36"/>
@@ -2846,7 +2846,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangfmt/golangfmtplugin.cpp" line="59"/>
             <source>Format Code (Adjusts Imports)</source>
-            <translation>Форматировать код (корректирует импорты)</translation>
+            <translation>Форматировать код (корректировка импортов)</translation>
         </message>
     </context>
     <context>
@@ -2854,17 +2854,17 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="14"/>
             <source>Form</source>
-            <translation>Форма</translation>
+            <translation>Форматирование</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="20"/>
             <source>Lint Options</source>
-            <translation>Параметры линтера</translation>
+            <translation>Параметры линтинга</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="26"/>
             <source>Automatically lint code when saving</source>
-            <translation>Автоматически запускать линтер при сохранении</translation>
+            <translation>Автоматически выполнять линтинг кода при сохранении</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="38"/>
@@ -2879,12 +2879,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="107"/>
             <source>Synchronous</source>
-            <translation>Синхронный</translation>
+            <translation>Синхронно</translation>
         </message>
         <message>
             <location filename="src/plugins/golanglint/golanglintoption.ui" line="115"/>
             <source>Code linting timeout in milliseconds (500ms or more):</source>
-            <translation>Тайм-аут линтера в миллисекундах (500 мс или более):</translation>
+            <translation>Тайм‑аут линтинга кода в миллисекундах (500 мс или более):</translation>
         </message>
     </context>
     <context>
@@ -2893,7 +2893,7 @@ Want to replace to all the search items to whitespace?</source>
             <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="57"/>
             <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="63"/>
             <source>Lint Code</source>
-            <translation>Проверить код на ошибки</translation>
+            <translation>Линтинг кода</translation>
         </message>
     </context>
     <context>
@@ -2961,7 +2961,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="210"/>
             <source>Use Custom GOPATH (one per line)</source>
-            <translation>Использовать пользовательский GOPATH (по одному на строку)</translation>
+            <translation>Использовать пользовательский GOPATH (по одному пути на строку)</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="233"/>
@@ -3004,7 +3004,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="79"/>
             <source>Inline Code</source>
-            <translation>Встроеный код</translation>
+            <translation>Встроенное кодирование</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="82"/>
@@ -3025,17 +3025,17 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="91"/>
             <source>Verify Present</source>
-            <translation>Проверить презентацию</translation>
+            <translation>Проверка наличия</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="256"/>
             <source>Present verify success</source>
-            <translation>Презентация проверена успешно</translation>
+            <translation>Проверка презентации — успех</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="258"/>
             <source>Present verify false</source>
-            <translation>Презентация проверена с ошибкой</translation>
+            <translation>Проверка презентации — ложь</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="310"/>
@@ -3048,7 +3048,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangast/golangsymbol.cpp" line="63"/>
             <source>Quick Open Symbol by Name</source>
-            <translation>Быстрое открытие символа по имени</translation>
+            <translation>Быстрый выбор символа по имени</translation>
         </message>
     </context>
     <context>
@@ -3120,7 +3120,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="109"/>
             <source>Open Explorer Here</source>
-            <translation>Открыть Проводник здесь</translation>
+            <translation>Открыть проводник здесь</translation>
         </message>
         <message>
             <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="206"/>
@@ -3266,7 +3266,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="200"/>
             <source>Success: %2.</source>
-            <translation>Успех: %2.</translation>
+            <translation>Успешно: %2.</translation>
         </message>
         <message>
             <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="250"/>
@@ -3324,7 +3324,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="91"/>
             <source>Use fallback location</source>
-            <translation>Использовать резервное расположение</translation>
+            <translation>Использовать альтернативное расположение</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="106"/>
@@ -3334,7 +3334,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="112"/>
             <source>Alert when a highlight definition is not found</source>
-            <translation>Оповещение, когда определение подсветки не найдено</translation>
+            <translation>Оповещение при отсутствии определения подсветки</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="121"/>
@@ -3374,17 +3374,17 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="82"/>
             <source>Synchronize preview and code scrollbars</source>
-            <translation>Синхронизировать полосы прокрутки предварительного просмотра и кода</translation>
+            <translation>Синхронизировать полосы прокрутки предпросмотра и кода</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="88"/>
             <source>Config</source>
-            <translation>Конфигурация</translation>
+            <translation>Настройка</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="168"/>
             <source>Plain HTML</source>
-            <translation>Чистый HTML</translation>
+            <translation>Обычный HTML</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="389"/>
@@ -3394,12 +3394,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="85"/>
             <source>Automatically display preview</source>
-            <translation>Автоматически показывать предварительный просмотр</translation>
+            <translation>Автоматически отображать предпросмотр</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="99"/>
             <source>HTML Preview</source>
-            <translation>HTML-предварительный просмотр</translation>
+            <translation>HTML‑предпросмотр</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/htmlpreview.cpp" line="390"/>
@@ -3422,12 +3422,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="67"/>
             <source>Reset to original size</source>
-            <translation>Вернуть исходный размер</translation>
+            <translation>Восстановить исходный размер</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="70"/>
             <source>Fit to view</source>
-            <translation>Подогнать под вид</translation>
+            <translation>Подогнать под видимую область</translation>
         </message>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="73"/>
@@ -3448,7 +3448,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/imageeditor/imageeditor.cpp" line="253"/>
             <source>Pause movie</source>
-            <translation>Пауза фильма</translation>
+            <translation>Приостановить видео</translation>
         </message>
     </context>
     <context>
@@ -3502,7 +3502,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/golangcode/golangcode.cpp" line="847"/>
             <source>warning, pkg not find, please enter to import :</source>
-            <translation>внимание, пакет не найден, введите для импорта:</translation>
+            <translation>Внимание: пакет не найден, введите для импорта:</translation>
         </message>
     </context>
     <context>
@@ -3515,7 +3515,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/jsonedit/jsonedit.cpp" line="53"/>
             <source>Format Json</source>
-            <translation>Формат JSON</translation>
+            <translation>Форматировать как JSON</translation>
         </message>
         <message>
             <location filename="src/plugins/jsonedit/jsonedit.cpp" line="55"/>
@@ -3536,32 +3536,32 @@ Want to replace to all the search items to whitespace?</source>
             <translation>Выход</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="756"/>
+            <location filename="src/liteapp/liteapp.cpp" line="782"/>
             <source>Close File</source>
             <translation>Закрыть файл</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="759"/>
+            <location filename="src/liteapp/liteapp.cpp" line="785"/>
             <source>Close All Files</source>
             <translation>Закрыть все файлы</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="769"/>
+            <location filename="src/liteapp/liteapp.cpp" line="795"/>
             <source>Save File</source>
             <translation>Сохранить файл</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="772"/>
+            <location filename="src/liteapp/liteapp.cpp" line="798"/>
             <source>Save File As...</source>
             <translation>Сохранить как...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="775"/>
+            <location filename="src/liteapp/liteapp.cpp" line="801"/>
             <source>Save All Files</source>
             <translation>Сохранить все файлы</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="762"/>
+            <location filename="src/liteapp/liteapp.cpp" line="788"/>
             <source>Open Project</source>
             <translation>Открыть проект</translation>
         </message>
@@ -3571,67 +3571,67 @@ Want to replace to all the search items to whitespace?</source>
             <translation>Настройки</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="733"/>
+            <location filename="src/liteapp/liteapp.cpp" line="759"/>
             <source>New...</source>
             <translation>Новый...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="736"/>
+            <location filename="src/liteapp/liteapp.cpp" line="762"/>
             <source>Open File...</source>
             <translation>Открыть файл...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="739"/>
+            <location filename="src/liteapp/liteapp.cpp" line="765"/>
             <source>Open Folder...</source>
             <translation>Открыть папку...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="742"/>
+            <location filename="src/liteapp/liteapp.cpp" line="768"/>
             <source>Open Folder in New Window...</source>
             <translation>Открыть папку в новом окне...</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="747"/>
+            <location filename="src/liteapp/liteapp.cpp" line="773"/>
             <source>Close All Folders</source>
             <translation>Закрыть все папки</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="750"/>
+            <location filename="src/liteapp/liteapp.cpp" line="776"/>
             <source>New Window</source>
             <translation>Новое окно</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="753"/>
+            <location filename="src/liteapp/liteapp.cpp" line="779"/>
             <source>Close Window</source>
             <translation>Закрыть окно</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="764"/>
+            <location filename="src/liteapp/liteapp.cpp" line="790"/>
             <source>Save Project</source>
             <translation>Сохранить проект</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="766"/>
+            <location filename="src/liteapp/liteapp.cpp" line="792"/>
             <source>Close Project</source>
             <translation>Закрыть проект</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="778"/>
+            <location filename="src/liteapp/liteapp.cpp" line="804"/>
             <source>Exit</source>
             <translation>Выход</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="784"/>
+            <location filename="src/liteapp/liteapp.cpp" line="810"/>
             <source>Full Screen</source>
-            <translation>Полный экран</translation>
+            <translation>На весь экран</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="788"/>
+            <location filename="src/liteapp/liteapp.cpp" line="814"/>
             <source>About LiteIDE</source>
             <translation>О LiteIDE</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteapp.cpp" line="794"/>
+            <location filename="src/liteapp/liteapp.cpp" line="820"/>
             <source>About Plugins</source>
             <translation>О плагинах</translation>
         </message>
@@ -3646,7 +3646,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="30"/>
             <source>Store [*]</source>
-            <translation>Магазин [*]</translation>
+            <translation>Хранилище [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="57"/>
@@ -3661,12 +3661,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="300"/>
             <source>Reload files in session</source>
-            <translation>Перезагрузить файлы в сессии</translation>
+            <translation>Перезагружать файлы в сессии</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="312"/>
             <source>Recent Files</source>
-            <translation>Последние файлы</translation>
+            <translation>Недавние файлы</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="318"/>
@@ -3677,12 +3677,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="229"/>
             <source>Monitoring files for modifications</source>
-            <translation>Отслеживать файлы на предмет изменений</translation>
+            <translation>Отслеживать изменения файлов</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="41"/>
             <source>Store settings to local ini file</source>
-            <translation>Сохранять настройки в локальный INI-файл</translation>
+            <translation>Сохранять настройки в локальный INI‑файл</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="51"/>
@@ -3697,7 +3697,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="84"/>
             <source>Use tool window shortcuts</source>
-            <translation>Использовать горячие клавиши инструментального окна</translation>
+            <translation>Использовать сочетания клавиш для инструментальных окон</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="112"/>
@@ -3712,7 +3712,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="156"/>
             <source>Load the external file icon library</source>
-            <translation>Загружать внешнюю библиотеку иконок файлов</translation>
+            <translation>Загружать внешнюю библиотеку иконок</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="184"/>
@@ -3793,12 +3793,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="528"/>
             <source>Enable mouse wheel navigation on tabs</source>
-            <translation>Включить навигацию по вкладкам с помощью колесика мыши</translation>
+            <translation>Включить навигацию колесиком мыши по вкладкам</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="436"/>
             <source>Toolbar Icon Size [*]</source>
-            <translation>Размер иконок панели инструментов [*]</translation>
+            <translation>Размер значков панели инструментов [*]</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="538"/>
@@ -3828,7 +3828,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="593"/>
             <source>Reset</source>
-            <translation>Сбросить</translation>
+            <translation>Сброс</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="600"/>
@@ -3858,7 +3858,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/liteapp/liteappoption.ui" line="275"/>
             <source>Reload session on startup</source>
-            <translation>Перезагружать сессию при запуске</translation>
+            <translation>Перезагрузить сессию при запуске</translation>
         </message>
         <message>
             <location filename="src/liteapp/liteappoption.cpp" line="97"/>
@@ -3896,28 +3896,28 @@ Want to replace to all the search items to whitespace?</source>
             <translation>Стандартный</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="506"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="501"/>
             <source>Import Keyboard Mapping Scheme</source>
-            <translation>Импортировать схему настройки клавиатуры</translation>
+            <translation>ИмпортироватьСхемуКлавиатурныхПривязок</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="506"/>
-            <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="501"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="535"/>
             <source>Keyboard Mapping Scheme (%1)</source>
-            <translation>Схема настройки клавиатуры (%1)</translation>
+            <translation>Схема клавиатурных привязок (%1)</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="513"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="508"/>
             <source>Could not read scheme from %1!</source>
             <translation>Не удалось прочитать схему из %1!</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="535"/>
             <source>Export Keyboard Mapping Scheme</source>
-            <translation>Экспортировать схему настройки клавиатуры</translation>
+            <translation>ЭкспортироватьСхемуКлавиатурныхПривязок</translation>
         </message>
         <message>
-            <location filename="src/liteapp/liteappoption.cpp" line="551"/>
+            <location filename="src/liteapp/liteappoption.cpp" line="546"/>
             <source>Could not write scheme to %1!</source>
             <translation>Не удалось записать схему в %1!</translation>
         </message>
@@ -3927,42 +3927,42 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="142"/>
             <source>Build Toolbar</source>
-            <translation>Создатьпанельинструментов</translation>
+            <translation>СоздатьПанельИнструментов</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="150"/>
             <source>Build Configuration...</source>
-            <translation>Настроить сборку...</translation>
+            <translation>НастроитьСборку...</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="168"/>
             <source>Stop Action</source>
-            <translation>Остановитьдействие</translation>
+            <translation>ОстановитьДействие</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="172"/>
             <source>Clear Output</source>
-            <translation>Очиститьвывод</translation>
+            <translation>ОчиститьВывод</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="176"/>
             <source>Execute File</source>
-            <translation>Выполнитьфайл</translation>
+            <translation>ВыполнитьФайл</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="179"/>
             <source>Debug File</source>
-            <translation>Отладитьфайл</translation>
+            <translation>ОтладитьФайл</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="182"/>
             <source>Lock Build Path</source>
-            <translation>Заблокироватьпутьсборки</translation>
+            <translation>ЗаблокироватьПутьСборки</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="184"/>
             <source>Build Path Configuration</source>
-            <translation>Настройкапутисборки</translation>
+            <translation>НастройкаПутиСборки</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="230"/>
@@ -3972,7 +3972,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="287"/>
             <source>Line Wrap</source>
-            <translation>Перенос строки</translation>
+            <translation>Перенос строк</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="291"/>
@@ -3992,12 +3992,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="318"/>
             <source>Build Output</source>
-            <translation>Вывод сборки</translation>
+            <translation>Выход сборки</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="732"/>
             <source>Current environment change id &quot;%1&quot;</source>
-            <translation>ID изменения текущей среды «%1»</translation>
+            <translation>Идентификатор изменения текущей среды «%1»</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1146"/>
@@ -4023,12 +4023,12 @@ Want to replace to all the search items to whitespace?</source>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1552"/>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1605"/>
             <source>A process is currently running.  Stop the current action first.</source>
-            <translation>Текущий процесс ещё работает. Сначала остановите текущее действие.</translation>
+            <translation>Текущий процесс ещё выполняется. Сначала остановите текущее действие.</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1591"/>
             <source>Killing current process...</source>
-            <translation>Завершается текущий процесс...</translation>
+            <translation>Завершение текущего процесса...</translation>
         </message>
         <message>
             <location filename="src/plugins/litebuild/litebuild.cpp" line="1601"/>
@@ -4061,7 +4061,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litebuild/litebuildoption.ui" line="27"/>
             <source>Build command configuration files [*]</source>
-            <translation>Конфигурационные файлы команды сборки [*]</translation>
+            <translation>Конфигурационные файлы команд сборки [*]</translation>
         </message>
     </context>
     <context>
@@ -4111,7 +4111,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="105"/>
             <source>Start Debugging External Application...</source>
-            <translation>Начать отладку внешнего приложения...</translation>
+            <translation>Запустить отладку внешнего приложения...</translation>
         </message>
         <message>
             <source>Close</source>
@@ -4120,32 +4120,32 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="108"/>
             <source>Start Debugging</source>
-            <translation>Начать отладку</translation>
+            <translation>Запустить отладку</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="120"/>
             <source>Step Into</source>
-            <translation>Шаг вниз</translation>
+            <translation>Шаг вовнутрь</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="123"/>
             <source>Step Over</source>
-            <translation>Шаг вперёд</translation>
+            <translation>Шаг через</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="126"/>
             <source>Step Out</source>
-            <translation>Шаг выхода</translation>
+            <translation>Шаг из</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="129"/>
             <source>Run to Line</source>
-            <translation>Запустить до строки</translation>
+            <translation>Выполнить до строки</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="132"/>
             <source>Insert/Remove Breakpoint</source>
-            <translation>Вставить/удалить точку останова</translation>
+            <translation>Вставить/Удалить точку останова</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="135"/>
@@ -4155,7 +4155,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="192"/>
             <source>Debug Watch</source>
-            <translation>Отладочная наблюдаемая переменная</translation>
+            <translation>Отладочное окно «Watch»</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/litedebug.cpp" line="195"/>
@@ -4183,7 +4183,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/litedebug/litedebugoption.ui" line="26"/>
             <source>Automatically insert breakpoint main.main when debugging</source>
-            <translation>Автоматически вставлять точку останова main.main при отладке</translation>
+            <translation>Автоматически устанавливать точку останова в функции main.main при отладке</translation>
         </message>
     </context>
     <context>
@@ -4232,7 +4232,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="268"/>
             <source>Select All</source>
-            <translation>Выделить всё</translation>
+            <translation>Выбрать всё</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="301"/>
@@ -4302,37 +4302,37 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="404"/>
             <source>Line Wrap (MimeType)</source>
-            <translation>Перенос строки (Mime-тип)</translation>
+            <translation>Перенос строки (Mime‑тип)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="415"/>
             <source>Toggle Comment</source>
-            <translation>Включить/выключить комментарий</translation>
+            <translation>Включить/отключить комментарий</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="418"/>
             <source>Toggle Block Commnet</source>
-            <translation>Включить/выключить блочный комментарий</translation>
+            <translation>Включить/отключить блочный комментарий</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="421"/>
             <source>Auto-indent Selection</source>
-            <translation>Автоматический отступ выделенного текста</translation>
+            <translation>Автоматическое отступление выделенного текста</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="425"/>
             <source>Tab To Spaces (MimeType)</source>
-            <translation>Преобразовать табуляцию в пробелы (Mime-тип)</translation>
+            <translation>Преобразовать табуляцию в пробелы (Mime‑тип)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="429"/>
             <source>Line End Windows (\r\n)</source>
-            <translation>Конец строки Windows (\r\n)</translation>
+            <translation>Конец строки — Windows (\r\n)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="433"/>
             <source>Line End Unix (\n)</source>
-            <translation>Конец строки Unix (\n)</translation>
+            <translation>Конец строки — Unix (\n)</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="437"/>
@@ -4367,7 +4367,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="459"/>
             <source>Title Case</source>
-            <translation>Начальные заглавные буквы</translation>
+            <translation>Заглавные буквы</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="463"/>
@@ -4387,12 +4387,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="475"/>
             <source>Tab To Spaces</source>
-            <translation>Табуляция в пробелы</translation>
+            <translation>Табуляция пробелами</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="479"/>
             <source>Spaces To Tab</source>
-            <translation>Пробелы в табуляцию</translation>
+            <translation>Пробелы вместо табуляции</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="645"/>
@@ -4432,7 +4432,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1207"/>
             <source>Export Failed</source>
-            <translation>Экспорт не выполнен</translation>
+            <translation>Ошибка экспорта</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1208"/>
@@ -4532,12 +4532,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="384"/>
             <source>Insert Line Before</source>
-            <translation>Вставить строку перед</translation>
+            <translation>Вставить строку выше</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="388"/>
             <source>Insert Line After</source>
-            <translation>Вставить строку после</translation>
+            <translation>Вставить строку ниже</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="392"/>
@@ -4557,7 +4557,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="401"/>
             <source>Clean Whitespace</source>
-            <translation>Очистить пробелы</translation>
+            <translation>Очистить пробельные символы</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="408"/>
@@ -4578,7 +4578,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="1269"/>
             <source>Do you want to permanently discard unsaved modifications and reload %1?</source>
-            <translation>Вы хотите навсегда отбросить несохранённые изменения и перезагрузить %1?</translation>
+            <translation>Вы действительно хотите безвозвратно отбросить несохранённые изменения и перезагрузить %1?</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditor.cpp" line="291"/>
@@ -4612,14 +4612,14 @@ Want to replace to all the search items to whitespace?</source>
             <translation>Форма</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="358"/>
             <source>Load File</source>
             <translation>Загрузить файл</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="414"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
             <source>Check and convert no printable char to '.'</source>
-            <translation>Проверить и заменить непечатаемые символы на «.»</translation>
+            <translation>Проверка и замена непечатаемых символов на «.»</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="30"/>
@@ -4659,7 +4659,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="118"/>
             <source>Antialias</source>
-            <translation>Сглаживание</translation>
+            <translation>Антиалиасинг</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="138"/>
@@ -4667,131 +4667,128 @@ Want to replace to all the search items to whitespace?</source>
             <translation>Восстановить шрифт по умолчанию</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="150"/>
             <source>Editor Color Scheme</source>
             <translation>Цветовая схема редактора</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="158"/>
             <source>File:</source>
             <translation>Файл:</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="175"/>
             <source>Edit</source>
-            <translation>Редактировать</translation>
+            <translation>Правка</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="220"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="170"/>
             <source>Syntax Auto-completion</source>
             <translation>Автодополнение синтаксиса</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="302"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="252"/>
             <source>Fuzzy code completion</source>
-            <translation>Фuzzy-дополнение кода</translation>
+            <translation>Фuzzy‑дополнение кода</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="350"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="300"/>
             <source>Clean completion cache when saving files</source>
             <translation>Очистить кэш автодополнения при сохранении файлов</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="357"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="307"/>
             <source>Clean whitespace when saving files</source>
             <translation>Очистка пробельных символов при сохранении файлов</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="314"/>
             <source>Enable scroll wheel zooming</source>
-            <translation>Включить масштабирование колесиком мыши</translation>
+            <translation>Включить масштабирование колесом мыши</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="371"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="321"/>
             <source>Add copied text into the clipboard as HTML</source>
             <translation>Добавлять скопированный текст в буфер обмена в формате HTML</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="378"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="328"/>
             <source>Allow vertical scrolling to the last line [*]</source>
             <translation>Разрешить вертикальную прокрутку до последней строки [*]</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="437"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="387"/>
             <source>Display VisualizeWhitespace</source>
             <translation>Показывать VisualizeWhitespace</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="451"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="401"/>
             <source>Word wrap by default</source>
-            <translation>Перенос слов по умолчанию</translation>
+            <translation>Перенос строк по умолчанию</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="430"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="380"/>
             <source>Display code fold</source>
-            <translation>Показывать свёрнутый код</translation>
+            <translation>Показывать сворачиваемый код</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="509"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="459"/>
             <source>Display offset position</source>
             <translation>Показывать позицию смещения</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="533"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="483"/>
             <source>File Types</source>
             <translation>Типы файлов</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="214"/>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="289"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="164"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="239"/>
             <source>Behavior</source>
             <translation>Поведение</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="444"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="394"/>
             <source>Display EOF</source>
             <translation>Показывать EOF</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="458"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
             <source>Display line numbers</source>
             <translation>Показывать номера строк</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="465"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="415"/>
             <source>Display indent guide</source>
-            <translation>Показывать направляющую отступов</translation>
+            <translation>Показывать направляющие отступов</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="474"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
             <source>Display right margin at column</source>
             <translation>Показывать правую границу в столбце</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="295"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="245"/>
             <source>Automatic indentation</source>
-            <translation>Автоматический отступ</translation>
+            <translation>Автоматическое добавление отступов</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="309"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="259"/>
             <source>Case sensitive code completion</source>
-            <translation>Регистрозависимое автодополнение кода</translation>
+            <translation>Регистрозависимое завершение кода</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="318"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="268"/>
             <source>Code completion prefix length:</source>
-            <translation>Длина префикса автодополнения:</translation>
+            <translation>Длина префикса при автодополнении:</translation>
         </message>
         <message>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="402"/>
-            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="352"/>
+            <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="374"/>
             <source>Display</source>
-            <translation>Показывать</translation>
+            <translation>Отображать</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="74"/>
             <source>MIME Type</source>
-            <translation>MIME-тип</translation>
+            <translation>MIME‑тип</translation>
         </message>
         <message>
             <location filename="src/plugins/liteeditor/liteeditoroption.cpp" line="75"/>
@@ -4837,12 +4834,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="20"/>
             <source>Environment definition files:</source>
-            <translation>Файлы определения среды:</translation>
+            <translation>Файлы определения окружения:</translation>
         </message>
         <message>
             <location filename="src/plugins/liteenv/liteenvoption.ui" line="33"/>
             <source>Environment changes will take effect after switching environments.</source>
-            <translation>Изменения среды вступят в силу после смены среды.</translation>
+            <translation>Изменения окружения вступят в силу после смены окружения.</translation>
         </message>
     </context>
     <context>
@@ -4883,7 +4880,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/utils/tabwidget/litetabwidget.cpp" line="65"/>
             <source>List All Tabs</source>
-            <translation>Перечислить все вкладки</translation>
+            <translation>Список всех вкладок</translation>
         </message>
         <message>
             <location filename="src/utils/tabwidget/litetabwidget.cpp" line="71"/>
@@ -4913,7 +4910,7 @@ Want to replace to all the search items to whitespace?</source>
             <location filename="src/3rdparty/ads/examples/sidebar/MainWindow.ui" line="75"/>
             <location filename="src/3rdparty/ads/examples/simple/MainWindow.ui" line="28"/>
             <source>View</source>
-            <translation>Просмотр</translation>
+            <translation>Вид</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="44"/>
@@ -4981,7 +4978,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/makefileproject/makefilefile.cpp" line="81"/>
             <source>Sources</source>
-            <translation>Исходники</translation>
+            <translation>Исходные файлы</translation>
         </message>
     </context>
     <context>
@@ -5032,27 +5029,27 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="231"/>
             <source>Select the folder containing your markdown files:</source>
-            <translation>Выберите папку, содержащую ваши Markdown-файлы:</translation>
+            <translation>Выберите папку, содержащую ваши файлы Markdown:</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="242"/>
             <source>Select Markdown Files</source>
-            <translation>Выбрать Markdown-файлы</translation>
+            <translation>Выбрать файлы Markdown</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="290"/>
             <source>Select the folder to contain separated markdown exports:</source>
-            <translation>Выберите папку для раздельных экспортируемых Markdown-файлов:</translation>
+            <translation>Выберите папку для раздельных экспортированных файлов Markdown:</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="303"/>
             <source>Export Merged HTML</source>
-            <translation>Экспорт объединённого HTML</translation>
+            <translation>Экспортировать объединённый HTML</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchbrowser.cpp" line="378"/>
             <source>Export Merged PDF</source>
-            <translation>Экспорт объединённого PDF</translation>
+            <translation>Экспортировать объединённый PDF</translation>
         </message>
     </context>
     <context>
@@ -5065,12 +5062,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="20"/>
             <source>Markdown Source Files</source>
-            <translation>Исходные Markdown-файлы</translation>
+            <translation>Исходные файлы Markdown</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="38"/>
             <source>Import Folder...</source>
-            <translation>Папка импорта...</translation>
+            <translation>Папка для импорта...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="45"/>
@@ -5105,7 +5102,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="106"/>
             <source>Export Folder:</source>
-            <translation>Папка экспорта:</translation>
+            <translation>Папка для экспорта:</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="116"/>
@@ -5135,22 +5132,22 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="175"/>
             <source>Export Separated HTML</source>
-            <translation>Экспорт раздельный HTML</translation>
+            <translation>Экспорт разделённого HTML</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="182"/>
             <source>Export Separated PDF</source>
-            <translation>Экспорт раздельный PDF</translation>
+            <translation>Экспорт разделённого PDF</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="189"/>
             <source>Export Merged HTML...</source>
-            <translation>Экспорт объединённый HTML...</translation>
+            <translation>Экспорт объединённого HTML...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="196"/>
             <source>Export Merged PDF...</source>
-            <translation>Экспорт объединённый PDF...</translation>
+            <translation>Экспорт объединённого PDF...</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownbatchwidget.ui" line="203"/>
@@ -5228,12 +5225,12 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="116"/>
             <source>Unordered List</source>
-            <translation>Ненумерованный список</translation>
+            <translation>Неупорядочённый список</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="119"/>
             <source>Ordered List</source>
-            <translation>Нумерованный список</translation>
+            <translation>Упорядочённый список</translation>
         </message>
         <message>
             <location filename="src/plugins/markdown/markdownedit.cpp" line="122"/>
@@ -5292,7 +5289,7 @@ Want to replace to all the search items to whitespace?</source>
         <message>
             <location filename="src/3rdparty/ads/demo/MyDockAreaTitleBar.h" line="43"/>
             <source>Format HardDrive</source>
-            <translation>Форматировать жёсткий диск</translation>
+            <translation>Отформатировать жёсткий диск</translation>
         </message>
     </context>
     <context>
@@ -5366,8 +5363,8 @@ Want to replace to all the search items to whitespace?</source>
             <location filename="src/liteapp/newfiledialog.cpp" line="132"/>
             <source>Location %1 is not empty.
 Use the target directory anyway?</source>
-            <translation>Путь %1 не пуст.
-Всё равно использовать целевую директорию?</translation>
+            <translation>Расположение %1 не пусто.
+Использовать целевую директорию в любом случае?</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="169"/>
@@ -5379,22 +5376,22 @@ Use the target directory anyway?</source>
             <source>%1 already exists.
 Do you want to replace it?</source>
             <translation>%1 уже существует.
-Вы хотите заменить его?</translation>
+Заменить его?</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="185"/>
             <source>No files could be created.</source>
-            <translation>Ни один файл не был создан.</translation>
+            <translation>Ни один файл не удалось создать.</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="280"/>
             <source>File template details:</source>
-            <translation>Подробности шаблона файла:</translation>
+            <translation>Сведения о шаблоне файла:</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="282"/>
             <source>Project template details:</source>
-            <translation>Подробности шаблона проекта:</translation>
+            <translation>Сведения о шаблоне проекта:</translation>
         </message>
         <message>
             <location filename="src/liteapp/newfiledialog.cpp" line="362"/>
@@ -5413,9 +5410,24 @@ Do you want to replace it?</source>
     <context>
         <name>OptionsBrowser</name>
         <message>
-            <location filename="src/liteapp/optionsbrowser.cpp" line="57"/>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="46"/>
+            <source>Apply</source>
+            <translation>Применить</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="47"/>
+            <source>OK</source>
+            <translation>ОК</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="48"/>
+            <source>Cancel</source>
+            <translation>Отмена</translation>
+        </message>
+        <message>
+            <location filename="src/liteapp/optionsbrowser.cpp" line="61"/>
             <source>Options</source>
-            <translation>Опции</translation>
+            <translation>Параметры</translation>
         </message>
     </context>
     <context>
@@ -5423,7 +5435,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/optionswidget.ui" line="14"/>
             <source>Options</source>
-            <translation>Опции</translation>
+            <translation>Параметры</translation>
         </message>
         <message>
             <location filename="src/liteapp/optionswidget.ui" line="56"/>
@@ -5443,22 +5455,22 @@ Do you want to replace it?</source>
             <location filename="src/liteapp/tooldockwidget.cpp" line="472"/>
             <location filename="src/liteapp/tooldockwidget.cpp" line="473"/>
             <source>Move To</source>
-            <translation>Переместить в</translation>
+            <translation>Переместить</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="446"/>
             <source>LeftSideBar</source>
-            <translation>Левая панель</translation>
+            <translation>Левая боковая панель</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="447"/>
             <source>RightSideBar</source>
-            <translation>Правая панель</translation>
+            <translation>Правая боковая панель</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="480"/>
             <source>BottomDockWidget</source>
-            <translation>Нижний док-виджет</translation>
+            <translation>Нижний панельный виджет</translation>
         </message>
     </context>
     <context>
@@ -5476,7 +5488,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="26"/>
             <source>Family:</source>
-            <translation>Семейство:</translation>
+            <translation>Шрифтовая семья:</translation>
         </message>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="43"/>
@@ -5511,7 +5523,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/outputoption.ui" line="124"/>
             <source>Sets the maximum number of lines</source>
-            <translation>Устанавливает максимальное количество строк</translation>
+            <translation>Задаёт максимальное количество строк</translation>
         </message>
     </context>
     <context>
@@ -5519,7 +5531,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="87"/>
             <source>Manage GOPATH/Modules ...</source>
-            <translation>Управление GOPATH/Модулями ...</translation>
+            <translation>Управление GOPATH/модулями ...</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="86"/>
@@ -5539,7 +5551,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="95"/>
             <source>Add Package to Folders</source>
-            <translation>Добавить пакет в папки</translation>
+            <translation>Добавить пакет к папкам</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="96"/>
@@ -5554,7 +5566,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="119"/>
             <source>Go Package Browser</source>
-            <translation>Браузер пакетов Go</translation>
+            <translation>Перейти в обозреватель пакетов Go</translation>
         </message>
         <message>
             <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="208"/>
@@ -5599,7 +5611,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/golangpackage/packageproject.cpp" line="315"/>
             <source>Could not open %1 for writing.</source>
-            <translation>Не удалось открыть %1 для записи.</translation>
+            <translation>Не удалось открыть %1 для записи</translation>
         </message>
     </context>
     <context>
@@ -5675,22 +5687,22 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="74"/>
             <source>timed out waiting for process</source>
-            <translation>истёк тайм-аут ожидания процесса</translation>
+            <translation>время ожидания процесса истекло</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="77"/>
             <source>couldn't read from the process</source>
-            <translation>не удалось прочитать данные из процесса</translation>
+            <translation>не удалось прочитать из процесса</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="80"/>
             <source>couldn't write to the process</source>
-            <translation>не удалось записать данные в процесс</translation>
+            <translation>не удалось записать в процесс</translation>
         </message>
         <message>
             <location filename="src/utils/processex/processex.cpp" line="84"/>
             <source>an unknown error occurred</source>
-            <translation>Произошла неизвестная ошибка</translation>
+            <translation>произошла неизвестная ошибка</translation>
         </message>
     </context>
     <context>
@@ -5698,12 +5710,12 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="79"/>
             <source>GOFILES</source>
-            <translation>Файлы</translation>
+            <translation>GOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="80"/>
             <source>CGOFILES</source>
-            <translation>Компилятор CGO</translation>
+            <translation>CGOFILES</translation>
         </message>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="81"/>
@@ -5713,18 +5725,18 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/profileproject/profilefile.cpp" line="82"/>
             <source>Sources</source>
-            <translation>Исходные коды</translation>
+            <translation>Исходные файлы</translation>
         </message>
     </context>
     <context>
         <name>ProjectManager</name>
         <message>
             <source>Project &lt;%1&gt;</source>
-            <translation>Проект &lt;%1&gt;</translation>
+            <translation>Проект «%1»</translation>
         </message>
         <message>
             <source>Import Directory &lt;%1&gt;</source>
-            <translation>Каталог импорта &lt;%1&gt;</translation>
+            <translation>Каталог импорта «%1»</translation>
         </message>
     </context>
     <context>
@@ -5794,7 +5806,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/3rdparty/qjson/src/parserrunnable.cpp" line="64"/>
             <source>An error occurred while parsing json: %1</source>
-            <translation>Произошла ошибка при парсинге JSON: %1</translation>
+            <translation>При парсинге JSON возникла ошибка: %1</translation>
         </message>
     </context>
     <context>
@@ -5807,7 +5819,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="60"/>
             <source>unterminated object</source>
-            <translation>незавершённый объект</translation>
+            <translation>незакрытый объект</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="61"/>
@@ -5817,7 +5829,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="62"/>
             <source>unterminated array</source>
-            <translation>незавершённый массив</translation>
+            <translation>незакрытый массив</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="63"/>
@@ -5842,17 +5854,17 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="67"/>
             <source>invalid escape sequence</source>
-            <translation>неверная последовательность экранирования</translation>
+            <translation>недопустительная последовательность экранирования</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="68"/>
             <source>invalid UTF8 string</source>
-            <translation>неверная строка UTF-8</translation>
+            <translation>недопустимая строка в кодировке UTF-8</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="69"/>
             <source>unterminated string</source>
-            <translation>незавершённая строка</translation>
+            <translation>незакрытая строка</translation>
         </message>
         <message>
             <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="70"/>
@@ -5880,12 +5892,12 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="151"/>
             <source>Help</source>
-            <translation>Помощь</translation>
+            <translation>Справка</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="330"/>
             <source>Options</source>
-            <translation>Опции</translation>
+            <translation>Параметры</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="339"/>
@@ -5900,7 +5912,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="201"/>
             <source>List All Tabs</source>
-            <translation>Перечислить все вкладки</translation>
+            <translation>Список всех вкладок</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="212"/>
@@ -5910,7 +5922,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="239"/>
             <source>Minimize</source>
-            <translation>Минимизировать</translation>
+            <translation>Свернуть</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="266"/>
@@ -5926,70 +5938,76 @@ Do you want to replace it?</source>
             <translation>Форма</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.ui" line="34"/>
             <source>SQL </source>
             <translation>SQL </translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="58"/>
             <source>Infomation</source>
             <translation>Информация</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="59"/>
             <source>Edit Table</source>
             <translation>Редактировать таблицу</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="160"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="183"/>
             <source>Tables</source>
             <translation>Таблицы</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="162"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="185"/>
             <source>Views</source>
             <translation>Представления</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="164"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="187"/>
             <source>SystemTables</source>
             <translation>Системные таблицы</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="166"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="189"/>
             <source>AllTables</source>
             <translation>Все таблицы</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="168"/>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="181"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="191"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="204"/>
             <source>Unknow</source>
             <translation>Неизвестно</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="173"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="196"/>
             <source>Table</source>
             <translation>Таблица</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="175"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="198"/>
             <source>View</source>
             <translation>Представление</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="177"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="200"/>
             <source>SystemTable</source>
             <translation>Системная таблица</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="179"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="202"/>
             <source>AllTable</source>
             <translation>Вся таблица</translation>
         </message>
         <message>
-            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="236"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="258"/>
+            <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="269"/>
             <source>%1:%2</source>
             <translation>%1:%2</translation>
+        </message>
+    </context>
+    <context>
+        <name>QSqlFileFactory</name>
+        <message>
+            <location filename="src/plugins/qsqleditor/qsqlfilefactory.cpp" line="81"/>
+            <source>QSql File</source>
+            <translation>QSql‑файл</translation>
         </message>
     </context>
     <context>
@@ -6026,7 +6044,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/quickopen/quickopenfiles.cpp" line="77"/>
             <source>Type '?' to get help on the actions you can take from here</source>
-            <translation>Введите «?» для получения справки о действиях, которые можно выполнить здесь</translation>
+            <translation>Введите «?», чтобы получить справку о доступных действиях</translation>
         </message>
     </context>
     <context>
@@ -6034,7 +6052,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/quickopen/quickopenfolder.cpp" line="71"/>
             <source>Browser Folder</source>
-            <translation>Папка браузера</translation>
+            <translation>Открыть папку в браузере</translation>
         </message>
     </context>
     <context>
@@ -6061,7 +6079,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="97"/>
             <source>Type a line number between %1 and %2 to navigate to</source>
-            <translation>Введите номер строки между %1 и %2, чтобы перейти</translation>
+            <translation>Введите номер строки от %1 до %2, чтобы перейти</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenlines.cpp" line="100"/>
@@ -6120,13 +6138,13 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="20"/>
             <source>QuickOpenFiles</source>
-            <translation>QuickOpenFiles</translation>
+            <translation>Быстрое открытие файлов</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="26"/>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="79"/>
             <source>Match case sensitive</source>
-            <translation>Регистр значим:</translation>
+            <translation>Регистрозависимое сравнение</translation>
         </message>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="35"/>
@@ -6136,7 +6154,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/quickopen/quickopenoption.ui" line="73"/>
             <source>QuickOpenEditor</source>
-            <translation>QuickOpenEditor</translation>
+            <translation>Быстрый доступ к редактору</translation>
         </message>
     </context>
     <context>
@@ -6191,7 +6209,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="46"/>
             <source>Working directory:</source>
-            <translation>Рабочая директория:</translation>
+            <translation>Рабочий каталог:</translation>
         </message>
         <message>
             <location filename="src/plugins/litedebug/selectexternaldialog.cpp" line="82"/>
@@ -6201,7 +6219,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/plugins/litedebug/selectexternaldialog.cpp" line="92"/>
             <source>Select the working directory:</source>
-            <translation>Выберите рабочую директорию:</translation>
+            <translation>Выберите рабочий каталог:</translation>
         </message>
     </context>
     <context>
@@ -6209,7 +6227,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/recentmanager.h" line="197"/>
             <source>Sessions</source>
-            <translation>Сессии</translation>
+            <translation>Сеансы</translation>
         </message>
     </context>
     <context>
@@ -6217,7 +6235,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="50"/>
             <source>Move To</source>
-            <translation>Перейти к</translation>
+            <translation>Переместить в</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="54"/>
@@ -6227,7 +6245,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="56"/>
             <source>LeftDockWidgt</source>
-            <translation>Левое док-виджет</translation>
+            <translation>Левый док‑виджет</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="58"/>
@@ -6237,7 +6255,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="60"/>
             <source>RightDockWidget</source>
-            <translation>Правый док-виджет</translation>
+            <translation>Правый док‑виджет</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="63"/>
@@ -6265,7 +6283,7 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="587"/>
             <source>SideBar Windows</source>
-            <translation>Боковая панель Окна</translation>
+            <translation>Окна боковой панели</translation>
         </message>
         <message>
             <location filename="src/liteapp/sidewindowstyle.cpp" line="588"/>
@@ -6290,17 +6308,17 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="306"/>
             <source>Top (Split)</source>
-            <translation>Верх (Разделить)</translation>
+            <translation>Верх (Разделённое)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
             <source>TopDockWidget (Split)</source>
-            <translation>Верхний плавающий виджет (Разделить)</translation>
+            <translation>Закреплённое окно сверху (Разделённое)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
             <source>TopDockWidget</source>
-            <translation>Верхний плавающий виджет</translation>
+            <translation>Закреплённое окно сверху</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="312"/>
@@ -6310,17 +6328,17 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="316"/>
             <source>Bottom (Split)</source>
-            <translation>Низ (Разделить)</translation>
+            <translation>Низ (Разделённое)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
             <source>BottomDockWidget (Split)</source>
-            <translation>Нижний плавающий виджет (Разделить)</translation>
+            <translation>Закреплённое окно снизу (Разделённое)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
             <source>BottomDockWidget</source>
-            <translation>Нижний плавающий виджет</translation>
+            <translation>Закреплённое окно снизу</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="322"/>
@@ -6330,17 +6348,17 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="326"/>
             <source>Left (Split)</source>
-            <translation>Лево (Разделить)</translation>
+            <translation>Лево (Разделённое)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
             <source>LeftDockWidget (Split)</source>
-            <translation>Левый плавающий виджет (Разделить)</translation>
+            <translation>Закреплённое окно слева (Разделённое)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
             <source>LeftDockWidget</source>
-            <translation>Левый плавающий виджет</translation>
+            <translation>Закреплённое окно слева</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="332"/>
@@ -6350,22 +6368,22 @@ Do you want to replace it?</source>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="336"/>
             <source>Right (Split)</source>
-            <translation>Право (Разделить)</translation>
+            <translation>Справа (Разделить)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
             <source>RightDockWidget (Split)</source>
-            <translation>Правый плавающий виджет (Разделить)</translation>
+            <translation>Правый панельный виджет (Разделить)</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
             <source>RightDockWidget</source>
-            <translation>Правый плавающий виджет</translation>
+            <translation>Правый панельный виджет</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="355"/>
             <source>Unsplit</source>
-            <translation>Разделить</translation>
+            <translation>Отменить разделение</translation>
         </message>
         <message>
             <location filename="src/liteapp/tooldockwidget.cpp" line="360"/>
@@ -6467,7 +6485,7 @@ Do you want to replace it?</source>
             <source>'%1' has been modified.
 Do you want to save your changes?</source>
             <translation>'%1' был изменён.
-Вы хотите сохранить изменения?</translation>
+Сохранить изменения?</translation>
         </message>
     </context>
     <context>
@@ -6503,7 +6521,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="57"/>
             <source>Zoom:</source>
-            <translation>Увеличить:</translation>
+            <translation>Масштаб:</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminaloption.ui" line="64"/>
@@ -6543,7 +6561,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="147"/>
             <source>CloseAll</source>
-            <translation>ЗакрытьВсё</translation>
+            <translation>ЗакрытьВсех</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="148"/>
@@ -6553,12 +6571,12 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="151"/>
             <source>LoadEnv</source>
-            <translation>ЗагрузитьОкружение</translation>
+            <translation>ЗагрузитьСреду</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="152"/>
             <source>Current terminal load environment from LiteIDE</source>
-            <translation>Текущий терминал загружает окружение из LiteIDE</translation>
+            <translation>Текущий терминал загружает среду из LiteIDE</translation>
         </message>
         <message>
             <location filename="src/plugins/terminal/terminal.cpp" line="157"/>
@@ -6607,7 +6625,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="80"/>
             <source>Select All</source>
-            <translation>Выбрать все</translation>
+            <translation>Выбрать всё</translation>
         </message>
         <message>
             <location filename="src/utils/textoutput/terminaledit.cpp" line="84"/>
@@ -6628,7 +6646,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/colorscheme.cpp" line="212"/>
             <source>Not a color scheme file.</source>
-            <translation>Не является файлом цветовой схемы.</translation>
+            <translation>Файл не является схемой цветов.</translation>
         </message>
     </context>
     <context>
@@ -6661,7 +6679,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="116"/>
             <source>There is already one download in progress. Please wait until it is finished.</source>
-            <translation>Уже идёт одна загрузка. Пожалуйста, подождите, пока она завершится.</translation>
+            <translation>Уже выполняется одна загрузка. Пожалуйста, подождите, пока она завершится.</translation>
         </message>
     </context>
     <context>
@@ -6700,7 +6718,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/utils/vterm/vtermwidget.cpp" line="67"/>
             <source>Select All</source>
-            <translation>Выбрать все</translation>
+            <translation>Выбрать всё</translation>
         </message>
     </context>
     <context>
@@ -6713,7 +6731,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="72"/>
             <source>Open Html File</source>
-            <translation>Открыть HTML-файл</translation>
+            <translation>Открыть HTML‑файл</translation>
         </message>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="119"/>
@@ -6723,12 +6741,12 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="169"/>
             <source>False load %1 !</source>
-            <translation>Неверная загрузка %1 !</translation>
+            <translation>Отключить загрузку %1 !</translation>
         </message>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkitbrowser.cpp" line="256"/>
             <source>Open Html or Markdown File</source>
-            <translation>Open Html or Markdown File</translation>
+            <translation>Открыть HTML‑ или Markdown‑файл</translation>
         </message>
     </context>
     <context>
@@ -6736,31 +6754,31 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/plugins/webkithtmlwidget/webkithtmlwidgetplugin.cpp" line="74"/>
             <source>Open Html or Markdown File</source>
-            <translation>Open Html or Markdown File</translation>
+            <translation>Открыть HTML‑ или Markdown‑файл</translation>
         </message>
     </context>
     <context>
         <name>WelcomeBrowser</name>
         <message>
             <source>New</source>
-            <translation>New</translation>
+            <translation>Создать</translation>
         </message>
         <message>
             <source>Open</source>
-            <translation>Open</translation>
+            <translation>Открыть</translation>
         </message>
         <message>
             <source>Open Folder</source>
-            <translation>Open Folder</translation>
+            <translation>Открыть папку</translation>
         </message>
         <message>
             <source>Options</source>
-            <translation>Options</translation>
+            <translation>Параметры</translation>
         </message>
         <message>
-            <location filename="src/plugins/welcome/welcomebrowser.cpp" line="187"/>
+            <location filename="src/plugins/welcome/welcomebrowser.cpp" line="191"/>
             <source>Welcome</source>
-            <translation>Welcome</translation>
+            <translation>Приветствие</translation>
         </message>
     </context>
     <context>
@@ -6768,7 +6786,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/plugins/welcome/welcomeplugin.cpp" line="77"/>
             <source>Welcome</source>
-            <translation>Welcome</translation>
+            <translation>Приветствие</translation>
         </message>
     </context>
     <context>
@@ -6776,42 +6794,42 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="394"/>
             <source>Detach</source>
-            <translation>Detach</translation>
+            <translation>Открепить</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="399"/>
             <source>Pin To...</source>
-            <translation>Pin To...</translation>
+            <translation>Закрепить на…</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="401"/>
             <source>Top</source>
-            <translation>Top</translation>
+            <translation>Сверху</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="402"/>
             <source>Left</source>
-            <translation>Left</translation>
+            <translation>Слева</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="403"/>
             <source>Right</source>
-            <translation>Right</translation>
+            <translation>Справа</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="404"/>
             <source>Bottom</source>
-            <translation>Bottom</translation>
+            <translation>Снизу</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="406"/>
             <source>Unpin (Dock)</source>
-            <translation>Unpin (Dock)</translation>
+            <translation>Открепить (док)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="408"/>
             <source>Close</source>
-            <translation>Close</translation>
+            <translation>Закрыть</translation>
         </message>
     </context>
     <context>
@@ -6819,29 +6837,29 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="803"/>
             <source>Detach</source>
-            <translation>Detach</translation>
+            <translation>Открепить</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="803"/>
             <source>Detach Group</source>
-            <translation>Detach Group</translation>
+            <translation>Открепить группу</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="864"/>
             <source>Unpin (Dock)</source>
-            <translation>Unpin (Dock)</translation>
+            <translation>Открепить (от док‑панели)</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="869"/>
             <source>Pin Group</source>
-            <translation>Pin Group</translation>
+            <translation>Закрепить группу</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="814"/>
             <source>Pin Group To...</source>
-            <translation>Закрепить группу на…</translation>
+            <translation>Закрепить группу в…</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="816"/>
@@ -6921,7 +6939,7 @@ Do you want to save your changes?</source>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="559"/>
             <source>Pin To...</source>
-            <translation>Закрепить на…</translation>
+            <translation>Закрепить в…</translation>
         </message>
         <message>
             <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="561"/>

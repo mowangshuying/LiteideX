@@ -3651,32 +3651,32 @@ Success: %2.</oldsource>
         <translation>Escape</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="756"/>
+        <location filename="src/liteapp/liteapp.cpp" line="782"/>
         <source>Close File</source>
         <translation>Закрити файл</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="759"/>
+        <location filename="src/liteapp/liteapp.cpp" line="785"/>
         <source>Close All Files</source>
         <translation>Закрити всі файли</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="769"/>
+        <location filename="src/liteapp/liteapp.cpp" line="795"/>
         <source>Save File</source>
         <translation>Зберегти файл</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="772"/>
+        <location filename="src/liteapp/liteapp.cpp" line="798"/>
         <source>Save File As...</source>
         <translation>Зберегти файл як...</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="775"/>
+        <location filename="src/liteapp/liteapp.cpp" line="801"/>
         <source>Save All Files</source>
         <translation>Зберегти всі файли</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="762"/>
+        <location filename="src/liteapp/liteapp.cpp" line="788"/>
         <source>Open Project</source>
         <translation>Відкрити проект...</translation>
     </message>
@@ -3686,68 +3686,68 @@ Success: %2.</oldsource>
         <translation>Параметри</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="733"/>
+        <location filename="src/liteapp/liteapp.cpp" line="759"/>
         <source>New...</source>
         <translation>Новий...</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="736"/>
+        <location filename="src/liteapp/liteapp.cpp" line="762"/>
         <source>Open File...</source>
         <translation>Відкрити файл...</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="739"/>
+        <location filename="src/liteapp/liteapp.cpp" line="765"/>
         <source>Open Folder...</source>
         <translation>Відкрити директорію...</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="742"/>
+        <location filename="src/liteapp/liteapp.cpp" line="768"/>
         <source>Open Folder in New Window...</source>
         <translation>Відкрити директорію у новому вікні...</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="747"/>
+        <location filename="src/liteapp/liteapp.cpp" line="773"/>
         <source>Close All Folders</source>
         <oldsource>Add Folder...</oldsource>
         <translation>Закрити всі директорії</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="750"/>
+        <location filename="src/liteapp/liteapp.cpp" line="776"/>
         <source>New Window</source>
         <translation>Нове вікно</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="753"/>
+        <location filename="src/liteapp/liteapp.cpp" line="779"/>
         <source>Close Window</source>
         <translation>Закрити вікно</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="764"/>
+        <location filename="src/liteapp/liteapp.cpp" line="790"/>
         <source>Save Project</source>
         <translation>Зберегти проект</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="766"/>
+        <location filename="src/liteapp/liteapp.cpp" line="792"/>
         <source>Close Project</source>
         <translation>Закрити проект</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="778"/>
+        <location filename="src/liteapp/liteapp.cpp" line="804"/>
         <source>Exit</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="784"/>
+        <location filename="src/liteapp/liteapp.cpp" line="810"/>
         <source>Full Screen</source>
         <translation>На повний екран</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="788"/>
+        <location filename="src/liteapp/liteapp.cpp" line="814"/>
         <source>About LiteIDE</source>
         <translation>Про LiteIDE</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteapp.cpp" line="794"/>
+        <location filename="src/liteapp/liteapp.cpp" line="820"/>
         <source>About Plugins</source>
         <translation>Про розширення</translation>
     </message>
@@ -4019,28 +4019,28 @@ Success: %2.</oldsource>
         <translation>Стандартна</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteappoption.cpp" line="506"/>
+        <location filename="src/liteapp/liteappoption.cpp" line="501"/>
         <source>Import Keyboard Mapping Scheme</source>
         <translation>Імпорт комбінацій клавіатури</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteappoption.cpp" line="506"/>
-        <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+        <location filename="src/liteapp/liteappoption.cpp" line="501"/>
+        <location filename="src/liteapp/liteappoption.cpp" line="535"/>
         <source>Keyboard Mapping Scheme (%1)</source>
         <translation>Файл комбінацій клавіатури (%1)</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteappoption.cpp" line="513"/>
+        <location filename="src/liteapp/liteappoption.cpp" line="508"/>
         <source>Could not read scheme from %1!</source>
         <translation>Не вдалося прочитати комбінації з %1!</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteappoption.cpp" line="540"/>
+        <location filename="src/liteapp/liteappoption.cpp" line="535"/>
         <source>Export Keyboard Mapping Scheme</source>
         <translation>Експорт комбінацій клавіатури</translation>
     </message>
     <message>
-        <location filename="src/liteapp/liteappoption.cpp" line="551"/>
+        <location filename="src/liteapp/liteappoption.cpp" line="546"/>
         <source>Could not write scheme to %1!</source>
         <translation>Помилка запису комбінацій в %1!</translation>
     </message>
@@ -4769,12 +4769,12 @@ Success: %2.</oldsource>
         <translation>Форма</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="358"/>
         <source>Load File</source>
         <translation>Завантаження файлу</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="414"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
         <source>Check and convert no printable char to &apos;.&apos;</source>
         <translation>Перевіряти та перетворювати символи, що не відображаються, в &apos;.&apos;</translation>
     </message>
@@ -4824,130 +4824,127 @@ Success: %2.</oldsource>
         <translation>Встановити типовий шрифт</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="150"/>
         <source>Editor Color Scheme</source>
         <oldsource>ColorStyle Scheme</oldsource>
-        <translation type="unfinished">Колірна схема редактора</translation>
+        <translation type="obsolete">Колірна схема редактора</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="158"/>
         <source>File:</source>
-        <translation>Файл:</translation>
+        <translation type="vanished">Файл:</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="175"/>
         <source>Edit</source>
-        <translation>Редагувати</translation>
+        <translation type="vanished">Редагувати</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="220"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="170"/>
         <source>Syntax Auto-completion</source>
         <oldsource>Auto complete brackets</oldsource>
         <translation>Автоматичне додавання парних символів</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="302"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="252"/>
         <source>Fuzzy code completion</source>
         <translation type="unfinished">Нечітке доповнення коду</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="350"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="300"/>
         <source>Clean completion cache when saving files</source>
         <translation type="unfinished">Очищати кеш автодоповнення при збереженні файлів</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="357"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="307"/>
         <source>Clean whitespace when saving files</source>
         <translation type="unfinished">Видаляти надлишкові пробіли при збереженні файлів</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="314"/>
         <source>Enable scroll wheel zooming</source>
         <translation>Включити масштабування колесом миші</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="371"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="321"/>
         <source>Add copied text into the clipboard as HTML</source>
         <translation type="unfinished">Додавати копійований текст до буфера обміну як HTML</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="378"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="328"/>
         <source>Allow vertical scrolling to the last line [*]</source>
         <translation type="unfinished">Дозволяти вертикальне гортання до останнього рядка [*]</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="437"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="387"/>
         <source>Display VisualizeWhitespace</source>
         <translation>Показувати візуалізацію пробілів</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="451"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="401"/>
         <source>Word wrap by default</source>
         <translation type="unfinished">Переносити рядки по словах</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="430"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="380"/>
         <source>Display code fold</source>
         <translation>Показувати згортання коду</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="509"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="459"/>
         <source>Display offset position</source>
         <translation>Показувати позицію в файлі</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="533"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="483"/>
         <source>File Types</source>
         <translation>Типи файлів</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="214"/>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="289"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="164"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="239"/>
         <source>Behavior</source>
         <translation>Поведінка</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="444"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="394"/>
         <source>Display EOF</source>
         <translation>Показувати символ кінця файлу (EOF)</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="458"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="408"/>
         <source>Display line numbers</source>
         <translation>Показувати номера рядків</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="465"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="415"/>
         <source>Display indent guide</source>
         <oldsource>Display indent guide </oldsource>
         <translation>Показувати відступи</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="474"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
         <source>Display right margin at column</source>
         <translation>Показувати праву межу в стовпці</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="295"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="245"/>
         <source>Automatic indentation</source>
         <oldsource>Enable automatic indentation</oldsource>
         <translation>Увімкнути автоматичні відступи</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="309"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="259"/>
         <source>Case sensitive code completion</source>
         <oldsource>Completer case sensitive</oldsource>
         <translation>Доповнювати код із врахуванням регістру</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="318"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="268"/>
         <source>Code completion prefix length:</source>
         <oldsource>Word Complete Prefix Length</oldsource>
         <translation>Довжина префіксу для автодоповнення:</translation>
     </message>
     <message>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="402"/>
-        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="424"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="352"/>
+        <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="374"/>
         <source>Display</source>
         <translation>Вигляд</translation>
     </message>
@@ -5600,7 +5597,22 @@ Do you want to replace it?</source>
 <context>
     <name>OptionsBrowser</name>
     <message>
-        <location filename="src/liteapp/optionsbrowser.cpp" line="57"/>
+        <location filename="src/liteapp/optionsbrowser.cpp" line="46"/>
+        <source>Apply</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/liteapp/optionsbrowser.cpp" line="47"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/liteapp/optionsbrowser.cpp" line="48"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Скасувати</translation>
+    </message>
+    <message>
+        <location filename="src/liteapp/optionsbrowser.cpp" line="61"/>
         <source>Options</source>
         <oldsource>Options Page</oldsource>
         <translation>Параметри</translation>
@@ -6123,69 +6135,63 @@ Do you want to replace it?</source>
         <translation type="unfinished">Форма</translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.ui" line="34"/>
-        <source>SQL </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="58"/>
-        <source>Infomation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="59"/>
-        <source>Edit Table</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="160"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="183"/>
         <source>Tables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="162"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="185"/>
         <source>Views</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="164"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="187"/>
         <source>SystemTables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="166"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="189"/>
         <source>AllTables</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="168"/>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="181"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="191"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="204"/>
         <source>Unknow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="173"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="196"/>
         <source>Table</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="175"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="198"/>
         <source>View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="177"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="200"/>
         <source>SystemTable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="179"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="202"/>
         <source>AllTable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="236"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="258"/>
+        <location filename="src/plugins/qsqleditor/qsqleditor.cpp" line="269"/>
         <source>%1:%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QSqlFileFactory</name>
+    <message>
+        <location filename="src/plugins/qsqleditor/qsqlfilefactory.cpp" line="81"/>
+        <source>QSql File</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6962,7 +6968,7 @@ Do you want to save your changes?</source>
         <translation type="vanished">Параметри</translation>
     </message>
     <message>
-        <location filename="src/plugins/welcome/welcomebrowser.cpp" line="187"/>
+        <location filename="src/plugins/welcome/welcomebrowser.cpp" line="191"/>
         <source>Welcome</source>
         <oldsource>Welcome Page</oldsource>
         <translation>Ласкаво просимо</translation>
