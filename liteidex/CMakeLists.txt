@@ -69,7 +69,7 @@ install(DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/bin"
         PATTERN "*.obj" EXCLUDE
 )
 
-install(DIRECTORY "${CMAKE_SOURCE_DIR}/deploy"
+install(DIRECTORY "${CMAKE_SOURCE_DIR}/deploy/"
         DESTINATION "./share/liteide"
         PATTERN ".git*" EXCLUDE
 )
