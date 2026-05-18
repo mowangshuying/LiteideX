@@ -9,7 +9,7 @@ LiteIDE X
 
 _LiteIDE is a simple, open source, cross-platform Go IDE._
 
-* Version: X38.6
+* Version: X38.7.1
 * Author: [mowangshuying](https://github.com/mowangshuying)
 
 ### Features
@@ -33,11 +33,6 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
     * Reload file by internal diff way
 
 * Golang support
-    * Support Go1.18~Go1.21 generics
-    * Support Go1.18 go.work
-    * Support Go1.11 Go modules
-    * Support Go1.5 Go vendor
-    * Support Go1 GOPATH
     * Golang build environment management
     * Compile and test using standard Golang tools
     * Custom GOPATH support system, IDE and project
@@ -66,11 +61,14 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 
 ### Update liteide tools for support new Golang Version	
 
-	go install github.com/visualfc/gotools@latest
 	go install github.com/visualfc/gocode@latest
+	go install github.com/visualfc/gotools@latest
+	go install github.com/go-delve/delve/cmd/dlv@latest
+	go install github.com/fatih/gomodifytags@latest
 	
-	Windows/Linux: copy GOPATH/bin gotools and gocode to liteide/bin
-	MacOS: copy GOPATH/bin gotools and gocode to LiteIDE.app/Contents/MacOS
+	#Copying .exe files to the execution directory is no longer required. Simply execute the install command above.
+	#Windows/Linux: copy GOPATH/bin gotools & gocode to liteide/bin
+	#MacOS: copy GOPATH/bin gotools & gocode to LiteIDE.app/Contents/MacOS	
 
 ### Documents
 * How to Install
