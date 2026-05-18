@@ -315,35 +315,6 @@ void DlvDebugger::stepInto()
 void DlvDebugger::stepOut()
 {
     command("stepout");
-//    QString cmd = LiteApi::getGotools(m_liteApp);
-//    QProcess process;
-//    process.setEnvironment(LiteApi::getCurrentEnvironment(m_liteApp).toStringList());
-//    QFileInfo info(m_lastFileName);
-//    process.setWorkingDirectory(info.path());
-//    QStringList args;
-//    args << "finddecl" << "-file" << info.fileName() << "-line" << QString("%1").arg(m_lastFileLine+1);
-//    process.start(cmd,args);
-//    if (!process.waitForFinished(3000)) {
-//        emit debugLog(LiteApi::DebugErrorLog,"error wait find decl process");
-//        process.kill();
-//        return;
-//    }
-//    if (process.exitCode() != 0) {
-//        emit debugLog(LiteApi::DebugErrorLog,"error get find decl result");
-//        return;
-//    }
-//    QByteArray data = process.readAll().trimmed();
-//    QStringList ar = QString::fromUtf8(data).split(" ");
-//    if (ar.size() != 4 || ar[0] != "func") {
-//        emit debugLog(LiteApi::DebugErrorLog,"error find func decl in line");
-//        return;
-//    }
-//    m_funcDecl.fileName = m_lastFileName;
-//    m_funcDecl.funcName = ar[1];
-//    m_funcDecl.start = ar[2].toInt()-1;
-//    m_funcDecl.end = ar[3].toInt()-1;
-//    m_checkFuncDecl = true;
-//    command("next");
 }
 
 void DlvDebugger::runToLine(const QString &fileName, int line)

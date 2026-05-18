@@ -939,15 +939,6 @@ inline IWebKitBrowser *getWebKitBrowser(LiteApi::IApplication *app)
     return static_cast<IWebKitBrowser*>(app->extension()->findObject("LiteApp.IWebKitBrowser"));
 }
 
-inline QString getGotools(LiteApi::IApplication *app)
-{
-#ifdef Q_OS_WIN
-    return app->toolPath()+"/gotools.exe";
-#else
-    return app->toolPath()+"/gotools";
-#endif
-}
-
 inline QString findPackageByMimeType(LiteApi::IApplication *app, const QString mimeType)
 {
     return app->mimeTypeManager()->findPackageByMimeType(mimeType);

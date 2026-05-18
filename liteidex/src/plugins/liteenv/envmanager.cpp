@@ -352,6 +352,16 @@ QProcessEnvironment EnvManager::currentEnvironment() const
     return QProcessEnvironment::systemEnvironment();
 }
 
+QString EnvManager::lookupGoBin(const QString& file)
+{
+    QProcessEnvironment env = LiteApi::getGoEnvironment(m_liteApp);
+    QString path = FileUtil::lookupGoBin(file, m_liteApp, env, true);
+    if (path.isEmpty()) {
+        path = FileUtil::lookPath(file, env, false);
+    }
+    return path;
+}
+
 void EnvManager::appLoaded()
 {
     m_appLoaded = true;

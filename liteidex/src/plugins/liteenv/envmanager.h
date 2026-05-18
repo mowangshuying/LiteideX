@@ -78,6 +78,7 @@ public:
     virtual void setCurrentEnvId(const QString &id);
     virtual LiteApi::IEnv *currentEnv() const;
     virtual QProcessEnvironment currentEnvironment() const;
+    virtual QString lookupGoBin(const QString& file);
 protected slots:
     virtual void reloadCurrentEnv();
     void appLoaded();

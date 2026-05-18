@@ -59,6 +59,7 @@ public:
     virtual IEnv *currentEnv() const = 0;
     virtual QProcessEnvironment currentEnvironment() const = 0;
     virtual void reloadCurrentEnv() = 0;
+    virtual QString lookupGoBin(const QString &file) = 0;
 signals:
     void currentEnvChanged(LiteApi::IEnv*);
 };
@@ -116,6 +117,11 @@ inline QProcessEnvironment getCurrentEnvironment(LiteApi::IApplication *app)
     pathList.removeDuplicates();
     e.insert("PATH",pathList.join(sep));
     return e;
+}
+
+inline QString getGotools(LiteApi::IApplication* app)
+{
+    return getEnvManager(app)->lookupGoBin("gotools");
 }
 
 inline QString getDefaultGOOS()
