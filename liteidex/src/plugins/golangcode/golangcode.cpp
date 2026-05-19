@@ -551,6 +551,8 @@ void GolangCode::setCompleter(LiteApi::ICompleter *completer)
 
 void GolangCode::prefixChanged(QTextCursor cur,QString pre,bool force)
 {
+    qDebug() << "prefixChanged ----------";
+    qDebug() << "cur pos:" << cur.position() << "pre:" << pre << "force:" << force;
     if (m_completer->completionContext() != LiteApi::CompleterCodeContext) {
         return;
     }
@@ -558,13 +560,12 @@ void GolangCode::prefixChanged(QTextCursor cur,QString pre,bool force)
     if (m_gocodeCmd.isEmpty()) {
         return;
     }
-//    if (m_completer->completer()->completionPrefix().startsWith(pre)) {
-//       // qDebug() << pre << m_completer->completer()->completionPrefix();
-//       // return;
-//    }
+
+    qDebug() << "gocode cmd:" << m_gocodeCmd;
     if (!m_gocodeProcess->isStop()) {
         m_gocodeProcess->stopAndWait(30,100);
     }
+
     int offset = -1;
     if (pre.endsWith('.')) {
         m_preWord = pre;
@@ -573,6 +574,7 @@ void GolangCode::prefixChanged(QTextCursor cur,QString pre,bool force)
         m_preWord.clear();
     } else {
         if (!force) {
+            qDebug() << "prefixChanged" << "pre:" << pre << "force:" << force;
             return;
         }
         m_preWord.clear();
@@ -582,6 +584,9 @@ void GolangCode::prefixChanged(QTextCursor cur,QString pre,bool force)
         }
     }
 
+    //qDebug() << "pre word" << m_preWord;
+
+    qDebug() << "prefixChanged" << "preWord:" << m_preWord << "pre:" << pre << "force:" << force;
     m_prefix = pre;
     m_lastPrefix = m_prefix;
 
@@ -618,6 +623,8 @@ void GolangCode::prefixChanged(QTextCursor cur,QString pre,bool force)
     args << "-f" << "csv" << "autocomplete" << m_fileInfo.fileName() << QString::number(m_writeData.length()+offset);
     m_writeData = src.toUtf8();
     m_gocodeProcess->setWorkingDirectory(m_fileInfo.absolutePath());
+
+    qDebug() << m_gocodeCmd << args;
     m_gocodeProcess->startEx(m_gocodeCmd,args);
 }
 
@@ -632,6 +639,9 @@ void GolangCode::started()
         m_gocodeProcess->closeWriteChannel();
         return;
     }
+
+    qDebug() << "started ----------";
+    qDebug() << "write data:" << m_writeData;
     m_gocodeProcess->write(m_writeData);
     m_gocodeProcess->closeWriteChannel();
     m_writeData.clear();
@@ -653,12 +663,18 @@ void GolangCode::finished(int code,QProcess::ExitStatus)
     }
 
     QByteArray read = m_gocodeProcess->readAllStandardOutput();
+    qDebug() << "finished ----------";
+    //qDebug() << "read:" << read;
 
     QList<QByteArray> all = read.split('\n');
     //func,,Fprint,,func(w io.Writer, a ...interface{}) (n int, error os.Error)
     //type,,Formatter,,interface
     //const,,ModeExclusive,,
     //var,,Args,,[]string
+
+    for (int i = 0; i < all.count(); i++) {
+       qDebug() << "all[" << i << "]:" << all.at(i);
+    }
     int n = 0;
     QIcon icon;
     QStandardItem *root= m_completer->findRoot(m_preWord);
