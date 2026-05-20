@@ -124,6 +124,16 @@ inline QString getGotools(LiteApi::IApplication* app)
     return getEnvManager(app)->lookupGoBin("gotools");
 }
 
+inline QString getGoCode(LiteApi::IApplication* app)
+{
+    return getEnvManager(app)->lookupGoBin("gocode");
+}
+
+inline QString getGoPls(LiteApi::IApplication* app)
+{
+    return getEnvManager(app)->lookupGoBin("gopls");
+}
+
 inline QString getDefaultGOOS()
 {
     const char* goos = "";

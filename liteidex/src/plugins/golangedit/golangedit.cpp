@@ -75,11 +75,12 @@ static QString formatInfo(const QString &info)
 
 static QString getGocode(LiteApi::IApplication *app)
 {
-#ifdef Q_OS_WIN
-    return app->toolPath()+"/gocode.exe";
-#else
-    return app->toolPath()+"/gocode";
-#endif
+//#ifdef Q_OS_WIN
+//    return app->toolPath()+"/gocode.exe";
+//#else
+//    return app->toolPath()+"/gocode";
+//#endif
+    return LiteApi::getGoCode(app);
 }
 
 GolangEdit::GolangEdit(LiteApi::IApplication *app, QObject *parent) :
