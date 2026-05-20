@@ -65,6 +65,7 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 	go install github.com/visualfc/gotools@latest
 	go install github.com/go-delve/delve/cmd/dlv@latest
 	go install github.com/fatih/gomodifytags@latest
+	go install golang.org/x/tools/gopls@latest
 	
 	#Copying .exe files to the execution directory is no longer required. Simply execute the install command above.
 	#Windows/Linux: copy GOPATH/bin gotools & gocode to liteide/bin
