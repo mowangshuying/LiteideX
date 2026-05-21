@@ -8,6 +8,7 @@ GolangPls::GolangPls(LiteApi::IApplication* app, QObject* parent)
 {
 	m_liteApp = app;
 	m_nRequestId = 0;
+	m_completer = nullptr;
 	__init();
 }
 
@@ -21,15 +22,7 @@ void GolangPls::__init()
 	m_goplsPath = LiteApi::getGoPls(m_liteApp);
 	connect(m_process, &Process::started, this, &GolangPls::__onStarted);
 	connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(__onFinished(int, QProcess::ExitStatus)));
-	//connect(m_process, &Process::readyReadStandardOutput, this, [=]() {
-	//	QByteArray output = m_process->readAllStandardOutput();
-	//	qDebug() << "output£º" << output;
-	//	});
-
-	//connect(m_process, &Process::readyReadStandardError, this, [=]() {
-	//	QByteArray output = m_process->readAllStandardError();
-	//	qDebug() << "output£º" << output;
-	//	});
+	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
 }
 
 void GolangPls::__start()
@@ -43,7 +36,7 @@ void GolangPls::__start()
 
 void GolangPls::__stop()
 {
-
+	m_process->stop(3000);
 }
 
 int GolangPls::__nextId()
@@ -103,12 +96,104 @@ void GolangPls::__initLSP()
 	clientInfo["name"] = "gopls-plugin";
 	clientInfo["version"] = "1.0.0";
 	varmap["clientInfo"] = clientInfo;
-	varmap["rootUri"] = "file://D:/2.WorkSpace/third_party/___Go";
+	varmap["rootUri"] = "file://E:/code/___Go";
 
 	QByteArray resp = __sendLSPBlocking(LSPMethod::Initialize, varmap);
-	//qDebug() << "resp:" << resp;
+	__sendLSP(LSPMethod::Initialized, QVariantMap());
+}
 
-	//QByteArray readall = m_process->readAll();
+void GolangPls::__setCompleter(LiteApi::ICompleter* completer)
+{
+	if (m_completer != nullptr)
+		disconnect(m_completer, 0, this, 0);
+
+    m_completer = completer;
+	if (m_completer != nullptr)
+	{
+		m_completer->setSearchSeparator(false);
+		m_completer->setExternalMode(true);
+		connect(m_completer, SIGNAL(prefixChanged(QTextCursor, QString, bool)), this, SLOT(__onPrefixChanged(QTextCursor, QString, bool)));
+		connect(m_completer, SIGNAL(wordCompleted(QString, QString, QString)), this, SLOT(__onWordCompleted(QString, QString, QString)));
+	}
+}
+
+void GolangPls::__completion(QString filePath, int line, int column)
+{
+	QVariantMap params;
+	QVariantMap textDocument;
+	textDocument["uri"] = "file://" + filePath;
+	params["textDocument"] = textDocument;
+
+	QVariantMap position;
+    position["line"] = line;
+    position["character"] = column;
+	QByteArray resp = __sendLSPBlocking("textDocument/completion", params);
+	//qDebug() << "-----%%%%%-----\n" << resp << "-----%%%%%-----\n";
+	qDebug() << "-----%%%%%-----\n";
+	
+	QJson::Parser parser;
+    QVariantMap result = parser.parse (resp);
+
+	qDebug() << "-----%%%%%-----\n";
+}
+
+
+//public slots:
+void GolangPls::__onStarted()
+{
+	qDebug() << __FUNCTION__;
+}
+
+void GolangPls::__onFinished(int code, QProcess::ExitStatus status)
+{
+	qDebug() << __FUNCTION__;
+}
+
+void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
+{
+	m_editor= LiteApi::getTextEditor(editor);
+	if (m_editor == nullptr)
+		return;
+
+	if (editor->mimeType() == "text/x-gosrc") {
+		LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
+		__setCompleter(completer);
+	}
+	else if (editor->mimeType() == "browser/goplay") {
+		LiteApi::IEditor* pedit = LiteApi::findExtensionObject<LiteApi::IEditor*>(m_liteApp->extension(), "LiteApi.Goplay.IEditor");
+		if (pedit && pedit->mimeType() == "text/x-gosrc") {
+			editor = pedit;
+			LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
+			__setCompleter(completer);
+		}
+	}
+	else {
+		__setCompleter(nullptr);
+		return;
+	}
+
+	QString filePath = editor->filePath();
+	if (filePath.isEmpty())
+		return;
+
+	m_fileInfo.setFile(filePath);
+}
+
+void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
+{
+	qDebug() << "__onPrefixChanged ----------\n";
+	QString txt = cur.document()->toPlainText();
+	txt.replace("\r\n", "\n");
+	//QByteArray data =  txt.left(cur.position()).toUtf8();
+
+	// row and col
+	int row = cur.blockNumber();      // ÐÐºÅ
+	int col = cur.columnNumber();     // ÁÐºÅ
+	__completion(m_fileInfo.filePath(), row, col);
+}
+
+void GolangPls::__onWordCompleted(QString, QString, QString)
+{
 
 }
 

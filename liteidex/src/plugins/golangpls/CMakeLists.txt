@@ -32,4 +32,5 @@ target_link_libraries(${TGT} PRIVATE
     qjson
     liteapi
     liteenvapi
+    liteeditorapi
 )

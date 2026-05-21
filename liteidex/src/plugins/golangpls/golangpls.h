@@ -4,6 +4,7 @@
 #include "liteapi/liteapi.h"
 #include "liteenvapi/liteenvapi.h"
 #include "processex/processex.h"
+#include "liteeditorapi/liteeditorapi.h"
 //#include "qjson/include/QJson/Parser"
 //#include "qjson/include/QJson/Serializer"
 
@@ -53,21 +54,28 @@ public:
 
 	void __initLSP();
 
-	//extOutput
-public slots:
-	void __onStarted()
-	{
-		qDebug() << __FUNCTION__;
-	}
+	void __setCompleter(LiteApi::ICompleter* completer);
 
-	void __onFinished(int code, QProcess::ExitStatus status)
-	{
-		qDebug() << __FUNCTION__;
-	}
+	void __completion(QString filePath, int line, int column);
+
+public slots:
+	void __onStarted();
+
+	void __onFinished(int code, QProcess::ExitStatus status);
+
+	void __onCurrentEditorChanged(LiteApi::IEditor* editor);
+
+	void __onPrefixChanged(QTextCursor cur,QString pre,bool force);
+
+	void __onWordCompleted(QString, QString, QString);
 protected:
 	Process* m_process;
 	int m_nRequestId;
 	QString m_goplsPath;
 	LiteApi::IApplication* m_liteApp;
+	LiteApi::IEditor* m_editor;
+	QFileInfo m_fileInfo;
+
+	LiteApi::ICompleter* m_completer;
 };
 
