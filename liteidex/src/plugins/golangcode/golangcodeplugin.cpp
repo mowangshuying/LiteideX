@@ -82,6 +82,12 @@ void GolangCodePlugin::editorCreated(LiteApi::IEditor *editor)
 
 void GolangCodePlugin::currentEditorChanged(LiteApi::IEditor *editor)
 {
+    /// debug gopls disable gocode;
+#ifdef _DEBUG
+    return;
+#endif
+
+
     if (editor) {
         if (editor->mimeType() == "text/x-gosrc") {
             LiteApi::ICompleter *completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor,"LiteApi.ICompleter");

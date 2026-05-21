@@ -2,6 +2,7 @@
 #include "qjson/include/QJson/Parser"
 #include "qjson/include/QJson/Serializer"
 #include <QEventLoop>
+#include <QThread>
 
 GolangPls::GolangPls(LiteApi::IApplication* app, QObject* parent)
 	: QObject(parent)
@@ -22,15 +23,17 @@ void GolangPls::__init()
 	m_goplsPath = LiteApi::getGoPls(m_liteApp);
 	connect(m_process, &Process::started, this, &GolangPls::__onStarted);
 	connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(__onFinished(int, QProcess::ExitStatus)));
+	connect(m_process, &Process::readyReadStandardOutput, this, &GolangPls::__onReadyReadStandardOutput);
+	connect(m_process, &Process::readyReadStandardError, this, &GolangPls::__onReadyReadStandardError);
+
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
+	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorCreated, this, &GolangPls::__onEditorCreated);
 }
 
 void GolangPls::__start()
 {
 	QStringList args;
-	//QString gopls = LiteApi::getGoPls(m_liteApp);
 	m_process->startEx(m_goplsPath, args);
-
 	__initLSP();
 }
 
@@ -45,68 +48,80 @@ int GolangPls::__nextId()
 	return m_nRequestId;
 }
 
-void GolangPls::__send(QVariantMap msg)
+void GolangPls::__regCall(QString method, LspCall lspCall)
+{
+	m_methodCallMap[method] = lspCall;
+}
+
+void GolangPls::__request(QVariantMap msg)
 {
 	QJson::Serializer s;
 	QByteArray body = s.serialize(msg);
 	QByteArray header = QString::asprintf("Content-Length:%d\r\n\r\n", QString(body).length()).toUtf8();
-
 	QByteArray data = header + body;
-
 	m_process->write(data);
 }
 
-void GolangPls::__sendLSP(QString method, QVariantMap params)
+void GolangPls::__requestLSP(QString method, QVariantMap params, int id)
 {
 	QVariantMap msg;
 	msg["jsonrpc"] = "2.0";
-	msg["id"] = __nextId();
+	msg["id"] = id;
 	msg["method"] = method;
 	msg["params"] = params;
-	__send(msg);
+	__request(msg);
 }
 
-QByteArray GolangPls::__sendLSPBlocking(QString method, QVariantMap params, int nTimeOutMs)
+void GolangPls::__requestLSP(QString method, QVariantMap params, LspCall lspCall)
 {
-	QEventLoop loop;
-	connect(m_process, &Process::readyReadStandardOutput, &loop, &QEventLoop::quit);
-	connect(m_process, &Process::readyReadStandardError, &loop, &QEventLoop::quit);
-
-	__sendLSP(method, params);
-	int nRet = loop.exec(QEventLoop::ExcludeUserInputEvents);
-	if (nRet == -1)
+	int id = __nextId();
+	__requestLSP(method, params, id);
+	if (lspCall != nullptr)
 	{
-		return QByteArray();
+		LspCallData call;
+		call._dt = QDateTime::currentMSecsSinceEpoch();
+		call._lspCall = lspCall;
+		m_requestCallMap[id] = call;
 	}
+}
 
-	QByteArray output = m_process->readAllStandardOutput();
-	if (output.isEmpty())
+void GolangPls::__onMsg(QString method, QVariantMap msg)
+{
+	auto itr = m_methodCallMap.find(method);
+	if (itr != m_methodCallMap.end())
 	{
-		output = m_process->readAllStandardError();
+		auto call = (*itr);
+		call(this, msg);
 	}
-	return output;
+}
+
+void GolangPls::__onMsg(int msgId, QVariantMap msg)
+{
+	auto itr = m_requestCallMap.find(msgId);
+	if (itr != m_requestCallMap.end())
+	{
+		(*itr)._lspCall(this, msg);
+		m_requestCallMap.erase(itr);
+	}
 }
 
 void GolangPls::__initLSP()
 {
-	QVariantMap varmap;
-	varmap["processId"] = m_process->processId();
+	QVariantMap _map;
+	_map["processId"] = m_process->processId();
 	
 	QVariantMap clientInfo;
 	clientInfo["name"] = "gopls-plugin";
 	clientInfo["version"] = "1.0.0";
-	varmap["clientInfo"] = clientInfo;
-	varmap["rootUri"] = "file://E:/code/___Go";
-
-	QByteArray resp = __sendLSPBlocking(LSPMethod::Initialize, varmap);
-	__sendLSP(LSPMethod::Initialized, QVariantMap());
+	_map["clientInfo"] = clientInfo;
+	_map["rootUri"] = "file://D:/2.WorkSpace/third_party/___Go";
+	__requestLSP(LSPMethod::Initialize, _map, [=](GolangPls* pls, QVariantMap __map) {
+		pls->__requestLSP(LSPMethod::Initialized, QVariantMap());
+		});
 }
 
 void GolangPls::__setCompleter(LiteApi::ICompleter* completer)
 {
-	if (m_completer != nullptr)
-		disconnect(m_completer, 0, this, 0);
-
     m_completer = completer;
 	if (m_completer != nullptr)
 	{
@@ -127,14 +142,147 @@ void GolangPls::__completion(QString filePath, int line, int column)
 	QVariantMap position;
     position["line"] = line;
     position["character"] = column;
-	QByteArray resp = __sendLSPBlocking("textDocument/completion", params);
-	//qDebug() << "-----%%%%%-----\n" << resp << "-----%%%%%-----\n";
-	qDebug() << "-----%%%%%-----\n";
-	
-	QJson::Parser parser;
-    QVariantMap result = parser.parse (resp);
+	params["position"] = position;
+	__requestLSP("textDocument/completion", params, [=](GolangPls* pls, QVariantMap __map) {
 
-	qDebug() << "-----%%%%%-----\n";
+			if (!__map.contains("result"))
+			{
+				return;
+			}
+
+			QVariantMap __result = __map["result"].toMap();
+			if (!__result.contains("items"))
+			{
+				qDebug() << "can't find items";
+				return;
+			}
+
+			QVariantList __items = __result["items"].toList();
+			for (int i = 0; i < __items.size(); i++)
+			{
+				QVariantMap __item = __items[i].toMap();
+				//xItem["label"].toString();
+				qDebug() << "label:" << __item["label"].toString() << "kind:" << __item["kind"].toString() << "detail:" << __item["detail"].toString();
+			}
+
+	});
+
+	//qDebug() << "-----%%%%%-----\n" << resp << "-----%%%%%-----\n";
+	//qDebug() << "-----%%%%%-----\n";
+	
+	//QString s = QString::fromUtf8(resp);
+	//s.remove(s.indexOf("{"));
+
+	//QByteArray sb = s.toUtf8();
+
+	//QVector<QByteArray> sbs = parseLspData(resp);
+	//for (int i = 0; i < sbs.size(); i++)
+	//{
+	//	QJson::Parser parser;
+	//	QVariantMap xResp = parser.parse(sbs[i]).toMap();
+	//	if (!xResp.contains("result"))
+	//	{
+	//		qDebug() << "can't find result.";
+	//		//return;
+
+	//		if (xResp["method"] == "window/logMessage" || xResp["method"] == "windows/showMessage")
+	//		{
+	//			qDebug() << xResp["params"].toMap()["message"].toString();
+	//		}
+
+	//		continue;
+	//	}
+
+	//	QVariantMap xResult = xResp["result"].toMap();
+	//	if (!xResult.contains("items"))
+	//	{
+	//		qDebug() << "can't find items";
+	//		continue;
+	//	}
+
+	//	QVariantList xItems = xResult["items"].toList();
+	//	for (int i = 0; i < xItems.size(); i++)
+	//	{
+	//		QVariantMap xItem = xItems[i].toMap();
+	//		//xItem["label"].toString();
+	//		qDebug() << "label:" << xItem["label"].toString() << "kind:" << xItem["kind"].toString() << "detail:" << xItem["detail"].toString();
+	//	}
+	//}
+
+	//resp["result"].toList();
+
+
+	//qDebug() << "-----%%%%%-----\n";
+}
+
+QVector<QByteArray> GolangPls::parseLspData(QByteArray& rawData)
+{
+	QVector<QByteArray> _bytes;
+
+	while (!rawData.isEmpty()) {
+		int headerEnd = rawData.indexOf("\r\n\r\n");
+		if (headerEnd == -1) {
+			break;
+		}
+
+		QByteArray header = rawData.left(headerEnd);
+		if (!header.startsWith("Content-Length:")) {
+			rawData.clear();
+			break;
+		}
+
+		int contentLength = -1;
+		for (const QByteArray& line : header.split('\n')) {
+			if (line.startsWith("Content-Length:")) {
+				contentLength = line.mid(16).trimmed().toInt();
+				break;
+			}
+		}
+
+		if (contentLength == -1) {
+			rawData.clear();
+			break;
+		}
+
+		int totalLength = headerEnd + 4 + contentLength;
+		if (rawData.size() < totalLength) {
+			break;
+		}
+
+		QByteArray jsonBody = rawData.mid(headerEnd + 4, contentLength);
+		_bytes.push_back(jsonBody);
+		rawData.remove(0, totalLength);
+	}
+
+	return _bytes;
+}
+
+void GolangPls::__didOpen(QString filepath, QString content, int version)
+{
+	QVariantMap params;
+	QVariantMap textDocument;
+	textDocument["uri"] = "file://" + filepath;
+	textDocument["languageId"] = "go";
+	textDocument["version"] = version;
+	textDocument["text"] = content;
+	params["textDocument"] = textDocument;
+	__requestLSP(LSPMethod::TextDocumentDidOpen, params);
+}
+
+void GolangPls::__didChange(QString filepath, QString content, int version)
+{
+	QVariantMap params;
+	QVariantMap textDocument;
+	textDocument["uri"] = "file://" + filepath;
+	textDocument["version"] = version;
+	params["textDocument"] = textDocument;
+
+	QVariantList contentChanges;
+	QVariantMap text;
+	text["text"] = content;
+	contentChanges.append(text);
+	params["contentChanges"] = contentChanges;
+	__requestLSP(LSPMethod::TextDocumentDidChange, params);
 }
 
 
@@ -179,21 +327,76 @@ void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 	m_fileInfo.setFile(filePath);
 }
 
+void GolangPls::__onEditorCreated(LiteApi::IEditor* editor)
+{
+	QString filePath = editor->filePath();
+	__didOpen(filePath, LiteApi::getLiteEditor(editor)->document()->toPlainText(), 1);
+}
+
+void GolangPls::__onEditorAboutToClose(LiteApi::IEditor* editor)
+{
+}
+
 void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
 {
 	qDebug() << "__onPrefixChanged ----------\n";
-	QString txt = cur.document()->toPlainText();
-	txt.replace("\r\n", "\n");
-	//QByteArray data =  txt.left(cur.position()).toUtf8();
+	QString txt = m_editor->document()->toPlainText();
+
+	//static int version = 0;
+	__didChange(m_fileInfo.path(), txt, __nextId());
+
+	qDebug() << " -------- txt ----------";
+	qDebug() << txt;
 
 	// row and col
-	int row = cur.blockNumber();      // ÐÐºÅ
-	int col = cur.columnNumber();     // ÁÐºÅ
+	int row = cur.blockNumber();      
+	int col = cur.columnNumber();        
+	qDebug() << "row:" << row << "col:" << col;
 	__completion(m_fileInfo.filePath(), row, col);
 }
 
 void GolangPls::__onWordCompleted(QString, QString, QString)
 {
 
+}
+
+void GolangPls::__onReadyReadStandardOutput()
+{
+	QByteArray output = m_process->readAllStandardOutput();
+	if (output.isEmpty())
+	{
+		return;
+	}
+
+	___lspBuffer.append(output);
+	QVector<QByteArray> bytes =  parseLspData(___lspBuffer);
+	for (int i = 0; i < bytes.size(); i++)
+	{
+		QJson::Parser __p;
+		QVariantMap __map = __p.parse(bytes[i]).toMap();
+		if (__map.isEmpty())
+		{
+			continue;
+		}
+
+		if (__map.contains("id"))
+		{
+			int id = __map["id"].toInt();
+			__onMsg(id, __map);
+			continue;
+		}
+
+		if (__map.contains("method"))
+		{
+			QString __method = __map["method"].toString();
+			__onMsg(__method, __map);
+			continue;
+		}
+	}
+}
+
+void GolangPls::__onReadyReadStandardError()
+{
+	//int i = 0;
 }
 

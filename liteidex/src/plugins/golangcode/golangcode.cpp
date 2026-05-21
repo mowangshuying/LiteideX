@@ -551,6 +551,10 @@ void GolangCode::setCompleter(LiteApi::ICompleter *completer)
 
 void GolangCode::prefixChanged(QTextCursor cur,QString pre,bool force)
 {
+#ifdef _DEBUG
+    return;
+#endif
+
     qDebug() << "prefixChanged ----------";
     qDebug() << "cur pos:" << cur.position() << "pre:" << pre << "force:" << force;
     if (m_completer->completionContext() != LiteApi::CompleterCodeContext) {
