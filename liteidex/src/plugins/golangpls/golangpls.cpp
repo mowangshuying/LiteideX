@@ -3,6 +3,7 @@
 #include "qjson/include/QJson/Serializer"
 #include <QEventLoop>
 #include <QThread>
+#include "golangastapi/golangastapi.h"
 
 GolangPls::GolangPls(LiteApi::IApplication* app, QObject* parent)
 	: QObject(parent)
@@ -22,6 +23,13 @@ void GolangPls::__init()
 {
 	m_process = new Process(this);
 	m_goplsPath = LiteApi::getGoPls(m_liteApp);
+	m_golangAst = LiteApi::findExtensionObject<LiteApi::IGolangAst*>(m_liteApp, "LiteApi.IGolangAst");
+
+	__regCall(LSPMethod::WindowShowMessage, std::bind(&GolangPls::__onWindowShowMessage, this, std::placeholders::_1, std::placeholders::_2 ));
+    __regCall(LSPMethod::WindowLogMessage, std::bind(&GolangPls::__onWindowLogMessage, this, std::placeholders::_1, std::placeholders::_2 ));
+	__regCall(LSPMethod::TextDocumentPublishDiagnostics, std::bind(&GolangPls::__onTextDocumentPublishDiagnostics, this, std::placeholders::_1, std::placeholders::_2));
+
+
 	connect(m_process, &Process::started, this, &GolangPls::__onStarted);
 	connect(m_process, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(__onFinished(int, QProcess::ExitStatus)));
 	connect(m_process, &Process::readyReadStandardOutput, this, &GolangPls::__onReadyReadStandardOutput);
@@ -30,20 +38,22 @@ void GolangPls::__init()
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorCreated, this, &GolangPls::__onEditorCreated);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorAboutToClose, this, &GolangPls::__onEditorAboutToClose);
+	connect(m_liteApp->fileManager(), &LiteApi::IFileManager::folderOpened, this, &GolangPls::__onFolderOpened);
 }
 
-void GolangPls::__start()
+void GolangPls::__start(const QString& folder)
 {
+	__stop();
+
 	QStringList args;
 	args << "-rpc.trace";
-	//args << "-vv";
 	m_process->startEx(m_goplsPath, args);
-	__initLSP();
+	__initLSP(folder);
 }
 
 void GolangPls::__stop()
 {
-	m_process->stop(3000);
+	m_process->stop(200);
 }
 
 int GolangPls::__nextId()
@@ -129,7 +139,44 @@ void GolangPls::__onMsg(int msgId, QVariantMap msg)
 	}
 }
 
-void GolangPls::__initLSP()
+void GolangPls::__onWindowShowMessage(GolangPls* pls, QVariantMap msg)
+{
+	//QString log = QString::asprintf("window/showMessage: %s", msg["params"].toMap()["message"].toString().toUtf8().data());
+	//m_liteApp->appendLog("GolangPls", log);
+	QString message = msg["params"].toMap()["message"].toString();
+	// remove the last \n
+    //message = message.trimmed();
+	// remove 2026/05/23 13:10:52 background imports cache refresh starting
+	// remove timestamp
+    message = message.remove(QRegExp("^\\d{4}/\\d{2}/\\d{2} \\d{2}:\\d{2}:\\d{2} "));
+	message = message.trimmed();
+    m_liteApp->appendLog("GolangPls.WindowShowMessage", message);
+}
+
+void GolangPls::__onWindowLogMessage(GolangPls* pls, QVariantMap msg)
+{
+	//QString log = QString::asprintf("window/logMessage: %s", msg["params"].toMap()["message"].toString().toUtf8().data());
+//m_liteApp->appendLog("GolangPls", log);
+	QString message = msg["params"].toMap()["message"].toString();
+	// remove the last \n
+	//message = message.trimmed();
+	// remove 2026/05/23 13:10:52 background imports cache refresh starting
+	// remove timestamp
+	message = message.remove(QRegExp("^\\d{4}/\\d{2}/\\d{2} \\d{2}:\\d{2}:\\d{2} "));
+	message = message.trimmed();
+	m_liteApp->appendLog("GolangPls.WindowLogMessage", message);
+}
+
+void GolangPls::__onTextDocumentPublishDiagnostics(GolangPls* pls, QVariantMap msg)
+{	
+	//QJson::Serializer s;
+	//QVariantList diagnostics = msg["params"].toMap()["diagnostics"].toList();
+	//QString message = s.serialize(diagnostics);
+    //m_liteApp->appendLog("GolangPls", message);
+
+}
+
+void GolangPls::__initLSP(const QString& workFolder)
 {
 	QVariantMap _map;
 	_map["processId"] = m_process->processId();
@@ -138,7 +185,7 @@ void GolangPls::__initLSP()
 	clientInfo["name"] = "gopls-plugin";
 	clientInfo["version"] = "1.0.0";
 	_map["clientInfo"] = clientInfo;
-	_map["rootUri"] = "file:///E:/code/___Go";
+	_map["rootUri"] = "file:///" + workFolder;
 	__requestLSP(LSPMethod::Initialize, _map, [=](GolangPls* pls, QVariantMap __map) {
 		pls->_notify(LSPMethod::Initialized, QVariantMap());
 		});
@@ -182,11 +229,87 @@ void GolangPls::__completion(QString filePath, int line, int column)
 			}
 
 			QVariantList __items = __result["items"].toList();
+			int n = 0;
+
+			QStandardItem* root = m_completer->findRoot(m_preWord);
 			for (int i = 0; i < __items.size(); i++)
 			{
 				QVariantMap __item = __items[i].toMap();
 				//xItem["label"].toString();
 				qDebug() << "label:" << __item["label"].toString() << "kind:" << __item["kind"].toString() << "detail:" << __item["detail"].toString();
+
+				LiteApi::ASTTAG_ENUM tag = LiteApi::TagNone;
+				int kind = __item["kind"].toString().toInt();
+				QString sKind = "";
+
+				QString word = __item["label"].toString();
+				QString info = __item["detail"].toString();
+				//	1 = Text
+				//	2 = Method
+				//	3 = Function      
+				//	4 = Constructor
+				//	5 = Field
+				//	6 = Variable
+				//	7 = Class
+				//	8 = Interface
+				//	9 = Module
+				//	10 = Property
+				//	11 = Unit
+				//	12 = Value
+				//	13 = Enum
+				//	14 = Keyword
+				//	15 = Snippet
+				//	16 = Color
+				//	17 = File
+				//	18 = Reference
+				//	19 = Folder
+				//	20 = EnumMember
+				//	21 = Constant
+				//	22 = Struct
+				//	23 = Event
+				//	24 = Operator
+				//	25 = TypeParameter
+				switch (kind)
+				{
+				//case 1:
+					//break;
+				case 2:
+					tag = LiteApi::TagFunc;
+					sKind = "Method";
+					break;
+				case 3:
+					tag = LiteApi::TagFunc;
+					sKind = "Function";
+					break;
+				case 6:
+					tag = LiteApi::TagValue;
+					sKind = "Variable";
+					break;
+				case 8:
+					tag = LiteApi::TagInterface;
+					sKind = "Interface";
+					break;
+				case 21:
+					tag = LiteApi::TagConst;
+					sKind = "Constant";
+					break;
+				case 22:
+					tag = LiteApi::TagStruct;
+                    sKind = "Struct";
+					break;
+				default:
+					tag = LiteApi::TagType;
+					break;
+				}
+				
+				QIcon icon = m_golangAst->iconFromTagEnum(tag, true);
+				m_completer->appendChildItem(root, word, sKind, info, icon, true);
+				n++;
+			}
+
+			if (n >= 1) {
+				m_completer->updateCompleterModel();
+				m_completer->showPopup();
 			}
 
 	});
@@ -325,24 +448,43 @@ void GolangPls::__onEditorAboutToClose(LiteApi::IEditor* editor)
     __didClose(filePath);
 }
 
+void GolangPls::__onFolderOpened(const QString& folder)
+{
+	__start(folder);
+}
+
 void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
 {
-	qDebug() << "__onPrefixChanged ----------\n";
+	
+	int offset = -1;
+	if (pre.endsWith('.')) {
+		m_preWord = pre;
+		offset = 0;
+	}
+	else if (pre.length() == m_completer->prefixMin()) {
+		m_preWord.clear();
+	}
+	else {
+		if (!force) {
+			return;
+		}
+		m_preWord.clear();
+		int index = pre.lastIndexOf(".");
+		if (index != -1) {
+			m_preWord = pre.left(index);
+		}
+	}
+
+	if (!m_preWord.isEmpty()) {
+		m_completer->clearItemChilds(m_preWord);
+	}
+
 	QString txt = m_editor->document()->toPlainText();
-	//__didOpen(m_fileInfo.filePath(), txt, __nextId());
-	//qDebug() << " -------- txt ----------";
-	//qDebug() << txt;
-
-	//QThread::msleep(300);
 	__didChange(m_fileInfo.filePath(), txt, __nextVersion());
-
-	// row and col
+	
 	int row = cur.blockNumber();      
 	int col = cur.columnNumber();        
-	//qDebug() << "row:" << row << "col:" << col;
 	__completion(m_fileInfo.filePath(), row, col);
-
-	//__didClose(m_fileInfo.path());
 }
 
 void GolangPls::__onWordCompleted(QString, QString, QString)
@@ -389,6 +531,6 @@ void GolangPls::__onReadyReadStandardOutput()
 
 void GolangPls::__onReadyReadStandardError()
 {
-	//int i = 0;
+	
 }
 

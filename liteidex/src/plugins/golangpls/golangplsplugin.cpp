@@ -12,7 +12,6 @@ bool GolangPlsPlugin::load(LiteApi::IApplication* app)
 {
 	m_liteApp = app;
 	m_golangPLS = new GolangPls(app);
-	m_golangPLS->__start();
 	return true;
 }
 

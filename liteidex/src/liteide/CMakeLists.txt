@@ -47,7 +47,7 @@ add_custom_command(TARGET liteide POST_BUILD
             "$<TARGET_FILE:fakevimedit>"
             "$<TARGET_FILE:filebrowser>"
             "$<TARGET_FILE:golangast>"
-            "$<TARGET_FILE:golangcode>"
+            "$<TARGET_FILE:golangpls>"
             "$<TARGET_FILE:golangdoc>"
             "$<TARGET_FILE:golangedit>"
             "$<TARGET_FILE:golangfmt>"

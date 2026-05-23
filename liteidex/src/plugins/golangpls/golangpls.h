@@ -5,6 +5,7 @@
 #include "liteenvapi/liteenvapi.h"
 #include "processex/processex.h"
 #include "liteeditorapi/liteeditorapi.h"
+#include "golangastapi/golangastapi.h"
 #include <functional>
 #include <QDateTime>
 #include <QMap>
@@ -23,7 +24,7 @@ namespace LSPMethod {
 	const QString TextDocumentCompletion = "textDocument/completion";
 	const QString TextDocumentDefinition = "textDocument/definition";
 	const QString TextDocumentHover = "textDocument/hover";
-	const QString TextDocumentDiagnostic = "textDocument/diagnostic";
+	const QString TextDocumentPublishDiagnostics = "textDocument/publishDiagnostics";
 	const QString TextDocumentDocumentSymbol = "textDocument/documentSymbol";
 	const QString TextDocumentReferences = "textDocument/references";
 	const QString TextDocumentRename = "textDocument/rename";
@@ -57,7 +58,7 @@ public:
 
 	void __init();
 
-	void __start();
+	void __start(const QString& folder);
 
 	void __stop();
 
@@ -72,13 +73,15 @@ public:
 
 	void _notify(QString method, QVariantMap params);
 
-	
 	void __onMsg(QString method, QVariantMap msg);
 
 	void __onMsg(int msgId, QVariantMap msg);
 
+	void __onWindowShowMessage(GolangPls* pls, QVariantMap msg);
+	void __onWindowLogMessage(GolangPls* pls, QVariantMap msg);
+	void __onTextDocumentPublishDiagnostics(GolangPls* pls, QVariantMap msg);
 
-	void __initLSP();
+	void __initLSP(const QString& workFolder);
 
 	void __setCompleter(LiteApi::ICompleter* completer);
 
@@ -97,6 +100,7 @@ public slots:
 	void __onCurrentEditorChanged(LiteApi::IEditor* editor);
 	void __onEditorCreated(LiteApi::IEditor* editor);
 	void __onEditorAboutToClose(LiteApi::IEditor* editor);
+	void __onFolderOpened(const QString& folder);
 
 	void __onPrefixChanged(QTextCursor cur,QString pre,bool force);
 
@@ -110,8 +114,10 @@ protected:
 	int m_nVersion;
 	QString m_goplsPath;
 	LiteApi::IApplication* m_liteApp;
+	LiteApi::IGolangAst* m_golangAst;
 	LiteApi::ITextEditor* m_editor;
 	QFileInfo m_fileInfo;
+	QString     m_preWord;
 
 	LiteApi::ICompleter* m_completer;
 	QByteArray ___lspBuffer;

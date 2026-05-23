@@ -319,6 +319,7 @@ signals:
     void fileListChanged();
     void fileWizardFinished(const QString &type, const QString &scheme, const QString &location);
     void aboutToShowFolderContextMenu(QMenu *menu, LiteApi::FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info,const QString &context);
+    void folderOpened(const QString &folder);
 public slots:
     virtual void newFile() = 0;
     virtual void openFiles() = 0;

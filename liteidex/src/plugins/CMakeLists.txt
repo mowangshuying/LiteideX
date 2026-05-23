@@ -12,7 +12,7 @@ add_subdirectory(golangast)
 add_subdirectory(golangedit)
 
 add_subdirectory(golangfmt)
-add_subdirectory(golangcode)
+#add_subdirectory(golangcode)
 add_subdirectory(golangpls)
 add_subdirectory(golangdoc)
 add_subdirectory(golangplay)
