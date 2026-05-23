@@ -315,11 +315,13 @@ public:
     virtual void addFolderList(const QString &folders) = 0;
     virtual IApplication* openFolderInNewWindow(const QString &folder) = 0;
     virtual void emitAboutToShowFolderContextMenu(QMenu *menu, LiteApi::FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info, const QString &context) = 0;
+    virtual void emitFolderClosed(const QString& folder) = 0;
 signals:
     void fileListChanged();
     void fileWizardFinished(const QString &type, const QString &scheme, const QString &location);
     void aboutToShowFolderContextMenu(QMenu *menu, LiteApi::FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info,const QString &context);
     void folderOpened(const QString &folder);
+    void folderClosed(const QString& folder);
 public slots:
     virtual void newFile() = 0;
     virtual void openFiles() = 0;

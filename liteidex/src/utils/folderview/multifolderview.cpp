@@ -338,7 +338,10 @@ void MultiFolderView::openFolder()
 void MultiFolderView::closeFolder()
 {
     QModelIndex index = this->currentIndex();
+
+    QString folder = m_model->fileInfo(index).filePath();
     m_model->removeRoot(index);
+    m_liteApp->fileManager()->emitFolderClosed(folder);
 }
 
 void MultiFolderView::reloadFolder()

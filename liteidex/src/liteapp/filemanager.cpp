@@ -242,12 +242,20 @@ QStringList FileManager::folderList() const
 
 void FileManager::setFolderList(const QStringList &folders)
 {
-    m_folderWindow->setFolderList(folders);
+    if (folders.isEmpty())
+        return;
+
+    QStringList __folders;
+    __folders << folders[0];
+    m_folderWindow->setFolderList(__folders);
+    emit folderOpened(folders[0]);
 }
 
 void FileManager::addFolderList(const QString &folder)
 {
+    m_folderWindow->closeAllFolders();
     m_folderWindow->addFolderList(folder);
+    emit folderOpened(folder);
 }
 
 IApplication* FileManager::openFolderInNewWindow(const QString &folder)
@@ -260,6 +268,11 @@ IApplication* FileManager::openFolderInNewWindow(const QString &folder)
 void FileManager::emitAboutToShowFolderContextMenu(QMenu *menu, FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info, const QString &context)
 {
     emit aboutToShowFolderContextMenu(menu,flag,info,context);
+}
+
+void FileManager::emitFolderClosed(const QString& folder)
+{
+    emit folderClosed(folder);
 }
 
 void FileManager::newFile()

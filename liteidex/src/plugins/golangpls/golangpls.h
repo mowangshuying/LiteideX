@@ -60,7 +60,7 @@ public:
 
 	void __start(const QString& folder);
 
-	void __stop();
+	void __stop(const QString& folder);
 
 	int __nextId();
 	int __nextVersion();
@@ -101,6 +101,7 @@ public slots:
 	void __onEditorCreated(LiteApi::IEditor* editor);
 	void __onEditorAboutToClose(LiteApi::IEditor* editor);
 	void __onFolderOpened(const QString& folder);
+	void __onFolderClosed(const QString& folder);
 
 	void __onPrefixChanged(QTextCursor cur,QString pre,bool force);
 
@@ -118,6 +119,8 @@ protected:
 	LiteApi::ITextEditor* m_editor;
 	QFileInfo m_fileInfo;
 	QString     m_preWord;
+
+	QString   m_plsDir;
 
 	LiteApi::ICompleter* m_completer;
 	QByteArray ___lspBuffer;

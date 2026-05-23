@@ -76,6 +76,7 @@ public:
     virtual void addFolderList(const QString &folder);
     virtual IApplication* openFolderInNewWindow(const QString &folder);
     virtual void emitAboutToShowFolderContextMenu(QMenu *menu, LiteApi::FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info, const QString &context);
+    virtual void emitFolderClosed(const QString& folder);
 public:
     QString openAllTypeFilter() const;
     //QString openProjectTypeFilter() const;

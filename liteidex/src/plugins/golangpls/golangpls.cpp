@@ -12,6 +12,7 @@ GolangPls::GolangPls(LiteApi::IApplication* app, QObject* parent)
 	m_nRequestId = 0;
 	m_nVersion = 0;
 	m_completer = nullptr;
+	m_plsDir = "";
 	__init();
 }
 
@@ -43,7 +44,10 @@ void GolangPls::__init()
 
 void GolangPls::__start(const QString& folder)
 {
-	__stop();
+	if (!m_plsDir.isEmpty())
+		__stop(m_plsDir);
+
+	m_plsDir = folder;
 
 	QStringList args;
 	args << "-rpc.trace";
@@ -51,8 +55,11 @@ void GolangPls::__start(const QString& folder)
 	__initLSP(folder);
 }
 
-void GolangPls::__stop()
+void GolangPls::__stop(const QString& folder)
 {
+	if (m_plsDir != folder)
+		return;
+
 	m_process->stop(200);
 }
 
@@ -451,6 +458,11 @@ void GolangPls::__onEditorAboutToClose(LiteApi::IEditor* editor)
 void GolangPls::__onFolderOpened(const QString& folder)
 {
 	__start(folder);
+}
+
+void GolangPls::__onFolderClosed(const QString& folder)
+{
+	__stop(folder);
 }
 
 void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)

@@ -27,9 +27,9 @@ QTextBrowser, QWebView {
 
 /* === QToolTip === */
 QToolTip {
-    background-color: #EAEBF3;
-    border: 1px solid #767676;
-    color: #575757;
+    background-color: #1E1E1E;
+    border: 1px solid #3F3F46;
+    color: #E0E0E0;
 }
 
 /* === QPushButton === */

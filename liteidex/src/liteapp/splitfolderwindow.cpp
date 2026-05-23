@@ -344,8 +344,15 @@ void SplitFolderView::closeFolder()
     if (!index.isValid()) {
         return;
     }
+
+    /// get folder;
+    QString folder = index.data(Qt::UserRole + 1).toString();
+    QFileInfo fileInfo(folder);
+
     emit closeFolderIndex(index);
     m_model->removeRow(index.row());
+
+    m_liteApp->fileManager()->emitFolderClosed(folder);
 }
 
 void SplitFolderView::reloadFolder()
