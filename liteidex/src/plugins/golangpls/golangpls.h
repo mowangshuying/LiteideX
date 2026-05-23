@@ -88,6 +88,7 @@ public:
 	void __didOpen(QString filepath, QString content, int version);
 	void __didClose(QString filepath);
 	void __didChange(QString filepath, QString content, int version);
+	QVariantMap __computeTextRange(const QString& oldText, const QString& newText);
 
 public slots:
 	void __onStarted();
@@ -118,5 +119,7 @@ protected:
 
 	QMap<QString, LspCall> m_methodCallMap;
 	QMap<int, LspCallData> m_requestCallMap;
+
+	QMap<QString, QString> m_documentCache; // key: filepath, value: last content
 };
 
