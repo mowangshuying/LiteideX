@@ -236,7 +236,6 @@ QVector<QByteArray> GolangPls::parseLspData(QByteArray& rawData)
 
 void GolangPls::__didOpen(QString filepath, QString content, int version)
 {
-	m_documentCache[filepath] = content;	
 	QVariantMap params;
 	QVariantMap textDocument;
 	textDocument["uri"] = "file:///" + filepath;
@@ -249,56 +248,11 @@ void GolangPls::__didOpen(QString filepath, QString content, int version)
 
 void GolangPls::__didClose(QString filepath)
 {
-	m_documentCache.remove(filepath);
-
 	QVariantMap params;
 	QVariantMap textDocument;
 	textDocument["uri"] = "file:///" + filepath;
 	params["textDocument"] = textDocument;
     _notify(LSPMethod::TextDocumentDidClose, params);
-}
-
-QVariantMap GolangPls::__computeTextRange(const QString& oldText, const QString& newText)
-{
-	int prefixLen = 0;
-	int minLen = qMin(oldText.length(), newText.length());
-	while (prefixLen < minLen && oldText[prefixLen] == newText[prefixLen]) {
-		prefixLen++;
-	}
-
-	int oldSuffixStart = oldText.length();
-	int newSuffixStart = newText.length();
-	while (oldSuffixStart > prefixLen && newSuffixStart > prefixLen && 
-		   oldText[oldSuffixStart - 1] == newText[newSuffixStart - 1]) {
-		oldSuffixStart--;
-		newSuffixStart--;
-	}
-	
-	int replaceStart = prefixLen;
-	int replaceLength = oldSuffixStart - prefixLen;
-	
-	auto charToLineCol = [](const QString& text, int charPos) -> QVariantMap {
-		int line = 0;
-		int col = 0;
-		for (int i = 0; i < charPos && i < text.length(); i++) {
-			if (text[i] == '\n') {
-				line++;
-				col = 0;
-			} else {
-				col++;
-			}
-		}
-		QVariantMap pos;
-		pos["line"] = line;
-		pos["character"] = col;
-		return pos;
-	};
-	
-	QVariantMap range;
-	range["start"] = charToLineCol(oldText, replaceStart);
-	range["end"] = charToLineCol(oldText, replaceStart + replaceLength);
-	
-	return range;
 }
 
 void GolangPls::__didChange(QString filepath, QString content, int version)
@@ -310,43 +264,11 @@ void GolangPls::__didChange(QString filepath, QString content, int version)
 	params["textDocument"] = textDocument;
 
 	QVariantList contentChanges;
-	
-	if (m_documentCache.contains(filepath)) {
-		QString oldContent = m_documentCache[filepath];
-		if (oldContent == content) {
-			return;
-		}
-		
-		QVariantMap range;
-		QVariantMap startPos;
-		startPos["line"] = 0;
-		startPos["character"] = 0;
-		range["start"] = startPos;
-		
-		QVariantMap endPos;
-		int lastNewlinePos = oldContent.lastIndexOf('\n');
-		int lineCount = oldContent.count('\n');
-		int lastLineLength = (lastNewlinePos >= 0) ? (oldContent.length() - lastNewlinePos - 1) : oldContent.length();
-		
-		endPos["line"] = lineCount;
-		endPos["character"] = lastLineLength;
-		range["end"] = endPos;
-		
-		QVariantMap change;
-		change["range"] = range;
-		change["rangeLength"] = oldContent.length();
-		change["text"] = content;
-		
-		contentChanges.append(change);
-	} else {
-		QVariantMap text;
-		text["text"] = content;
-		contentChanges.append(text);
-	}
-	
+	QVariantMap text;
+	text["text"] = content;
+	contentChanges.append(text);
 	params["contentChanges"] = contentChanges;
 	_notify(LSPMethod::TextDocumentDidChange, params);
-	m_documentCache[filepath] = content;
 }
 
 
