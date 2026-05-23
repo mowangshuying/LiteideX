@@ -62,12 +62,16 @@ public:
 	void __stop();
 
 	int __nextId();
+	int __nextVersion();
 
 	void __regCall(QString method, LspCall lspCall);
 
 	void __request(QVariantMap msg);
 	void __requestLSP(QString method, QVariantMap params, int id);
 	void __requestLSP(QString method,  QVariantMap params, LspCall lspCall = nullptr);
+
+	void _notify(QString method, QVariantMap params);
+
 	
 	void __onMsg(QString method, QVariantMap msg);
 
@@ -82,6 +86,7 @@ public:
 	QVector<QByteArray> parseLspData(QByteArray& rawData);
 
 	void __didOpen(QString filepath, QString content, int version);
+	void __didClose(QString filepath);
 	void __didChange(QString filepath, QString content, int version);
 
 public slots:
@@ -102,6 +107,7 @@ public slots:
 protected:
 	Process* m_process;
 	int m_nRequestId;
+	int m_nVersion;
 	QString m_goplsPath;
 	LiteApi::IApplication* m_liteApp;
 	LiteApi::ITextEditor* m_editor;
