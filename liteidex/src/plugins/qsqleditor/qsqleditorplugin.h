@@ -47,7 +47,7 @@ class PluginFactory : public LiteApi::PluginFactoryT<QSqlEditorPlugin>
 public:
     PluginFactory() {
         m_info->setId("plugin/QSqlEditorPlugin");
-        m_info->setVer("X38.6");
+        m_info->setVer("X38.7");
         m_info->setName("QSqlEditor");
         m_info->setAuthor("visualfc");
         m_info->setInfo("Sql Editor Support");
