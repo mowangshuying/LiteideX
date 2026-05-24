@@ -13,6 +13,7 @@ GolangPls::GolangPls(LiteApi::IApplication* app, QObject* parent)
 	m_nVersion = 0;
 	m_completer = nullptr;
 	m_plsDir = "";
+	m_bInited = false;
 	__init();
 }
 
@@ -25,6 +26,8 @@ void GolangPls::__init()
 	m_process = new Process(this);
 	m_goplsPath = LiteApi::getGoPls(m_liteApp);
 	m_golangAst = LiteApi::findExtensionObject<LiteApi::IGolangAst*>(m_liteApp, "LiteApi.IGolangAst");
+
+	__loadPkgList();
 
 	__regCall(LSPMethod::WindowShowMessage, std::bind(&GolangPls::__onWindowShowMessage, this, std::placeholders::_1, std::placeholders::_2 ));
     __regCall(LSPMethod::WindowLogMessage, std::bind(&GolangPls::__onWindowLogMessage, this, std::placeholders::_1, std::placeholders::_2 ));
@@ -40,12 +43,39 @@ void GolangPls::__init()
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorCreated, this, &GolangPls::__onEditorCreated);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorAboutToClose, this, &GolangPls::__onEditorAboutToClose);
 	connect(m_liteApp->fileManager(), &LiteApi::IFileManager::folderOpened, this, &GolangPls::__onFolderOpened);
+	connect(m_liteApp->fileManager(), &LiteApi::IFileManager::folderClosed, this, &GolangPls::__onFolderClosed);
+}
+
+void GolangPls::__loadPkgList()
+{
+	QString path = m_liteApp->resourcePath() + ("/packages/go/pkglist");
+	QFile file(path);
+	if (file.open(QFile::ReadOnly)) {
+		QByteArray data = file.readAll();
+		QString ar = QString::fromUtf8(data);
+		ar.replace("\r\n", "\n");
+		foreach(QString line, ar.split("\n")) {
+			line = line.trimmed();
+			if (line.isEmpty()) {
+				continue;
+			}
+			QStringList pathList = line.split("/");
+			m_pkgListMap.insert(pathList.last(), line);
+			m_importList.append(line);
+		}
+	}
+	m_importList.removeDuplicates();
+	m_importList << "github.com/"
+		<< "golang.org/x/";
+	m_allImportList = m_importList;
 }
 
 void GolangPls::__start(const QString& folder)
 {
 	if (!m_plsDir.isEmpty())
 		__stop(m_plsDir);
+
+	//QThread::msleep(1000);
 
 	m_plsDir = folder;
 
@@ -60,7 +90,14 @@ void GolangPls::__stop(const QString& folder)
 	if (m_plsDir != folder)
 		return;
 
-	m_process->stop(200);
+	m_bInited = false;
+	m_waitOpenEdits.clear();
+	qDebug() << "stop pls ---- 1";
+	m_process->stopAndWait(100, 2000);
+	qDebug() << "stop pls ---- 2";
+	qDebug() << "stop pls ---- 3" << m_process->isRunning();
+
+	//disconnect(m_process, nullptr, this, nullptr);
 }
 
 int GolangPls::__nextId()
@@ -194,7 +231,14 @@ void GolangPls::__initLSP(const QString& workFolder)
 	_map["clientInfo"] = clientInfo;
 	_map["rootUri"] = "file:///" + workFolder;
 	__requestLSP(LSPMethod::Initialize, _map, [=](GolangPls* pls, QVariantMap __map) {
+		m_bInited  = true;
 		pls->_notify(LSPMethod::Initialized, QVariantMap());
+		m_liteApp->appendLog("GolangPls", "init lsp ok");
+		for (int i = 0; i < m_waitOpenEdits.size(); i++)
+		{
+			__onEditorCreated(m_waitOpenEdits[i]);
+		}
+		m_waitOpenEdits.clear();
 		});
 }
 
@@ -366,6 +410,14 @@ QVector<QByteArray> GolangPls::parseLspData(QByteArray& rawData)
 
 void GolangPls::__didOpen(QString filepath, QString content, int version)
 {
+	/// chieck filepath is in m_plsDir
+    if (!filepath.startsWith(m_plsDir))
+	{
+		QString message = filepath + "is not in " + m_plsDir;
+		m_liteApp->appendLog("GolangPls", message, true);
+		return;
+	}
+
 	QVariantMap params;
 	QVariantMap textDocument;
 	textDocument["uri"] = "file:///" + filepath;
@@ -421,6 +473,7 @@ void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 
 	if (editor->mimeType() == "text/x-gosrc") {
 		LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
+		completer->setImportList(m_importList);
 		__setCompleter(completer);
 	}
 	else if (editor->mimeType() == "browser/goplay") {
@@ -428,6 +481,7 @@ void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 		if (pedit && pedit->mimeType() == "text/x-gosrc") {
 			editor = pedit;
 			LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
+			completer->setImportList(m_importList);
 			__setCompleter(completer);
 		}
 	}
@@ -445,6 +499,12 @@ void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 
 void GolangPls::__onEditorCreated(LiteApi::IEditor* editor)
 {
+	if (!m_bInited && !m_waitOpenEdits.contains(editor))
+	{
+		m_waitOpenEdits.append(editor);
+		return;
+	}
+
 	QString filePath = editor->filePath();
 	__didOpen(filePath, LiteApi::getLiteEditor(editor)->document()->toPlainText(), __nextVersion());
 }
@@ -467,7 +527,6 @@ void GolangPls::__onFolderClosed(const QString& folder)
 
 void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
 {
-	
 	int offset = -1;
 	if (pre.endsWith('.')) {
 		m_preWord = pre;

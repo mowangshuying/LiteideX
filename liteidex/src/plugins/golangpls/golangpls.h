@@ -58,6 +58,8 @@ public:
 
 	void __init();
 
+	void __loadPkgList();
+
 	void __start(const QString& folder);
 
 	void __stop(const QString& folder);
@@ -124,6 +126,13 @@ protected:
 
 	LiteApi::ICompleter* m_completer;
 	QByteArray ___lspBuffer;
+
+	bool m_bInited;
+	QList<LiteApi::IEditor*> m_waitOpenEdits;
+
+	QMultiMap<QString, QString> m_pkgListMap;
+	QStringList m_importList;
+	QStringList m_allImportList;
 
 	QMap<QString, LspCall> m_methodCallMap;
 	QMap<int, LspCallData> m_requestCallMap;
