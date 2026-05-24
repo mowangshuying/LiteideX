@@ -8,6 +8,7 @@ LiteIDE X
 _LiteIDE is a simple, open source, cross-platform Go IDE._
 
 * Version: X38.4
+* °æ±¾: X38.7.4
 * Author: [visualfc](mailto:visualfc@gmail.com)
 
 
@@ -52,10 +53,8 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 
 ### Supported Systems
 * Windows x86 (32-bit or 64-bit)
-* Linux x86 (32-bit or 64-bit)
-* MacOS X10.6 or higher (64-bit)
-* FreeBSD 9.2 or higher (32-bit or 64-bit)
-* OpenBSD 5.6 or higher (64-bit)
+
+
 
 ### LiteIDE Command Line
 	liteide [files|folder] [--select-env id] [--local-setting] [--user-setting] [--reset-setting]
@@ -71,9 +70,7 @@ _LiteIDE is a simple, open source, cross-platform Go IDE._
 	go install github.com/visualfc/gotools@latest
 	go install github.com/go-delve/delve/cmd/dlv@latest
 	go install github.com/fatih/gomodifytags@latest
-	
-	Windows/Linux: copy GOPATH/bin gotools and gocode to liteide/bin
-	MacOS: copy GOPATH/bin gotools and gocode to LiteIDE.app/Contents/MacOS	
+	go install golang.org/x/tools/gopls@latest
 
 ### Website
 * LiteIDE Home

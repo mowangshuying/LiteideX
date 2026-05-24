@@ -7,7 +7,7 @@ LiteIDE X
 
 _LiteIDE 是一个轻量级的开源跨平台 Go语言 IDE._
 
-* 版本: X38.4
+* 版本: X38.7.4
 * 作者: [七叶 (visualfc)](mailto:visualfc@gmail.com)
 
 ### 功能
@@ -51,10 +51,7 @@ _LiteIDE 是一个轻量级的开源跨平台 Go语言 IDE._
 	
 ### 系统支持
 * Windows x86 (32-bit or 64-bit)
-* Linux x86 (32-bit or 64-bit)
-* MacOS X10.6 or higher (64-bit)
-* FreeBSD 9.2 or higher (32-bit or 64-bit)
-* OpenBSD 5.6 or higher (64-bit)
+
 
 ### LiteIDE 命令行
 	liteide [files|folder] [--select-env id] [--local-setting] [--user-setting] [--reset-setting]
@@ -70,9 +67,7 @@ _LiteIDE 是一个轻量级的开源跨平台 Go语言 IDE._
 	go install github.com/visualfc/gotools@latest
 	go install github.com/go-delve/delve/cmd/dlv@latest
 	go install github.com/fatih/gomodifytags@latest
-	
-	Windows/Linux: 复制 GOPATH/bin gotools 和 gocode 到 liteide/bin
-	MacOS: 复制 GOPATH/bin gotools 和 gocode 到 LiteIDE.app/Contents/MacOS	
+	go install golang.org/x/tools/gopls@latest
 
 ### 网址
 * LiteIDE 主页
