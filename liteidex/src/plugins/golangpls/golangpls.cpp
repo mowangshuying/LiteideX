@@ -499,6 +499,15 @@ void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 
 void GolangPls::__onEditorCreated(LiteApi::IEditor* editor)
 {
+	m_editor = LiteApi::getTextEditor(editor);
+	if (m_editor == nullptr)
+		return;
+
+	if (editor->mimeType() != "text/x-gosrc")
+	{
+		return;
+	}
+
 	if (!m_bInited && !m_waitOpenEdits.contains(editor))
 	{
 		m_waitOpenEdits.append(editor);
