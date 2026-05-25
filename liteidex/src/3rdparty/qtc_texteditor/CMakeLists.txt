@@ -60,6 +60,7 @@ target_link_libraries(${TGT} PRIVATE
     Qt5::Gui
     Qt5::Widgets
     Qt5::PrintSupport
+    Qt5::Xml
 
     colorstyle
 )

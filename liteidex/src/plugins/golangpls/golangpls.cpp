@@ -1,4 +1,4 @@
-#include "GolangPls.h"
+#include "golangpls.h"
 #include "qjson/include/QJson/Parser"
 #include "qjson/include/QJson/Serializer"
 #include <QEventLoop>
