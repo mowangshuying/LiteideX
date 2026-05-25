@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="Visual Studio Blue">
+  <!--
+  Based on Visual Studio 2022 Blue Theme
+  Color reference: https://learn.microsoft.com/en-us/visualstudio/ide/reference/how-to-customize-fonts-and-colors-in-the-editor
+  -->
+  
+  <!-- 基础文本 - VS2022 Blue 深蓝灰背景 -->
+  <style name="Text" foreground="#DCDCDC" background="#1E2D3D"/>
+  
+  <!-- 额外信息（如行号等） -->
+  <style name="Extra" foreground="#9B9B9B" background="#1E2D3D"/>
+  
+  <!-- 选中文本 - VS2022 Blue 深蓝色 -->
+  <style name="Selection" background="#264F78"/>
+  
+  <!-- 当前行高亮 - 稍亮的蓝灰色 -->
+  <style name="CurrentLine" background="#25364A"/>
+  
+  <!-- 括号匹配 - 中灰色 -->
+  <style name="MatchBrackets" background="#3C3C3C"/>
+  
+  <!-- 缩进线 - 暗蓝灰色 -->
+  <style name="IndentLine" foreground="#2F3F4F"/>
+  
+  <!-- 空白字符可视化 - 暗灰色点 -->
+  <style name="VisualWhitespace" foreground="#3A4A5A"/>
+  
+  <!-- 关键字 - VS2022 Blue 经典蓝色 -->
+  <style name="Keyword" foreground="#569CD6" bold="false"/>
+  
+  <!-- 数据类型 - VS2022 Blue 青绿色 -->
+  <style name="DataType" foreground="#4EC9B0"/>
+  
+  <!-- 十进制数字 - VS2022 Blue 浅绿灰 -->
+  <style name="Decimal" foreground="#B5CEA8"/>
+  
+  <!-- 基础数字 -->
+  <style name="BaseN" foreground="#B5CEA8"/>
+  
+  <!-- 浮点数 -->
+  <style name="Float" foreground="#B5CEA8"/>
+  
+  <!-- 字符常量 - VS2022 Blue 橙棕色 -->
+  <style name="Char" foreground="#CE9178"/>
+  
+  <!-- 字符串 - VS2022 Blue 橙棕色 -->
+  <style name="String" foreground="#CE9178"/>
+  
+  <!-- 注释 - VS2022 Blue 绿色 -->
+  <style name="Comment" foreground="#57A64A"/>
+  
+  <!-- 警告/提示 - 橙色 -->
+  <style name="Alert" foreground="#FFA500"/>
+  
+  <!-- 错误 - 红色 -->
+  <style name="Error" foreground="#FF0000"/>
+  
+  <!-- 函数调用 - VS2022 Blue 浅黄色 -->
+  <style name="Function" foreground="#DCDCAA"/>
+  
+  <!-- 区域标记 -->
+  <style name="RegionMarker" foreground="#DCDCDC"/>
+  
+  <!-- 符号（运算符等） - VS2022 Blue 浅灰色 -->
+  <style name="Symbol" foreground="#D4D4D4"/>
+  
+  <!-- 内置函数 - VS2022 Blue 浅蓝色 -->
+  <style name="BuiltinFunc" foreground="#569CD6"/>
+  
+  <!-- 预声明标识符 - VS2022 Blue 浅蓝色 -->
+  <style name="Predeclared" foreground="#569CD6"/>
+  
+  <!-- 函数声明 - VS2022 Blue 浅黄色 -->
+  <style name="FuncDecl" foreground="#DCDCAA"/>
+  
+  <!-- 占位符 -->
+  <style name="Placeholder" foreground="#CE9178"/>
+  
+  <!-- TODO 注释 - 绿色文字，深色背景 -->
+  <style name="ToDo" foreground="#57A64A" background="#1E2D3D" bold="true"/>
+</style-scheme>

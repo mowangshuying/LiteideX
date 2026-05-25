@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="Winter is Coming">
+  <!--
+  Winter is Coming Theme - Inspired by cold winter atmosphere
+  Ice blue, snow white, steel gray, and deep night sky colors
+  -->
+  
+  <!-- 基础文本 - 深蓝灰背景，冰蓝色文字 -->
+  <style name="Text" foreground="#D4DCE8" background="#1E2A3A"/>
+  
+  <!-- 额外信息（如行号等）- 与编辑器背景协调的钢蓝色 -->
+  <style name="Extra" foreground="#5C7A99" background="#1E2A3A"/>
+  
+  <!-- 选中文本 - 冰蓝色 -->
+  <style name="Selection" background="#3D4F5F"/>
+  
+  <!-- 当前行高亮 - 稍亮的深蓝灰 -->
+  <style name="CurrentLine" background="#253545"/>
+  
+  <!-- 括号匹配 - 中钢蓝 -->
+  <style name="MatchBrackets" background="#3D4F5F"/>
+  
+  <!-- 缩进线 - 暗钢蓝，低调 -->
+  <style name="IndentLine" foreground="#1A2530"/>
+  
+  <!-- 空白字符可视化 - 暗钢蓝点 -->
+  <style name="VisualWhitespace" foreground="#3D4F5F"/>
+  
+  <!-- 关键字 - 冰晶蓝色 -->
+  <style name="Keyword" foreground="#6CB6FF" bold="false"/>
+  
+  <!-- 数据类型 - 霜白色 -->
+  <style name="DataType" foreground="#E8F1FF"/>
+  
+  <!-- 十进制数字 - 冰蓝色 -->
+  <style name="Decimal" foreground="#8FB8DE"/>
+  
+  <!-- 基础数字 -->
+  <style name="BaseN" foreground="#8FB8DE"/>
+  
+  <!-- 浮点数 -->
+  <style name="Float" foreground="#8FB8DE"/>
+  
+  <!-- 字符常量 - 雪青色 -->
+  <style name="Char" foreground="#B4D8E8"/>
+  
+  <!-- 字符串 - 雪青色 -->
+  <style name="String" foreground="#B4D8E8"/>
+  
+  <!-- 注释 - 钢灰色 -->
+  <style name="Comment" foreground="#6B7B8D"/>
+  
+  <!-- 警告/提示 - 寒冰橙色 -->
+  <style name="Alert" foreground="#FFB86C"/>
+  
+  <!-- 错误 - 深红色 -->
+  <style name="Error" foreground="#FF5555"/>
+  
+  <!-- 函数调用 - 冰蓝色 -->
+  <style name="Function" foreground="#6CB6FF"/>
+  
+  <!-- 区域标记 -->
+  <style name="RegionMarker" foreground="#D4DCE8"/>
+  
+  <!-- 符号（运算符等）- 银白色 -->
+  <style name="Symbol" foreground="#E8F1FF"/>
+  
+  <!-- 内置函数 - 冰蓝色 -->
+  <style name="BuiltinFunc" foreground="#6CB6FF"/>
+  
+  <!-- 预声明标识符 - 冰蓝色 -->
+  <style name="Predeclared" foreground="#6CB6FF"/>
+  
+  <!-- 函数声明 - 冰蓝色 -->
+  <style name="FuncDecl" foreground="#6CB6FF"/>
+  
+  <!-- 占位符 -->
+  <style name="Placeholder" foreground="#B4D8E8"/>
+  
+  <!-- TODO 注释 - 冰蓝色文字，深色背景 -->
+  <style name="ToDo" foreground="#8FB8DE" background="#1E2A3A" bold="true"/>
+</style-scheme>

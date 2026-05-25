@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="Eva Light">
+  <!--
+  Eva Light Theme - Muted colors that are enjoyable and easy on the eyes
+  Soft, desaturated tones for comfortable long-term coding
+  -->
+  
+  <!-- 基础文本 - Eva 浅灰白背景，柔和深灰文字 -->
+  <style name="Text" foreground="#4A5568" background="#F6F8FA"/>
+  
+  <!-- 额外信息（如行号等）- 与编辑器背景协调的灰蓝色 -->
+  <style name="Extra" foreground="#A0AEC0" background="#F6F8FA"/>
+  
+  <!-- 选中文本 - 柔和灰蓝 -->
+  <style name="Selection" background="#E2E8F0"/>
+  
+  <!-- 当前行高亮 - 稍亮的浅灰 -->
+  <style name="CurrentLine" background="#EDF2F7"/>
+  
+  <!-- 括号匹配 - 柔和灰蓝 -->
+  <style name="MatchBrackets" background="#E2E8F0"/>
+  
+  <!-- 缩进线 - 浅灰，低调 -->
+  <style name="IndentLine" foreground="#F0F4F8"/>
+  
+  <!-- 空白字符可视化 - 浅灰点 -->
+  <style name="VisualWhitespace" foreground="#E2E8F0"/>
+  
+  <!-- 关键字 - Eva 柔和紫色 -->
+  <style name="Keyword" foreground="#9B59B6" bold="false"/>
+  
+  <!-- 数据类型 - Eva 柔和蓝色 -->
+  <style name="DataType" foreground="#5DADE2"/>
+  
+  <!-- 十进制数字 - Eva 柔和橙色 -->
+  <style name="Decimal" foreground="#E59866"/>
+  
+  <!-- 基础数字 -->
+  <style name="BaseN" foreground="#E59866"/>
+  
+  <!-- 浮点数 -->
+  <style name="Float" foreground="#E59866"/>
+  
+  <!-- 字符常量 - Eva 柔和绿色 -->
+  <style name="Char" foreground="#7DCEA0"/>
+  
+  <!-- 字符串 - Eva 柔和绿色 -->
+  <style name="String" foreground="#7DCEA0"/>
+  
+  <!-- 注释 - Eva 柔和灰青色 -->
+  <style name="Comment" foreground="#7F8C8D"/>
+  
+  <!-- 警告/提示 - Eva 柔和橙黄色 -->
+  <style name="Alert" foreground="#E59866"/>
+  
+  <!-- 错误 - Eva 柔和红色 -->
+  <style name="Error" foreground="#EC7063"/>
+  
+  <!-- 函数调用 - Eva 柔和蓝色 -->
+  <style name="Function" foreground="#5DADE2"/>
+  
+  <!-- 区域标记 -->
+  <style name="RegionMarker" foreground="#4A5568"/>
+  
+  <!-- 符号（运算符等）- 柔和深灰 -->
+  <style name="Symbol" foreground="#4A5568"/>
+  
+  <!-- 内置函数 - Eva 柔和蓝色 -->
+  <style name="BuiltinFunc" foreground="#5DADE2"/>
+  
+  <!-- 预声明标识符 - Eva 柔和蓝色 -->
+  <style name="Predeclared" foreground="#5DADE2"/>
+  
+  <!-- 函数声明 - Eva 柔和蓝色 -->
+  <style name="FuncDecl" foreground="#5DADE2"/>
+  
+  <!-- 占位符 -->
+  <style name="Placeholder" foreground="#7DCEA0"/>
+  
+  <!-- TODO 注释 - 柔和橙色文字，浅色背景 -->
+  <style name="ToDo" foreground="#E59866" background="#F6F8FA" bold="true"/>
+</style-scheme>

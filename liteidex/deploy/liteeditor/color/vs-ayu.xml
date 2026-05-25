@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="Ayu">
+  <!--
+  Ayu Theme - Based on Ayu Mirage
+  Balanced warm colors with deep blue background
+  -->
+  
+  <!-- 基础文本 - Ayu Mirage 深蓝灰背景，浅灰白文字 -->
+  <style name="Text" foreground="#CBCCC6" background="#1F2430"/>
+  
+  <!-- 额外信息（如行号等）- 与编辑器背景协调的灰蓝色 -->
+  <style name="Extra" foreground="#5C6773" background="#1F2430"/>
+  
+  <!-- 选中文本 - 中蓝灰 -->
+  <style name="Selection" background="#333C4D"/>
+  
+  <!-- 当前行高亮 - 稍亮的深蓝灰 -->
+  <style name="CurrentLine" background="#252B38"/>
+  
+  <!-- 括号匹配 - 中蓝灰 -->
+  <style name="MatchBrackets" background="#333C4D"/>
+  
+  <!-- 缩进线 - 暗蓝灰，低调 -->
+  <style name="IndentLine" foreground="#1A1F29"/>
+  
+  <!-- 空白字符可视化 - 暗蓝灰点 -->
+  <style name="VisualWhitespace" foreground="#333C4D"/>
+  
+  <!-- 关键字 - Ayu 粉红色 -->
+  <style name="Keyword" foreground="#FFAE57" bold="false"/>
+  
+  <!-- 数据类型 - Ayu 青绿色 -->
+  <style name="DataType" foreground="#73D0FF"/>
+  
+  <!-- 十进制数字 - Ayu 金黄色 -->
+  <style name="Decimal" foreground="#FFCC66"/>
+  
+  <!-- 基础数字 -->
+  <style name="BaseN" foreground="#FFCC66"/>
+  
+  <!-- 浮点数 -->
+  <style name="Float" foreground="#FFCC66"/>
+  
+  <!-- 字符常量 - Ayu 绿色 -->
+  <style name="Char" foreground="#BAE67E"/>
+  
+  <!-- 字符串 - Ayu 绿色 -->
+  <style name="String" foreground="#BAE67E"/>
+  
+  <!-- 注释 - Ayu 灰蓝色 -->
+  <style name="Comment" foreground="#5C6773"/>
+  
+  <!-- 警告/提示 - Ayu 橙色 -->
+  <style name="Alert" foreground="#FFAE57"/>
+  
+  <!-- 错误 - Ayu 红色 -->
+  <style name="Error" foreground="#FF3333"/>
+  
+  <!-- 函数调用 - Ayu 金黄色 -->
+  <style name="Function" foreground="#FFCC66"/>
+  
+  <!-- 区域标记 -->
+  <style name="RegionMarker" foreground="#CBCCC6"/>
+  
+  <!-- 符号（运算符等）- 浅灰白 -->
+  <style name="Symbol" foreground="#CBCCC6"/>
+  
+  <!-- 内置函数 - Ayu 金黄色 -->
+  <style name="BuiltinFunc" foreground="#FFCC66"/>
+  
+  <!-- 预声明标识符 - Ayu 金黄色 -->
+  <style name="Predeclared" foreground="#FFCC66"/>
+  
+  <!-- 函数声明 - Ayu 金黄色 -->
+  <style name="FuncDecl" foreground="#FFCC66"/>
+  
+  <!-- 占位符 -->
+  <style name="Placeholder" foreground="#BAE67E"/>
+  
+  <!-- TODO 注释 - 金黄色文字，深色背景 -->
+  <style name="ToDo" foreground="#FFCC66" background="#1F2430" bold="true"/>
+</style-scheme>

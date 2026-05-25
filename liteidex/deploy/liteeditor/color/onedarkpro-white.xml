@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="One Dark Pro Light">
+  <!--
+  Based on One Dark Pro Light Theme for VSCode
+  Color reference: https://github.com/Binaryify/OneDark-Pro
+  -->
+  
+  <!-- 基础文本 - One Dark Pro 极浅灰背景 -->
+  <style name="Text" foreground="#383A42" background="#FAFAFA"/>
+  
+  <!-- 额外信息（如行号等）- 与编辑器背景协调的中灰色 -->
+  <style name="Extra" foreground="#A0A1A7" background="#FAFAFA"/>
+  
+  <!-- 选中文本 - 浅灰色 -->
+  <style name="Selection" background="#D0D0D0"/>
+  
+  <!-- 当前行高亮 - 稍深的浅灰色 -->
+  <style name="CurrentLine" background="#F0F0F0"/>
+  
+  <!-- 括号匹配 - 中灰 -->
+  <style name="MatchBrackets" background="#E0E0E0"/>
+  
+  <!-- 缩进线 - 浅灰，低调 -->
+  <style name="IndentLine" foreground="#E8E8E8"/>
+  
+  <!-- 空白字符可视化 - 浅灰点 -->
+  <style name="VisualWhitespace" foreground="#E0E0E0"/>
+  
+  <!-- 关键字 - One Dark Pro Light 深紫色 -->
+  <style name="Keyword" foreground="#A626A4" bold="false"/>
+  
+  <!-- 数据类型 - One Dark Pro Light 金棕色 -->
+  <style name="DataType" foreground="#C18401"/>
+  
+  <!-- 十进制数字 - One Dark Pro Light 深橙色 -->
+  <style name="Decimal" foreground="#986801"/>
+  
+  <!-- 基础数字 -->
+  <style name="BaseN" foreground="#986801"/>
+  
+  <!-- 浮点数 -->
+  <style name="Float" foreground="#986801"/>
+  
+  <!-- 字符常量 - One Dark Pro Light 深绿色 -->
+  <style name="Char" foreground="#50A14F"/>
+  
+  <!-- 字符串 - One Dark Pro Light 深绿色 -->
+  <style name="String" foreground="#50A14F"/>
+  
+  <!-- 注释 - One Dark Pro Light 中灰 -->
+  <style name="Comment" foreground="#A0A1A7"/>
+  
+  <!-- 警告/提示 - 深橙色 -->
+  <style name="Alert" foreground="#986801"/>
+  
+  <!-- 错误 - 深红色 -->
+  <style name="Error" foreground="#E45649"/>
+  
+  <!-- 函数调用 - One Dark Pro Light 深蓝色 -->
+  <style name="Function" foreground="#4078F2"/>
+  
+  <!-- 区域标记 -->
+  <style name="RegionMarker" foreground="#383A42"/>
+  
+  <!-- 符号（运算符等）- One Dark Pro Light 青蓝色 -->
+  <style name="Symbol" foreground="#0184BC"/>
+  
+  <!-- 内置函数 - One Dark Pro Light 深蓝色 -->
+  <style name="BuiltinFunc" foreground="#4078F2"/>
+  
+  <!-- 预声明标识符 - One Dark Pro Light 深蓝色 -->
+  <style name="Predeclared" foreground="#4078F2"/>
+  
+  <!-- 函数声明 - One Dark Pro Light 深蓝色 -->
+  <style name="FuncDecl" foreground="#4078F2"/>
+  
+  <!-- 占位符 -->
+  <style name="Placeholder" foreground="#50A14F"/>
+  
+  <!-- TODO 注释 - 深橙色文字，浅色背景 -->
+  <style name="ToDo" foreground="#986801" background="#FAFAFA" bold="true"/>
+</style-scheme>

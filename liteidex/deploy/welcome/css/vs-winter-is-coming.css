@@ -1,0 +1,346 @@
+/* Winter is Coming Theme - Welcome Page Styles */
+/* Inspired by cold winter atmosphere - ice, snow, and steel */
+
+/* 全局与基础样式 */
+body {
+    text-align: left;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #D4DCE8; /* 冰蓝色文字 */
+    background-color: #1E2A3A; /* 深蓝灰背景 */
+}
+
+pre, code {
+    font-family: Menlo, monospace;
+}
+
+/* 代码高亮与行号 */
+pre .comment {
+    color: #6B7B8D; /* 钢灰色注释 */
+}
+
+pre .ln {
+    color: #5C7A99; /* 行号颜色 - 钢蓝色，与编辑器一致 */
+}
+
+/* 链接样式 */
+a {
+    color: #8FB8DE; /* 冰蓝色链接 */
+    text-decoration: none;
+}
+
+/* 间距重置 */
+p, pre, ul, ol {
+    margin: 20px;
+}
+
+/* 代码块样式 - Winter 编辑器风格 */
+pre {
+    background: #253545; /* 代码背景 - 稍亮的深蓝灰 */
+    color: #D4DCE8; /* 代码文字冰蓝色 */
+    padding: 10px;
+    border: 1px solid #3D4F5F; /* 钢蓝色边框 */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, .rootHeading {
+    margin: 20px 0;
+    padding: 0;
+    color: #8FB8DE; /* 冰蓝色标题 */
+    font-weight: bold;
+}
+
+h2 {
+    background: #3D4F5F; /* 二级标题背景 - 中钢蓝 */
+    padding: 2px 5px;
+}
+
+.rootHeading {
+    margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    text-decoration: underline;
+}
+
+/* 列表与定义 */
+dl {
+    margin: 20px;
+}
+
+dd {
+    margin: 2px 20px;
+}
+
+#nav table td {
+    vertical-align: top;
+}
+
+/* 表格样式 */
+table.dir th {
+    text-align: left;
+    color: #D4DCE8;
+}
+
+table.dir td {
+    word-wrap: break-word;
+    vertical-align: top;
+    color: #B4C8DC;
+}
+
+/* 头部导航 */
+#heading {
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 16px 0;
+    font-weight: normal;
+}
+
+#heading a {
+    color: #D4DCE8; /* 头部链接冰蓝色 */
+    text-decoration: none;
+}
+
+/* 顶部栏 */
+#topbar {
+    background: #253545; /* 顶部栏 - 稍亮的深蓝灰 */
+    border-bottom: 1px solid #3D4F5F;
+}
+
+/* 页面容器布局 */
+body {
+    text-align: center;
+}
+
+#page,
+#topbar .container {
+    clear: both;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+
+#plusone, #plusoneRoot {
+    float: right;
+}
+
+/* 版权信息 */
+#copyright {
+    color: #5C7A99; /* 版权信息 - 钢蓝色 */
+    margin: 40px 0;
+}
+
+/* 按钮与菜单通用样式 */
+#menu > a,
+#menu > input,
+#learn .buttons a,
+#blog .read a {
+    padding: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu > a,
+#menu > input {
+    border: 1px solid #8FB8DE;
+}
+
+/* 菜单主按钮 */
+#menu > a {
+    color: #1E2A3A;
+    background: #8FB8DE; /* 冰蓝色按钮 */
+}
+
+/* 开始按钮与次要按钮 */
+#start,
+#learn .buttons a,
+#blog .read a {
+    color: #D4DCE8;
+    border: 1px solid #8FB8DE;
+    background: #3D4F5F; /* 背景 - 中钢蓝 */
+}
+
+/* 菜单区域 */
+#menu {
+    padding: 10px 0;
+    text-align: right;
+}
+
+#menu > a {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#menu > input {
+    position: relative;
+    top: 1px;
+    width: 100px;
+    background: #253545; /* 输入框背景 - 稍亮的深蓝灰 */
+    color: #D4DCE8; /* 输入框文字冰蓝色 */
+    border: 1px solid #3D4F5F;
+}
+
+#menu > input.inactive {
+    color: #5C7A99;
+}
+
+/* 左右分栏 */
+#left, #right {
+    float: left;
+    width: 415px;
+}
+#right { float: right; }
+
+/* 学习与关于区域 */
+#learn, #about {
+    padding-top: 20px;
+}
+
+#learn h2, #about {
+    margin: 0;
+}
+
+#about {
+    height: 96px;
+}
+
+#gopher {
+    background: url(/doc/gopher/frontpage.png) no-repeat;
+    background-position: center top;
+    height: 155px;
+}
+
+/* 开始按钮 */
+#start {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#start .big {
+    font-weight: bold;
+}
+
+#start .desc {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* 学习区域：输入输出框 - Winter 终端风格 */
+#learn pre, #learn textarea {
+    padding: 0;
+    margin: 0;
+    font-family: Menlo, monospace;
+}
+
+#learn .input {
+    padding: 10px;
+    margin-top: 10px;
+    height: 150px;
+    background: #1E2A3A; /* 输入区 - 深蓝灰背景 */
+    border: 1px solid #3D4F5F;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#learn .input textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    color: #D4DCE8; /* 输入文字冰蓝色 */
+}
+
+#learn .output {
+    border-top: none !important;
+    padding: 10px;
+    height: 59px;
+    overflow: auto;
+    background: #0F1620; /* 输出区 - 更深的蓝黑 */
+    border: 1px solid #3D4F5F;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#learn .output pre {
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #B4D8E8; /* 输出代码 - 雪青色 */
+}
+
+#learn .buttons {
+    padding: 20px 0 10px 0;
+    text-align: right;
+}
+
+#learn .buttons a {
+    height: 16px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+#learn .buttons .tour {
+    float: right;
+}
+
+#learn .buttons .tour a {
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/* 博客与视频 */
+#blog, #video {
+    margin-top: 40px;
+}
+
+#blog > div, #blog > a, #video > div, #video > a, #blog > h2, #video > h2 {
+    margin-bottom: 10px;
+}
+
+#blog .title, #video .title {
+    color: #D4DCE8;
+    text-decoration: none;
+    display: block;
+}
+
+#blog .when {
+    color: #6B7B8D;
+}
+
+#blog .read {
+    text-align: right;
+}
+
+/* 示例代码切换 */
+.exampleHeading { cursor: pointer; }
+.example .collapsed { display: block; }
+.example .expanded { display: none; }
+.exampleVisible .collapsed { display: none; }
+.exampleVisible .expanded { display: block; }
+
+/* 代码表格与分割线 */
+table.codetable { margin-left: auto; margin-right: auto; border-style: none; }
+hr { border-style: none; border-top: 1px solid #3D4F5F; } /* 分割线 - 钢蓝色 */

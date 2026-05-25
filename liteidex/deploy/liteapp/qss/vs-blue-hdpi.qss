@@ -1,0 +1,545 @@
+/* ===add file: \liteide\share\liteide\liteapp\qss\vs-blue.qss ===*/
+/* ===FROM: Visual Studio 2022 Blue Theme ===*/
+
+/* === Shared === */
+QMainWindow{
+    background-color: rgb(30, 45, 65);
+    color: rgb(220, 220, 220);
+}
+
+QStackedWidget, QLabel, QPushButton, QRadioButton, QCheckBox, 
+QGroupBox, QStatusBar, QToolButton, QComboBox, QDialog, QListView,
+QTabBar, QMenu, QMenuBar, QWidget::window, QWidget  {
+    background-color: rgb(30, 45, 65);
+    color: rgb(220, 220, 220);
+}
+
+/* === QWidget === */
+QWidget:window {
+}
+
+/* === WebView === */
+QTextBrowser, QWebView {
+    background-color: rgb(220, 220, 220);
+    selection-color: black; 
+    selection-background-color: rgb(0, 122, 204);
+}
+
+/* === QToolTip === */
+QToolTip {
+    background-color: rgb(28, 42, 60);
+    border: 1px solid rgb(60, 80, 100);
+    color: rgb(220, 220, 220);
+}
+
+/* === QPushButton === */
+QPushButton {
+    border: 1px solid rgb(60, 80, 100);
+    padding: 3px 12px;
+    background-color: rgb(40, 55, 75);
+    margin: 0 1px;
+}
+
+QPushButton:hover {
+    background-color: rgb(50, 70, 95);
+    border-color: rgb(0, 122, 204);
+}
+
+QPushButton:pressed {
+    background-color: rgb(0, 100, 170);
+    border-color: rgb(0, 122, 204);
+    color: rgb(255, 255, 255);
+}
+
+QPushButton:disabled {
+    color: rgb(120, 130, 145);
+}
+
+/* === Checkable items === */
+QCheckBox::indicator, QRadioButton::indicator, QTreeView::indicator {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(35, 50, 70);
+    border: 1px solid rgb(60, 80, 100);
+}
+
+
+QRadioButton::indicator {
+    border-radius: 2px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.5, fy:0.5, radius:1.0, stop:0.25 rgb(220, 220, 220), stop:0.3 rgb(50, 70, 95));
+}
+
+
+QCheckBox::indicator::checked {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
+}
+
+QTreeView::indicator::checked {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
+}
+
+
+
+QRadioButton::indicator:disabled {
+    background-color: rgb(60, 80, 100);
+}
+
+QCheckBox::indicator::disabled {
+	background-color: rgb(60, 80, 100);
+}
+
+QTreeView::indicator:disabled {
+    background-color: rgb(60, 80, 100);
+}
+
+
+QRadioButton::indicator::checked:disabled{
+    background-color: qradialgradient(cx:0.5, cy:0.5, fx:0.25, fy:0.15, radius:0.3, stop:0 #BBBBBB, stop:1 #444444);
+}
+
+QCheckBox::indicator::checked:disabled {
+	background-color: rgb(60, 80, 100);
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
+}
+
+
+QTreeView::indicator::checked:disabled {
+    background-color: rgb(60, 80, 100);
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/checkmarkdark.png");
+}
+
+/* === QComboBox === */
+QComboBox {
+    background-color: rgb(40, 55, 75);
+    border: 1px solid rgb(60, 80, 100);
+    color: rgb(220, 220, 220);
+    padding: 2px 9px;
+}
+
+QComboBox:hover {
+    background-color: rgb(50, 70, 95);
+    border: 1px solid rgb(0, 122, 204);
+}
+
+QComboBox::drop-down {
+    background-color: rgb(40, 55, 75);
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    border-left: 1px solid rgb(60, 80, 100);
+}
+
+QComboBox::drop-down:hover {
+    background-color: rgb(50, 70, 95);
+    border-left: 1px solid rgb(0, 122, 204);
+}
+
+QComboBox::down-arrow {
+    border: 1px solid transparent;
+	width: 8px;
+    height: 8px;
+    background: rgb(40, 55, 75);
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");
+}
+
+QComboBox::down-arrow:hover {
+    border: 1px solid transparent;
+    background: rgb(50, 70, 95);
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgb(28, 42, 60);
+    border: 1px solid rgb(60, 80, 100);
+    selection-background-color: rgb(50, 70, 95);
+    outline: 0;
+}
+
+QComboBox QAbstractItemView::item {
+    min-height: 18px;
+    padding: 3px 6px;
+    color: rgb(220, 220, 220);
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: rgb(50, 70, 95);
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: rgb(0, 122, 204);
+    color: rgb(255, 255, 255);
+}
+
+/* === QGroupBox === */
+QGroupBox {
+    border: 1px solid rgb(60, 80, 100);
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    color: rgb(255, 255, 255);
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    margin-left: 2px;
+}
+
+/* === QTabWidget === */
+QTabWidget::pane {
+    background: rgb(30, 45, 65);
+    border: 1px solid rgb(60, 80, 100);
+    color: rgb(220, 220, 220);
+}
+
+/* === QTabBar === */
+QTabBar::tab {
+    background: rgb(30, 45, 65);
+    border: 1px solid transparent;
+    color: rgb(220, 220, 220);
+    min-width: 30px;
+    padding: 3px 12px
+}
+
+QTabBar::tab:hover {
+    background-color: rgb(50, 70, 95);
+    border-bottom: none;
+}
+
+QTabBar::tab:selected {
+    background-color: rgb(0, 122, 204);
+    border: 1px solid rgb(60, 80, 100);
+    border-top: none;
+    border-top: 1px solid rgb(60, 80, 100);
+    border-bottom: 0px solid rgb(60, 80, 100);
+    color: rgb(255, 255, 255);
+}
+
+/* === QToolBar === */
+QToolBar {
+    background-color: rgb(30, 45, 65);
+    border: none;
+    padding: 1px;
+    min-height: 18px;
+}
+
+QToolBar:handle {
+    background: transparent;
+    border-left: 1px solid rgb(60, 80, 100);
+}
+
+QToolBar::separator {
+    width: 3px;
+    background-color: transparent;
+}
+
+/* === QToolButton === */
+QToolButton {
+    background-color: rgb(30, 45, 65); 
+    border: none;
+    margin: 1px;
+    padding: 2px;
+    min-width: 12px;
+    min-height: 12px;
+}
+
+QToolButton:hover {
+    background-color: rgb(50, 70, 95);
+    border: 1px solid rgb(50, 70, 95);
+}
+
+QToolButton[popupMode="1"] {
+    padding-right: 10px;
+}
+QToolButton[popupMode="2"] {
+    padding-right: 5px;
+    background-color: rgb(40, 55, 75); 
+}
+QToolButton[popupMode="2"]:hover {
+    background-color: rgb(30, 45, 65); 
+}
+
+QToolButton::menu-button {
+    border-left: 1px solid rgb(60, 80, 100);
+    background: rgb(30, 45, 65);
+}
+
+QToolButton::menu-button:hover {
+    border-left: 1px solid rgb(0, 122, 204);
+    background: rgb(50, 70, 95);
+}
+
+QToolButton:pressed {
+    background-color: rgb(0, 100, 170);
+    color: rgb(255, 255, 255);
+}
+
+QToolButton:checked {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+RotationToolButton, RotationToolButton:pressed, RotationToolButton:hover, RotationToolButton:checked {
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: transparent;
+    background-color: transparent;
+    color: rgb(220, 220, 220);
+}
+RotationToolButton:pressed {
+    color: rgb(220, 220, 220);
+}
+RotationToolButton:hover,RotationToolButton:checked:hover {
+    background-color: rgb(0, 122, 204);
+    border-top-color: rgb(0, 122, 204);
+}
+RotationToolButton:checked  {
+    border: 1px solid rgb(0, 122, 204);
+    background-color: rgb(0, 122, 204);
+    color: rgb(255, 255, 255);
+}
+
+
+/* === QMenu === */
+QMenu {
+    background-color: rgb(28, 42, 60);
+    border: 1px solid rgb(28, 42, 60);
+    color: rgb(220, 220, 220);
+    padding: 1px;
+}
+
+QMenu::item {
+    padding: 1px 21px 2px 21px;
+    border: 1px solid transparent;
+}
+
+QMenu::item:disabled {
+    color: rgb(101, 101, 101);
+}
+
+QMenu::item:selected {
+    border-color: rgb(50, 70, 95);
+    background: rgb(50, 70, 95);
+}
+QMenu::item:checked {
+}
+
+QMenu::icon:checked {
+    background: rgb(255, 255, 255);
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgb(35, 50, 70);
+    margin: 1px 5px;
+}
+
+QMenu::indicator {
+    width: 7px;
+    height: 7px;
+}
+
+/* === QMenuBar === */
+QMenuBar {
+    background-color: rgb(30, 45, 65);
+    color: rgb(220, 220, 220);
+}
+
+QMenuBar::item {
+    background: transparent;
+}
+
+QMenuBar::item:disabled {
+    color: gray;
+}
+
+QMenuBar::item:selected {
+    background: rgb(50, 70, 95);
+}
+
+QMenuBar::item:pressed {
+    background: rgb(28, 42, 60);
+}
+ 
+/* === QScrollBar:vertical === */
+QScrollBar:vertical {
+    background: rgb(42, 58, 78);
+    width: 12px;
+    margin: 12px 0 12px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: rgb(100, 120, 145);
+    min-height: 12px;
+    border: 1px solid rgb(42, 58, 78);
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgb(130, 150, 175);
+    border: 1px solid rgb(42, 58, 78);
+}
+
+QScrollBar::add-line:vertical {
+    background: rgb(42, 58, 78);
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    background: rgb(42, 58, 78);
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: rgb(42, 58, 78);
+}
+
+QScrollBar:up-arrow:vertical {
+    border: 1px solid rgb(42, 58, 78);
+    width: 12px;
+    height: 12px;
+    background: rgb(42, 58, 78);
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronupdark.png");
+}
+
+QScrollBar:down-arrow:vertical {
+    border: 1px solid rgb(42, 58, 78);
+    width: 12px;
+    height: 12px;
+    background: rgb(42, 58, 78);
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");
+}
+
+/* === QScrollBar:horizontal === */
+QScrollBar:horizontal {
+    background: rgb(42, 58, 78);
+    height: 12px;
+    margin: 0 12px 0 12px;
+}
+
+QScrollBar::handle:horizontal {
+    background: rgb(100, 120, 145);
+    min-width: 12px;
+    border: 1px solid rgb(42, 58, 78);
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: rgb(130, 150, 175);
+    border: 1px solid rgb(42, 58, 78);
+}
+
+QScrollBar::add-line:horizontal {
+    background: rgb(42, 58, 78);
+    width: 12px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    background: rgb(42, 58, 78);
+    width: 12px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: rgb(42, 58, 78);
+}
+
+QScrollBar:left-arrow:horizontal {
+    border: 1px solid rgb(42, 58, 78);
+    width: 12px;
+    height: 12px;
+    background: rgb(42, 58, 78);
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronleftdark.png");
+}
+
+QScrollBar:right-arrow:horizontal {
+    border: 1px solid rgb(42, 58, 78);
+    width: 12px;
+    height: 12px;
+    background: rgb(42, 58, 78);
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronrightdark.png");
+}
+
+/* =================== */
+QLineEdit, QListView, QTreeView, QTableView, QAbstractSpinBox {
+    background-color: rgb(30, 45, 65);
+    color: rgb(220, 220, 220);
+    border: 1px solid rgb(60, 80, 100);
+}
+
+QAbstractScrollArea, QLineEdit, QTextEdit, QAbstractSpinBox {
+    border-color: rgb(60, 80, 100);
+    border: 1px solid rgb(60, 80, 100);
+}
+
+/* === QHeaderView ===*/
+QHeaderView {
+    background: rgb(30, 45, 65);
+} 
+QHeaderView::section {
+    background: rgb(30, 45, 65);
+    border: 0;
+    color: rgb(220, 220, 220);
+    padding: 2px 0 2px 2px;
+}
+
+/* === QListView === */
+QListView::item:hover {
+    background: rgb(50, 70, 95);
+}
+
+QListView::item:selected {
+    background: rgb(30, 45, 65);
+    color: rgb(0, 122, 204);
+}
+
+/* === QTableView === */
+QTableView::item:hover {
+    background: rgb(50, 70, 95);
+}
+
+QTableView::item:hover {
+    background: rgb(30, 45, 65);
+    color: rgb(0, 122, 204);
+}
+
+/* === QTreeView === */
+QTreeView::item {
+    background: rgb(30, 45, 65);
+}
+
+QTreeView::item:hover {
+    background: rgb(50, 70, 95);
+}
+
+QTreeView::item:selected {
+    background: rgb(30, 45, 65);
+    color: rgb(0, 122, 204);
+}
+
+QTreeView::branch {
+
+}
+
+QTreeView::branch:closed:has-children {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronrightdark.png");
+}
+
+QTreeView::branch:open:has-children {
+	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");
+}
+
+/* === Customizations === */
+QFrame#infoLabel {
+    border: 1px inset rgb(60, 80, 100);
+}
+
+QTextBrowser {
+    background-color: rgb(30, 45, 65);
+    color: rgb(220, 220, 220);
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="Shades of Purple">
+  <!--
+  Based on Shades of Purple Theme for VSCode (Optimized - All Purple Palette)
+  Color reference: https://github.com/ahmadawais/shades-of-purple-vscode
+  -->
+  
+  <!-- 基础文本 - Shades of Purple 深紫色背景，柔和文字 -->
+  <style name="Text" foreground="#E0E0FF" background="#2D2B55"/>
+  
+  <!-- 额外信息（如行号等）- 与编辑器背景协调的暗紫色 -->
+  <style name="Extra" foreground="#6B6899" background="#2D2B55"/>
+  
+  <!-- 选中文本 - 亮紫色 -->
+  <style name="Selection" background="#9D7FE6"/>
+  
+  <!-- 当前行高亮 - 稍亮的紫色，柔和不刺眼 -->
+  <style name="CurrentLine" background="#353365"/>
+  
+  <!-- 括号匹配 - 中紫色，柔和 -->
+  <style name="MatchBrackets" background="#4A477A"/>
+  
+  <!-- 缩进线 - 暗紫色，低调 -->
+  <style name="IndentLine" foreground="#3A3860"/>
+  
+  <!-- 空白字符可视化 - 暗紫色点，几乎不可见 -->
+  <style name="VisualWhitespace" foreground="#4A477A"/>
+  
+  <!-- 关键字 - Shades of Purple 柔和粉红色 -->
+  <style name="Keyword" foreground="#FF7AA2" bold="false"/>
+  
+  <!-- 数据类型 - Shades of Purple 柔和青绿色 -->
+  <style name="DataType" foreground="#4ECDC4"/>
+  
+  <!-- 十进制数字 - 亮紫色 -->
+  <style name="Decimal" foreground="#9D7FE6"/>
+  
+  <!-- 基础数字 -->
+  <style name="BaseN" foreground="#9D7FE6"/>
+  
+  <!-- 浮点数 -->
+  <style name="Float" foreground="#9D7FE6"/>
+  
+  <!-- 字符常量 - 柔和青绿色 -->
+  <style name="Char" foreground="#4ECDC4"/>
+  
+  <!-- 字符串 - 柔和青绿色 -->
+  <style name="String" foreground="#4ECDC4"/>
+  
+  <!-- 注释 - 柔和浅紫色，不刺眼 -->
+  <style name="Comment" foreground="#7B77A8"/>
+  
+  <!-- 警告/提示 - 柔和橙色 -->
+  <style name="Alert" foreground="#FFA07A"/>
+  
+  <!-- 错误 - 柔和红色 -->
+  <style name="Error" foreground="#FF6B6B"/>
+  
+  <!-- 函数调用 - 亮紫色 -->
+  <style name="Function" foreground="#9D7FE6"/>
+  
+  <!-- 区域标记 -->
+  <style name="RegionMarker" foreground="#E0E0FF"/>
+  
+  <!-- 符号（运算符等）- 柔和白色 -->
+  <style name="Symbol" foreground="#E0E0FF"/>
+  
+  <!-- 内置函数 - 柔和粉红色 -->
+  <style name="BuiltinFunc" foreground="#FF7AA2"/>
+  
+  <!-- 预声明标识符 - 柔和粉红色 -->
+  <style name="Predeclared" foreground="#FF7AA2"/>
+  
+  <!-- 函数声明 - 亮紫色 -->
+  <style name="FuncDecl" foreground="#9D7FE6"/>
+  
+  <!-- 占位符 -->
+  <style name="Placeholder" foreground="#4ECDC4"/>
+  
+  <!-- TODO 注释 - 亮紫色文字，深色背景 -->
+  <style name="ToDo" foreground="#9D7FE6" background="#2D2B55" bold="true"/>
+</style-scheme>
