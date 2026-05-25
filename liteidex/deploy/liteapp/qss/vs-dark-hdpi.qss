@@ -35,7 +35,7 @@ QToolTip {
 /* === QPushButton === */
 QPushButton {
     border: 1px solid #333333;
-    padding: 1ex 4ex;
+    padding: 6px 24px;
     background-color: #333333;
     margin: 0 2px;
 }
@@ -57,8 +57,8 @@ QPushButton:disabled {
 
 /* === Checkable items === */
 QCheckBox::indicator, QRadioButton::indicator, QTreeView::indicator {
-    width: 4ex;
-    height: 4ex;
+    width: 24px;
+    height: 24px;
     background-color: #2D2D30;
     border: 1px solid #434346;
 }
@@ -116,7 +116,7 @@ QComboBox {
     background-color: #333337;
     border: 1px solid #434346;
   color: #BBBBBB;
-    padding:0.8ex 3ex;
+    padding:5px 18px;
 }
 
 QComboBox:hover {
@@ -150,7 +150,7 @@ QComboBox::down-arrow:hover {
 /* === QGroupBox === */
 QGroupBox {
     border: 2px solid #333333;
-    margin-top: 2ex;
+    margin-top: 12px;
 }
 
 QGroupBox::title {
@@ -172,8 +172,8 @@ QTabBar::tab {
     background: transparent;
     border: 1px solid transparent;
     color: #BBBBBB;
-    min-width: 10ex;
-    padding: 1ex 4ex;
+    min-width: 60px;
+    padding: 6px 24px
 }
 
 QTabBar::tab:hover {
@@ -195,7 +195,7 @@ QToolBar {
     background-color: #2D2D30;
     border: none;
     padding: 1px;
-    min-height: 6ex;
+    min-height: 36px;
 }
 
 QToolBar:handle {
@@ -214,8 +214,8 @@ QToolButton {
     border: none;
     margin: 1px;
     padding: 3px;
-    min-width: 4ex;
-    min-height: 4ex;
+    min-width: 24px;
+    min-height: 24px;
 }
 
 QToolButton:hover {
@@ -256,7 +256,7 @@ QToolButton:checked {
 }
 
 RotationToolButton, RotationToolButton:pressed, RotationToolButton:hover, RotationToolButton:checked {
-    border-top-width: 1ex;
+    border-top-width: 6px;
     border-top-style: solid;
     border-top-color: transparent;
     background-color: transparent;
@@ -285,7 +285,7 @@ QMenu {
 }
 
 QMenu::item {
-    padding: 2px 7ex 4px 7ex;
+    padding: 2px 42px 4px 42px;
     border: 1px solid transparent;
 }
 
@@ -340,26 +340,26 @@ QMenuBar::item:pressed {
 /* === QScrollBar:vertical === */
 QScrollBar:vertical {
     background: #3E3E42;
-    width: 4ex;
-    margin: 4ex 0 4ex 0;
+    width: 24px;
+    margin: 24px 0 24px 0;
 }
 
 QScrollBar::handle:vertical {
     background: #686868;
-    min-height: 4ex;
+    min-height: 24px;
     border: 2px solid #3E3E42;
 }
 
 QScrollBar::add-line:vertical {
     background: #3E3E42;
-    height: 4ex;
+    height: 24px;
     subcontrol-position: bottom;
     subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:vertical {
     background: #3E3E42;
-    height: 4ex;
+    height: 24px;
     subcontrol-position: top;
     subcontrol-origin: margin;
 }
@@ -370,16 +370,16 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
 
 QScrollBar:up-arrow:vertical {
     border: 2px solid #3E3E42;
-    width: 4ex;
-    height: 4ex;
+    width: 24px;
+    height: 24px;
     background: #3E3E42;
 	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronupdark.png");
 }
 
 QScrollBar:down-arrow:vertical {
     border: 2px solid #3E3E42;
-    width: 4ex;
-    height: 4ex;
+    width: 24px;
+    height: 24px;
     background: #3E3E42;
 	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevrondowndark.png");
 }
@@ -387,26 +387,26 @@ QScrollBar:down-arrow:vertical {
 /* === QScrollBar:horizontal === */
 QScrollBar:horizontal {
     background: #3E3E42;
-    height: 4ex;
-    margin: 0 4ex 0 4ex;
+    height: 24px;
+    margin: 0 24px 0 24px;
 }
 
 QScrollBar::handle:horizontal {
     background: #686868;
-    min-width: 4ex;
+    min-width: 24px;
     border: 2px solid #3E3E42;
 }
 
 QScrollBar::add-line:horizontal {
     background: #3E3E42;
-    width: 4ex;
+    width: 24px;
     subcontrol-position: right;
     subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:horizontal {
     background: #3E3E42;
-    width: 4ex;
+    width: 24px;
     subcontrol-position: left;
     subcontrol-origin: margin;
 }
@@ -417,16 +417,16 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
 
 QScrollBar:left-arrow:horizontal {
     border: 2px solid #3E3E42;
-    width: 4ex;
-    height: 4ex;
+    width: 24px;
+    height: 24px;
     background: #3E3E42;
 	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronleftdark.png");
 }
 
 QScrollBar:right-arrow:horizontal {
     border: 2px solid #3E3E42;
-    width: 4ex;
-    height: 4ex;
+    width: 24px;
+    height: 24px;
     background: #3E3E42;
 	image: url("../share/liteide/liteapp/qrc/default/liteapp/images/chevronrightdark.png");
 }
