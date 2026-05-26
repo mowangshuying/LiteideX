@@ -24,7 +24,7 @@ GolangPls::~GolangPls()
 void GolangPls::__init()
 {
 	m_process = new Process(this);
-	m_goplsPath = LiteApi::getGoPls(m_liteApp);
+    // m_goplsPath = LiteApi::getGoPls(m_liteApp);
 	m_golangAst = LiteApi::findExtensionObject<LiteApi::IGolangAst*>(m_liteApp, "LiteApi.IGolangAst");
 
 	__loadPkgList();
@@ -81,7 +81,8 @@ void GolangPls::__start(const QString& folder)
 
 	QStringList args;
 	args << "-rpc.trace";
-	m_process->startEx(m_goplsPath, args);
+    m_process->setProcessEnvironment(LiteApi::getGoEnvironment(m_liteApp));
+    m_process->startEx(LiteApi::getGoPls(m_liteApp), args);
 	__initLSP(folder);
 }
 
