@@ -421,7 +421,7 @@ void GolangPls::__didOpen(QString filepath, QString content, int version)
 
 	QVariantMap params;
 	QVariantMap textDocument;
-	textDocument["uri"] = "file:///" + filepath;
+	textDocument["uri"] = "file://" + filepath;
 	textDocument["languageId"] = "go";
 	textDocument["version"] = version;
 	textDocument["text"] = content;
@@ -433,7 +433,7 @@ void GolangPls::__didClose(QString filepath)
 {
 	QVariantMap params;
 	QVariantMap textDocument;
-	textDocument["uri"] = "file:///" + filepath;
+	textDocument["uri"] = "file://" + filepath;
 	params["textDocument"] = textDocument;
     _notify(LSPMethod::TextDocumentDidClose, params);
 }
@@ -442,7 +442,7 @@ void GolangPls::__didChange(QString filepath, QString content, int version)
 {
 	QVariantMap params;
 	QVariantMap textDocument;
-	textDocument["uri"] = "file:///" + filepath;
+	textDocument["uri"] = "file://" + filepath;
 	textDocument["version"] = version;
 	params["textDocument"] = textDocument;
 
