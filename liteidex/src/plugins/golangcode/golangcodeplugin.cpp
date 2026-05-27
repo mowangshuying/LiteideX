@@ -49,9 +49,10 @@ bool GolangCodePlugin::load(LiteApi::IApplication *app)
 {
     m_liteApp = app;
     m_code = new GolangCode(app,this);
-    app->optionManager()->addFactory(new GolangCodeOptionFactory(app,this));
+
+    //app->optionManager()->addFactory(new GolangCodeOptionFactory(app,this));
     connect(app->editorManager(),SIGNAL(editorCreated(LiteApi::IEditor*)),this,SLOT(editorCreated(LiteApi::IEditor*)));
-    connect(app->editorManager(),SIGNAL(currentEditorChanged(LiteApi::IEditor*)),this,SLOT(currentEditorChanged(LiteApi::IEditor*)));
+    //connect(app->editorManager(),SIGNAL(currentEditorChanged(LiteApi::IEditor*)),this,SLOT(currentEditorChanged(LiteApi::IEditor*)));
     connect(app,SIGNAL(loaded()),this,SLOT(appLoaded()));
     return true;
 }
@@ -81,7 +82,6 @@ void GolangCodePlugin::editorCreated(LiteApi::IEditor *editor)
 
 void GolangCodePlugin::currentEditorChanged(LiteApi::IEditor *editor)
 {
-    /// debug gopls disable gocode;
     if (editor) {
         if (editor->mimeType() == "text/x-gosrc") {
             LiteApi::ICompleter *completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor,"LiteApi.ICompleter");
