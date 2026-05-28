@@ -50,7 +50,7 @@
         "strategy": "external",
         "value": "x64"
       },
-      "generator": "Ninja",
+      "generator": "Visual Studio 17 2022",
       "vendor": {
         "qt-project.org/Version": {
           "checksum": "e2VZU7zYyOUwSCH077aia3t5U+0="
