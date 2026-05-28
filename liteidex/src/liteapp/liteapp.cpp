@@ -723,6 +723,7 @@ QString LiteApp::theme()
 
 void LiteApp::loadPlugins()
 {
+    // qDebug() << "plugin path:" << m_pluginPath;
     pluginManager()->loadPlugins(m_pluginPath);
 }
 
