@@ -582,10 +582,8 @@ void GolangPls::__onReadyReadStandardOutput()
 	}
 
     //qDebug() << "-----%%%%% &&&&& %%%%%-----\n" << QString::fromUtf8(output);
-
-
-	QString sLog = QString::asprintf("__onReadyReadStandardOutput:%s", QString::fromUtf8(output).toStdString().c_str());
-	m_liteApp->appendLog("GolangPls", sLog);
+	//QString sLog = QString::asprintf("__onReadyReadStandardOutput:%s", QString::fromUtf8(output).toStdString().c_str());
+	//m_liteApp->appendLog("GolangPls", sLog);
 	//qDebug() << sLog;
 
 	___lspBuffer.append(output);
