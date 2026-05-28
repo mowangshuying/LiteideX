@@ -41,7 +41,7 @@ void GolangPls::__init()
 	connect(m_process, &Process::readyReadStandardOutput, this, &GolangPls::__onReadyReadStandardOutput);
 	connect(m_process, &Process::readyReadStandardError, this, &GolangPls::__onReadyReadStandardError);
 
-	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
+	// connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorCreated, this, &GolangPls::__onEditorCreated);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorAboutToClose, this, &GolangPls::__onEditorAboutToClose);
 	connect(m_liteApp->fileManager(), &LiteApi::IFileManager::folderOpened, this, &GolangPls::__onFolderOpened);
