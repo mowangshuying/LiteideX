@@ -269,7 +269,12 @@ void GolangPls::__completion(QString filePath, int line, int column)
     position["line"] = line;
     position["character"] = column;
 	params["position"] = position;
+
+	qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
 	__requestLSP("textDocument/completion", params, [=](GolangPls* pls, QVariantMap __map) {
+
+			QString sLog = QString("__comeletion fiel:%1.%2.%3 use time:%4ms").arg(filePath).arg(line).arg(column).arg(QDateTime::currentMSecsSinceEpoch() - timestamp);
+			m_liteApp->appendLog("GolangPls", sLog);
 
 			if (!__map.contains("result"))
 			{
@@ -595,7 +600,12 @@ void GolangPls::__onReadyReadStandardOutput()
 		return;
 	}
 
-    qDebug() << "-----%%%%% &&&&& %%%%%-----\n" << QString::fromUtf8(output);
+    //qDebug() << "-----%%%%% &&&&& %%%%%-----\n" << QString::fromUtf8(output);
+
+
+	QString sLog = QString::asprintf("__onReadyReadStandardOutput:%s", QString::fromUtf8(output).toStdString().c_str());
+	//m_liteApp->appendLog("GolangPls", sLog);
+	qDebug() << sLog;
 
 	___lspBuffer.append(output);
 	QVector<QByteArray> bytes =  parseLspData(___lspBuffer);
