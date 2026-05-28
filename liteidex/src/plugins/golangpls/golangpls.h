@@ -95,6 +95,8 @@ public:
 	void __didChange(QString filepath, QString content, int version);
 
 public slots:
+	void __appLoaded();
+
 	void __onStarted();
 
 	void __onFinished(int code, QProcess::ExitStatus status);
@@ -136,5 +138,8 @@ protected:
 
 	QMap<QString, LspCall> m_methodCallMap;
 	QMap<int, LspCallData> m_requestCallMap;
+
+	bool m_bAppLoaded;
+	QString m_lastOpenFolder;
 };
 

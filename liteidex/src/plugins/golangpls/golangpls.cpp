@@ -14,6 +14,8 @@ GolangPls::GolangPls(LiteApi::IApplication* app, QObject* parent)
 	m_completer = nullptr;
 	m_plsDir = "";
 	m_bInited = false;
+	m_bAppLoaded = false;
+	m_lastOpenFolder = "";
 	__init();
 }
 
@@ -44,6 +46,7 @@ void GolangPls::__init()
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorAboutToClose, this, &GolangPls::__onEditorAboutToClose);
 	connect(m_liteApp->fileManager(), &LiteApi::IFileManager::folderOpened, this, &GolangPls::__onFolderOpened);
 	connect(m_liteApp->fileManager(), &LiteApi::IFileManager::folderClosed, this, &GolangPls::__onFolderClosed);
+	connect(m_liteApp, &LiteApi::IApplication::loaded, this, &GolangPls::__appLoaded);
 }
 
 void GolangPls::__loadPkgList()
@@ -454,7 +457,14 @@ void GolangPls::__didChange(QString filepath, QString content, int version)
 }
 
 
-//public slots:
+void GolangPls::__appLoaded()
+{
+	m_bAppLoaded = true;
+	if (m_lastOpenFolder.isEmpty())
+		return;
+	__start(m_lastOpenFolder);
+}
+
 void GolangPls::__onStarted()
 {
 	qDebug() << __FUNCTION__;
@@ -526,6 +536,10 @@ void GolangPls::__onEditorAboutToClose(LiteApi::IEditor* editor)
 
 void GolangPls::__onFolderOpened(const QString& folder)
 {
+	m_lastOpenFolder = folder;
+	if (!m_bAppLoaded)
+		return;
+
 	__start(folder);
 }
 
