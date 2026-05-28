@@ -41,7 +41,8 @@ void GolangPls::__init()
 	connect(m_process, &Process::readyReadStandardOutput, this, &GolangPls::__onReadyReadStandardOutput);
 	connect(m_process, &Process::readyReadStandardError, this, &GolangPls::__onReadyReadStandardError);
 
-	// connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
+	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
+	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorContentsChanged, this, &GolangPls::__onEditorContentsChanged);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorCreated, this, &GolangPls::__onEditorCreated);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorAboutToClose, this, &GolangPls::__onEditorAboutToClose);
 	connect(m_liteApp->fileManager(), &LiteApi::IFileManager::folderOpened, this, &GolangPls::__onFolderOpened);
@@ -483,34 +484,7 @@ void GolangPls::__onFinished(int code, QProcess::ExitStatus status)
 
 void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 {
-	m_editor= LiteApi::getTextEditor(editor);
-	if (m_editor == nullptr)
-		return;
-
-	if (editor->mimeType() == "text/x-gosrc") {
-		LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
-		completer->setImportList(m_importList);
-		__setCompleter(completer);
-	}
-	else if (editor->mimeType() == "browser/goplay") {
-		LiteApi::IEditor* pedit = LiteApi::findExtensionObject<LiteApi::IEditor*>(m_liteApp->extension(), "LiteApi.Goplay.IEditor");
-		if (pedit && pedit->mimeType() == "text/x-gosrc") {
-			editor = pedit;
-			LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
-			completer->setImportList(m_importList);
-			__setCompleter(completer);
-		}
-	}
-	else {
-		__setCompleter(nullptr);
-		return;
-	}
-
-	QString filePath = editor->filePath();
-	if (filePath.isEmpty())
-		return;
-
-	m_fileInfo.setFile(filePath);
+	qDebug() << "GolangPls::__onCurrentEditorChanged";
 }
 
 void GolangPls::__onEditorCreated(LiteApi::IEditor* editor)
@@ -538,6 +512,13 @@ void GolangPls::__onEditorAboutToClose(LiteApi::IEditor* editor)
 {
 	QString filePath = editor->filePath();
     __didClose(filePath);
+}
+
+void GolangPls::__onEditorContentsChanged(LiteApi::IEditor *editor)
+{
+	/// didChange
+	QString filePath = editor->filePath();
+	__didChange(filePath, LiteApi::getLiteEditor(editor)->document()->toPlainText(), __nextVersion());
 }
 
 void GolangPls::__onFolderOpened(const QString& folder)
@@ -579,8 +560,8 @@ void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
 		m_completer->clearItemChilds(m_preWord);
 	}
 
-	QString txt = m_editor->document()->toPlainText();
-	__didChange(m_fileInfo.filePath(), txt, __nextVersion());
+	//QString txt = m_editor->document()->toPlainText();
+	//__didChange(m_fileInfo.filePath(), txt, __nextVersion());
 	
 	int row = cur.blockNumber();      
 	int col = cur.columnNumber();        
@@ -604,8 +585,8 @@ void GolangPls::__onReadyReadStandardOutput()
 
 
 	QString sLog = QString::asprintf("__onReadyReadStandardOutput:%s", QString::fromUtf8(output).toStdString().c_str());
-	//m_liteApp->appendLog("GolangPls", sLog);
-	qDebug() << sLog;
+	m_liteApp->appendLog("GolangPls", sLog);
+	//qDebug() << sLog;
 
 	___lspBuffer.append(output);
 	QVector<QByteArray> bytes =  parseLspData(___lspBuffer);

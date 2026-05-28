@@ -104,6 +104,7 @@ public slots:
 	void __onCurrentEditorChanged(LiteApi::IEditor* editor);
 	void __onEditorCreated(LiteApi::IEditor* editor);
 	void __onEditorAboutToClose(LiteApi::IEditor* editor);
+	void __onEditorContentsChanged(LiteApi::IEditor* editor);
 	void __onFolderOpened(const QString& folder);
 	void __onFolderClosed(const QString& folder);
 

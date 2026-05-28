@@ -312,6 +312,7 @@ void EditorManager::addEditor(IEditor *editor)
         m_widgetEditorMap.insert(w,editor);
         emit editorCreated(editor);
         connect(editor,SIGNAL(modificationChanged(bool)),this,SLOT(modificationChanged(bool)));
+        connect(editor,SIGNAL(contentsChanged()),this,SLOT(contentsChanged()));
         LiteApi::IEditContext *context = LiteApi::getEditContext(editor);
         if (context) {
             this->addEditContext(context);
@@ -784,6 +785,14 @@ void EditorManager::modificationChanged(bool b)
             }
         }
         emit editorModifyChanged(editor,b);
+    }
+}
+
+void EditorManager::contentsChanged()
+{
+    IEditor *editor = static_cast<IEditor*>(sender());
+    if (editor) {
+        emit editorContentsChanged(editor);
     }
 }
 

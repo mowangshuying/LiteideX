@@ -115,6 +115,7 @@ protected slots:
     void editorTabChanged(int);
     void editorTabCloseRequested(int);
     void modificationChanged(bool);
+    void contentsChanged();
     void toggleBrowserAction(bool);
     void gotoNextTab();
     void gotoPrevTab();

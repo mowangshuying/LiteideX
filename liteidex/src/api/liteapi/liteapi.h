@@ -499,6 +499,7 @@ public slots:
     virtual bool saveAllEditors(bool emitAboutSave = true) = 0;
     virtual bool closeEditor(IEditor *editor = 0) = 0;
     virtual bool closeAllEditors() = 0;
+    // virtual void contentChanged(LiteApi::IEditor *editor) = 0;
 signals:
     void currentEditorChanged(LiteApi::IEditor *editor);
     void editorCreated(LiteApi::IEditor *editor);
@@ -506,6 +507,7 @@ signals:
     void editorAboutToSave(LiteApi::IEditor *editor);
     void editorSaved(LiteApi::IEditor *editor);
     void editorModifyChanged(LiteApi::IEditor *editor, bool b);
+    void editorContentsChanged(LiteApi::IEditor *editor);
     void colorStyleSchemeChanged();
 };
 
