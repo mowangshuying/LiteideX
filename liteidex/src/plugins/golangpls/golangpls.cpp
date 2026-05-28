@@ -26,7 +26,7 @@ GolangPls::~GolangPls()
 void GolangPls::__init()
 {
 	m_process = new Process(this);
-	m_goplsPath = LiteApi::getGoPls(m_liteApp);
+    // m_goplsPath = LiteApi::getGoPls(m_liteApp);
 	m_golangAst = LiteApi::findExtensionObject<LiteApi::IGolangAst*>(m_liteApp, "LiteApi.IGolangAst");
 
 	__loadPkgList();
@@ -84,7 +84,8 @@ void GolangPls::__start(const QString& folder)
 
 	QStringList args;
 	args << "-rpc.trace";
-	m_process->startEx(m_goplsPath, args);
+    m_process->setProcessEnvironment(LiteApi::getGoEnvironment(m_liteApp));
+    m_process->startEx(LiteApi::getGoPls(m_liteApp), args);
 	__initLSP(folder);
 }
 
@@ -423,7 +424,7 @@ void GolangPls::__didOpen(QString filepath, QString content, int version)
 
 	QVariantMap params;
 	QVariantMap textDocument;
-	textDocument["uri"] = "file:///" + filepath;
+	textDocument["uri"] = "file://" + filepath;
 	textDocument["languageId"] = "go";
 	textDocument["version"] = version;
 	textDocument["text"] = content;
@@ -435,7 +436,7 @@ void GolangPls::__didClose(QString filepath)
 {
 	QVariantMap params;
 	QVariantMap textDocument;
-	textDocument["uri"] = "file:///" + filepath;
+	textDocument["uri"] = "file://" + filepath;
 	params["textDocument"] = textDocument;
     _notify(LSPMethod::TextDocumentDidClose, params);
 }
@@ -444,7 +445,7 @@ void GolangPls::__didChange(QString filepath, QString content, int version)
 {
 	QVariantMap params;
 	QVariantMap textDocument;
-	textDocument["uri"] = "file:///" + filepath;
+	textDocument["uri"] = "file://" + filepath;
 	textDocument["version"] = version;
 	params["textDocument"] = textDocument;
 
