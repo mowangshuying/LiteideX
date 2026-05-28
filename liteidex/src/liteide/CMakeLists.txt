@@ -34,10 +34,10 @@ set_target_properties(${TGT} PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/liteide/lib/liteide"
 )
 
+if (DEFINED CPACK_PACKAGE_NAME)
 if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
 set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE true)
 find_program(QT_DEPLOY_QT NAMES windeployqt)
-
 add_custom_command(TARGET liteide POST_BUILD
     COMMAND "${QT_DEPLOY_QT}" 
             --dir "${CMAKE_SOURCE_DIR}/liteide/bin"     
@@ -73,5 +73,5 @@ add_custom_command(TARGET liteide POST_BUILD
             "$<TARGET_FILE:welcome>"
     COMMENT "Running windeployqt to deploy Qt dependencies to bin directory..."
 )
-
+endif()
 endif()
