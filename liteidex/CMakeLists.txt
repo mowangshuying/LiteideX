@@ -83,6 +83,11 @@ install(DIRECTORY "${CMAKE_SOURCE_DIR}/deploy/"
         PATTERN ".git*" EXCLUDE
 )
 
+install(DIRECTORY "${CMAKE_SOURCE_DIR}/os_deploy/"
+        DESTINATION "./share/liteide/liteenv"
+        PATTERN ".git*" EXCLUDE
+)
+
 install(DIRECTORY "${CMAKE_SOURCE_DIR}/liteide/lib"
         DESTINATION "."
         USE_SOURCE_PERMISSIONS
