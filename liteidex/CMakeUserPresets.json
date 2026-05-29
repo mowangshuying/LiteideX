@@ -41,24 +41,6 @@
     },
     {
       "hidden": true,
-      "name": "5.15.2_msvc2019_64",
-      "inherits": "Qt",
-      "environment": {
-        "QTDIR": "C:/Qt/5.15.2/msvc2019_64"
-      },
-      "architecture": {
-        "strategy": "external",
-        "value": "x64"
-      },
-      "generator": "Visual Studio 17 2022",
-      "vendor": {
-        "qt-project.org/Version": {
-          "checksum": "e2VZU7zYyOUwSCH077aia3t5U+0="
-        }
-      }
-    },
-    {
-      "hidden": true,
       "name": "5.15.2_msvc2019",
       "inherits": "Qt",
       "environment": {
@@ -120,11 +102,29 @@
           "checksum": "hFHqn7KAkQOhAQUh9kbJbv7R0NY="
         }
       }
+    },
+    {
+      "hidden": true,
+      "name": "5.15.2_msvc2019_64",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "C:/Qt/5.15.2/msvc2019_64"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "e2VZU7zYyOUwSCH077aia3t5U+0="
+        }
+      }
     }
   ],
   "vendor": {
     "qt-project.org/Presets": {
-      "checksum": "RwLYUXI7e4SenLK5Fb1MW9Lmzko="
+      "checksum": "7zuqNwlztPq2ZHLArJ4PXFxCjSY="
     }
   }
 }
