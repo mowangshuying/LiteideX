@@ -272,10 +272,10 @@ void GolangPls::__completion(QString filePath, int line, int column)
 	params["position"] = position;
 
 	qint64 timestamp = QDateTime::currentMSecsSinceEpoch();
+	qDebug() << QString("__completion file:%1.%2.%3").arg(filePath).arg(line).arg(column);
 	__requestLSP("textDocument/completion", params, [=](GolangPls* pls, QVariantMap __map) {
-
 			QString sLog = QString("__comeletion fiel:%1.%2.%3 use time:%4ms").arg(filePath).arg(line).arg(column).arg(QDateTime::currentMSecsSinceEpoch() - timestamp);
-			m_liteApp->appendLog("GolangPls", sLog);
+			qDebug() << sLog;
 
 			if (!__map.contains("result"))
 			{
@@ -292,6 +292,10 @@ void GolangPls::__completion(QString filePath, int line, int column)
 			QVariantList __items = __result["items"].toList();
 			int n = 0;
 
+
+			if (!m_preWord.isEmpty()) {
+				m_completer->clearItemChilds(m_preWord);
+			}
 			QStandardItem* root = m_completer->findRoot(m_preWord);
 			for (int i = 0; i < __items.size(); i++)
 			{
@@ -484,41 +488,34 @@ void GolangPls::__onFinished(int code, QProcess::ExitStatus status)
 
 void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 {
-	qDebug() << "GolangPls::__onCurrentEditorChanged";
-	if (!editor) {
-		this->__setCompleter(0);
+	m_editor= LiteApi::getTextEditor(editor);
+	if (m_editor == nullptr)
 		return;
-	}
 
 	if (editor->mimeType() == "text/x-gosrc") {
 		LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
-		this->__setCompleter(completer);
+		completer->setImportList(m_importList);
+		__setCompleter(completer);
 	}
 	else if (editor->mimeType() == "browser/goplay") {
 		LiteApi::IEditor* pedit = LiteApi::findExtensionObject<LiteApi::IEditor*>(m_liteApp->extension(), "LiteApi.Goplay.IEditor");
 		if (pedit && pedit->mimeType() == "text/x-gosrc") {
 			editor = pedit;
 			LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
-			this->__setCompleter(completer);
+			completer->setImportList(m_importList);
+			__setCompleter(completer);
 		}
 	}
 	else {
-		this->__setCompleter(0);
+		__setCompleter(nullptr);
 		return;
 	}
 
-	m_editor = LiteApi::getTextEditor(editor);
-	if (!m_editor) {
+	QString filePath = editor->filePath();
+	if (filePath.isEmpty())
 		return;
-	}
-	//m_pkgImportTip->setWidget(editor->widget());
-	QString filePath = m_editor->filePath();
-	if (filePath.isEmpty()) {
-		return;
-	}
+
 	m_fileInfo.setFile(filePath);
-	//m_gocodeProcess->setWorkingDirectory(m_fileInfo.absolutePath());
-	//updateEditorGOPATH();
 }
 
 void GolangPls::__onEditorCreated(LiteApi::IEditor* editor)
@@ -572,6 +569,7 @@ void GolangPls::__onFolderClosed(const QString& folder)
 void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
 {
 	qDebug() << "GolangPls::__onPrefixChanged pre:" << pre;
+	qDebug() << "sender:" << qint64(sender());
 	int offset = -1;
 	if (pre.endsWith('.')) {
 		m_preWord = pre;
