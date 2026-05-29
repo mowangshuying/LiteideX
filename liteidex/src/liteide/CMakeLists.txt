@@ -39,41 +39,51 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     find_program(QT_DEPLOY_QT NAMES windeployqt)
 
     if(QT_DEPLOY_QT)
-        add_custom_command(TARGET liteide POST_BUILD
-            COMMAND "${QT_DEPLOY_QT}" 
-                    --dir "${CMAKE_SOURCE_DIR}/liteide/bin"     
-                    $<$<CONFIG:Release>:--release>
-                    --no-translations                            
-                    --no-compiler-runtime                        
-                    "$<TARGET_FILE:liteapp>"                     
-                    "$<TARGET_FILE:bookmarks>"
-                    "$<TARGET_FILE:dlvdebugger>"
-                    "$<TARGET_FILE:fakevimedit>"
-                    "$<TARGET_FILE:filebrowser>"
-                    "$<TARGET_FILE:golangast>"
-                    "$<TARGET_FILE:golangpls>"
-                    "$<TARGET_FILE:golangdoc>"
-                    "$<TARGET_FILE:golangedit>"
-                    "$<TARGET_FILE:golangfmt>"
-                    "$<TARGET_FILE:golangplay>"
-                    "$<TARGET_FILE:golangpresent>"
-                    "$<TARGET_FILE:helloliteide>"
-                    "$<TARGET_FILE:imageeditor>"
-                    "$<TARGET_FILE:jsonedit>"
-                    "$<TARGET_FILE:litebuild>"
-                    "$<TARGET_FILE:litedebug>"
-                    "$<TARGET_FILE:liteeditor>"
-                    "$<TARGET_FILE:liteenv>"
-                    "$<TARGET_FILE:litefind>"
-                    "$<TARGET_FILE:litetty>"
-                    "$<TARGET_FILE:markdown>"
-                    "$<TARGET_FILE:qsqleditor>"
-                    "$<TARGET_FILE:quickopen>"
-                    "$<TARGET_FILE:rustedit>"
-                    "$<TARGET_FILE:terminal>"
-                    "$<TARGET_FILE:welcome>"
-            COMMENT "Running windeployqt to deploy Qt dependencies..."
-        )
+        install(CODE "
+            message(STATUS \">>>windeployqt deployed automatically...\")
+            if(CMAKE_INSTALL_CONFIG_NAME STREQUAL \"Release\")
+                set(DEPLOY_ARGS --release)
+            endif()
+            execute_process(
+                COMMAND \"${QT_DEPLOY_QT}\" 
+                        --dir \"${CMAKE_SOURCE_DIR}/liteide/bin\"     
+                        \${DEPLOY_ARGS}
+                        --no-translations                            
+                        --no-compiler-runtime                        
+                        \"${CMAKE_SOURCE_DIR}/liteide/bin/liteapp.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/bookmarks.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/dlvdebugger.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/fakevimedit.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/filebrowser.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/golangast.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/golangpls.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/golangdoc.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/golangedit.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/golangfmt.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/golangplay.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/golangpresent.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/helloliteide.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/imageeditor.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/jsonedit.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/litebuild.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/litedebug.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/liteeditor.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/liteenv.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/litefind.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/litetty.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/markdown.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/qsqleditor.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/quickopen.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/rustedit.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/terminal.dll\"
+                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/welcome.dll\"
+                WORKING_DIRECTORY \"${CMAKE_SOURCE_DIR}/liteide/bin\"
+                RESULT_VARIABLE DEPLOY_RESULT
+            )
+            if(NOT DEPLOY_RESULT EQUAL 0)
+                message(FATAL_ERROR \"windeployqt 执行失败！\")
+            endif()
+        ")
     else()
         message(WARNING "windeployqt not found! Qt dependencies will not be deployed automatically.")
     endif()
