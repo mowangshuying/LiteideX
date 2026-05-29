@@ -252,20 +252,8 @@ QToolButton[popupMode="1"] {
 }
 QToolButton[popupMode="2"] {
     padding-right: 5px;
-    background-color: rgb(40, 55, 75); 
 }
 QToolButton[popupMode="2"]:hover {
-    background-color: rgb(30, 45, 65); 
-}
-
-QToolButton::menu-button {
-    border-left: 1px solid rgb(60, 80, 100);
-    background: rgb(30, 45, 65);
-}
-
-QToolButton::menu-button:hover {
-    border-left: 1px solid rgb(0, 122, 204);
-    background: rgb(50, 70, 95);
 }
 
 QToolButton:pressed {

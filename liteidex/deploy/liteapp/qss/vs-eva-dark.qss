@@ -252,21 +252,10 @@ QToolButton[popupMode="1"] {
 }
 QToolButton[popupMode="2"] {
     padding-right: 5px;
-    background-color: #3E4A50; 
 }
 QToolButton[popupMode="2"]:hover {
-    background-color: #323F45; 
 }
 
-QToolButton::menu-button {
-    border-left: 1px solid #3E4A50;
-    background: #323F45;
-}
-
-QToolButton::menu-button:hover {
-    border-left: 1px solid #95A5A6;
-    background: #3E4A50;
-}
 
 QToolButton:pressed {
     background-color: #95A5A6;
