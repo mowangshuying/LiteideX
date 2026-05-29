@@ -37,6 +37,7 @@
 #include <QMimeData>
 #include <QMenu>
 #include <QDebug>
+#include <QTimer>
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
      #define _CRTDBG_MAP_ALLOC
@@ -91,8 +92,11 @@ void LiteEditorWidget::codeCompleter()
         }
         m_completer->setCompletionContext(LiteApi::CompleterCodeContext);
         m_completer->setCompletionPrefix("");
-        emit completionPrefixChanged(completionPrefix,true);
+        //emit completionPrefixChanged(completionPrefix,true);
         m_completer->startCompleter(completionPrefix);
+        QTimer::singleShot(0, this, [=]() {
+            emit completionPrefixChanged(completionPrefix,true);
+            });
     }
 }
 
@@ -283,8 +287,11 @@ void LiteEditorWidget::keyPressEvent(QKeyEvent *e)
         return;
     }
     m_completer->setCompletionContext(LiteApi::CompleterCodeContext);
-    emit completionPrefixChanged(completionPrefix,false);
+    //emit completionPrefixChanged(completionPrefix,false);
     m_completer->startCompleter(completionPrefix);
+    QTimer::singleShot(0, this, [=]() {
+        emit completionPrefixChanged(completionPrefix, false);
+        });
 }
 
 void LiteEditorWidget::inputMethodEvent(QInputMethodEvent *e)

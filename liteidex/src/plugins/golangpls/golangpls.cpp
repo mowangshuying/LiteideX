@@ -485,6 +485,40 @@ void GolangPls::__onFinished(int code, QProcess::ExitStatus status)
 void GolangPls::__onCurrentEditorChanged(LiteApi::IEditor* editor)
 {
 	qDebug() << "GolangPls::__onCurrentEditorChanged";
+	if (!editor) {
+		this->__setCompleter(0);
+		return;
+	}
+
+	if (editor->mimeType() == "text/x-gosrc") {
+		LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
+		this->__setCompleter(completer);
+	}
+	else if (editor->mimeType() == "browser/goplay") {
+		LiteApi::IEditor* pedit = LiteApi::findExtensionObject<LiteApi::IEditor*>(m_liteApp->extension(), "LiteApi.Goplay.IEditor");
+		if (pedit && pedit->mimeType() == "text/x-gosrc") {
+			editor = pedit;
+			LiteApi::ICompleter* completer = LiteApi::findExtensionObject<LiteApi::ICompleter*>(editor, "LiteApi.ICompleter");
+			this->__setCompleter(completer);
+		}
+	}
+	else {
+		this->__setCompleter(0);
+		return;
+	}
+
+	m_editor = LiteApi::getTextEditor(editor);
+	if (!m_editor) {
+		return;
+	}
+	//m_pkgImportTip->setWidget(editor->widget());
+	QString filePath = m_editor->filePath();
+	if (filePath.isEmpty()) {
+		return;
+	}
+	m_fileInfo.setFile(filePath);
+	//m_gocodeProcess->setWorkingDirectory(m_fileInfo.absolutePath());
+	//updateEditorGOPATH();
 }
 
 void GolangPls::__onEditorCreated(LiteApi::IEditor* editor)
@@ -537,6 +571,7 @@ void GolangPls::__onFolderClosed(const QString& folder)
 
 void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
 {
+	qDebug() << "GolangPls::__onPrefixChanged pre:" << pre;
 	int offset = -1;
 	if (pre.endsWith('.')) {
 		m_preWord = pre;
