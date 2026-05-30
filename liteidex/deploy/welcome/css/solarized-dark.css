@@ -1,0 +1,361 @@
+/* Solarized Dark Theme - Welcome Page Styles */
+/* Based on Ethan Schoonover's Solarized color scheme */
+/* Low contrast, harmonious colors designed to reduce eye strain */
+
+/* 全局与基础样式 */
+body {
+    text-align: left;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #839496; /* base0 - 主要文字颜色 */
+    background-color: #002b36; /* base03 - 深蓝绿背景 */
+}
+
+pre, code {
+    font-family: Menlo, monospace;
+}
+
+/* 代码高亮与行号 */
+pre .comment {
+    color: #586e75; /* base01 - 注释颜色 */
+}
+
+pre .ln {
+    color: #586e75; /* base01 - 行号颜色 */
+}
+
+/* 链接样式 */
+a {
+    color: #268bd2; /* blue - 链接颜色 */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2aa198; /* cyan - 悬停时变为青色 */
+}
+
+/* 间距重置 */
+p, pre, ul, ol {
+    margin: 20px;
+}
+
+/* 代码块样式 - Solarized 编辑器风格 */
+pre {
+    background: #073642; /* base02 - 代码背景 */
+    color: #839496; /* base0 - 代码文字 */
+    padding: 10px;
+    border: 1px solid #586e75; /* base01 - 边框 */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, .rootHeading {
+    margin: 20px 0;
+    padding: 0;
+    color: #268bd2; /* blue - 标题颜色 */
+    font-weight: bold;
+}
+
+h2 {
+    background: #073642; /* base02 - 二级标题背景 */
+    padding: 2px 5px;
+}
+
+.rootHeading {
+    margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    text-decoration: underline;
+}
+
+/* 列表与定义 */
+dl {
+    margin: 20px;
+}
+
+dd {
+    margin: 2px 20px;
+}
+
+#nav table td {
+    vertical-align: top;
+}
+
+/* 表格样式 */
+table.dir th {
+    text-align: left;
+    color: #839496; /* base0 */
+}
+
+table.dir td {
+    word-wrap: break-word;
+    vertical-align: top;
+    color: #93a1a1; /* base1 - 稍亮的文字 */
+}
+
+/* 头部导航 */
+#heading {
+    float: left;
+    margin: 0 0 10px 0;
+    padding: 16px 0;
+    font-weight: normal;
+}
+
+#heading a {
+    color: #839496; /* base0 - 头部链接 */
+    text-decoration: none;
+}
+
+/* 顶部栏 */
+#topbar {
+    background: #073642; /* base02 - 顶部栏背景 */
+    border-bottom: 1px solid #586e75; /* base01 - 底部边框 */
+}
+
+/* 页面容器布局 */
+body {
+    text-align: center;
+}
+
+#page,
+#topbar .container {
+    clear: both;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+
+#plusone, #plusoneRoot {
+    float: right;
+}
+
+/* 版权信息 */
+#copyright {
+    color: #586e75; /* base01 - 版权信息 */
+    margin: 40px 0;
+}
+
+/* 按钮与菜单通用样式 */
+#menu > a,
+#menu > input,
+#learn .buttons a,
+#blog .read a {
+    padding: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu > a,
+#menu > input {
+    border: 1px solid #268bd2; /* blue - 边框 */
+}
+
+/* 菜单主按钮 */
+#menu > a {
+    color: #002b36; /* base03 - 深色文字 */
+    background: #268bd2; /* blue - 蓝色按钮 */
+}
+
+#menu > a:hover {
+    background: #2aa198; /* cyan - 悬停时变青色 */
+}
+
+/* 开始按钮与次要按钮 */
+#start,
+#learn .buttons a,
+#blog .read a {
+    color: #839496; /* base0 */
+    border: 1px solid #268bd2; /* blue - 边框 */
+    background: #073642; /* base02 - 背景 */
+}
+
+#start:hover,
+#learn .buttons a:hover,
+#blog .read a:hover {
+    background: #586e75; /* base01 - 悬停时变暗 */
+}
+
+/* 菜单区域 */
+#menu {
+    padding: 10px 0;
+    text-align: right;
+}
+
+#menu > a {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#menu > input {
+    position: relative;
+    top: 1px;
+    width: 100px;
+    background: #073642; /* base02 - 输入框背景 */
+    color: #839496; /* base0 - 输入框文字 */
+    border: 1px solid #586e75; /* base01 - 边框 */
+}
+
+#menu > input.inactive {
+    color: #586e75; /* base01 - 非激活状态 */
+}
+
+/* 左右分栏 */
+#left, #right {
+    float: left;
+    width: 415px;
+}
+#right { float: right; }
+
+/* 学习与关于区域 */
+#learn, #about {
+    padding-top: 20px;
+}
+
+#learn h2, #about {
+    margin: 0;
+}
+
+#about {
+    height: 96px;
+}
+
+#gopher {
+    background: url(/doc/gopher/frontpage.png) no-repeat;
+    background-position: center top;
+    height: 155px;
+}
+
+/* 开始按钮 */
+#start {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#start .big {
+    font-weight: bold;
+}
+
+#start .desc {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* 学习区域：输入输出框 - Solarized 终端风格 */
+#learn pre, #learn textarea {
+    padding: 0;
+    margin: 0;
+    font-family: Menlo, monospace;
+}
+
+#learn .input {
+    padding: 10px;
+    margin-top: 10px;
+    height: 150px;
+    background: #002b36; /* base03 - 输入区背景 */
+    border: 1px solid #586e75; /* base01 - 边框 */
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#learn .input textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: transparent;
+    color: #839496; /* base0 - 输入文字 */
+}
+
+#learn .output {
+    border-top: none !important;
+    padding: 10px;
+    height: 59px;
+    overflow: auto;
+    background: #00212b; /* 比 base03 更深的背景 */
+    border: 1px solid #586e75; /* base01 - 边框 */
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#learn .output pre {
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #859900; /* green - 输出代码颜色 */
+}
+
+#learn .buttons {
+    padding: 20px 0 10px 0;
+    text-align: right;
+}
+
+#learn .buttons a {
+    height: 16px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+#learn .buttons .tour {
+    float: right;
+}
+
+#learn .buttons .tour a {
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/* 博客与视频 */
+#blog, #video {
+    margin-top: 40px;
+}
+
+#blog > div, #blog > a, #video > div, #video > a, #blog > h2, #video > h2 {
+    margin-bottom: 10px;
+}
+
+#blog .title, #video .title {
+    color: #839496; /* base0 */
+    text-decoration: none;
+    display: block;
+}
+
+#blog .when {
+    color: #586e75; /* base01 - 时间信息 */
+}
+
+#blog .read {
+    text-align: right;
+}
+
+/* 示例代码切换 */
+.exampleHeading { cursor: pointer; }
+.example .collapsed { display: block; }
+.example .expanded { display: none; }
+.exampleVisible .collapsed { display: none; }
+.exampleVisible .expanded { display: block; }
+
+/* 代码表格与分割线 */
+table.codetable { margin-left: auto; margin-right: auto; border-style: none; }
+hr { border-style: none; border-top: 1px solid #586e75; } /* base01 - 分割线 */

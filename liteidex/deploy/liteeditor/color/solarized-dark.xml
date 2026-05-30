@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme version="1.0" name="Solarized Dark">
+  <!--
+  Solarized Dark Theme - Precision colors for machines and people
+  Based on Ethan Schoonover's Solarized color scheme
+  Low contrast, harmonious colors designed to reduce eye strain
+  -->
+  
+  <!-- 基础文本 - base03 深蓝绿背景，base0 灰白文字 -->
+  <style name="Text" foreground="#839496" background="#002b36"/>
+  
+  <!-- 额外信息（如行号等）- base01 暗灰色 -->
+  <style name="Extra" foreground="#586e75" background="#002b36"/>
+  
+  <!-- 选中文本 - base02 稍亮的深蓝绿 -->
+  <style name="Selection" background="#073642"/>
+  
+  <!-- 当前行高亮 - base02 的半透明版本 -->
+  <style name="CurrentLine" background="#073642"/>
+  
+  <!-- 括号匹配 - base02 -->
+  <style name="MatchBrackets" background="#073642"/>
+  
+  <!-- 缩进线 - base02 的暗色版本，非常低调 -->
+  <style name="IndentLine" foreground="#073642"/>
+  
+  <!-- 空白字符可视化 - base01 -->
+  <style name="VisualWhitespace" foreground="#586e75"/>
+  
+  <!-- 关键字 - orange (控制流、类型声明等) -->
+  <style name="Keyword" foreground="#cb4b16" bold="false"/>
+  
+  <!-- 数据类型 - cyan (int, string, bool 等) -->
+  <style name="DataType" foreground="#2aa198"/>
+  
+  <!-- 十进制数字 - cyan -->
+  <style name="Decimal" foreground="#2aa198"/>
+  
+  <!-- 基础数字 -->
+  <style name="BaseN" foreground="#2aa198"/>
+  
+  <!-- 浮点数 -->
+  <style name="Float" foreground="#2aa198"/>
+  
+  <!-- 字符常量 - green -->
+  <style name="Char" foreground="#859900"/>
+  
+  <!-- 字符串 - green -->
+  <style name="String" foreground="#859900"/>
+  
+  <!-- 注释 - base01 暗灰色，低对比度 -->
+  <style name="Comment" foreground="#586e75"/>
+  
+  <!-- 警告/提示 - yellow -->
+  <style name="Alert" foreground="#b58900"/>
+  
+  <!-- 错误 - red -->
+  <style name="Error" foreground="#dc322f"/>
+  
+  <!-- 函数调用 - blue -->
+  <style name="Function" foreground="#268bd2"/>
+  
+  <!-- 区域标记 - violet -->
+  <style name="RegionMarker" foreground="#6c71c4"/>
+  
+  <!-- 符号（运算符等）- base0 -->
+  <style name="Symbol" foreground="#839496"/>
+  
+  <!-- 内置函数 - blue -->
+  <style name="BuiltinFunc" foreground="#268bd2"/>
+  
+  <!-- 预声明标识符 - violet -->
+  <style name="Predeclared" foreground="#6c71c4"/>
+  
+  <!-- 函数声明 - blue -->
+  <style name="FuncDecl" foreground="#268bd2"/>
+  
+  <!-- 占位符 - magenta -->
+  <style name="Placeholder" foreground="#d33682"/>
+  
+  <!-- TODO 注释 - yellow 文字，base02 背景 -->
+  <style name="ToDo" foreground="#b58900" background="#073642" bold="true"/>
+</style-scheme>
