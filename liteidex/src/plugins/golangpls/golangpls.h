@@ -112,6 +112,8 @@ public slots:
 
 	void __onWordCompleted(QString, QString, QString);
 
+	void __onCurentEnvChanged(LiteApi::IEnv* env);
+
 	void __onReadyReadStandardOutput();
 	void __onReadyReadStandardError();
 protected:
