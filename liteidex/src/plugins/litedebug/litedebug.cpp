@@ -135,9 +135,9 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
     m_removeAllBreakAct = new QAction(tr("Remove All Breakpoints"),this);
     actionContext->regAction(m_removeAllBreakAct,"RemoveAllBreakPoints","");
 
-//    m_toolBar->addSeparator();
-//    m_toolBar->addAction(m_startDebugAct);
-//    m_toolBar->addAction(m_insertBreakAct);
+    //m_toolBar->addSeparator();
+    //m_toolBar->addAction(m_startDebugAct);
+    //m_toolBar->addAction(m_insertBreakAct);
 
     m_bLastDebugCmdInput = false;
 
@@ -152,7 +152,6 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
     //widgetToolBar->addAction(m_runToLineAct);
 
     m_debugMenu = m_liteApp->actionManager()->loadMenu(ID_MENU_DEBUG);
-
     m_debugMenu->addAction(m_startDebugExternal);
     m_debugMenu->addSeparator();
     m_debugMenu->addAction(m_startDebugAct);
@@ -164,6 +163,22 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
     m_debugMenu->addAction(m_stepOverAct);
     m_debugMenu->addAction(m_stepOutAct);
     m_debugMenu->addAction(m_runToLineAct);
+
+
+    QToolBar* toolBar = m_liteApp->actionManager()->loadToolBar(ID_TOOLBAR_STD);
+    if (toolBar) {
+        toolBar->addSeparator();
+        toolBar->addAction(m_startDebugAct);
+        toolBar->addAction(m_continueAct);
+        toolBar->addAction(m_stopDebugAct);
+        toolBar->addSeparator();
+        toolBar->addAction(m_showLineAct);
+        toolBar->addAction(m_stepIntoAct);
+        toolBar->addAction(m_stepOverAct);
+        toolBar->addAction(m_stepOutAct);
+        toolBar->addAction(m_runToLineAct);
+    }
+
 
     connect(m_manager,SIGNAL(currentDebuggerChanged(LiteApi::IDebugger*)),this,SLOT(setDebugger(LiteApi::IDebugger*)));
     connect(m_liteApp,SIGNAL(loaded()),this,SLOT(appLoaded()));
