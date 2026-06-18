@@ -41,6 +41,9 @@ void GolangPls::__init()
 	connect(m_process, &Process::readyReadStandardOutput, this, &GolangPls::__onReadyReadStandardOutput);
 	connect(m_process, &Process::readyReadStandardError, this, &GolangPls::__onReadyReadStandardError);
 
+	LiteApi::IEnvManager* iEnvManager = LiteApi::getEnvManager(m_liteApp);
+	connect(iEnvManager, &LiteApi::IEnvManager::currentEnvChanged, this, &GolangPls::__onCurentEnvChanged);
+
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::currentEditorChanged, this, &GolangPls::__onCurrentEditorChanged);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorContentsChanged, this, &GolangPls::__onEditorContentsChanged);
 	connect(m_liteApp->editorManager(), &LiteApi::IEditorManager::editorCreated, this, &GolangPls::__onEditorCreated);
@@ -97,10 +100,10 @@ void GolangPls::__stop(const QString& folder)
 
 	m_bInited = false;
 	m_waitOpenEdits.clear();
-	qDebug() << "stop pls ---- 1";
+	//qDebug() << "stop pls ---- 1";
 	m_process->stopAndWait(100, 2000);
-	qDebug() << "stop pls ---- 2";
-	qDebug() << "stop pls ---- 3" << m_process->isRunning();
+	//qDebug() << "stop pls ---- 2";
+	//qDebug() << "stop pls ---- 3" << m_process->isRunning();
 
 	//disconnect(m_process, nullptr, this, nullptr);
 }
@@ -604,6 +607,21 @@ void GolangPls::__onPrefixChanged(QTextCursor cur, QString pre, bool force)
 void GolangPls::__onWordCompleted(QString, QString, QString)
 {
 
+}
+
+void GolangPls::__onCurentEnvChanged(LiteApi::IEnv* env)
+{
+	m_liteApp->appendLog("GolangPls", "go environment changed");
+	QList<LiteApi::IEditor*>  editorList = m_liteApp->editorManager()->editorList();
+    for (int i = 0; i < editorList.size(); i++)
+    {
+		LiteApi::IEditor* editor = editorList.at(i);
+		if (editor->mimeType() == "text/x-gosrc")
+		{
+			m_waitOpenEdits.append(editor);
+		}
+    }
+	__start(m_lastOpenFolder);
 }
 
 void GolangPls::__onReadyReadStandardOutput()
