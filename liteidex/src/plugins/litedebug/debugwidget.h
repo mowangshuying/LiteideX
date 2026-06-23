@@ -79,7 +79,7 @@ public slots:
     void scrollTo(LiteApi::DEBUG_MODEL_TYPE type, const QModelIndex &index);
 protected:
     LiteApi::IApplication *m_liteApp;
-    QWidget *m_widget;
+    //QWidget *m_widget;
     LiteApi::IDebugger *m_debugger;
     QTabWidget *m_tabWidget;
     QTreeView *m_asyncView;

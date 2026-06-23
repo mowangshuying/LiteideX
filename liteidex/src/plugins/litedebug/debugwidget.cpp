@@ -349,7 +349,7 @@ void DebugWidget::saveDebugInfo(const QString &id)
 
 void DebugWidget::addWatch()
 {
-    QString text = QInputDialog::getText(this->m_widget,tr("Add Watch"),tr("Watch expression (e.g. buf main.var os.Stdout):"));
+    QString text = QInputDialog::getText(nullptr, tr("Add Watch"), tr("Watch expression (e.g. buf main.var os.Stdout):"));
     if (text.isEmpty()) {
         return;
     }
