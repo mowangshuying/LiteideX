@@ -366,6 +366,7 @@ void DlvRpcDebugger::createWatch(const QString &var)
     }
     DebuggerState state = m_dlvClient->GetState();
     if (!state.pCurrentThread) {
+        m_watchList.removeOne(var);
         return;
     }
     updateWatch(state.pCurrentThread->GoroutineID);

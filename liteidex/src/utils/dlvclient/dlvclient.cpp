@@ -635,10 +635,14 @@ void DlvClient::finishedCommandReply()
 
 bool DlvClient::callBlocked(const QString &method, const JsonDataIn *in, JsonDataOut *out) const
 {
+    if (m_dlv == nullptr)
+    {
+        return false;
+    }
+
     QVariantMap param;
     in->toMap(param);
-    QJsonRpcMessage request = QJsonRpcMessage::createRequest("RPCServer."+method, QJsonValue::fromVariant(param));
-
+    QJsonRpcMessage request = QJsonRpcMessage::createRequest("RPCServer." + method, QJsonValue::fromVariant(param));
     QJsonRpcMessage response = m_dlv->sendMessageBlocking(request,m_callTimeout);
     if (response.type() == QJsonRpcMessage::Error) {
         //qDebug("error(%d): %s", response.errorCode(), response.errorMessage().toLocal8Bit().data());//

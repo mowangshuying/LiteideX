@@ -329,12 +329,6 @@ void QuickOpenManager::hidePopup()
 void QuickOpenManager::filterChanged(const QString &text)
 {
     // 文字改变时候触发
-    qDebug() << "filter changed:" << text;
-    if (text == "?")
-    {
-        qDebug() << "T";
-    }
-
     bool checkSym = false;
     if (m_currentFilter == m_quickOpenFiles) {
         checkSym = true;
