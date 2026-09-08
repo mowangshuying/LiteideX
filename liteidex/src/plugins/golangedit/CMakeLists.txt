@@ -10,7 +10,6 @@ set(SOURCES
     golangeditoption.cpp
     golangeditoptionfactory.cpp
     goaddtagsdialog.cpp
-    goplsfilesearch.cpp
     goremovetagsdialog.cpp
 )
 
@@ -25,7 +24,6 @@ set(HEADERS
     golangeditoption.h
     golangeditoptionfactory.h
     goaddtagsdialog.h
-    goplsfilesearch.h
     goremovetagsdialog.h
 )
 
