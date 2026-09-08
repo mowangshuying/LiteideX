@@ -72,9 +72,7 @@ QModelIndex QuickOpenHelp::rootIndex() const
 void QuickOpenHelp::updateModel()
 {
     LiteApi::IQuickOpenManager *mgr = LiteApi::getQuickOpenManager(m_liteApp);
-    m_model->clear();// 清除模型
-
-    // 显示的是symFilterMap中的数据;
+    m_model->clear();
     QMapIterator<QString,LiteApi::IQuickOpen*> i(mgr->symFilterMap());
     while(i.hasNext()) {
         i.next();

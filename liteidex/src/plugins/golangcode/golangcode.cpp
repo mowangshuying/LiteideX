@@ -30,12 +30,17 @@
 #include <QTextDocument>
 #include <QAbstractItemView>
 #include <QApplication>
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#include <QScreen>
+#else
 #include <QDesktopWidget>
+#endif
 #include <QLabel>
 #include <QHBoxLayout>
 #include <QPlainTextEdit>
 #include <QTimer>
 #include <QScrollBar>
+#include <QRegExp>
 #include <QDebug>
 
 //#define GOCODE_CHECKGOPATH
@@ -58,7 +63,8 @@ GolangCode::GolangCode(LiteApi::IApplication *app, QObject *parent) :
     m_editor(0),
     m_completer(0),
     m_closeOnExit(true),
-    m_allImportHint(true)
+    m_allImportHint(true),
+    m_gocodeEnabled(true)
 {
     g_gocodeInstCount++;
     m_gocodeProcess = new Process(this);
@@ -537,7 +543,7 @@ void GolangCode::setCompleter(LiteApi::ICompleter *completer)
     m_completer = completer;
     if (m_completer) {
         m_completer->setImportList(m_allImportList);
-        if (!m_gocodeCmd.isEmpty()) {
+        if (m_gocodeEnabled && !m_gocodeCmd.isEmpty()) {
             m_completer->setSearchSeparator(false);
             m_completer->setExternalMode(true);
             connect(m_completer,SIGNAL(prefixChanged(QTextCursor,QString,bool)),this,SLOT(prefixChanged(QTextCursor,QString,bool)));
@@ -549,8 +555,20 @@ void GolangCode::setCompleter(LiteApi::ICompleter *completer)
     }
 }
 
+void GolangCode::setGocodeEnabled(bool enabled)
+{
+    if (m_gocodeEnabled == enabled) {
+        return;
+    }
+    m_gocodeEnabled = enabled;
+    setCompleter(m_completer);
+}
+
 void GolangCode::prefixChanged(QTextCursor cur,QString pre,bool force)
 {
+    if (!m_gocodeEnabled) {
+        return;
+    }
     if (m_completer->completionContext() != LiteApi::CompleterCodeContext) {
         return;
     }
@@ -810,7 +828,7 @@ ImportPkgTip::ImportPkgTip(LiteApi::IApplication *app, QObject *parent)
     m_infoLabel = new QLabel;
     m_pkgLabel = new QLabel;
     QHBoxLayout *layout = new QHBoxLayout;
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
     layout->addWidget(m_infoLabel);
     layout->addWidget(m_pkgLabel);
     m_popup->setLayout(layout);
@@ -825,11 +843,15 @@ ImportPkgTip::~ImportPkgTip()
 
 void ImportPkgTip::showPkgHint(int startpos, const QStringList &pkg, QPlainTextEdit *ed)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    const QRect screen = ed->screen()->availableGeometry();
+#else
     const QDesktopWidget *desktop = QApplication::desktop();
 #ifdef Q_WS_MAC
     const QRect screen = desktop->availableGeometry(desktop->screenNumber(ed));
 #else
     const QRect screen = desktop->screenGeometry(desktop->screenNumber(ed));
+#endif
 #endif
     m_pkg = pkg;
     m_startPos = startpos;

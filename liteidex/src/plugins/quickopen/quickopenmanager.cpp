@@ -328,7 +328,6 @@ void QuickOpenManager::hidePopup()
 
 void QuickOpenManager::filterChanged(const QString &text)
 {
-    // 文字改变时候触发
     bool checkSym = false;
     if (m_currentFilter == m_quickOpenFiles) {
         checkSym = true;
@@ -360,10 +359,6 @@ void QuickOpenManager::filterChanged(const QString &text)
         }
     }
     if (m_currentFilter) {
-        //if (text == "main")
-        //{
-        //    qDebug() << "text:" << text << "sym:" << m_sym;
-        //}
         QModelIndex index = m_currentFilter->filterChanged(text.mid(m_sym.size()));
         m_widget->view()->setCurrentIndex(index);
         m_widget->view()->scrollTo(index);

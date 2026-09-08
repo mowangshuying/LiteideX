@@ -37,6 +37,7 @@
 #include <QTextDocumentFragment>
 #include <QScrollBar>
 #include <QInputMethodEvent>
+#include <QRegularExpression>
 #include <QTimer>
 #include <cmath>
 //lite_memory_check_begin
@@ -373,7 +374,7 @@ LiteEditorWidgetBase::LiteEditorWidgetBase(LiteApi::IApplication *app, QWidget *
     m_indentLineForeground = QColor(Qt::darkCyan);
     m_visualizeWhitespaceForeground = QColor(Qt::darkGray);
     m_extraForeground = QColor(Qt::darkCyan);
-    m_extraBackground = m_extraArea->palette().color(QPalette::Background);
+    m_extraBackground = m_extraArea->palette().color(QPalette::Window);
     m_currentLineBackground = QColor(180,200,200,128);
     m_matchBracketsBackground = QColor(Qt::gray);
     m_matchBracketsBackground.setAlpha(128);
@@ -548,7 +549,7 @@ int LiteEditorWidgetBase::tabSize() const
 
 void LiteEditorWidgetBase::updateTabWidth()
 {
-    setTabStopWidth(QFontMetrics(font()).averageCharWidth() * m_nTabSize);
+    setTabStopDistance(QFontMetrics(font()).averageCharWidth() * m_nTabSize);
 }
 
 void LiteEditorWidgetBase::setTabToSpaces(bool b)
@@ -776,7 +777,7 @@ void LiteEditorWidgetBase::setExtraColor(const QColor &foreground,const QColor &
     if (background.isValid()) {
         m_extraBackground = background;
     } else {
-        m_extraBackground = m_extraArea->palette().color(QPalette::Background);
+        m_extraBackground = m_extraArea->palette().color(QPalette::Window);
     }
 }
 
@@ -794,7 +795,7 @@ int LiteEditorWidgetBase::extraAreaWidth()
             max /= 10;
             ++digits;
         }
-        space += linefm.width(QLatin1Char('9')) * digits;
+        space += linefm.horizontalAdvance(QLatin1Char('9')) * digits;
     }
     if (m_marksVisible) {
         int markWidth = fm.lineSpacing();
@@ -810,7 +811,6 @@ int LiteEditorWidgetBase::extraAreaWidth()
     return space;
 }
 
-// draw folding marker
 void LiteEditorWidgetBase::drawFoldingMarker(QPainter *painter, const QPalette&,
                                        const QRect &rect,
                                        bool expanded) const
@@ -1537,7 +1537,7 @@ void LiteEditorWidgetBase::setFindOption(LiteApi::FindOption *opt)
         } else {
             m_findExpression.setPatternSyntax(QRegExp::FixedString);
         }
-        m_findFlags = 0;
+        m_findFlags = QTextDocument::FindFlags();
         if (opt->backWard) {
             m_findFlags |= QTextDocument::FindBackward;
         }
@@ -1855,7 +1855,7 @@ void LiteEditorWidgetBase::joinLines()
         QString cutLine = cursor.selectedText();
 
         // Collapse leading whitespaces to one or insert whitespace
-        cutLine.replace(QRegExp(QLatin1String("^\\s*")), QLatin1String(" "));
+        cutLine.replace(QRegularExpression(QLatin1String("^\\s*")), QLatin1String(" "));
         cursor.movePosition(QTextCursor::Right, QTextCursor::KeepAnchor);
         cursor.removeSelectedText();
 
@@ -2940,22 +2940,34 @@ void LiteEditorWidgetBase::indentEnter(QTextCursor cur)
     ensureCursorVisible();
 }
 
-static QString simpleInfo(const QString &info, int maxLine)
+static QString simpleInfo(const QString &info, int maxLine, bool keepLastLine)
 {
     QStringList lines = info.split("\n");
     if (lines.size() <= maxLine) {
         return info;
     }
     QStringList out;
-    for (int i = 0; i < maxLine; i++) {
+    int lineCount = keepLastLine ? qMax(0, maxLine - 1) : maxLine;
+    for (int i = 0; i < lineCount; i++) {
         out += lines[i];
+    }
+    if (keepLastLine && !lines.isEmpty()) {
+        while (!out.isEmpty() && out.last().isEmpty()) {
+            out.removeLast();
+        }
+        out += "...";
+        out += lines.last();
+        return out.join("\n");
+    }
+    while (!out.isEmpty() && out.last().isEmpty()) {
+        out.removeLast();
     }
     return out.join("\n")+"\n...";
 }
 
-void LiteEditorWidgetBase::showToolTipInfo(const QPoint &pos, const QString &text)
+void LiteEditorWidgetBase::showToolTipInfo(const QPoint &pos, const QString &text, bool keepLastLine)
 {
-    showTipText(pos,simpleInfo(text,m_maxTipInfoLines),this);
+    showTipText(pos,simpleInfo(text,m_maxTipInfoLines,keepLastLine),this);
 }
 
 void LiteEditorWidgetBase::showTipText(const QPoint &pos, const QString &text, QWidget *widget)
@@ -3187,7 +3199,7 @@ QTextBlock LiteEditorWidgetBase::foldedBlockAt(const QPoint &pos, QRect *box) co
 
                 QRectF collapseRect(lineRect.right() + 12,
                                     lineRect.top(),
-                                    fontMetrics().width(QLatin1String(" {...}; ")),
+                                    fontMetrics().horizontalAdvance(QLatin1String(" {...}; ")),
                                     lineRect.height());
                 if (collapseRect.contains(pos)) {
                     QTextBlock result = block;
@@ -3268,11 +3280,11 @@ void LiteEditorWidgetBase::showLink(const LiteApi::Link &link)
 {
     if (link.showNav && !link.sourceInfo.isEmpty()) {
         QPoint pt = this->mapToGlobal(link.cursorPos);
-        this->showToolTipInfo(pt,link.sourceInfo);
+        this->showToolTipInfo(pt,link.sourceInfo,link.keepLastLine);
 
     } else if (link.showTip && !link.targetInfo.isEmpty()) {
         QPoint pt = this->mapToGlobal(link.cursorPos);
-        this->showToolTipInfo(pt,link.targetInfo);
+        this->showToolTipInfo(pt,link.targetInfo,link.keepLastLine);
     }
 
     if (!link.showNav) {
@@ -3398,7 +3410,7 @@ void LiteEditorWidgetBase::testUpdateLink(QMouseEvent *e)
         return;
     }
     bool findLink = false;
-    if (e->modifiers() & Qt::ControlModifier) {
+    if (e->modifiers() & (Qt::ControlModifier | Qt::MetaModifier)) {
         // Link emulation behaviour for 'go to definition'
         QTextCursor cursor = cursorForPosition(e->pos());
         if (!cursor.isNull()) {
@@ -3451,7 +3463,7 @@ void LiteEditorWidgetBase::mousePressEvent(QMouseEvent *e)
 void LiteEditorWidgetBase::mouseReleaseEvent(QMouseEvent *e)
 {
     if (m_mouseNavigation && m_linkPressed
-        && (e->modifiers() & Qt::ControlModifier)
+        && (e->modifiers() & (Qt::ControlModifier | Qt::MetaModifier))
         && !(e->modifiers() & Qt::ShiftModifier)
         && e->button() == Qt::LeftButton) {
         if (openLink(m_currentLink)) {
@@ -3645,7 +3657,7 @@ void LiteEditorWidgetBase::mouseMoveEvent(QMouseEvent *e)
                 int column = this->tabSettings().columnAt(
                             cursor.block().text(), cursor.positionInBlock());
                 if (cursor.positionInBlock() == cursor.block().length()-1)
-                    column += (e->pos().x() - cursorRect().center().x())/QFontMetricsF(font()).width(QLatin1Char(' '));
+                    column += (e->pos().x() - cursorRect().center().x())/QFontMetricsF(font()).horizontalAdvance(QLatin1Char(' '));
                 m_blockSelection.moveAnchor(cursor.blockNumber(), column);
                 setTextCursor(m_blockSelection.selection(this->tabSettings()));
                 viewport()->update();
@@ -3725,7 +3737,8 @@ static bool findInBlock(const QTextBlock &block, const QRegExp &expression, int 
     }
     if (idx == -1)
         return false;
-    cursor = QTextCursor(block.docHandle(), block.position() + idx);
+    cursor = QTextCursor(block);
+    cursor.setPosition(block.position() + idx);
     cursor.setPosition(cursor.position() + expr.matchedLength(), QTextCursor::KeepAnchor);
     return true;
 }
@@ -3954,7 +3967,7 @@ void LiteEditorWidgetBase::paintEvent(QPaintEvent *e)
                     && block.position() <= m_blockSelection.lastBlock.block().position()) {
                 QString text = block.text();
                 const TextEditor::TabSettings &ts = this->tabSettings();
-                qreal spacew = QFontMetricsF(font()).width(QLatin1Char(' '));
+                qreal spacew = QFontMetricsF(font()).horizontalAdvance(QLatin1Char(' '));
 
                 int offset = 0;
                 int relativePos  =  ts.positionAtColumn(text, m_blockSelection.firstVisualColumn, &offset);
@@ -4159,7 +4172,7 @@ void LiteEditorWidgetBase::paintEvent(QPaintEvent *e)
 
             QRectF collapseRect(lineRect.right() + 12,
                                 lineRect.top(),
-                                fontMetrics().width(QLatin1String(" {...}; ")),
+                                fontMetrics().horizontalAdvance(QLatin1String(" {...}; ")),
                                 lineRect.height());
             painter.setRenderHint(QPainter::Antialiasing, true);
             painter.translate(.5, .5);
@@ -4208,7 +4221,7 @@ void LiteEditorWidgetBase::paintEvent(QPaintEvent *e)
 
     if (backgroundVisible() && !block.isValid() && offset.y() <= er.bottom()
         && (centerOnScroll() || verticalScrollBar()->maximum() == verticalScrollBar()->minimum())) {
-        painter.fillRect(QRect(QPoint((int)er.left(), (int)offset.y()), er.bottomRight()), palette().background());
+        painter.fillRect(QRect(QPoint((int)er.left(), (int)offset.y()), er.bottomRight()), palette().brush(QPalette::Window));
     }
 
     if (m_rightLineVisible) {

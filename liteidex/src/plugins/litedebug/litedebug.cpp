@@ -35,6 +35,7 @@
 #include <QMenu>
 #include <QToolBar>
 #include <QAction>
+#include <QActionGroup>
 #include <QVBoxLayout>
 #include <QFileInfo>
 #include <QPushButton>

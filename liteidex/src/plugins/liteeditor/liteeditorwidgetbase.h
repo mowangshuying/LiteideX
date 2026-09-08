@@ -26,6 +26,7 @@
 
 #include <QPlainTextEdit>
 #include <QTextBlock>
+#include <QRegExp>
 #include "liteeditorapi/liteeditorapi.h"
 #include "qtc_texteditor/autocompleter.h"
 #include "qtc_texteditor/basetextblockselection.h"
@@ -74,7 +75,7 @@ public:
     void navigateAreaLeaveEvent(QEvent *e);
     void navigateAreaEnterEvent(QEvent *e);
     void resizeEvent(QResizeEvent *e);
-    void showToolTipInfo(const QPoint & pos, const QString & text);
+    void showToolTipInfo(const QPoint & pos, const QString & text, bool keepLastLine = false);
     void cleanWhitespace(QTextCursor &cursor, bool inEntireDocument);
     void ensureFinalNewLine(QTextCursor& cursor);
     void setNavigateHead(LiteApi::EditorNaviagteType type, const QString &msg);

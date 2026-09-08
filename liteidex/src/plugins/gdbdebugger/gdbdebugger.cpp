@@ -127,7 +127,7 @@ GdbDebugger::GdbDebugger(LiteApi::IApplication *app, QObject *parent) :
     connect(app,SIGNAL(loaded()),this,SLOT(appLoaded()));
     connect(m_process,SIGNAL(started()),this,SIGNAL(debugStarted()));
     connect(m_process,SIGNAL(finished(int)),this,SLOT(finished(int)));
-    connect(m_process,SIGNAL(error(QProcess::ProcessError)),this,SLOT(error(QProcess::ProcessError)));
+    connect(m_process,SIGNAL(errorOccurred(QProcess::ProcessError)),this,SLOT(error(QProcess::ProcessError)));
     connect(m_process,SIGNAL(readyReadStandardError()),this,SLOT(readStdError()));
     connect(m_process,SIGNAL(readyReadStandardOutput()),this,SLOT(readStdOutput()));
 }
@@ -239,7 +239,7 @@ bool GdbDebugger::start(const QString &program, const QString &arguments)
     m_process->setNativeArguments(argsList.join(" "));
     m_process->start("\""+m_gdbFilePath+"\"");
 #else
-    m_process->start(m_gdbFilePath + " " + argsList.join(" "));
+    m_process->start(m_gdbFilePath, argsList);
 #endif
 
     QString log = QString("%1 %2 [%3]").arg(m_gdbFilePath).arg(argsList.join(" ")).arg(m_process->workingDirectory());

@@ -33,6 +33,7 @@
 #include <QDir>
 #include <QFileInfo>
 #include <QTextCodec>
+#include <QRegExp>
 #include <QDebug>
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
@@ -142,13 +143,13 @@ DlvDebugger::DlvDebugger(LiteApi::IApplication *app, QObject *parent) :
     connect(app,SIGNAL(loaded()),this,SLOT(appLoaded()));
     connect(m_process,SIGNAL(started()),this,SIGNAL(debugStarted()));
     connect(m_process,SIGNAL(finished(int)),this,SLOT(finished(int)));
-    connect(m_process,SIGNAL(error(QProcess::ProcessError)),this,SLOT(error(QProcess::ProcessError)));
+    connect(m_process,SIGNAL(errorOccurred(QProcess::ProcessError)),this,SLOT(error(QProcess::ProcessError)));
     connect(m_process,SIGNAL(readyReadStandardError()),this,SLOT(readStdError()));
     connect(m_process,SIGNAL(readyReadStandardOutput()),this,SLOT(readStdOutput()));
 
     connect(m_headlessProcess,SIGNAL(started()),this,SIGNAL(debugStarted()));
     connect(m_headlessProcess,SIGNAL(finished(int)),this,SLOT(headlessFinished(int)));
-    connect(m_headlessProcess,SIGNAL(error(QProcess::ProcessError)),this,SLOT(headlessError(QProcess::ProcessError)));
+    connect(m_headlessProcess,SIGNAL(errorOccurred(QProcess::ProcessError)),this,SLOT(headlessError(QProcess::ProcessError)));
     connect(m_headlessProcess,SIGNAL(readyReadStandardError()),this,SLOT(headlessReadStdError()));
     connect(m_headlessProcess,SIGNAL(readyReadStandardOutput()),this,SLOT(headlessReadStdOutput()));
 }
@@ -315,6 +316,35 @@ void DlvDebugger::stepInto()
 void DlvDebugger::stepOut()
 {
     command("stepout");
+//    QString cmd = LiteApi::getGotools(m_liteApp);
+//    QProcess process;
+//    process.setEnvironment(LiteApi::getCurrentEnvironment(m_liteApp).toStringList());
+//    QFileInfo info(m_lastFileName);
+//    process.setWorkingDirectory(info.path());
+//    QStringList args;
+//    args << "finddecl" << "-file" << info.fileName() << "-line" << QString("%1").arg(m_lastFileLine+1);
+//    process.start(cmd,args);
+//    if (!process.waitForFinished(3000)) {
+//        emit debugLog(LiteApi::DebugErrorLog,"error wait find decl process");
+//        process.kill();
+//        return;
+//    }
+//    if (process.exitCode() != 0) {
+//        emit debugLog(LiteApi::DebugErrorLog,"error get find decl result");
+//        return;
+//    }
+//    QByteArray data = process.readAll().trimmed();
+//    QStringList ar = QString::fromUtf8(data).split(" ");
+//    if (ar.size() != 4 || ar[0] != "func") {
+//        emit debugLog(LiteApi::DebugErrorLog,"error find func decl in line");
+//        return;
+//    }
+//    m_funcDecl.fileName = m_lastFileName;
+//    m_funcDecl.funcName = ar[1];
+//    m_funcDecl.start = ar[2].toInt()-1;
+//    m_funcDecl.end = ar[3].toInt()-1;
+//    m_checkFuncDecl = true;
+//    command("next");
 }
 
 void DlvDebugger::runToLine(const QString &fileName, int line)
@@ -636,10 +666,7 @@ void DlvDebugger::initDebug()
         command_helper("restart",true);
     }
 
-    QMapIterator<QString,int> i(m_initBks);
-
-    while (i.hasNext()) {
-        i.next();
+    for (auto i = m_initBks.cbegin(); i != m_initBks.cend(); ++i) {
         QString fileName = i.key();
         QList<int> lines = m_initBks.values(fileName);
         foreach(int line, lines) {
@@ -687,7 +714,8 @@ static QString valueToolTip(const QString &value)
             toolTip += text[i];
         } else if (text[i] == ',') {
             toolTip += text[i];
-            int pos = text.lastIndexOf(QRegExp("\\{|\\[|\\]|\\}"),i-1);
+            QRegExp delimiter("\\{|\\[|\\]|\\}");
+            int pos = delimiter.lastIndexIn(text, i - 1);
             if (pos != -1 && text[pos] == '[') {
                 continue;
             }
@@ -832,9 +860,9 @@ void DlvDebugger::readStdOutput()
                 QMap<QString,QString>::iterator it = m_varNameMap.find(name);
                 if (it != m_varNameMap.end() && it.value() != value) {
 #if QT_VERSION >= 0x050000
-        valueItem->setData(QColor(Qt::red),Qt::TextColorRole);
+        valueItem->setData(QColor(Qt::red),Qt::ForegroundRole);
 #else
-        valueItem->setData(Qt::red,Qt::TextColorRole);
+        valueItem->setData(Qt::red,Qt::ForegroundRole);
 #endif
                 }
                 m_varsModel->appendRow(QList<QStandardItem*>() << nameItem << valueItem);
@@ -858,15 +886,15 @@ void DlvDebugger::readStdOutput()
                             find = true;
                             if (m_watchNameMap.value(name) == value) {
 #if QT_VERSION >= 0x050000
-                                valueItem->setData(QColor(Qt::black),Qt::TextColorRole);
+                                valueItem->setData(QColor(Qt::black),Qt::ForegroundRole);
 #else
-                                valueItem->setData(Qt::black,Qt::TextColorRole);
+                                valueItem->setData(Qt::black,Qt::ForegroundRole);
 #endif
                             } else {
 #if QT_VERSION >= 0x050000
-                                valueItem->setData(QColor(Qt::red),Qt::TextColorRole);
+                                valueItem->setData(QColor(Qt::red),Qt::ForegroundRole);
 #else
-                                valueItem->setData(Qt::red,Qt::TextColorRole);
+                                valueItem->setData(Qt::red,Qt::ForegroundRole);
 #endif
                                 valueItem->setText(value);
                             }
@@ -967,7 +995,7 @@ void DlvDebugger::headlessReadStdOutput()
             m_process->setNativeArguments(argsList.join(" "));
             m_process->start("\""+m_dlvFilePath+"\"");
 #else
-            m_process->start(m_dlvFilePath + " " + argsList.join(" "));
+            m_process->start(m_dlvFilePath, argsList);
 #endif
             QString log = QString("%1 %2 [%3]").arg(m_dlvFilePath).arg(argsList.join(" ")).arg(m_process->workingDirectory());
            emit debugLog(LiteApi::DebugRuntimeLog,log);

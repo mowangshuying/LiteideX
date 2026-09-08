@@ -51,6 +51,7 @@
 #include <QCheckBox>
 #include <QToolButton>
 #include <QTime>
+#include <QRegExp>
 #include <QDebug>
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
@@ -1272,7 +1273,6 @@ void LiteBuild::editorCreated(LiteApi::IEditor *editor)
     if (!build) {
         return;
     }
-
     if (!m_buildBarInfoMap.contains(build->mimeType())) {
         BuildBarInfo *info = new BuildBarInfo;
         QList<QAction*> actions = build->actions();

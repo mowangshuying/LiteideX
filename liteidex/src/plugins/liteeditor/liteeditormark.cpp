@@ -260,8 +260,6 @@ void LiteEditorMark::addMarkList(const QList<int> &lines, int type)
         if (!block.isValid()) {
             continue;
         }
-
-        qDebug() << "block text:" << block.text();
         TextEditor::TextBlockUserData *data = TextEditor::BaseTextDocumentLayout::userData(block);
         if (!data) {
             continue;

@@ -31,6 +31,7 @@
 #include <QTimer>
 #include <QApplication>
 #include <QDebug>
+#include <algorithm>
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
      #define _CRTDBG_MAP_ALLOC
@@ -139,7 +140,7 @@ void QuickOpenFiles::startFindThread()
 
     int count = m_model->rowCount();
     int maxcount = count+m_liteApp->settings()->value(QUICKOPEN_FILES_MAXCOUNT,100000).toInt();
-    QSet<QString> editorSet = m_editors.toSet();
+    QSet<QString> editorSet(m_editors.begin(), m_editors.end());
 
     LiteApi::IEditor *editor = m_liteApp->editorManager()->currentEditor();
     QStringList folderList;

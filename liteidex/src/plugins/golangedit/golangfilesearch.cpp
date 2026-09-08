@@ -24,6 +24,7 @@
 #include "golangfilesearch.h"
 #include "litebuildapi/litebuildapi.h"
 #include <QTextBlock>
+#include <QRegExp>
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
      #define _CRTDBG_MAP_ALLOC
@@ -134,7 +135,7 @@ void GolangFileSearch::findUsages(LiteApi::ITextEditor *editor, QTextCursor curs
         args << tags;
     }
     args << "-pos";
-    args << QString("\"%1:%2\"").arg(info.fileName()).arg(offset);
+    args << QString("%1:%2").arg(info.fileName()).arg(offset);
     args << "-info";
     args << "-use";
     QString text = selectionUnderCursor(cursor,moveLeft);
@@ -151,7 +152,6 @@ void GolangFileSearch::findUsages(LiteApi::ITextEditor *editor, QTextCursor curs
 		args << "-skip_tests";
 	}
     args << ".";
-
     emit findStarted();
     m_process->startEx(cmd,args);
 }

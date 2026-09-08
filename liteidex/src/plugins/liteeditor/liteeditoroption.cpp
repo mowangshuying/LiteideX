@@ -30,6 +30,7 @@
 #include <QFileInfo>
 #include <QStandardItemModel>
 #include <QStandardItem>
+#include <algorithm>
 
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
@@ -65,7 +66,7 @@ LiteEditorOption::LiteEditorOption(LiteApi::IApplication *app,QObject *parent) :
 //    QFontDatabase db;
 //    const QStringList families = db.families();
 
-    //connect(ui->editPushButton,SIGNAL(clicked()),this,SLOT(editStyleFile()));
+    connect(ui->editPushButton,SIGNAL(clicked()),this,SLOT(editStyleFile()));
     connect(ui->rightLineVisibleCheckBox,SIGNAL(toggled(bool)),ui->rightLineWidthSpinBox,SLOT(setEnabled(bool)));
     connect(ui->restoreDefaultFontButton,SIGNAL(clicked()),this,SLOT(restoreDefaultFont()));
     connect(ui->monospaceFontCheckBox,SIGNAL(toggled(bool)),this,SLOT(filterMonospaceFont(bool)));
@@ -300,7 +301,7 @@ void LiteEditorOption::load()
     ui->allowVscrollLastLineCheckBox->setChecked(allowVscrollLastLine);
 
     QStringList mimeTypes = m_liteApp->editorManager()->mimeTypeList();
-    qStableSort(mimeTypes);
+    std::stable_sort(mimeTypes.begin(), mimeTypes.end());
     m_mimeModel->removeRows(0,m_mimeModel->rowCount());
     foreach(QString mime, mimeTypes) {
         if (mime.startsWith("text/") || mime.startsWith("application/")) {

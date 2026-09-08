@@ -66,7 +66,7 @@ PackageBrowser::PackageBrowser(LiteApi::IApplication *app, QObject *parent) :
     m_hideStandard = false;
 
     QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     m_model = new QStandardItemModel(this);
 
@@ -119,7 +119,11 @@ PackageBrowser::PackageBrowser(LiteApi::IApplication *app, QObject *parent) :
     m_toolWindowAct = m_liteApp->toolWindowManager()->addToolWindow(Qt::LeftDockWidgetArea,m_widget,"GoPackageBrowser",tr("Go Package Browser"),true);
     connect(m_toolWindowAct,SIGNAL(triggered(bool)),this,SLOT(toggledToolWindow(bool)));
     connect(m_goTool,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(finished(int,QProcess::ExitStatus)));
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    connect(m_goTool, &GoTool::error, this, &PackageBrowser::error);
+#else
     connect(m_goTool,SIGNAL(error(QProcess::ProcessError)),this,SLOT(error(QProcess::ProcessError)));
+#endif
     connect(m_treeView,SIGNAL(customContextMenuRequested(QPoint)),this,SLOT(customContextMenuRequested(QPoint)));
     connect(m_treeView,SIGNAL(doubleClicked(QModelIndex)),this,SLOT(doubleClicked()));
     connect(m_treeView,SIGNAL(enterKeyPressed(QModelIndex)),this,SLOT(enterKeyPressed(QModelIndex)));
@@ -179,7 +183,8 @@ void PackageBrowser::currentEnvChanged(LiteApi::IEnv */*env*/)
 
 void PackageBrowser::reloadAll()
 {
-    QProcessEnvironment env = LiteApi::getGoEnvironment(m_liteApp);
+    QProcessEnvironment env = LiteApi::getCustomGoEnvironment(
+        m_liteApp, m_liteApp->editorManager()->currentEditor());
     QString gocmd = FileUtil::lookupGoBin("go",m_liteApp,env,false);
     if (!gocmd.isEmpty()) {
         m_liteApp->appendLog("GolangPackage","Found go bin at "+QDir::toNativeSeparators(gocmd));
@@ -207,7 +212,7 @@ void PackageBrowser::reloadAll()
     if (m_model->rowCount() == 0) {
         m_model->appendRow(new QStandardItem(tr("Loading Go package list...")));
     }
-    QString root = LiteApi::getGOROOT(m_liteApp);
+    QString root = env.value("GOROOT");
     m_goTool->setProcessEnvironment(env);
     m_goTool->setWorkDir(root);
     //m_goTool->start(QStringList() << "list" << "-e" << "-json" << "...");
