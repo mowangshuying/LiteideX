@@ -31,6 +31,7 @@
 #include <QMessageBox>
 #include <QMenu>
 #include <QAction>
+#include <QActionGroup>
 #include <QStackedWidget>
 #include <QToolBar>
 #include <QVBoxLayout>
@@ -115,7 +116,7 @@ bool EditorManager::initWithApp(IApplication *app)
 
     //m_editorTabWidget->tabBar()->setIconSize(LiteApi::getToolBarIconSize());
     QVBoxLayout *mainLayout = new QVBoxLayout;
-    mainLayout->setMargin(0);
+    mainLayout->setContentsMargins(0, 0, 0, 0);
     mainLayout->setSpacing(0);
 
 //    QToolBar *toolBar = m_editorTabWidget->headerToolBar();

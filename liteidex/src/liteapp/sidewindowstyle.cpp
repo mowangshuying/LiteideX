@@ -28,6 +28,7 @@
 #include "liteapi/liteids.h"
 #include <QStatusBar>
 #include <QDebug>
+#include <algorithm>
 
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
@@ -150,7 +151,7 @@ void SideDockWidget::setActions(const QMap<QAction *, SideActionState *> &m)
     m_menu->clear();
 //    QMapIterator<QAction *, SideActionState *> i(m);
     QList<QAction*> keys = m.keys();
-    qSort(keys.begin(),keys.end(),actionThan);
+    std::sort(keys.begin(), keys.end(), actionThan);
     for (int i = 0; i < keys.size(); i++) {
         QAction *act = keys[i];
         m_comboBox->addItem(m.value(act)->title,act->objectName());
@@ -497,8 +498,6 @@ void OutputActionBar::toggledAction(bool)
 {
     QAction *action = (QAction*)sender();
     SideActionState *state = m_actionStateMap.value(action);
-
-    qDebug() << "OutputActionBar::toggledAction" << action->text() << action->isChecked();
     if (!state) {
         return;
     }

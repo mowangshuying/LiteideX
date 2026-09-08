@@ -124,7 +124,9 @@ QString LiteApp::getResoucePath()
 
 QString LiteApp::getStoragePath()
 {
-#if QT_VERSION >= 0x050000
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    QString root = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+#elif QT_VERSION >= 0x050000
     QString root = QStandardPaths::writableLocation(QStandardPaths::DataLocation);
 #else
     QString root = QDesktopServices::storageLocation(QDesktopServices::DataLocation);
@@ -324,7 +326,7 @@ static QImage makeSplashImage(LiteApi::IApplication *app)
     int bh = r.height()-th;
     painter.fillRect(1,th,r.width()-2,bh-1,Qt::white);
 
-    QFont font("Timer",32);
+    QFont font = QApplication::font();
     font.setPointSize(32);
     font.setItalic(true);
     painter.setPen(Qt::white);
@@ -1099,31 +1101,45 @@ void LiteApp::dbclickLogOutput(QTextCursor cur)
 {
     //QRegExp rep("(\\w?:?[\\w\\d_@\\-\\\\/\\.]+):(\\d+):");
     QString text = cur.block().text().trimmed();
-    //skip time 08:38:49
-    if (text.length() < 9) {
-        return;
+    QRegExp rep("([\\w\\.\\-~/\\\\]+):(\\d+)(:(\\d+))?");
+    int index = 0;
+    QString fileName;
+    int line = 0;
+    int column = 0;
+    while ((index = rep.indexIn(text,index)) >= 0) {
+        QString candidate = rep.cap(1);
+        QStringList paths;
+        if (QFileInfo(candidate).isAbsolute()) {
+            paths.append(QFileInfo(candidate).absoluteFilePath());
+        } else {
+            IProject *project = m_projectManager->currentProject();
+            if (project) {
+                foreach (QString folder, project->folderList())
+                    paths.append(QFileInfo(folder,candidate).absoluteFilePath());
+            }
+            IEditor *current = m_editorManager->currentEditor();
+            if (current && !current->filePath().isEmpty())
+                paths.append(QFileInfo(QFileInfo(current->filePath()).absoluteDir(),candidate).absoluteFilePath());
+            paths.append(QFileInfo(QDir::current(),candidate).absoluteFilePath());
+        }
+        foreach (QString path, paths) {
+            if (QFileInfo::exists(path)) {
+                fileName = path;
+                line = rep.cap(2).toInt();
+                column = rep.cap(4).toInt();
+                break;
+            }
+        }
+        if (!fileName.isEmpty()) break;
+        index += rep.cap(0).length();
     }
-    QRegExp rep("(\\w?\\:?[\\w\\d\\_\\-\\\\/\\.]+):(\\d+):");
-    int index = rep.indexIn(text.mid(8));
-    if (index < 0)
-        return;
-    QStringList capList = rep.capturedTexts();
-
-    if (capList.count() < 3)
-        return;
-    QString fileName = capList[1];
-    QString fileLine = capList[2];
-
-    bool ok = false;
-    int line = fileLine.toInt(&ok);
-    if (!ok)
-        return;
+    if (fileName.isEmpty() || line < 1) return;
 
     LiteApi::IEditor *editor = m_fileManager->openEditor(fileName);
     if (editor) {
         LiteApi::ITextEditor *textEditor =  LiteApi::getTextEditor(editor);
         if (textEditor) {
-            textEditor->gotoLine(line-1,0,true);
+            textEditor->gotoLine(line-1,qMax(0,column-1),true);
         }
     }
 }

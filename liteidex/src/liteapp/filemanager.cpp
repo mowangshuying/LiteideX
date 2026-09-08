@@ -46,6 +46,7 @@
 #include <QTimer>
 #include <QDesktopServices>
 #include <QDir>
+#include <QStandardPaths>
 #include <QVBoxLayout>
 #include <QDebug>
 //lite_memory_check_begin
@@ -65,7 +66,7 @@ bool FileManager::initWithApp(IApplication *app)
     }
    // m_folderWindow = new MultiFolderWindow(app);
 
-    m_fileWatcher = new QFileSystemWatcher(this);// 文件改变则触发fileChanged信号
+    m_fileWatcher = new QFileSystemWatcher(this);
     connect(m_fileWatcher,SIGNAL(fileChanged(QString)),this,SLOT(fileChanged(QString)));
 
     m_newFileDialog = 0;
@@ -120,7 +121,7 @@ bool FileManager::initWithApp(IApplication *app)
 
     m_folderWidget = new QWidget;
     m_layout = new QVBoxLayout;
-    m_layout->setMargin(0);
+    m_layout->setContentsMargins(0, 0, 0, 0);
     m_folderWidget->setLayout(m_layout);
     m_layout->addWidget(m_folderWindow->widget());
 
@@ -674,7 +675,7 @@ void FileManager::checkForReload()
 
     int lastReloadRet = QMessageBox::Yes;
     int lastCloseRet = QMessageBox::Yes;
-    QStringList files = m_changedFiles.toList();
+    QStringList files = m_changedFiles.values();
     m_changedFiles.clear();
     foreach (QString fileName, files) {
         if (!QFile::exists(fileName)) {

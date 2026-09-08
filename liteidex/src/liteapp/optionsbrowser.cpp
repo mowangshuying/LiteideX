@@ -23,7 +23,6 @@
 
 #include "optionsbrowser.h"
 #include "ui_optionswidget.h"
-#include <QPushButton>
 
 #include <QDebug>
 //lite_memory_check_begin
@@ -43,9 +42,6 @@ OptionsBrowser::OptionsBrowser(LiteApi::IApplication *app, QWidget *parent) :
     ui(new Ui::OptionsWidget)
 {
     ui->setupUi(this);
-	ui->buttonBox->button(QDialogButtonBox::Apply)->setText(tr("Apply"));
-	ui->buttonBox->button(QDialogButtonBox::Ok)->setText(tr("OK"));
-	ui->buttonBox->button(QDialogButtonBox::Cancel)->setText(tr("Cancel"));
     connect(ui->listWidget,SIGNAL(itemSelectionChanged()),this,SLOT(itemSelectionChanged()));
     connect(ui->buttonBox,SIGNAL(clicked(QAbstractButton*)),this,SLOT(clicked(QAbstractButton*)));
 }
@@ -79,7 +75,7 @@ void OptionsBrowser::addOption(LiteApi::IOption *opt)
     item->setFlags(Qt::ItemIsSelectable | Qt::ItemIsEnabled);
     QLayout *layout = opt->widget()->layout();
     if (layout) {
-        layout->setMargin(0);
+        layout->setContentsMargins(0, 0, 0, 0);
     }
     ui->listWidget->addItem(item);
     ui->stackedWidget->addWidget(opt->widget());

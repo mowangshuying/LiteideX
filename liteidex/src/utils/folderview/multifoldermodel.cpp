@@ -324,7 +324,7 @@ QFile::Permissions MultiFolderModel::permissions(const QModelIndex &index) const
 {
     SourceModelIndex si = this->mapToSourceEx(index);
     if (!si.isValid()) {
-        return 0;
+        return QFile::Permissions();
     }
     return ((QFileSystemModel*)si.model)->permissions(si.index);
 }

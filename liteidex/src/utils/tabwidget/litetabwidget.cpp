@@ -257,5 +257,5 @@ void LiteTabWidget::setCurrentIndex(int index)
 
 void LiteTabWidget::tabMoved(int from, int to)
 {
-    m_widgetList.swap(from,to);
+    m_widgetList.swapItemsAt(from, to);
 }
