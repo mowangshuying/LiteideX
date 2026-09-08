@@ -25,7 +25,7 @@
 #include <ctype.h>
 
 #include <QtCore/QDebug>
-#include <QtCore/QRegExp>
+#include <QRegExp>
 
 #include <cassert>
 

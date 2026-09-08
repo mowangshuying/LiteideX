@@ -23,6 +23,8 @@
 
 #include "multiindexmodel.h"
 
+#include <algorithm>
+
 /****************************************************************************
 **
 ** Copyright (C) 2011 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com, author Stephen Kelly <stephen.kelly@kdab.com>
@@ -121,7 +123,14 @@ QModelIndexPairList MultiIndexModelPrivate::store_persistent_indexes(const QMode
     QModelIndexPairList source_indexes;
     foreach (QModelIndex proxy_index, persistentList) {
         SourceModelIndex index = q->mapToSourceEx(proxy_index);
-        source_indexes.append(qMakePair(proxy_index, QPersistentModelIndex(index.index)));
+        // A source model may be rebuilding its index tree while emitting a
+        // layout change. Keep invalid mappings invalid instead of asking it
+        // to create an index from stale mapping data.
+        if (index.model == 0 || !index.index.isValid()) {
+            source_indexes.append(qMakePair(proxy_index, QPersistentModelIndex()));
+        } else {
+            source_indexes.append(qMakePair(proxy_index, QPersistentModelIndex(index.index)));
+        }
     }
     return source_indexes;
 }
@@ -156,13 +165,13 @@ void MultiIndexModelPrivate::sort_source_rows(QAbstractItemModel *model,
     if (source_sort_column >= 0) {
         if (sort_order == Qt::AscendingOrder) {
             MultiIndexModelLessThan lt(source_sort_column, source_parent, model, q);
-            qStableSort(source_rows.begin(), source_rows.end(), lt);
+            std::stable_sort(source_rows.begin(), source_rows.end(), lt);
         } else {
             MultiIndexModelGreaterThan gt(source_sort_column, source_parent, model, q);
-            qStableSort(source_rows.begin(), source_rows.end(), gt);
+            std::stable_sort(source_rows.begin(), source_rows.end(), gt);
         }
     } else { // restore the source model order
-        qStableSort(source_rows.begin(), source_rows.end());
+        std::stable_sort(source_rows.begin(), source_rows.end());
     }
 }
 
@@ -497,11 +506,18 @@ SourceModelIndex MultiIndexModel::mapToSourceEx(const QModelIndex &proxyIndex) c
 
     Mapping *m = (Mapping*)proxyIndex.internalPointer();
     if (m == 0) {
+        if (proxyIndex.row() < 0 || proxyIndex.row() >= d->indexList.size()) {
+            return SourceModelIndex();
+        }
         SourceModelIndex si = d->indexList[proxyIndex.row()];
+        if (si.model == 0 || !si.index.isValid()) {
+            return SourceModelIndex();
+        }
         si.index = si.index.sibling(si.index.row(),proxyIndex.column());
         return si;
     }
-    if (m->source_rows.size() <= proxyIndex.row()) {
+    if (m->sourceModel == 0 || proxyIndex.row() < 0 ||
+        m->source_rows.size() <= proxyIndex.row()) {
         return SourceModelIndex();
     }
 
@@ -935,14 +951,13 @@ void MultiIndexModelPrivate::_q_sourceLayoutAboutToBeChanged()
 //    q->layoutAboutToBeChanged();
     Q_Q(MultiIndexModel);
     saved_persistent_indexes.clear();
-    emit q->layoutAboutToBeChanged();
     QModelIndexList persistentList = q->persistentIndexList();
-    if (persistentList.isEmpty())
-        return;
+    if (!persistentList.isEmpty())
+        saved_persistent_indexes = store_persistent_indexes(persistentList);
 
-//    QAbstractItemModel *model = (QAbstractItemModel*)sender();
-//    qDebug() << "begin changed" << model;
-    saved_persistent_indexes = store_persistent_indexes(persistentList);
+    // Save indexes before notifying observers. Views may synchronously query
+    // the proxy while the source model is in its layout-about-to-change phase.
+    emit q->layoutAboutToBeChanged();
 }
 
 void MultiIndexModelPrivate::_q_sourceLayoutChanged()
@@ -1050,7 +1065,7 @@ void MultiIndexModelPrivate::_q_sourceRowsInserted(const QModelIndex &parent, in
             all[i-start] = m->proxy_rows.at(i);
             //qDebug() << m->sourceModel->index(i,0,parent).data();
         }
-        qStableSort(all);
+        std::stable_sort(all.begin(), all.end());
 
         if (all.last()-all.first()+1 == all.size()) {
             q->beginInsertRows(proxyIndex,all.first(),all.last());

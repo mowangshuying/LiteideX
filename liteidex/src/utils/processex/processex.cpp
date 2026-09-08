@@ -92,7 +92,7 @@ ProcessEx::ProcessEx(QObject *parent)
     connect(this,SIGNAL(stateChanged(QProcess::ProcessState)),this,SLOT(slotStateChanged(QProcess::ProcessState)));
     connect(this,SIGNAL(readyReadStandardOutput()),this,SLOT(slotReadOutput()));
     connect(this,SIGNAL(readyReadStandardError()),this,SLOT(slotReadError()));
-    connect(this,SIGNAL(error(QProcess::ProcessError)),this,SLOT(slotError(QProcess::ProcessError)));
+    connect(this,SIGNAL(errorOccurred(QProcess::ProcessError)),this,SLOT(slotError(QProcess::ProcessError)));
     connect(this,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(slotFinished(int,QProcess::ExitStatus)));
 }
 
@@ -186,7 +186,11 @@ void Process::stopAndWait(int termMs, int finishMs)
 
 void Process::startEx(const QString &cmd, const QStringList &args)
 {
+#ifdef Q_OS_WIN
     this->startEx(cmd,args.join(" "));
+#else
+    this->start(cmd,args);
+#endif
 }
 
 void Process::startEx(const QString &cmd, const QString &args)
@@ -199,11 +203,15 @@ void Process::startEx(const QString &cmd, const QString &args)
         this->start(cmd);
     }
 #else
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    this->start(cmd,QProcess::splitCommand(args));
+#else
     if (cmd.contains(' ')) {
         this->start("\""+cmd+"\" "+args);
     } else {
         this->start(cmd+" "+args);
     }
+#endif
 #endif
 }
 
@@ -243,10 +251,10 @@ void SendProcessCtrlC(QProcess */*process*/)
 #else
 void SendProcessCtrlC(QProcess *process)
 {
-    if (process->pid() <= 0) {
+    if (process->processId() <= 0) {
         return;
     }
-    kill(process->pid(),SIGINT);
+    kill(process->processId(),SIGINT);
 }
 #endif
 
@@ -276,7 +284,11 @@ void LiteProcess::startEx(const QString &cmd, const QString &args)
         this->start(cmd);
     }
 #else
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    this->start(cmd,QProcess::splitCommand(args));
+#else
     this->start(cmd+" "+args);
+#endif
 #endif
 }
 

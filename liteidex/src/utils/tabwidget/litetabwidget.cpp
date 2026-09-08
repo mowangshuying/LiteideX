@@ -73,7 +73,7 @@ LiteTabWidget::LiteTabWidget(QSize iconSize, QObject *parent) :
 //    m_closeButton->setDefaultAction(m_closeTabAct);
 
     QHBoxLayout *layout = new QHBoxLayout;
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
 
     m_tabBar->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);

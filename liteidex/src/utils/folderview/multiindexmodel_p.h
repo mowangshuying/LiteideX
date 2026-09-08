@@ -38,7 +38,7 @@ struct Mapping
     int          rowCount;
     QVector<int> source_rows;      //source rows
     QVector<int> proxy_rows;       //proxy rows
-    QModelIndex  sourceParent;    //source parent
+    QPersistentModelIndex sourceParent; //source parent
     QAbstractItemModel *sourceModel;
 };
 
