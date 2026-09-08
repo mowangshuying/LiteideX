@@ -104,7 +104,7 @@ void ChaseWidget::paintEvent(QPaintEvent *event)
         if(m_animated)
             p.setBrush(colorForSegment(segment));
         else
-            p.setBrush(palette().background());
+            p.setBrush(palette().brush(QPalette::Window));
         p.drawEllipse(QRect(displ, -ext / 2, ext, ext));
     }
 }
