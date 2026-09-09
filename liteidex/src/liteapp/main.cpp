@@ -102,7 +102,7 @@ int main(int argc, char *argv[])
     #endif
 #endif
     
-#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0) && QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
 
@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
         LiteApp::s_cookie.insert(flagUserSetting,true);
     }
 
-#if QT_VERSION >= 0x050100
+#if QT_VERSION >= 0x050100 && QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     app.setAttribute(Qt::AA_UseHighDpiPixmaps);
 #endif
 
@@ -200,7 +200,11 @@ int main(int argc, char *argv[])
     if (!locale.isEmpty()) {
         const QString &liteideTrPath = resPath+"/translations";
         if (translator.load(QLatin1String("liteide_") + locale, liteideTrPath)) {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+            const QString &qtTrPath = QLibraryInfo::path(QLibraryInfo::TranslationsPath);
+#else
             const QString &qtTrPath = QLibraryInfo::location(QLibraryInfo::TranslationsPath);
+#endif
             const QString &qtTrFile = QLatin1String("qt_") + locale;
             // Binary installer puts Qt tr files into creatorTrPath            
             app.installTranslator(&translator);

@@ -90,5 +90,9 @@ inline IFileSearchManager* getFileSearchManager(LiteApi::IApplication *app)
 
 } //namespace LiteApi
 
+// Required by the Qt6 qRegisterMetaType<T>() (no-name) form used for queued
+// connections carrying LiteApi::FileSearchResult (see plugins/litefind/filesearch.cpp).
+Q_DECLARE_METATYPE(LiteApi::FileSearchResult)
+
 #endif //LITEFINDAPI_H
 

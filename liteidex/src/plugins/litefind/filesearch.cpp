@@ -64,7 +64,11 @@ FindThread::FindThread(QObject *parent) :
     matchCase(true),
     findSub(true)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    qRegisterMetaType<LiteApi::FileSearchResult>();
+#else
     qRegisterMetaType<LiteApi::FileSearchResult>("LiteApi::FileSearchResult");
+#endif
 }
 
 void FindThread::findDir(const QRegExp &reg, const QString &path)

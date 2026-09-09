@@ -207,7 +207,11 @@ int QJsonRpcServicePrivate::convertVariantTypeToJSType(int type)
     return QJsonValue::Undefined;
 }
 
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+int QJsonRpcServicePrivate::qjsonRpcMessageType = qRegisterMetaType<QJsonRpcMessage>();
+#else
 int QJsonRpcServicePrivate::qjsonRpcMessageType = qRegisterMetaType<QJsonRpcMessage>("QJsonRpcMessage");
+#endif
 void QJsonRpcServicePrivate::cacheInvokableInfo()
 {
     Q_Q(QJsonRpcService);

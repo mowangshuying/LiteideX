@@ -9,7 +9,9 @@
 
 #include <QApplication>
 #include <QCursor>
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <QDesktopWidget>
+#endif
 #include <QClipboard>
 
 #include <QBitmap>

@@ -40,7 +40,11 @@ SerializerRunnable::SerializerRunnable(QObject* parent)
       QRunnable(),
       d(new Private)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+  qRegisterMetaType<QVariant>();
+#else
   qRegisterMetaType<QVariant>("QVariant");
+#endif
 }
 
 SerializerRunnable::~SerializerRunnable()

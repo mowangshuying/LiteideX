@@ -123,8 +123,10 @@ static QStringList GetUnixShellList()
 Terminal::Terminal(LiteApi::IApplication *app, QObject *parent) : LiteApi::ITerminal(parent),
     m_liteApp(app), m_indexId(0)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    qRegisterMetaType<TabInfoData>();
+#else
     qRegisterMetaType<TabInfoData>("TabInfoData");
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     qRegisterMetaTypeStreamOperators<TabInfoData>("TabInfoData");
 #endif
 
