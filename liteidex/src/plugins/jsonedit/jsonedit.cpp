@@ -242,9 +242,6 @@ void JsonEdit::editorCreated(LiteApi::IEditor *editor)
     ed->setLineWrap(true);
     ed->setEnableAutoIndentAction(false);
 
-    /// verifyJson
-    //verifyJson(editor);
-
     QMenu *menu = LiteApi::getContextMenu(editor);
     if (menu) {
         menu->addSeparator();

@@ -1410,7 +1410,7 @@ void DlvRpcDebugger::headlessReadStdOutput()
             m_process->setNativeArguments(argsList.join(" "));
             m_process->start("\""+m_dlvFilePath+"\"");
 #else
-            m_process->start(m_dlvFilePath, argsList);
+            m_process->start(m_dlvFilePath,argsList);
 #endif
             QString log = QString("%1 %2 [%3]").arg(m_dlvFilePath).arg(argsList.join(" ")).arg(m_process->workingDirectory());
             emit debugLog(LiteApi::DebugRuntimeLog,log);

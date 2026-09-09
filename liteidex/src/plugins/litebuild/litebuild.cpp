@@ -1696,7 +1696,7 @@ void LiteBuild::execAction(const QString &mime, const QString &id)
         if (editor && editor->isModified()) {
             m_liteApp->editorManager()->saveEditor();
         }
-        //m_liteApp->projectManager()->saveProject();
+        m_liteApp->projectManager()->saveProject();
     } else if(ba->save() == "editor") {
         if (editor && editor->isModified()) {
             m_liteApp->editorManager()->saveEditor();

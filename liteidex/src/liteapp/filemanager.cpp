@@ -145,32 +145,31 @@ FileManager::~FileManager()
     m_liteApp->settings()->setValue(LITEAPP_FOLDERSHOWHIDENFILES,m_showHideFilesAct->isChecked());
     m_liteApp->settings()->setValue(LITEAPP_FOLDERSHOWDETAILS,m_showDetailsAct->isChecked());
     m_liteApp->settings()->setValue(LITEAPP_FOLDERSPLITMODE,m_splitModeAct->isChecked());
-    
-    delete m_filterMenu;  // 移除菜单
-    delete m_fileWatcher; // 删除文件监控
-    m_liteApp->settings()->setValue("FileManager/initpath",m_initPath);// 保存初始路径
+    delete m_filterMenu;
+    delete m_fileWatcher;
+    m_liteApp->settings()->setValue("FileManager/initpath",m_initPath);
     if (m_newFileDialog) {
         delete m_newFileDialog;
     }
     delete m_folderWindow;
 }
 
-//bool FileManager::findProjectTargetInfo(const QString &fileName, QMap<QString,QString>& targetInfo) const
-//{
-//    QString mimeType = m_liteApp->mimeTypeManager()->findMimeTypeByFile(fileName);
-//    if (m_liteApp->projectManager()->mimeTypeList().contains(mimeType)) {
-//        QList<IProjectFactory*> factoryList = m_liteApp->projectManager()->factoryList();
-//        foreach(LiteApi::IProjectFactory *factory, factoryList) {
-//            if (factory->mimeTypes().contains(mimeType)) {
-//                bool ret = factory->findTargetInfo(fileName,mimeType,targetInfo);
-//                if (ret) {
-//                    return true;
-//                }
-//            }
-//        }
-//    }
-//    return false;
-//}
+bool FileManager::findProjectTargetInfo(const QString &fileName, QMap<QString,QString>& targetInfo) const
+{
+    QString mimeType = m_liteApp->mimeTypeManager()->findMimeTypeByFile(fileName);
+    if (m_liteApp->projectManager()->mimeTypeList().contains(mimeType)) {
+        QList<IProjectFactory*> factoryList = m_liteApp->projectManager()->factoryList();
+        foreach(LiteApi::IProjectFactory *factory, factoryList) {
+            if (factory->mimeTypes().contains(mimeType)) {
+                bool ret = factory->findTargetInfo(fileName,mimeType,targetInfo);
+                if (ret) {
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+}
 
 
 QString FileManager::openAllTypeFilter() const
@@ -192,27 +191,27 @@ QString FileManager::openAllTypeFilter() const
     return filter.join(";;");
 }
 
-//QString FileManager::openProjectTypeFilter() const
-//{
-//    QStringList types;
-//    QStringList filter;
-//    QStringList projectMimeTypes = m_liteApp->projectManager()->mimeTypeList();
-//    foreach (IMimeType *mimeType, m_liteApp->mimeTypeManager()->mimeTypeList()) {
-//        QStringList patterns = mimeType->allPatterns();
-//        if (projectMimeTypes.contains(mimeType->type())) {
-//            types.append(patterns);
-//            filter.append(QString("%1 (%2)").arg(mimeType->comment()).arg(patterns.join(" ")));
-//        }
-//    }
-//    types.removeDuplicates();
-//    filter.removeDuplicates();
-//    if (!types.isEmpty()) {
-//        QString all = QString(tr("All Support Files (%1)")).arg(types.join(" "));
-//        filter.insert(0,all);
-//    }
-//    filter.append(tr("All Files (*)"));
-//    return filter.join(";;");
-//}
+QString FileManager::openProjectTypeFilter() const
+{
+    QStringList types;
+    QStringList filter;
+    QStringList projectMimeTypes = m_liteApp->projectManager()->mimeTypeList();
+    foreach (IMimeType *mimeType, m_liteApp->mimeTypeManager()->mimeTypeList()) {
+        QStringList patterns = mimeType->allPatterns();
+        if (projectMimeTypes.contains(mimeType->type())) {
+            types.append(patterns);
+            filter.append(QString("%1 (%2)").arg(mimeType->comment()).arg(patterns.join(" ")));
+        }
+    }
+    types.removeDuplicates();
+    filter.removeDuplicates();
+    if (!types.isEmpty()) {
+        QString all = QString(tr("All Support Files (%1)")).arg(types.join(" "));
+        filter.insert(0,all);
+    }
+    filter.append(tr("All Files (*)"));
+    return filter.join(";;");
+}
 
 QString FileManager::openEditorTypeFilter() const
 {
@@ -243,20 +242,12 @@ QStringList FileManager::folderList() const
 
 void FileManager::setFolderList(const QStringList &folders)
 {
-    if (folders.isEmpty())
-        return;
-
-    QStringList __folders;
-    __folders << folders[0];
-    m_folderWindow->setFolderList(__folders);
-    emit folderOpened(folders[0]);
+    m_folderWindow->setFolderList(folders);
 }
 
 void FileManager::addFolderList(const QString &folder)
 {
-    m_folderWindow->closeAllFolders();
     m_folderWindow->addFolderList(folder);
-    emit folderOpened(folder);
 }
 
 IApplication* FileManager::openFolderInNewWindow(const QString &folder)
@@ -280,15 +271,15 @@ void FileManager::newFile()
 {
     QString projPath;
     QString filePath;
-    ///*IProject *project = m_liteApp->projectManager()->currentProject();
-    //if (project) {
-    //    QFileInfo info(project->filePath());
-    //    if (info.isDir()) {
-    //        projPath = info.filePath();
-    //    } else {
-    //        projPath = info.path();
-    //    }
-    //}*/
+    IProject *project = m_liteApp->projectManager()->currentProject();
+    if (project) {
+        QFileInfo info(project->filePath());
+        if (info.isDir()) {
+            projPath = info.filePath();
+        } else {
+            projPath = info.path();
+        }
+    }
     IEditor *editor = m_liteApp->editorManager()->currentEditor();
     if (editor && !editor->filePath().isEmpty()) {
         filePath = QFileInfo(editor->filePath()).absolutePath();
@@ -372,18 +363,18 @@ void FileManager::openEditors()
     }
 }
 
-//void FileManager::openProjects()
-//{
-//    QStringList fileNames = QFileDialog::getOpenFileNames(m_liteApp->mainWindow(),
-//           tr("Open Project"), m_initPath,openProjectTypeFilter());
-//    if (fileNames.isEmpty())
-//        return;
-//    foreach (QString fileName, fileNames) {
-//        if (openProject(fileName)) {
-//            m_initPath = QFileInfo(fileName).canonicalPath();
-//        }
-//    }
-//}
+void FileManager::openProjects()
+{
+    QStringList fileNames = QFileDialog::getOpenFileNames(m_liteApp->mainWindow(),
+           tr("Open Project"), m_initPath,openProjectTypeFilter());
+    if (fileNames.isEmpty())
+        return;
+    foreach (QString fileName, fileNames) {
+        if (openProject(fileName)) {
+            m_initPath = QFileInfo(fileName).canonicalPath();
+        }
+    }
+}
 
 void FileManager::execFileWizard(const QString &projPath, const QString &filePath, const QString &gopath)
 {
@@ -430,12 +421,12 @@ void FileManager::execFileWizard(const QString &projPath, const QString &filePat
 bool FileManager::openFile(const QString &fileName)
 {
     QString mimeType = m_liteApp->mimeTypeManager()->findMimeTypeByFile(fileName);
-    //if (m_liteApp->projectManager()->mimeTypeList().contains(mimeType)) {
-        //return openProject(fileName) != 0;
-    //} else {
+    if (m_liteApp->projectManager()->mimeTypeList().contains(mimeType)) {
+        return openProject(fileName) != 0;
+    } else {
         return openEditor(fileName) != 0;
-    //}
-    //return false;
+    }
+    return false;
 }
 
 IEditor *FileManager::createEditor(const QString &contents, const QString &mimeType)
@@ -503,18 +494,18 @@ IEditor *FileManager::openEditorByFactory(const QString &_fileName, const QStrin
     return editor;
 }
 
-//IProject *FileManager::openProject(const QString &_fileName)
-//{
-//    QString fileName = QDir::fromNativeSeparators(_fileName);
-//    QString mimeType = m_liteApp->mimeTypeManager()->findMimeTypeByFile(fileName);
-//    IProject *proj = m_liteApp->projectManager()->openProject(fileName,mimeType);
-//    if (proj) {
-//        m_liteApp->recentManager()->addRecent(fileName,"proj");
-//    } else {
-//        m_liteApp->recentManager()->removeRecent(fileName,"proj");
-//    }
-//    return proj;
-//}
+IProject *FileManager::openProject(const QString &_fileName)
+{
+    QString fileName = QDir::fromNativeSeparators(_fileName);
+    QString mimeType = m_liteApp->mimeTypeManager()->findMimeTypeByFile(fileName);
+    IProject *proj = m_liteApp->projectManager()->openProject(fileName,mimeType);
+    if (proj) {
+        m_liteApp->recentManager()->addRecent(fileName,"proj");
+    } else {
+        m_liteApp->recentManager()->removeRecent(fileName,"proj");
+    }
+    return proj;
+}
 
 //IApplication* FileManager::openFolderEx(const QString &folder)
 //{
@@ -536,21 +527,21 @@ IEditor *FileManager::openEditorByFactory(const QString &_fileName, const QStrin
 //    return m_liteApp;
 //}
 
-//IProject *FileManager::openProjectScheme(const QString &_fileName, const QString &scheme)
-//{
-//    QString fileName = QDir::fromNativeSeparators(_fileName);
-//    QString mimeType = m_liteApp->mimeTypeManager()->findMimeTypeByScheme(scheme);
-//    if (mimeType.isEmpty()) {
-//        return 0;
-//    }
-//    IProject *proj = m_liteApp->projectManager()->openProject(QDir::fromNativeSeparators(fileName),mimeType);
-//    if (proj) {
-//        m_liteApp->recentManager()->addRecent(fileName,scheme);
-//    } else {
-//        m_liteApp->recentManager()->removeRecent(fileName,scheme);
-//    }
-//    return proj;
-//}
+IProject *FileManager::openProjectScheme(const QString &_fileName, const QString &scheme)
+{
+    QString fileName = QDir::fromNativeSeparators(_fileName);
+    QString mimeType = m_liteApp->mimeTypeManager()->findMimeTypeByScheme(scheme);
+    if (mimeType.isEmpty()) {
+        return 0;
+    }
+    IProject *proj = m_liteApp->projectManager()->openProject(QDir::fromNativeSeparators(fileName),mimeType);
+    if (proj) {
+        m_liteApp->recentManager()->addRecent(fileName,scheme);
+    } else {
+        m_liteApp->recentManager()->removeRecent(fileName,scheme);
+    }
+    return proj;
+}
 
 void FileManager::applyOption(QString id)
 {
