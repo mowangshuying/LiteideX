@@ -72,7 +72,6 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
                         \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/litefind.dll\"
                         \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/litetty.dll\"
                         \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/markdown.dll\"
-                        \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/qsqleditor.dll\"
                         \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/quickopen.dll\"
                         \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/rustedit.dll\"
                         \"${CMAKE_SOURCE_DIR}/liteide/lib/liteide/plugins/terminal.dll\"
