@@ -315,13 +315,10 @@ public:
     virtual void addFolderList(const QString &folders) = 0;
     virtual IApplication* openFolderInNewWindow(const QString &folder) = 0;
     virtual void emitAboutToShowFolderContextMenu(QMenu *menu, LiteApi::FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info, const QString &context) = 0;
-    virtual void emitFolderClosed(const QString& folder) = 0;
 signals:
     void fileListChanged();
     void fileWizardFinished(const QString &type, const QString &scheme, const QString &location);
     void aboutToShowFolderContextMenu(QMenu *menu, LiteApi::FILESYSTEM_CONTEXT_FLAG flag, const QFileInfo &info,const QString &context);
-    void folderOpened(const QString &folder);
-    void folderClosed(const QString& folder);
 public slots:
     virtual void newFile() = 0;
     virtual void openFiles() = 0;
@@ -499,7 +496,6 @@ public slots:
     virtual bool saveAllEditors(bool emitAboutSave = true) = 0;
     virtual bool closeEditor(IEditor *editor = 0) = 0;
     virtual bool closeAllEditors() = 0;
-    // virtual void contentChanged(LiteApi::IEditor *editor) = 0;
 signals:
     void currentEditorChanged(LiteApi::IEditor *editor);
     void editorCreated(LiteApi::IEditor *editor);
@@ -507,7 +503,6 @@ signals:
     void editorAboutToSave(LiteApi::IEditor *editor);
     void editorSaved(LiteApi::IEditor *editor);
     void editorModifyChanged(LiteApi::IEditor *editor, bool b);
-    void editorContentsChanged(LiteApi::IEditor *editor);
     void colorStyleSchemeChanged();
 };
 

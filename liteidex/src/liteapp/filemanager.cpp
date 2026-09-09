@@ -262,11 +262,6 @@ void FileManager::emitAboutToShowFolderContextMenu(QMenu *menu, FILESYSTEM_CONTE
     emit aboutToShowFolderContextMenu(menu,flag,info,context);
 }
 
-void FileManager::emitFolderClosed(const QString& folder)
-{
-    emit folderClosed(folder);
-}
-
 void FileManager::newFile()
 {
     QString projPath;
@@ -756,5 +751,4 @@ void FileManager::checkForReload()
     m_checkBlockActivated = false;
     QTimer::singleShot(200, this, SLOT(checkForReload()));
 }
-
 
