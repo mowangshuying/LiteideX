@@ -92,8 +92,22 @@ install(DIRECTORY "${CMAKE_SOURCE_DIR}/deploy/"
         PATTERN ".git*" EXCLUDE
 )
 
-install(DIRECTORY "${CMAKE_SOURCE_DIR}/os_deploy/"
-        DESTINATION "./share/liteide/liteenv"
+# os_deploy: only the host-OS tree is installed, merged into the resource root
+# (same layout as build/build_*.sh scripts expect at runtime).
+if(WIN32)
+    set(OS_DEPLOY_DIR windows)
+elseif(APPLE)
+    set(OS_DEPLOY_DIR macosx)
+elseif(CMAKE_SYSTEM_NAME STREQUAL "FreeBSD")
+    set(OS_DEPLOY_DIR freebsd)
+elseif(CMAKE_SYSTEM_NAME STREQUAL "OpenBSD" OR CMAKE_SYSTEM_NAME STREQUAL "NetBSD")
+    set(OS_DEPLOY_DIR openbsd)
+else()
+    set(OS_DEPLOY_DIR linux)
+endif()
+
+install(DIRECTORY "${CMAKE_SOURCE_DIR}/os_deploy/${OS_DEPLOY_DIR}/"
+        DESTINATION "./share/liteide"
         PATTERN ".git*" EXCLUDE
 )
 
