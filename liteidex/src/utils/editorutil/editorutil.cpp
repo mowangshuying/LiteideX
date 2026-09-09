@@ -405,4 +405,3 @@ QString EditorUtil::unifiedDiffText(const QString &text1, const QString &text2)
     return UnifiedDiffLines(text1,text2);
 }
 
-

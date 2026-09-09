@@ -256,4 +256,3 @@ bool FunctionTooltip::restoreTip(int startpos)
     }
     return false;
 }
-
