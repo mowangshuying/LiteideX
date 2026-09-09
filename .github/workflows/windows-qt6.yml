@@ -1,0 +1,67 @@
+name: Windows Qt6.9.0
+on: 
+  push:
+    paths:
+      - '*.txt'
+      - 'liteidex/src/**'
+      - '.github/workflows/windows-qt6.yml'
+  pull_request:
+    paths:
+      - '*.txt'
+      - 'liteidex/src/**'
+      - '.github/workflows/windows-qt6.yml'
+
+jobs:
+  build:
+    name: Build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-2022]
+        include:
+          - qt_ver: 6.9.0
+            qt_arch: win64_msvc2022_64
+            msvc_arch: x64
+    env:
+      targetName: liteide.exe
+      fileName: liteide
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+             
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: ${{ matrix.qt_ver }}
+          arch: ${{ matrix.qt_arch }}
+          modules: qtsvg qt5compat
+          cache: ${{steps.cache-qt.outputs.cache-hit}}
+          
+      - name: Msvc build & Package
+        id: build
+        shell: cmd
+        run: |
+          call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" ${{ matrix.msvc_arch }}
+          ninja --version
+          cd liteidex
+          mkdir build
+          cd build
+          cmake -DCMAKE_MESSAGE_LOG_LEVEL=STATUS -DCMAKE_PREFIX_PATH=D:\a\LiteIdeX\Qt\${{ matrix.qt_ver }}\msvc2022_64 -DCMAKE_C_COMPILER=cl -DCMAKE_CXX_COMPILER=cl -DCMAKE_BUILD_TYPE=Release -GNinja ..
+          cmake --build . --target all --config Release --parallel
+          cmake --build . --target package
+          echo winSdkDir=%WindowsSdkDir% >> %GITHUB_ENV%
+          echo winSdkVer=%WindowsSdkVersion% >> %GITHUB_ENV%
+          echo vcToolsInstallDir=%VCToolsInstallDir% >> %GITHUB_ENV%
+          echo vcToolsRedistDir=%VCToolsRedistDir% >> %GITHUB_ENV%
+          
+      - name: New Release 
+        if: startsWith(github.event.ref, 'refs/tags/')
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./liteidex/build/liteide.zip
+          asset_name: ${{ env.fileName }}-${{ github.ref_name }}-${{ matrix.qt_arch }}-Qt${{ matrix.qt_ver }}.zip
+          tag: ${{ github.ref }}
+          overwrite: true 
