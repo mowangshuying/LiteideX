@@ -23,8 +23,17 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG "${CMAKE_SOURCE_DIR}/liteide/lib/liteid
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/liteide/lib/liteide")
 
 
-find_package(QT NAMES Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml Sql)
-find_package(Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml Sql)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml Sql)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Svg PrintSupport Network Xml Sql)
+
+# Qt6 needs Qt5Compat for legacy APIs (QRegExp/QStringRef) still used across the tree,
+# mirroring liteidex.pri's `QT += core5compat` in the qmake build.
+if(QT_VERSION_MAJOR EQUAL 6)
+    find_package(Qt6 REQUIRED COMPONENTS Core5Compat SvgWidgets)
+    set(QT5_COMPAT_LIB Qt6::Core5Compat)
+else()
+    set(QT5_COMPAT_LIB "")
+endif()
 
 add_subdirectory(src)
 
@@ -110,7 +119,7 @@ message(STATUS "Configuration Option Summary ---
     Compiler:
         - Build type:         ${CMAKE_BUILD_TYPE}
         - C compiler:         ${CMAKE_C_COMPILER}
-        - Qt version:         ${QT_DEFAULT_MAJOR_VERSION}
+        - Qt version:         ${QT_VERSION_MAJOR}
         - Qt toolchain:       ${QT_QMAKE_EXECUTABLE}
         - CPack Generator:    ${CPACK_GENERATOR}
 ")

@@ -56,11 +56,12 @@ add_library(${TGT} STATIC
 )
 
 target_link_libraries(${TGT} PRIVATE
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Widgets
-    Qt5::PrintSupport
-    Qt5::Xml
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Gui
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::PrintSupport
+    Qt${QT_VERSION_MAJOR}::Xml
+    ${QT5_COMPAT_LIB}
 
     colorstyle
 )

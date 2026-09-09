@@ -33,8 +33,9 @@ target_compile_options(${TGT} PRIVATE
 
 # Link dependencies (no find_package)
 target_link_libraries(${TGT} PRIVATE
-    Qt5::Widgets
-    Qt5::Core
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Core
+    ${QT5_COMPAT_LIB}
 )
 
 # Install configuration (optional)

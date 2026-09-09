@@ -14,10 +14,11 @@ target_include_directories(${TGT} PUBLIC
 )
 
 target_link_libraries(${TGT} PRIVATE
-    Qt5::Core
-    Qt5::Widgets
-    Qt5::Xml
-    Qt5::Network
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Xml
+    Qt${QT_VERSION_MAJOR}::Network
+    ${QT5_COMPAT_LIB}
 
     liteapi
     libvterm

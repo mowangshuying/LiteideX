@@ -51,9 +51,10 @@ if(USE_DLVCLIENT)
 endif()
 
 target_link_libraries(${TGT} PRIVATE
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Widgets
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Gui
+    Qt${QT_VERSION_MAJOR}::Widgets
+    ${QT5_COMPAT_LIB}
     litedebugapi
     fileutil
     processex
@@ -62,7 +63,8 @@ target_link_libraries(${TGT} PRIVATE
 
 if(USE_DLVCLIENT)
     target_link_libraries(${TGT} PRIVATE
-        Qt5::Network
+        Qt${QT_VERSION_MAJOR}::Network
+        ${QT5_COMPAT_LIB}
         dlvclient
         qjsonrpc
     )

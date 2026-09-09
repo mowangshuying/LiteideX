@@ -46,10 +46,16 @@ target_include_directories(${TGT} PUBLIC
     ../
 )
 
-target_link_libraries(${TGT}
-    Qt5::Core
-    Qt5::Network
+target_link_libraries(${TGT} PUBLIC
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Network
+    ${QT5_COMPAT_LIB}
 )
+
+# Headers include <private/qobject_p.h>; Qt6 requires the CorePrivate module target.
+if(QT_VERSION_MAJOR EQUAL 6)
+    target_link_libraries(${TGT} PUBLIC Qt6::CorePrivate)
+endif()
 
 ### set marco QJSONRPC_STATIC
 target_compile_definitions(${TGT} PUBLIC QJSONRPC_STATIC)

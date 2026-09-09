@@ -27,9 +27,10 @@ add_library(${TGT} STATIC
 #include(../../liteideutils.cmake)
 
 target_link_libraries(${TGT} PUBLIC
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Widgets
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Gui
+    Qt${QT_VERSION_MAJOR}::Widgets
+    ${QT5_COMPAT_LIB}
 )
 
 # 设置头文件包含路径
@@ -40,4 +41,4 @@ target_include_directories(${TGT} PUBLIC
 
 # Qt 依赖（按需启用）
 # find_package(Qt5 COMPONENTS Widgets REQUIRED)
-# target_link_libraries(${TGT} PRIVATE Qt5::Widgets)
+# target_link_libraries(${TGT} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

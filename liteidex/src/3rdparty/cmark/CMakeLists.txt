@@ -60,6 +60,7 @@ set_target_properties(${TGT} PROPERTIES
 )
 
 target_link_libraries(${TGT} PUBLIC
-    Qt5::Core
+    Qt${QT_VERSION_MAJOR}::Core
+    ${QT5_COMPAT_LIB}
 )
 

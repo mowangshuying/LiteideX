@@ -6,6 +6,7 @@ add_library(${TGT} STATIC
 )
 
 target_link_libraries(${TGT}
-    Qt5::Core
+    Qt${QT_VERSION_MAJOR}::Core
+    ${QT5_COMPAT_LIB}
     liteapi
 )

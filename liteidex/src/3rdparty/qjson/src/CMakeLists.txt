@@ -60,7 +60,8 @@ set_target_properties(${TGT} PROPERTIES
 
 # Link dependencies (no find_package)
 target_link_libraries(${TGT} PRIVATE
-    Qt5::Core
+    Qt${QT_VERSION_MAJOR}::Core
+    ${QT5_COMPAT_LIB}
     editorutil
 )
 

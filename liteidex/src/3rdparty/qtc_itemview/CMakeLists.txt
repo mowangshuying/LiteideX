@@ -28,9 +28,10 @@ target_include_directories(${TGT} PUBLIC
 
 # 链接依赖（无需 find_package）
 target_link_libraries(${TGT} PRIVATE
-    Qt5::Widgets
-    Qt5::Core
-    Qt5::Gui
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Gui
+    ${QT5_COMPAT_LIB}
 )
 
 # 安装配置（可选）
