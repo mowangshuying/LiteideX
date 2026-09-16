@@ -4,28 +4,28 @@
   Based on the default vim theme for a dark background, Linux console colors.
   -->
   <style name="Text" foreground="#bbbbbb" background="#000000"/>
-  <style name="Extra" foreground="#008B8B" background="#000000"/>
-  <style name="Selection" background="#666666"/>
+  <style name="Extra" foreground="#3fd6d6" background="#000000"/>
+  <style name="Selection" background="#444444"/>
   <style name="CurrentLine" background="#212628"/>
-  <style name="MatchBrackets" background="#808080"/>
-  <style name="IndentLine" foreground="#008B8B"/>
-  <style name="VisualWhitespace" foreground="#c0c0c0"/>
+  <style name="MatchBrackets" background="#0f4c4c"/>
+  <style name="IndentLine" foreground="#3fd6d6"/>
+  <style name="VisualWhitespace" foreground="#909090"/>
   <style name="Keyword" foreground="#ffff55"/>
   <style name="DataType" foreground="#55ff55" /> 
-  <style name="Decimal" foreground="#800080"/>
-  <style name="BaseN" foreground="#ff55ff"/>
-  <style name="Float" foreground="#ff55ff"/>
-  <style name="Char" foreground="#ff0055"/>
+  <style name="Decimal" foreground="#ffaf5f"/>
+  <style name="BaseN" foreground="#ffaf5f"/>
+  <style name="Float" foreground="#ffaf5f"/>
+  <style name="Char" foreground="#ff5f87"/>
   <style name="String" foreground="#ff55ff"/>
   <style name="Comment" foreground="#55ffff"/>
-  <style name="Alert" foreground="#ff0000"/>
-  <style name="Error" foreground="#ff0000"/>
-  <style name="Function" foreground="#ffff55"/>
+  <style name="Alert" foreground="#ff5555" bold="true"/>
+  <style name="Error" foreground="#ff5555" bold="true"/>
+  <style name="Function" foreground="#5fafff"/>
   <style name="RegionMarker" foreground="#bbbbbb"/>
   <style name="Symbol" foreground="#bbbbbb"/>  
-  <style name="BuiltinFunc" foreground="#ffff55"/>
-  <style name="Predeclared" foreground="#ffff55"/>
+  <style name="BuiltinFunc" foreground="#cf6bff"/>
+  <style name="Predeclared" foreground="#87d7ff"/>
   <style name="FuncDecl" foreground="#bbbbbb"/>
-  <style name="Placeholder" foreground="#55ff55"/>
-  <style name="ToDo" foreground="#5555ff" bold="true"/>
+  <style name="Placeholder" foreground="#baff3f"/>
+  <style name="ToDo" foreground="#8787ff" bold="true"/>
 </style-scheme>

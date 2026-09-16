@@ -129,7 +129,7 @@ QComboBox::drop-down {
     background-color: #212628; /* base02 */
     subcontrol-origin: padding;
     subcontrol-position: top right;
-    border-left: 1px solid #008B8B; /* base01 */
+    border-left: 1px solid #444444; /* base01 */
 }
 
 QComboBox::drop-down:hover {
@@ -225,7 +225,7 @@ QToolBar {
 
 QToolBar:handle {
     background: transparent;
-    border-left: 1px solid #008B8B; /* base01 */
+    border-left: 1px solid transparent; /* none */
 }
 
 QToolBar::separator {
