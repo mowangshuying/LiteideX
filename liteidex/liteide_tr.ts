@@ -233,7 +233,7 @@
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="81"/>
         <source>New File Wizard...</source>
-        <translation>Yeni Dosya向导...</translation>
+        <translation>Yeni Dosya Sihirbazı...</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="82"/>
@@ -1132,7 +1132,7 @@
     <message>
         <location filename="src/plugins/liteenv/envmanager.cpp" line="704"/>
         <source>Cannot create user environment file for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 için kullanıcı çevre dosyası oluşturulamadı</translation>
     </message>
 </context>
 <context>
@@ -1232,7 +1232,7 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5875"/>
         <source>%n lines moved.</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n satır taşındı.</numerusform>
         </translation>
     </message>
@@ -1264,7 +1264,7 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6020"/>
         <source>%n lines filtered.</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n satır filtrelendi.</numerusform>
         </translation>
     </message>
@@ -1301,26 +1301,26 @@
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6321"/>
         <source>Search hit TOP without match for: %1</source>
-        <translation>Arama başına ulaşıldı; %1 için eş匹配 yok</translation>
+        <translation>Arama başına ulaşıldı; %1 için eşleşme yok</translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6428"/>
         <source>%n lines indented.</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n satır girintilendi.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6485"/>
         <source>%n lines %1ed %2 time.</source>
-        <translation type="unfinished">
-            <numerusform>%n satır %1 edildi %2 kez.</numerusform>
+        <translation>
+            <numerusform>%n satır %2 kez %1 edildi.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7058"/>
         <source>%n lines yanked.</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n satır kopyalandı.</numerusform>
         </translation>
     </message>
@@ -2025,15 +2025,15 @@ Tüm arama öğelerini boşluğa mı değiştirmek istiyorsunuz?</translation>
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="596"/>
         <source>%n matches replaced.</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n eşleşme değiştirildi.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="598"/>
         <source>searching... %n matches found.</source>
-        <translation type="unfinished">
-            <numerusform>arama... %n eşleşme bulundu.</numerusform>
+        <translation>
+            <numerusform>Aranıyor... %n eşleşme bulundu.</numerusform>
         </translation>
     </message>
     <message>
@@ -2049,7 +2049,7 @@ Tüm arama öğelerini boşluğa mı değiştirmek istiyorsunuz?</translation>
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="612"/>
         <source>%n matches found.</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n eşleşme bulundu.</numerusform>
         </translation>
     </message>
@@ -3315,17 +3315,17 @@ Tüm arama öğelerini boşluğa mı değiştirmek istiyorsunuz?</translation>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="8"/>
         <source>Gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>Gopls</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="12"/>
         <source>Use gopls for code completion, mouse information and navigation</source>
-        <translation type="unfinished"></translation>
+        <translation>Kod tamamlama, fare bilgisi ve gezinme için gopls kullan</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="17"/>
         <source>Show diagnostics from gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>gopls'tan gelen tanılama bilgilerini göster</translation>
     </message>
 </context>
 <context>
@@ -3333,52 +3333,52 @@ Tüm arama öğelerini boşluğa mı değiştirmek istiyorsunuz?</translation>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="110"/>
         <source>Go to Definition (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanıma Git (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="111"/>
         <source>Find All References (gopls)</source>
-        <translation type="unfinished">Tüm Referansları Bul (gopls)</translation>
+        <translation>Tüm Referansları Bul (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="112"/>
         <source>Find All Implementations (gopls)</source>
-        <translation type="unfinished">Tüm Uygulamaları Bul (gopls)</translation>
+        <translation>Tüm Uygulamaları Bul (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="113"/>
         <source>Rename Symbol (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Sembolü Yeniden Adlandır (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="114"/>
         <source>Format Document (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Belgeyi Biçimlendir (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="115"/>
         <source>Organize Imports (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Importları Düzenle (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>All References</source>
-        <translation type="unfinished">Tüm Referanslar</translation>
+        <translation>Tüm Referanslar</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>Implementations</source>
-        <translation type="unfinished"></translation>
+        <translation>Uygulamalar</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>Rename Symbol</source>
-        <translation type="unfinished"></translation>
+        <translation>Sembolü Yeniden Adlandır</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>New name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni İsim:</translation>
     </message>
 </context>
 <context>
@@ -4935,19 +4935,19 @@ Tüm arama öğelerini boşluğa mı değiştirmek istiyorsunuz?</translation>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="35"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>New User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeni Kullanıcı Çevresi</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="41"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı Çevresini Sil</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="47"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Rename User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanıcı Çevresini Yeniden Adlandır</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="68"/>
@@ -4958,32 +4958,32 @@ Tüm arama öğelerini boşluğa mı değiştirmek istiyorsunuz?</translation>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="55"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="130"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Çevre</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="135"/>
         <source>[System] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Sistem] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="142"/>
         <source>[User] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Kullanıcı] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>Environment ID (based on %1):</source>
-        <translation type="unfinished"></translation>
+        <translation>Çevre Kimliği (%1 tabanlı):</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 silinsin mi?</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Environment ID:</source>
-        <translation type="unfinished"></translation>
+        <translation>Çevre Kimliği:</translation>
     </message>
 </context>
 <context>

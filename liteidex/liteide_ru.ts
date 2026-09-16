@@ -1132,7 +1132,7 @@
     <message>
         <location filename="src/plugins/liteenv/envmanager.cpp" line="704"/>
         <source>Cannot create user environment file for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось создать файл пользовательской среды для %1</translation>
     </message>
 </context>
 <context>
@@ -1232,10 +1232,10 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5875"/>
         <source>%n lines moved.</source>
-        <translation type="unfinished">
-            <numerusform>%n lines moved.</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n строка перемещена.</numerusform>
+            <numerusform>%n строки перемещено.</numerusform>
+            <numerusform>%n строк перемещено.</numerusform>
         </translation>
     </message>
     <message>
@@ -1266,10 +1266,10 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6020"/>
         <source>%n lines filtered.</source>
-        <translation type="unfinished">
-            <numerusform>%n lines filtered.</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n строка отфильтрована.</numerusform>
+            <numerusform>%n строки отфильтровано.</numerusform>
+            <numerusform>%n строк отфильтровано.</numerusform>
         </translation>
     </message>
     <message>
@@ -1310,28 +1310,28 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6428"/>
         <source>%n lines indented.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>%n строка отформатирована с отступом.</numerusform>
+            <numerusform>%n строки отформатировано с отступом.</numerusform>
             <numerusform>%n строк отформатировано с отступом.</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6485"/>
         <source>%n lines %1ed %2 time.</source>
-        <translation type="unfinished">
-            <numerusform>%n строк %1 за %2 времени.</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n строка %1ed %2 раз.</numerusform>
+            <numerusform>%n строки %1ed %2 раз.</numerusform>
+            <numerusform>%n строк %1ed %2 раз.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7058"/>
         <source>%n lines yanked.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>%n строка вырезана.</numerusform>
+            <numerusform>%n строки вырезано.</numerusform>
             <numerusform>%n строк вырезано.</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -2035,19 +2035,19 @@ Want to replace to all the search items to whitespace?</source>
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="596"/>
         <source>%n matches replaced.</source>
-        <translation type="unfinished">
-            <numerusform>%n замен</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n замена.</numerusform>
+            <numerusform>%n замены.</numerusform>
+            <numerusform>%n замен.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="598"/>
         <source>searching... %n matches found.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>поиск… найдено %n совпадение.</numerusform>
+            <numerusform>поиск… найдено %n совпадения.</numerusform>
             <numerusform>поиск… найдено %n совпадений.</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -2063,10 +2063,10 @@ Want to replace to all the search items to whitespace?</source>
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="612"/>
         <source>%n matches found.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>найдено %n совпадение.</numerusform>
+            <numerusform>найдено %n совпадения.</numerusform>
             <numerusform>найдено %n совпадений.</numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -3331,17 +3331,17 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="8"/>
         <source>Gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>Gopls</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="12"/>
         <source>Use gopls for code completion, mouse information and navigation</source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать gopls для автодополнения кода, всплывающих сведений и навигации</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="17"/>
         <source>Show diagnostics from gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать диагностику от gopls</translation>
     </message>
 </context>
 <context>
@@ -3349,52 +3349,52 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="110"/>
         <source>Go to Definition (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти к определению (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="111"/>
         <source>Find All References (gopls)</source>
-        <translation type="unfinished">Найти все ссылки (gopls)</translation>
+        <translation>Найти все ссылки (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="112"/>
         <source>Find All Implementations (gopls)</source>
-        <translation type="unfinished">Найти все реализации (gopls)</translation>
+        <translation>Найти все реализации (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="113"/>
         <source>Rename Symbol (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименовать символ (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="114"/>
         <source>Format Document (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Форматировать документ (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="115"/>
         <source>Organize Imports (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Упорядочить импорты (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>All References</source>
-        <translation type="unfinished">Все ссылки</translation>
+        <translation>Все ссылки</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>Implementations</source>
-        <translation type="unfinished"></translation>
+        <translation>Реализации</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>Rename Symbol</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименовать символ</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>New name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Новое имя:</translation>
     </message>
 </context>
 <context>
@@ -4951,19 +4951,19 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="35"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>New User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Новое пользовательское окружение</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="41"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить пользовательское окружение</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="47"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Rename User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Переименовать пользовательское окружение</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="68"/>
@@ -4974,32 +4974,32 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="55"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="130"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Окружение</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="135"/>
         <source>[System] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Системное] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="142"/>
         <source>[User] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Пользовательское] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>Environment ID (based on %1):</source>
-        <translation type="unfinished"></translation>
+        <translation>Идентификатор окружения (на основе %1):</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить %1?</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Environment ID:</source>
-        <translation type="unfinished"></translation>
+        <translation>Идентификатор окружения:</translation>
     </message>
 </context>
 <context>

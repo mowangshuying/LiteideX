@@ -1132,7 +1132,7 @@
     <message>
         <location filename="src/plugins/liteenv/envmanager.cpp" line="704"/>
         <source>Cannot create user environment file for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de créer le fichier d’environnement utilisateur pour %1</translation>
     </message>
 </context>
 <context>
@@ -1232,9 +1232,9 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5875"/>
         <source>%n lines moved.</source>
-        <translation type="unfinished">
-            <numerusform>%n lines moved.</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n ligne déplacée.</numerusform>
+            <numerusform>%n lignes déplacées.</numerusform>
         </translation>
     </message>
     <message>
@@ -1265,9 +1265,9 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6020"/>
         <source>%n lines filtered.</source>
-        <translation type="unfinished">
-            <numerusform>%n lines filtered.</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n ligne filtrée.</numerusform>
+            <numerusform>%n lignes filtrées.</numerusform>
         </translation>
     </message>
     <message>
@@ -1308,25 +1308,25 @@
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6428"/>
         <source>%n lines indented.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>%n ligne indentée.</numerusform>
             <numerusform>%n lignes indentées.</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6485"/>
         <source>%n lines %1ed %2 time.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>%n ligne %1é %2 fois.</numerusform>
             <numerusform>%n lignes %1é %2 fois.</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7058"/>
         <source>%n lines yanked.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>%n ligne récupérée.</numerusform>
             <numerusform>%n lignes récupérées.</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -2030,17 +2030,17 @@ Voulez-vous remplacer tous les éléments de recherche par des espaces ?</transl
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="596"/>
         <source>%n matches replaced.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>%n correspondance remplacée.</numerusform>
             <numerusform>%n correspondances remplacées.</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="598"/>
         <source>searching... %n matches found.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>recherche en cours... %n correspondance trouvée.</numerusform>
             <numerusform>recherche en cours... %n correspondances trouvées.</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -2056,9 +2056,9 @@ Voulez-vous remplacer tous les éléments de recherche par des espaces ?</transl
     <message numerus="yes">
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="612"/>
         <source>%n matches found.</source>
-        <translation type="unfinished">
+        <translation>
+            <numerusform>%n correspondance trouvée.</numerusform>
             <numerusform>%n correspondances trouvées.</numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -3323,17 +3323,17 @@ Voulez-vous remplacer tous les éléments de recherche par des espaces ?</transl
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="8"/>
         <source>Gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>Gopls</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="12"/>
         <source>Use gopls for code completion, mouse information and navigation</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser gopls pour la complétion de code, les informations à la souris et la navigation</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="17"/>
         <source>Show diagnostics from gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher les diagnostics de gopls</translation>
     </message>
 </context>
 <context>
@@ -3341,52 +3341,52 @@ Voulez-vous remplacer tous les éléments de recherche par des espaces ?</transl
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="110"/>
         <source>Go to Definition (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aller à la définition (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="111"/>
         <source>Find All References (gopls)</source>
-        <translation type="unfinished">Rechercher toutes les références (gopls)</translation>
+        <translation>Rechercher toutes les références (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="112"/>
         <source>Find All Implementations (gopls)</source>
-        <translation type="unfinished">Rechercher toutes les implémentations (gopls)</translation>
+        <translation>Rechercher toutes les implémentations (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="113"/>
         <source>Rename Symbol (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Renommer le symbole (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="114"/>
         <source>Format Document (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Formater le document (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="115"/>
         <source>Organize Imports (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Organiser les importations (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>All References</source>
-        <translation type="unfinished">Toutes les références</translation>
+        <translation>Toutes les références</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>Implementations</source>
-        <translation type="unfinished"></translation>
+        <translation>Implémentations</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>Rename Symbol</source>
-        <translation type="unfinished"></translation>
+        <translation>Renommer le symbole</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>New name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nouveau nom :</translation>
     </message>
 </context>
 <context>
@@ -4943,19 +4943,19 @@ Voulez-vous remplacer tous les éléments de recherche par des espaces ?</transl
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="35"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>New User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Nouvel environnement utilisateur</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="41"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer l’environnement utilisateur</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="47"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Rename User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Renommer l’environnement utilisateur</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="68"/>
@@ -4966,32 +4966,32 @@ Voulez-vous remplacer tous les éléments de recherche par des espaces ?</transl
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="55"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="130"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Environnement</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="135"/>
         <source>[System] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Système] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="142"/>
         <source>[User] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Utilisateur] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>Environment ID (based on %1):</source>
-        <translation type="unfinished"></translation>
+        <translation>Identifiant de l’environnement (basé sur %1) :</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer %1 ?</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Environment ID:</source>
-        <translation type="unfinished"></translation>
+        <translation>Identifiant de l’environnement :</translation>
     </message>
 </context>
 <context>

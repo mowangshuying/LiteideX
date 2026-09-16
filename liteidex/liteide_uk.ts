@@ -219,7 +219,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="87"/>
         <source>Floating Window</source>
-        <translation type="unfinished">Плаваюче вікно</translation>
+        <translation>Плаваюче вікно</translation>
     </message>
 </context>
 <context>
@@ -305,7 +305,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="102"/>
         <source>Open in Integrated Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити у вбудованому терміналі</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="104"/>
@@ -341,12 +341,12 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="113"/>
         <source>Copy Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Копіювати шлях</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="115"/>
         <source>Move To Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити до кошика</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="198"/>
@@ -385,58 +385,58 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="504"/>
         <source>An item &quot;%1&quot; already exists in this location. Do you want to replace it and move old item to trash?</source>
-        <translation type="unfinished"></translation>
+        <translation>Елемент "%1" вже існує в цьому місці. Замінити його та перемістити старий елемент до кошика?</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="505"/>
         <source>Stop</source>
-        <translation type="unfinished">Зупинити</translation>
+        <translation>Зупинити</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="506"/>
         <source>Keep Both</source>
-        <translation type="unfinished"></translation>
+        <translation>Залишити обидва</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="507"/>
         <source>Keep Both All</source>
-        <translation type="unfinished"></translation>
+        <translation>Залишити обидва для всіх</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="508"/>
         <source>Replace</source>
-        <translation type="unfinished">Замінити</translation>
+        <translation>Замінити</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="509"/>
         <source>Replace All</source>
-        <translation type="unfinished">Замінити все</translation>
+        <translation>Замінити все</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="609"/>
         <source>Are you sure that you want move to trash this item?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви справді хочете перемістити цей елемент до кошика?</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="612"/>
         <location filename="src/utils/folderview/basefolderview.cpp" line="615"/>
         <source>Are you sure that you want move to trash %1 items?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви справді хочете перемістити до кошика %1 елементів?</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="618"/>
         <source>Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемістити до кошика</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="662"/>
         <source>Open With</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити за допомогою</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="669"/>
         <source>System Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Системний редактор</translation>
     </message>
     <message>
         <location filename="src/utils/folderview/basefolderview.cpp" line="290"/>
@@ -546,7 +546,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="85"/>
         <source>GOPATH</source>
-        <translation></translation>
+        <translation>GOPATH</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="103"/>
@@ -556,7 +556,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="147"/>
         <source>Use Custom GOPATH for Build Path</source>
-        <translation type="unfinished">Використовувати нестадартний GOPATH</translation>
+        <translation>Використовувати власний GOPATH для шляху збирання</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="159"/>
@@ -571,7 +571,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="201"/>
         <source>Custom GOPATH (one per line)</source>
-        <translation type="unfinished">Шляхи GOPATH (по одному на рядок)</translation>
+        <translation>Власний GOPATH (по одному на рядок)</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="221"/>
@@ -602,7 +602,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="310"/>
         <source>Custom</source>
         <oldsource>Build Custom</oldsource>
-        <translation type="unfinished">Розширені</translation>
+        <translation>Власний</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/buildconfigdialog.ui" line="343"/>
@@ -649,37 +649,37 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="83"/>
         <source>Cannot load %1: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося завантажити %1: %2</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="144"/>
         <source>Open File</source>
-        <translation type="unfinished">Відкрити файл</translation>
+        <translation>Відкрити файл</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="155"/>
         <source>&amp;Open...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Відкрити...</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="161"/>
         <source>Fit on Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Вписати в екран</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="166"/>
         <source>Actual Pixels</source>
-        <translation type="unfinished"></translation>
+        <translation>Реальні пікселі</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="175"/>
         <source>Zoom In (25%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Збільшити (25%)</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/ImageViewer.cpp" line="180"/>
         <source>Zoom Out (25%)</source>
-        <translation type="unfinished"></translation>
+        <translation>Зменшити (25%)</translation>
     </message>
 </context>
 <context>
@@ -691,7 +691,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
         <location filename="src/3rdparty/ads/examples/configflags/mainwindow.ui" line="14"/>
         <location filename="src/3rdparty/ads/examples/emptydockarea/mainwindow.ui" line="14"/>
         <source>MainWindow</source>
-        <translation type="unfinished"></translation>
+        <translation>MainWindow</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/examples/autohide/mainwindow.ui" line="28"/>
@@ -700,7 +700,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
         <location filename="src/3rdparty/ads/examples/configflags/mainwindow.ui" line="28"/>
         <location filename="src/3rdparty/ads/examples/emptydockarea/mainwindow.ui" line="28"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Вигляд</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/examples/autohide/mainwindow.ui" line="35"/>
@@ -709,7 +709,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
         <location filename="src/3rdparty/ads/examples/configflags/mainwindow.ui" line="35"/>
         <location filename="src/3rdparty/ads/examples/emptydockarea/mainwindow.ui" line="35"/>
         <source>toolBar</source>
-        <translation type="unfinished"></translation>
+        <translation>toolBar</translation>
     </message>
 </context>
 <context>
@@ -717,67 +717,67 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="20"/>
         <source>Dock Widget Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Стан прикріпленого віджета</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="35"/>
         <source>Dock Widget:</source>
-        <translation type="unfinished"></translation>
+        <translation>Прикріплений віджет:</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="58"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Статус</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="64"/>
         <source>closed</source>
-        <translation type="unfinished"></translation>
+        <translation>закрито</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="71"/>
         <source>floating</source>
-        <translation type="unfinished"></translation>
+        <translation>плаває</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="78"/>
         <source>tabbed</source>
-        <translation type="unfinished"></translation>
+        <translation>у вкладці</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="85"/>
         <source>is current tab</source>
-        <translation type="unfinished"></translation>
+        <translation>поточна вкладка</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="101"/>
         <source>Feature Flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Прапорці функцій</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="107"/>
         <source>DockWidgetClosable</source>
-        <translation type="unfinished"></translation>
+        <translation>DockWidgetClosable</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="114"/>
         <source>DockWidgetMovable</source>
-        <translation type="unfinished"></translation>
+        <translation>DockWidgetMovable</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="121"/>
         <source>DockWidgetFloatable</source>
-        <translation type="unfinished"></translation>
+        <translation>DockWidgetFloatable</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="128"/>
         <source>DockWidgetDeleteOnClose</source>
-        <translation type="unfinished"></translation>
+        <translation>DockWidgetDeleteOnClose</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/StatusDialog.ui" line="135"/>
         <source>CustomCloseHandling</source>
-        <translation type="unfinished"></translation>
+        <translation>CustomCloseHandling</translation>
     </message>
 </context>
 <context>
@@ -848,13 +848,13 @@ LiteIDE - це проста кросплатформена IDE з відкрит
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="132"/>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="352"/>
         <source>Add Watch</source>
-        <translation type="unfinished">Додати спостереження</translation>
+        <translation>Додати спостереження</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="240"/>
         <source>Async Record</source>
         <oldsource>AsyncRecord</oldsource>
-        <translation type="unfinished">Асинхронний запис</translation>
+        <translation>Асинхронний запис</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="241"/>
@@ -880,7 +880,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="245"/>
         <source>Goroutines</source>
-        <translation type="unfinished"></translation>
+        <translation>Горуїтини</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="246"/>
@@ -896,7 +896,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="248"/>
         <source>Disassemble</source>
-        <translation type="unfinished"></translation>
+        <translation>Дизасемблювання</translation>
     </message>
     <message>
         <source>Console</source>
@@ -905,7 +905,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="352"/>
         <source>Watch expression (e.g. buf main.var os.Stdout):</source>
-        <translation type="unfinished">Вираз для спостереження (наприклад, buf main.var os.Stdout):</translation>
+        <translation>Вираз для спостереження (наприклад, buf main.var os.Stdout):</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/debugwidget.cpp" line="134"/>
@@ -928,32 +928,32 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="20"/>
         <source>Delve Pass Flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Прапорці, що передаються Delve</translation>
     </message>
     <message>
         <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="26"/>
         <source>example --check-go-version=false</source>
-        <translation type="unfinished"></translation>
+        <translation>example --check-go-version=false</translation>
     </message>
     <message>
         <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="39"/>
         <source>Assembly Syntax</source>
-        <translation type="unfinished"></translation>
+        <translation>Синтаксис асемблера</translation>
     </message>
     <message>
         <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="45"/>
         <source>Gnu</source>
-        <translation type="unfinished"></translation>
+        <translation>Gnu</translation>
     </message>
     <message>
         <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="55"/>
         <source>Intel</source>
-        <translation type="unfinished"></translation>
+        <translation>Intel</translation>
     </message>
     <message>
         <location filename="src/plugins/dlvdebugger/dlvdebuggeroption.ui" line="65"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>Go</translation>
     </message>
 </context>
 <context>
@@ -995,7 +995,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/utils/documentbrowser/documentbrowserfactory.cpp" line="67"/>
         <source>DocumentBrowser</source>
-        <translation type="unfinished"></translation>
+        <translation>DocumentBrowser</translation>
     </message>
 </context>
 <context>
@@ -1026,7 +1026,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/liteapp/editormanager.cpp" line="112"/>
         <source>Open Editor</source>
-        <translation type="unfinished">Відкриті редактори</translation>
+        <translation>Відкрити редактор</translation>
     </message>
     <message>
         <location filename="src/liteapp/editormanager.cpp" line="143"/>
@@ -1090,7 +1090,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/liteapp/editormanager.cpp" line="163"/>
         <source>Open in Integrated Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити у вбудованому терміналі</translation>
     </message>
     <message>
         <location filename="src/liteapp/editormanager.cpp" line="225"/>
@@ -1100,12 +1100,12 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/liteapp/editormanager.cpp" line="229"/>
         <source>Go to next tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти до наступної вкладки</translation>
     </message>
     <message>
         <location filename="src/liteapp/editormanager.cpp" line="230"/>
         <source>Go to previous tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти до попередньої вкладки</translation>
     </message>
     <message>
         <location filename="src/liteapp/editormanager.cpp" line="433"/>
@@ -1163,7 +1163,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/liteenv/envmanager.cpp" line="704"/>
         <source>Cannot create user environment file for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося створити файл оточення користувача для %1</translation>
     </message>
 </context>
 <context>
@@ -1228,12 +1228,12 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3553"/>
         <source>%1%2%</source>
-        <translation type="unfinished"></translation>
+        <translation>%1%2%</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3555"/>
         <source>%1All</source>
-        <translation type="unfinished"></translation>
+        <translation>%1All</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="3569"/>
@@ -1253,12 +1253,12 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5748"/>
         <source>Trailing characters:</source>
-        <translation type="unfinished">Кінцеві символи:</translation>
+        <translation>Зайві символи в кінці:</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5831"/>
         <source>Move lines into themselves.</source>
-        <translation type="unfinished">Пересування рядків на те саме місце.</translation>
+        <translation>Пересування рядків на те саме місце.</translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5875"/>
@@ -1282,7 +1282,7 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5955"/>
         <source>&quot;%1&quot; %2 %3L, %4C written.</source>
-        <translation type="unfinished">&quot;%1&quot; %2 %3L, %4C записано.</translation>
+        <translation>"%1" %2 %3L, %4C записано.</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5964"/>
@@ -1292,15 +1292,15 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5993"/>
         <source>&quot;%1&quot; %2L, %3C</source>
-        <translation type="unfinished"></translation>
+        <translation>"%1" %2L, %3C</translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6020"/>
         <source>%n lines filtered.</source>
-        <translation type="unfinished">
-            <numerusform>%n рядок змінено.</numerusform>
-            <numerusform>%n рядки змінено.</numerusform>
-            <numerusform>%n рядків змінено.</numerusform>
+        <translation>
+            <numerusform>%n рядок відфільтровано.</numerusform>
+            <numerusform>%n рядки відфільтровано.</numerusform>
+            <numerusform>%n рядків відфільтровано.</numerusform>
         </translation>
     </message>
     <message>
@@ -1321,59 +1321,59 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6314"/>
         <source>Search hit BOTTOM, continuing at TOP.</source>
-        <translation type="unfinished">Пошук досягнув КІНЦЯ, починаємо з ПОЧАТКУ.</translation>
+        <translation>Пошук досягнув КІНЦЯ, починаємо з ПОЧАТКУ.</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6315"/>
         <source>Search hit TOP, continuing at BOTTOM.</source>
-        <translation type="unfinished">Пошук досягнув ПОЧАТКУ, починаємо з КІНЦЯ.</translation>
+        <translation>Пошук досягнув ПОЧАТКУ, починаємо з КІНЦЯ.</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6320"/>
         <source>Search hit BOTTOM without match for: %1</source>
-        <translation type="unfinished">Пошук дійшов до КІНЦЯ без співпадінь: %1</translation>
+        <translation>Пошук дійшов до КІНЦЯ без співпадінь: %1</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6321"/>
         <source>Search hit TOP without match for: %1</source>
-        <translation type="unfinished">Пошук дійшов до ПОЧАТКУ без співпадінь: %1</translation>
+        <translation>Пошук дійшов до ПОЧАТКУ без співпадінь: %1</translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6428"/>
         <source>%n lines indented.</source>
-        <translation type="unfinished">
-            <numerusform>%n рядок вирівняно.</numerusform>
-            <numerusform>%n рядки вирівняно.</numerusform>
-            <numerusform>%n рядків вирівняно.</numerusform>
+        <translation>
+            <numerusform>%n рядок зсунуто вправо.</numerusform>
+            <numerusform>%n рядки зсунуто вправо.</numerusform>
+            <numerusform>%n рядків зсунуто вправо.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="6485"/>
         <source>%n lines %1ed %2 time.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n рядок, %1: %2 раз.</numerusform>
+            <numerusform>%n рядки, %1: %2 рази.</numerusform>
+            <numerusform>%n рядків, %1: %2 разів.</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7058"/>
         <source>%n lines yanked.</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n рядок скопійовано.</numerusform>
+            <numerusform>%n рядки скопійовано.</numerusform>
+            <numerusform>%n рядків скопійовано.</numerusform>
         </translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7763"/>
         <source>Already at oldest change.</source>
-        <translation type="unfinished"></translation>
+        <translation>Це найдавніша зміна.</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="7764"/>
         <source>Already at newest change.</source>
-        <translation type="unfinished"></translation>
+        <translation>Це найновіша зміна.</translation>
     </message>
 </context>
 <context>
@@ -1381,12 +1381,12 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="2803"/>
         <source>Recursive mapping</source>
-        <translation type="unfinished"></translation>
+        <translation>Рекурсивне відображення</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="4210"/>
         <source>Type Alt-V, Alt-V to quit FakeVim mode.</source>
-        <translation type="unfinished"></translation>
+        <translation>Натисніть Alt-V, Alt-V, щоб вийти з режиму FakeVim.</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/fakevim/fakevimhandler.cpp" line="5956"/>
@@ -1417,12 +1417,12 @@ LiteIDE - це проста кросплатформена IDE з відкрит
     <message>
         <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="20"/>
         <source>FakeVim initialization command list (# start is comment):</source>
-        <translation type="unfinished">Список команд ініціалізації FakeVim (# починає коментар):</translation>
+        <translation>Список команд ініціалізації FakeVim (# починає коментар):</translation>
     </message>
     <message>
         <location filename="src/plugins/fakevimedit/fakevimeditoption.ui" line="28"/>
         <source>Load default init command list</source>
-        <translation type="unfinished">Завантажити типовий список</translation>
+        <translation>Завантажити типовий список</translation>
     </message>
 </context>
 <context>
@@ -1495,12 +1495,12 @@ LiteIDE - це проста кросплатформена IDE з відкрит
         <location filename="src/plugins/filebrowser/filebrowser.cpp" line="141"/>
         <source>Open Parent</source>
         <oldsource>Open to Parent</oldsource>
-        <translation type="unfinished">Нагору</translation>
+        <translation>Відкрити батьківську директорію</translation>
     </message>
     <message>
         <location filename="src/plugins/filebrowser/filebrowser.cpp" line="169"/>
         <source>Filter</source>
-        <translation type="unfinished">Фільтрувати</translation>
+        <translation>Фільтрувати</translation>
     </message>
     <message>
         <location filename="src/plugins/filebrowser/filebrowser.cpp" line="175"/>
@@ -1572,7 +1572,7 @@ Do you want to load?</oldsource>
     <message>
         <location filename="src/liteapp/filemanager.cpp" line="86"/>
         <source>Split Mode</source>
-        <translation type="unfinished">Розділений режим</translation>
+        <translation>Розділений режим</translation>
     </message>
     <message>
         <location filename="src/liteapp/filemanager.cpp" line="128"/>
@@ -1731,12 +1731,12 @@ Do you want to reload the file from disk?</source>
     <message>
         <location filename="src/plugins/litefind/filesearch.cpp" line="371"/>
         <source>Files on File System</source>
-        <translation type="unfinished">Файли у файловій системі</translation>
+        <translation>Файли у файловій системі</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearch.cpp" line="235"/>
         <source>Search</source>
-        <translation type="unfinished">Знайти</translation>
+        <translation>Пошук</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearch.cpp" line="236"/>
@@ -1756,7 +1756,7 @@ Do you want to reload the file from disk?</source>
     <message>
         <location filename="src/plugins/litefind/filesearch.cpp" line="283"/>
         <source>Clear</source>
-        <translation type="unfinished">Очистити</translation>
+        <translation>Очистити</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearch.cpp" line="486"/>
@@ -1769,13 +1769,13 @@ Do you want to reload the file from disk?</source>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="50"/>
         <source>Search Item:</source>
-        <translation type="unfinished">Шукаємо:</translation>
+        <translation>Елемент пошуку:</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="69"/>
         <source>Only golang file changes can be revert!</source>
         <oldsource>This file change cannot be undone!</oldsource>
-        <translation type="unfinished">Лише зміни до файлів golang можуть бути скасовані!</translation>
+        <translation>Лише зміни до файлів golang можуть бути скасовані!</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="83"/>
@@ -1785,7 +1785,7 @@ Do you want to reload the file from disk?</source>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="85"/>
         <source>File Search</source>
-        <translation type="unfinished">Пошук в файлах</translation>
+        <translation>Пошук в файлах</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="89"/>
@@ -1802,20 +1802,20 @@ Do you want to reload the file from disk?</source>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="256"/>
         <source>Warning! Replace text is empty.
 Want to remove all the search items?</source>
-        <translation type="unfinished">Увага! Текст для заміни пустий.
+        <translation>Увага! Текст для заміни пустий.
 Бажаєте видалити всі знайдені результати?</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="261"/>
         <source>Warning! Replace text is whitespace.
 Want to replace to all the search items to whitespace?</source>
-        <translation type="unfinished">Увага! Текст для заміни складається з пробільних символів.
+        <translation>Увага! Текст для заміни складається з пробільних символів.
 Бажаєте замінити всі знайдені результати пробільними символами?</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="288"/>
         <source>The following files have no write permissions. Do you want to change the permissions?</source>
-        <translation type="unfinished">Ці файли не мають права на запис. Бажаєте змінити права?</translation>
+        <translation>Ці файли не мають права на запис. Бажаєте змінити права?</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/filesearchmanager.cpp" line="291"/>
@@ -2028,7 +2028,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="174"/>
         <source>Set show replace mode ui</source>
-        <translation type="unfinished">Показати інтерфейс заміни</translation>
+        <translation>Показати інтерфейс заміни</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="175"/>
@@ -2061,12 +2061,12 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="204"/>
         <source>Expand all items</source>
-        <translation type="unfinished"></translation>
+        <translation>Розгорнути всі елементи</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="209"/>
         <source>Collapse all items</source>
-        <translation type="unfinished"></translation>
+        <translation>Згорнути всі елементи</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_searchresult/searchresultwidget.cpp" line="318"/>
@@ -2126,7 +2126,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangdoc/findapiwidget.h" line="73"/>
         <source>Search</source>
-        <translation type="unfinished">Пошук</translation>
+        <translation>Шукати</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/findapiwidget.h" line="74"/>
@@ -2139,7 +2139,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangdoc/findapiwidget.cpp" line="285"/>
         <source>Search</source>
-        <translation type="unfinished">Шукати</translation>
+        <translation>Шукати</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/findapiwidget.cpp" line="306"/>
@@ -2153,72 +2153,72 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="97"/>
         <source>Search</source>
-        <translation type="unfinished">Шукати</translation>
+        <translation>Шукати</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="105"/>
         <source>Find</source>
-        <translation type="unfinished">Знайти</translation>
+        <translation>Знайти</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="124"/>
         <source>Find All</source>
-        <translation type="unfinished">Шукати все</translation>
+        <translation>Знайти все</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="125"/>
         <source>Find const</source>
-        <translation type="unfinished">Шукати const</translation>
+        <translation>Шукати const</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="127"/>
         <source>Find func</source>
-        <translation type="unfinished">Шукати func</translation>
+        <translation>Шукати func</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="129"/>
         <source>Find interface</source>
-        <translation type="unfinished">Шукати interface</translation>
+        <translation>Шукати interface</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="131"/>
         <source>Find pkg</source>
-        <translation type="unfinished">Шукати pkg</translation>
+        <translation>Шукати pkg</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="133"/>
         <source>Find struct</source>
-        <translation type="unfinished">Шукати struct</translation>
+        <translation>Шукати struct</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="135"/>
         <source>Find type</source>
-        <translation type="unfinished">Шукати type</translation>
+        <translation>Шукати type</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="137"/>
         <source>Find var</source>
-        <translation type="unfinished">Шукати var</translation>
+        <translation>Шукати var</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="139"/>
         <source>Use Regexp</source>
-        <translation type="unfinished">Регулярний вираз</translation>
+        <translation>Регулярний вираз</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="141"/>
         <source>Match Case</source>
-        <translation type="unfinished">Врахування регістру</translation>
+        <translation>Враховувати регістр</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="143"/>
         <source>Match Word</source>
-        <translation type="unfinished">Слово цілком</translation>
+        <translation>Тільки цілі слова</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="170"/>
         <source>Help</source>
-        <translation type="unfinished">Допомога</translation>
+        <translation>Допомога</translation>
     </message>
 </context>
 <context>
@@ -2236,7 +2236,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/litefind/findeditor.cpp" line="65"/>
         <source>Wrap around</source>
-        <translation type="unfinished">Продовжити із початку</translation>
+        <translation>Продовжити із початку</translation>
     </message>
     <message>
         <location filename="src/plugins/litefind/findeditor.cpp" line="56"/>
@@ -2400,12 +2400,12 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="14"/>
         <source>Add Tags To Struct Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати теги до поля структури</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="23"/>
         <source>Add JSON Tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати тег JSON</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="54"/>
@@ -2414,7 +2414,7 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="197"/>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="281"/>
         <source>Options</source>
-        <translation type="unfinished">Параметри</translation>
+        <translation>Параметри</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="61"/>
@@ -2423,43 +2423,43 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="204"/>
         <source>Multiple options separated by commas</source>
         <oldsource>Multiple options are separated by commas</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Кілька параметрів розділяються комами</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="74"/>
         <source>Add XML Tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати тег XML</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="125"/>
         <source>Add Custom Tags</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати власні теги</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="155"/>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="187"/>
         <source>Tag Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Назва тегу</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="162"/>
         <source>Setup custom tag name</source>
-        <translation type="unfinished"></translation>
+        <translation>Налаштувати назву власного тегу</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="299"/>
         <source>Sort sorts the tags in increasing order according to the key name</source>
-        <translation type="unfinished">Сортування тегів впорядковує за зростанням назви ключа</translation>
+        <translation>Сортування тегів впорядковує за зростанням назви ключа</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="306"/>
         <source>Override current tags when adding tags</source>
-        <translation type="unfinished">Перевизначати наявні теги при додаванні тегів</translation>
+        <translation>Перевизначати наявні теги при додаванні тегів</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goaddtagsdialog.ui" line="316"/>
         <source>Info</source>
-        <translation type="unfinished">Інформація</translation>
+        <translation>Інформація</translation>
     </message>
 </context>
 <context>
@@ -2467,82 +2467,82 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="14"/>
         <source>Remove Tags From Struct Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити теги з поля структури</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="23"/>
         <source>Remove Tags And Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити теги та параметри</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="29"/>
         <source>Clear All Tags</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити всі теги</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="39"/>
         <source>Clear All Tags Options</source>
         <oldsource>Clear All Tag Options</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Очистити всі параметри тегів</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="46"/>
         <source>Remove JSON Tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити тег JSON</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="53"/>
         <source>Remove XML Tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити тег XML</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="60"/>
         <source>Remove Custom Tag</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити власний тег</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="70"/>
         <source>Multiple tags separated by commas</source>
         <oldsource>Multiple tags  are separated by commas</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Кілька тегів розділяються комами</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="77"/>
         <source>Remove JSON Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити параметри JSON</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="84"/>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="98"/>
         <source>Multiple options separated by commas</source>
         <oldsource>Multiple options are separated by commas</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Кілька параметрів розділяються комами</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="91"/>
         <source>Remove XML Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити параметри XML</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="111"/>
         <source>Remove Custom Tag Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити параметри власних тегів</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="118"/>
         <source>Setup remove custom tag and option, example tag=opt1,tag=opt2</source>
         <oldsource>Setup remove custom tag option, example tag=opt1,tag=opt2</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Вкажіть власний тег і параметр для видалення, приклад tag=opt1,tag=opt2</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="121"/>
         <source>tag=option</source>
-        <translation type="unfinished"></translation>
+        <translation>tag=option</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/goremovetagsdialog.ui" line="131"/>
         <source>Info</source>
-        <translation type="unfinished">Інформація</translation>
+        <translation>Інформація</translation>
     </message>
 </context>
 <context>
@@ -2562,13 +2562,13 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/golangast/golangast.cpp" line="80"/>
         <source>Go Class View</source>
         <oldsource>Class View</oldsource>
-        <translation type="unfinished">Класи Go</translation>
+        <translation>Класи Go</translation>
     </message>
     <message>
         <location filename="src/plugins/golangast/golangast.cpp" line="81"/>
         <source>Go Outline</source>
         <oldsource>Outline</oldsource>
-        <translation type="unfinished">Структура Go</translation>
+        <translation>Структура Go</translation>
     </message>
 </context>
 <context>
@@ -2582,7 +2582,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangast/golangastoption.ui" line="20"/>
         <source>QuickOpenSymbol</source>
-        <translation type="unfinished"></translation>
+        <translation>QuickOpenSymbol</translation>
     </message>
     <message>
         <location filename="src/plugins/golangast/golangastoption.ui" line="26"/>
@@ -2606,18 +2606,18 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangcode/golangcodeoption.ui" line="20"/>
         <source>PKG automitic import prompt</source>
-        <translation type="unfinished"></translation>
+        <translation>Підказки автоматичного імпорту PKG</translation>
     </message>
     <message>
         <location filename="src/plugins/golangcode/golangcodeoption.ui" line="26"/>
         <source>PKG automatic import hints for all packages (Module/GOPATH)</source>
         <oldsource>PKG automatic import hints for all packages (GOPATH)</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Підказки автоімпорту PKG для всіх пакунків (Module/GOPATH)</translation>
     </message>
     <message>
         <location filename="src/plugins/golangcode/golangcodeoption.ui" line="33"/>
         <source>PKG automatic import hints for standard package</source>
-        <translation type="unfinished"></translation>
+        <translation>Підказки автоімпорту PKG для стандартного пакунка</translation>
     </message>
     <message>
         <location filename="src/plugins/golangcode/golangcodeoption.ui" line="43"/>
@@ -2642,24 +2642,24 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangdoc/golangdoc.cpp" line="100"/>
         <source>Godoc Search</source>
-        <translation type="unfinished">Пошук Godoc</translation>
+        <translation>Пошук Godoc</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/golangdoc.cpp" line="92"/>
         <source>Go Doc Search</source>
         <oldsource>Golang Doc Search</oldsource>
-        <translation type="unfinished">Документація Golang</translation>
+        <translation>Пошук документації Go</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/golangdoc.cpp" line="96"/>
         <source>Go Api Index</source>
         <oldsource>Golang Api Index</oldsource>
-        <translation type="unfinished">Індекс Golang API</translation>
+        <translation>Індекс API Go</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/golangdoc.cpp" line="111"/>
         <source>Find Package:</source>
-        <translation type="unfinished">Знайти пакет:</translation>
+        <translation>Знайти пакет:</translation>
     </message>
 </context>
 <context>
@@ -2667,23 +2667,23 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangdoc/golangdocoption.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/golangdocoption.ui" line="20"/>
         <source>Go API</source>
-        <translation type="unfinished">Go API</translation>
+        <translation>Go API</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/golangdocoption.ui" line="26"/>
         <source>Use default context (fast)</source>
-        <translation type="unfinished">Використовувати контекст по замовчанню (швидко)</translation>
+        <translation>Використовувати контекст по замовчанню (швидко)</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/golangdocoption.ui" line="33"/>
         <source>Only load standard API documentation</source>
         <oldsource>Only load standard api</oldsource>
-        <translation type="unfinished">Завантажити лише доки по стандартному API</translation>
+        <translation>Завантажити лише доки по стандартному API</translation>
     </message>
 </context>
 <context>
@@ -2691,7 +2691,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="93"/>
         <source>View import package use godoc</source>
-        <translation type="unfinished">Переглянути godoc імпортів пакунку</translation>
+        <translation>Переглянути імпортований пакунок у godoc</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="96"/>
@@ -2734,7 +2734,7 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="321"/>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="322"/>
         <source>%1 (Module/GOPATH) with GOROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (Module/GOPATH) разом із GOROOT</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="182"/>
@@ -2744,27 +2744,27 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="187"/>
         <source>Go Source Query</source>
-        <translation type="unfinished"></translation>
+        <translation>Запит вихідного коду Go</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="192"/>
         <source>SourceQuery What</source>
-        <translation type="unfinished"></translation>
+        <translation>SourceQuery What</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="196"/>
         <source>Callees</source>
-        <translation type="unfinished"></translation>
+        <translation>Callees</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="200"/>
         <source>Callers</source>
-        <translation type="unfinished"></translation>
+        <translation>Callers</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="204"/>
         <source>Callstack</source>
-        <translation type="unfinished"></translation>
+        <translation>Callstack</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="208"/>
@@ -2774,58 +2774,58 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="212"/>
         <source>Describe</source>
-        <translation type="unfinished"></translation>
+        <translation>Describe</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="216"/>
         <source>Freevars</source>
-        <translation type="unfinished"></translation>
+        <translation>Freevars</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="220"/>
         <source>Implements</source>
-        <translation type="unfinished"></translation>
+        <translation>Implements</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="224"/>
         <source>Implements(GOPATH)</source>
-        <translation type="unfinished"></translation>
+        <translation>Implements(GOPATH)</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="228"/>
         <source>Peers</source>
-        <translation type="unfinished"></translation>
+        <translation>Peers</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="232"/>
         <source>Referrers</source>
-        <translation type="unfinished"></translation>
+        <translation>Referrers</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="236"/>
         <source>Pointsto</source>
-        <translation type="unfinished"></translation>
+        <translation>Pointsto</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="240"/>
         <source>Whicherrs</source>
-        <translation type="unfinished"></translation>
+        <translation>Whicherrs</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="245"/>
         <source>Add Tags To Struct Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Додати теги до поля структури</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="249"/>
         <source>Remove Tags From Struct Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити теги з поля структури</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="327"/>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="328"/>
         <source>%1 (Module) and GOROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (Module) та GOROOT</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="397"/>
@@ -2837,13 +2837,13 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="405"/>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="445"/>
         <source>SourceQuery</source>
-        <translation type="unfinished"></translation>
+        <translation>SourceQuery</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="866"/>
         <location filename="src/plugins/golangedit/golangedit.cpp" line="1047"/>
         <source>Below files in package %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Наведені нижче файли у пакунку %1</translation>
     </message>
 </context>
 <context>
@@ -2851,7 +2851,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/golangeditoption.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangeditoption.ui" line="20"/>
@@ -2861,7 +2861,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/golangeditoption.ui" line="26"/>
         <source>Go root source file editor setup read only</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкривати вихідні файли Go root лише для читання</translation>
     </message>
     <message>
         <location filename="src/plugins/golangedit/golangeditoption.ui" line="33"/>
@@ -2879,7 +2879,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangedit/golangfilesearch.cpp" line="60"/>
         <source>Golang Find Usages</source>
-        <translation type="unfinished">Golang Знайти використання</translation>
+        <translation>Знайти використання Golang</translation>
     </message>
 </context>
 <context>
@@ -2887,7 +2887,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="20"/>
@@ -2908,18 +2908,18 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="46"/>
         <source>Synchronous</source>
-        <translation type="unfinished">Синхронність</translation>
+        <translation>Синхронний режим</translation>
     </message>
     <message>
         <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="52"/>
         <source>Synchronous code formatting</source>
         <oldsource> Synchronous code formatting</oldsource>
-        <translation type="unfinished">Синхронне форматування коду</translation>
+        <translation>Синхронне форматування коду</translation>
     </message>
     <message>
         <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="61"/>
         <source>Synchronous code formatting timeout in milliseconds (500ms or more):</source>
-        <translation type="unfinished">Затримка синхронного форматування коду в мілісекундах (500 мс чи більше):</translation>
+        <translation>Затримка синхронного форматування коду в мілісекундах (500 мс чи більше):</translation>
     </message>
     <message>
         <location filename="src/plugins/golangfmt/golangfmtoption.ui" line="36"/>
@@ -2948,37 +2948,37 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golanglint/golanglintoption.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="src/plugins/golanglint/golanglintoption.ui" line="20"/>
         <source>Lint Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметри Lint</translation>
     </message>
     <message>
         <location filename="src/plugins/golanglint/golanglintoption.ui" line="26"/>
         <source>Automatically lint code when saving</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматично перевіряти код (lint) при збереженні</translation>
     </message>
     <message>
         <location filename="src/plugins/golanglint/golanglintoption.ui" line="38"/>
         <source>Minimum confidence</source>
-        <translation type="unfinished"></translation>
+        <translation>Мінімальна впевненість</translation>
     </message>
     <message>
         <location filename="src/plugins/golanglint/golanglintoption.ui" line="95"/>
         <source>0.8</source>
-        <translation type="unfinished"></translation>
+        <translation>0.8</translation>
     </message>
     <message>
         <location filename="src/plugins/golanglint/golanglintoption.ui" line="107"/>
         <source>Synchronous</source>
-        <translation type="unfinished">Синхронність</translation>
+        <translation>Синхронний режим</translation>
     </message>
     <message>
         <location filename="src/plugins/golanglint/golanglintoption.ui" line="115"/>
         <source>Code linting timeout in milliseconds (500ms or more):</source>
-        <translation type="unfinished"></translation>
+        <translation>Таймаут перевірки коду в мілісекундах (500 мс або більше):</translation>
     </message>
 </context>
 <context>
@@ -2987,7 +2987,7 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="57"/>
         <location filename="src/plugins/golanglint/golanglintplugin.cpp" line="63"/>
         <source>Lint Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Перевірити код (lint)</translation>
     </message>
 </context>
 <context>
@@ -2995,77 +2995,77 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.cpp" line="304"/>
         <source>Choose directory to add to GOPATH:</source>
-        <translation type="unfinished">Додати обрану директорію в GOPATH:</translation>
+        <translation>Додати обрану директорію в GOPATH:</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="14"/>
         <source>Manage GOPATH / Modules</source>
-        <translation type="unfinished">Управляти GOPATH</translation>
+        <translation>Керування GOPATH / Modules</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="35"/>
         <source>Go Modules</source>
-        <translation type="unfinished"></translation>
+        <translation>Go Modules</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="78"/>
         <source>Custom GONOPROXY</source>
-        <translation type="unfinished"></translation>
+        <translation>Власний GONOPROXY</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="88"/>
         <source>Custom GOPROXY</source>
-        <translation type="unfinished"></translation>
+        <translation>Власний GOPROXY</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="95"/>
         <source>Custom GO111MODULE</source>
-        <translation type="unfinished"></translation>
+        <translation>Власний GO111MODULE</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="102"/>
         <source>Custom GONOSUMDB</source>
-        <translation type="unfinished"></translation>
+        <translation>Власний GONOSUMDB</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="109"/>
         <source>Custom GOPRIVATE</source>
-        <translation type="unfinished"></translation>
+        <translation>Власний GOPRIVATE</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="125"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>TextLabel</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="137"/>
         <source>GOPATH</source>
-        <translation type="unfinished"></translation>
+        <translation>GOPATH</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="163"/>
         <source>Use System GOPATH</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати системний GOPATH</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="186"/>
         <source>Reload</source>
-        <translation type="unfinished">Перезавантажити</translation>
+        <translation>Перезавантажити</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="210"/>
         <source>Use Custom GOPATH (one per line)</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати власний GOPATH (по одному на рядок)</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="233"/>
         <source>Add Directory...</source>
-        <translation type="unfinished">Додати директорію...</translation>
+        <translation>Додати директорію...</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/golangpackageoption.ui" line="240"/>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити</translation>
     </message>
 </context>
 <context>
@@ -3098,12 +3098,12 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="79"/>
         <source>Inline Code</source>
-        <translation type="unfinished">Програмний код</translation>
+        <translation>Фрагмент коду</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="82"/>
         <source>Switch Bullets</source>
-        <translation type="unfinished">Список</translation>
+        <translation>Перемкнути маркери</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="85"/>
@@ -3119,17 +3119,17 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="91"/>
         <source>Verify Present</source>
-        <translation type="unfinished">Перевірити презентацію</translation>
+        <translation>Перевірити презентацію</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="256"/>
         <source>Present verify success</source>
-        <translation type="unfinished">Перевірка презентації пройшла успішно</translation>
+        <translation>Перевірка презентації пройшла успішно</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="258"/>
         <source>Present verify false</source>
-        <translation type="unfinished">Перевірка презентації завершилася невдало</translation>
+        <translation>Перевірка презентації завершилася невдало</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpresent/golangpresentedit.cpp" line="310"/>
@@ -3142,7 +3142,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangast/golangsymbol.cpp" line="63"/>
         <source>Quick Open Symbol by Name</source>
-        <translation type="unfinished">Відкрити символ за іменем</translation>
+        <translation>Відкрити символ за іменем</translation>
     </message>
 </context>
 <context>
@@ -3150,155 +3150,155 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="62"/>
         <source>Synchronize Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Синхронізувати з редактором</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="64"/>
         <source>Synchronize Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Синхронізувати з проектом</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="97"/>
         <source>Set Active Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановити активний проект</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="98"/>
         <source>Open Editor</source>
-        <translation type="unfinished">Відкриті редактори</translation>
+        <translation>Відкрити редактор</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="99"/>
         <source>New File...</source>
-        <translation type="unfinished">Створити файл...</translation>
+        <translation>Створити файл...</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="100"/>
         <source>New File Wizard...</source>
-        <translation type="unfinished">Майстер створення файлу...</translation>
+        <translation>Майстер створення файлу...</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="101"/>
         <source>Rename File...</source>
-        <translation type="unfinished">Перейменувати файл...</translation>
+        <translation>Перейменувати файл...</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="102"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="265"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="270"/>
         <source>Delete File</source>
-        <translation type="unfinished">Видалити файл</translation>
+        <translation>Видалити файл</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="104"/>
         <source>New Folder...</source>
-        <translation type="unfinished">Створити директорію...</translation>
+        <translation>Створити директорію...</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="105"/>
         <source>Rename Folder...</source>
-        <translation type="unfinished">Перейменувати директорію...</translation>
+        <translation>Перейменувати директорію...</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="106"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="325"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="331"/>
         <source>Delete Folder</source>
-        <translation type="unfinished">Видалити директорію</translation>
+        <translation>Видалити директорію</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="108"/>
         <source>Open Terminal Here</source>
-        <translation type="unfinished">Відкрити термінал тут</translation>
+        <translation>Відкрити термінал тут</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="109"/>
         <source>Open Explorer Here</source>
-        <translation type="unfinished">Відкрити в файловому менеджері</translation>
+        <translation>Відкрити в файловому менеджері</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="206"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="216"/>
         <source>Create File</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити файл</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="207"/>
         <source>A file with that name already exists!</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл з таким іменем вже існує!</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="217"/>
         <source>Failed to create the file!</source>
-        <translation type="unfinished">Не вдалося створити створити файл!</translation>
+        <translation>Не вдалося створити файл!</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="247"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="252"/>
         <source>Rename File</source>
-        <translation type="unfinished">Перейменувати файл</translation>
+        <translation>Перейменувати файл</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="247"/>
         <source>New Name:</source>
-        <translation type="unfinished">Нове ім&apos;я:</translation>
+        <translation>Нове ім'я:</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="253"/>
         <source>Failed to rename the file!</source>
-        <translation type="unfinished">Не вдалося перейменувати файл!</translation>
+        <translation>Не вдалося перейменувати файл!</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="266"/>
         <source>Are you sure that you want to permanently delete this file?</source>
-        <translation type="unfinished">Видалити цей файл назавжди?</translation>
+        <translation>Видалити цей файл назавжди?</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="271"/>
         <source>Failed to delete the file!</source>
-        <translation type="unfinished">Не вдалося видалити файл!</translation>
+        <translation>Не вдалося видалити файл!</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="289"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="292"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити директорію</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="290"/>
         <source>A folder with that name already exists!</source>
-        <translation type="unfinished">Директорія з таким іменем вже існує!</translation>
+        <translation>Директорія з таким іменем вже існує!</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="293"/>
         <source>Failed to create the folder!</source>
-        <translation type="unfinished">Не вдалося створити створити директорію!</translation>
+        <translation>Не вдалося створити директорію!</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="306"/>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="312"/>
         <source>Rename Folder</source>
-        <translation type="unfinished">Перейменувати директорію</translation>
+        <translation>Перейменувати директорію</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="306"/>
         <source>Folder Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Им'я директорії</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="313"/>
         <source>Failed to rename the folder!</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося перейменувати директорію!</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="326"/>
         <source>Are you sure that you want to permanently delete this folder and all of its contents?</source>
-        <translation type="unfinished">Видалити цю директорію разом із її вмістом назавжди?</translation>
+        <translation>Видалити цю директорію разом із її вмістом назавжди?</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/gopathbrowser.cpp" line="332"/>
         <source>Failed to delete the folder!</source>
-        <translation type="unfinished">Не вдалося видалити директорію!</translation>
+        <translation>Не вдалося видалити директорію!</translation>
     </message>
 </context>
 <context>
@@ -3306,7 +3306,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangtool/gopathprojectfactor.cpp" line="49"/>
         <source>&lt;GOPATH&gt; Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Проект &lt;GOPATH&gt;</translation>
     </message>
 </context>
 <context>
@@ -3315,7 +3315,7 @@ Want to replace to all the search items to whitespace?</source>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="70"/>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="135"/>
         <source>Go Playground</source>
-        <translation type="unfinished">Ігровий майданчик Go</translation>
+        <translation>Майданчик Go</translation>
     </message>
     <message>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="72"/>
@@ -3345,7 +3345,7 @@ Want to replace to all the search items to whitespace?</source>
     <message>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="77"/>
         <source>Explore Folder</source>
-        <translation type="unfinished">Відкрити директорію в файловому менеджері</translation>
+        <translation>Відкрити в файловому менеджері</translation>
     </message>
     <message>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="178"/>
@@ -3377,7 +3377,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="250"/>
         <source>Select a file to load:</source>
-        <translation type="unfinished">Оберіть файл для завантаження:</translation>
+        <translation>Оберіть файл для завантаження:</translation>
     </message>
     <message>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="266"/>
@@ -3387,7 +3387,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/golangplay/goplaybrowser.cpp" line="266"/>
         <source>New File Name:</source>
-        <translation type="unfinished">Назва нового файлу:</translation>
+        <translation>Назва нового файлу:</translation>
     </message>
 </context>
 <context>
@@ -3395,17 +3395,17 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="8"/>
         <source>Gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>Gopls</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="12"/>
         <source>Use gopls for code completion, mouse information and navigation</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати gopls для доповнення коду, інформації при наведенні миші та навігації</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsoption.ui" line="17"/>
         <source>Show diagnostics from gopls</source>
-        <translation type="unfinished"></translation>
+        <translation>Показувати діагностику від gopls</translation>
     </message>
 </context>
 <context>
@@ -3413,52 +3413,52 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="110"/>
         <source>Go to Definition (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти до визначення (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="111"/>
         <source>Find All References (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Знайти всі посилання (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="112"/>
         <source>Find All Implementations (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Знайти всі реалізації (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="113"/>
         <source>Rename Symbol (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменувати символ (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="114"/>
         <source>Format Document (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Форматувати документ (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="115"/>
         <source>Organize Imports (gopls)</source>
-        <translation type="unfinished"></translation>
+        <translation>Упорядкувати імпорти (gopls)</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>All References</source>
-        <translation type="unfinished"></translation>
+        <translation>Всі посилання</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="712"/>
         <source>Implementations</source>
-        <translation type="unfinished"></translation>
+        <translation>Реалізації</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>Rename Symbol</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменувати символ</translation>
     </message>
     <message>
         <location filename="src/plugins/gopls/goplsplugin.cpp" line="1095"/>
         <source>New name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Нове ім'я:</translation>
     </message>
 </context>
 <context>
@@ -3466,7 +3466,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/tools/template/hello_option/hellooption.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Форма</translation>
+        <translation>Форма</translation>
     </message>
 </context>
 <context>
@@ -3474,43 +3474,44 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="26"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
 &lt;p&gt;Highlight definitions are provided by the &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate Text Editor&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+&lt;p&gt;Визначення підсвічування надаються текстовим редактором &lt;a href=&quot;http://kate-editor.org/&quot;&gt;Kate Text Editor&lt;/a&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="62"/>
         <source>Syntax Highlight Definition Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Файли визначень підсвічування синтаксису</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="72"/>
         <source>Location:</source>
-        <translation type="unfinished">Локація:</translation>
+        <translation>Локація:</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="91"/>
         <source>Use fallback location</source>
-        <translation type="unfinished"></translation>
+        <translation>Використовувати резервну локацію</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="106"/>
         <source>Behavior</source>
-        <translation type="unfinished">Поведінка</translation>
+        <translation>Поведінка</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="112"/>
         <source>Alert when a highlight definition is not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Повідомляти, якщо визначення підсвічування не знайдено</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/highlightersettingspage.ui" line="121"/>
         <source>Ignored file patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ігноровані шаблони файлів:</translation>
     </message>
 </context>
 <context>
@@ -3550,7 +3551,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/markdown/htmlpreview.cpp" line="91"/>
         <source>Config</source>
-        <translation type="unfinished">Конфігурація</translation>
+        <translation>Конфігурація</translation>
     </message>
     <message>
         <location filename="src/plugins/markdown/htmlpreview.cpp" line="171"/>
@@ -3560,7 +3561,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/markdown/htmlpreview.cpp" line="394"/>
         <source>Export Failed</source>
-        <translation type="unfinished">Експорт не виконано</translation>
+        <translation>Експорт завершився невдало</translation>
     </message>
     <message>
         <location filename="src/plugins/markdown/htmlpreview.cpp" line="88"/>
@@ -3586,43 +3587,43 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="61"/>
         <source>ZoomIn</source>
-        <translation type="unfinished"></translation>
+        <translation>Збільшити</translation>
     </message>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="64"/>
         <source>ZoomOut</source>
-        <translation type="unfinished"></translation>
+        <translation>Зменшити</translation>
     </message>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="67"/>
         <source>Reset to original size</source>
-        <translation type="unfinished"></translation>
+        <translation>Скинути до початкового розміру</translation>
     </message>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="70"/>
         <source>Fit to view</source>
-        <translation type="unfinished"></translation>
+        <translation>Вписати у вікно</translation>
     </message>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="73"/>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="256"/>
         <source>Play movie</source>
-        <translation type="unfinished"></translation>
+        <translation>Відтворити анімацію</translation>
     </message>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="77"/>
         <source>Prev frame</source>
-        <translation type="unfinished"></translation>
+        <translation>Попередній кадр</translation>
     </message>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="81"/>
         <source>Next frame</source>
-        <translation type="unfinished"></translation>
+        <translation>Наступний кадр</translation>
     </message>
     <message>
         <location filename="src/plugins/imageeditor/imageeditor.cpp" line="253"/>
         <source>Pause movie</source>
-        <translation type="unfinished"></translation>
+        <translation>Призупинити анімацію</translation>
     </message>
 </context>
 <context>
@@ -3630,7 +3631,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/imageeditor/imageeditorfactory.cpp" line="131"/>
         <source>Image Viewer</source>
-        <translation type="unfinished"></translation>
+        <translation>Переглядач зображень</translation>
     </message>
 </context>
 <context>
@@ -3638,37 +3639,37 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/golangtool/importgopathdialog.ui" line="14"/>
         <source>Import GOPATH Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Імпортувати проект GOPATH</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/importgopathdialog.ui" line="20"/>
         <source>System GOPATH</source>
-        <translation type="unfinished"></translation>
+        <translation>Системний GOPATH</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/importgopathdialog.ui" line="35"/>
         <source>Reload</source>
-        <translation type="unfinished">Перезавантажити</translation>
+        <translation>Перезавантажити</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/importgopathdialog.ui" line="60"/>
         <source>Custome GOPATH</source>
-        <translation type="unfinished"></translation>
+        <translation>Власний GOPATH</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/importgopathdialog.ui" line="71"/>
         <source>Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Огляд</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/importgopathdialog.ui" line="78"/>
         <source>Clear</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити</translation>
     </message>
     <message>
         <location filename="src/plugins/golangtool/importgopathdialog.cpp" line="73"/>
         <source>Load GOPATH Directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантажити директорію GOPATH</translation>
     </message>
 </context>
 <context>
@@ -3676,7 +3677,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/golangcode/golangcode.cpp" line="869"/>
         <source>warning, pkg not find, please enter to import :</source>
-        <translation type="unfinished">увага, пакунок не знайдено, будь ласка введіть для імпорту:</translation>
+        <translation>увага, пакунок не знайдено, будь ласка введіть для імпорту:</translation>
     </message>
 </context>
 <context>
@@ -3875,7 +3876,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="84"/>
         <source>Use tool window shortcuts</source>
-        <translation type="unfinished">Використовувати скорочення для панелей</translation>
+        <translation>Використовувати скорочення для панелей</translation>
     </message>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="112"/>
@@ -3912,7 +3913,7 @@ Success: %2.</oldsource>
         <location filename="src/liteapp/liteappoption.ui" line="235"/>
         <source>Auto reload or close editor buffer,if underlying file is modified/deleted.</source>
         <oldsource>Auto reload editor buffer from disk file,if underlying file is modified/deleted.</oldsource>
-        <translation type="unfinished">Автоматично перезавантажувати чи закривати редактор, якщо файл змінено/видалено.</translation>
+        <translation>Автоматично перезавантажувати чи закривати редактор, якщо файл змінено/видалено.</translation>
     </message>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="263"/>
@@ -3923,7 +3924,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="325"/>
         <source>0-99</source>
-        <translation></translation>
+        <translation>0-99</translation>
     </message>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="351"/>
@@ -3933,7 +3934,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="364"/>
         <source>10-999</source>
-        <translation></translation>
+        <translation>10-999</translation>
     </message>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="407"/>
@@ -3943,7 +3944,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="413"/>
         <source>Display [*]</source>
-        <translation type="unfinished">Вид [*]</translation>
+        <translation>Зовнішній вигляд [*]</translation>
     </message>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="419"/>
@@ -3989,7 +3990,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="544"/>
         <source>Enable mouse extra &apos;Back&apos; button and &apos;Forward&apos; button for go back and forward</source>
-        <translation type="unfinished">Використовувати додаткові кнопки миші &quot;Назад&quot; та &quot;Вперед&quot; для навігації</translation>
+        <translation>Використовувати додаткові кнопки миші "Назад" та "Вперед" для навігації</translation>
     </message>
     <message>
         <location filename="src/liteapp/liteappoption.ui" line="568"/>
@@ -4070,7 +4071,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/liteapp/liteappoption.cpp" line="85"/>
         <source>NativeText</source>
-        <translation type="unfinished"></translation>
+        <translation>NativeText</translation>
     </message>
     <message>
         <location filename="src/liteapp/liteappoption.cpp" line="86"/>
@@ -4109,7 +4110,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="143"/>
         <source>Build Toolbar</source>
-        <translation type="unfinished">Панель збірки</translation>
+        <translation>Панель збірки</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="151"/>
@@ -4136,24 +4137,24 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="180"/>
         <source>Debug File</source>
-        <translation type="unfinished">Зневадження файлу</translation>
+        <translation>Зневадження файлу</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="183"/>
         <source>Lock Build Path</source>
         <oldsource>Lock Go Build Path</oldsource>
-        <translation type="unfinished"></translation>
+        <translation>Заблокувати шлях збирання</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="185"/>
         <source>Build Path Configuration</source>
         <oldsource>Go Build Configuration</oldsource>
-        <translation type="unfinished">Налаштування шляху збирання</translation>
+        <translation>Налаштування шляху збирання</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="231"/>
         <source>Use godoc View</source>
-        <translation type="unfinished">Відкрити Godoc</translation>
+        <translation>Використовувати перегляд godoc</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="288"/>
@@ -4168,29 +4169,29 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="296"/>
         <source>Automatic positioning cursor</source>
-        <translation type="unfinished">Автоматично переносити курсор</translation>
+        <translation>Автоматично переносити курсор</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="311"/>
         <source>Setup</source>
-        <translation type="unfinished">Настройка</translation>
+        <translation>Налаштування</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="319"/>
         <source>Build Output</source>
         <oldsource>Build</oldsource>
-        <translation type="unfinished">Результати збирання</translation>
+        <translation>Результати збирання</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="733"/>
         <source>Current environment change id &quot;%1&quot;</source>
-        <translation type="unfinished">Ідентифікатор конфігурації &quot;%1&quot;</translation>
+        <translation>Ідентифікатор конфігурації "%1"</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="1147"/>
         <source>Lock Build</source>
         <oldsource>Lock Build: %1</oldsource>
-        <translation type="unfinished">Замкнути збірку</translation>
+        <translation>Заблокувати збірку</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="1498"/>
@@ -4209,7 +4210,7 @@ Success: %2.</oldsource>
         <source>Success: %1.</source>
         <oldsource>Success: %1.
 </oldsource>
-        <translation type="unfinished">Все ок: %1.</translation>
+        <translation>Успішно: %1.</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="1552"/>
@@ -4217,7 +4218,7 @@ Success: %2.</oldsource>
         <source>A process is currently running.  Stop the current action first.</source>
         <oldsource>A process is currently running.  Stop the current action first.
 </oldsource>
-        <translation type="unfinished">Процес вже виконується. Потрібно його перервати (меню Збірка/Перервати).</translation>
+        <translation>Зараз виконується процес. Спершу зупиніть поточну дію.</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuild.cpp" line="1591"/>
@@ -4257,13 +4258,13 @@ Success: %2.</oldsource>
         <location filename="src/plugins/litebuild/litebuildoption.ui" line="20"/>
         <source>Recheck Go installation when changing environments</source>
         <oldsource>Recheck go env if enviroment changed</oldsource>
-        <translation type="unfinished">Перевірити інсталляцію Go після зміни конфігурації оточення</translation>
+        <translation>Перевірити інсталляцію Go після зміни конфігурації оточення</translation>
     </message>
     <message>
         <location filename="src/plugins/litebuild/litebuildoption.ui" line="27"/>
         <source>Build command configuration files [*]</source>
         <oldsource>Build command configuration files:</oldsource>
-        <translation type="unfinished">Файли конфігурації команд збирання [*]</translation>
+        <translation>Файли конфігурації команд збирання [*]</translation>
     </message>
 </context>
 <context>
@@ -4295,7 +4296,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="76"/>
         <source>Clear</source>
-        <translation type="unfinished">Очистити вивід</translation>
+        <translation>Очистити</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="112"/>
@@ -4311,7 +4312,7 @@ Success: %2.</oldsource>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="205"/>
         <source>Debug Output</source>
         <oldsource>Debug</oldsource>
-        <translation type="unfinished">Відлагодження</translation>
+        <translation>Виведення зневадження</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="106"/>
@@ -4331,17 +4332,17 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="121"/>
         <source>Step Into</source>
-        <translation type="unfinished">Крок із заходом</translation>
+        <translation>Крок із заходом</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="124"/>
         <source>Step Over</source>
-        <translation type="unfinished">Крок із обходом</translation>
+        <translation>Крок з обходом</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="127"/>
         <source>Step Out</source>
-        <translation type="unfinished">Крок із виходом</translation>
+        <translation>Крок із виходом</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="130"/>
@@ -4361,17 +4362,17 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="208"/>
         <source>Debug Watch</source>
-        <translation type="unfinished"></translation>
+        <translation>Спостереження</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="211"/>
         <source>Vars View</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінні</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/litedebug.cpp" line="213"/>
         <source>Frame View</source>
-        <translation type="unfinished"></translation>
+        <translation>Фрейми</translation>
     </message>
 </context>
 <context>
@@ -4817,7 +4818,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/liteeditor/liteeditorfilefactory.cpp" line="203"/>
         <source>Text Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстовий редактор</translation>
     </message>
 </context>
 <context>
@@ -4870,7 +4871,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="99"/>
         <source>%</source>
-        <translation></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="118"/>
@@ -4886,7 +4887,7 @@ Success: %2.</oldsource>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="150"/>
         <source>Editor Color Scheme</source>
         <oldsource>ColorStyle Scheme</oldsource>
-        <translation type="unfinished">Колірна схема редактора</translation>
+        <translation>Колірна схема редактора</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="158"/>
@@ -4907,17 +4908,17 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="302"/>
         <source>Fuzzy code completion</source>
-        <translation type="unfinished">Нечітке доповнення коду</translation>
+        <translation>Нечітке доповнення коду</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="350"/>
         <source>Clean completion cache when saving files</source>
-        <translation type="unfinished">Очищати кеш автодоповнення при збереженні файлів</translation>
+        <translation>Очищати кеш автодоповнення при збереженні файлів</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="357"/>
         <source>Clean whitespace when saving files</source>
-        <translation type="unfinished">Видаляти надлишкові пробіли при збереженні файлів</translation>
+        <translation>Видаляти надлишкові пробіли при збереженні файлів</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="364"/>
@@ -4927,12 +4928,12 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="371"/>
         <source>Add copied text into the clipboard as HTML</source>
-        <translation type="unfinished">Додавати копійований текст до буфера обміну як HTML</translation>
+        <translation>Додавати копійований текст до буфера обміну як HTML</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="378"/>
         <source>Allow vertical scrolling to the last line [*]</source>
-        <translation type="unfinished">Дозволяти вертикальне гортання до останнього рядка [*]</translation>
+        <translation>Дозволяти вертикальне гортання до останнього рядка [*]</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="437"/>
@@ -4942,7 +4943,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="451"/>
         <source>Word wrap by default</source>
-        <translation type="unfinished">Переносити рядки по словах</translation>
+        <translation>Переносити рядки по словах</translation>
     </message>
     <message>
         <location filename="src/plugins/liteeditor/liteeditoroption.ui" line="430"/>
@@ -5065,19 +5066,19 @@ Success: %2.</oldsource>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="35"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>New User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Нове оточення користувача</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="41"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити оточення користувача</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="47"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Rename User Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменувати оточення користувача</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.ui" line="68"/>
@@ -5088,32 +5089,32 @@ Success: %2.</oldsource>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="55"/>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="130"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Оточення</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="135"/>
         <source>[System] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Системне] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="142"/>
         <source>[User] %1</source>
-        <translation type="unfinished"></translation>
+        <translation>[Користувацьке] %1</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="165"/>
         <source>Environment ID (based on %1):</source>
-        <translation type="unfinished"></translation>
+        <translation>Ідентифікатор оточення (на основі %1):</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="210"/>
         <source>Delete %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Видалити %1?</translation>
     </message>
     <message>
         <location filename="src/plugins/liteenv/liteenvoption.cpp" line="234"/>
         <source>Environment ID:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ідентифікатор оточення:</translation>
     </message>
 </context>
 <context>
@@ -5170,13 +5171,13 @@ Success: %2.</oldsource>
         <location filename="src/3rdparty/ads/examples/sidebar/MainWindow.ui" line="14"/>
         <location filename="src/3rdparty/ads/examples/simple/MainWindow.ui" line="14"/>
         <source>MainWindow</source>
-        <translation type="unfinished"></translation>
+        <translation>MainWindow</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="32"/>
         <location filename="src/3rdparty/ads/examples/hideshow/MainWindow.ui" line="33"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="39"/>
@@ -5184,52 +5185,52 @@ Success: %2.</oldsource>
         <location filename="src/3rdparty/ads/examples/sidebar/MainWindow.ui" line="75"/>
         <location filename="src/3rdparty/ads/examples/simple/MainWindow.ui" line="28"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Вигляд</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="44"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Про програму</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="49"/>
         <source>Tests</source>
-        <translation type="unfinished"></translation>
+        <translation>Тести</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="59"/>
         <source>toolBar</source>
-        <translation type="unfinished"></translation>
+        <translation>toolBar</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="70"/>
         <source>Exit</source>
-        <translation type="unfinished">Вийти</translation>
+        <translation>Вийти</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="75"/>
         <source>Save State</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберегти стан</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/mainwindow.ui" line="80"/>
         <source>Restore State</source>
-        <translation type="unfinished"></translation>
+        <translation>Відновити стан</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/examples/hideshow/MainWindow.ui" line="44"/>
         <source>Open project</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити проект</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/examples/hideshow/MainWindow.ui" line="49"/>
         <source>Close project</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрити проект</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/examples/sidebar/MainWindow.ui" line="26"/>
         <source>PushButton</source>
-        <translation type="unfinished"></translation>
+        <translation>PushButton</translation>
     </message>
 </context>
 <context>
@@ -5237,22 +5238,22 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/makefileproject/makefilefile.cpp" line="78"/>
         <source>GOFILES</source>
-        <translation type="unfinished"></translation>
+        <translation>GOFILES</translation>
     </message>
     <message>
         <location filename="src/plugins/makefileproject/makefilefile.cpp" line="79"/>
         <source>CGOFILES</source>
-        <translation type="unfinished"></translation>
+        <translation>CGOFILES</translation>
     </message>
     <message>
         <location filename="src/plugins/makefileproject/makefilefile.cpp" line="80"/>
         <source>Headers</source>
-        <translation type="unfinished"></translation>
+        <translation>Заголовні файли</translation>
     </message>
     <message>
         <location filename="src/plugins/makefileproject/makefilefile.cpp" line="81"/>
         <source>Sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Вихідний код</translation>
     </message>
 </context>
 <context>
@@ -5260,32 +5261,32 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation type="unfinished">Експорт</translation>
+        <translation>Діалог</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="20"/>
         <source>Definitions</source>
-        <translation type="unfinished"></translation>
+        <translation>Визначення</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="66"/>
         <source>Select All</source>
-        <translation type="unfinished">Виділити все</translation>
+        <translation>Виділити все</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="73"/>
         <source>Clear Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Прибрати виділення</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="80"/>
         <source>Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Інвертувати виділення</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.ui" line="102"/>
         <source>Download Selected Definitions</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантажити вибрані визначення</translation>
     </message>
 </context>
 <context>
@@ -5507,7 +5508,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/plugins/markdown/markdownedit.cpp" line="107"/>
         <source>Inline Code</source>
-        <translation type="unfinished">Рядковий код</translation>
+        <translation>Фрагмент коду</translation>
     </message>
     <message>
         <location filename="src/plugins/markdown/markdownedit.cpp" line="110"/>
@@ -5586,7 +5587,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/3rdparty/ads/demo/MyDockAreaTitleBar.h" line="43"/>
         <source>Format HardDrive</source>
-        <translation type="unfinished"></translation>
+        <translation>Форматувати жорсткий диск</translation>
     </message>
 </context>
 <context>
@@ -5595,7 +5596,7 @@ Success: %2.</oldsource>
         <location filename="src/utils/navigate/navigate.cpp" line="155"/>
         <location filename="src/utils/navigate/navigate.cpp" line="178"/>
         <source>Browser Files in %1</source>
-        <translation type="unfinished">Переглянути файли в %1</translation>
+        <translation>Переглянути файли в %1</translation>
     </message>
 </context>
 <context>
@@ -5608,7 +5609,7 @@ Success: %2.</oldsource>
     <message>
         <location filename="src/liteapp/newfiledialog.ui" line="124"/>
         <source>Browse...</source>
-        <translation type="unfinished">Відкрити...</translation>
+        <translation>Обрати...</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.ui" line="24"/>
@@ -5619,7 +5620,7 @@ Success: %2.</oldsource>
         <location filename="src/liteapp/newfiledialog.ui" line="38"/>
         <source>Template:</source>
         <oldsource>Template</oldsource>
-        <translation type="unfinished">Шаблон:</translation>
+        <translation>Шаблон:</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.ui" line="54"/>
@@ -5645,56 +5646,56 @@ Success: %2.</oldsource>
         <location filename="src/liteapp/newfiledialog.cpp" line="127"/>
         <location filename="src/liteapp/newfiledialog.cpp" line="185"/>
         <source>Error</source>
-        <translation type="unfinished">Помилка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="127"/>
         <source>Could not create the target directory: %1</source>
-        <translation type="unfinished">Не можу створити цільову директорію: %1</translation>
+        <translation>Не вдалося створити цільову директорію: %1</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="132"/>
         <source>Warning</source>
-        <translation type="unfinished">Попередження</translation>
+        <translation>Попередження</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="132"/>
         <source>Location %1 is not empty.
 Use the target directory anyway?</source>
-        <translation type="unfinished">%1 не порожня.
+        <translation>%1 не порожня.
 Все одно використовувати цю директорію?</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="169"/>
         <source>Overwrite File</source>
-        <translation type="unfinished">Перезаписати файл</translation>
+        <translation>Перезаписати файл</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="169"/>
         <source>%1 already exists.
 Do you want to replace it?</source>
-        <translation type="unfinished">%1 вже існує. Замінити?</translation>
+        <translation>%1 вже існує. Замінити?</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="185"/>
         <source>No files could be created.</source>
-        <translation type="unfinished">Не вдалося створити жодного файлу.</translation>
+        <translation>Не вдалося створити жодного файлу.</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="280"/>
         <source>File template details:</source>
-        <translation type="unfinished">Деталі шаблону:</translation>
+        <translation>Деталі шаблону:</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="282"/>
         <source>Project template details:</source>
         <oldsource>New project wizard:</oldsource>
-        <translation type="unfinished">Шаблон нового проекту:</translation>
+        <translation>Деталі шаблону проекту:</translation>
     </message>
     <message>
         <location filename="src/liteapp/newfiledialog.cpp" line="362"/>
         <source>Choose a directory for the new content:</source>
-        <translation type="unfinished">Вибрати директорію для нового вмісту:</translation>
+        <translation>Вибрати директорію для нового вмісту:</translation>
     </message>
 </context>
 <context>
@@ -5744,22 +5745,22 @@ Do you want to replace it?</source>
         <location filename="src/liteapp/tooldockwidget.cpp" line="472"/>
         <location filename="src/liteapp/tooldockwidget.cpp" line="473"/>
         <source>Move To</source>
-        <translation type="unfinished">Пересунути в</translation>
+        <translation>Перемістити в</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="446"/>
         <source>LeftSideBar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ліва бічна панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="447"/>
         <source>RightSideBar</source>
-        <translation type="unfinished"></translation>
+        <translation>Права бічна панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="480"/>
         <source>BottomDockWidget</source>
-        <translation type="unfinished"></translation>
+        <translation>Нижня докова панель</translation>
     </message>
 </context>
 <context>
@@ -5792,7 +5793,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/liteapp/outputoption.ui" line="67"/>
         <source>%</source>
-        <translation></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="src/liteapp/outputoption.ui" line="86"/>
@@ -5821,50 +5822,50 @@ Do you want to replace it?</source>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="87"/>
         <source>Manage GOPATH/Modules ...</source>
         <oldsource>Manage GOPATH...</oldsource>
-        <translation type="unfinished">Управляти GOPATH...</translation>
+        <translation>Керування GOPATH/Modules...</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="86"/>
         <source>Reload All</source>
-        <translation type="unfinished">Перезавантажити все</translation>
+        <translation>Перезавантажити все</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="93"/>
         <source>Use godoc View</source>
-        <translation type="unfinished">Відкрити Godoc</translation>
+        <translation>Використовувати перегляд godoc</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="94"/>
         <source>Load Package in New Window</source>
-        <translation type="unfinished">Завантажити пакет в новому вікні</translation>
+        <translation>Завантажити пакунок у новому вікні</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="95"/>
         <source>Add Package to Folders</source>
-        <translation type="unfinished">Додати пакет в директорії</translation>
+        <translation>Додати пакунок до директорій</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="96"/>
         <source>Open Source File</source>
-        <translation type="unfinished">Відкрити файл коду</translation>
+        <translation>Відкрити вихідний файл</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="97"/>
         <source>Copy Name to Clipboard</source>
         <oldsource>Copy Name To Clipboard</oldsource>
-        <translation type="unfinished">Скопіювати ім`я до буферу обміну</translation>
+        <translation>Копіювати назву в буфер обміну</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="119"/>
         <source>Go Package Browser</source>
         <oldsource>Package Browser</oldsource>
-        <translation type="unfinished">Перегляд пакетів</translation>
+        <translation>Перегляд пакунків Go</translation>
     </message>
     <message>
         <location filename="src/plugins/golangpackage/packagebrowser.cpp" line="213"/>
         <source>Loading Go package list...</source>
         <oldsource>Loading go package ...</oldsource>
-        <translation type="unfinished">Завантажую список пакетів Go...</translation>
+        <translation>Завантажую список пакетів Go...</translation>
     </message>
 </context>
 <context>
@@ -5994,7 +5995,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/utils/processex/processex.cpp" line="80"/>
         <source>couldn&apos;t write to the process</source>
-        <translation type="unfinished">не вдалося записати в процес</translation>
+        <translation>не вдалося записати в процес</translation>
     </message>
     <message>
         <location filename="src/utils/processex/processex.cpp" line="84"/>
@@ -6007,22 +6008,22 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/plugins/profileproject/profilefile.cpp" line="79"/>
         <source>GOFILES</source>
-        <translation type="unfinished"></translation>
+        <translation>GOFILES</translation>
     </message>
     <message>
         <location filename="src/plugins/profileproject/profilefile.cpp" line="80"/>
         <source>CGOFILES</source>
-        <translation type="unfinished"></translation>
+        <translation>CGOFILES</translation>
     </message>
     <message>
         <location filename="src/plugins/profileproject/profilefile.cpp" line="81"/>
         <source>Headers</source>
-        <translation type="unfinished"></translation>
+        <translation>Заголовні файли</translation>
     </message>
     <message>
         <location filename="src/plugins/profileproject/profilefile.cpp" line="82"/>
         <source>Sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Вихідний код</translation>
     </message>
 </context>
 <context>
@@ -6043,33 +6044,33 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/3rdparty/fakevim/test/main.cpp" line="183"/>
         <source>Information</source>
-        <translation type="unfinished">Інформація</translation>
+        <translation>Інформація</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/test/main.cpp" line="315"/>
         <location filename="src/3rdparty/fakevim/test/main.cpp" line="326"/>
         <source>FakeVim Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Помилка FakeVim</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/test/main.cpp" line="316"/>
         <source>Cannot create temporary file: %1</source>
-        <translation type="unfinished">Не вдалося створити тимчасовий файл: %1</translation>
+        <translation>Не вдалося створити тимчасовий файл: %1</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/test/main.cpp" line="327"/>
         <source>Cannot write to file &quot;%1&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося записати у файл "%1"</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/test/main.cpp" line="337"/>
         <source>FakeVim Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Попередження FakeVim</translation>
     </message>
     <message>
         <location filename="src/3rdparty/fakevim/test/main.cpp" line="338"/>
         <source>File &quot;%1&quot; was changed</source>
-        <translation type="unfinished"></translation>
+        <translation>Файл "%1" було змінено</translation>
     </message>
 </context>
 <context>
@@ -6123,7 +6124,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="61"/>
         <source>missing name separator</source>
-        <translation type="unfinished"></translation>
+        <translation>відсутній роздільник назви</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="62"/>
@@ -6133,7 +6134,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="63"/>
         <source>missing value separator</source>
-        <translation type="unfinished"></translation>
+        <translation>відсутний роздільник значення</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="64"/>
@@ -6143,7 +6144,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="65"/>
         <source>invalid termination by number</source>
-        <translation type="unfinished"></translation>
+        <translation>недопустиме завершення числом</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qjsonrpc/src/json/qjsonparser.cpp" line="66"/>
@@ -6191,42 +6192,42 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="151"/>
         <source>Help</source>
-        <translation type="unfinished">Допомога</translation>
+        <translation>Допомога</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="330"/>
         <source>Options</source>
-        <translation type="unfinished">Параметри</translation>
+        <translation>Параметри</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="339"/>
         <source>Clear Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Очистити редактор</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/demo/MainWindow.cpp" line="506"/>
         <source>Create Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Створити редактор</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="201"/>
         <source>List All Tabs</source>
-        <translation type="unfinished">Перелік вкладок</translation>
+        <translation>Перелік вкладок</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="212"/>
         <source>Detach Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Від'єднати групу</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="239"/>
         <source>Minimize</source>
-        <translation type="unfinished"></translation>
+        <translation>Згорнути</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="266"/>
         <source>Close Tab</source>
-        <translation type="unfinished">Закрити вкладку</translation>
+        <translation>Закрити вкладку</translation>
     </message>
 </context>
 <context>
@@ -6279,7 +6280,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/plugins/quickopen/quickopenfolder.cpp" line="71"/>
         <source>Browser Folder</source>
-        <translation type="unfinished">Перегляд директорій</translation>
+        <translation>Перегляд директорій</translation>
     </message>
 </context>
 <context>
@@ -6288,7 +6289,7 @@ Do you want to replace it?</source>
         <location filename="src/plugins/quickopen/quickopenhelp.cpp" line="49"/>
         <source>Show All Quick Open Actions</source>
         <oldsource>Show Quick Open Help</oldsource>
-        <translation type="unfinished">Показати всі дії Quick Open</translation>
+        <translation>Показати всі дії Quick Open</translation>
     </message>
 </context>
 <context>
@@ -6341,7 +6342,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/plugins/quickopen/quickopenmanager.cpp" line="86"/>
         <source>Show All Quick Open Actions</source>
-        <translation type="unfinished">Показати всі дії Quick Open</translation>
+        <translation>Показати всі дії Quick Open</translation>
     </message>
 </context>
 <context>
@@ -6405,12 +6406,12 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="84"/>
         <source>Search</source>
-        <translation type="unfinished">Пошук</translation>
+        <translation>Пошук</translation>
     </message>
     <message>
         <location filename="src/plugins/golangdoc/finddocwidget.cpp" line="85"/>
         <source>Stop Search</source>
-        <translation type="unfinished">Зупинити пошук</translation>
+        <translation>Зупинити пошук</translation>
     </message>
 </context>
 <context>
@@ -6418,40 +6419,40 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="14"/>
         <source>Debug External Application</source>
-        <translation type="unfinished">Відлагодження зовнішньої програми</translation>
+        <translation>Зневадження зовнішньої програми</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="22"/>
         <source>Application:</source>
-        <translation type="unfinished">Програма:</translation>
+        <translation>Програма:</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="29"/>
         <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="56"/>
         <source>Browse...</source>
         <oldsource>Browser</oldsource>
-        <translation type="unfinished">Відкрити...</translation>
+        <translation>Обрати...</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="36"/>
         <source>Arguments:</source>
-        <translation type="unfinished">Аргументи:</translation>
+        <translation>Аргументи:</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/selectexternaldialog.ui" line="46"/>
         <source>Working directory:</source>
-        <translation type="unfinished">Робоча директорія:</translation>
+        <translation>Робоча директорія:</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/selectexternaldialog.cpp" line="82"/>
         <source>Select Executable</source>
-        <translation type="unfinished">Вибрати програму</translation>
+        <translation>Вибрати виконуваний файл</translation>
     </message>
     <message>
         <location filename="src/plugins/litedebug/selectexternaldialog.cpp" line="92"/>
         <source>Select the working directory:</source>
         <oldsource>Select Working Directory</oldsource>
-        <translation type="unfinished">Оберіть робочу директорію:</translation>
+        <translation>Оберіть робочу директорію:</translation>
     </message>
 </context>
 <context>
@@ -6467,32 +6468,32 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/liteapp/sidewindowstyle.cpp" line="51"/>
         <source>Move To</source>
-        <translation type="unfinished">Перемістити в</translation>
+        <translation>Перемістити в</translation>
     </message>
     <message>
         <location filename="src/liteapp/sidewindowstyle.cpp" line="55"/>
         <source>RightSideBar</source>
-        <translation type="unfinished"></translation>
+        <translation>Права бічна панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/sidewindowstyle.cpp" line="57"/>
         <source>LeftDockWidgt</source>
-        <translation type="unfinished"></translation>
+        <translation>Ліва докова панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/sidewindowstyle.cpp" line="59"/>
         <source>LeftSideBar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ліва бічна панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/sidewindowstyle.cpp" line="61"/>
         <source>RightDockWidget</source>
-        <translation type="unfinished"></translation>
+        <translation>Права докова панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/sidewindowstyle.cpp" line="64"/>
         <source>OutputBar</source>
-        <translation type="unfinished"></translation>
+        <translation>Панель виведення</translation>
     </message>
     <message>
         <location filename="src/liteapp/sidewindowstyle.cpp" line="76"/>
@@ -6531,97 +6532,97 @@ Do you want to replace it?</source>
         <location filename="src/liteapp/tooldockwidget.cpp" line="379"/>
         <location filename="src/liteapp/tooldockwidget.cpp" line="380"/>
         <source>Move To</source>
-        <translation type="unfinished">Перемістити в</translation>
+        <translation>Перемістити в</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="302"/>
         <source>Top</source>
-        <translation type="unfinished">Верх</translation>
+        <translation>Верх</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="306"/>
         <source>Top (Split)</source>
-        <translation type="unfinished">Верх (розділити)</translation>
+        <translation>Верх (розділити)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
         <source>TopDockWidget (Split)</source>
-        <translation type="unfinished"></translation>
+        <translation>Верхня докова панель (розділена)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="343"/>
         <source>TopDockWidget</source>
-        <translation type="unfinished"></translation>
+        <translation>Верхня докова панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="312"/>
         <source>Bottom</source>
-        <translation type="unfinished">Низ</translation>
+        <translation>Низ</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="316"/>
         <source>Bottom (Split)</source>
-        <translation type="unfinished">Низ (розділити)</translation>
+        <translation>Низ (розділити)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
         <source>BottomDockWidget (Split)</source>
-        <translation type="unfinished"></translation>
+        <translation>Нижня докова панель (розділена)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="345"/>
         <source>BottomDockWidget</source>
-        <translation type="unfinished"></translation>
+        <translation>Нижня докова панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="322"/>
         <source>Left</source>
-        <translation type="unfinished">Ліво</translation>
+        <translation>Ліво</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="326"/>
         <source>Left (Split)</source>
-        <translation type="unfinished">Ліво (розділити)</translation>
+        <translation>Ліво (розділити)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
         <source>LeftDockWidget (Split)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ліва докова панель (розділена)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="347"/>
         <source>LeftDockWidget</source>
-        <translation type="unfinished"></translation>
+        <translation>Ліва докова панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="332"/>
         <source>Right</source>
-        <translation type="unfinished">Право</translation>
+        <translation>Право</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="336"/>
         <source>Right (Split)</source>
-        <translation type="unfinished">Право (розділити)</translation>
+        <translation>Право (розділити)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
         <source>RightDockWidget (Split)</source>
-        <translation type="unfinished"></translation>
+        <translation>Права докова панель (розділена)</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="349"/>
         <source>RightDockWidget</source>
-        <translation type="unfinished"></translation>
+        <translation>Права докова панель</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="355"/>
         <source>Unsplit</source>
-        <translation type="unfinished">Не розділяти</translation>
+        <translation>Скасувати розділення</translation>
     </message>
     <message>
         <location filename="src/liteapp/tooldockwidget.cpp" line="360"/>
         <source>Split</source>
-        <translation type="unfinished">Розділити</translation>
+        <translation>Розділити</translation>
     </message>
 </context>
 <context>
@@ -6634,7 +6635,7 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/liteapp/splitwindowstyle.cpp" line="278"/>
         <source>Tool Windows</source>
-        <translation type="unfinished">Панелі інструментів</translation>
+        <translation>Вікна інструментів</translation>
     </message>
 </context>
 <context>
@@ -6642,17 +6643,17 @@ Do you want to replace it?</source>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="135"/>
         <source>SyntaxEditor ToolBar</source>
-        <translation type="unfinished"></translation>
+        <translation>Панель інструментів SyntaxEditor</translation>
     </message>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="136"/>
         <source>Undo</source>
-        <translation type="unfinished">Скасувати</translation>
+        <translation>Скасувати</translation>
     </message>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="137"/>
         <source>Redo</source>
-        <translation type="unfinished">Повторити</translation>
+        <translation>Повторити</translation>
     </message>
 </context>
 <context>
@@ -6663,36 +6664,39 @@ Do you want to replace it?</source>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="148"/>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="181"/>
         <source>LiteIDE</source>
-        <translation type="unfinished">LiteIDE</translation>
+        <translation>LiteIDE</translation>
     </message>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="66"/>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="100"/>
         <source>Cannot read file %1:
 %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося прочитати файл %1:
+%2.</translation>
     </message>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="90"/>
         <source>document%1.go</source>
-        <translation type="unfinished"></translation>
+        <translation>document%1.go</translation>
     </message>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="127"/>
         <source>Save As</source>
-        <translation type="unfinished">Зберегти як</translation>
+        <translation>Зберегти як</translation>
     </message>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="149"/>
         <source>Cannot write file %1:
 %2.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не вдалося записати файл %1:
+%2.</translation>
     </message>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxtexteditor.cpp" line="182"/>
         <source>&apos;%1&apos; has been modified.
 Do you want to save your changes?</source>
-        <translation type="unfinished"></translation>
+        <translation>'%1' змінено.
+Бажаєте зберегти зміни?</translation>
     </message>
 </context>
 <context>
@@ -6707,37 +6711,37 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/plugins/terminal/terminaloption.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Форма</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminaloption.ui" line="20"/>
         <source>Font</source>
-        <translation type="unfinished">Шрифт</translation>
+        <translation>Шрифт</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminaloption.ui" line="26"/>
         <source>Family:</source>
-        <translation type="unfinished">Сімейство:</translation>
+        <translation>Сімейство:</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminaloption.ui" line="40"/>
         <source>Size:</source>
-        <translation type="unfinished">Розмір:</translation>
+        <translation>Розмір:</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminaloption.ui" line="57"/>
         <source>Zoom:</source>
-        <translation type="unfinished">Масштаб:</translation>
+        <translation>Масштаб:</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminaloption.ui" line="64"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminaloption.ui" line="83"/>
         <source>Antialias</source>
-        <translation type="unfinished">Згладжування</translation>
+        <translation>Згладжування</translation>
     </message>
 </context>
 <context>
@@ -6747,68 +6751,68 @@ Do you want to save your changes?</source>
         <location filename="src/plugins/terminal/terminal.cpp" line="202"/>
         <location filename="src/plugins/terminal/terminal.cpp" line="818"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Новий</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="146"/>
         <source>Open a new terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити новий термінал</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="148"/>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="149"/>
         <source>Close current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрити поточний термінал</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="151"/>
         <source>CloseAll</source>
-        <translation type="unfinished"></translation>
+        <translation>CloseAll</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="152"/>
         <source>Close all terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрити всі термінали</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="155"/>
         <source>LoadEnv</source>
-        <translation type="unfinished"></translation>
+        <translation>LoadEnv</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="156"/>
         <source>Current terminal load environment from LiteIDE</source>
-        <translation type="unfinished"></translation>
+        <translation>Поточний термінал завантажує оточення з LiteIDE</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="161"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Фільтр</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="197"/>
         <source>Dark Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Темний режим</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="208"/>
         <source>Login Mode (shell --login)</source>
-        <translation type="unfinished"></translation>
+        <translation>Режим входу (shell --login)</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="249"/>
         <location filename="src/plugins/terminal/terminal.cpp" line="785"/>
         <source>Terminal</source>
-        <translation type="unfinished">Термінал</translation>
+        <translation>Термінал</translation>
     </message>
     <message>
         <location filename="src/plugins/terminal/terminal.cpp" line="785"/>
         <source>Rename Tab Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейменувати заголовок вкладки</translation>
     </message>
 </context>
 <context>
@@ -6844,7 +6848,7 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/texteditorconstants.h" line="146"/>
         <source>Text Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстовий редактор</translation>
     </message>
 </context>
 <context>
@@ -6860,32 +6864,32 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="63"/>
         <source>Name</source>
-        <translation type="unfinished">Назва</translation>
+        <translation>Назва</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="63"/>
         <source>Installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Встановлено</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="63"/>
         <source>Available</source>
-        <translation type="unfinished"></translation>
+        <translation>Доступно</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="66"/>
         <source>Download Definitions</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантажити визначення</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="115"/>
         <source>Download Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Інформація про завантаження</translation>
     </message>
     <message>
         <location filename="src/3rdparty/qtc_texteditor/generichighlighter/managedefinitionsdialog.cpp" line="116"/>
         <source>There is already one download in progress. Please wait until it is finished.</source>
-        <translation type="unfinished"></translation>
+        <translation>Завантаження вже виконується. Зачекайте, доки воно завершиться.</translation>
     </message>
 </context>
 <context>
@@ -6893,7 +6897,7 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/plugins/syntaxeditor/syntaxeditor.cpp" line="74"/>
         <source>Cancel file %1 modify and reload ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Скасувати зміни у файлі %1 і перечитати його?</translation>
     </message>
 </context>
 <context>
@@ -6914,17 +6918,17 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/utils/vterm/vtermwidget.cpp" line="59"/>
         <source>Copy</source>
-        <translation type="unfinished">Копіювати</translation>
+        <translation>Копіювати</translation>
     </message>
     <message>
         <location filename="src/utils/vterm/vtermwidget.cpp" line="63"/>
         <source>Paste</source>
-        <translation type="unfinished">Вставити</translation>
+        <translation>Вставити</translation>
     </message>
     <message>
         <location filename="src/utils/vterm/vtermwidget.cpp" line="67"/>
         <source>Select All</source>
-        <translation type="unfinished">Виділити все</translation>
+        <translation>Виділити все</translation>
     </message>
 </context>
 <context>
@@ -7005,42 +7009,42 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="394"/>
         <source>Detach</source>
-        <translation type="unfinished"></translation>
+        <translation>Від'єднати</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="399"/>
         <source>Pin To...</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріпити в...</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="401"/>
         <source>Top</source>
-        <translation type="unfinished">Верх</translation>
+        <translation>Верх</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="402"/>
         <source>Left</source>
-        <translation type="unfinished">Ліво</translation>
+        <translation>Ліво</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="403"/>
         <source>Right</source>
-        <translation type="unfinished">Право</translation>
+        <translation>Право</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="404"/>
         <source>Bottom</source>
-        <translation type="unfinished">Низ</translation>
+        <translation>Низ</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="406"/>
         <source>Unpin (Dock)</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкріпити (док)</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/AutoHideTab.cpp" line="408"/>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
 </context>
 <context>
@@ -7048,83 +7052,83 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="803"/>
         <source>Detach</source>
-        <translation type="unfinished"></translation>
+        <translation>Від'єднати</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="803"/>
         <source>Detach Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Від'єднати групу</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="864"/>
         <source>Unpin (Dock)</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкріпити (док)</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="808"/>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="869"/>
         <source>Pin Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріпити групу</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="814"/>
         <source>Pin Group To...</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріпити групу в...</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="816"/>
         <source>Top</source>
-        <translation type="unfinished">Верх</translation>
+        <translation>Верх</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="817"/>
         <source>Left</source>
-        <translation type="unfinished">Ліво</translation>
+        <translation>Ліво</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="818"/>
         <source>Right</source>
-        <translation type="unfinished">Право</translation>
+        <translation>Право</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="819"/>
         <source>Bottom</source>
-        <translation type="unfinished">Низ</translation>
+        <translation>Низ</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="827"/>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="881"/>
         <source>Minimize</source>
-        <translation type="unfinished"></translation>
+        <translation>Згорнути</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="828"/>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="832"/>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="881"/>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="832"/>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="890"/>
         <source>Close Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрити групу</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="838"/>
         <source>Close Other Groups</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрити інші групи</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="873"/>
         <source>Pin Active Tab (Press Ctrl to Pin Group)</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріпити активну вкладку (Ctrl — закріпити групу)</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockAreaTitleBar.cpp" line="886"/>
         <source>Close Active Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрити активну вкладку</translation>
     </message>
 </context>
 <context>
@@ -7132,7 +7136,7 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/3rdparty/ads/src/DockManager.cpp" line="519"/>
         <source>Show View</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати перегляд</translation>
     </message>
 </context>
 <context>
@@ -7140,47 +7144,47 @@ Do you want to save your changes?</source>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="551"/>
         <source>Detach</source>
-        <translation type="unfinished"></translation>
+        <translation>Від'єднати</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="555"/>
         <source>Pin</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріпити</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="559"/>
         <source>Pin To...</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріпити в...</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="561"/>
         <source>Top</source>
-        <translation type="unfinished">Верх</translation>
+        <translation>Верх</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="562"/>
         <source>Left</source>
-        <translation type="unfinished">Ліво</translation>
+        <translation>Ліво</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="563"/>
         <source>Right</source>
-        <translation type="unfinished">Право</translation>
+        <translation>Право</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="564"/>
         <source>Bottom</source>
-        <translation type="unfinished">Низ</translation>
+        <translation>Низ</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="569"/>
         <source>Close</source>
-        <translation type="unfinished">Закрити</translation>
+        <translation>Закрити</translation>
     </message>
     <message>
         <location filename="src/3rdparty/ads/src/DockWidgetTab.cpp" line="573"/>
         <source>Close Others</source>
-        <translation type="unfinished">Закрити інші</translation>
+        <translation>Закрити інші</translation>
     </message>
 </context>
 </TS>
