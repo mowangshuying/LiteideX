@@ -45,6 +45,9 @@ win32 {
 } else:macx {
     ICON = liteide.icns
     QMAKE_INFO_PLIST = Info.plist
+    # Apple Silicon crashes in CoreText/ImageIO when drawing emoji unless the
+    # process is signed with the Hardened Runtime (EXC_ARM_DA_ALIGN / 0xbad4007).
+    QMAKE_POST_LINK += codesign --force --deep --sign - --options runtime --entitlements $$shell_quote($$PWD/LiteIDE.entitlements) $$shell_quote($$IDE_APP_PATH/$${IDE_APP_TARGET}.app)
 } else {
     target.path  = $$BINPREFIX
     INSTALLS    += target
